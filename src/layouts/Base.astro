@@ -4,23 +4,32 @@ interface Props {
   description?: string;
   group?: "electricite" | "electronique" | "neutre";
   active?: "home" | "wiki" | "blog" | "diy" | "";
+  fullTitle?: string;
 }
-const { title, description = "", group = "neutre", active = "" } = Astro.props;
+const { title, description = "", group = "neutre", active = "", fullTitle } = Astro.props;
 const BASE = import.meta.env.BASE_URL; // se termine toujours par "/"
+const pageTitle = fullTitle ?? `${title} — Zeep`;
 ---
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} — Élektropédia</title>
+  <title>{pageTitle}</title>
   <meta name="description" content={description} />
+  <link rel="icon" type="image/png" sizes="48x48" href={`${BASE}assets/favicon-48.png`} />
+  <link rel="icon" type="image/png" sizes="32x32" href={`${BASE}assets/favicon-32.png`} />
+  <link rel="icon" type="image/png" sizes="16x16" href={`${BASE}assets/favicon-16.png`} />
+  <link rel="apple-touch-icon" href={`${BASE}assets/apple-touch-icon.png`} />
   <link rel="stylesheet" href={`${BASE}assets/style.css`} />
 </head>
 <body data-group={group}>
   <header class="site-header">
     <div class="shell bar">
-      <a class="brand" href={BASE}><span class="spark">⚡</span> Élektropédia</a>
+      <a class="brand" href={BASE}>
+        <img src={`${BASE}assets/logo-bolt.png`} alt="" class="brand-mark" height="26" />
+        <img src={`${BASE}assets/logo-wordmark.png`} alt="Zeep" class="brand-word" height="15" />
+      </a>
       <nav class="main-nav">
         <a href={BASE} class={active === "home" ? "active" : ""}>Accueil</a>
         <a href={`${BASE}wiki/`} class={active === "wiki" ? "active" : ""}>Wiki</a>
@@ -34,7 +43,7 @@ const BASE = import.meta.env.BASE_URL; // se termine toujours par "/"
     <slot />
   </div></main>
   <footer class="site-footer"><div class="shell">
-    Élektropédia — wiki collaboratif électricité &amp; électronique.
+    Zeep — wiki collaboratif électricité &amp; électronique.
   </div></footer>
   <script define:vars={{ BASE }}>
     window.__BASE__ = BASE;

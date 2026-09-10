@@ -81,8 +81,9 @@ header.site-header{
   display:flex;align-items:center;justify-content:space-between;
   gap:20px;padding:14px 0;
 }
-.brand{display:flex;align-items:baseline;gap:8px;font-weight:700;font-size:16px;}
-.brand .spark{color:var(--accent);font-family:var(--font-mono);}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand-mark{display:block;flex-shrink:0;width:auto;}
+.brand-word{display:block;width:auto;}
 nav.main-nav{display:flex;gap:22px;font-size:14px;}
 nav.main-nav a{color:var(--text-dim);padding:6px 2px;border-bottom:2px solid transparent;}
 nav.main-nav a:hover, nav.main-nav a.active{color:var(--text);border-bottom-color:var(--accent);}

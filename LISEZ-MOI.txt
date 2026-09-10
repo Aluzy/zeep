@@ -1,0 +1,27 @@
+Ce zip remplace le précédent (zeep-rebrand-zeep-logo.zip) : il utilise cette
+fois directement tes deux images (l'éclair pixel-art et le lockup "Zeep"),
+au lieu du logo que j'avais dessiné moi-même par erreur la première fois.
+
+Fichiers à copier par-dessus ton dépôt local (mêmes chemins), puis
+git add / commit / push :
+
+public/assets/logo-bolt.png        <- ton éclair, fond blanc supprimé (transparent)
+public/assets/logo-wordmark.png    <- ton "Zeep", recadré depuis le lockup
+public/assets/favicon-16.png
+public/assets/favicon-32.png
+public/assets/favicon-48.png
+public/assets/apple-touch-icon.png <- fond bleu nuit ajouté (iOS affiche du noir sur les icônes transparentes)
+public/assets/style.css
+src/layouts/Base.astro
+
+À supprimer (plus utilisés, c'était mon ancien logo dessiné à la main) :
+public/assets/logo-mark.svg
+public/assets/favicon.svg
+
+Un point à valider avec moi : le texte "Zeep" de ton image est en noir,
+pensé pour un fond clair. Sur l'en-tête du site (fond bleu nuit très sombre),
+du texte noir serait invisible. Je l'ai donc recoloré en blanc cassé
+(#F0F2F7) — c'est la SEULE modification apportée à tes fichiers, tout le
+reste (le tracé, les couleurs de l'éclair, les proportions) vient de tes
+images telles quelles. Dis-moi si tu préfères une autre solution (garder le
+noir sur un badge clair, une autre couleur, etc.).
