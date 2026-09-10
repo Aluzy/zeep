@@ -1,0 +1,25 @@
+{
+  "term": "Alimentation électrique",
+  "slug": "alimentation-electrique",
+  "domains": [
+    "E"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Fourniture de courant électrique à un appareil, une installation électrique ou un bâtiment."
+  },
+  "related": [
+    "courant-electrique",
+    "court-jus-panne-de-courant",
+    "electrification",
+    "installation-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

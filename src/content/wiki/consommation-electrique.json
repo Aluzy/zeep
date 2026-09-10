@@ -1,0 +1,26 @@
+{
+  "term": "Consommation électrique",
+  "slug": "consommation-electrique",
+  "domains": [
+    "J"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Quantité d'énergie électrique utilisée par un appareil, un logement ou une entreprise, mesurée par le compteur électrique en kilowattheures."
+  },
+  "related": [
+    "ampoule-led",
+    "compteur-electrique",
+    "economie-denergie",
+    "facture-delectricite",
+    "reseau-intelligent-smart-grid"
+  ],
+  "pillar": false,
+  "illustration": null
+}

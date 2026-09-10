@@ -1,0 +1,23 @@
+{
+  "term": "Circuit analogique",
+  "slug": "circuit-analogique",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit électronique qui traite des signaux analogiques dont l'amplitude varie de façon continue, par opposition au circuit numérique."
+  },
+  "related": [
+    "circuit-numerique",
+    "electronique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

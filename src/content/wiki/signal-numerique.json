@@ -1,0 +1,28 @@
+{
+  "term": "Signal numérique",
+  "slug": "signal-numerique",
+  "domains": [
+    "L"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Signal électrique codé sous forme d'états discrets, généralement binaires, traité par un circuit numérique ou un microcontrôleur."
+  },
+  "related": [
+    "circuit-numerique",
+    "convertisseur-analogique-numerique-can",
+    "convertisseur-numerique-analogique-cna",
+    "microcontroleur",
+    "porte-logique",
+    "servomoteur",
+    "signal-analogique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

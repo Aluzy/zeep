@@ -1,0 +1,22 @@
+{
+  "term": "Électrostatique",
+  "slug": "electrostatique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Branche de la physique qui étudie les charges électriques au repos et le champ électrique qu'elles produisent."
+  },
+  "related": [
+    "champ-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

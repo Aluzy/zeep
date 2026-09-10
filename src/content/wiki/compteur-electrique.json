@@ -1,0 +1,24 @@
+{
+  "term": "Compteur électrique",
+  "slug": "compteur-electrique",
+  "domains": [
+    "J"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Appareil qui mesure la consommation électrique d'un logement ou d'un bâtiment, exprimée en kilowattheures, servant de base à la facture d'électricité."
+  },
+  "related": [
+    "consommation-electrique",
+    "electricite",
+    "facture-delectricite"
+  ],
+  "pillar": false,
+  "illustration": null
+}

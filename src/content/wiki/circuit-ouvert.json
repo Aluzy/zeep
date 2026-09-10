@@ -1,0 +1,23 @@
+{
+  "term": "Circuit ouvert",
+  "slug": "circuit-ouvert",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "État d'un circuit électrique dans lequel la continuité est interrompue, empêchant le courant électrique de circuler."
+  },
+  "related": [
+    "circuit-electrique",
+    "courant-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

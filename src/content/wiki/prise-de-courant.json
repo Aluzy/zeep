@@ -1,0 +1,23 @@
+{
+  "term": "Prise de courant",
+  "slug": "prise-de-courant",
+  "domains": [
+    "E"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Dispositif fixe raccordé à l'installation électrique permettant de brancher une fiche électrique pour alimenter un appareil."
+  },
+  "related": [
+    "fiche-electrique",
+    "installation-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

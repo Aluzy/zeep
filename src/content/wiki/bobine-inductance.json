@@ -1,0 +1,24 @@
+{
+  "term": "Bobine (inductance)",
+  "slug": "bobine-inductance",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Composant électronique constitué d'un enroulement de fil qui s'oppose aux variations du courant, utilisé dans les filtres électroniques et les alimentations à découpage."
+  },
+  "related": [
+    "composant-electronique",
+    "electronique",
+    "impedance"
+  ],
+  "pillar": false,
+  "illustration": null
+}

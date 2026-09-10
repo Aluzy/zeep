@@ -1,0 +1,25 @@
+{
+  "term": "Centrale hydraulique",
+  "slug": "centrale-hydraulique",
+  "domains": [
+    "B"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Centrale électrique qui produit de l'électricité en utilisant la force de l'eau, souvent au moyen d'un barrage hydroélectrique, pour entraîner une turbine."
+  },
+  "related": [
+    "barrage-hydroelectrique",
+    "centrale-electrique",
+    "electricite",
+    "turbine"
+  ],
+  "pillar": false,
+  "illustration": null
+}

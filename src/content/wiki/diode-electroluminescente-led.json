@@ -1,0 +1,23 @@
+{
+  "term": "Diode électroluminescente (LED)",
+  "slug": "diode-electroluminescente-led",
+  "domains": [
+    "K",
+    "I"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Diode qui émet de la lumière lorsqu'elle est traversée par un courant électrique, largement utilisée en éclairage et sur les cartes électroniques comme voyant."
+  },
+  "related": [
+    "diode"
+  ],
+  "pillar": true,
+  "illustration": null
+}

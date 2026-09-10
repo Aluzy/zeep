@@ -1,0 +1,23 @@
+{
+  "term": "Accumulateur",
+  "slug": "accumulateur",
+  "domains": [
+    "D"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Élément rechargeable capable de stocker de l'énergie électrique par voie chimique et de la restituer sous forme de courant électrique."
+  },
+  "related": [
+    "courant-electrique",
+    "pile-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

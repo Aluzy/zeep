@@ -1,0 +1,24 @@
+{
+  "term": "Kilowatt",
+  "slug": "kilowatt",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Unité de puissance électrique équivalente à 1000 watts, utilisée pour exprimer la puissance des appareils ou d'une installation électrique."
+  },
+  "related": [
+    "installation-electrique",
+    "kilowattheure",
+    "puissance-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,24 @@
+{
+  "term": "Capteur de pression",
+  "slug": "capteur-de-pression",
+  "domains": [
+    "S"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Capteur qui convertit une pression physique en signal électrique, utilisé notamment en électronique embarquée."
+  },
+  "related": [
+    "capteur",
+    "electronique",
+    "electronique-embarquee"
+  ],
+  "pillar": false,
+  "illustration": null
+}

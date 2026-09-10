@@ -1,0 +1,25 @@
+{
+  "term": "Robotique",
+  "slug": "robotique",
+  "domains": [
+    "P"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Discipline qui combine électronique embarquée, capteurs et actionneurs, comme le servomoteur, pour concevoir des machines capables d'agir de façon autonome."
+  },
+  "related": [
+    "carte-arduino",
+    "electronique",
+    "electronique-embarquee",
+    "servomoteur"
+  ],
+  "pillar": true,
+  "illustration": null
+}

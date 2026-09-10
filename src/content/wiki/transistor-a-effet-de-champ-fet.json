@@ -1,0 +1,23 @@
+{
+  "term": "Transistor à effet de champ (FET)",
+  "slug": "transistor-a-effet-de-champ-fet",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Type de transistor commandé par une tension appliquée sur sa grille plutôt que par un courant, dont le MOSFET est la variante la plus répandue."
+  },
+  "related": [
+    "mosfet",
+    "transistor"
+  ],
+  "pillar": false,
+  "illustration": null
+}

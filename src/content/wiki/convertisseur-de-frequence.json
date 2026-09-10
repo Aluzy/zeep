@@ -1,0 +1,24 @@
+{
+  "term": "Convertisseur de fréquence",
+  "slug": "convertisseur-de-frequence",
+  "domains": [
+    "F"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Appareil qui modifie la fréquence électrique d'un courant alternatif, souvent utilisé pour réguler la vitesse d'un moteur électrique."
+  },
+  "related": [
+    "courant-alternatif",
+    "frequence-electrique",
+    "moteur-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,23 @@
+{
+  "term": "Wattmètre",
+  "slug": "wattmetre",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Instrument de mesure de la puissance électrique consommée ou produite par un appareil ou un circuit électrique."
+  },
+  "related": [
+    "circuit-electrique",
+    "puissance-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

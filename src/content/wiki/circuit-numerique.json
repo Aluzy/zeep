@@ -1,0 +1,27 @@
+{
+  "term": "Circuit numérique",
+  "slug": "circuit-numerique",
+  "domains": [
+    "L"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit électronique qui traite des signaux numériques codés en états discrets, par opposition au circuit analogique."
+  },
+  "related": [
+    "circuit-analogique",
+    "circuit-logique",
+    "electronique",
+    "frequence-de-commutation",
+    "quartz-resonateur",
+    "signal-numerique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

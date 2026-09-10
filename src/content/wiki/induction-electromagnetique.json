@@ -1,0 +1,26 @@
+{
+  "term": "Induction électromagnétique",
+  "slug": "induction-electromagnetique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Phénomène par lequel un champ magnétique variable produit une tension électrique dans un conducteur électrique, principe utilisé par l'alternateur et le transformateur."
+  },
+  "related": [
+    "alternateur",
+    "champ-magnetique",
+    "conducteur-electrique",
+    "tension-electrique",
+    "transformateur"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,24 @@
+{
+  "term": "Phase électrique",
+  "slug": "phase-electrique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Conducteur actif d'un circuit électrique transportant le courant électrique, par opposition au neutre."
+  },
+  "related": [
+    "circuit-electrique",
+    "courant-electrique",
+    "neutre"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,23 @@
+{
+  "term": "Économie d'énergie",
+  "slug": "economie-denergie",
+  "domains": [
+    "J"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ensemble des pratiques visant à réduire la consommation électrique et à améliorer l'efficacité énergétique d'une installation."
+  },
+  "related": [
+    "consommation-electrique",
+    "efficacite-energetique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

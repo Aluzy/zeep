@@ -1,0 +1,37 @@
+{
+  "term": "Microcontrôleur",
+  "slug": "microcontroleur",
+  "domains": [
+    "O"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit intégré combinant un processeur, une mémoire vive, une mémoire morte et des entrées-sorties, utilisé pour piloter un objet connecté ou un système embarqué comme une carte Arduino."
+  },
+  "related": [
+    "asic",
+    "bus-i2c",
+    "bus-spi",
+    "capteur",
+    "capteur-de-temperature",
+    "carte-arduino",
+    "circuit-integre",
+    "convertisseur-analogique-numerique-can",
+    "electronique-embarquee",
+    "memoire-morte-rom",
+    "memoire-vive-ram",
+    "moteur-pas-a-pas",
+    "objet-connecte-iot",
+    "oscillateur",
+    "processeur-cpu",
+    "signal-numerique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

@@ -1,0 +1,32 @@
+{
+  "term": "Signal analogique",
+  "slug": "signal-analogique",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Signal électrique dont l'amplitude varie de façon continue, par opposition au signal numérique, et que l'on traite avec des filtres électroniques ou un amplificateur opérationnel."
+  },
+  "related": [
+    "amplificateur-audio",
+    "amplificateur-operationnel",
+    "bruit-electronique",
+    "capteur",
+    "convertisseur-analogique-numerique-can",
+    "convertisseur-numerique-analogique-cna",
+    "filtre-electronique",
+    "impedance",
+    "redresseur",
+    "signal-numerique",
+    "triac"
+  ],
+  "pillar": false,
+  "illustration": null
+}

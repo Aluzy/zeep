@@ -1,0 +1,23 @@
+{
+  "term": "Résistivité",
+  "slug": "resistivite",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Grandeur physique caractérisant la capacité d'un matériau à s'opposer au passage du courant électrique, inverse de la conductivité électrique."
+  },
+  "related": [
+    "conductivite-electrique",
+    "courant-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

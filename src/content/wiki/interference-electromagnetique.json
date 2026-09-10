@@ -1,0 +1,24 @@
+{
+  "term": "Interférence électromagnétique",
+  "slug": "interference-electromagnetique",
+  "domains": [
+    "U"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Perturbation d'un circuit électronique provoquée par un champ électromagnétique extérieur, source de bruit électronique."
+  },
+  "related": [
+    "bruit-electronique",
+    "compatibilite-electromagnetique-cem",
+    "electronique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,27 @@
+{
+  "term": "Turbine",
+  "slug": "turbine",
+  "domains": [
+    "B"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Machine tournante entraînée par un fluide comme l'eau, la vapeur ou le vent, qui transmet son énergie mécanique à un alternateur pour produire de l'électricité."
+  },
+  "related": [
+    "alternateur",
+    "barrage-hydroelectrique",
+    "centrale-hydraulique",
+    "centrale-nucleaire",
+    "centrale-thermique",
+    "electricite"
+  ],
+  "pillar": true,
+  "illustration": null
+}

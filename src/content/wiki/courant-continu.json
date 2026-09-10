@@ -1,0 +1,27 @@
+{
+  "term": "Courant continu",
+  "slug": "courant-continu",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Courant électrique circulant toujours dans le même sens, produit notamment par une batterie ou un panneau photovoltaïque."
+  },
+  "related": [
+    "batterie",
+    "courant-electrique",
+    "dynamo",
+    "onduleur",
+    "panneau-photovoltaique",
+    "redresseur"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,22 @@
+{
+  "term": "Énergie fossile",
+  "slug": "energie-fossile",
+  "domains": [
+    "B"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Source d'énergie issue de matières organiques fossilisées, comme le charbon, le pétrole ou le gaz, utilisée notamment dans les centrales thermiques."
+  },
+  "related": [
+    "centrale-thermique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

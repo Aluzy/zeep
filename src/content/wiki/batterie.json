@@ -1,0 +1,24 @@
+{
+  "term": "Batterie",
+  "slug": "batterie",
+  "domains": [
+    "D"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Dispositif regroupant plusieurs piles électriques ou accumulateurs, capable de stocker et de restituer de l'énergie électrique sous forme de courant continu."
+  },
+  "related": [
+    "courant-continu",
+    "onduleur",
+    "pile-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

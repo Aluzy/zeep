@@ -1,0 +1,23 @@
+{
+  "term": "Électrification",
+  "slug": "electrification",
+  "domains": [
+    "C"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Action de doter une zone, un bâtiment ou un équipement d'une alimentation électrique et d'un accès au réseau électrique."
+  },
+  "related": [
+    "alimentation-electrique",
+    "reseau-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

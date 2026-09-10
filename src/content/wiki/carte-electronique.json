@@ -1,0 +1,30 @@
+{
+  "term": "Carte électronique",
+  "slug": "carte-electronique",
+  "domains": [
+    "N"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Support, généralement un circuit imprimé, sur lequel sont soudés les composants électroniques formant un système fonctionnel, comme une carte mère ou une carte Arduino."
+  },
+  "related": [
+    "alimentation-electronique",
+    "boitier-electronique",
+    "carte-arduino",
+    "carte-mere",
+    "carte-raspberry-pi",
+    "circuit-imprime-pcb",
+    "recyclage-des-dechets-electroniques-deee",
+    "usb",
+    "ventilateur-de-refroidissement"
+  ],
+  "pillar": false,
+  "illustration": null
+}

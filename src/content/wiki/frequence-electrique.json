@@ -1,0 +1,25 @@
+{
+  "term": "Fréquence électrique",
+  "slug": "frequence-electrique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Nombre de cycles par seconde d'un courant alternatif, exprimé en hertz, généralement 50 Hz sur le réseau électrique français."
+  },
+  "related": [
+    "convertisseur-de-frequence",
+    "courant-alternatif",
+    "reseau-electrique",
+    "transformateur"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,28 @@
+{
+  "term": "Circuit logique",
+  "slug": "circuit-logique",
+  "domains": [
+    "L"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit numérique construit à partir de portes logiques, comme la porte ET, la porte OU ou la porte NON, qui traite des signaux binaires."
+  },
+  "related": [
+    "bascule-flip-flop",
+    "circuit-numerique",
+    "demultiplexeur",
+    "multiplexeur",
+    "porte-et-and",
+    "porte-non-not",
+    "porte-ou-or"
+  ],
+  "pillar": false,
+  "illustration": null
+}

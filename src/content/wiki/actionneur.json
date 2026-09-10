@@ -1,0 +1,27 @@
+{
+  "term": "Actionneur",
+  "slug": "actionneur",
+  "domains": [
+    "P"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Composant électronique ou électromécanique, comme un servomoteur ou un relais électronique, qui convertit un signal de commande en action physique."
+  },
+  "related": [
+    "composant-electronique",
+    "electronique",
+    "moteur-pas-a-pas",
+    "relais-electronique",
+    "servomoteur",
+    "ventilateur-de-refroidissement"
+  ],
+  "pillar": true,
+  "illustration": null
+}

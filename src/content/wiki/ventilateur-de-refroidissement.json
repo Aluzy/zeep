@@ -1,0 +1,25 @@
+{
+  "term": "Ventilateur de refroidissement",
+  "slug": "ventilateur-de-refroidissement",
+  "domains": [
+    "U"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Actionneur qui fait circuler l'air pour compléter l'action d'un dissipateur thermique et évacuer la chaleur d'une carte électronique."
+  },
+  "related": [
+    "actionneur",
+    "carte-electronique",
+    "dissipateur-thermique",
+    "electronique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { TAXONOMY } from "../lib/helpers";
+
+const BASE = import.meta.env.BASE_URL;
+const wiki = await getCollection("wiki");
+const blog = await getCollection("blog");
+const diy = await getCollection("diy");
+---
+<Base title="Accueil" description="Wiki et blog sur l'électricité et l'électronique" group="neutre" active="home">
+  <section class="hero">
+    <h1>200 notions d'électricité et d'électronique, reliées entre elles — pour apprendre en s'amusant.</h1>
+    <p class="lead">Un wiki où chaque mot-clé renvoie aux notions voisines, des projets DIY pour apprendre en construisant, et un blog pour aller plus loin sur chaque sujet.</p>
+    <div class="cta-row">
+      <a class="btn" href={`${BASE}wiki/`}>Explorer le wiki →</a>
+      <a class="btn" href={`${BASE}projets-diy/`}>Voir les projets DIY →</a>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="num">{wiki.length}</div><div class="lbl">Termes du wiki</div></div>
+      <div class="stat"><div class="num">{Object.keys(TAXONOMY).length}</div><div class="lbl">Domaines couverts</div></div>
+      <div class="stat"><div class="num">{diy.length}</div><div class="lbl">Projets DIY</div></div>
+      <div class="stat"><div class="num">{blog.length}</div><div class="lbl">Articles de blog</div></div>
+    </div>
+  </section>
+  <section class="zone-grid">
+    <div class="zone-card electricite">
+      <h2>⚡ Électricité</h2>
+      <p>Production, réseaux, installations, mobilité électrique, domotique — comment l'énergie électrique est produite, transportée et utilisée au quotidien.</p>
+      <a class="go" href={`${BASE}wiki/?domain=A`}>Parcourir →</a>
+    </div>
+    <div class="zone-card electronique">
+      <h2>🔌 Électronique</h2>
+      <p>Composants, circuits, microcontrôleurs, robotique, objets connectés — comment on conçoit et on pilote de petits systèmes électroniques.</p>
+      <a class="go" href={`${BASE}wiki/?domain=K`}>Parcourir →</a>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,27 @@
+{
+  "term": "Centrale électrique",
+  "slug": "centrale-electrique",
+  "domains": [
+    "B"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Installation industrielle qui assure la production d'électricité à partir d'une source d'énergie, comme le nucléaire, le thermique, l'hydraulique, le solaire ou l'éolien."
+  },
+  "related": [
+    "centrale-hydraulique",
+    "centrale-nucleaire",
+    "centrale-solaire",
+    "centrale-thermique",
+    "electricite",
+    "production-delectricite"
+  ],
+  "pillar": true,
+  "illustration": null
+}

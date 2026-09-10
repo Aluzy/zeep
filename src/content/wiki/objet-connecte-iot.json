@@ -1,0 +1,25 @@
+{
+  "term": "Objet connecté (IoT)",
+  "slug": "objet-connecte-iot",
+  "domains": [
+    "Q"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Appareil équipé d'un microcontrôleur, de capteurs et d'un module de communication, comme le Wi-Fi ou le Bluetooth, capable d'échanger des données via Internet."
+  },
+  "related": [
+    "bluetooth",
+    "domotique",
+    "microcontroleur",
+    "wi-fi"
+  ],
+  "pillar": true,
+  "illustration": null
+}

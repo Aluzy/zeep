@@ -1,0 +1,28 @@
+{
+  "term": "Diode",
+  "slug": "diode",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Composant électronique semi-conducteur qui ne laisse passer le courant que dans un seul sens, utilisé notamment dans les circuits de redresseur."
+  },
+  "related": [
+    "composant-electronique",
+    "diode-electroluminescente-led",
+    "electronique",
+    "photodiode",
+    "redresseur",
+    "semi-conducteur",
+    "tension-de-seuil"
+  ],
+  "pillar": true,
+  "illustration": null
+}

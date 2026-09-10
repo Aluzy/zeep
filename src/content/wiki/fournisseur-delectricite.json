@@ -1,0 +1,24 @@
+{
+  "term": "Fournisseur d'électricité",
+  "slug": "fournisseur-delectricite",
+  "domains": [
+    "J"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Entreprise qui commercialise l'électricité produite ou achetée auprès des consommateurs raccordés au réseau électrique."
+  },
+  "related": [
+    "electricite",
+    "facture-delectricite",
+    "reseau-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

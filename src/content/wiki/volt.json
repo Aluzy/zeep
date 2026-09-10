@@ -1,0 +1,22 @@
+{
+  "term": "Volt",
+  "slug": "volt",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Unité de mesure de la tension électrique dans le Système international, symbole V."
+  },
+  "related": [
+    "tension-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

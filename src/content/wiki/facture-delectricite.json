@@ -1,0 +1,26 @@
+{
+  "term": "Facture d'électricité",
+  "slug": "facture-delectricite",
+  "domains": [
+    "J"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Document émis par le fournisseur d'électricité indiquant le montant à payer en fonction de la consommation électrique relevée par le compteur électrique."
+  },
+  "related": [
+    "compteur-electrique",
+    "consommation-electrique",
+    "electricite",
+    "fournisseur-delectricite",
+    "kilowattheure"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,27 @@
+{
+  "term": "Générateur électrique",
+  "slug": "generateur-electrique",
+  "domains": [
+    "B"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Dispositif qui produit de l'électricité à partir d'une autre forme d'énergie, comme un alternateur ou une dynamo."
+  },
+  "related": [
+    "alternateur",
+    "dynamo",
+    "electricite",
+    "eolienne",
+    "moteur-electrique",
+    "pile-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

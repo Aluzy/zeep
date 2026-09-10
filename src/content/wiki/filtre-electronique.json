@@ -1,0 +1,27 @@
+{
+  "term": "Filtre électronique",
+  "slug": "filtre-electronique",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit électronique, composé de résistances, de condensateurs ou de bobines, qui sélectionne certaines fréquences d'un signal analogique et en atténue d'autres."
+  },
+  "related": [
+    "bruit-electronique",
+    "electronique",
+    "filtre-passe-bande",
+    "filtre-passe-bas",
+    "filtre-passe-haut",
+    "signal-analogique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,24 @@
+{
+  "term": "Électron",
+  "slug": "electron",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Particule élémentaire chargée négativement dont le déplacement dans un conducteur électrique constitue le courant électrique."
+  },
+  "related": [
+    "charge-electrique",
+    "conducteur-electrique",
+    "courant-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

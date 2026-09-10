@@ -1,0 +1,26 @@
+{
+  "term": "Production d'électricité",
+  "slug": "production-delectricite",
+  "domains": [
+    "B"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ensemble des activités consistant à générer du courant électrique dans une centrale électrique, à partir d'une source d'énergie renouvelable ou fossile."
+  },
+  "related": [
+    "alternateur",
+    "centrale-electrique",
+    "courant-electrique",
+    "energie-renouvelable",
+    "reseau-intelligent-smart-grid"
+  ],
+  "pillar": false,
+  "illustration": null
+}

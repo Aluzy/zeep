@@ -1,0 +1,24 @@
+{
+  "term": "Pile électrique",
+  "slug": "pile-electrique",
+  "domains": [
+    "D"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Générateur électrique non rechargeable qui transforme l'énergie chimique en énergie électrique, à la différence d'un accumulateur, et souvent associée à d'autres pour former une batterie."
+  },
+  "related": [
+    "accumulateur",
+    "batterie",
+    "generateur-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

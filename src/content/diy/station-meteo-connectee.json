@@ -1,0 +1,26 @@
+{
+  "slug": "station-meteo-connectee",
+  "title": "Station météo connectée (ESP32 + capteurs)",
+  "level": "intermediaire",
+  "domain": "Q",
+  "duration": "2 à 3 heures",
+  "excerpt": "Mesurer température et pression et envoyer les données par Wi-Fi : un projet complet qui combine capteurs, microcontrôleur et objets connectés.",
+  "related": ["capteur-de-temperature", "capteur-de-pression", "wi-fi", "bus-i2c", "objet-connecte-iot"],
+  "videos": [
+    { "label": "Vidéo de démonstration", "url": "" }
+  ],
+  "composants": [
+    { "nom": "Carte ESP32", "quantite": "1", "liens": [] },
+    { "nom": "Capteur de température/pression (type BME280)", "quantite": "1", "liens": [] },
+    { "nom": "Câbles de câblage", "quantite": "1 lot", "liens": [] },
+    { "nom": "Plaque d'essai", "quantite": "1", "liens": [] }
+  ],
+  "etapes": [
+    "Relier le capteur à l'ESP32 via le bus I2C (2 fils de données seulement, plus alimentation et masse).",
+    "Programmer l'ESP32 pour lire périodiquement la température et la pression fournies par le capteur.",
+    "Connecter l'ESP32 au Wi-Fi et envoyer les mesures vers un service en ligne ou un simple tableau de bord local.",
+    "Ajouter un écran ou une LED pour afficher un état simple (ex. alerte si la pression chute fortement)."
+  ],
+  "notionsWiki": ["Capteur de température", "Capteur de pression", "Bus I2C", "Wi-Fi", "Objet connecté (IoT)"],
+  "pourAllerPlusLoin": "Ajouter un capteur d'humidité et faire tourner la station sur batterie avec un mode basse consommation."
+}

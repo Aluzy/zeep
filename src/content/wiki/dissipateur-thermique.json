@@ -1,0 +1,26 @@
+{
+  "term": "Dissipateur thermique",
+  "slug": "dissipateur-thermique",
+  "domains": [
+    "U"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Pièce métallique fixée sur un composant électronique, comme un transistor ou un processeur, pour évacuer la chaleur qu'il produit."
+  },
+  "related": [
+    "composant-electronique",
+    "electronique",
+    "processeur-cpu",
+    "transistor",
+    "ventilateur-de-refroidissement"
+  ],
+  "pillar": false,
+  "illustration": null
+}

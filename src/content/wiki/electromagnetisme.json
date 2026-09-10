@@ -1,0 +1,24 @@
+{
+  "term": "Électromagnétisme",
+  "slug": "electromagnetisme",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Branche de la physique qui étudie les relations entre le champ électrique, le champ magnétique et le courant électrique."
+  },
+  "related": [
+    "champ-electrique",
+    "champ-magnetique",
+    "courant-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

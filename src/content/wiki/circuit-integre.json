@@ -1,0 +1,28 @@
+{
+  "term": "Circuit intégré",
+  "slug": "circuit-integre",
+  "domains": [
+    "N"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ensemble de composants électroniques, comme des transistors et des résistances, gravés sur une même puce de silicium pour réaliser une fonction électronique complexe."
+  },
+  "related": [
+    "amplificateur-operationnel",
+    "asic",
+    "electronique",
+    "fpga",
+    "microcontroleur",
+    "microprocesseur",
+    "silicium"
+  ],
+  "pillar": false,
+  "illustration": null
+}

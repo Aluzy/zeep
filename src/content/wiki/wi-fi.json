@@ -1,0 +1,24 @@
+{
+  "term": "Wi-Fi",
+  "slug": "wi-fi",
+  "domains": [
+    "Q"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Protocole de communication radiofréquence permettant de relier sans fil des objets connectés à un réseau local ou à Internet."
+  },
+  "related": [
+    "emetteur-radiofrequence",
+    "objet-connecte-iot",
+    "protocole-de-communication"
+  ],
+  "pillar": true,
+  "illustration": null
+}

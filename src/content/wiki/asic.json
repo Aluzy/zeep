@@ -1,0 +1,24 @@
+{
+  "term": "ASIC",
+  "slug": "asic",
+  "domains": [
+    "N"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit intégré conçu sur mesure pour une fonction spécifique, par opposition à un FPGA reconfigurable ou à un microcontrôleur générique."
+  },
+  "related": [
+    "circuit-integre",
+    "fpga",
+    "microcontroleur"
+  ],
+  "pillar": false,
+  "illustration": null
+}

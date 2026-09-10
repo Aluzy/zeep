@@ -1,0 +1,23 @@
+{
+  "term": "Antenne",
+  "slug": "antenne",
+  "domains": [
+    "R"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Élément qui convertit un signal électrique en onde radiofréquence, ou inversement, utilisé par un émetteur radiofréquence ou un récepteur radiofréquence."
+  },
+  "related": [
+    "emetteur-radiofrequence",
+    "recepteur-radiofrequence"
+  ],
+  "pillar": false,
+  "illustration": null
+}

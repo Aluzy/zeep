@@ -1,0 +1,24 @@
+{
+  "term": "Convertisseur numérique-analogique (CNA)",
+  "slug": "convertisseur-numerique-analogique-cna",
+  "domains": [
+    "L"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit qui transforme un signal numérique en signal analogique, opération inverse de celle du convertisseur analogique-numérique."
+  },
+  "related": [
+    "convertisseur-analogique-numerique-can",
+    "signal-analogique",
+    "signal-numerique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,24 @@
+{
+  "term": "Panneau photovoltaïque",
+  "slug": "panneau-photovoltaique",
+  "domains": [
+    "B"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Dispositif composé de cellules qui convertit directement la lumière du soleil en courant continu, une forme d'énergie renouvelable."
+  },
+  "related": [
+    "courant-continu",
+    "energie-renouvelable",
+    "onduleur"
+  ],
+  "pillar": true,
+  "illustration": null
+}

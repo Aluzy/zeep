@@ -1,0 +1,25 @@
+{
+  "term": "Prototypage électronique",
+  "slug": "prototypage-electronique",
+  "domains": [
+    "V"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Étape de conception qui consiste à assembler et tester un circuit électronique, souvent sur une plaque d'essai, avant de réaliser un circuit imprimé définitif."
+  },
+  "related": [
+    "carte-arduino",
+    "circuit-imprime-pcb",
+    "electronique",
+    "plaque-dessai-breadboard"
+  ],
+  "pillar": false,
+  "illustration": null
+}

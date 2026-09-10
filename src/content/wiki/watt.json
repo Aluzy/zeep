@@ -1,0 +1,22 @@
+{
+  "term": "Watt",
+  "slug": "watt",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Unité de mesure de la puissance électrique, correspondant à un joule d'énergie transféré par seconde."
+  },
+  "related": [
+    "puissance-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

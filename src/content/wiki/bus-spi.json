@@ -1,0 +1,24 @@
+{
+  "term": "Bus SPI",
+  "slug": "bus-spi",
+  "domains": [
+    "O"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Protocole de communication série synchrone à haut débit utilisé pour relier un microcontrôleur à des composants électroniques comme une mémoire ou un capteur."
+  },
+  "related": [
+    "capteur",
+    "microcontroleur",
+    "protocole-de-communication"
+  ],
+  "pillar": false,
+  "illustration": null
+}

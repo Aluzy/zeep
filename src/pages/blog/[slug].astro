@@ -1,0 +1,38 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { TAXONOMY, domainGroup } from "../../lib/helpers";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  const wiki = await getCollection("wiki");
+  return posts.map((p) => ({ params: { slug: p.slug }, props: { post: p, wiki } }));
+}
+
+const { post, wiki } = Astro.props;
+const BASE = import.meta.env.BASE_URL;
+const { Content } = await post.render();
+const group = domainGroup([post.data.domain]);
+const byId = Object.fromEntries(wiki.map((x: any) => [x.data.slug, x.data]));
+const related = (post.data.related || []).map((s: string) => byId[s]).filter(Boolean);
+---
+<Base title={post.data.title} description={post.data.excerpt} group={group} active="blog">
+  <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}blog/`}>Blog</a> / {post.data.title}</div>
+  <article class="post-body">
+    <div class="chip-row" style="margin-bottom:16px;">
+      <a href={`${BASE}wiki/?domain=${post.data.domain}`} class="chip is-accent">{TAXONOMY[post.data.domain] || post.data.domain}</a>
+    </div>
+    <h1 style="font-size:30px;margin:0 0 24px;line-height:1.25;">{post.data.title}</h1>
+    <Content />
+  </article>
+  {related.length > 0 && (
+    <div class="related-block">
+      <h2>Notions du wiki citées dans cet article</h2>
+      <div class="pins">
+        {related.map((r: any) => (
+          <a class="pin" href={`${BASE}wiki/${r.slug}/`}><span class="dot"></span>{r.term}</a>
+        ))}
+      </div>
+    </div>
+  )}
+</Base>

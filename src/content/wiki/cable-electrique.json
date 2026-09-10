@@ -1,0 +1,22 @@
+{
+  "term": "Câble électrique",
+  "slug": "cable-electrique",
+  "domains": [
+    "E"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ensemble de fils électriques regroupés et protégés par une gaine isolante, servant au transport du courant électrique."
+  },
+  "related": [
+    "courant-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

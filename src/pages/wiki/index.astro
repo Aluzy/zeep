@@ -1,0 +1,37 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { TAXONOMY } from "../../lib/helpers";
+
+const BASE = import.meta.env.BASE_URL;
+const wikiRaw = await getCollection("wiki");
+const wiki = [...wikiRaw].sort((a, b) => a.data.term.localeCompare(b.data.term, "fr"));
+---
+<Base title="Wiki" description="Glossaire interconnecté d'électricité et d'électronique" group="neutre" active="wiki">
+  <div class="breadcrumb"><a href={BASE}>Accueil</a> / Wiki</div>
+  <h1 style="margin:0 0 6px;font-size:26px;">Le wiki — {wiki.length} termes reliés entre eux</h1>
+  <p style="color:var(--text-dim);max-width:640px;margin:0 0 26px;">Cherche un mot-clé ou filtre par domaine. Chaque page renvoie vers les notions voisines, comme sur un plan de circuit.</p>
+  <div class="wiki-toolbar">
+    <input id="wiki-search" class="search" type="text" placeholder="Rechercher un terme…" />
+  </div>
+  <div class="domain-filters">
+    <button type="button" data-domain="all" class="active">Tous</button>
+    {Object.entries(TAXONOMY).map(([code, name]) => (
+      <button type="button" data-domain={code} title={name}>{code}</button>
+    ))}
+  </div>
+  <div class="term-grid" id="term-grid">
+    {wiki.map((t) => {
+      const def = (t.data.definitions.lycee_adultes || "").replace(/<[^>]+>/g, "").slice(0, 130);
+      return (
+        <a class="term-tile" href={`${BASE}wiki/${t.data.slug}/`} data-term={t.data.term} data-domains={t.data.domains.join(",")}>
+          <div class="tname">{t.data.term}</div>
+          <div class="tdef">{def}{def.length >= 130 ? "…" : ""}</div>
+          <div class="tmeta chip-row">
+            {t.data.domains.map((d) => <span class="chip">{d}</span>)}
+          </div>
+        </a>
+      );
+    })}
+  </div>
+</Base>

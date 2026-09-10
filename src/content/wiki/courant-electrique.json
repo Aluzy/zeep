@@ -1,0 +1,45 @@
+{
+  "term": "Courant électrique",
+  "slug": "courant-electrique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Déplacement ordonné de charges électriques dans un conducteur électrique, mesuré en ampères et caractérisé par son intensité électrique."
+  },
+  "related": [
+    "accumulateur",
+    "alimentation-electrique",
+    "cable-electrique",
+    "champ-magnetique",
+    "charge-electrique",
+    "circuit-electrique",
+    "circuit-ferme",
+    "circuit-ouvert",
+    "conducteur-electrique",
+    "conductivite-electrique",
+    "courant-alternatif",
+    "courant-continu",
+    "disjoncteur",
+    "electromagnetisme",
+    "electron",
+    "intensite-electrique",
+    "interrupteur",
+    "isolant-electrique",
+    "neutre",
+    "phase-electrique",
+    "production-delectricite",
+    "resistance-electrique",
+    "resistivite",
+    "tension-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

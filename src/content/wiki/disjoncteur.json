@@ -1,0 +1,25 @@
+{
+  "term": "Disjoncteur",
+  "slug": "disjoncteur",
+  "domains": [
+    "E"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Dispositif de protection d'un circuit électrique qui coupe automatiquement le courant électrique en cas de court-circuit ou de surcharge, installé dans le tableau électrique."
+  },
+  "related": [
+    "circuit-electrique",
+    "courant-electrique",
+    "court-circuit",
+    "tableau-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

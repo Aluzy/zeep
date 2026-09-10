@@ -1,0 +1,22 @@
+{
+  "term": "Interface série (UART)",
+  "slug": "interface-serie-uart",
+  "domains": [
+    "O"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Protocole de communication qui transmet des données bit par bit de façon séquentielle entre deux composants électroniques."
+  },
+  "related": [
+    "protocole-de-communication"
+  ],
+  "pillar": false,
+  "illustration": null
+}

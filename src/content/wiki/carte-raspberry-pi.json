@@ -1,0 +1,25 @@
+{
+  "term": "Carte Raspberry Pi",
+  "slug": "carte-raspberry-pi",
+  "domains": [
+    "O"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Carte électronique compacte intégrant un microprocesseur complet, capable de faire fonctionner un système d'exploitation, utilisée en électronique embarquée et pour les objets connectés."
+  },
+  "related": [
+    "carte-electronique",
+    "electronique",
+    "electronique-embarquee",
+    "microprocesseur"
+  ],
+  "pillar": true,
+  "illustration": null
+}

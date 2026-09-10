@@ -1,0 +1,23 @@
+{
+  "term": "Plaque d'essai (breadboard)",
+  "slug": "plaque-dessai-breadboard",
+  "domains": [
+    "V"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Support réutilisable sans soudure permettant d'assembler rapidement un circuit électronique pour le prototypage électronique."
+  },
+  "related": [
+    "electronique",
+    "prototypage-electronique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

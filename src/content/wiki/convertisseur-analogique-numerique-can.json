@@ -1,0 +1,26 @@
+{
+  "term": "Convertisseur analogique-numérique (CAN)",
+  "slug": "convertisseur-analogique-numerique-can",
+  "domains": [
+    "L"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit qui transforme un signal analogique en signal numérique exploitable par un processeur ou un microcontrôleur."
+  },
+  "related": [
+    "convertisseur-numerique-analogique-cna",
+    "microcontroleur",
+    "processeur-cpu",
+    "signal-analogique",
+    "signal-numerique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

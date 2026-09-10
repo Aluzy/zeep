@@ -1,0 +1,22 @@
+{
+  "term": "Isolant électrique",
+  "slug": "isolant-electrique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Matériau qui empêche ou limite fortement le passage du courant électrique, utilisé pour protéger les conducteurs électriques."
+  },
+  "related": [
+    "courant-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

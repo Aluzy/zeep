@@ -1,0 +1,24 @@
+{
+  "term": "Bascule (flip-flop)",
+  "slug": "bascule-flip-flop",
+  "domains": [
+    "L"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit logique élémentaire capable de mémoriser un bit d'information, utilisé pour construire la mémoire vive et les compteurs numériques."
+  },
+  "related": [
+    "circuit-logique",
+    "frequence-de-commutation",
+    "memoire-vive-ram"
+  ],
+  "pillar": false,
+  "illustration": null
+}

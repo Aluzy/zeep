@@ -1,0 +1,23 @@
+{
+  "term": "Prise de terre",
+  "slug": "prise-de-terre",
+  "domains": [
+    "E"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Dispositif enfoui dans le sol assurant la mise à la terre d'une installation électrique."
+  },
+  "related": [
+    "installation-electrique",
+    "mise-a-la-terre"
+  ],
+  "pillar": false,
+  "illustration": null
+}

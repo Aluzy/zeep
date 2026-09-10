@@ -1,0 +1,49 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+import { TAXONOMY, domainGroup } from "../../lib/helpers";
+
+export async function getStaticPaths() {
+  const wiki = await getCollection("wiki");
+  return wiki.map((t) => ({ params: { slug: t.data.slug }, props: { entry: t, all: wiki } }));
+}
+
+interface Props {
+  entry: CollectionEntry<"wiki">;
+  all: CollectionEntry<"wiki">[];
+}
+const { entry, all } = Astro.props as Props;
+const t = entry.data;
+const BASE = import.meta.env.BASE_URL;
+const group = domainGroup(t.domains);
+const byId = Object.fromEntries(all.map((x) => [x.data.slug, x.data]));
+const related = t.related.map((s) => byId[s]).filter(Boolean);
+const defsJson = JSON.stringify(t.definitions).replace(/"/g, "&quot;");
+---
+<Base title={t.term} description={(t.definitions.lycee_adultes || "").replace(/<[^>]+>/g, "").slice(0, 160)} group={group} active="wiki">
+  <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}wiki/`}>Wiki</a> / {t.term}</div>
+  <div class="term-card">
+    <p class="tag">N° {t.slug}{t.merged ? " · terme commun électricité/électronique" : ""}</p>
+    <h1>{t.term}</h1>
+    <div class="chip-row" style="margin-bottom:20px;">
+      {t.domains.map((d) => (
+        <a href={`${BASE}wiki/?domain=${d}`} class="chip is-accent">{TAXONOMY[d] || d}</a>
+      ))}
+    </div>
+    <div class="age-note"></div>
+    <div class="definition" data-defs={defsJson}></div>
+    <div class="illustration-slot">
+      {t.illustration
+        ? <img src={t.illustration} alt={t.term} />
+        : (t.pillar ? "🎨 Illustration prioritaire (concept socle) — à venir" : "🎨 Illustration — à venir")}
+    </div>
+    <div class="related-block">
+      <h2>Termes liés ({related.length})</h2>
+      <div class="pins">
+        {related.length > 0 ? related.map((r) => (
+          <a class="pin" href={`${BASE}wiki/${r.slug}/`}><span class="dot"></span>{r.term}</a>
+        )) : <span style="color:var(--text-faint);font-size:13px;">Aucun terme relié pour l'instant.</span>}
+      </div>
+    </div>
+  </div>
+</Base>

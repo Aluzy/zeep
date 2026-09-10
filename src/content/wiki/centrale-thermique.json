@@ -1,0 +1,25 @@
+{
+  "term": "Centrale thermique",
+  "slug": "centrale-thermique",
+  "domains": [
+    "B"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Centrale électrique qui produit de l'électricité en brûlant une énergie fossile ou de la biomasse pour actionner une turbine."
+  },
+  "related": [
+    "centrale-electrique",
+    "electricite",
+    "energie-fossile",
+    "turbine"
+  ],
+  "pillar": false,
+  "illustration": null
+}

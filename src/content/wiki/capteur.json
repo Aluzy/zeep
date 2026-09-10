@@ -1,0 +1,31 @@
+{
+  "term": "Capteur",
+  "slug": "capteur",
+  "domains": [
+    "S"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Composant électronique qui transforme une grandeur physique, comme la température ou la pression, en signal analogique ou numérique exploitable par un microcontrôleur."
+  },
+  "related": [
+    "bus-spi",
+    "capteur-de-pression",
+    "capteur-de-temperature",
+    "capteur-optique",
+    "composant-electronique",
+    "electronique",
+    "microcontroleur",
+    "photodiode",
+    "phototransistor",
+    "signal-analogique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

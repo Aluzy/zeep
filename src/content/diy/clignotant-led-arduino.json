@@ -1,0 +1,28 @@
+{
+  "slug": "clignotant-led-arduino",
+  "title": "Clignotant LED avec Arduino",
+  "level": "debutant",
+  "domain": "O",
+  "duration": "30 minutes",
+  "excerpt": "Le projet le plus classique pour commencer : faire clignoter une LED et comprendre comment un microcontrôleur pilote un composant électronique.",
+  "related": ["carte-arduino", "diode-electroluminescente-led", "resistance", "circuit-electrique"],
+  "videos": [
+    { "label": "Vidéo de démonstration", "url": "" }
+  ],
+  "composants": [
+    { "nom": "Carte Arduino (Uno ou compatible)", "quantite": "1", "liens": [] },
+    { "nom": "LED", "quantite": "1", "liens": [] },
+    { "nom": "Résistance 220 Ω", "quantite": "1", "liens": [] },
+    { "nom": "Plaque d'essai (breadboard)", "quantite": "1", "liens": [] },
+    { "nom": "Fils de câblage", "quantite": "2", "liens": [] }
+  ],
+  "etapes": [
+    "Placer la LED sur la plaque d'essai, la patte la plus longue (anode) reliée à une piste libre.",
+    "Relier cette piste à la résistance de 220 Ω, puis la résistance à une broche numérique de l'Arduino (par exemple la broche 13).",
+    "Relier la patte courte de la LED (cathode) à la broche GND (masse) de l'Arduino.",
+    "Téléverser un programme qui allume la broche 13 pendant une seconde, puis l'éteint pendant une seconde, en boucle.",
+    "Observer la LED clignoter : c'est le microcontrôleur qui fait basculer l'état de la broche entre 0V et 5V à un rythme régulier."
+  ],
+  "notionsWiki": ["Carte Arduino", "Diode électroluminescente (LED)", "Résistance", "Circuit électrique"],
+  "pourAllerPlusLoin": "Remplacer le délai fixe par une lecture de capteur de luminosité pour que la LED ne clignote que dans le noir."
+}

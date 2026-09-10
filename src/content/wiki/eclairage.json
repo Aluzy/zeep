@@ -1,0 +1,24 @@
+{
+  "term": "Éclairage",
+  "slug": "eclairage",
+  "domains": [
+    "I"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ensemble des dispositifs, comme les luminaires et les ampoules LED, qui utilisent l'électricité pour produire de la lumière."
+  },
+  "related": [
+    "domotique",
+    "electricite",
+    "luminaire"
+  ],
+  "pillar": true,
+  "illustration": null
+}

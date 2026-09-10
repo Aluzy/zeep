@@ -1,0 +1,86 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+import { LEVEL_LABEL, TAXONOMY, domainGroup } from "../../lib/helpers";
+import { toEmbedUrl } from "../../lib/video";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("diy");
+  const wiki = await getCollection("wiki");
+  return projects.map((d) => ({ params: { slug: d.data.slug }, props: { project: d, wiki } }));
+}
+
+interface Props {
+  project: CollectionEntry<"diy">;
+  wiki: CollectionEntry<"wiki">[];
+}
+const { project, wiki } = Astro.props as Props;
+const d = project.data;
+const BASE = import.meta.env.BASE_URL;
+const group = domainGroup([d.domain]);
+const byId = Object.fromEntries(wiki.map((x) => [x.data.slug, x.data]));
+const related = (d.related || []).map((s) => byId[s]).filter(Boolean);
+const videos = (d.videos || []).filter((v) => v.url);
+---
+<Base title={d.title} description={d.excerpt} group={group} active="diy">
+  <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}projets-diy/`}>Projets DIY</a> / {d.title}</div>
+  <article class="diy-body">
+    <div class="chip-row" style="margin-bottom:16px;">
+      <span class={`level-badge level-${d.level}`}>{LEVEL_LABEL[d.level]}</span>
+      <span class="chip">{d.duration}</span>
+      <a href={`${BASE}wiki/?domain=${d.domain}`} class="chip is-accent">{TAXONOMY[d.domain] || d.domain}</a>
+    </div>
+    <h1 style="font-size:30px;margin:0 0 10px;line-height:1.25;">{d.title}</h1>
+    <p style="color:var(--text-dim);font-size:16px;">{d.excerpt}</p>
+
+    {videos.length > 0 && (
+      <div class="video-block">
+        <h2>Vidéo</h2>
+        {videos.map((v) => {
+          const embed = toEmbedUrl(v.url);
+          return embed ? (
+            <div class="video-embed"><iframe src={embed} title={v.label} allowfullscreen loading="lazy"></iframe></div>
+          ) : (
+            <a class="video-link" href={v.url} target="_blank" rel="noopener">{v.label} ↗</a>
+          );
+        })}
+      </div>
+    )}
+
+    <h2>Matériel &amp; sourcing</h2>
+    {d.composants.length > 0 ? (
+      <table class="components-table">
+        <thead><tr><th>Composant</th><th>Quantité</th><th>Où l'acheter</th></tr></thead>
+        <tbody>
+          {d.composants.map((c) => (
+            <tr>
+              <td>{c.nom}</td>
+              <td>{c.quantite}</td>
+              <td>
+                {c.liens && c.liens.length > 0 ? (
+                  <div class="buy-links">
+                    {c.liens.map((l) => <a href={l.url} target="_blank" rel="noopener sponsored">{l.label}</a>)}
+                  </div>
+                ) : <span class="no-link">liens à venir</span>}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ) : null}
+
+    <h2>Étapes</h2>
+    <ol>{d.etapes.map((e) => <li>{e}</li>)}</ol>
+
+    <h2>Pour aller plus loin</h2>
+    <p>{d.pourAllerPlusLoin}</p>
+  </article>
+  {related.length > 0 && (
+    <div class="related-block">
+      <h2>Notions du wiki mobilisées</h2>
+      <div class="pins">
+        {related.map((r) => <a class="pin" href={`${BASE}wiki/${r.slug}/`}><span class="dot"></span>{r.term}</a>)}
+      </div>
+    </div>
+  )}
+</Base>

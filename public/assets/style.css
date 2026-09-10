@@ -1,0 +1,248 @@
+/* ============================================================
+   Système de design unifié — Wiki & Blog Électricité/Électronique
+   Fusionne les deux thèmes des prototypes d'origine (cuivre/électricité
+   et or/électronique) en un seul système, avec l'accent qui change
+   selon le domaine de la page consultée.
+   ============================================================ */
+
+:root{
+  --bg:#0B0F1A;
+  --panel:#131A2B;
+  --panel-alt:#192237;
+  --border:rgba(180,190,210,0.16);
+  --border-strong:rgba(180,190,210,0.28);
+  --text:#ECEAE2;
+  --text-dim:#8B96AC;
+  --text-faint:#5B6478;
+
+  --copper:#C97D4A;
+  --copper-dim:rgba(201,125,74,0.16);
+  --gold:#D4A537;
+  --gold-dim:rgba(212,165,55,0.16);
+  --amber:#F0C25A;
+  --neutral-accent:#9AA6C4;
+  --neutral-dim:rgba(154,166,196,0.16);
+
+  --accent:var(--amber);
+  --accent-dim:rgba(240,194,90,0.14);
+
+  --font-sans:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --font-mono:ui-monospace,'SFMono-Regular','Menlo','Consolas','Liberation Mono',monospace;
+
+  --radius:4px;
+  --max-width:1180px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-sans);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Textures de fond par groupe de domaine : grille (électricité),
+   pointillés (électronique), neutre (accueil / histoire-métiers) */
+body[data-group="electricite"]{
+  --accent:var(--copper);
+  --accent-dim:var(--copper-dim);
+  background-image:
+    linear-gradient(rgba(201,125,74,0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,125,74,0.055) 1px, transparent 1px);
+  background-size:28px 28px;
+}
+body[data-group="electronique"]{
+  --accent:var(--gold);
+  --accent-dim:var(--gold-dim);
+  background-image:radial-gradient(rgba(212,165,55,0.14) 1.3px, transparent 1.3px);
+  background-size:22px 22px;
+}
+body[data-group="neutre"]{
+  --accent:var(--amber);
+  --accent-dim:rgba(240,194,90,0.12);
+}
+
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+
+/* ---------- Layout ---------- */
+.shell{max-width:var(--max-width);margin:0 auto;padding:0 24px;}
+
+header.site-header{
+  border-bottom:1px solid var(--border);
+  background:rgba(11,15,26,0.85);
+  backdrop-filter:blur(6px);
+  position:sticky;top:0;z-index:50;
+}
+.site-header .bar{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:14px 0;
+}
+.brand{display:flex;align-items:baseline;gap:8px;font-weight:700;font-size:16px;}
+.brand .spark{color:var(--accent);font-family:var(--font-mono);}
+nav.main-nav{display:flex;gap:22px;font-size:14px;}
+nav.main-nav a{color:var(--text-dim);padding:6px 2px;border-bottom:2px solid transparent;}
+nav.main-nav a:hover, nav.main-nav a.active{color:var(--text);border-bottom-color:var(--accent);}
+
+.age-switcher{display:flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11px;}
+.age-switcher span.label{color:var(--text-faint);margin-right:4px;}
+.age-switcher button{
+  background:var(--panel);border:1px solid var(--border);color:var(--text-dim);
+  font-family:var(--font-mono);font-size:11px;padding:6px 9px;border-radius:var(--radius);cursor:pointer;
+}
+.age-switcher button.active{color:var(--bg);background:var(--accent);border-color:var(--accent);font-weight:600;}
+
+main{padding:40px 0 80px;min-height:60vh;}
+
+footer.site-footer{
+  border-top:1px solid var(--border);
+  padding:30px 0;color:var(--text-faint);font-size:12.5px;
+}
+
+/* ---------- Boutons / pins ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--panel);border:1px solid var(--border-strong);color:var(--accent);
+  font-family:var(--font-mono);font-size:13px;padding:10px 16px;border-radius:var(--radius);
+  cursor:pointer;
+}
+.btn:hover{border-color:var(--accent);}
+
+.pin{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--panel);border:1px solid var(--border);color:var(--text);
+  font-size:13px;padding:8px 12px 8px 10px;border-radius:var(--radius);
+  transition:border-color .12s ease,color .12s ease;
+}
+.pin .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none;}
+.pin:hover{border-color:var(--accent);color:var(--accent);}
+
+.chip{
+  display:inline-flex;align-items:center;font-family:var(--font-mono);font-size:11px;
+  color:var(--text-dim);border:1px solid var(--border);padding:4px 9px;border-radius:99px;
+}
+.chip.is-accent{color:var(--accent);border-color:var(--accent-dim);background:var(--accent-dim);}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;}
+
+/* ---------- Hero / accueil ---------- */
+.hero{padding:50px 0 20px;}
+.hero h1{font-size:34px;line-height:1.25;max-width:680px;margin:0 0 16px;}
+.hero p.lead{color:var(--text-dim);font-size:16px;max-width:600px;line-height:1.75;}
+.hero .cta-row{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;}
+
+.zone-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px;}
+@media (max-width:760px){.zone-grid{grid-template-columns:1fr;}}
+.zone-card{
+  border:1px solid var(--border-strong);border-radius:8px;padding:26px;
+  background:var(--panel);
+}
+.zone-card.electricite{border-top:3px solid var(--copper);}
+.zone-card.electronique{border-top:3px solid var(--gold);}
+.zone-card h2{margin:0 0 10px;font-size:20px;}
+.zone-card p{color:var(--text-dim);font-size:14px;line-height:1.7;}
+.zone-card .go{margin-top:14px;display:inline-block;font-family:var(--font-mono);font-size:12.5px;}
+.zone-card.electricite .go{color:var(--copper);}
+.zone-card.electronique .go{color:var(--gold);}
+
+.stat-row{display:flex;gap:34px;margin-top:36px;flex-wrap:wrap;}
+.stat{font-family:var(--font-mono);}
+.stat .num{font-size:24px;color:var(--accent);font-weight:600;}
+.stat .lbl{font-size:11px;color:var(--text-faint);text-transform:uppercase;letter-spacing:.05em;}
+
+/* ---------- Wiki index ---------- */
+.wiki-toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:22px;}
+.search{
+  flex:1;min-width:220px;background:var(--panel-alt);border:1px solid var(--border);color:var(--text);
+  font-family:var(--font-mono);font-size:13px;padding:10px 12px;border-radius:var(--radius);outline:none;
+}
+.search:focus{border-color:var(--accent);}
+.domain-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px;}
+.domain-filters button{
+  font-family:var(--font-mono);font-size:11px;color:var(--text-dim);
+  background:var(--panel);border:1px solid var(--border);padding:5px 10px;border-radius:99px;cursor:pointer;
+}
+.domain-filters button.active{color:var(--bg);background:var(--accent);border-color:var(--accent);}
+
+.term-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;}
+.term-tile{
+  border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;background:var(--panel);
+}
+.term-tile:hover{border-color:var(--accent);}
+.term-tile .tname{font-size:14.5px;font-weight:600;}
+.term-tile .tdef{font-size:12.5px;color:var(--text-dim);margin-top:6px;line-height:1.5;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.term-tile .tmeta{margin-top:10px;}
+
+/* ---------- Page terme ---------- */
+.breadcrumb{font-family:var(--font-mono);font-size:11px;color:var(--text-faint);margin-bottom:18px;}
+.breadcrumb a:hover{color:var(--accent);}
+.term-card .tag{font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:.03em;margin:0 0 10px;}
+.term-card h1{font-size:32px;font-weight:600;margin:0 0 18px;line-height:1.2;max-width:680px;}
+.age-note{
+  font-family:var(--font-mono);font-size:11.5px;color:var(--text-faint);
+  border:1px dashed var(--border-strong);padding:8px 12px;border-radius:var(--radius);
+  margin-bottom:16px;display:none;max-width:640px;
+}
+.age-note.show{display:block;}
+.definition{
+  font-size:16.5px;line-height:1.8;color:var(--text);max-width:660px;
+  border-left:2px solid var(--border-strong);padding-left:20px;
+}
+.definition strong{color:var(--accent);}
+.illustration-slot{
+  margin-top:28px;max-width:660px;border:1px dashed var(--border-strong);border-radius:8px;
+  padding:26px;color:var(--text-faint);font-size:12.5px;font-family:var(--font-mono);text-align:center;
+}
+.related-block{margin-top:36px;max-width:660px;}
+.related-block h2, .section-label{
+  font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;color:var(--text-dim);
+  font-weight:500;margin:0 0 14px;text-transform:uppercase;
+}
+.pins{display:flex;flex-wrap:wrap;gap:10px;}
+
+/* ---------- Blog / DIY listings ---------- */
+.post-list, .diy-list{display:flex;flex-direction:column;gap:16px;}
+.post-card, .diy-card{
+  border:1px solid var(--border);border-radius:8px;padding:22px 24px;background:var(--panel);
+}
+.post-card:hover, .diy-card:hover{border-color:var(--accent);}
+.post-card h3, .diy-card h3{margin:0 0 8px;font-size:19px;}
+.post-card p, .diy-card p{color:var(--text-dim);font-size:14px;line-height:1.7;margin:0 0 10px;}
+.post-meta, .diy-meta{display:flex;gap:10px;align-items:center;}
+
+.level-badge{font-family:var(--font-mono);font-size:10.5px;padding:3px 8px;border-radius:99px;border:1px solid var(--border);}
+.level-debutant{color:#7FCB8F;border-color:rgba(127,203,143,0.35);}
+.level-intermediaire{color:var(--amber);border-color:rgba(240,194,90,0.35);}
+.level-avance{color:#E88787;border-color:rgba(232,135,135,0.35);}
+
+article.post-body, article.diy-body{max-width:680px;}
+article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0 20px;}
+.diy-body h2{font-size:15px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.04em;color:var(--text-dim);margin:30px 0 12px;}
+.diy-body ul, .diy-body ol{padding-left:20px;line-height:1.85;font-size:15.5px;}
+.diy-body ol li{margin-bottom:8px;}
+
+/* ---------- Vidéos & sourcing (projets DIY) ---------- */
+.video-block{margin:24px 0;max-width:680px;}
+.video-embed{position:relative;padding-top:56.25%;border-radius:8px;overflow:hidden;border:1px solid var(--border-strong);background:var(--panel);}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.video-link{display:inline-block;color:var(--accent);font-size:14px;}
+
+.components-table{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:14.5px;}
+.components-table th{text-align:left;color:var(--text-faint);font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:0 10px 8px 0;font-weight:500;}
+.components-table td{padding:9px 10px 9px 0;border-top:1px solid var(--border);vertical-align:top;}
+.components-table .buy-links{display:flex;flex-wrap:wrap;gap:6px;}
+.components-table .buy-links a{
+  font-family:var(--font-mono);font-size:11.5px;color:var(--accent);
+  border:1px solid var(--accent-dim);background:var(--accent-dim);padding:3px 8px;border-radius:99px;
+}
+.components-table .no-link{color:var(--text-faint);font-size:12.5px;font-style:italic;}
+
+@media (max-width:760px){
+  nav.main-nav{display:none;}
+  .hero h1{font-size:26px;}
+  .term-card h1{font-size:26px;}
+  .components-table{font-size:13px;}
+}

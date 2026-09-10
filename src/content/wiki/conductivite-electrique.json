@@ -1,0 +1,23 @@
+{
+  "term": "Conductivité électrique",
+  "slug": "conductivite-electrique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Aptitude d'un matériau à laisser circuler le courant électrique, inverse de la résistivité."
+  },
+  "related": [
+    "courant-electrique",
+    "resistivite"
+  ],
+  "pillar": false,
+  "illustration": null
+}

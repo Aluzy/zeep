@@ -1,0 +1,24 @@
+{
+  "term": "Silicium",
+  "slug": "silicium",
+  "domains": [
+    "N"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Matériau semi-conducteur le plus utilisé en électronique, servant de base à la fabrication des circuits intégrés et des transistors."
+  },
+  "related": [
+    "circuit-integre",
+    "electronique",
+    "semi-conducteur"
+  ],
+  "pillar": false,
+  "illustration": null
+}

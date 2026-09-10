@@ -1,0 +1,29 @@
+{
+  "term": "Courant alternatif",
+  "slug": "courant-alternatif",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Courant électrique dont le sens et l'intensité varient périodiquement, caractérisé par sa fréquence électrique, utilisé sur le réseau électrique."
+  },
+  "related": [
+    "alternateur",
+    "convertisseur-de-frequence",
+    "courant-electrique",
+    "frequence-electrique",
+    "onduleur",
+    "redresseur",
+    "reseau-electrique",
+    "transformateur"
+  ],
+  "pillar": false,
+  "illustration": null
+}

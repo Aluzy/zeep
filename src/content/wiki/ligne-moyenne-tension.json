@@ -1,0 +1,22 @@
+{
+  "term": "Ligne moyenne tension",
+  "slug": "ligne-moyenne-tension",
+  "domains": [
+    "C"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ligne électrique assurant la distribution de l'électricité entre les postes de transformation et les zones de consommation locale."
+  },
+  "related": [
+    "electricite"
+  ],
+  "pillar": false,
+  "illustration": null
+}

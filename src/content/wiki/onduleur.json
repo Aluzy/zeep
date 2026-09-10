@@ -1,0 +1,26 @@
+{
+  "term": "Onduleur",
+  "slug": "onduleur",
+  "domains": [
+    "B",
+    "M"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Appareil qui convertit un courant continu, par exemple issu d'un panneau photovoltaïque ou d'une batterie, en courant alternatif."
+  },
+  "related": [
+    "batterie",
+    "courant-alternatif",
+    "courant-continu",
+    "panneau-photovoltaique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

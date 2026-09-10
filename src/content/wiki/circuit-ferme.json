@@ -1,0 +1,23 @@
+{
+  "term": "Circuit fermé",
+  "slug": "circuit-ferme",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "État d'un circuit électrique dont le trajet est complet, permettant au courant électrique de circuler normalement."
+  },
+  "related": [
+    "circuit-electrique",
+    "courant-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

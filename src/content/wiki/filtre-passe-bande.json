@@ -1,0 +1,25 @@
+{
+  "term": "Filtre passe-bande",
+  "slug": "filtre-passe-bande",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Filtre électronique qui ne laisse passer qu'une plage de fréquences comprise entre un filtre passe-bas et un filtre passe-haut."
+  },
+  "related": [
+    "electronique",
+    "filtre-electronique",
+    "filtre-passe-bas",
+    "filtre-passe-haut"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,23 @@
+{
+  "term": "Quartz (résonateur)",
+  "slug": "quartz-resonateur",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Composant qui vibre à une fréquence précise sous l'effet d'une tension, utilisé pour stabiliser un oscillateur dans un circuit numérique."
+  },
+  "related": [
+    "circuit-numerique",
+    "oscillateur"
+  ],
+  "pillar": false,
+  "illustration": null
+}

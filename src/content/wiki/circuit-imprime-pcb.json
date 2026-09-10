@@ -1,0 +1,27 @@
+{
+  "term": "Circuit imprimé (PCB)",
+  "slug": "circuit-imprime-pcb",
+  "domains": [
+    "N"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Support isolant sur lequel sont gravées des pistes conductrices reliant les composants électroniques d'une carte électronique."
+  },
+  "related": [
+    "carte-electronique",
+    "composant-electronique",
+    "electronique",
+    "fer-a-souder",
+    "prototypage-electronique",
+    "soudure-electronique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

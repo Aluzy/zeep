@@ -1,0 +1,23 @@
+{
+  "term": "Bus I2C",
+  "slug": "bus-i2c",
+  "domains": [
+    "O"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Protocole de communication série synchrone permettant de relier plusieurs composants électroniques, comme des capteurs, à un microcontrôleur avec seulement deux fils."
+  },
+  "related": [
+    "microcontroleur",
+    "protocole-de-communication"
+  ],
+  "pillar": false,
+  "illustration": null
+}

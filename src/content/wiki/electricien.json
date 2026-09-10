@@ -1,0 +1,23 @@
+{
+  "term": "Électricien",
+  "slug": "electricien",
+  "domains": [
+    "X"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Professionnel qualifié qui conçoit, installe, entretient ou répare une installation électrique."
+  },
+  "related": [
+    "installation-electrique",
+    "norme-electrique-nf-c-15-100"
+  ],
+  "pillar": false,
+  "illustration": null
+}

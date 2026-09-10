@@ -1,0 +1,28 @@
+{
+  "term": "Mémoire vive (RAM)",
+  "slug": "memoire-vive-ram",
+  "domains": [
+    "N"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Mémoire électronique volatile qui stocke temporairement les données utilisées par un processeur pendant son fonctionnement."
+  },
+  "related": [
+    "bascule-flip-flop",
+    "bus-de-donnees",
+    "carte-mere",
+    "electronique",
+    "memoire-morte-rom",
+    "microcontroleur",
+    "processeur-cpu"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,24 @@
+{
+  "term": "Poste de transformation",
+  "slug": "poste-de-transformation",
+  "domains": [
+    "C"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Installation équipée de transformateurs qui adapte la tension électrique entre le réseau de transport et le réseau de distribution."
+  },
+  "related": [
+    "reseau-de-distribution",
+    "reseau-de-transport",
+    "tension-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

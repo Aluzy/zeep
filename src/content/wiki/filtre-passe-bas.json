@@ -1,0 +1,24 @@
+{
+  "term": "Filtre passe-bas",
+  "slug": "filtre-passe-bas",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Filtre électronique qui laisse passer les basses fréquences d'un signal et atténue les fréquences supérieures à un seuil donné."
+  },
+  "related": [
+    "electronique",
+    "filtre-electronique",
+    "filtre-passe-bande"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,22 @@
+{
+  "term": "Relais électronique",
+  "slug": "relais-electronique",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Actionneur qui utilise un signal de faible puissance pour commander un circuit de plus forte puissance, jouant un rôle proche d'un interrupteur commandé."
+  },
+  "related": [
+    "actionneur"
+  ],
+  "pillar": false,
+  "illustration": null
+}

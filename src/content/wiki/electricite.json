@@ -1,0 +1,45 @@
+{
+  "term": "Électricité",
+  "slug": "electricite",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Forme d'énergie liée au mouvement et aux interactions des charges électriques, utilisée pour produire de la lumière, de la chaleur ou du mouvement mécanique."
+  },
+  "related": [
+    "alternateur",
+    "barrage-hydroelectrique",
+    "centrale-electrique",
+    "centrale-eolienne",
+    "centrale-hydraulique",
+    "centrale-nucleaire",
+    "centrale-solaire",
+    "centrale-thermique",
+    "compteur-electrique",
+    "court-jus-panne-de-courant",
+    "eclairage",
+    "energie-renouvelable",
+    "eolienne",
+    "facture-delectricite",
+    "fournisseur-delectricite",
+    "generateur-electrique",
+    "installation-electrique",
+    "kilowattheure",
+    "ligne-haute-tension",
+    "ligne-moyenne-tension",
+    "reseau-de-distribution",
+    "reseau-de-transport",
+    "reseau-intelligent-smart-grid",
+    "turbine"
+  ],
+  "pillar": true,
+  "illustration": null
+}

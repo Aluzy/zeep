@@ -1,0 +1,22 @@
+{
+  "term": "Ligne haute tension",
+  "slug": "ligne-haute-tension",
+  "domains": [
+    "C"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ligne électrique transportant l'électricité à une tension élevée sur de longues distances afin de limiter les pertes en ligne."
+  },
+  "related": [
+    "electricite"
+  ],
+  "pillar": false,
+  "illustration": null
+}

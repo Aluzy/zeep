@@ -1,0 +1,29 @@
+{
+  "term": "Redresseur",
+  "slug": "redresseur",
+  "domains": [
+    "B",
+    "M"
+  ],
+  "sourceDomain": [
+    "electricite",
+    "electronique"
+  ],
+  "merged": true,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "<strong>Vu côté électricité :</strong> Dispositif électronique qui convertit un courant alternatif en courant continu.<br><br><strong>Vu côté électronique :</strong> Circuit électronique, souvent construit à partir de diodes, qui convertit un signal analogique alternatif en signal continu au sein d'une alimentation électronique."
+  },
+  "related": [
+    "alimentation-electronique",
+    "courant-alternatif",
+    "courant-continu",
+    "diode",
+    "electronique",
+    "signal-analogique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

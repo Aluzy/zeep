@@ -1,0 +1,25 @@
+{
+  "term": "Bruit électronique",
+  "slug": "bruit-electronique",
+  "domains": [
+    "U"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Signal parasite indésirable qui se superpose à un signal analogique ou numérique utile, pouvant être réduit par un filtre électronique."
+  },
+  "related": [
+    "electronique",
+    "filtre-electronique",
+    "interference-electromagnetique",
+    "signal-analogique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

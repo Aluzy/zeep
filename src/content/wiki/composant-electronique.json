@@ -1,0 +1,33 @@
+{
+  "term": "Composant électronique",
+  "slug": "composant-electronique",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Élément de base, comme une résistance, un condensateur ou un transistor, assemblé sur un circuit imprimé pour constituer un circuit électronique."
+  },
+  "related": [
+    "actionneur",
+    "bobine-inductance",
+    "capteur",
+    "circuit-imprime-pcb",
+    "condensateur",
+    "datasheet-fiche-technique",
+    "diode",
+    "dissipateur-thermique",
+    "electronique",
+    "recyclage-des-dechets-electroniques-deee",
+    "resistance",
+    "transistor"
+  ],
+  "pillar": true,
+  "illustration": null
+}

@@ -1,0 +1,25 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { LEVEL_LABEL } from "../../lib/helpers";
+
+const BASE = import.meta.env.BASE_URL;
+const projects = await getCollection("diy");
+---
+<Base title="Projets DIY" description="Projets pratiques d'électricité et d'électronique" group="neutre" active="diy">
+  <div class="breadcrumb"><a href={BASE}>Accueil</a> / Projets DIY</div>
+  <h1 style="margin:0 0 6px;font-size:26px;">Projets DIY</h1>
+  <p style="color:var(--text-dim);max-width:640px;margin:0 0 26px;">Des fiches pas-à-pas pour apprendre en construisant, classées par niveau et reliées aux notions du wiki qu'elles mobilisent.</p>
+  <div class="diy-list">
+    {projects.map((d) => (
+      <a class="diy-card" href={`${BASE}projets-diy/${d.data.slug}/`}>
+        <div class="diy-meta">
+          <span class={`level-badge level-${d.data.level}`}>{LEVEL_LABEL[d.data.level]}</span>
+          <span class="chip">{d.data.duration}</span>
+        </div>
+        <h3>{d.data.title}</h3>
+        <p>{d.data.excerpt}</p>
+      </a>
+    ))}
+  </div>
+</Base>

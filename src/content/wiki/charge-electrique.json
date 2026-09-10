@@ -1,0 +1,25 @@
+{
+  "term": "Charge électrique",
+  "slug": "charge-electrique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Propriété fondamentale de la matière, portée notamment par l'électron, qui est à l'origine des phénomènes électriques comme le courant électrique et le champ électrique."
+  },
+  "related": [
+    "champ-electrique",
+    "courant-electrique",
+    "electron",
+    "intensite-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

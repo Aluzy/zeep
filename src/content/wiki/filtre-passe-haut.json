@@ -1,0 +1,24 @@
+{
+  "term": "Filtre passe-haut",
+  "slug": "filtre-passe-haut",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Filtre électronique qui laisse passer les hautes fréquences d'un signal et atténue les fréquences inférieures à un seuil donné."
+  },
+  "related": [
+    "electronique",
+    "filtre-electronique",
+    "filtre-passe-bande"
+  ],
+  "pillar": false,
+  "illustration": null
+}

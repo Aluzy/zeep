@@ -1,0 +1,28 @@
+{
+  "term": "Court-circuit",
+  "slug": "court-circuit",
+  "domains": [
+    "A",
+    "K"
+  ],
+  "sourceDomain": [
+    "electricite",
+    "electronique"
+  ],
+  "merged": true,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "<strong>Vu côté électricité :</strong> Contact accidentel entre deux conducteurs électriques de potentiels différents, provoquant une intensité électrique excessive pouvant déclencher un disjoncteur ou un fusible.<br><br><strong>Vu côté électronique :</strong> Contact accidentel entre deux points d'un circuit électronique de potentiels différents, provoquant un courant excessif pouvant endommager les composants électroniques."
+  },
+  "related": [
+    "court-jus-panne-de-courant",
+    "disjoncteur",
+    "electronique",
+    "fusible",
+    "intensite-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

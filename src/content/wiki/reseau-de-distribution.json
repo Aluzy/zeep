@@ -1,0 +1,25 @@
+{
+  "term": "Réseau de distribution",
+  "slug": "reseau-de-distribution",
+  "domains": [
+    "C"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Partie du réseau électrique qui achemine l'électricité depuis les postes de transformation jusqu'aux consommateurs finaux, en moyenne et basse tension."
+  },
+  "related": [
+    "electricite",
+    "ligne-basse-tension",
+    "poste-de-transformation",
+    "reseau-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,26 @@
+{
+  "term": "Émetteur radiofréquence",
+  "slug": "emetteur-radiofrequence",
+  "domains": [
+    "R"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Circuit électronique qui transforme un signal en onde radiofréquence transmise par une antenne, utilisé notamment dans le Bluetooth et le Wi-Fi."
+  },
+  "related": [
+    "antenne",
+    "bluetooth",
+    "electronique",
+    "modulation",
+    "wi-fi"
+  ],
+  "pillar": false,
+  "illustration": null
+}

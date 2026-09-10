@@ -1,0 +1,23 @@
+{
+  "term": "Batterie lithium-ion",
+  "slug": "batterie-lithium-ion",
+  "domains": [
+    "D"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Accumulateur rechargeable très utilisé en électronique embarquée pour alimenter les objets connectés et les appareils portables."
+  },
+  "related": [
+    "electronique",
+    "electronique-embarquee"
+  ],
+  "pillar": false,
+  "illustration": null
+}

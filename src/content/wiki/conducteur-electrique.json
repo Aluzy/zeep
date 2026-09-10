@@ -1,0 +1,29 @@
+{
+  "term": "Conducteur électrique",
+  "slug": "conducteur-electrique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Matériau, souvent métallique, qui laisse circuler facilement le courant électrique, utilisé notamment dans les câbles électriques."
+  },
+  "related": [
+    "amperemetre",
+    "courant-electrique",
+    "electron",
+    "fil-electrique",
+    "induction-electromagnetique",
+    "intensite-electrique",
+    "ohmmetre",
+    "resistance-electrique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

@@ -1,0 +1,27 @@
+{
+  "term": "Carte Arduino",
+  "slug": "carte-arduino",
+  "domains": [
+    "O"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Carte électronique à base de microcontrôleur, pensée pour le prototypage électronique et facile à programmer, largement utilisée en robotique et en électronique embarquée."
+  },
+  "related": [
+    "carte-electronique",
+    "electronique",
+    "electronique-embarquee",
+    "microcontroleur",
+    "prototypage-electronique",
+    "robotique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

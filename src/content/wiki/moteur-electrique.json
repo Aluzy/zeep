@@ -1,0 +1,23 @@
+{
+  "term": "Moteur électrique",
+  "slug": "moteur-electrique",
+  "domains": [
+    "F"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Machine qui convertit l'énergie électrique en énergie mécanique, fonctionnant à l'inverse d'un générateur électrique."
+  },
+  "related": [
+    "convertisseur-de-frequence",
+    "generateur-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,27 @@
+{
+  "term": "Carte mère",
+  "slug": "carte-mere",
+  "domains": [
+    "N"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Carte électronique principale d'un ordinateur qui relie le processeur, la mémoire vive et les autres composants électroniques entre eux."
+  },
+  "related": [
+    "carte-electronique",
+    "electronique",
+    "memoire-vive-ram",
+    "microprocesseur",
+    "pile-bouton",
+    "processeur-cpu"
+  ],
+  "pillar": false,
+  "illustration": null
+}

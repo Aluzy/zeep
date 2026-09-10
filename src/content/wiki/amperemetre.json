@@ -1,0 +1,24 @@
+{
+  "term": "Ampèremètre",
+  "slug": "amperemetre",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Instrument de mesure de l'intensité électrique circulant dans un conducteur électrique, exprimée en ampères."
+  },
+  "related": [
+    "conducteur-electrique",
+    "intensite-electrique",
+    "multimetre"
+  ],
+  "pillar": false,
+  "illustration": null
+}

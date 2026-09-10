@@ -1,0 +1,22 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { TAXONOMY } from "../../lib/helpers";
+
+const BASE = import.meta.env.BASE_URL;
+const posts = (await getCollection("blog")).sort((a, b) => a.data.title.localeCompare(b.data.title, "fr"));
+---
+<Base title="Blog" description="Articles sur l'électricité et l'électronique" group="neutre" active="blog">
+  <div class="breadcrumb"><a href={BASE}>Accueil</a> / Blog</div>
+  <h1 style="margin:0 0 6px;font-size:26px;">Le blog</h1>
+  <p style="color:var(--text-dim);max-width:640px;margin:0 0 26px;">Des articles pour creuser un sujet, avec des liens vers les définitions du wiki à chaque fois que c'est utile.</p>
+  <div class="post-list">
+    {posts.map((p) => (
+      <a class="post-card" href={`${BASE}blog/${p.slug}/`}>
+        <div class="post-meta"><span class="chip is-accent">{TAXONOMY[p.data.domain] || p.data.domain}</span></div>
+        <h3>{p.data.title}</h3>
+        <p>{p.data.excerpt}</p>
+      </a>
+    ))}
+  </div>
+</Base>

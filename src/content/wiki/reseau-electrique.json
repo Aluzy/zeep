@@ -1,0 +1,29 @@
+{
+  "term": "Réseau électrique",
+  "slug": "reseau-electrique",
+  "domains": [
+    "C"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ensemble des infrastructures reliant les centrales électriques aux consommateurs, comprenant le réseau de transport et le réseau de distribution."
+  },
+  "related": [
+    "courant-alternatif",
+    "court-jus-panne-de-courant",
+    "electrification",
+    "fournisseur-delectricite",
+    "frequence-electrique",
+    "reseau-de-distribution",
+    "reseau-de-transport",
+    "reseau-intelligent-smart-grid"
+  ],
+  "pillar": true,
+  "illustration": null
+}

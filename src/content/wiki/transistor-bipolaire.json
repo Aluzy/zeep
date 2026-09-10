@@ -1,0 +1,22 @@
+{
+  "term": "Transistor bipolaire",
+  "slug": "transistor-bipolaire",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Type de transistor commandé par un courant appliqué sur sa base, utilisé pour l'amplification ou la commutation dans les circuits analogiques."
+  },
+  "related": [
+    "transistor"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,22 @@
+{
+  "term": "Ampérage",
+  "slug": "amperage",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Terme courant désignant la valeur de l'intensité électrique d'un courant, exprimée en ampères."
+  },
+  "related": [
+    "intensite-electrique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

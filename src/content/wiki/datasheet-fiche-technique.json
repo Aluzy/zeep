@@ -1,0 +1,23 @@
+{
+  "term": "Datasheet (fiche technique)",
+  "slug": "datasheet-fiche-technique",
+  "domains": [
+    "V"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Document fourni par le fabricant d'un composant électronique décrivant ses caractéristiques électriques, son brochage et ses conditions d'utilisation."
+  },
+  "related": [
+    "composant-electronique",
+    "electronique"
+  ],
+  "pillar": false,
+  "illustration": null
+}

@@ -1,0 +1,24 @@
+{
+  "term": "Servomoteur",
+  "slug": "servomoteur",
+  "domains": [
+    "P"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Actionneur qui positionne précisément un axe selon un signal numérique de commande, très utilisé en robotique."
+  },
+  "related": [
+    "actionneur",
+    "robotique",
+    "signal-numerique"
+  ],
+  "pillar": true,
+  "illustration": null
+}

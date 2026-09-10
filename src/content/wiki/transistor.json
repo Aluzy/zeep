@@ -1,0 +1,33 @@
+{
+  "term": "Transistor",
+  "slug": "transistor",
+  "domains": [
+    "K"
+  ],
+  "sourceDomain": [
+    "electronique"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Composant électronique semi-conducteur à trois électrodes qui amplifie ou commute un signal électrique, brique de base des circuits intégrés."
+  },
+  "related": [
+    "alimentation-a-decoupage",
+    "amplificateur-audio",
+    "composant-electronique",
+    "dissipateur-thermique",
+    "electronique",
+    "frequence-de-commutation",
+    "mosfet",
+    "phototransistor",
+    "semi-conducteur",
+    "tension-de-seuil",
+    "transistor-a-effet-de-champ-fet",
+    "transistor-bipolaire"
+  ],
+  "pillar": true,
+  "illustration": null
+}

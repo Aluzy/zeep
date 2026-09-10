@@ -1,0 +1,33 @@
+{
+  "term": "Circuit électrique",
+  "slug": "circuit-electrique",
+  "domains": [
+    "A"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definitions": {
+    "quatre_six": null,
+    "six_dix": null,
+    "college": null,
+    "lycee_adultes": "Ensemble de composants reliés par des conducteurs électriques formant un chemin fermé permettant la circulation du courant électrique."
+  },
+  "related": [
+    "circuit-ferme",
+    "circuit-ouvert",
+    "courant-electrique",
+    "disjoncteur",
+    "fusible",
+    "interrupteur",
+    "neutre",
+    "phase-electrique",
+    "schema-electrique",
+    "tension-electrique",
+    "voltmetre",
+    "wattmetre"
+  ],
+  "pillar": true,
+  "illustration": null
+}
