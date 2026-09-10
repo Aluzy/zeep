@@ -21,14 +21,17 @@ const pageTitle = fullTitle ?? `${title} — Zeep`;
   <link rel="icon" type="image/png" sizes="32x32" href={`${BASE}assets/favicon-32.png`} />
   <link rel="icon" type="image/png" sizes="16x16" href={`${BASE}assets/favicon-16.png`} />
   <link rel="apple-touch-icon" href={`${BASE}assets/apple-touch-icon.png`} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href={`${BASE}assets/style.css`} />
 </head>
 <body data-group={group}>
   <header class="site-header">
     <div class="shell bar">
       <a class="brand" href={BASE}>
-        <img src={`${BASE}assets/logo-bolt.png`} alt="" class="brand-mark" height="26" />
-        <img src={`${BASE}assets/logo-wordmark.png`} alt="Zeep" class="brand-word" height="15" />
+        <img src={`${BASE}assets/logo-bolt.png`} alt="" class="brand-mark" height="34" />
+        <span class="brand-word">Zeep</span>
       </a>
       <nav class="main-nav">
         <a href={BASE} class={active === "home" ? "active" : ""}>Accueil</a>
