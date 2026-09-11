@@ -1,8 +1,12 @@
-name: Build and deploy to GitHub Pages
+name: Contrôle, construction et déploiement
 
+# - Sur toute branche et toute pull request : validation du contenu,
+#   construction du site et test de fumée (rien n'est mis en ligne).
+# - Sur main uniquement : mise en ligne sur GitHub Pages si tout est vert.
 on:
   push:
-    branches: [main]
+    branches: ["**"]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,8 +15,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -20,6 +24,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Valider le contenu (schéma, slugs, liens)
+        run: python3 scripts/validate_content.py --stats
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -32,14 +44,22 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Test de fumée (définitions visibles, liens internes)
+        run: python3 scripts/smoke_dist.py --base /zeep
+
       - name: Upload build artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
