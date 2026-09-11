@@ -60,7 +60,6 @@ const diy = defineCollection({
       )
       .default([]),
     etapes: z.array(z.string()),
-    notionsWiki: z.array(z.string()).default([]),
     pourAllerPlusLoin: z.string().default(""),
   }),
 });
