@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit intégré reprogrammable dont la logique interne, faite de portes logiques, peut être reconfigurée pour réaliser différents circuits numériques."
-  },
+  "definition": "Circuit intégré reprogrammable dont la logique interne, faite de portes logiques, peut être reconfigurée pour réaliser différents circuits numériques.",
   "related": [
     "asic",
     "circuit-integre"

@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant semi-conducteur qui, une fois amorcé par un signal de commande, laisse passer un fort courant jusqu'à ce que celui-ci s'annule, utilisé en électronique de puissance."
-  },
+  "definition": "Composant semi-conducteur qui, une fois amorcé par un signal de commande, laisse passer un fort courant jusqu'à ce que celui-ci s'annule, utilisé en électronique de puissance.",
   "related": [
     "electronique",
     "electronique-de-puissance",

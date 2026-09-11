@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Machine qui convertit l'énergie électrique en énergie mécanique, fonctionnant à l'inverse d'un générateur électrique."
-  },
+  "definition": "Machine qui convertit l'énergie électrique en énergie mécanique, fonctionnant à l'inverse d'un générateur électrique.",
   "related": [
     "convertisseur-de-frequence",
     "generateur-electrique"

@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble centralisant les disjoncteurs et fusibles d'une installation électrique, permettant de répartir et protéger les circuits électriques."
-  },
+  "definition": "Ensemble centralisant les disjoncteurs et fusibles d'une installation électrique, permettant de répartir et protéger les circuits électriques.",
   "related": [
     "cablage-electrique",
     "disjoncteur",

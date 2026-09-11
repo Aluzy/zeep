@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Discipline scientifique et technique qui étudie et exploite les composants électroniques pour traiter, amplifier ou transformer des signaux analogiques et numériques."
-  },
+  "definition": "Discipline scientifique et technique qui étudie et exploite les composants électroniques pour traiter, amplifier ou transformer des signaux analogiques et numériques.",
   "related": [
     "actionneur",
     "alimentation-a-decoupage",

@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Source lumineuse utilisant des diodes électroluminescentes, réputée pour sa faible consommation électrique et sa longue durée de vie."
-  },
+  "definition": "Source lumineuse utilisant des diodes électroluminescentes, réputée pour sa faible consommation électrique et sa longue durée de vie.",
   "related": [
     "consommation-electrique"
   ],

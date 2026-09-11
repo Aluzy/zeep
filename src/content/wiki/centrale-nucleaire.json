@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Centrale électrique produisant de l'électricité grâce à la chaleur dégagée par une réaction de fission nucléaire, actionnant une turbine et un alternateur."
-  },
+  "definition": "Centrale électrique produisant de l'électricité grâce à la chaleur dégagée par une réaction de fission nucléaire, actionnant une turbine et un alternateur.",
   "related": [
     "alternateur",
     "centrale-electrique",

@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Support isolant sur lequel sont gravées des pistes conductrices reliant les composants électroniques d'une carte électronique."
-  },
+  "definition": "Support isolant sur lequel sont gravées des pistes conductrices reliant les composants électroniques d'une carte électronique.",
   "related": [
     "carte-electronique",
     "composant-electronique",

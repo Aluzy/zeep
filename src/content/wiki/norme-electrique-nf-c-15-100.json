@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Norme française qui définit les règles de conception et de réalisation d'une installation électrique basse tension dans les bâtiments, que tout électricien doit respecter."
-  },
+  "definition": "Norme française qui définit les règles de conception et de réalisation d'une installation électrique basse tension dans les bâtiments, que tout électricien doit respecter.",
   "related": [
     "electricien",
     "installation-electrique"

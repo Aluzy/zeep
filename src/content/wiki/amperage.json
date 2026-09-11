@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Terme courant désignant la valeur de l'intensité électrique d'un courant, exprimée en ampères."
-  },
+  "definition": "Terme courant désignant la valeur de l'intensité électrique d'un courant, exprimée en ampères.",
   "related": [
     "intensite-electrique"
   ],

@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Capteur optique de type transistor dont le courant est commandé par la lumière plutôt que par un courant ou une tension de commande."
-  },
+  "definition": "Capteur optique de type transistor dont le courant est commandé par la lumière plutôt que par un courant ou une tension de commande.",
   "related": [
     "capteur",
     "capteur-optique",

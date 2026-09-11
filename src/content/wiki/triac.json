@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant semi-conducteur dérivé du thyristor capable de conduire le courant dans les deux sens, utilisé pour commander la puissance d'un signal analogique comme celui d'un variateur."
-  },
+  "definition": "Composant semi-conducteur dérivé du thyristor capable de conduire le courant dans les deux sens, utilisé pour commander la puissance d'un signal analogique comme celui d'un variateur.",
   "related": [
     "semi-conducteur",
     "signal-analogique",

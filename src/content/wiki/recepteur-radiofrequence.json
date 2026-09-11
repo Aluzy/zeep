@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit électronique qui capte une onde radiofréquence via une antenne et la convertit en signal électrique exploitable."
-  },
+  "definition": "Circuit électronique qui capte une onde radiofréquence via une antenne et la convertit en signal électrique exploitable.",
   "related": [
     "antenne",
     "electronique"

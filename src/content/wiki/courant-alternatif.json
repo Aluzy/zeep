@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Courant électrique dont le sens et l'intensité varient périodiquement, caractérisé par sa fréquence électrique, utilisé sur le réseau électrique."
-  },
+  "definition": "Courant électrique dont le sens et l'intensité varient périodiquement, caractérisé par sa fréquence électrique, utilisé sur le réseau électrique.",
   "related": [
     "alternateur",
     "convertisseur-de-frequence",

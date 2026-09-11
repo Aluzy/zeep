@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Vitesse à laquelle un composant, comme un transistor ou un MOSFET, bascule entre ses états dans un circuit numérique ou une alimentation à découpage."
-  },
+  "definition": "Vitesse à laquelle un composant, comme un transistor ou un MOSFET, bascule entre ses états dans un circuit numérique ou une alimentation à découpage.",
   "related": [
     "alimentation-a-decoupage",
     "bascule-flip-flop",

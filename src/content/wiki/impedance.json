@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Grandeur qui caractérise l'opposition d'un circuit électronique au passage d'un signal analogique, combinant résistance, condensateur et bobine."
-  },
+  "definition": "Grandeur qui caractérise l'opposition d'un circuit électronique au passage d'un signal analogique, combinant résistance, condensateur et bobine.",
   "related": [
     "bobine-inductance",
     "condensateur",

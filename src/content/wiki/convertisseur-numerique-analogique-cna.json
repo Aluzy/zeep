@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit qui transforme un signal numérique en signal analogique, opération inverse de celle du convertisseur analogique-numérique."
-  },
+  "definition": "Circuit qui transforme un signal numérique en signal analogique, opération inverse de celle du convertisseur analogique-numérique.",
   "related": [
     "convertisseur-analogique-numerique-can",
     "signal-analogique",

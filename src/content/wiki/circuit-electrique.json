@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble de composants reliés par des conducteurs électriques formant un chemin fermé permettant la circulation du courant électrique."
-  },
+  "definition": "Ensemble de composants reliés par des conducteurs électriques formant un chemin fermé permettant la circulation du courant électrique.",
   "related": [
     "circuit-ferme",
     "circuit-ouvert",

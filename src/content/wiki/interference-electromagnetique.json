@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Perturbation d'un circuit électronique provoquée par un champ électromagnétique extérieur, source de bruit électronique."
-  },
+  "definition": "Perturbation d'un circuit électronique provoquée par un champ électromagnétique extérieur, source de bruit électronique.",
   "related": [
     "bruit-electronique",
     "compatibilite-electromagnetique-cem",

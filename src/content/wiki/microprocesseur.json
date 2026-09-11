@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit intégré qui exécute les instructions d'un programme, constituant le cœur de calcul d'un ordinateur ou d'une carte mère."
-  },
+  "definition": "Circuit intégré qui exécute les instructions d'un programme, constituant le cœur de calcul d'un ordinateur ou d'une carte mère.",
   "related": [
     "carte-mere",
     "carte-raspberry-pi",

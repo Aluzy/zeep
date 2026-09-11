@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Expression familière désignant une coupure d'électricité, une interruption de l'alimentation électrique due par exemple à un court-circuit ou à une panne du réseau électrique."
-  },
+  "definition": "Expression familière désignant une coupure d'électricité, une interruption de l'alimentation électrique due par exemple à un court-circuit ou à une panne du réseau électrique.",
   "related": [
     "alimentation-electrique",
     "court-circuit",

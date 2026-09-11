@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Porte logique dont la sortie est active dès qu'au moins une de ses entrées est active."
-  },
+  "definition": "Porte logique dont la sortie est active dès qu'au moins une de ses entrées est active.",
   "related": [
     "circuit-logique",
     "porte-logique"

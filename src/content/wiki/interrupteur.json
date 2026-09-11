@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Dispositif permettant d'ouvrir ou de fermer manuellement un circuit électrique pour couper ou rétablir le courant électrique."
-  },
+  "definition": "Dispositif permettant d'ouvrir ou de fermer manuellement un circuit électrique pour couper ou rétablir le courant électrique.",
   "related": [
     "circuit-electrique",
     "courant-electrique"

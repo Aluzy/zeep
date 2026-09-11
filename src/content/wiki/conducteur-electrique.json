@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Matériau, souvent métallique, qui laisse circuler facilement le courant électrique, utilisé notamment dans les câbles électriques."
-  },
+  "definition": "Matériau, souvent métallique, qui laisse circuler facilement le courant électrique, utilisé notamment dans les câbles électriques.",
   "related": [
     "amperemetre",
     "courant-electrique",

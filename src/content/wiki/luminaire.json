@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Appareil d'éclairage qui reçoit, supporte et protège une ou plusieurs ampoules raccordées à l'installation électrique."
-  },
+  "definition": "Appareil d'éclairage qui reçoit, supporte et protège une ou plusieurs ampoules raccordées à l'installation électrique.",
   "related": [
     "eclairage",
     "installation-electrique"

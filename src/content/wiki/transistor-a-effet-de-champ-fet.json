@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Type de transistor commandé par une tension appliquée sur sa grille plutôt que par un courant, dont le MOSFET est la variante la plus répandue."
-  },
+  "definition": "Type de transistor commandé par une tension appliquée sur sa grille plutôt que par un courant, dont le MOSFET est la variante la plus répandue.",
   "related": [
     "mosfet",
     "transistor"

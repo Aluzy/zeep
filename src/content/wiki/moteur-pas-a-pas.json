@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Actionneur qui tourne par petits incréments précis en réponse à une séquence d'impulsions numériques, piloté par un microcontrôleur."
-  },
+  "definition": "Actionneur qui tourne par petits incréments précis en réponse à une séquence d'impulsions numériques, piloté par un microcontrôleur.",
   "related": [
     "actionneur",
     "microcontroleur"

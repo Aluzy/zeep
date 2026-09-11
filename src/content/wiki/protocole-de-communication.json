@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble de règles définissant l'échange de données sur un bus de données ou une interface série, comme le bus I2C, le bus SPI ou l'USB."
-  },
+  "definition": "Ensemble de règles définissant l'échange de données sur un bus de données ou une interface série, comme le bus I2C, le bus SPI ou l'USB.",
   "related": [
     "bluetooth",
     "bus-de-donnees",

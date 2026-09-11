@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Forme d'énergie liée au mouvement et aux interactions des charges électriques, utilisée pour produire de la lumière, de la chaleur ou du mouvement mécanique."
-  },
+  "definition": "Forme d'énergie liée au mouvement et aux interactions des charges électriques, utilisée pour produire de la lumière, de la chaleur ou du mouvement mécanique.",
   "related": [
     "alternateur",
     "barrage-hydroelectrique",

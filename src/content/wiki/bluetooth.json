@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Protocole de communication radiofréquence à courte portée utilisé pour relier sans fil des objets connectés et des cartes électroniques."
-  },
+  "definition": "Protocole de communication radiofréquence à courte portée utilisé pour relier sans fil des objets connectés et des cartes électroniques.",
   "related": [
     "emetteur-radiofrequence",
     "objet-connecte-iot",

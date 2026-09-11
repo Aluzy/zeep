@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Partie du réseau électrique qui achemine l'électricité depuis les postes de transformation jusqu'aux consommateurs finaux, en moyenne et basse tension."
-  },
+  "definition": "Partie du réseau électrique qui achemine l'électricité depuis les postes de transformation jusqu'aux consommateurs finaux, en moyenne et basse tension.",
   "related": [
     "electricite",
     "ligne-basse-tension",

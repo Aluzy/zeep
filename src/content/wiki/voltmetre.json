@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Instrument de mesure de la tension électrique entre deux points d'un circuit électrique, exprimée en volts."
-  },
+  "definition": "Instrument de mesure de la tension électrique entre deux points d'un circuit électrique, exprimée en volts.",
   "related": [
     "circuit-electrique",
     "multimetre",

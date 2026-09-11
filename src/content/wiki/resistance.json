@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant électronique qui limite le passage du courant dans un circuit électronique, caractérisé par sa valeur en ohms et son impédance."
-  },
+  "definition": "Composant électronique qui limite le passage du courant dans un circuit électronique, caractérisé par sa valeur en ohms et son impédance.",
   "related": [
     "composant-electronique",
     "electronique",

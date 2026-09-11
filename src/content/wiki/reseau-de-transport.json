@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Partie du réseau électrique qui achemine l'électricité en haute tension depuis les centrales électriques jusqu'aux zones de distribution."
-  },
+  "definition": "Partie du réseau électrique qui achemine l'électricité en haute tension depuis les centrales électriques jusqu'aux zones de distribution.",
   "related": [
     "electricite",
     "poste-de-transformation",

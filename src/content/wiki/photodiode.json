@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Capteur optique de type diode qui génère un courant proportionnel à la lumière reçue."
-  },
+  "definition": "Capteur optique de type diode qui génère un courant proportionnel à la lumière reçue.",
   "related": [
     "capteur",
     "capteur-optique",

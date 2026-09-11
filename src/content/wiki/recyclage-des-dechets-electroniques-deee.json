@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble des filières qui collectent et traitent la carte électronique et le composant électronique en fin de vie, un enjeu croissant avec la multiplication des objets connectés."
-  },
+  "definition": "Ensemble des filières qui collectent et traitent la carte électronique et le composant électronique en fin de vie, un enjeu croissant avec la multiplication des objets connectés.",
   "related": [
     "carte-electronique",
     "composant-electronique",

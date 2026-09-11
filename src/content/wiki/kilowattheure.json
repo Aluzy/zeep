@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Unité d'énergie électrique correspondant à la consommation d'une puissance d'un kilowatt pendant une heure, utilisée pour établir la facture d'électricité."
-  },
+  "definition": "Unité d'énergie électrique correspondant à la consommation d'une puissance d'un kilowatt pendant une heure, utilisée pour établir la facture d'électricité.",
   "related": [
     "electricite",
     "facture-delectricite",

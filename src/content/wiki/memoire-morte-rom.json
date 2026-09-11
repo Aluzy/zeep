@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Mémoire électronique non volatile qui conserve durablement des données ou un programme, même hors tension, à la différence de la mémoire vive."
-  },
+  "definition": "Mémoire électronique non volatile qui conserve durablement des données ou un programme, même hors tension, à la différence de la mémoire vive.",
   "related": [
     "electronique",
     "memoire-vive-ram",

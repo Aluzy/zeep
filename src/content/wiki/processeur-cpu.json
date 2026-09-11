@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant qui exécute les calculs et les instructions d'un programme informatique, présent sous forme de microprocesseur sur la carte mère."
-  },
+  "definition": "Composant qui exécute les calculs et les instructions d'un programme informatique, présent sous forme de microprocesseur sur la carte mère.",
   "related": [
     "bus-de-donnees",
     "carte-mere",

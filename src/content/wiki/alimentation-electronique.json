@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit qui fournit l'énergie nécessaire au fonctionnement d'une carte électronique, en général sous forme de tension continue régulée."
-  },
+  "definition": "Circuit qui fournit l'énergie nécessaire au fonctionnement d'une carte électronique, en général sous forme de tension continue régulée.",
   "related": [
     "alimentation-a-decoupage",
     "carte-electronique",

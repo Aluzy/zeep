@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit qui transforme un signal analogique en signal numérique exploitable par un processeur ou un microcontrôleur."
-  },
+  "definition": "Circuit qui transforme un signal analogique en signal numérique exploitable par un processeur ou un microcontrôleur.",
   "related": [
     "convertisseur-numerique-analogique-cna",
     "microcontroleur",

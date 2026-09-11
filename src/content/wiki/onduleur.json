@@ -9,12 +9,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Appareil qui convertit un courant continu, par exemple issu d'un panneau photovoltaïque ou d'une batterie, en courant alternatif."
-  },
+  "definition": "Appareil qui convertit un courant continu, par exemple issu d'un panneau photovoltaïque ou d'une batterie, en courant alternatif.",
   "related": [
     "batterie",
     "courant-alternatif",

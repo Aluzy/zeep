@@ -22,7 +22,7 @@ const wiki = [...wikiRaw].sort((a, b) => a.data.term.localeCompare(b.data.term, 
   </div>
   <div class="term-grid" id="term-grid">
     {wiki.map((t) => {
-      const def = (t.data.definitions.lycee_adultes || "").replace(/<[^>]+>/g, "").slice(0, 130);
+      const def = t.data.definition.replace(/<[^>]+>/g, "").slice(0, 130);
       return (
         <a class="term-tile" href={`${BASE}wiki/${t.data.slug}/`} data-term={t.data.term} data-domains={t.data.domains.join(",")}>
           <div class="tname">{t.data.term}</div>

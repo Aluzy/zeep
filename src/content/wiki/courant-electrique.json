@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Déplacement ordonné de charges électriques dans un conducteur électrique, mesuré en ampères et caractérisé par son intensité électrique."
-  },
+  "definition": "Déplacement ordonné de charges électriques dans un conducteur électrique, mesuré en ampères et caractérisé par son intensité électrique.",
   "related": [
     "accumulateur",
     "alimentation-electrique",

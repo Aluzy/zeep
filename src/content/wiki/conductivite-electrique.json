@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Aptitude d'un matériau à laisser circuler le courant électrique, inverse de la résistivité."
-  },
+  "definition": "Aptitude d'un matériau à laisser circuler le courant électrique, inverse de la résistivité.",
   "related": [
     "courant-electrique",
     "resistivite"

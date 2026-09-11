@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Instrument de mesure de la résistance électrique d'un composant ou d'un conducteur électrique, exprimée en ohms."
-  },
+  "definition": "Instrument de mesure de la résistance électrique d'un composant ou d'un conducteur électrique, exprimée en ohms.",
   "related": [
     "conducteur-electrique",
     "multimetre",

@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant électronique qui stocke une charge électrique entre deux armatures, utilisé notamment dans les filtres électroniques et les alimentations électroniques."
-  },
+  "definition": "Composant électronique qui stocke une charge électrique entre deux armatures, utilisé notamment dans les filtres électroniques et les alimentations électroniques.",
   "related": [
     "composant-electronique",
     "electronique",

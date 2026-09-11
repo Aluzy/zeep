@@ -9,12 +9,7 @@
     "electronique"
   ],
   "merged": true,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "<strong>Vu côté électricité :</strong> Ensemble des technologies qui automatisent et pilotent à distance les équipements électriques d'un logement, comme l'éclairage.<br><br><strong>Vu côté électronique :</strong> Ensemble des technologies d'électronique embarquée qui automatisent et pilotent à distance les équipements d'un logement, souvent via un objet connecté."
-  },
+  "definition": "<strong>Vu côté électricité :</strong> Ensemble des technologies qui automatisent et pilotent à distance les équipements électriques d'un logement, comme l'éclairage.<br><br><strong>Vu côté électronique :</strong> Ensemble des technologies d'électronique embarquée qui automatisent et pilotent à distance les équipements d'un logement, souvent via un objet connecté.",
   "related": [
     "eclairage",
     "electronique",

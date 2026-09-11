@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Branche de l'électronique qui conçoit des circuits, comme les redresseurs et les alimentations à découpage, pour convertir et contrôler l'énergie électrique."
-  },
+  "definition": "Branche de l'électronique qui conçoit des circuits, comme les redresseurs et les alimentations à découpage, pour convertir et contrôler l'énergie électrique.",
   "related": [
     "electronique",
     "mosfet",

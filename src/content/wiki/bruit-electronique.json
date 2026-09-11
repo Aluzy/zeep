@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Signal parasite indésirable qui se superpose à un signal analogique ou numérique utile, pouvant être réduit par un filtre électronique."
-  },
+  "definition": "Signal parasite indésirable qui se superpose à un signal analogique ou numérique utile, pouvant être réduit par un filtre électronique.",
   "related": [
     "electronique",
     "filtre-electronique",

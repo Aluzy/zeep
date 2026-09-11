@@ -18,9 +18,8 @@ const BASE = import.meta.env.BASE_URL;
 const group = domainGroup(t.domains);
 const byId = Object.fromEntries(all.map((x) => [x.data.slug, x.data]));
 const related = t.related.map((s) => byId[s]).filter(Boolean);
-const defsJson = JSON.stringify(t.definitions);
 ---
-<Base title={t.term} description={(t.definitions.lycee_adultes || "").replace(/<[^>]+>/g, "").slice(0, 160)} group={group} active="wiki">
+<Base title={t.term} description={t.definition.replace(/<[^>]+>/g, "").slice(0, 160)} group={group} active="wiki">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}wiki/`}>Wiki</a> / {t.term}</div>
   <div class="term-card">
     <p class="tag">N° {t.slug}{t.merged ? " · terme commun électricité/électronique" : ""}</p>
@@ -30,8 +29,7 @@ const defsJson = JSON.stringify(t.definitions);
         <a href={`${BASE}wiki/?domain=${d}`} class="chip is-accent">{TAXONOMY[d] || d}</a>
       ))}
     </div>
-    <div class="age-note"></div>
-    <div class="definition" data-defs={defsJson}></div>
+    <div class="definition" set:html={t.definition} />
     <div class="illustration-slot">
       {t.illustration
         ? <img src={t.illustration} alt={t.term} />

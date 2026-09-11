@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Unité de mesure de l'intensité électrique dans le Système international, symbole A."
-  },
+  "definition": "Unité de mesure de l'intensité électrique dans le Système international, symbole A.",
   "related": [
     "intensite-electrique"
   ],

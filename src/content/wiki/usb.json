@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Protocole de communication et interface physique standardisée permettant de relier une carte électronique à un ordinateur pour l'alimentation et l'échange de données."
-  },
+  "definition": "Protocole de communication et interface physique standardisée permettant de relier une carte électronique à un ordinateur pour l'alimentation et l'échange de données.",
   "related": [
     "carte-electronique",
     "electronique",

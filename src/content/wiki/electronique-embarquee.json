@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble des systèmes électroniques, souvent construits autour d'un microcontrôleur, intégrés dans un objet pour en assurer le fonctionnement autonome."
-  },
+  "definition": "Ensemble des systèmes électroniques, souvent construits autour d'un microcontrôleur, intégrés dans un objet pour en assurer le fonctionnement autonome.",
   "related": [
     "batterie-lithium-ion",
     "capteur-de-pression",

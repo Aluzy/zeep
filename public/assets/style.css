@@ -96,14 +96,6 @@ nav.main-nav{display:flex;gap:22px;font-size:14px;}
 nav.main-nav a{color:var(--text-dim);padding:6px 2px;border-bottom:2px solid transparent;}
 nav.main-nav a:hover, nav.main-nav a.active{color:var(--text);border-bottom-color:var(--accent);}
 
-.age-switcher{display:flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11px;}
-.age-switcher span.label{color:var(--text-faint);margin-right:4px;}
-.age-switcher button{
-  background:var(--panel);border:1px solid var(--border);color:var(--text-dim);
-  font-family:var(--font-mono);font-size:11px;padding:6px 9px;border-radius:var(--radius);cursor:pointer;
-}
-.age-switcher button.active{color:var(--bg);background:var(--accent);border-color:var(--accent);font-weight:600;}
-
 main{padding:40px 0 80px;min-height:60vh;}
 
 footer.site-footer{
@@ -190,12 +182,6 @@ footer.site-footer{
 .breadcrumb a:hover{color:var(--accent);}
 .term-card .tag{font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:.03em;margin:0 0 10px;}
 .term-card h1{font-size:32px;font-weight:600;margin:0 0 18px;line-height:1.2;max-width:680px;}
-.age-note{
-  font-family:var(--font-mono);font-size:11.5px;color:var(--text-faint);
-  border:1px dashed var(--border-strong);padding:8px 12px;border-radius:var(--radius);
-  margin-bottom:16px;display:none;max-width:640px;
-}
-.age-note.show{display:block;}
 .definition{
   font-size:16.5px;line-height:1.8;color:var(--text);max-width:660px;
   border-left:2px solid var(--border-strong);padding-left:20px;

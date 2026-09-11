@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant ou circuit électronique qui maintient une tension de sortie stable malgré les variations de charge, élément clé d'une alimentation électronique."
-  },
+  "definition": "Composant ou circuit électronique qui maintient une tension de sortie stable malgré les variations de charge, élément clé d'une alimentation électronique.",
   "related": [
     "alimentation-a-decoupage",
     "alimentation-electronique",

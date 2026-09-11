@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit intégré analogique qui amplifie la différence entre deux signaux d'entrée, largement utilisé dans les filtres électroniques et les amplificateurs audio."
-  },
+  "definition": "Circuit intégré analogique qui amplifie la différence entre deux signaux d'entrée, largement utilisé dans les filtres électroniques et les amplificateurs audio.",
   "related": [
     "amplificateur-audio",
     "circuit-integre",

@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Élément de base, comme une résistance, un condensateur ou un transistor, assemblé sur un circuit imprimé pour constituer un circuit électronique."
-  },
+  "definition": "Élément de base, comme une résistance, un condensateur ou un transistor, assemblé sur un circuit imprimé pour constituer un circuit électronique.",
   "related": [
     "actionneur",
     "bobine-inductance",

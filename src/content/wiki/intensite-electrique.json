@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Quantité de charge électrique traversant un conducteur électrique par unité de temps, mesurée en ampères à l'aide d'un ampèremètre."
-  },
+  "definition": "Quantité de charge électrique traversant un conducteur électrique par unité de temps, mesurée en ampères à l'aide d'un ampèremètre.",
   "related": [
     "amperage",
     "ampere",

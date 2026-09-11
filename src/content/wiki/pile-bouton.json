@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Petite pile non rechargeable de forme plate utilisée pour alimenter de faibles composants électroniques, comme l'horloge d'une carte mère."
-  },
+  "definition": "Petite pile non rechargeable de forme plate utilisée pour alimenter de faibles composants électroniques, comme l'horloge d'une carte mère.",
   "related": [
     "carte-mere"
   ],

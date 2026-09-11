@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Unité de mesure de la résistance électrique dans le Système international, symbole Ω."
-  },
+  "definition": "Unité de mesure de la résistance électrique dans le Système international, symbole Ω.",
   "related": [
     "resistance-electrique"
   ],

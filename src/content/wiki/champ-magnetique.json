@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Région de l'espace dans laquelle un aimant ou un courant électrique exerce une force sur d'autres aimants ou charges en mouvement."
-  },
+  "definition": "Région de l'espace dans laquelle un aimant ou un courant électrique exerce une force sur d'autres aimants ou charges en mouvement.",
   "related": [
     "courant-electrique",
     "electromagnetisme",

@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Centrale électrique qui produit de l'électricité à partir du rayonnement du soleil, notamment grâce à des panneaux photovoltaïques."
-  },
+  "definition": "Centrale électrique qui produit de l'électricité à partir du rayonnement du soleil, notamment grâce à des panneaux photovoltaïques.",
   "related": [
     "centrale-electrique",
     "electricite"

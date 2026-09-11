@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Rapport entre l'énergie électrique utile produite ou restituée par un appareil et l'énergie électrique consommée, exprimé en pourcentage."
-  },
+  "definition": "Rapport entre l'énergie électrique utile produite ou restituée par un appareil et l'énergie électrique consommée, exprimé en pourcentage.",
   "related": [
     "efficacite-energetique"
   ],

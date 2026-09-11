@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ligne électrique assurant la distribution de l'électricité entre les postes de transformation et les zones de consommation locale."
-  },
+  "definition": "Ligne électrique assurant la distribution de l'électricité entre les postes de transformation et les zones de consommation locale.",
   "related": [
     "electricite"
   ],

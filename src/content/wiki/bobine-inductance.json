@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant électronique constitué d'un enroulement de fil qui s'oppose aux variations du courant, utilisé dans les filtres électroniques et les alimentations à découpage."
-  },
+  "definition": "Composant électronique constitué d'un enroulement de fil qui s'oppose aux variations du courant, utilisé dans les filtres électroniques et les alimentations à découpage.",
   "related": [
     "composant-electronique",
     "electronique",

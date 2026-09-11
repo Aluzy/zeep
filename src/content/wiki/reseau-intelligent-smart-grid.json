@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Réseau électrique moderne intégrant des technologies numériques pour optimiser la production d'électricité, la distribution et la consommation électrique en temps réel."
-  },
+  "definition": "Réseau électrique moderne intégrant des technologies numériques pour optimiser la production d'électricité, la distribution et la consommation électrique en temps réel.",
   "related": [
     "consommation-electrique",
     "electricite",

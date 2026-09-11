@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit logique qui sélectionne l'un de plusieurs signaux d'entrée pour le diriger vers une seule sortie, opération inverse du démultiplexeur."
-  },
+  "definition": "Circuit logique qui sélectionne l'un de plusieurs signaux d'entrée pour le diriger vers une seule sortie, opération inverse du démultiplexeur.",
   "related": [
     "circuit-logique",
     "demultiplexeur"

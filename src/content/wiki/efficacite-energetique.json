@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Rapport entre l'énergie utile obtenue et l'énergie électrique consommée, un indicateur clé du rendement énergétique d'un appareil ou d'un bâtiment."
-  },
+  "definition": "Rapport entre l'énergie utile obtenue et l'énergie électrique consommée, un indicateur clé du rendement énergétique d'un appareil ou d'un bâtiment.",
   "related": [
     "economie-denergie",
     "rendement-energetique"

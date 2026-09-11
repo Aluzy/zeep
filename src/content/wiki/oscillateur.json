@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit électronique qui génère un signal périodique, souvent stabilisé par un quartz, utilisé comme référence de fréquence de commutation dans un microcontrôleur."
-  },
+  "definition": "Circuit électronique qui génère un signal périodique, souvent stabilisé par un quartz, utilisé comme référence de fréquence de commutation dans un microcontrôleur.",
   "related": [
     "electronique",
     "frequence-de-commutation",

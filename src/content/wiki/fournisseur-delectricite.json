@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Entreprise qui commercialise l'électricité produite ou achetée auprès des consommateurs raccordés au réseau électrique."
-  },
+  "definition": "Entreprise qui commercialise l'électricité produite ou achetée auprès des consommateurs raccordés au réseau électrique.",
   "related": [
     "electricite",
     "facture-delectricite",

@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble d'éoliennes qui produisent de l'électricité à partir de l'énergie du vent."
-  },
+  "definition": "Ensemble d'éoliennes qui produisent de l'électricité à partir de l'énergie du vent.",
   "related": [
     "electricite"
   ],

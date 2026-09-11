@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble de fils électriques regroupés et protégés par une gaine isolante, servant au transport du courant électrique."
-  },
+  "definition": "Ensemble de fils électriques regroupés et protégés par une gaine isolante, servant au transport du courant électrique.",
   "related": [
     "courant-electrique"
   ],

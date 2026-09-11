@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Machine électrique qui convertit l'énergie mécanique en courant alternatif, utilisée dans les centrales électriques pour la production d'électricité."
-  },
+  "definition": "Machine électrique qui convertit l'énergie mécanique en courant alternatif, utilisée dans les centrales électriques pour la production d'électricité.",
   "related": [
     "barrage-hydroelectrique",
     "centrale-nucleaire",

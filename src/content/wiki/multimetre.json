@@ -9,12 +9,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Instrument de mesure polyvalent permettant de mesurer la tension électrique, l'intensité électrique et la résistance électrique, combinant les fonctions de voltmètre, ampèremètre et ohmmètre."
-  },
+  "definition": "Instrument de mesure polyvalent permettant de mesurer la tension électrique, l'intensité électrique et la résistance électrique, combinant les fonctions de voltmètre, ampèremètre et ohmmètre.",
   "related": [
     "amperemetre",
     "intensite-electrique",

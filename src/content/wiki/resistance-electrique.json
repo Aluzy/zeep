@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Opposition qu'un conducteur électrique oppose au passage du courant électrique, exprimée en ohms et mesurée avec un ohmmètre."
-  },
+  "definition": "Opposition qu'un conducteur électrique oppose au passage du courant électrique, exprimée en ohms et mesurée avec un ohmmètre.",
   "related": [
     "conducteur-electrique",
     "courant-electrique",

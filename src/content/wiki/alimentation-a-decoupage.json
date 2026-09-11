@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Alimentation électronique qui régule la tension en commutant rapidement un transistor, comme un MOSFET, offrant un meilleur rendement qu'un régulateur de tension linéaire."
-  },
+  "definition": "Alimentation électronique qui régule la tension en commutant rapidement un transistor, comme un MOSFET, offrant un meilleur rendement qu'un régulateur de tension linéaire.",
   "related": [
     "alimentation-electronique",
     "electronique",

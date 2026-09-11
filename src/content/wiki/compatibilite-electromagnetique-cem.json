@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Aptitude d'un circuit électronique à fonctionner sans provoquer ni subir d'interférence électromagnétique gênante pour son environnement."
-  },
+  "definition": "Aptitude d'un circuit électronique à fonctionner sans provoquer ni subir d'interférence électromagnétique gênante pour son environnement.",
   "related": [
     "electronique",
     "interference-electromagnetique"

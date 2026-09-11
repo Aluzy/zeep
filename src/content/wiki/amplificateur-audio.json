@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit électronique qui augmente la puissance d'un signal analogique sonore, souvent construit autour d'un amplificateur opérationnel ou d'un transistor."
-  },
+  "definition": "Circuit électronique qui augmente la puissance d'un signal analogique sonore, souvent construit autour d'un amplificateur opérationnel ou d'un transistor.",
   "related": [
     "amplificateur-operationnel",
     "electronique",

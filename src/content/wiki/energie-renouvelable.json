@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Source d'énergie, comme le soleil, le vent ou l'eau, considérée comme inépuisable à l'échelle humaine et utilisée pour la production d'électricité."
-  },
+  "definition": "Source d'énergie, comme le soleil, le vent ou l'eau, considérée comme inépuisable à l'échelle humaine et utilisée pour la production d'électricité.",
   "related": [
     "electricite",
     "panneau-photovoltaique",

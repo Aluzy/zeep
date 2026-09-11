@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ligne électrique transportant l'électricité à une tension élevée sur de longues distances afin de limiter les pertes en ligne."
-  },
+  "definition": "Ligne électrique transportant l'électricité à une tension élevée sur de longues distances afin de limiter les pertes en ligne.",
   "related": [
     "electricite"
   ],

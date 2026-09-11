@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Conducteur d'un circuit électrique qui ramène le courant électrique vers la source, complétant le circuit avec la phase électrique."
-  },
+  "definition": "Conducteur d'un circuit électrique qui ramène le courant électrique vers la source, complétant le circuit avec la phase électrique.",
   "related": [
     "circuit-electrique",
     "courant-electrique",

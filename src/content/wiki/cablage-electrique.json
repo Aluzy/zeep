@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble des câbles électriques et fils électriques posés dans un bâtiment pour relier le tableau électrique aux différents points d'utilisation."
-  },
+  "definition": "Ensemble des câbles électriques et fils électriques posés dans un bâtiment pour relier le tableau électrique aux différents points d'utilisation.",
   "related": [
     "fil-electrique",
     "installation-electrique",

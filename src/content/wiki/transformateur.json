@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Appareil électrique qui modifie la tension électrique d'un courant alternatif tout en conservant la fréquence électrique, utilisé dans les postes de transformation."
-  },
+  "definition": "Appareil électrique qui modifie la tension électrique d'un courant alternatif tout en conservant la fréquence électrique, utilisé dans les postes de transformation.",
   "related": [
     "courant-alternatif",
     "frequence-electrique",

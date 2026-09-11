@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant de sécurité qui fond et interrompt le circuit électrique lorsque l'intensité électrique dépasse une valeur donnée."
-  },
+  "definition": "Composant de sécurité qui fond et interrompt le circuit électrique lorsque l'intensité électrique dépasse une valeur donnée.",
   "related": [
     "circuit-electrique",
     "court-circuit",

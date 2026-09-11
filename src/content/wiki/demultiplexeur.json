@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit logique qui dirige un signal d'entrée unique vers l'une de plusieurs sorties possibles, opération inverse du multiplexeur."
-  },
+  "definition": "Circuit logique qui dirige un signal d'entrée unique vers l'une de plusieurs sorties possibles, opération inverse du multiplexeur.",
   "related": [
     "circuit-logique",
     "multiplexeur"

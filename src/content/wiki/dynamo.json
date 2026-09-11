@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Générateur électrique produisant un courant continu à partir d'une rotation mécanique."
-  },
+  "definition": "Générateur électrique produisant un courant continu à partir d'une rotation mécanique.",
   "related": [
     "courant-continu",
     "generateur-electrique"

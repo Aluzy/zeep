@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble de conducteurs qui transportent des signaux numériques entre plusieurs composants électroniques, comme un processeur et une mémoire vive."
-  },
+  "definition": "Ensemble de conducteurs qui transportent des signaux numériques entre plusieurs composants électroniques, comme un processeur et une mémoire vive.",
   "related": [
     "memoire-vive-ram",
     "processeur-cpu",

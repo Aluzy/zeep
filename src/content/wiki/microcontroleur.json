@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit intégré combinant un processeur, une mémoire vive, une mémoire morte et des entrées-sorties, utilisé pour piloter un objet connecté ou un système embarqué comme une carte Arduino."
-  },
+  "definition": "Circuit intégré combinant un processeur, une mémoire vive, une mémoire morte et des entrées-sorties, utilisé pour piloter un objet connecté ou un système embarqué comme une carte Arduino.",
   "related": [
     "asic",
     "bus-i2c",

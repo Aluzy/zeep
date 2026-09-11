@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Terme usuel désignant la tension électrique d'une installation ou d'un appareil, exprimée en volts."
-  },
+  "definition": "Terme usuel désignant la tension électrique d'une installation ou d'un appareil, exprimée en volts.",
   "related": [
     "tension-electrique"
   ],

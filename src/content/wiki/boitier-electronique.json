@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Enveloppe qui protège une carte électronique et ses composants électroniques des chocs, de la poussière et de l'humidité."
-  },
+  "definition": "Enveloppe qui protège une carte électronique et ses composants électroniques des chocs, de la poussière et de l'humidité.",
   "related": [
     "carte-electronique",
     "electronique"

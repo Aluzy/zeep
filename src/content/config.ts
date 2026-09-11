@@ -10,12 +10,7 @@ const wiki = defineCollection({
     merged: z.boolean(),
     pillar: z.boolean().default(false),
     illustration: z.string().nullable().default(null),
-    definitions: z.object({
-      quatre_six: z.string().nullable(),
-      six_dix: z.string().nullable(),
-      college: z.string().nullable(),
-      lycee_adultes: z.string().nullable(),
-    }),
+    definition: z.string(),
     related: z.array(z.string()),
   }),
 });

@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit électronique de base, comme une porte ET, une porte OU ou une porte NON, qui réalise une opération booléenne sur un signal numérique."
-  },
+  "definition": "Circuit électronique de base, comme une porte ET, une porte OU ou une porte NON, qui réalise une opération booléenne sur un signal numérique.",
   "related": [
     "electronique",
     "porte-et-and",

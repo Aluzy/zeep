@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Capteur qui détecte la lumière et la convertit en signal électrique, dont la photodiode et le phototransistor sont des exemples courants."
-  },
+  "definition": "Capteur qui détecte la lumière et la convertit en signal électrique, dont la photodiode et le phototransistor sont des exemples courants.",
   "related": [
     "capteur",
     "photodiode",

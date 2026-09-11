@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Région de l'espace dans laquelle une charge électrique subit une force, créée par la présence d'autres charges électriques."
-  },
+  "definition": "Région de l'espace dans laquelle une charge électrique subit une force, créée par la présence d'autres charges électriques.",
   "related": [
     "charge-electrique",
     "electromagnetisme",

@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ouvrage retenant l'eau d'un cours d'eau afin d'actionner une turbine reliée à un alternateur pour produire de l'électricité dans une centrale hydraulique."
-  },
+  "definition": "Ouvrage retenant l'eau d'un cours d'eau afin d'actionner une turbine reliée à un alternateur pour produire de l'électricité dans une centrale hydraulique.",
   "related": [
     "alternateur",
     "centrale-hydraulique",

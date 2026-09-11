@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Valeur de tension à partir de laquelle un composant comme une diode ou un transistor commence à conduire le courant."
-  },
+  "definition": "Valeur de tension à partir de laquelle un composant comme une diode ou un transistor commence à conduire le courant.",
   "related": [
     "diode",
     "transistor"

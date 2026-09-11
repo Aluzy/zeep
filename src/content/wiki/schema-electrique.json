@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Représentation graphique d'un circuit électrique montrant les liaisons entre les différents composants d'une installation électrique."
-  },
+  "definition": "Représentation graphique d'un circuit électrique montrant les liaisons entre les différents composants d'une installation électrique.",
   "related": [
     "circuit-electrique",
     "installation-electrique"

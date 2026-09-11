@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Mémoire électronique volatile qui stocke temporairement les données utilisées par un processeur pendant son fonctionnement."
-  },
+  "definition": "Mémoire électronique volatile qui stocke temporairement les données utilisées par un processeur pendant son fonctionnement.",
   "related": [
     "bascule-flip-flop",
     "bus-de-donnees",

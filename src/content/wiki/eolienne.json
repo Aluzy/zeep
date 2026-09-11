@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Machine équipée de pales qui transforme l'énergie du vent en électricité grâce à un générateur électrique."
-  },
+  "definition": "Machine équipée de pales qui transforme l'énergie du vent en électricité grâce à un générateur électrique.",
   "related": [
     "electricite",
     "generateur-electrique"

@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Outil chauffant utilisé pour réaliser une soudure électronique entre les composants et un circuit imprimé."
-  },
+  "definition": "Outil chauffant utilisé pour réaliser une soudure électronique entre les composants et un circuit imprimé.",
   "related": [
     "circuit-imprime-pcb",
     "electronique",

@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ligne électrique reliant le réseau de distribution aux compteurs électriques des habitations et des entreprises."
-  },
+  "definition": "Ligne électrique reliant le réseau de distribution aux compteurs électriques des habitations et des entreprises.",
   "related": [
     "reseau-de-distribution"
   ],

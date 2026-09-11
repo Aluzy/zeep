@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Capteur qui convertit une pression physique en signal électrique, utilisé notamment en électronique embarquée."
-  },
+  "definition": "Capteur qui convertit une pression physique en signal électrique, utilisé notamment en électronique embarquée.",
   "related": [
     "capteur",
     "electronique",

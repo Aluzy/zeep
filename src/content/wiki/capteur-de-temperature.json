@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Capteur qui convertit la température ambiante en signal électrique exploitable par un circuit électronique ou un microcontrôleur."
-  },
+  "definition": "Capteur qui convertit la température ambiante en signal électrique exploitable par un circuit électronique ou un microcontrôleur.",
   "related": [
     "capteur",
     "electronique",

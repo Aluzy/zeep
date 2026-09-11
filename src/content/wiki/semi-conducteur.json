@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Matériau, comme le silicium, dont la conductivité électrique intermédiaire permet de fabriquer des diodes, des transistors et des circuits intégrés."
-  },
+  "definition": "Matériau, comme le silicium, dont la conductivité électrique intermédiaire permet de fabriquer des diodes, des transistors et des circuits intégrés.",
   "related": [
     "diode",
     "silicium",

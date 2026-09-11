@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Courant électrique circulant toujours dans le même sens, produit notamment par une batterie ou un panneau photovoltaïque."
-  },
+  "definition": "Courant électrique circulant toujours dans le même sens, produit notamment par une batterie ou un panneau photovoltaïque.",
   "related": [
     "batterie",
     "courant-electrique",

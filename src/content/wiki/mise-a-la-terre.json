@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Connexion électrique reliant les masses métalliques d'une installation électrique au sol via une prise de terre, afin d'assurer la sécurité des personnes."
-  },
+  "definition": "Connexion électrique reliant les masses métalliques d'une installation électrique au sol via une prise de terre, afin d'assurer la sécurité des personnes.",
   "related": [
     "installation-electrique",
     "prise-de-terre"

@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Ensemble des équipements, comme le tableau électrique, le câblage électrique et les prises de courant, permettant de distribuer l'électricité dans un bâtiment."
-  },
+  "definition": "Ensemble des équipements, comme le tableau électrique, le câblage électrique et les prises de courant, permettant de distribuer l'électricité dans un bâtiment.",
   "related": [
     "alimentation-electrique",
     "cablage-electrique",

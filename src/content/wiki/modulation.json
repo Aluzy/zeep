@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Technique consistant à faire varier une caractéristique d'un signal, souvent porté par une fréquence de commutation, pour y transmettre une information, utilisée notamment par un émetteur radiofréquence."
-  },
+  "definition": "Technique consistant à faire varier une caractéristique d'un signal, souvent porté par une fréquence de commutation, pour y transmettre une information, utilisée notamment par un émetteur radiofréquence.",
   "related": [
     "emetteur-radiofrequence",
     "frequence-de-commutation"

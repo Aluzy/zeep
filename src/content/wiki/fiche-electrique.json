@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Élément mobile équipé de broches, connecté à un appareil, destiné à être inséré dans une prise de courant."
-  },
+  "definition": "Élément mobile équipé de broches, connecté à un appareil, destiné à être inséré dans une prise de courant.",
   "related": [
     "prise-de-courant"
   ],

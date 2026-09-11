@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Différence de potentiel électrique entre deux points d'un circuit électrique, exprimée en volts, qui met en mouvement le courant électrique."
-  },
+  "definition": "Différence de potentiel électrique entre deux points d'un circuit électrique, exprimée en volts, qui met en mouvement le courant électrique.",
   "related": [
     "circuit-electrique",
     "courant-electrique",

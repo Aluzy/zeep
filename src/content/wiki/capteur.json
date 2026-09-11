@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Composant électronique qui transforme une grandeur physique, comme la température ou la pression, en signal analogique ou numérique exploitable par un microcontrôleur."
-  },
+  "definition": "Composant électronique qui transforme une grandeur physique, comme la température ou la pression, en signal analogique ou numérique exploitable par un microcontrôleur.",
   "related": [
     "bus-spi",
     "capteur-de-pression",

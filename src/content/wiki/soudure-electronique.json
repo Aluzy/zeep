@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Technique d'assemblage qui fixe et relie électriquement les composants électroniques à un circuit imprimé à l'aide d'un fer à souder."
-  },
+  "definition": "Technique d'assemblage qui fixe et relie électriquement les composants électroniques à un circuit imprimé à l'aide d'un fer à souder.",
   "related": [
     "circuit-imprime-pcb",
     "fer-a-souder"

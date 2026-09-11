@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Transistor à effet de champ à grille isolée, très utilisé en électronique de puissance et dans les alimentations à découpage pour sa faible consommation."
-  },
+  "definition": "Transistor à effet de champ à grille isolée, très utilisé en électronique de puissance et dans les alimentations à découpage pour sa faible consommation.",
   "related": [
     "alimentation-a-decoupage",
     "electronique",

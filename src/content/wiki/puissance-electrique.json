@@ -8,12 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Quantité d'énergie électrique consommée ou produite par unité de temps, exprimée en watts, égale au produit de la tension électrique par l'intensité électrique."
-  },
+  "definition": "Quantité d'énergie électrique consommée ou produite par unité de temps, exprimée en watts, égale au produit de la tension électrique par l'intensité électrique.",
   "related": [
     "intensite-electrique",
     "kilowatt",

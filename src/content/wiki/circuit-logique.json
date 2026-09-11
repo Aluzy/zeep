@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit numérique construit à partir de portes logiques, comme la porte ET, la porte OU ou la porte NON, qui traite des signaux binaires."
-  },
+  "definition": "Circuit numérique construit à partir de portes logiques, comme la porte ET, la porte OU ou la porte NON, qui traite des signaux binaires.",
   "related": [
     "bascule-flip-flop",
     "circuit-numerique",

@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Protocole de communication série synchrone permettant de relier plusieurs composants électroniques, comme des capteurs, à un microcontrôleur avec seulement deux fils."
-  },
+  "definition": "Protocole de communication série synchrone permettant de relier plusieurs composants électroniques, comme des capteurs, à un microcontrôleur avec seulement deux fils.",
   "related": [
     "microcontroleur",
     "protocole-de-communication"

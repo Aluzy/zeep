@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Rapport entre l'amplitude d'un signal en sortie et en entrée d'un circuit, notamment d'un amplificateur opérationnel ou d'un amplificateur audio."
-  },
+  "definition": "Rapport entre l'amplitude d'un signal en sortie et en entrée d'un circuit, notamment d'un amplificateur opérationnel ou d'un amplificateur audio.",
   "related": [
     "amplificateur-audio",
     "amplificateur-operationnel"

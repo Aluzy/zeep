@@ -8,12 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definitions": {
-    "quatre_six": null,
-    "six_dix": null,
-    "college": null,
-    "lycee_adultes": "Circuit électronique qui transforme un signal en onde radiofréquence transmise par une antenne, utilisé notamment dans le Bluetooth et le Wi-Fi."
-  },
+  "definition": "Circuit électronique qui transforme un signal en onde radiofréquence transmise par une antenne, utilisé notamment dans le Bluetooth et le Wi-Fi.",
   "related": [
     "antenne",
     "bluetooth",
