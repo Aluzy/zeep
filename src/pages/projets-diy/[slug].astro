@@ -19,7 +19,12 @@ const d = project.data;
 const BASE = import.meta.env.BASE_URL;
 const group = domainGroup([d.domain]);
 const byId = Object.fromEntries(wiki.map((x) => [x.data.slug, x.data]));
-const related = (d.related || []).map((s) => byId[s]).filter(Boolean);
+// Un slug introuvable fait échouer le build au lieu de faire disparaître le lien.
+const related = (d.related || []).map((s) => {
+  const r = byId[s];
+  if (!r) throw new Error(`Fiche wiki introuvable « ${s} » référencée par le projet DIY ${d.slug}`);
+  return r;
+});
 const videos = (d.videos || []).filter((v) => v.url);
 ---
 <Base title={d.title} description={d.excerpt} group={group} active="diy">

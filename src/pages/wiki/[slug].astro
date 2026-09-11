@@ -17,7 +17,12 @@ const t = entry.data;
 const BASE = import.meta.env.BASE_URL;
 const group = domainGroup(t.domains);
 const byId = Object.fromEntries(all.map((x) => [x.data.slug, x.data]));
-const related = t.related.map((s) => byId[s]).filter(Boolean);
+// Un slug introuvable fait échouer le build au lieu de faire disparaître le lien.
+const related = t.related.map((s) => {
+  const r = byId[s];
+  if (!r) throw new Error(`Fiche wiki introuvable « ${s} » référencée par la fiche ${t.slug}`);
+  return r;
+});
 ---
 <Base title={t.term} description={t.definition.replace(/<[^>]+>/g, "").slice(0, 160)} group={group} active="wiki">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}wiki/`}>Wiki</a> / {t.term}</div>
