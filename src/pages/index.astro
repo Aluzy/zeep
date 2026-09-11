@@ -7,10 +7,13 @@ const BASE = import.meta.env.BASE_URL;
 const wiki = await getCollection("wiki");
 const blog = await getCollection("blog");
 const diy = await getCollection("diy");
+// Domaines de la taxonomie ayant au moins une fiche wiki (un domaine vide n'est pas « couvert »).
+const usedDomains = new Set(wiki.flatMap((t) => t.data.domains));
+const coveredDomains = Object.keys(TAXONOMY).filter((code) => usedDomains.has(code)).length;
 ---
 <Base title="Accueil" description="Wiki et blog sur l'électricité et l'électronique" group="neutre" active="home">
   <section class="hero">
-    <h1>200 notions d'électricité et d'électronique, reliées entre elles — pour apprendre en s'amusant.</h1>
+    <h1>{wiki.length} notions d'électricité et d'électronique, reliées entre elles — pour apprendre en s'amusant.</h1>
     <p class="lead">Un wiki où chaque mot-clé renvoie aux notions voisines, des projets DIY pour apprendre en construisant, et un blog pour aller plus loin sur chaque sujet.</p>
     <div class="cta-row">
       <a class="btn" href={`${BASE}wiki/`}>Explorer le wiki →</a>
@@ -18,7 +21,7 @@ const diy = await getCollection("diy");
     </div>
     <div class="stat-row">
       <div class="stat"><div class="num">{wiki.length}</div><div class="lbl">Termes du wiki</div></div>
-      <div class="stat"><div class="num">{Object.keys(TAXONOMY).length}</div><div class="lbl">Domaines couverts</div></div>
+      <div class="stat"><div class="num">{coveredDomains}</div><div class="lbl">Domaines couverts</div></div>
       <div class="stat"><div class="num">{diy.length}</div><div class="lbl">Projets DIY</div></div>
       <div class="stat"><div class="num">{blog.length}</div><div class="lbl">Articles de blog</div></div>
     </div>
