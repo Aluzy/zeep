@@ -1,4 +1,4 @@
-# Élektropédia (zeep) — v2, migration Astro
+#ZEEP — v2, migration Astro
 
 Migration de l'ossature v1 (site statique zéro-dépendance) vers un vrai
 projet [Astro](https://astro.build), pour préparer la suite : panneau de
