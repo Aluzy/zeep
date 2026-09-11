@@ -25,7 +25,9 @@ const related = (d.related || []).map((s) => {
   if (!r) throw new Error(`Fiche wiki introuvable « ${s} » référencée par le projet DIY ${d.slug}`);
   return r;
 });
-const videos = (d.videos || []).filter((v) => v.url);
+const videos = (d.videos || []).filter((v) => v.url.trim().length > 0);
+// Colonne « Où l'acheter » affichée seulement si au moins un composant a un lien d'achat.
+const hasBuyLinks = d.composants.some((c) => c.liens && c.liens.length > 0);
 ---
 <Base title={d.title} description={d.excerpt} group={group} active="diy">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}projets-diy/`}>Projets DIY</a> / {d.title}</div>
@@ -52,8 +54,8 @@ const videos = (d.videos || []).filter((v) => v.url);
       </div>
     )}
 
-    <h2>Matériel &amp; sourcing</h2>
-    {d.composants.length > 0 ? (
+    {d.composants.length > 0 && <h2>{hasBuyLinks ? "Matériel & sourcing" : "Matériel"}</h2>}
+    {d.composants.length > 0 && hasBuyLinks ? (
       <table class="components-table">
         <thead><tr><th>Composant</th><th>Quantité</th><th>Où l'acheter</th></tr></thead>
         <tbody>
@@ -66,8 +68,21 @@ const videos = (d.videos || []).filter((v) => v.url);
                   <div class="buy-links">
                     {c.liens.map((l) => <a href={l.url} target="_blank" rel="noopener sponsored">{l.label}</a>)}
                   </div>
-                ) : <span class="no-link">liens à venir</span>}
+                ) : <span class="no-link">—</span>}
               </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ) : null}
+    {d.composants.length > 0 && !hasBuyLinks ? (
+      <table class="components-table">
+        <thead><tr><th>Composant</th><th>Quantité</th></tr></thead>
+        <tbody>
+          {d.composants.map((c) => (
+            <tr>
+              <td>{c.nom}</td>
+              <td>{c.quantite}</td>
             </tr>
           ))}
         </tbody>
@@ -77,8 +92,8 @@ const videos = (d.videos || []).filter((v) => v.url);
     <h2>Étapes</h2>
     <ol>{d.etapes.map((e) => <li>{e}</li>)}</ol>
 
-    <h2>Pour aller plus loin</h2>
-    <p>{d.pourAllerPlusLoin}</p>
+    {d.pourAllerPlusLoin.trim().length > 0 && <h2>Pour aller plus loin</h2>}
+    {d.pourAllerPlusLoin.trim().length > 0 && <p>{d.pourAllerPlusLoin}</p>}
   </article>
   {related.length > 0 && (
     <div class="related-block">
