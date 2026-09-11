@@ -1,6 +1,6 @@
 {
   "term": "Fournisseur d'électricité",
-  "slug": "fournisseur-delectricite",
+  "slug": "fournisseur-d-electricite",
   "domains": [
     "J"
   ],
@@ -11,7 +11,7 @@
   "definition": "Entreprise qui commercialise l'électricité produite ou achetée auprès des consommateurs raccordés au réseau électrique.",
   "related": [
     "electricite",
-    "facture-delectricite",
+    "facture-d-electricite",
     "reseau-electrique"
   ],
   "pillar": false,

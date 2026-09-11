@@ -1,6 +1,6 @@
 {
   "term": "Facture d'électricité",
-  "slug": "facture-delectricite",
+  "slug": "facture-d-electricite",
   "domains": [
     "J"
   ],
@@ -13,7 +13,7 @@
     "compteur-electrique",
     "consommation-electrique",
     "electricite",
-    "fournisseur-delectricite",
+    "fournisseur-d-electricite",
     "kilowattheure"
   ],
   "pillar": false,

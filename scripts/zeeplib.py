@@ -19,7 +19,8 @@ def slugify(term: str) -> str:
     """Convention des slugs (décidée le 11/09) : minuscules, accents retirés,
     tout caractère non alphanumérique (espace, apostrophe, parenthèse) -> tiret.
     "Facture d'électricité" -> "facture-d-electricite" ; "Loi d'Ohm" -> "loi-d-ohm".
-    (L'ancienne convention supprimait l'apostrophe : "facture-delectricite".)"""
+    (L'ancienne convention supprimait l'apostrophe sans la remplacer par un tiret ;
+    les fiches concernées ont été renommées avec scripts/rename_slug.py.)"""
     s = unicodedata.normalize("NFKD", term.lower())
     s = "".join(c for c in s if not unicodedata.combining(c))
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
