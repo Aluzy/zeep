@@ -7,7 +7,7 @@
  * du plan de contenu (blocs « Articles de blog liés » et « Projets DIY liés »).
  *
  * Usage : **une seule construction par page au plus**. Sur `wiki/[slug].astro`,
- * l'index est bâti dans `getStaticPaths()` (donc une fois pour les 197 fiches) et
+ * l'index est bâti dans `getStaticPaths()` (donc une fois pour toutes les fiches) et
  * chaque page ne reçoit en props que ses propres liens retour.
  *
  * Aucune dépendance : les types d'entrée sont décrits de façon structurelle pour ne pas
@@ -126,7 +126,7 @@ export function buildBacklinkIndex(
 
 /**
  * Liens retour d'une fiche. Renvoie toujours un objet : une fiche que personne ne
- * cite (la majorité des 197) reçoit deux listes vides, et les blocs restent masqués.
+ * cite (la majorité d’entre elles) reçoit deux listes vides, et les blocs restent masqués.
  */
 export function liensRetourDe(index: IndexLiensRetour, slug: string): LiensRetour {
   return index.get(slug) || { articles: [], projets: [] };

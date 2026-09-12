@@ -11,11 +11,13 @@
   "definition": "Matériau, souvent métallique, qui laisse circuler facilement le courant électrique, utilisé notamment dans les câbles électriques.",
   "related": [
     "amperemetre",
+    "caracteristique-tension-courant",
     "courant-electrique",
     "electron",
     "fil-electrique",
     "induction-electromagnetique",
     "intensite-electrique",
+    "loi-d-ohm",
     "ohmmetre",
     "resistance-electrique"
   ],

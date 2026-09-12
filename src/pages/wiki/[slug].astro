@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   const blog = await getCollection("blog");
   const diy = await getCollection("diy");
   // Index inverse (articles et projets qui citent une fiche) : construit une seule
-  // fois ici pour les 197 pages ; chaque page ne reçoit que ses propres liens retour.
+  // fois ici pour toutes les pages ; chaque page ne reçoit que ses propres liens retour.
   const backlinks = buildBacklinkIndex(blog, diy, wiki.map((t) => t.data.slug));
   return wiki.map((t) => ({
     params: { slug: t.data.slug },
@@ -59,13 +59,12 @@ const projetsLies = liens.projets;
         {niveau && (
           <span
             class="chip niveau-badge"
-            title={`Cette notion apparaît dans les programmes scolaires à ce niveau : ${niveauTexte}.`}
+            title={`Première apparition repérée dans les programmes scolaires : ${niveauTexte}. La notion peut être rencontrée plus tôt dans une autre voie.`}
           >
-            <span class="k">Niveau</span>{niveauTexte}
+            <span class="k">Première apparition</span>{niveauTexte}
           </span>
         )}
       </div>
-      {niveau && <p class="niveau-note">Apparaît dans les programmes à ce niveau.</p>}
     </div>
     <div class="definition" set:html={t.definition} />
     {versionSimple && (

@@ -7,7 +7,7 @@
   "domains": [
     "A"
   ],
-  "definition": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il fournit de l'énergie au circuit, comme une pile, et passif quand il la reçoit, comme une résistance ou une lampe.",
+  "definition": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il peut fournir de l'énergie au circuit, comme une pile — sa caractéristique ne passe pas par l'origine —, et passif dans le cas contraire, comme une résistance ou une lampe.",
   "versionSimple": "Un dipôle est un élément de circuit qui se branche par deux bornes. Dans une lampe de poche, la pile, l'ampoule et l'interrupteur sont des dipôles.",
   "niveau": {
     "premiereApparition": "C4",
@@ -30,17 +30,17 @@
   },
   "sources": [
     {
-      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »",
+      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »",
       "url": "https://eduscol.education.fr/document/17731/download",
       "type": "programme"
     },
     {
-      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
+      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
       "url": "https://eduscol.education.fr/document/22873/download",
       "type": "programme"
     },
     {
-      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
+      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »",
       "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
       "type": "programme"
     }

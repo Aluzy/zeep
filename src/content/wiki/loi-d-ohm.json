@@ -8,7 +8,7 @@
     "A"
   ],
   "definition": "Relation de proportionnalité entre la tension aux bornes d'un conducteur ohmique et l'intensité du courant qui le traverse : U = R × I, où R est la résistance du conducteur, exprimée en ohms. Elle ne s'applique qu'aux conducteurs ohmiques, dont la caractéristique tension-courant est une droite passant par l'origine.",
-  "versionSimple": "Une résistance freine toujours le courant de la même façon : avec deux piles au lieu d'une, la tension double et le courant qui la traverse double aussi.",
+  "versionSimple": "Une résistance freine toujours le courant de la même façon : avec deux piles branchées l'une après l'autre, la tension double et le courant qui la traverse double aussi.",
   "niveau": {
     "premiereApparition": "C4",
     "cycles": [
@@ -23,17 +23,17 @@
   },
   "sources": [
     {
-      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »",
+      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »",
       "url": "https://eduscol.education.fr/document/17731/download",
       "type": "programme"
     },
     {
-      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
+      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »",
       "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
       "type": "programme"
     },
     {
-      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
+      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
       "url": "https://eduscol.education.fr/document/22873/download",
       "type": "programme"
     }
@@ -46,6 +46,7 @@
   "slug": "loi-d-ohm",
   "related": [
     "caracteristique-tension-courant",
+    "conducteur-electrique",
     "dipole",
     "effet-joule",
     "intensite-electrique",
