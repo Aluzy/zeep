@@ -6,6 +6,16 @@ import { TAXONOMY } from "../../lib/helpers";
 const BASE = import.meta.env.BASE_URL;
 const wikiRaw = await getCollection("wiki");
 const wiki = [...wikiRaw].sort((a, b) => a.data.term.localeCompare(b.data.term, "fr"));
+
+// Nombre de fiches par domaine : on n'affiche un filtre que pour les domaines
+// réellement peuplés (sinon le bouton mène à une grille vide — cas du domaine G).
+const countByDomain: Record<string, number> = {};
+for (const t of wiki) {
+  for (const d of t.data.domains) {
+    countByDomain[d] = (countByDomain[d] || 0) + 1;
+  }
+}
+const domainesUtilises = Object.entries(TAXONOMY).filter(([code]) => (countByDomain[code] || 0) > 0);
 ---
 <Base title="Wiki" description="Glossaire interconnecté d'électricité et d'électronique" group="neutre" active="wiki">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / Wiki</div>
@@ -16,8 +26,8 @@ const wiki = [...wikiRaw].sort((a, b) => a.data.term.localeCompare(b.data.term, 
   </div>
   <div class="domain-filters">
     <button type="button" data-domain="all" class="active">Tous</button>
-    {Object.entries(TAXONOMY).map(([code, name]) => (
-      <button type="button" data-domain={code} title={name}>{code}</button>
+    {domainesUtilises.map(([code, name]) => (
+      <button type="button" data-domain={code} title={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`}>{code}</button>
     ))}
   </div>
   <div class="term-grid" id="term-grid">
