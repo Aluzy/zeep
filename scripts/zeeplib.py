@@ -12,6 +12,8 @@ BLOG_DIR = ROOT / "src" / "content" / "blog"
 DIY_DIR = ROOT / "src" / "content" / "diy"
 TAXONOMY_FILE = ROOT / "src" / "data" / "taxonomy.json"
 
+LIGATURES = {"œ": "oe", "æ": "ae", "ﬁ": "fi"}  # non décomposées par NFKD
+
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
@@ -21,7 +23,10 @@ def slugify(term: str) -> str:
     "Facture d'électricité" -> "facture-d-electricite" ; "Loi d'Ohm" -> "loi-d-ohm".
     (L'ancienne convention supprimait l'apostrophe sans la remplacer par un tiret ;
     les fiches concernées ont été renommées avec scripts/rename_slug.py.)"""
-    s = unicodedata.normalize("NFKD", term.lower())
+    s = term.lower()
+    for lig, rempl in LIGATURES.items():
+        s = s.replace(lig, rempl)
+    s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
