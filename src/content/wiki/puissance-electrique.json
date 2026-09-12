@@ -19,5 +19,22 @@
     "wattmetre"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "1G",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM02",
+      "FAM08"
+    ],
+    "matriceIds": [
+      "M009",
+      "M030",
+      "M072"
+    ]
+  }
 }

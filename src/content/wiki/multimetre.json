@@ -19,5 +19,20 @@
     "voltmetre"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "2GT",
+    "cycles": [
+      "2GT",
+      "1G"
+    ],
+    "familles": [
+      "FAM14"
+    ],
+    "matriceIds": [
+      "M020",
+      "M021",
+      "M031"
+    ]
+  }
 }

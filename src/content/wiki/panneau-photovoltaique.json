@@ -15,5 +15,17 @@
     "onduleur"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "TG",
+    "cycles": [
+      "TG"
+    ],
+    "familles": [
+      "FAM04"
+    ],
+    "matriceIds": [
+      "M025"
+    ]
+  }
 }

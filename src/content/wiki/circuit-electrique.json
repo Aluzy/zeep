@@ -24,5 +24,28 @@
     "wattmetre"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C2",
+    "cycles": [
+      "C2",
+      "C3",
+      "C4",
+      "1G",
+      "CAP"
+    ],
+    "familles": [
+      "FAM01",
+      "FAM02",
+      "FAM04"
+    ],
+    "matriceIds": [
+      "M002",
+      "M003",
+      "M007",
+      "M009",
+      "M034",
+      "M061"
+    ]
+  }
 }

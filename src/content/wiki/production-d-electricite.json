@@ -17,5 +17,25 @@
     "reseau-intelligent-smart-grid"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "TG",
+    "cycles": [
+      "TG",
+      "CAP",
+      "BACPRO",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM04",
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M025",
+      "M048",
+      "M060",
+      "M064",
+      "M066"
+    ]
+  }
 }

@@ -14,5 +14,19 @@
     "generateur-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "CAP",
+    "cycles": [
+      "CAP",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM04"
+    ],
+    "matriceIds": [
+      "M063",
+      "M068"
+    ]
+  }
 }

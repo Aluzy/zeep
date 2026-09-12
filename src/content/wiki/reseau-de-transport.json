@@ -15,5 +15,25 @@
     "reseau-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "TG",
+    "cycles": [
+      "TG",
+      "CAP",
+      "BACPRO",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM08",
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M026",
+      "M027",
+      "M045",
+      "M060",
+      "M064"
+    ]
+  }
 }

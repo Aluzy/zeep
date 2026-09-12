@@ -16,5 +16,20 @@
     "wi-fi"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "TG",
+    "cycles": [
+      "TG",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM06",
+      "FAM11"
+    ],
+    "matriceIds": [
+      "M035",
+      "M043"
+    ]
+  }
 }

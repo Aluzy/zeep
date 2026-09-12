@@ -14,5 +14,17 @@
     "frequence-de-commutation"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "TG",
+    "cycles": [
+      "TG"
+    ],
+    "familles": [
+      "FAM11"
+    ],
+    "matriceIds": [
+      "M035"
+    ]
+  }
 }

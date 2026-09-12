@@ -23,5 +23,23 @@
     "voltmetre"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT",
+      "1G",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM02"
+    ],
+    "matriceIds": [
+      "M009",
+      "M014",
+      "M034",
+      "M072"
+    ]
+  }
 }

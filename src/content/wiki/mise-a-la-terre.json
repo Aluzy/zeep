@@ -14,5 +14,17 @@
     "prise-de-terre"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "BACPRO",
+    "cycles": [
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM18"
+    ],
+    "matriceIds": [
+      "M067"
+    ]
+  }
 }

@@ -22,5 +22,22 @@
     "puissance-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT",
+      "1G"
+    ],
+    "familles": [
+      "FAM02",
+      "FAM08"
+    ],
+    "matriceIds": [
+      "M009",
+      "M014",
+      "M029"
+    ]
+  }
 }

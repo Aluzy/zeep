@@ -15,5 +15,17 @@
     "filtre-passe-bande"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "STI2D",
+    "cycles": [
+      "STI2D"
+    ],
+    "familles": [
+      "FAM05"
+    ],
+    "matriceIds": [
+      "M041"
+    ]
+  }
 }

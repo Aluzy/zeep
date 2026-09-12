@@ -13,5 +13,23 @@
     "efficacite-energetique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "1G",
+    "cycles": [
+      "1G",
+      "1-TG",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM04",
+      "FAM08",
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M030",
+      "M036",
+      "M065"
+    ]
+  }
 }

@@ -18,5 +18,22 @@
     "pile-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C2",
+    "cycles": [
+      "C2",
+      "C3",
+      "1G"
+    ],
+    "familles": [
+      "FAM01",
+      "FAM08"
+    ],
+    "matriceIds": [
+      "M002",
+      "M007",
+      "M029"
+    ]
+  }
 }

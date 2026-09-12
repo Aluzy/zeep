@@ -15,5 +15,20 @@
     "protocole-de-communication"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "BACPRO",
+    "cycles": [
+      "BACPRO",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM15"
+    ],
+    "matriceIds": [
+      "M044",
+      "M059",
+      "M069"
+    ]
+  }
 }

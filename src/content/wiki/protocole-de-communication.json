@@ -19,5 +19,17 @@
     "wi-fi"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4"
+    ],
+    "familles": [
+      "FAM06"
+    ],
+    "matriceIds": [
+      "M013"
+    ]
+  }
 }

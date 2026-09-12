@@ -22,5 +22,32 @@
     "signal-analogique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT",
+      "1G",
+      "TG",
+      "BACPRO",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM05",
+      "FAM06",
+      "FAM14"
+    ],
+    "matriceIds": [
+      "M012",
+      "M013",
+      "M015",
+      "M020",
+      "M024",
+      "M037",
+      "M043",
+      "M058",
+      "M071"
+    ]
+  }
 }

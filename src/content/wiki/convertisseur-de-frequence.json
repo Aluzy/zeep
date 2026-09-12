@@ -15,5 +15,17 @@
     "moteur-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "BACPRO",
+    "cycles": [
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM04"
+    ],
+    "matriceIds": [
+      "M068"
+    ]
+  }
 }

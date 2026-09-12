@@ -20,5 +20,19 @@
     "resistance-electrique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C2",
+    "cycles": [
+      "C2",
+      "C3"
+    ],
+    "familles": [
+      "FAM01"
+    ],
+    "matriceIds": [
+      "M002",
+      "M007"
+    ]
+  }
 }

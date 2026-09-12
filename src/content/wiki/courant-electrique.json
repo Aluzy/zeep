@@ -37,5 +37,21 @@
     "tension-electrique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "1G",
+    "cycles": [
+      "1G",
+      "CAP",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM02"
+    ],
+    "matriceIds": [
+      "M034",
+      "M062",
+      "M072"
+    ]
+  }
 }

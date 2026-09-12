@@ -19,5 +19,20 @@
     "robotique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT"
+    ],
+    "familles": [
+      "FAM05",
+      "FAM06"
+    ],
+    "matriceIds": [
+      "M013",
+      "M015"
+    ]
+  }
 }

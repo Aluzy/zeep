@@ -18,5 +18,17 @@
     "production-d-electricite"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "BACPRO",
+    "cycles": [
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM04"
+    ],
+    "matriceIds": [
+      "M066"
+    ]
+  }
 }

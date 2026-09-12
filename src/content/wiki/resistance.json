@@ -40,5 +40,20 @@
     "date": "2026-09-11",
     "par": "agent-J1-L3",
     "statut": "relu-ia"
+  },
+  "niveau": {
+    "premiereApparition": "1G",
+    "cycles": [
+      "1G",
+      "1-TG"
+    ],
+    "familles": [
+      "FAM08",
+      "FAM10"
+    ],
+    "matriceIds": [
+      "M030",
+      "M033"
+    ]
   }
 }
