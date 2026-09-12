@@ -50,4 +50,8 @@ Le plan d'ensemble et les fiches de mission vivent dans le projet claude.ai
 - Slugs : `scripts/zeeplib.py::slugify` (apostrophes et espaces -> tirets : `loi-d-ohm`).
 - Liens wiki toujours réciproques (le changeset s'en charge).
 - Schéma des collections : `src/content/config.ts` et `scripts/validate_content.py` doivent rester synchronisés.
-- Les références entre collections utilisent `reference()` d'Astro : un slug invalide doit faire échouer le build.
+- Les liens entre contenus sont des slugs (chaînes). Deux filets les protègent : `validate_content.py`, qui tourne en CI
+  avant le build, et les gabarits, qui lèvent une erreur explicite au build si un slug est introuvable (jamais de lien
+  silencieusement ignoré). Migrer vers `reference()` d'Astro reste possible plus tard, mais n'est pas requis.
+- Champs de fiche ajoutés le 12/09 (renseignés progressivement) : `niveau` (première apparition dans les programmes),
+  `versionSimple`, `sources`, `relecture`. Ils sont déclarés dans `src/content/config.ts` et validés par le script.

@@ -135,7 +135,8 @@ def main() -> int:
         print("Fiches par domaine : " + ", ".join(f"{k}={dom.get(k, 0)}" for k in taxonomy))
         print(f"Avec niveau scolaire : {sum(1 for d in wiki.values() if d.get('niveau'))}")
         print(f"Avec version simple  : {sum(1 for d in wiki.values() if d.get('versionSimple'))}")
-        print(f"Relues               : {sum(1 for d in wiki.values() if (d.get('relecture') or {}).get('statut') == 'relu')}")
+        statuts = Counter((d.get("relecture") or {}).get("statut") for d in wiki.values())
+        print(f"Relues               : {statuts.get('relu-ia', 0)} relu-ia, {statuts.get('valide', 0)} validées par Alexandre")
 
     for w in warnings:
         print(f"AVERTISSEMENT  {w}")
