@@ -192,11 +192,52 @@ footer.site-footer{
   padding:26px;color:var(--text-faint);font-size:12.5px;font-family:var(--font-mono);text-align:center;
 }
 .related-block{margin-top:36px;max-width:660px;}
+.sources-block{margin-top:36px;max-width:660px;}
 .related-block h2, .section-label{
   font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;color:var(--text-dim);
   font-weight:500;margin:0 0 14px;text-transform:uppercase;
 }
 .pins{display:flex;flex-wrap:wrap;gap:10px;}
+
+/* ---------- Fiche : niveau scolaire, version simple, sources, relecture ----------
+   Tous ces blocs sont conditionnels : une fiche sans niveau, sans version simple
+   et sans source rend exactement la page d'avant. */
+.term-meta{margin-bottom:20px;}
+.niveau-badge{
+  gap:6px;color:var(--text);border-color:var(--border-strong);
+  background:var(--panel-alt);cursor:help;
+}
+.niveau-badge .k{color:var(--text-faint);text-transform:uppercase;letter-spacing:.04em;}
+.niveau-note{margin:8px 0 0;font-size:12px;line-height:1.5;color:var(--text-faint);max-width:660px;}
+
+.simple-box{
+  margin:22px 0 0;max-width:660px;padding:14px 18px;
+  background:var(--accent-dim);border:1px solid var(--border);
+  border-left:3px solid var(--accent);border-radius:var(--radius);
+}
+.simple-box .simple-label{
+  margin:0 0 6px;font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--accent);
+}
+.simple-box .simple-text{margin:0;font-size:15px;line-height:1.7;color:var(--text);}
+
+.source-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.source-item{
+  font-size:13.5px;line-height:1.6;color:var(--text-dim);
+  border-left:1px solid var(--border);padding-left:12px;
+}
+.source-item .source-title{color:var(--text);}
+.source-item a.source-title{border-bottom:1px solid var(--border-strong);}
+.source-item a.source-title:hover{color:var(--accent);border-bottom-color:var(--accent);}
+.source-type{
+  display:inline-block;margin-left:8px;font-family:var(--font-mono);font-size:10.5px;
+  color:var(--text-faint);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;
+}
+
+.relecture-note{
+  margin:26px 0 0;max-width:660px;font-family:var(--font-mono);font-size:11px;
+  letter-spacing:.03em;color:var(--text-faint);
+}
 
 /* ---------- Blog / DIY listings ---------- */
 .post-list, .diy-list{display:flex;flex-direction:column;gap:16px;}
@@ -240,4 +281,9 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
   .hero h1{font-size:26px;}
   .term-card h1{font-size:26px;}
   .components-table{font-size:13px;}
+  .simple-box{padding:12px 14px;}
+  .simple-box .simple-text{font-size:14.5px;}
+  /* Les titres de source sont longs : on évite tout débordement horizontal. */
+  .source-item{font-size:13px;padding-left:10px;overflow-wrap:anywhere;}
+  .source-type{margin-left:0;display:block;margin-top:4px;white-space:normal;}
 }

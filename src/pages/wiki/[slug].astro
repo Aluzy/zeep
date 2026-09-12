@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
-import { TAXONOMY, domainGroup } from "../../lib/helpers";
+import { TAXONOMY, domainGroup, niveauLabel, SOURCE_TYPE_LABEL, formatDateFr } from "../../lib/helpers";
 
 export async function getStaticPaths() {
   const wiki = await getCollection("wiki");
@@ -23,18 +23,43 @@ const related = t.related.map((s) => {
   if (!r) throw new Error(`Fiche wiki introuvable « ${s} » référencée par la fiche ${t.slug}`);
   return r;
 });
+
+// Champs pédagogiques : tous facultatifs tant que la migration des fiches n'est pas
+// terminée (lots J2-L2 et J2-L4). Rien ne doit s'afficher quand ils sont absents.
+const niveau = t.niveau;
+const niveauTexte = niveau ? niveauLabel(niveau.premiereApparition) : "";
+const versionSimple = (t.versionSimple || "").trim();
+const sources = (t.sources || []).filter((s) => s && s.titre && s.titre.trim());
+const relecture = t.relecture;
 ---
 <Base title={t.term} description={t.definition.replace(/<[^>]+>/g, "").slice(0, 160)} group={group} active="wiki">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}wiki/`}>Wiki</a> / {t.term}</div>
   <div class="term-card">
     {t.merged && <p class="tag">Terme commun électricité/électronique</p>}
     <h1>{t.term}</h1>
-    <div class="chip-row" style="margin-bottom:20px;">
-      {t.domains.map((d) => (
-        <a href={`${BASE}wiki/?domain=${d}`} class="chip is-accent">{TAXONOMY[d] || d}</a>
-      ))}
+    <div class="term-meta">
+      <div class="chip-row">
+        {t.domains.map((d) => (
+          <a href={`${BASE}wiki/?domain=${d}`} class="chip is-accent">{TAXONOMY[d] || d}</a>
+        ))}
+        {niveau && (
+          <span
+            class="chip niveau-badge"
+            title={`Cette notion apparaît dans les programmes scolaires à ce niveau : ${niveauTexte}.`}
+          >
+            <span class="k">Niveau</span>{niveauTexte}
+          </span>
+        )}
+      </div>
+      {niveau && <p class="niveau-note">Apparaît dans les programmes à ce niveau.</p>}
     </div>
     <div class="definition" set:html={t.definition} />
+    {versionSimple && (
+      <aside class="simple-box">
+        <p class="simple-label">En simple</p>
+        <p class="simple-text">{versionSimple}</p>
+      </aside>
+    )}
     {t.illustration && (
       <div class="illustration-slot">
         <img src={t.illustration} alt={t.term} />
@@ -48,5 +73,27 @@ const related = t.related.map((s) => {
         )) : <span style="color:var(--text-faint);font-size:13px;">Aucun terme relié pour l'instant.</span>}
       </div>
     </div>
+    {sources.length > 0 && (
+      <div class="sources-block">
+        <h2 class="section-label">Sources ({sources.length})</h2>
+        <ol class="source-list">
+          {sources.map((s) => (
+            <li class="source-item">
+              {s.url ? (
+                <a class="source-title" href={s.url} target="_blank" rel="noopener noreferrer">{s.titre}</a>
+              ) : (
+                <span class="source-title">{s.titre}</span>
+              )}
+              {s.type && <span class="source-type">{SOURCE_TYPE_LABEL[s.type] || s.type}</span>}
+            </li>
+          ))}
+        </ol>
+      </div>
+    )}
+    {relecture && (
+      <p class="relecture-note">
+        {relecture.statut === "valide" ? "Validé le " : "Relu par IA le "}{formatDateFr(relecture.date)}
+      </p>
+    )}
   </div>
 </Base>
