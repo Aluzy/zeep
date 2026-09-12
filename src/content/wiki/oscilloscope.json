@@ -1,0 +1,51 @@
+{
+  "sourceDomain": [],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "term": "Oscilloscope",
+  "domains": [
+    "A",
+    "V"
+  ],
+  "definition": "Instrument de laboratoire qui affiche sur un écran la courbe d'une tension en fonction du temps, à partir du signal appliqué à son entrée. Il permet de lire l'amplitude, la période et la forme d'un signal variable, ce qu'un multimètre ne montre pas.",
+  "versionSimple": null,
+  "niveau": {
+    "premiereApparition": "2GT",
+    "cycles": [
+      "2GT"
+    ],
+    "familles": [
+      "FAM14"
+    ],
+    "matriceIds": [
+      "M021"
+    ]
+  },
+  "sources": [
+    {
+      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
+      "url": "https://eduscol.education.fr/document/22873/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « oscilloscope » : « Appareil permettant de visualiser les variations d'une grandeur variable dans le temps »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/oscilloscope/56710",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-12",
+    "par": "agent-J2-L4",
+    "statut": "relu-ia"
+  },
+  "slug": "oscilloscope",
+  "related": [
+    "caracteristique-tension-courant",
+    "frequence-electrique",
+    "multimetre",
+    "signal-analogique",
+    "tension-electrique",
+    "voltmetre"
+  ]
+}

@@ -10,7 +10,10 @@
   "merged": false,
   "definition": "Composant électronique ou électromécanique, comme un servomoteur ou un relais électronique, qui convertit un signal de commande en action physique.",
   "related": [
+    "chaine-d-energie",
+    "chaine-d-information",
     "composant-electronique",
+    "detecteur",
     "electronique",
     "moteur-pas-a-pas",
     "relais-electronique",

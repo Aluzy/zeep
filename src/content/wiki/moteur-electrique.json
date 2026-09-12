@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Machine qui convertit l'énergie électrique en énergie mécanique, fonctionnant à l'inverse d'un générateur électrique.",
   "related": [
+    "chaine-d-energie",
     "convertisseur-de-frequence",
     "generateur-electrique"
   ],

@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Ligne électrique transportant l'électricité à une tension élevée sur de longues distances afin de limiter les pertes en ligne.",
   "related": [
+    "effet-joule",
     "electricite"
   ],
   "pillar": false,

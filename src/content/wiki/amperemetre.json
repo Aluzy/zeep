@@ -13,6 +13,7 @@
     "amperage",
     "conducteur-electrique",
     "intensite-electrique",
+    "loi-des-noeuds",
     "multimetre"
   ],
   "pillar": false,

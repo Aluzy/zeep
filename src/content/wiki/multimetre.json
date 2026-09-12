@@ -12,8 +12,10 @@
   "definition": "Instrument de mesure polyvalent permettant de mesurer la tension électrique, l'intensité électrique et la résistance électrique, combinant les fonctions de voltmètre, ampèremètre et ohmmètre.",
   "related": [
     "amperemetre",
+    "caracteristique-tension-courant",
     "intensite-electrique",
     "ohmmetre",
+    "oscilloscope",
     "resistance-electrique",
     "tension-electrique",
     "voltmetre"

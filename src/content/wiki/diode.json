@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Composant électronique semi-conducteur qui ne laisse passer le courant que dans un seul sens, utilisé notamment dans les circuits de redresseur.",
   "related": [
+    "caracteristique-tension-courant",
     "composant-electronique",
     "diode-electroluminescente-led",
     "electronique",

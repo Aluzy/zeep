@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Partie du réseau électrique qui achemine l'électricité en haute tension depuis les centrales électriques jusqu'aux zones de distribution.",
   "related": [
+    "effet-joule",
     "electricite",
     "poste-de-transformation",
     "reseau-electrique"

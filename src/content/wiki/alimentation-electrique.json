@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Fourniture de courant électrique à un appareil, une installation électrique ou un bâtiment.",
   "related": [
+    "chaine-d-energie",
     "courant-electrique",
     "court-jus",
     "electrification",

@@ -1,0 +1,60 @@
+{
+  "sourceDomain": [],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "term": "Chaîne d'information",
+  "domains": [
+    "F",
+    "S"
+  ],
+  "definition": "Modèle utilisé en technologie pour décrire la partie d'un objet technique qui acquiert une information par des capteurs ou des détecteurs, la traite, le plus souvent dans un microcontrôleur, puis la communique à l'utilisateur ou à la chaîne d'énergie qu'elle commande.",
+  "versionSimple": "Dans un objet technique, les informations suivent un chemin : le détecteur d'un portail repère une voiture, une petite carte électronique décide, et le portail s'ouvre.",
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "STI2D",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM05",
+      "FAM15"
+    ],
+    "matriceIds": [
+      "M012",
+      "M041",
+      "M056",
+      "M057",
+      "M069",
+      "M071"
+    ]
+  },
+  "sources": [
+    {
+      "titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024) : « identifier des constituants de la chaîne d'énergie d'un objet », « identifier des constituants de la chaîne d'information d'un OST »",
+      "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf",
+      "type": "programme"
+    },
+    {
+      "titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI : « définir tout ou partie des fonctions assurées par une chaîne d'énergie et le système de gestion », « l'acquisition, le traitement, le transport, la gestion et la restitution de l'information »",
+      "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/textes/formations-bac-technologique-bac-technologique-sti2d-sti2d-specialite-architecture-et-construction/6170-referentiel-sti2d.pdf",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-12",
+    "par": "agent-J2-L4",
+    "statut": "relu-ia"
+  },
+  "slug": "chaine-d-information",
+  "related": [
+    "actionneur",
+    "capteur",
+    "chaine-d-energie",
+    "detecteur",
+    "microcontroleur",
+    "signal-analogique",
+    "signal-numerique"
+  ]
+}

@@ -14,7 +14,8 @@
     "courant-electrique",
     "electricite",
     "electron",
-    "intensite-electrique"
+    "intensite-electrique",
+    "loi-des-noeuds"
   ],
   "pillar": false,
   "illustration": null,

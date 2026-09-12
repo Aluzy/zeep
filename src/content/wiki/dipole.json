@@ -1,0 +1,65 @@
+{
+  "sourceDomain": [],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "term": "Dipôle",
+  "domains": [
+    "A"
+  ],
+  "definition": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il fournit de l'énergie au circuit, comme une pile, et passif quand il la reçoit, comme une résistance ou une lampe.",
+  "versionSimple": "Un dipôle est un élément de circuit qui se branche par deux bornes. Dans une lampe de poche, la pile, l'ampoule et l'interrupteur sont des dipôles.",
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT",
+      "1G"
+    ],
+    "familles": [
+      "FAM02",
+      "FAM08",
+      "FAM14"
+    ],
+    "matriceIds": [
+      "M009",
+      "M014",
+      "M020",
+      "M030"
+    ]
+  },
+  "sources": [
+    {
+      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »",
+      "url": "https://eduscol.education.fr/document/17731/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
+      "url": "https://eduscol.education.fr/document/22873/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-12",
+    "par": "agent-J2-L4",
+    "statut": "relu-ia"
+  },
+  "slug": "dipole",
+  "related": [
+    "caracteristique-tension-courant",
+    "circuit-electrique",
+    "generateur-electrique",
+    "intensite-electrique",
+    "loi-d-ohm",
+    "loi-des-mailles",
+    "loi-des-noeuds",
+    "resistance",
+    "tension-electrique"
+  ]
+}

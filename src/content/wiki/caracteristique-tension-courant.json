@@ -1,0 +1,55 @@
+{
+  "sourceDomain": [],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "term": "Caractéristique tension-courant",
+  "domains": [
+    "A"
+  ],
+  "definition": "Courbe qui représente, pour un dipôle donné, la tension à ses bornes en fonction de l'intensité du courant qui le traverse, U = f(I), ou l'inverse, I = f(U) ; la convention choisie doit être précisée. Elle prend la forme d'une droite passant par l'origine pour un conducteur ohmique, et d'une courbe pour une diode.",
+  "versionSimple": null,
+  "niveau": {
+    "premiereApparition": "2GT",
+    "cycles": [
+      "2GT",
+      "1G"
+    ],
+    "familles": [
+      "FAM14",
+      "FAM08"
+    ],
+    "matriceIds": [
+      "M020",
+      "M029"
+    ]
+  },
+  "sources": [
+    {
+      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
+      "url": "https://eduscol.education.fr/document/22873/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-12",
+    "par": "agent-J2-L4",
+    "statut": "relu-ia"
+  },
+  "slug": "caracteristique-tension-courant",
+  "related": [
+    "diode",
+    "dipole",
+    "intensite-electrique",
+    "loi-d-ohm",
+    "multimetre",
+    "oscilloscope",
+    "resistance",
+    "tension-electrique"
+  ]
+}

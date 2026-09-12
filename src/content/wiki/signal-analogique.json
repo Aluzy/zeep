@@ -14,10 +14,12 @@
     "amplificateur-operationnel",
     "bruit-electronique",
     "capteur",
+    "chaine-d-information",
     "convertisseur-analogique-numerique-can",
     "convertisseur-numerique-analogique-cna",
     "filtre-electronique",
     "impedance",
+    "oscilloscope",
     "redresseur",
     "signal-numerique"
   ],
