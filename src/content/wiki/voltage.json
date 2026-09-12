@@ -8,10 +8,39 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Terme usuel désignant la tension électrique d'une installation ou d'un appareil, exprimée en volts.",
+  "definition": "Mot de la langue courante employé pour désigner la tension électrique, grandeur qui se mesure en volts avec un voltmètre (« le voltage d'une pile »). Le dictionnaire Larousse le qualifie d'impropre et les programmes scolaires parlent de « tension » : c'est ce terme officiel qu'il faut employer en classe et dans un devoir.",
   "related": [
-    "tension-electrique"
+    "tension-electrique",
+    "volt",
+    "voltmetre"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « voltage » : « Synonyme impropre de tension (électrique). »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/voltage/82479",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de l'Académie française, 9e édition, article « voltage » (« s'emploie dans la langue courante »)",
+      "url": "https://www.dictionnaire-academie.fr/article/A9V1168",
+      "type": "reference"
+    },
+    {
+      "titre": "Programme d'enseignement du cycle 4, annexe 3 de l'arrêté du 17 juillet 2020 (BO n° 31 du 30 juillet 2020), partie physique-chimie",
+      "url": "https://cache.media.education.gouv.fr/file/31/89/1/ensel714_annexe3_1312891.pdf",
+      "type": "programme"
+    },
+    {
+      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » (juin 2016) : « Mesurer une tension électrique, une intensité d'un courant électrique »",
+      "url": "https://eduscol.education.fr/document/17731/download",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-11",
+    "par": "agent-J1-L3",
+    "statut": "relu-ia"
+  }
 }

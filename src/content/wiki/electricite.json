@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Forme d'énergie liée au mouvement et aux interactions des charges électriques, utilisée pour produire de la lumière, de la chaleur ou du mouvement mécanique.",
+  "definition": "Ensemble des phénomènes liés aux charges électriques, immobiles ou en mouvement. Dans un circuit, le courant électrique, mouvement d'ensemble de charges, permet de transférer de l'énergie d'un générateur vers des récepteurs comme une lampe ou un moteur. Le langage courant dit « électricité » pour l'énergie électrique consommée, mais les deux notions sont distinctes.",
   "related": [
     "alternateur",
     "barrage-hydroelectrique",
@@ -18,7 +18,9 @@
     "centrale-nucleaire",
     "centrale-solaire",
     "centrale-thermique",
+    "charge-electrique",
     "compteur-electrique",
+    "courant-electrique",
     "court-jus-panne-de-courant",
     "eclairage",
     "energie-renouvelable",
@@ -36,5 +38,27 @@
     "turbine"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), thème « L'énergie : conversions et transferts », partie « Aspects énergétiques des phénomènes électriques »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de l'Académie française, 9e édition, article « électricité » (sens 1 : ensemble de phénomènes physiques)",
+      "url": "https://www.dictionnaire-academie.fr/article/A9E0677",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « électricité »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/%C3%A9lectricit%C3%A9/28192",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-11",
+    "par": "agent-J1-L3",
+    "statut": "relu-ia"
+  }
 }

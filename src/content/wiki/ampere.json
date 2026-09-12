@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Unité de mesure de l'intensité électrique dans le Système international, symbole A.",
   "related": [
+    "amperage",
     "intensite-electrique"
   ],
   "pillar": false,

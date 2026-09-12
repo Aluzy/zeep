@@ -12,7 +12,9 @@
   "related": [
     "intensite-electrique",
     "kilowatt",
+    "resistance",
     "tension-electrique",
+    "triac",
     "watt",
     "wattmetre"
   ],

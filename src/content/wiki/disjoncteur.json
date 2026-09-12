@@ -13,6 +13,7 @@
     "circuit-electrique",
     "courant-electrique",
     "court-circuit",
+    "court-jus-panne-de-courant",
     "tableau-electrique"
   ],
   "pillar": true,

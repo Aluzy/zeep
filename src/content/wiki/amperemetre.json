@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Instrument de mesure de l'intensité électrique circulant dans un conducteur électrique, exprimée en ampères.",
   "related": [
+    "amperage",
     "conducteur-electrique",
     "intensite-electrique",
     "multimetre"

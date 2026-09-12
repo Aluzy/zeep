@@ -12,7 +12,8 @@
   "related": [
     "circuit-electrique",
     "multimetre",
-    "tension-electrique"
+    "tension-electrique",
+    "voltage"
   ],
   "pillar": false,
   "illustration": null

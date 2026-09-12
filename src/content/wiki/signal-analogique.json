@@ -19,8 +19,7 @@
     "filtre-electronique",
     "impedance",
     "redresseur",
-    "signal-numerique",
-    "triac"
+    "signal-numerique"
   ],
   "pillar": false,
   "illustration": null

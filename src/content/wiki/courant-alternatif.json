@@ -17,7 +17,8 @@
     "onduleur",
     "redresseur",
     "reseau-electrique",
-    "transformateur"
+    "transformateur",
+    "triac"
   ],
   "pillar": false,
   "illustration": null

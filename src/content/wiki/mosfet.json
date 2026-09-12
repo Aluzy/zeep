@@ -8,15 +8,33 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Transistor à effet de champ à grille isolée, très utilisé en électronique de puissance et dans les alimentations à découpage pour sa faible consommation.",
+  "definition": "Transistor à effet de champ dont l'électrode de commande, la grille, est isolée par une fine couche d'oxyde : il est commandé par une tension, sans courant de commande permanent. Utilisé comme interrupteur électronique, il conduit avec une faible résistance et commute rapidement, d'où son emploi en électronique de puissance, par exemple dans les alimentations à découpage.",
   "related": [
     "alimentation-a-decoupage",
     "electronique",
     "electronique-de-puissance",
     "frequence-de-commutation",
+    "tension-electrique",
     "transistor",
     "transistor-a-effet-de-champ-fet"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "C. Peter, « Transistors à effet de champ », cours d'électronique, Polytech Nice Sophia : « la grille est totalement isolée du canal »",
+      "url": "https://users.polytech.unice.fr/~cpeter/ELEC/DOCS_COURS/5_transistorFET.pdf",
+      "type": "manuel"
+    },
+    {
+      "titre": "Infineon, note d'application « Gate drive for power MOSFETs in switching applications » (AN_2203_PL18_2204_004502, 2022) : R DS(on) et commutation",
+      "url": "https://www.infineon.com/dgdl/Infineon-Gate_drive_for_power_MOSFETs_in_switchtin_applications-ApplicationNotes-v01_00-EN.pdf?fileId=8ac78c8c80027ecd0180467c871b3622",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-11",
+    "par": "agent-J1-L3",
+    "statut": "relu-ia"
+  }
 }
