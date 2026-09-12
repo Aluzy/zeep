@@ -11,7 +11,7 @@
   "definition": "Ensemble des infrastructures reliant les centrales électriques aux consommateurs, comprenant le réseau de transport et le réseau de distribution.",
   "related": [
     "courant-alternatif",
-    "court-jus-panne-de-courant",
+    "court-jus",
     "electrification",
     "fournisseur-d-electricite",
     "frequence-electrique",
