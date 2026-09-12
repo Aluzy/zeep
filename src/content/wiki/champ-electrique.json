@@ -15,5 +15,17 @@
     "electrostatique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "1G",
+    "cycles": [
+      "1G"
+    ],
+    "familles": [
+      "FAM07"
+    ],
+    "matriceIds": [
+      "M028"
+    ]
+  }
 }

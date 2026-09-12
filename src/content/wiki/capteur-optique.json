@@ -15,5 +15,17 @@
     "phototransistor"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "2GT",
+    "cycles": [
+      "2GT"
+    ],
+    "familles": [
+      "FAM05"
+    ],
+    "matriceIds": [
+      "M018"
+    ]
+  }
 }

@@ -1,0 +1,58 @@
+{
+  "sourceDomain": [],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "term": "Loi des mailles",
+  "domains": [
+    "A"
+  ],
+  "definition": "Loi qui exprime que, le long de toute boucle fermée d'un circuit, appelée maille, la somme algébrique des tensions aux bornes des dipôles rencontrés est nulle. Dans un circuit à une seule boucle, elle se traduit par l'additivité des tensions : celle du générateur est égale à la somme de celles des récepteurs.",
+  "versionSimple": "Dans un circuit à une seule boucle, la tension de la pile se répartit entre les appareils branchés : deux lampes en série brillent moins qu'une seule.",
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT",
+      "1G",
+      "1-TG"
+    ],
+    "familles": [
+      "FAM02",
+      "FAM10"
+    ],
+    "matriceIds": [
+      "M009",
+      "M014",
+      "M033",
+      "M034"
+    ]
+  },
+  "sources": [
+    {
+      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
+      "url": "https://eduscol.education.fr/document/22873/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »",
+      "url": "https://eduscol.education.fr/document/17731/download",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-12",
+    "par": "agent-J2-L4",
+    "statut": "relu-ia"
+  },
+  "slug": "loi-des-mailles",
+  "related": [
+    "circuit-electrique",
+    "circuit-ferme",
+    "dipole",
+    "generateur-electrique",
+    "loi-des-noeuds",
+    "tension-electrique",
+    "voltmetre"
+  ]
+}

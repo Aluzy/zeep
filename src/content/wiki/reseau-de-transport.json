@@ -10,10 +10,31 @@
   "merged": false,
   "definition": "Partie du réseau électrique qui achemine l'électricité en haute tension depuis les centrales électriques jusqu'aux zones de distribution.",
   "related": [
+    "effet-joule",
     "electricite",
     "poste-de-transformation",
     "reseau-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "TG",
+    "cycles": [
+      "TG",
+      "CAP",
+      "BACPRO",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM08",
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M026",
+      "M027",
+      "M045",
+      "M060",
+      "M064"
+    ]
+  }
 }

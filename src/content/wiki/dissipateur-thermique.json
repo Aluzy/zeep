@@ -11,6 +11,7 @@
   "definition": "Pièce métallique fixée sur un composant électronique, comme un transistor ou un processeur, pour évacuer la chaleur qu'il produit.",
   "related": [
     "composant-electronique",
+    "effet-joule",
     "electronique",
     "processeur-cpu",
     "transistor",

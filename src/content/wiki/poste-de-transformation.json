@@ -15,5 +15,19 @@
     "tension-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "CAP",
+    "cycles": [
+      "CAP",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M060",
+      "M064"
+    ]
+  }
 }

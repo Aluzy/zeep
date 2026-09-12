@@ -14,8 +14,21 @@
     "courant-electrique",
     "electricite",
     "electron",
-    "intensite-electrique"
+    "intensite-electrique",
+    "loi-des-noeuds"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "1G",
+    "cycles": [
+      "1G"
+    ],
+    "familles": [
+      "FAM07"
+    ],
+    "matriceIds": [
+      "M028"
+    ]
+  }
 }

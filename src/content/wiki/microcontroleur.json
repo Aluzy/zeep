@@ -16,6 +16,7 @@
     "capteur",
     "capteur-de-temperature",
     "carte-arduino",
+    "chaine-d-information",
     "circuit-integre",
     "convertisseur-analogique-numerique-can",
     "electronique-embarquee",
@@ -28,5 +29,29 @@
     "signal-numerique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT",
+      "1G",
+      "TG",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM05",
+      "FAM06",
+      "FAM14"
+    ],
+    "matriceIds": [
+      "M013",
+      "M021",
+      "M024",
+      "M031",
+      "M037",
+      "M043",
+      "M058"
+    ]
+  }
 }

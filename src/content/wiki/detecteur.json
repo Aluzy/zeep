@@ -1,0 +1,53 @@
+{
+  "sourceDomain": [],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "term": "Détecteur",
+  "domains": [
+    "S",
+    "F"
+  ],
+  "definition": "Composant qui signale par un état électrique tout ou rien la présence, le passage ou le franchissement d'un seuil, sans en mesurer la valeur. À la différence d'un capteur, qui délivre une grandeur mesurée, il ne répond que par oui ou non : ainsi l'éclairage d'un couloir qui s'allume au passage.",
+  "versionSimple": "Un détecteur répond seulement par oui ou non. Celui d'un portail automatique voit qu'une voiture arrive, mais ne dit pas à quelle distance elle est.",
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM05"
+    ],
+    "matriceIds": [
+      "M012",
+      "M071"
+    ]
+  },
+  "sources": [
+    {
+      "titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024)",
+      "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf",
+      "type": "programme"
+    },
+    {
+      "titre": "Norme IEC 60947-5-2, « Low-voltage switchgear and controlgear — Part 5-2: Control circuit devices and switching elements — Proximity switches » (détecteurs de proximité inductifs, capacitifs, ultrasonores et photoélectriques), notice de la boutique AFNOR ; édition 2007 remplacée par l'édition 2019",
+      "url": "https://www.boutique.afnor.org/en-gb/standard/iec-60947522007/lowvoltage-switchgear-and-controlgear-part-52-control-circuit-devices-and-s/xs115642/243937",
+      "type": "norme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-12",
+    "par": "agent-J2-L4",
+    "statut": "relu-ia"
+  },
+  "slug": "detecteur",
+  "related": [
+    "actionneur",
+    "capteur",
+    "chaine-d-information",
+    "domotique",
+    "interrupteur",
+    "signal-numerique"
+  ]
+}

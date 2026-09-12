@@ -10,7 +10,10 @@
   "merged": false,
   "definition": "Composant électronique ou électromécanique, comme un servomoteur ou un relais électronique, qui convertit un signal de commande en action physique.",
   "related": [
+    "chaine-d-energie",
+    "chaine-d-information",
     "composant-electronique",
+    "detecteur",
     "electronique",
     "moteur-pas-a-pas",
     "relais-electronique",
@@ -18,5 +21,22 @@
     "ventilateur-de-refroidissement"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT"
+    ],
+    "familles": [
+      "FAM05",
+      "FAM06"
+    ],
+    "matriceIds": [
+      "M012",
+      "M013",
+      "M015",
+      "M017"
+    ]
+  }
 }

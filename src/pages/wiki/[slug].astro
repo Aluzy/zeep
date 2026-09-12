@@ -1,18 +1,28 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
-import { TAXONOMY, domainGroup } from "../../lib/helpers";
+import { TAXONOMY, domainGroup, niveauLabel, LEVEL_LABEL, SOURCE_TYPE_LABEL, formatDateFr } from "../../lib/helpers";
+import { buildBacklinkIndex, liensRetourDe, type LiensRetour } from "../../lib/backlinks";
 
 export async function getStaticPaths() {
   const wiki = await getCollection("wiki");
-  return wiki.map((t) => ({ params: { slug: t.data.slug }, props: { entry: t, all: wiki } }));
+  const blog = await getCollection("blog");
+  const diy = await getCollection("diy");
+  // Index inverse (articles et projets qui citent une fiche) : construit une seule
+  // fois ici pour toutes les pages ; chaque page ne reçoit que ses propres liens retour.
+  const backlinks = buildBacklinkIndex(blog, diy, wiki.map((t) => t.data.slug));
+  return wiki.map((t) => ({
+    params: { slug: t.data.slug },
+    props: { entry: t, all: wiki, liens: liensRetourDe(backlinks, t.data.slug) },
+  }));
 }
 
 interface Props {
   entry: CollectionEntry<"wiki">;
   all: CollectionEntry<"wiki">[];
+  liens: LiensRetour;
 }
-const { entry, all } = Astro.props as Props;
+const { entry, all, liens } = Astro.props as Props;
 const t = entry.data;
 const BASE = import.meta.env.BASE_URL;
 const group = domainGroup(t.domains);
@@ -23,18 +33,46 @@ const related = t.related.map((s) => {
   if (!r) throw new Error(`Fiche wiki introuvable « ${s} » référencée par la fiche ${t.slug}`);
   return r;
 });
+
+// Champs pédagogiques : tous facultatifs tant que la migration des fiches n'est pas
+// terminée (lots J2-L2 et J2-L4). Rien ne doit s'afficher quand ils sont absents.
+const niveau = t.niveau;
+const niveauTexte = niveau ? niveauLabel(niveau.premiereApparition) : "";
+const versionSimple = (t.versionSimple || "").trim();
+const sources = (t.sources || []).filter((s) => s && s.titre && s.titre.trim());
+const relecture = t.relecture;
+
+// Liens retour : deux blocs masqués tant que personne ne cite la fiche.
+const articlesLies = liens.articles;
+const projetsLies = liens.projets;
 ---
 <Base title={t.term} description={t.definition.replace(/<[^>]+>/g, "").slice(0, 160)} group={group} active="wiki">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}wiki/`}>Wiki</a> / {t.term}</div>
   <div class="term-card">
     {t.merged && <p class="tag">Terme commun électricité/électronique</p>}
     <h1>{t.term}</h1>
-    <div class="chip-row" style="margin-bottom:20px;">
-      {t.domains.map((d) => (
-        <a href={`${BASE}wiki/?domain=${d}`} class="chip is-accent">{TAXONOMY[d] || d}</a>
-      ))}
+    <div class="term-meta">
+      <div class="chip-row">
+        {t.domains.map((d) => (
+          <a href={`${BASE}wiki/?domain=${d}`} class="chip is-accent">{TAXONOMY[d] || d}</a>
+        ))}
+        {niveau && (
+          <span
+            class="chip niveau-badge"
+            title={`Première apparition repérée dans les programmes scolaires : ${niveauTexte}. La notion peut être rencontrée plus tôt dans une autre voie.`}
+          >
+            <span class="k">Première apparition</span>{niveauTexte}
+          </span>
+        )}
+      </div>
     </div>
     <div class="definition" set:html={t.definition} />
+    {versionSimple && (
+      <aside class="simple-box">
+        <p class="simple-label">En simple</p>
+        <p class="simple-text">{versionSimple}</p>
+      </aside>
+    )}
     {t.illustration && (
       <div class="illustration-slot">
         <img src={t.illustration} alt={t.term} />
@@ -48,5 +86,59 @@ const related = t.related.map((s) => {
         )) : <span style="color:var(--text-faint);font-size:13px;">Aucun terme relié pour l'instant.</span>}
       </div>
     </div>
+    {articlesLies.length > 0 && (
+      <div class="related-block">
+        <h2>Articles qui en parlent ({articlesLies.length})</h2>
+        <div class="pins">
+          {articlesLies.map((a) => (
+            <a class="pin pin-wide" href={`${BASE}blog/${a.slug}/`}>
+              <span class="dot"></span>
+              <span class="pin-body"><span class="pin-title">{a.titre}</span></span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+    {projetsLies.length > 0 && (
+      <div class="related-block">
+        <h2>Projets qui l'utilisent ({projetsLies.length})</h2>
+        <div class="pins">
+          {projetsLies.map((p) => (
+            <a class="pin pin-wide" href={`${BASE}projets-diy/${p.slug}/`}>
+              <span class="dot"></span>
+              <span class="pin-body">
+                <span class="pin-title">{p.titre}</span>
+                <span class="pin-meta">
+                  <span class={`level-badge level-${p.niveau}`}>{LEVEL_LABEL[p.niveau] || p.niveau}</span>
+                  {p.duree && <span class="pin-duree">{p.duree}</span>}
+                </span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+    {sources.length > 0 && (
+      <div class="sources-block">
+        <h2 class="section-label">Sources ({sources.length})</h2>
+        <ol class="source-list">
+          {sources.map((s) => (
+            <li class="source-item">
+              {s.url ? (
+                <a class="source-title" href={s.url} target="_blank" rel="noopener noreferrer">{s.titre}</a>
+              ) : (
+                <span class="source-title">{s.titre}</span>
+              )}
+              {s.type && <span class="source-type">{SOURCE_TYPE_LABEL[s.type] || s.type}</span>}
+            </li>
+          ))}
+        </ol>
+      </div>
+    )}
+    {relecture && (
+      <p class="relecture-note">
+        {relecture.statut === "valide" ? "Validé le " : "Relu par IA le "}{formatDateFr(relecture.date)}
+      </p>
+    )}
   </div>
 </Base>

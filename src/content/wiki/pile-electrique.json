@@ -15,5 +15,19 @@
     "generateur-electrique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C2",
+    "cycles": [
+      "C2"
+    ],
+    "familles": [
+      "FAM01",
+      "FAM03"
+    ],
+    "matriceIds": [
+      "M002",
+      "M005"
+    ]
+  }
 }

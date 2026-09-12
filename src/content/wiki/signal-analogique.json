@@ -14,13 +14,27 @@
     "amplificateur-operationnel",
     "bruit-electronique",
     "capteur",
+    "chaine-d-information",
     "convertisseur-analogique-numerique-can",
     "convertisseur-numerique-analogique-cna",
     "filtre-electronique",
     "impedance",
+    "oscilloscope",
     "redresseur",
     "signal-numerique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4"
+    ],
+    "familles": [
+      "FAM05"
+    ],
+    "matriceIds": [
+      "M012"
+    ]
+  }
 }

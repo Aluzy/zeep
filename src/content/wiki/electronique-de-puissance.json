@@ -15,5 +15,23 @@
     "thyristor"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "2GT",
+    "cycles": [
+      "2GT",
+      "CAP",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM04",
+      "FAM05"
+    ],
+    "matriceIds": [
+      "M016",
+      "M039",
+      "M040",
+      "M063"
+    ]
+  }
 }

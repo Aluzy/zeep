@@ -21,5 +21,21 @@
     "triac"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "1-TG",
+    "cycles": [
+      "1-TG",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM10",
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M033",
+      "M045",
+      "M053"
+    ]
+  }
 }

@@ -12,9 +12,22 @@
   "related": [
     "convertisseur-de-frequence",
     "courant-alternatif",
+    "oscilloscope",
     "reseau-electrique",
     "transformateur"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "BACPRO",
+    "cycles": [
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM02"
+    ],
+    "matriceIds": [
+      "M072"
+    ]
+  }
 }

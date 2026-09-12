@@ -10,14 +10,31 @@
   "merged": false,
   "definition": "Signal électrique codé sous forme d'états discrets, généralement binaires, traité par un circuit numérique ou un microcontrôleur.",
   "related": [
+    "chaine-d-information",
     "circuit-numerique",
     "convertisseur-analogique-numerique-can",
     "convertisseur-numerique-analogique-cna",
+    "detecteur",
     "microcontroleur",
     "porte-logique",
     "servomoteur",
     "signal-analogique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "TG"
+    ],
+    "familles": [
+      "FAM05",
+      "FAM11"
+    ],
+    "matriceIds": [
+      "M012",
+      "M035"
+    ]
+  }
 }

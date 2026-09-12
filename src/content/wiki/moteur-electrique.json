@@ -10,9 +10,24 @@
   "merged": false,
   "definition": "Machine qui convertit l'énergie électrique en énergie mécanique, fonctionnant à l'inverse d'un générateur électrique.",
   "related": [
+    "chaine-d-energie",
     "convertisseur-de-frequence",
     "generateur-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "CAP",
+    "cycles": [
+      "CAP",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM04"
+    ],
+    "matriceIds": [
+      "M063",
+      "M068"
+    ]
+  }
 }

@@ -11,7 +11,9 @@
   "definition": "Instrument de mesure de la tension électrique entre deux points d'un circuit électrique, exprimée en volts.",
   "related": [
     "circuit-electrique",
+    "loi-des-mailles",
     "multimetre",
+    "oscilloscope",
     "tension-electrique",
     "voltage"
   ],

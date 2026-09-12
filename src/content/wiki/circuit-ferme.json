@@ -11,8 +11,23 @@
   "definition": "État d'un circuit électrique dont le trajet est complet, permettant au courant électrique de circuler normalement.",
   "related": [
     "circuit-electrique",
-    "courant-electrique"
+    "courant-electrique",
+    "loi-des-mailles"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C2",
+    "cycles": [
+      "C2",
+      "C3"
+    ],
+    "familles": [
+      "FAM01"
+    ],
+    "matriceIds": [
+      "M002",
+      "M007"
+    ]
+  }
 }

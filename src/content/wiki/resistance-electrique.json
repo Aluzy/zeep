@@ -12,11 +12,25 @@
   "related": [
     "conducteur-electrique",
     "courant-electrique",
+    "effet-joule",
+    "loi-d-ohm",
     "multimetre",
     "ohm",
     "ohmmetre",
     "resistance"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4"
+    ],
+    "familles": [
+      "FAM02"
+    ],
+    "matriceIds": [
+      "M009"
+    ]
+  }
 }

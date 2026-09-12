@@ -19,5 +19,17 @@
     "microprocesseur"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C2",
+    "cycles": [
+      "C2"
+    ],
+    "familles": [
+      "FAM06"
+    ],
+    "matriceIds": [
+      "M006"
+    ]
+  }
 }

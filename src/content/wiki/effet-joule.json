@@ -1,0 +1,53 @@
+{
+  "sourceDomain": [],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "term": "Effet Joule",
+  "domains": [
+    "A"
+  ],
+  "definition": "Échauffement d'un conducteur parcouru par un courant électrique : l'énergie électrique reçue par un conducteur ohmique y est entièrement convertie en énergie thermique. La puissance dissipée vaut R × I², où R est la résistance du conducteur et I l'intensité du courant ; c'est le principe du radiateur électrique et la cause des pertes en ligne.",
+  "versionSimple": null,
+  "niveau": {
+    "premiereApparition": "1G",
+    "cycles": [
+      "1G",
+      "TG"
+    ],
+    "familles": [
+      "FAM08"
+    ],
+    "matriceIds": [
+      "M026",
+      "M030"
+    ]
+  },
+  "sources": [
+    {
+      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+      "type": "programme"
+    },
+    {
+      "titre": "Éduscol, « Les mathématiques et le transport d'électricité » (ressource d'accompagnement de l'enseignement scientifique, janvier 2020)",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/ra20lyceegtessous-theme-2-3-transport-electricite1241826pdf-85059.pdf",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-12",
+    "par": "agent-J2-L4",
+    "statut": "relu-ia"
+  },
+  "slug": "effet-joule",
+  "related": [
+    "dissipateur-thermique",
+    "ligne-haute-tension",
+    "loi-d-ohm",
+    "puissance-electrique",
+    "reseau-de-transport",
+    "resistance",
+    "resistance-electrique"
+  ]
+}

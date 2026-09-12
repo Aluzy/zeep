@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Quantité d'énergie électrique consommée ou produite par unité de temps, exprimée en watts, égale au produit de la tension électrique par l'intensité électrique.",
   "related": [
+    "effet-joule",
     "intensite-electrique",
     "kilowatt",
     "resistance",
@@ -19,5 +20,22 @@
     "wattmetre"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "1G",
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM02",
+      "FAM08"
+    ],
+    "matriceIds": [
+      "M009",
+      "M030",
+      "M072"
+    ]
+  }
 }

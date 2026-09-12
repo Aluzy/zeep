@@ -12,12 +12,29 @@
   "definition": "Instrument de mesure polyvalent permettant de mesurer la tension électrique, l'intensité électrique et la résistance électrique, combinant les fonctions de voltmètre, ampèremètre et ohmmètre.",
   "related": [
     "amperemetre",
+    "caracteristique-tension-courant",
     "intensite-electrique",
     "ohmmetre",
+    "oscilloscope",
     "resistance-electrique",
     "tension-electrique",
     "voltmetre"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "2GT",
+    "cycles": [
+      "2GT",
+      "1G"
+    ],
+    "familles": [
+      "FAM14"
+    ],
+    "matriceIds": [
+      "M020",
+      "M021",
+      "M031"
+    ]
+  }
 }

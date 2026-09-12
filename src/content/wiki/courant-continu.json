@@ -18,5 +18,21 @@
     "redresseur"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "BACPRO",
+    "cycles": [
+      "BACPRO",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM02",
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M045",
+      "M053",
+      "M072"
+    ]
+  }
 }

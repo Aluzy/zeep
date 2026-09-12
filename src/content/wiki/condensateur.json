@@ -15,5 +15,23 @@
     "impedance"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "1-TG",
+    "cycles": [
+      "1-TG",
+      "TG",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM09",
+      "FAM10"
+    ],
+    "matriceIds": [
+      "M032",
+      "M033",
+      "M046",
+      "M052"
+    ]
+  }
 }

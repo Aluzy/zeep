@@ -16,5 +16,17 @@
     "reseau-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "BACPRO",
+    "cycles": [
+      "BACPRO"
+    ],
+    "familles": [
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M064"
+    ]
+  }
 }

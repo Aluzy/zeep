@@ -11,8 +11,25 @@
   "definition": "Dispositif permettant d'ouvrir ou de fermer manuellement un circuit électrique pour couper ou rétablir le courant électrique.",
   "related": [
     "circuit-electrique",
-    "courant-electrique"
+    "courant-electrique",
+    "detecteur"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "niveau": {
+    "premiereApparition": "C2",
+    "cycles": [
+      "C2",
+      "C3"
+    ],
+    "familles": [
+      "FAM01",
+      "FAM03"
+    ],
+    "matriceIds": [
+      "M002",
+      "M005",
+      "M007"
+    ]
+  }
 }

@@ -192,11 +192,61 @@ footer.site-footer{
   padding:26px;color:var(--text-faint);font-size:12.5px;font-family:var(--font-mono);text-align:center;
 }
 .related-block{margin-top:36px;max-width:660px;}
+.sources-block{margin-top:36px;max-width:660px;}
 .related-block h2, .section-label{
   font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;color:var(--text-dim);
   font-weight:500;margin:0 0 14px;text-transform:uppercase;
 }
 .pins{display:flex;flex-wrap:wrap;gap:10px;}
+
+/* Liens retour de la fiche (« Articles qui en parlent », « Projets qui l'utilisent ») :
+   variante de .pin pour un titre long, avec une ligne de méta facultative. */
+.pin-wide{align-items:flex-start;max-width:100%;padding:10px 14px 10px 12px;}
+.pin-wide .dot{margin-top:6px;}
+.pin-wide .pin-body{display:flex;flex-direction:column;gap:6px;min-width:0;}
+.pin-wide .pin-title{line-height:1.45;overflow-wrap:anywhere;}
+.pin-wide .pin-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.pin-wide .pin-duree{font-family:var(--font-mono);font-size:10.5px;color:var(--text-faint);}
+
+/* ---------- Fiche : niveau scolaire, version simple, sources, relecture ----------
+   Tous ces blocs sont conditionnels : une fiche sans niveau, sans version simple
+   et sans source rend exactement la page d'avant. */
+.term-meta{margin-bottom:20px;}
+.niveau-badge{
+  gap:6px;color:var(--text);border-color:var(--border-strong);
+  background:var(--panel-alt);cursor:help;
+}
+.niveau-badge .k{color:var(--text-faint);text-transform:uppercase;letter-spacing:.04em;}
+.niveau-note{margin:8px 0 0;font-size:12px;line-height:1.5;color:var(--text-faint);max-width:660px;}
+
+.simple-box{
+  margin:22px 0 0;max-width:660px;padding:14px 18px;
+  background:var(--accent-dim);border:1px solid var(--border);
+  border-left:3px solid var(--accent);border-radius:var(--radius);
+}
+.simple-box .simple-label{
+  margin:0 0 6px;font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--accent);
+}
+.simple-box .simple-text{margin:0;font-size:15px;line-height:1.7;color:var(--text);}
+
+.source-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.source-item{
+  font-size:13.5px;line-height:1.6;color:var(--text-dim);
+  border-left:1px solid var(--border);padding-left:12px;
+}
+.source-item .source-title{color:var(--text);}
+.source-item a.source-title{border-bottom:1px solid var(--border-strong);}
+.source-item a.source-title:hover{color:var(--accent);border-bottom-color:var(--accent);}
+.source-type{
+  display:inline-block;margin-left:8px;font-family:var(--font-mono);font-size:10.5px;
+  color:var(--text-faint);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;
+}
+
+.relecture-note{
+  margin:26px 0 0;max-width:660px;font-family:var(--font-mono);font-size:11px;
+  letter-spacing:.03em;color:var(--text-faint);
+}
 
 /* ---------- Blog / DIY listings ---------- */
 .post-list, .diy-list{display:flex;flex-direction:column;gap:16px;}
@@ -240,4 +290,12 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
   .hero h1{font-size:26px;}
   .term-card h1{font-size:26px;}
   .components-table{font-size:13px;}
+  .simple-box{padding:12px 14px;}
+  .simple-box .simple-text{font-size:14.5px;}
+  /* Un lien retour prend toute la largeur : deux titres d'article côte à côte
+     seraient illisibles sous 760 px. */
+  .pin-wide{width:100%;}
+  /* Les titres de source sont longs : on évite tout débordement horizontal. */
+  .source-item{font-size:13px;padding-left:10px;overflow-wrap:anywhere;}
+  .source-type{margin-left:0;display:block;margin-top:4px;white-space:normal;}
 }

@@ -1,0 +1,58 @@
+{
+  "sourceDomain": [],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "term": "Loi des nœuds",
+  "domains": [
+    "A"
+  ],
+  "definition": "Loi de conservation de la charge électrique dans un circuit : en un nœud, point où se rejoignent au moins trois fils, la somme des intensités des courants qui arrivent est égale à la somme des intensités de ceux qui repartent.",
+  "versionSimple": "Quand un fil se sépare en deux, le courant se partage : tout ce qui arrive à l'embranchement en repart, comme l'eau dans une canalisation qui se divise.",
+  "niveau": {
+    "premiereApparition": "C4",
+    "cycles": [
+      "C4",
+      "2GT",
+      "1G",
+      "1-TG"
+    ],
+    "familles": [
+      "FAM02",
+      "FAM10"
+    ],
+    "matriceIds": [
+      "M009",
+      "M014",
+      "M033",
+      "M034"
+    ]
+  },
+  "sources": [
+    {
+      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
+      "url": "https://eduscol.education.fr/document/22873/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »",
+      "url": "https://eduscol.education.fr/document/17731/download",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-12",
+    "par": "agent-J2-L4",
+    "statut": "relu-ia"
+  },
+  "slug": "loi-des-noeuds",
+  "related": [
+    "amperemetre",
+    "charge-electrique",
+    "circuit-electrique",
+    "courant-electrique",
+    "dipole",
+    "intensite-electrique",
+    "loi-des-mailles"
+  ]
+}
