@@ -6,9 +6,7 @@
   "duration": "2 à 3 heures",
   "excerpt": "Mesurer température et pression et envoyer les données par Wi-Fi : un projet complet qui combine capteurs, microcontrôleur et objets connectés.",
   "related": ["capteur-de-temperature", "capteur-de-pression", "wi-fi", "bus-i2c", "objet-connecte-iot"],
-  "videos": [
-    { "label": "Vidéo de démonstration", "url": "" }
-  ],
+  "videos": [],
   "composants": [
     { "nom": "Carte ESP32", "quantite": "1", "liens": [] },
     { "nom": "Capteur de température/pression (type BME280)", "quantite": "1", "liens": [] },
@@ -21,6 +19,5 @@
     "Connecter l'ESP32 au Wi-Fi et envoyer les mesures vers un service en ligne ou un simple tableau de bord local.",
     "Ajouter un écran ou une LED pour afficher un état simple (ex. alerte si la pression chute fortement)."
   ],
-  "notionsWiki": ["Capteur de température", "Capteur de pression", "Bus I2C", "Wi-Fi", "Objet connecté (IoT)"],
   "pourAllerPlusLoin": "Ajouter un capteur d'humidité et faire tourner la station sur batterie avec un mode basse consommation."
 }

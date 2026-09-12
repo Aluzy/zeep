@@ -1,0 +1,44 @@
+{
+  "term": "Court-jus",
+  "slug": "court-jus",
+  "domains": [
+    "C"
+  ],
+  "sourceDomain": [
+    "electricite"
+  ],
+  "merged": false,
+  "definition": "Mot familier pour court-circuit : liaison accidentelle, de très faible résistance, entre deux points d'un circuit soumis à une tension, qui laisse passer un courant très intense. Un court-jus n'est pas une coupure de courant, mais il peut en provoquer une en faisant déclencher un disjoncteur ou fondre un fusible. Sur le secteur 230 V, on n'intervient jamais soi-même.",
+  "related": [
+    "alimentation-electrique",
+    "court-circuit",
+    "disjoncteur",
+    "electricite",
+    "fusible",
+    "reseau-electrique"
+  ],
+  "pillar": false,
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « court-jus » : « Familier. Court-circuit. »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/court-jus/19979",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire Le Robert en ligne, article « court-jus » (familier : court-circuit)",
+      "url": "https://dictionnaire.lerobert.com/definition/court-jus",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, « Risques électriques. Ce qu'il faut retenir » (contacts, courts-circuits, arcs électriques)",
+      "url": "https://www.inrs.fr/risques/electriques/ce-qu-il-faut-retenir.html",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-11",
+    "par": "agent-J1-L3",
+    "statut": "relu-ia"
+  }
+}

@@ -6,9 +6,7 @@
   "duration": "Plusieurs sessions",
   "excerpt": "Passer du prototypage sur plaque d'essai à un vrai circuit imprimé fabriqué sur mesure : la démarche complète, du schéma au fichier de fabrication.",
   "related": ["circuit-imprime-pcb", "datasheet-fiche-technique", "prototypage-electronique", "soudure-electronique"],
-  "videos": [
-    { "label": "Vidéo de démonstration", "url": "" }
-  ],
+  "videos": [],
   "composants": [
     { "nom": "Logiciel de CAO électronique (ex. KiCad, gratuit)", "quantite": "1", "liens": [] },
     { "nom": "Le circuit déjà validé sur plaque d'essai", "quantite": "1", "liens": [] },
@@ -21,6 +19,5 @@
     "Exporter les fichiers de fabrication et faire produire le circuit imprimé par un service en ligne.",
     "Souder les composants sur le circuit reçu à l'aide d'un fer à souder."
   ],
-  "notionsWiki": ["Circuit imprimé (PCB)", "Datasheet (fiche technique)", "Prototypage électronique", "Soudure électronique"],
   "pourAllerPlusLoin": "Ajouter une sérigraphie et un boîtier électronique imprimé en 3D pour un rendu fini."
 }

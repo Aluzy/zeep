@@ -23,6 +23,7 @@
     "courant-alternatif",
     "courant-continu",
     "disjoncteur",
+    "electricite",
     "electromagnetisme",
     "electron",
     "intensite-electrique",
@@ -30,7 +31,7 @@
     "isolant-electrique",
     "neutre",
     "phase-electrique",
-    "production-delectricite",
+    "production-d-electricite",
     "resistance-electrique",
     "resistivite",
     "tension-electrique"

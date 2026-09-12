@@ -14,7 +14,12 @@ const BASE = import.meta.env.BASE_URL;
 const { Content } = await post.render();
 const group = domainGroup([post.data.domain]);
 const byId = Object.fromEntries(wiki.map((x: any) => [x.data.slug, x.data]));
-const related = (post.data.related || []).map((s: string) => byId[s]).filter(Boolean);
+// Un slug introuvable fait échouer le build au lieu de faire disparaître le lien.
+const related = (post.data.related || []).map((s: string) => {
+  const r = byId[s];
+  if (!r) throw new Error(`Fiche wiki introuvable « ${s} » référencée par l'article de blog ${post.slug}`);
+  return r;
+});
 ---
 <Base title={post.data.title} description={post.data.excerpt} group={group} active="blog">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}blog/`}>Blog</a> / {post.data.title}</div>

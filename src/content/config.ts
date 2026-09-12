@@ -12,6 +12,35 @@ const wiki = defineCollection({
     illustration: z.string().nullable().default(null),
     definition: z.string(),
     related: z.array(z.string()),
+    // Champs pédagogiques et de traçabilité (affichage : lot J2-L1).
+    // Déclarés dès maintenant pour qu'Astro ne les supprime pas des données.
+    niveau: z
+      .object({
+        premiereApparition: z.string(),
+        cycles: z.array(z.string()).default([]),
+        familles: z.array(z.string()).default([]),
+        matriceIds: z.array(z.string()).default([]),
+      })
+      .nullable()
+      .default(null),
+    versionSimple: z.string().nullable().default(null),
+    sources: z
+      .array(
+        z.object({
+          titre: z.string(),
+          url: z.string().optional(),
+          type: z.string().optional(),
+        })
+      )
+      .default([]),
+    relecture: z
+      .object({
+        date: z.string(),
+        par: z.string(),
+        statut: z.enum(["relu-ia", "valide"]),
+      })
+      .nullable()
+      .default(null),
   }),
 });
 
@@ -60,7 +89,6 @@ const diy = defineCollection({
       )
       .default([]),
     etapes: z.array(z.string()),
-    notionsWiki: z.array(z.string()).default([]),
     pourAllerPlusLoin: z.string().default(""),
   }),
 });

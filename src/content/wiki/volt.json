@@ -10,7 +10,8 @@
   "merged": false,
   "definition": "Unité de mesure de la tension électrique dans le Système international, symbole V.",
   "related": [
-    "tension-electrique"
+    "tension-electrique",
+    "voltage"
   ],
   "pillar": false,
   "illustration": null

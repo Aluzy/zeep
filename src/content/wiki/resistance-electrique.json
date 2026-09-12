@@ -14,7 +14,8 @@
     "courant-electrique",
     "multimetre",
     "ohm",
-    "ohmmetre"
+    "ohmmetre",
+    "resistance"
   ],
   "pillar": false,
   "illustration": null

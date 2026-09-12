@@ -14,7 +14,7 @@ export function toEmbedUrl(url: string): string | null {
       if (id) return `https://www.youtube.com/embed/${id}`;
     }
     if (u.hostname.includes("vimeo.com")) {
-      const id = u.pathname.split("/").filter(Boolean).pop();
+      const id = u.pathname.split("/").filter((part) => part.length > 0).pop();
       if (id) return `https://player.vimeo.com/video/${id}`;
     }
   } catch {

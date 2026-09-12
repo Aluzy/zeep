@@ -8,12 +8,37 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant électronique qui limite le passage du courant dans un circuit électronique, caractérisé par sa valeur en ohms et son impédance.",
+  "definition": "Composant électronique, aussi appelé résistor et modélisé par un conducteur ohmique, qui s'oppose au passage du courant et convertit en chaleur l'énergie électrique qu'il reçoit (effet Joule). Il se caractérise par sa valeur en ohms, sa tolérance (écart admis avec cette valeur, en %) et la puissance maximale qu'il peut dissiper sans se détériorer.",
   "related": [
     "composant-electronique",
     "electronique",
-    "impedance"
+    "impedance",
+    "ohm",
+    "puissance-electrique",
+    "resistance-electrique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « résistor » (synonyme de résistance, le composant)",
+      "url": "https://www.larousse.fr/dictionnaires/francais/r%C3%A9sistor/68640",
+      "type": "reference"
+    },
+    {
+      "titre": "Vishay BCcomponents, fiche technique n° 28729 « Power Metal Film Leaded Resistors » (PR01, PR02, PR03) : valeurs, tolérances ± 1 % / ± 5 %, puissance nominale 1 à 3 W",
+      "url": "https://www.vishay.com/docs/28729/pr010203.pdf",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-11",
+    "par": "agent-J1-L3",
+    "statut": "relu-ia"
+  }
 }

@@ -6,9 +6,7 @@
   "duration": "30 minutes",
   "excerpt": "Le projet le plus classique pour commencer : faire clignoter une LED et comprendre comment un microcontrôleur pilote un composant électronique.",
   "related": ["carte-arduino", "diode-electroluminescente-led", "resistance", "circuit-electrique"],
-  "videos": [
-    { "label": "Vidéo de démonstration", "url": "" }
-  ],
+  "videos": [],
   "composants": [
     { "nom": "Carte Arduino (Uno ou compatible)", "quantite": "1", "liens": [] },
     { "nom": "LED", "quantite": "1", "liens": [] },
@@ -23,6 +21,5 @@
     "Téléverser un programme qui allume la broche 13 pendant une seconde, puis l'éteint pendant une seconde, en boucle.",
     "Observer la LED clignoter : c'est le microcontrôleur qui fait basculer l'état de la broche entre 0V et 5V à un rythme régulier."
   ],
-  "notionsWiki": ["Carte Arduino", "Diode électroluminescente (LED)", "Résistance", "Circuit électrique"],
   "pourAllerPlusLoin": "Remplacer le délai fixe par une lecture de capteur de luminosité pour que la LED ne clignote que dans le noir."
 }

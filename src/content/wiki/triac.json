@@ -8,12 +8,35 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant semi-conducteur dérivé du thyristor capable de conduire le courant dans les deux sens, utilisé pour commander la puissance d'un signal analogique comme celui d'un variateur.",
+  "definition": "Composant semi-conducteur équivalent à deux thyristors montés tête-bêche : après une impulsion sur sa gâchette (électrode de commande), il peut conduire le courant dans les deux sens. Il règle la puissance fournie à un appareil en courant alternatif, comme une lampe sur variateur. Ces montages étant souvent reliés au secteur 230 V, on n'y intervient pas soi-même.",
   "related": [
+    "courant-alternatif",
+    "puissance-electrique",
     "semi-conducteur",
-    "signal-analogique",
     "thyristor"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "T. Lequeu, « Cours d'électronique de puissance », IUT GEII de Tours (2002), annexe « Gradateur à triac »",
+      "url": "https://www.thierry-lequeu.fr/data/TRIAC.pdf",
+      "type": "manuel"
+    },
+    {
+      "titre": "STMicroelectronics, note d'application AN392 « Microcontrollers and triac-based dimmers »",
+      "url": "https://www.st.com/resource/en/application_note/an392-microcontrollers-and-triacbased-dimmers-stmicroelectronics.pdf",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, « Risques électriques. Ce qu'il faut retenir »",
+      "url": "https://www.inrs.fr/risques/electriques/ce-qu-il-faut-retenir.html",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-11",
+    "par": "agent-J1-L3",
+    "statut": "relu-ia"
+  }
 }
