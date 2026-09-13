@@ -1,5 +1,6 @@
 ---
 title: "Pourquoi une batterie lithium-ion perd-elle de sa capacité ?"
+date: "2026-09-12"
 domain: "D"
 excerpt: "Un téléphone ou une voiture électrique tient de moins en moins la charge au fil des années. Voici pourquoi une batterie lithium-ion vieillit, et ce qui accélère ou ralentit ce phénomène."
 related: ["batterie-lithium-ion", "accumulateur", "batterie", "pile-electrique"]

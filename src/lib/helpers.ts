@@ -59,3 +59,14 @@ export function formatDateFr(iso: string): string {
   const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
   return m ? `${m[3]}/${m[2]}/${m[1]}` : iso;
 }
+
+/**
+ * Temps de lecture estimé d'un texte, à ~200 mots/minute (arrondi, minimum 1 min).
+ * Calculé à la construction à partir du markdown brut de l'article (approximation :
+ * la syntaxe markdown elle-même compte comme des "mots", comme pour le seuil de
+ * scripts/validate_content.py).
+ */
+export function readingTimeMinutes(text: string): number {
+  const words = text.trim().split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}

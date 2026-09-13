@@ -1,5 +1,6 @@
 ---
 title: "Comment un onduleur convertit le continu en alternatif ?"
+date: "2026-09-12"
 domain: "M"
 excerpt: "Batterie ou panneau solaire produisent un courant continu que les appareils du secteur ne peuvent pas utiliser directement : l'onduleur le transforme en courant alternatif compatible avec le réseau."
 related: ["onduleur", "courant-continu", "courant-alternatif", "redresseur", "electronique-de-puissance", "mosfet", "frequence-electrique", "batterie"]

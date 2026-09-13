@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
-import { TAXONOMY, domainGroup, SOURCE_TYPE_LABEL } from "../../lib/helpers";
+import { TAXONOMY, domainGroup, SOURCE_TYPE_LABEL, formatDateFr, readingTimeMinutes } from "../../lib/helpers";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -11,9 +11,12 @@ export async function getStaticPaths() {
 
 const { post, wiki } = Astro.props;
 const BASE = import.meta.env.BASE_URL;
-const { Content } = await post.render();
+const { Content, headings } = await post.render();
 const group = domainGroup([post.data.domain]);
 const byId = Object.fromEntries(wiki.map((x: any) => [x.data.slug, x.data]));
+const readingMinutes = readingTimeMinutes(post.body);
+// Sommaire : titres de niveau 2 et 3 uniquement (le h1 du titre n'en fait pas partie).
+const tocItems = headings.filter((h: any) => h.depth >= 2 && h.depth <= 3);
 // Un slug introuvable fait échouer le build au lieu de faire disparaître le lien.
 const related = (post.data.related || []).map((s: string) => {
   const r = byId[s];
@@ -24,38 +27,59 @@ const sources = (post.data.sources || []).filter((s) => s && s.titre && s.titre.
 ---
 <Base title={post.data.title} description={post.data.excerpt} group={group} active="blog">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}blog/`}>Blog</a> / {post.data.title}</div>
-  <article class="post-body">
-    <div class="chip-row" style="margin-bottom:16px;">
-      <a href={`${BASE}wiki/?domain=${post.data.domain}`} class="chip is-accent">{TAXONOMY[post.data.domain] || post.data.domain}</a>
+  <div class="post-layout">
+    {tocItems.length > 1 && (
+      <nav class="post-toc" aria-label="Sommaire de l'article">
+        <p class="post-toc-title">Sommaire</p>
+        <ul>
+          {tocItems.map((h: any) => (
+            <li class={`toc-depth-${h.depth}`}>
+              <a href={`#${h.slug}`}>{h.text}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+    <div class="post-main">
+      <article class="post-body">
+        <div class="chip-row" style="margin-bottom:16px;">
+          <a href={`${BASE}wiki/?domain=${post.data.domain}`} class="chip is-accent">{TAXONOMY[post.data.domain] || post.data.domain}</a>
+        </div>
+        <h1 style="font-size:30px;margin:0 0 12px;line-height:1.25;">{post.data.title}</h1>
+        <div class="post-meta-row">
+          <time datetime={post.data.date}>{formatDateFr(post.data.date)}</time>
+          <span aria-hidden="true">·</span>
+          <span>{readingMinutes} min de lecture</span>
+        </div>
+        <Content />
+      </article>
+      {related.length > 0 && (
+        <div class="related-block">
+          <h2>Notions du wiki citées dans cet article</h2>
+          <div class="pins">
+            {related.map((r: any) => (
+              <a class="pin" href={`${BASE}wiki/${r.slug}/`}><span class="dot"></span>{r.term}</a>
+            ))}
+          </div>
+        </div>
+      )}
+      {sources.length > 0 && (
+        <div class="sources-block">
+          <h2 class="section-label">Sources ({sources.length})</h2>
+          <ol class="source-list">
+            {sources.map((s) => (
+              <li class="source-item">
+                {s.url ? (
+                  <a class="source-title" href={s.url} target="_blank" rel="noopener noreferrer">{s.titre}</a>
+                ) : (
+                  <span class="source-title">{s.titre}</span>
+                )}
+                {s.type && <span class="source-type">{SOURCE_TYPE_LABEL[s.type] || s.type}</span>}
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
     </div>
-    <h1 style="font-size:30px;margin:0 0 24px;line-height:1.25;">{post.data.title}</h1>
-    <Content />
-  </article>
-  {related.length > 0 && (
-    <div class="related-block">
-      <h2>Notions du wiki citées dans cet article</h2>
-      <div class="pins">
-        {related.map((r: any) => (
-          <a class="pin" href={`${BASE}wiki/${r.slug}/`}><span class="dot"></span>{r.term}</a>
-        ))}
-      </div>
-    </div>
-  )}
-  {sources.length > 0 && (
-    <div class="sources-block">
-      <h2 class="section-label">Sources ({sources.length})</h2>
-      <ol class="source-list">
-        {sources.map((s) => (
-          <li class="source-item">
-            {s.url ? (
-              <a class="source-title" href={s.url} target="_blank" rel="noopener noreferrer">{s.titre}</a>
-            ) : (
-              <span class="source-title">{s.titre}</span>
-            )}
-            {s.type && <span class="source-type">{SOURCE_TYPE_LABEL[s.type] || s.type}</span>}
-          </li>
-        ))}
-      </ol>
-    </div>
-  )}
+  </div>
 </Base>

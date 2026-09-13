@@ -1,5 +1,6 @@
 ---
 title: "À quoi sert un condensateur dans un circuit électronique ?"
+date: "2026-09-12"
 domain: "K"
 excerpt: "Un condensateur stocke temporairement une charge électrique pour lisser une tension, filtrer un signal ou protéger un circuit des variations brutales. Explications à partir d'exemples concrets."
 related: ["condensateur", "circuit-analogique", "filtre-electronique", "resistance", "composant-electronique", "signal-analogique"]

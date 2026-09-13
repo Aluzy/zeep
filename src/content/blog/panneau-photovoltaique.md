@@ -1,5 +1,6 @@
 ---
 title: "Comment fonctionne un panneau photovoltaïque, du photon au courant continu"
+date: "2026-09-10"
 domain: "B"
 excerpt: "Un panneau solaire ne « fabrique » pas l'électricité par magie : il convertit directement la lumière en courant grâce à un phénomène physique précis. Voici le trajet complet, du photon jusqu'à la prise."
 related: ["panneau-photovoltaique", "courant-continu", "energie-renouvelable", "onduleur"]

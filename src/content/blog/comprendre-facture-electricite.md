@@ -1,5 +1,6 @@
 ---
 title: "Comprendre sa facture d'électricité ligne par ligne"
+date: "2026-09-10"
 domain: "J"
 excerpt: "Kilowattheures, abonnement, taxes... une facture d'électricité empile plusieurs éléments qui n'ont rien à voir entre eux. Voici comment la lire vraiment."
 related: ["facture-d-electricite", "kilowattheure", "compteur-electrique", "fournisseur-d-electricite"]

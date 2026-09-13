@@ -49,6 +49,9 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     domain: z.string(),
+    // Date de publication, format AAAA-MM-JJ (chaîne, pas un type Date :
+    // scripts/zeeplib.py lit le frontmatter comme du JSON ligne à ligne).
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "date attendue au format AAAA-MM-JJ"),
     excerpt: z.string(),
     related: z.array(z.string()).default([]),
     // Sources externes vérifiées lors de la rédaction (même structure que le wiki).

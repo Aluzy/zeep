@@ -1,5 +1,6 @@
 ---
 title: "Pourquoi un disjoncteur saute-t-il ?"
+date: "2026-09-12"
 domain: "E"
 excerpt: "Surcharge, court-circuit ou fuite à la terre : un disjoncteur qui saute ne signale pas toujours le même problème. Voici comment distinguer ces cas au tableau électrique, sans jamais forcer un appareil qui re-saute."
 related: ["disjoncteur", "fusible", "court-circuit", "tableau-electrique", "installation-electrique", "mise-a-la-terre"]
