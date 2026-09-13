@@ -36,6 +36,12 @@ export interface EntreeProjet {
 export interface ArticleLie {
   slug: string;
   titre: string;
+  /**
+   * Rang de la fiche dans le `related` de l'article (0 = citée en premier).
+   * Sert à départager les articles quand plusieurs traitent la même notion
+   * (voir `src/lib/definition-links.ts`) ; l'affichage des blocs l'ignore.
+   */
+  rang: number;
 }
 
 /** Un projet qui cite la fiche. `duree` vaut "" quand le champ est absent ou blanc. */
@@ -93,8 +99,8 @@ export function buildBacklinkIndex(
         );
       }
       if (vus.has(cible)) continue;
+      entree(index, cible).articles.push({ slug: a.slug, titre: a.data.title, rang: vus.size });
       vus.add(cible);
-      entree(index, cible).articles.push({ slug: a.slug, titre: a.data.title });
     }
   }
 
