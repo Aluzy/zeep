@@ -1,5 +1,6 @@
 ---
 title: "Arduino vs Raspberry Pi vs ESP32 : lequel choisir pour son projet"
+date: "2026-09-10"
 domain: "O"
 excerpt: "Les trois noms reviennent sans cesse dans les projets de makers, mais ils ne répondent pas du tout au même besoin. Voici comment trancher selon ton projet."
 related: ["carte-arduino", "carte-raspberry-pi", "microcontroleur", "objet-connecte-iot"]

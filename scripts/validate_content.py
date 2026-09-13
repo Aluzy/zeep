@@ -10,6 +10,8 @@ domaines connus, définitions non vides, doublons de termes, URLs vides.
 """
 from __future__ import annotations
 
+import datetime
+import re
 import sys
 from collections import Counter
 
@@ -43,6 +45,8 @@ RELECTURE_STATUTS = ("relu-ia", "valide")
 # La borne haute reste large pour ne pas bloquer une reformulation en cours de lot.
 VERSION_SIMPLE_MIN_MOTS = 8
 VERSION_SIMPLE_MAX_MOTS = 60
+# Date de publication des articles de blog : "AAAA-MM-JJ" (chaîne, cf. src/content/config.ts).
+BLOG_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def main() -> int:
@@ -129,11 +133,20 @@ def main() -> int:
     for path in sorted(BLOG_DIR.glob("*.md")):
         fm, body = read_frontmatter(path)
         where = f"blog/{path.name}"
-        for key in ("title", "domain", "excerpt"):
+        for key in ("title", "domain", "excerpt", "date"):
             if not fm.get(key):
                 errors.append(f"{where} : frontmatter « {key} » manquant")
         if fm.get("domain") and fm["domain"] not in taxonomy:
             errors.append(f"{where} : domaine inconnu « {fm['domain']} »")
+        date = fm.get("date")
+        if date is not None:
+            if not isinstance(date, str) or not BLOG_DATE_RE.match(date):
+                errors.append(f"{where} : date « {date} » attendue au format AAAA-MM-JJ")
+            else:
+                try:
+                    datetime.date.fromisoformat(date)
+                except ValueError:
+                    errors.append(f"{where} : date « {date} » invalide")
         for r in fm.get("related", []) or []:
             if r not in wiki:
                 errors.append(f"{where} : lien vers une fiche inexistante « {r} »")

@@ -78,7 +78,52 @@ function initWikiSearch() {
   }
 }
 
+function initPostToc() {
+  const toc = document.querySelector(".post-toc");
+  if (!toc) return;
+  const links = Array.from(toc.querySelectorAll("a[href^='#']"));
+  if (!links.length) return;
+
+  const targets = links
+    .map((link) => {
+      const id = decodeURIComponent(link.getAttribute("href").slice(1));
+      const el = document.getElementById(id);
+      return el ? { link, el } : null;
+    })
+    .filter(Boolean);
+  if (!targets.length) return;
+
+  function setActive(id) {
+    links.forEach((l) => {
+      l.classList.toggle("is-active", l.getAttribute("href") === `#${id}`);
+    });
+  }
+
+  // Sans IntersectionObserver (vieux navigateur) : pas de mise en avant dynamique,
+  // le sommaire reste utilisable comme simple liste de liens.
+  if (!("IntersectionObserver" in window)) return;
+
+  let current = targets[0].el.id;
+  setActive(current);
+
+  // La bande de lecture retenue est proche du haut de l'écran, sous l'en-tête
+  // collant : le titre qui l'atteint devient la section "en cours".
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          current = entry.target.id;
+        }
+      });
+      setActive(current);
+    },
+    { rootMargin: "-96px 0px -70% 0px", threshold: 0 }
+  );
+  targets.forEach(({ el }) => observer.observe(el));
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initScrollToTop();
   initWikiSearch();
+  initPostToc();
 });
