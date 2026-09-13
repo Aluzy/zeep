@@ -1,0 +1,66 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const BASE = import.meta.env.BASE_URL;
+const wikiRaw = await getCollection("wiki");
+const wiki = [...wikiRaw].sort((a, b) => a.data.term.localeCompare(b.data.term, "fr"));
+const blog = [...(await getCollection("blog"))].sort((a, b) =>
+  a.data.title.localeCompare(b.data.title, "fr")
+);
+const diy = [...(await getCollection("diy"))].sort((a, b) =>
+  a.data.title.localeCompare(b.data.title, "fr")
+);
+---
+<Base title="Plan du site" description="Toutes les pages du site Zeep" group="neutre" active="">
+  <div class="breadcrumb"><a href={BASE}>Accueil</a> / Plan du site</div>
+  <h1 style="margin:0 0 6px;font-size:26px;">Plan du site</h1>
+  <p style="color:var(--text-dim);max-width:640px;margin:0 0 26px;">
+    La liste complète des pages du site, générée automatiquement à partir du contenu.
+  </p>
+
+  <section class="page-section">
+    <h2>Pages principales</h2>
+    <ul class="sitemap-list">
+      <li><a href={BASE}>Accueil</a></li>
+      <li><a href={`${BASE}wiki/`}>Wiki</a></li>
+      <li><a href={`${BASE}blog/`}>Blog</a></li>
+      <li><a href={`${BASE}projets-diy/`}>Projets DIY</a></li>
+    </ul>
+  </section>
+
+  <section class="page-section">
+    <h2>Wiki ({wiki.length})</h2>
+    <ul class="sitemap-list">
+      {wiki.map((t) => (
+        <li><a href={`${BASE}wiki/${t.data.slug}/`}>{t.data.term}</a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="page-section">
+    <h2>Blog ({blog.length})</h2>
+    <ul class="sitemap-list">
+      {blog.map((p) => (
+        <li><a href={`${BASE}blog/${p.slug}/`}>{p.data.title}</a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="page-section">
+    <h2>Projets DIY ({diy.length})</h2>
+    <ul class="sitemap-list">
+      {diy.map((d) => (
+        <li><a href={`${BASE}projets-diy/${d.data.slug}/`}>{d.data.title}</a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="page-section">
+    <h2>Autres pages</h2>
+    <ul class="sitemap-list">
+      <li><a href={`${BASE}mentions-legales/`}>Mentions légales</a></li>
+      <li><a href={`${BASE}politique-de-confidentialite/`}>Politique de confidentialité</a></li>
+    </ul>
+  </section>
+</Base>
