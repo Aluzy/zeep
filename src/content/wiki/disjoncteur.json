@@ -10,10 +10,16 @@
   "merged": false,
   "definition": "Dispositif de protection d'un circuit électrique qui coupe automatiquement le courant électrique en cas de court-circuit ou de surcharge, installé dans le tableau électrique.",
   "related": [
+    "arc-electrique",
     "circuit-electrique",
     "courant-electrique",
     "court-circuit",
     "court-jus",
+    "disjoncteur-differentiel",
+    "puissance-souscrite",
+    "schema-unifilaire",
+    "section-de-cable",
+    "sectionneur",
     "tableau-electrique"
   ],
   "pillar": true,

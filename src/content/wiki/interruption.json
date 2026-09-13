@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "IRQ",
+    "interrupt",
+    "interruption"
+  ],
+  "term": "Interruption",
+  "domains": [
+    "O"
+  ],
+  "definition": "Mécanisme par lequel un événement matériel suspend le programme en cours pour exécuter immédiatement une routine dédiée. Il garantit une réaction rapide sans surveiller en permanence les entrées.",
+  "versionSimple": "Le programme est mis en pause dès qu'un événement arrive, pour s'en occuper tout de suite, puis il reprend où il en était.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "interruption",
+  "related": [
+    "capteur",
+    "electronique-embarquee",
+    "gpio",
+    "microcontroleur"
+  ]
+}

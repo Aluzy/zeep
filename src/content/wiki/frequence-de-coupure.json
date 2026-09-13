@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "fc",
+    "frequence de coupure"
+  ],
+  "term": "Fréquence de coupure",
+  "domains": [
+    "K"
+  ],
+  "definition": "Fréquence à laquelle un filtre commence à atténuer nettement le signal, conventionnellement là où la puissance transmise est divisée par deux. Elle définit la limite entre la bande passante et la bande atténuée.",
+  "versionSimple": "C'est la fréquence à partir de laquelle un filtre commence vraiment à bloquer le signal au lieu de le laisser passer.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "frequence-de-coupure",
+  "related": [
+    "bande-passante",
+    "decibel",
+    "diagramme-de-bode",
+    "filtre-electronique",
+    "filtre-passe-bas",
+    "filtre-passe-haut"
+  ]
+}

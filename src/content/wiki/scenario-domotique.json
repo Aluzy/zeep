@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "automatisation domestique",
+    "scenario",
+    "scenario domotique"
+  ],
+  "term": "Scénario domotique",
+  "domains": [
+    "H"
+  ],
+  "definition": "Suite d'actions déclenchées automatiquement par un événement, une heure ou une mesure de capteur. Il coordonne éclairage, volets et chauffage sans intervention de l'occupant.",
+  "versionSimple": "On décide à l'avance ce que la maison doit faire, par exemple fermer les volets et baisser le chauffage le soir.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "scenario-domotique",
+  "related": [
+    "detecteur-de-presence",
+    "domotique",
+    "machine-a-etats",
+    "objet-connecte-iot",
+    "thermostat-connecte",
+    "volet-roulant-motorise"
+  ]
+}

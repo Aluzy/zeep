@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "lm",
+    "lumen"
+  ],
+  "term": "Lumen",
+  "domains": [
+    "I"
+  ],
+  "definition": "Unité de mesure du flux lumineux, de symbole lm. Elle décrit la quantité totale de lumière émise par une source. Les ampoules sont désormais comparées en lumens plutôt qu'en watts, qui ne mesurent que la consommation.",
+  "versionSimple": "Le lumen mesure la quantité de lumière donnée par une ampoule. Deux ampoules qui consomment pareil peuvent éclairer très différemment.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "lumen",
+  "related": [
+    "ampoule-led",
+    "eclairage",
+    "luminaire",
+    "lux"
+  ]
+}

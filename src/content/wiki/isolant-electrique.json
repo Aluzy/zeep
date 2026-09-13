@@ -10,7 +10,15 @@
   "merged": false,
   "definition": "Matériau qui empêche ou limite fortement le passage du courant électrique, utilisé pour protéger les conducteurs électriques.",
   "related": [
-    "courant-electrique"
+    "atome",
+    "bande-interdite",
+    "classe-d-isolation",
+    "controleur-d-isolement",
+    "courant-de-fuite",
+    "courant-electrique",
+    "defaut-d-isolement",
+    "dielectrique",
+    "gaine-thermoretractable"
   ],
   "pillar": true,
   "illustration": null,

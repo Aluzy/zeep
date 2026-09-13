@@ -13,7 +13,11 @@
     "courant-alternatif",
     "frequence-electrique",
     "induction-electromagnetique",
-    "tension-electrique"
+    "loi-de-faraday",
+    "puissance-apparente",
+    "tension-electrique",
+    "tres-basse-tension-de-securite",
+    "voltampere"
   ],
   "pillar": true,
   "illustration": null,

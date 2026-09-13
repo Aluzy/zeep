@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "ESD",
+    "decharge electrostatique",
+    "electricite statique"
+  ],
+  "term": "Décharge électrostatique",
+  "domains": [
+    "U",
+    "V"
+  ],
+  "definition": "Transfert brutal de charges accumulées sur un corps vers un objet conducteur. Invisible et indolore à faible énergie, elle détruit pourtant les entrées des circuits intégrés manipulés sans précaution.",
+  "versionSimple": "La petite étincelle que l'on reçoit parfois en touchant une poignée peut suffire à abîmer une puce électronique.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "decharge-electrostatique",
+  "related": [
+    "charge-electrique",
+    "circuit-integre",
+    "composant-electronique",
+    "electrostatique",
+    "soudure-electronique"
+  ]
+}

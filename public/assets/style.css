@@ -409,3 +409,17 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
   .source-type{margin-left:0;display:block;margin-top:4px;white-space:normal;}
   .scroll-to-top{bottom:20px;right:20px;width:40px;height:40px;font-size:18px;}
 }
+
+/* Formes équivalentes d'une fiche wiki (champ `synonymes`). */
+.synonymes {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.synonymes .k {
+  margin-right: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+}

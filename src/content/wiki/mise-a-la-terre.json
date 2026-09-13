@@ -10,8 +10,17 @@
   "merged": false,
   "definition": "Connexion électrique reliant les masses métalliques d'une installation électrique au sol via une prise de terre, afin d'assurer la sécurité des personnes.",
   "related": [
+    "classe-d-isolation",
+    "consignation-electrique",
+    "courant-de-fuite",
+    "defaut-d-isolement",
+    "disjoncteur-differentiel",
+    "electrisation",
+    "electrocution",
     "installation-electrique",
-    "prise-de-terre"
+    "parafoudre",
+    "prise-de-terre",
+    "regime-de-neutre"
   ],
   "pillar": false,
   "illustration": null,
@@ -26,5 +35,11 @@
     "matriceIds": [
       "M067"
     ]
-  }
+  },
+  "synonymes": [
+    "PE",
+    "conducteur de protection",
+    "mise a la terre",
+    "terre"
+  ]
 }

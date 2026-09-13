@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Élément mobile équipé de broches, connecté à un appareil, destiné à être inséré dans une prise de courant.",
   "related": [
+    "connecteur-electrique",
     "prise-de-courant"
   ],
   "pillar": false,

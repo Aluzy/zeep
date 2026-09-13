@@ -10,7 +10,10 @@
   "merged": false,
   "definition": "Ensemble de fils électriques regroupés et protégés par une gaine isolante, servant au transport du courant électrique.",
   "related": [
-    "courant-electrique"
+    "chute-de-tension",
+    "connecteur-electrique",
+    "courant-electrique",
+    "section-de-cable"
   ],
   "pillar": false,
   "illustration": null,

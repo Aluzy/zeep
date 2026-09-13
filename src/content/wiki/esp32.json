@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "ESP32",
+    "ESP8266",
+    "esp"
+  ],
+  "term": "ESP32",
+  "domains": [
+    "O",
+    "Q"
+  ],
+  "definition": "Famille de microcontrôleurs intégrant le Wi-Fi et le Bluetooth, très répandue dans les objets connectés amateurs et industriels. Elle se programme avec les mêmes outils qu'une carte Arduino.",
+  "versionSimple": "C'est une petite carte programmable qui sait se connecter toute seule au Wi-Fi. Elle sert à fabriquer des objets connectés.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "esp32",
+  "related": [
+    "bluetooth",
+    "carte-arduino",
+    "microcontroleur",
+    "mqtt",
+    "objet-connecte-iot",
+    "wi-fi"
+  ]
+}

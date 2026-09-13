@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "borne wago",
+    "bornier",
+    "connecteur",
+    "connecteur electrique",
+    "domino"
+  ],
+  "term": "Connecteur électrique",
+  "domains": [
+    "V",
+    "E"
+  ],
+  "definition": "Pièce qui assure une liaison électrique démontable entre deux conducteurs ou deux cartes. Le choix du modèle dépend du courant, de la tension et du nombre de manœuvres prévues.",
+  "versionSimple": "Un connecteur permet de brancher et débrancher des fils sans les souder à chaque fois.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "connecteur-electrique",
+  "related": [
+    "cablage-electrique",
+    "cable-electrique",
+    "carte-electronique",
+    "fiche-electrique",
+    "fil-electrique",
+    "gaine-thermoretractable"
+  ]
+}

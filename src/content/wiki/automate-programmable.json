@@ -1,0 +1,47 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "API",
+    "PLC",
+    "automate industriel",
+    "automate programmable"
+  ],
+  "term": "Automate programmable",
+  "domains": [
+    "F"
+  ],
+  "definition": "Calculateur industriel conçu pour piloter une machine ou une ligne de production à partir d'entrées capteurs et de sorties actionneurs. Il est robuste, cyclique et programmé en langages normalisés.",
+  "versionSimple": "C'est l'ordinateur robuste qui commande les machines d'une usine, en lisant des capteurs et en actionnant des moteurs.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "automate-programmable",
+  "related": [
+    "actionneur",
+    "asservissement",
+    "bras-robotise",
+    "bus-can",
+    "capteur",
+    "chaine-d-information",
+    "contacteur",
+    "machine-a-etats",
+    "modbus",
+    "robotique",
+    "rs-485",
+    "technicien-de-maintenance"
+  ]
+}

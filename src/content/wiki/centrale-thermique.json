@@ -10,9 +10,12 @@
   "merged": false,
   "definition": "Centrale électrique qui produit de l'électricité en brûlant une énergie fossile ou de la biomasse pour actionner une turbine.",
   "related": [
+    "biomasse",
     "centrale-electrique",
+    "cogeneration",
     "electricite",
     "energie-fossile",
+    "geothermie",
     "turbine"
   ],
   "pillar": false,

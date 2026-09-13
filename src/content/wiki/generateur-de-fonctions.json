@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "GBF",
+    "generateur basse frequence",
+    "generateur de fonctions"
+  ],
+  "term": "Générateur de fonctions",
+  "domains": [
+    "S",
+    "V"
+  ],
+  "definition": "Appareil de laboratoire produisant des signaux de forme, de fréquence et d'amplitude réglables. Associé à un oscilloscope, il sert à caractériser un filtre ou un amplificateur.",
+  "versionSimple": "Cet appareil fabrique des signaux électriques à la demande, pour tester un montage avant de le brancher pour de vrai.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "generateur-de-fonctions",
+  "related": [
+    "filtre-electronique",
+    "frequence-electrique",
+    "oscilloscope",
+    "prototypage-electronique",
+    "signal-analogique"
+  ]
+}

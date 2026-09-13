@@ -10,10 +10,13 @@
   "merged": false,
   "definition": "Dispositif regroupant plusieurs piles électriques ou accumulateurs, capable de stocker et de restituer de l'énergie électrique sous forme de courant continu.",
   "related": [
+    "ampere-heure",
     "chaine-d-energie",
     "courant-continu",
     "onduleur",
-    "pile-electrique"
+    "pile-electrique",
+    "stockage-d-energie",
+    "supercondensateur"
   ],
   "pillar": true,
   "illustration": null

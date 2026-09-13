@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "dB",
+    "dBm",
+    "decibel"
+  ],
+  "term": "Décibel",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité relative, de symbole dB, qui exprime le rapport entre deux grandeurs sur une échelle logarithmique. Elle sert à décrire un gain, une atténuation ou un niveau sonore, en compressant des écarts très grands dans des nombres maniables.",
+  "versionSimple": "Le décibel compare deux valeurs plutôt que d'en mesurer une seule. Il permet d'écrire avec de petits nombres des différences énormes, comme entre un murmure et un avion.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "decibel",
+  "related": [
+    "amplificateur-audio",
+    "bande-passante",
+    "diagramme-de-bode",
+    "filtre-electronique",
+    "frequence-de-coupure",
+    "gain-electronique"
+  ]
+}

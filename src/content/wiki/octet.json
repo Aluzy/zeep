@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "Go",
+    "Mo",
+    "byte",
+    "kilo octet",
+    "octet"
+  ],
+  "term": "Octet",
+  "domains": [
+    "L"
+  ],
+  "definition": "Groupe de huit bits, unité de base de la mémoire informatique. Un octet permet de coder 256 valeurs différentes, ce qui suffit à représenter un caractère de texte.",
+  "versionSimple": "Un octet est un paquet de huit bits. Les mémoires et les fichiers se comptent en milliers ou en millions d'octets.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "octet",
+  "related": [
+    "bit",
+    "memoire-morte-rom",
+    "memoire-vive-ram",
+    "microprocesseur",
+    "systeme-binaire",
+    "systeme-hexadecimal"
+  ]
+}

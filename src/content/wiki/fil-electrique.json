@@ -11,7 +11,9 @@
   "definition": "Conducteur électrique filiforme, généralement en cuivre, utilisé dans le câblage électrique des installations.",
   "related": [
     "cablage-electrique",
-    "conducteur-electrique"
+    "conducteur-electrique",
+    "connecteur-electrique",
+    "gaine-thermoretractable"
   ],
   "pillar": false,
   "illustration": null

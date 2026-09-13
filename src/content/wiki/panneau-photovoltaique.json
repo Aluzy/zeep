@@ -10,9 +10,13 @@
   "merged": false,
   "definition": "Dispositif composé de cellules qui convertit directement la lumière du soleil en courant continu, une forme d'énergie renouvelable.",
   "related": [
+    "autoconsommation",
     "courant-continu",
+    "effet-photoelectrique",
     "energie-renouvelable",
-    "onduleur"
+    "facteur-de-charge",
+    "onduleur",
+    "watt-crete"
   ],
   "pillar": true,
   "illustration": null,
@@ -27,5 +31,10 @@
     "matriceIds": [
       "M025"
     ]
-  }
+  },
+  "synonymes": [
+    "PV",
+    "module photovoltaique",
+    "panneau solaire"
+  ]
 }

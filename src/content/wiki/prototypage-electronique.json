@@ -10,10 +10,15 @@
   "merged": false,
   "definition": "Étape de conception qui consiste à assembler et tester un circuit électronique, souvent sur une plaque d'essai, avant de réaliser un circuit imprimé définitif.",
   "related": [
+    "alimentation-de-laboratoire",
     "carte-arduino",
     "circuit-imprime-pcb",
+    "code-couleur-des-resistances",
+    "conception-assistee-par-ordinateur-electronique",
     "electronique",
-    "plaque-d-essai-breadboard"
+    "generateur-de-fonctions",
+    "plaque-d-essai-breadboard",
+    "simulation-spice"
   ],
   "pillar": false,
   "illustration": null

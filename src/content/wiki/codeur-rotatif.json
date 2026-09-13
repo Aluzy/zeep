@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "codeur incremental",
+    "codeur rotatif",
+    "encodeur"
+  ],
+  "term": "Codeur rotatif",
+  "domains": [
+    "P",
+    "S"
+  ],
+  "definition": "Capteur qui traduit la rotation d'un axe en impulsions ou en position absolue. Il ferme la boucle d'asservissement d'un moteur en lui indiquant sa position réelle.",
+  "versionSimple": "Ce capteur compte les tours d'un axe pour savoir exactement où il se trouve. Les robots en ont besoin pour se repérer.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "codeur-rotatif",
+  "related": [
+    "actionneur",
+    "asservissement",
+    "bras-robotise",
+    "capteur",
+    "moteur-pas-a-pas",
+    "robotique",
+    "servomoteur"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "drone",
+    "UAV",
+    "multirotor",
+    "quadricoptere"
+  ],
+  "term": "Drone",
+  "domains": [
+    "P",
+    "Q"
+  ],
+  "definition": "Aéronef sans pilote embarqué, propulsé par des moteurs brushless et stabilisé par une centrale inertielle asservie. Il concentre capteurs, liaison radio et calculateur embarqué dans un même système.",
+  "versionSimple": "Un drone vole sans pilote à bord. Ses capteurs et son petit ordinateur le stabilisent des centaines de fois par seconde.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "drone",
+  "related": [
+    "asservissement",
+    "batterie-lithium-ion",
+    "capteur",
+    "electronique-embarquee",
+    "emetteur-radiofrequence",
+    "moteur-brushless",
+    "robotique"
+  ]
+}

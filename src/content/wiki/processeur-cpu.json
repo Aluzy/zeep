@@ -31,5 +31,9 @@
     "matriceIds": [
       "M006"
     ]
-  }
+  },
+  "synonymes": [
+    "CPU",
+    "processeur"
+  ]
 }

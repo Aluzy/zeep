@@ -12,10 +12,18 @@
   "related": [
     "bobine-inductance",
     "condensateur",
+    "dephasage",
     "electronique",
+    "haut-parleur",
+    "henry",
+    "reactance",
     "resistance",
     "signal-analogique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "Z",
+    "impedance"
+  ]
 }

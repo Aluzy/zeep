@@ -11,7 +11,11 @@
   "definition": "Technique d'assemblage qui fixe et relie électriquement les composants électroniques à un circuit imprimé à l'aide d'un fer à souder.",
   "related": [
     "circuit-imprime-pcb",
-    "fer-a-souder"
+    "decharge-electrostatique",
+    "fer-a-souder",
+    "gaine-thermoretractable",
+    "montage-en-surface",
+    "refusion"
   ],
   "pillar": false,
   "illustration": null

@@ -39,6 +39,11 @@ function initDomainFilterTooltips() {
   });
 }
 
+/** Minuscules sans accents : « Ampère » et « ampere » se cherchent pareil. */
+function sansAccents(texte) {
+  return (texte || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 function initWikiSearch() {
   const searchEl = document.querySelector("#wiki-search");
   const grid = document.querySelector("#term-grid");
@@ -50,11 +55,14 @@ function initWikiSearch() {
   initDomainFilterTooltips();
 
   function apply() {
-    const q = searchEl.value.trim().toLowerCase();
+    const q = sansAccents(searchEl.value.trim());
     tiles.forEach((t) => {
-      const name = t.dataset.term.toLowerCase();
+      // Le terme, plus ses formes équivalentes (abréviations, symboles) : taper
+      // « farad », « PWM » ou « cos phi » doit ramener la bonne fiche.
+      const name = sansAccents(t.dataset.term);
+      const synonymes = sansAccents(t.dataset.synonymes || "");
       const domains = (t.dataset.domains || "").split(",");
-      const matchesText = !q || name.includes(q);
+      const matchesText = !q || name.includes(q) || synonymes.includes(q);
       const matchesDomain = activeDomain === "all" || domains.includes(activeDomain);
       t.style.display = matchesText && matchesDomain ? "" : "none";
     });

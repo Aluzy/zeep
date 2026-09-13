@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "IGBT",
+    "transistor igbt"
+  ],
+  "term": "Transistor IGBT",
+  "domains": [
+    "M"
+  ],
+  "definition": "Transistor de puissance commandé en tension qui associe la facilité de commande d'un MOSFET à la tenue en courant d'un transistor bipolaire. Il équipe les onduleurs, les variateurs industriels et les trains électriques.",
+  "versionSimple": "C'est un interrupteur électronique capable de commander de très fortes puissances tout en se pilotant avec un signal faible.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "transistor-igbt",
+  "related": [
+    "convertisseur-de-frequence",
+    "electronique-de-puissance",
+    "mosfet",
+    "onduleur",
+    "transistor-bipolaire"
+  ]
+}

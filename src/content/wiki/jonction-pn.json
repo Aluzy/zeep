@@ -1,0 +1,44 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "jonction PN",
+    "jonction p n"
+  ],
+  "term": "Jonction PN",
+  "domains": [
+    "N"
+  ],
+  "definition": "Zone de contact entre une région de semi-conducteur dopée positivement et une région dopée négativement. Elle ne laisse passer le courant que dans un sens et constitue le cœur de la diode et du transistor.",
+  "versionSimple": "En collant deux morceaux de silicium traités différemment, on obtient un passage à sens unique pour le courant.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "jonction-pn",
+  "related": [
+    "diode",
+    "dopage",
+    "semi-conducteur",
+    "silicium",
+    "transistor",
+    "trou-electronique"
+  ]
+}

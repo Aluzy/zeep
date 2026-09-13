@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "regulation de chauffage",
+    "thermostat",
+    "thermostat connecte"
+  ],
+  "term": "Thermostat connecté",
+  "domains": [
+    "H"
+  ],
+  "definition": "Régulateur de chauffage programmable et pilotable à distance, qui adapte la consigne à la présence et aux habitudes des occupants. Il réduit la consommation sans dégrader le confort.",
+  "versionSimple": "Ce thermostat règle le chauffage tout seul selon les heures et la présence, et se commande depuis un téléphone.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "thermostat-connecte",
+  "related": [
+    "capteur-de-temperature",
+    "domotique",
+    "economie-d-energie",
+    "objet-connecte-iot",
+    "scenario-domotique"
+  ]
+}

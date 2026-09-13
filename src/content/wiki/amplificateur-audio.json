@@ -11,9 +11,15 @@
   "definition": "Circuit électronique qui augmente la puissance d'un signal analogique sonore, souvent construit autour d'un amplificateur opérationnel ou d'un transistor.",
   "related": [
     "amplificateur-operationnel",
+    "bande-passante",
+    "decibel",
+    "distorsion",
     "electronique",
     "gain-electronique",
+    "haut-parleur",
+    "microphone",
     "signal-analogique",
+    "signal-audio",
     "transistor"
   ],
   "pillar": false,

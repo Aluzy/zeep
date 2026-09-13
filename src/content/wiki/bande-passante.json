@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "bande passante",
+    "largeur de bande"
+  ],
+  "term": "Bande passante",
+  "domains": [
+    "K",
+    "R"
+  ],
+  "definition": "Intervalle de fréquences qu'un circuit, un amplificateur ou une liaison transmet sans atténuation notable. Elle conditionne la qualité d'un son restitué comme le débit d'une transmission numérique.",
+  "versionSimple": "C'est l'ensemble des fréquences qu'un appareil laisse passer correctement. En dehors, le signal est affaibli ou déformé.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "bande-passante",
+  "related": [
+    "amplificateur-audio",
+    "analyseur-de-spectre",
+    "antenne",
+    "decibel",
+    "filtre-passe-bande",
+    "frequence-de-coupure",
+    "signal-audio",
+    "theoreme-de-shannon"
+  ]
+}

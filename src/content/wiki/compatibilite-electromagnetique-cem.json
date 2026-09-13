@@ -10,8 +10,11 @@
   "merged": false,
   "definition": "Aptitude d'un circuit électronique à fonctionner sans provoquer ni subir d'interférence électromagnétique gênante pour son environnement.",
   "related": [
+    "analyseur-de-spectre",
     "electronique",
-    "interference-electromagnetique"
+    "harmoniques",
+    "interference-electromagnetique",
+    "varistance"
   ],
   "pillar": false,
   "illustration": null,
@@ -26,5 +29,10 @@
     "matriceIds": [
       "M068"
     ]
-  }
+  },
+  "synonymes": [
+    "CEM",
+    "EMC",
+    "compatibilite electromagnetique"
+  ]
 }

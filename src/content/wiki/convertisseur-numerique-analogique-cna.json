@@ -15,5 +15,10 @@
     "signal-numerique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "CNA",
+    "DAC",
+    "convertisseur numerique analogique"
+  ]
 }

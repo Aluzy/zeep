@@ -11,6 +11,7 @@
   "definition": "Circuit électronique qui capte une onde radiofréquence via une antenne et la convertit en signal électrique exploitable.",
   "related": [
     "antenne",
+    "circuit-rlc",
     "electronique"
   ],
   "pillar": false,

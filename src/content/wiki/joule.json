@@ -1,0 +1,44 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "J",
+    "joule",
+    "kilojoule"
+  ],
+  "term": "Joule",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de mesure de l'énergie, de symbole J. Un joule correspond à la puissance de un watt fournie pendant une seconde. En électricité domestique on lui préfère le kilowattheure, qui vaut trois millions six cent mille joules.",
+  "versionSimple": "Le joule mesure l'énergie, c'est-à-dire le travail qu'un appareil peut fournir. Un appareil d'un watt allumé une seconde consomme un joule d'énergie.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "joule",
+  "related": [
+    "effet-joule",
+    "energie-electrique",
+    "kilowattheure",
+    "puissance-electrique",
+    "watt"
+  ]
+}

@@ -13,8 +13,14 @@
     "alternateur",
     "champ-magnetique",
     "conducteur-electrique",
+    "henry",
+    "histoire-de-l-electricite",
+    "loi-de-faraday",
+    "loi-de-lenz",
     "tension-electrique",
-    "transformateur"
+    "tesla",
+    "transformateur",
+    "weber"
   ],
   "pillar": false,
   "illustration": null

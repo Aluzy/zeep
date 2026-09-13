@@ -11,10 +11,13 @@
   "definition": "Courant électrique circulant toujours dans le même sens, produit notamment par une batterie ou un panneau photovoltaïque.",
   "related": [
     "batterie",
+    "borne-de-recharge",
     "courant-electrique",
     "dynamo",
+    "electrolyse",
     "onduleur",
     "panneau-photovoltaique",
+    "pont-de-diodes",
     "redresseur"
   ],
   "pillar": false,
@@ -34,5 +37,10 @@
       "M053",
       "M072"
     ]
-  }
+  },
+  "synonymes": [
+    "DC",
+    "continu",
+    "courant continu"
+  ]
 }

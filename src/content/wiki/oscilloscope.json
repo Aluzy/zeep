@@ -41,11 +41,19 @@
   },
   "slug": "oscilloscope",
   "related": [
+    "analyseur-de-spectre",
     "caracteristique-tension-courant",
     "frequence-electrique",
+    "generateur-de-fonctions",
     "multimetre",
+    "periode",
     "signal-analogique",
     "tension-electrique",
+    "valeur-crete",
     "voltmetre"
+  ],
+  "synonymes": [
+    "oscilloscope",
+    "scope"
   ]
 }

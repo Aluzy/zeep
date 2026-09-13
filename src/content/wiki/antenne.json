@@ -10,8 +10,12 @@
   "merged": false,
   "definition": "Élément qui convertit un signal électrique en onde radiofréquence, ou inversement, utilisé par un émetteur radiofréquence ou un récepteur radiofréquence.",
   "related": [
+    "bande-passante",
     "emetteur-radiofrequence",
-    "recepteur-radiofrequence"
+    "lora",
+    "recepteur-radiofrequence",
+    "resonance",
+    "rfid"
   ],
   "pillar": false,
   "illustration": null

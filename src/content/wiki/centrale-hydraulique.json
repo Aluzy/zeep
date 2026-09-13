@@ -13,6 +13,8 @@
     "barrage-hydroelectrique",
     "centrale-electrique",
     "electricite",
+    "energie-maremotrice",
+    "station-de-transfert-d-energie-par-pompage",
     "turbine"
   ],
   "pillar": false,

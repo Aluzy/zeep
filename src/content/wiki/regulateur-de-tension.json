@@ -11,7 +11,9 @@
   "definition": "Composant ou circuit électronique qui maintient une tension de sortie stable malgré les variations de charge, élément clé d'une alimentation électronique.",
   "related": [
     "alimentation-a-decoupage",
+    "alimentation-de-laboratoire",
     "alimentation-electronique",
+    "diode-zener",
     "electronique"
   ],
   "pillar": false,

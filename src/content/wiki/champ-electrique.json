@@ -11,8 +11,10 @@
   "definition": "Région de l'espace dans laquelle une charge électrique subit une force, créée par la présence d'autres charges électriques.",
   "related": [
     "charge-electrique",
+    "dielectrique",
     "electromagnetisme",
-    "electrostatique"
+    "electrostatique",
+    "loi-de-coulomb"
   ],
   "pillar": false,
   "illustration": null,

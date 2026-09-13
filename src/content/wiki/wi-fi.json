@@ -11,8 +11,11 @@
   "definition": "Protocole de communication radiofréquence permettant de relier sans fil des objets connectés à un réseau local ou à Internet.",
   "related": [
     "emetteur-radiofrequence",
+    "esp32",
+    "ethernet",
     "objet-connecte-iot",
-    "protocole-de-communication"
+    "protocole-de-communication",
+    "zigbee"
   ],
   "pillar": true,
   "illustration": null,

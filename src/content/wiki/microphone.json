@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "capsule microphonique",
+    "micro",
+    "microphone"
+  ],
+  "term": "Microphone",
+  "domains": [
+    "T",
+    "S"
+  ],
+  "definition": "Transducteur qui convertit une onde sonore en signal électrique, par variation de capacité ou déplacement d'une bobine. Le signal obtenu, très faible, exige un préamplificateur soigné.",
+  "versionSimple": "Le microphone fait l'inverse du haut-parleur : il transforme le son en signal électrique.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "microphone",
+  "related": [
+    "amplificateur-audio",
+    "capteur",
+    "condensateur",
+    "haut-parleur",
+    "signal-analogique",
+    "signal-audio"
+  ]
+}

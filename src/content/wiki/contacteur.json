@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "contacteur",
+    "contacteur de puissance"
+  ],
+  "term": "Contacteur",
+  "domains": [
+    "F"
+  ],
+  "definition": "Appareil de commande électromagnétique qui établit ou coupe un circuit de puissance à partir d'un signal de commande faible. Il équipe les départs moteurs et les circuits de chauffe-eau.",
+  "versionSimple": "C'est un gros interrupteur commandé à distance par un électroaimant. Un petit signal suffit pour couper ou établir un courant important.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "contacteur",
+  "related": [
+    "automate-programmable",
+    "heures-creuses",
+    "interrupteur",
+    "moteur-asynchrone",
+    "moteur-electrique",
+    "relais-electronique",
+    "tableau-electrique"
+  ]
+}

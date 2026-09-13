@@ -11,7 +11,9 @@
   "definition": "Dispositif enfoui dans le sol assurant la mise à la terre d'une installation électrique.",
   "related": [
     "installation-electrique",
-    "mise-a-la-terre"
+    "mise-a-la-terre",
+    "parafoudre",
+    "regime-de-neutre"
   ],
   "pillar": false,
   "illustration": null

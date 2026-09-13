@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "loi de lenz"
+  ],
+  "term": "Loi de Lenz",
+  "domains": [
+    "A"
+  ],
+  "definition": "Loi qui précise le sens du courant induit : celui-ci s'oppose toujours à la cause qui lui a donné naissance. Elle explique le freinage magnétique et la résistance ressentie quand on déplace un aimant devant une bobine.",
+  "versionSimple": "Le courant qui apparaît dans une bobine essaie toujours de freiner ce qui l'a créé. C'est pour cela qu'un aimant semble ralenti quand il traverse un tube de cuivre.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "loi-de-lenz",
+  "related": [
+    "bobine-inductance",
+    "champ-magnetique",
+    "induction-electromagnetique",
+    "loi-de-faraday"
+  ]
+}

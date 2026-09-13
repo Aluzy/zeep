@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "bit",
+    "bits",
+    "chiffre binaire"
+  ],
+  "term": "Bit",
+  "domains": [
+    "L"
+  ],
+  "definition": "Plus petite quantité d'information manipulée par un système numérique, qui ne peut valoir que zéro ou un. Un bit correspond physiquement à une tension basse ou haute sur une piste de circuit.",
+  "versionSimple": "Un bit est la plus petite information possible : zéro ou un. Tout ce que fait un ordinateur est fabriqué avec des bits.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "bit",
+  "related": [
+    "algebre-de-boole",
+    "circuit-numerique",
+    "octet",
+    "quantification",
+    "registre-a-decalage",
+    "signal-numerique",
+    "systeme-binaire",
+    "systeme-hexadecimal"
+  ]
+}

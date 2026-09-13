@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "eclairement",
+    "lux",
+    "lx"
+  ],
+  "term": "Lux",
+  "domains": [
+    "I"
+  ],
+  "definition": "Unité de mesure de l'éclairement, de symbole lx. Elle correspond à un lumen reçu par mètre carré de surface. Les normes de travail imposent un éclairement minimal exprimé en lux selon l'activité pratiquée.",
+  "versionSimple": "Le lux mesure la lumière qui arrive vraiment sur une table ou un sol. Une même ampoule donne moins de lux si on l'éloigne.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "lux",
+  "related": [
+    "capteur-optique",
+    "eclairage",
+    "lumen",
+    "luminaire"
+  ]
+}

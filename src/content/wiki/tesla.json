@@ -1,0 +1,44 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "T",
+    "millitesla",
+    "tesla"
+  ],
+  "term": "Tesla",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de mesure de l'induction magnétique, de symbole T. Elle décrit l'intensité d'un champ magnétique en un point. Un aimant de réfrigérateur atteint quelques millitesla, une machine d'imagerie médicale plusieurs tesla.",
+  "versionSimple": "Le tesla mesure la force d'un aimant ou d'un champ magnétique. Un aimant de frigo est très faible à côté des aimants utilisés dans les hôpitaux.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "tesla",
+  "related": [
+    "champ-magnetique",
+    "effet-hall",
+    "electromagnetisme",
+    "induction-electromagnetique",
+    "weber"
+  ]
+}

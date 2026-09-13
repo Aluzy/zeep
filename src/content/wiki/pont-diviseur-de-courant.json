@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "diviseur de courant",
+    "pont diviseur de courant"
+  ],
+  "term": "Pont diviseur de courant",
+  "domains": [
+    "A",
+    "K"
+  ],
+  "definition": "Montage de deux résistances en parallèle qui répartit un courant d'entrée entre deux branches. La branche la moins résistante reçoit la plus grande part du courant.",
+  "versionSimple": "Quand un courant arrive devant deux chemins, il se partage entre eux. Le chemin le plus facile emporte la plus grosse part.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "pont-diviseur-de-courant",
+  "related": [
+    "circuit-electrique",
+    "courant-electrique",
+    "loi-des-noeuds",
+    "resistance"
+  ]
+}

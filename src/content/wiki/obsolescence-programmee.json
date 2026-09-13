@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "obsolescence",
+    "obsolescence programmee"
+  ],
+  "term": "Obsolescence programmée",
+  "domains": [
+    "W",
+    "J"
+  ],
+  "definition": "Ensemble de techniques visant à réduire délibérément la durée de vie d'un produit pour en accélérer le remplacement. Elle est interdite en France et combattue par les règles de réparabilité.",
+  "versionSimple": "C'est le fait de fabriquer exprès un appareil qui tombera en panne trop tôt. C'est interdit en France.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "Service-public.fr — énergie et logement",
+      "url": "https://www.service-public.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "obsolescence-programmee",
+  "related": [
+    "eco-conception",
+    "indice-de-reparabilite",
+    "recyclage-des-dechets-electroniques-deee"
+  ]
+}

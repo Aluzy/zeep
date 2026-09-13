@@ -11,9 +11,18 @@
   "definition": "Unité d'énergie électrique correspondant à la consommation d'une puissance d'un kilowatt pendant une heure, utilisée pour établir la facture d'électricité.",
   "related": [
     "electricite",
+    "empreinte-carbone-de-l-electricite",
+    "energie-electrique",
     "facture-d-electricite",
+    "heures-creuses",
+    "joule",
     "kilowatt"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "kWh",
+    "kilowatt heure",
+    "kilowattheure"
+  ]
 }

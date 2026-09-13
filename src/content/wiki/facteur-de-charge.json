@@ -1,0 +1,44 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "facteur de charge",
+    "taux de charge"
+  ],
+  "term": "Facteur de charge",
+  "domains": [
+    "B",
+    "J"
+  ],
+  "definition": "Rapport entre l'énergie réellement produite par une installation et celle qu'elle aurait produite en fonctionnant à pleine puissance sans interruption. Il chiffre la disponibilité réelle d'un moyen de production.",
+  "versionSimple": "Une éolienne ne tourne pas tout le temps à fond. Ce nombre dit quelle part de son maximum elle a vraiment produite.",
+  "sources": [
+    {
+      "titre": "RTE — le réseau de transport d'électricité",
+      "url": "https://www.rte-france.com/",
+      "type": "officiel"
+    },
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "facteur-de-charge",
+  "related": [
+    "eolienne",
+    "panneau-photovoltaique",
+    "production-d-electricite",
+    "rendement-energetique",
+    "watt-crete"
+  ]
+}

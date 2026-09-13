@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "VA",
+    "kVA",
+    "volt ampere",
+    "voltampere"
+  ],
+  "term": "Voltampère",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de puissance apparente, de symbole VA. Elle est le produit de la tension efficace par l'intensité efficace, sans tenir compte du déphasage. Les transformateurs et les onduleurs sont dimensionnés en voltampères, pas en watts.",
+  "versionSimple": "Le voltampère sert à dire ce qu'un appareil demande vraiment au réseau, même quand une partie de cette demande ne produit aucun travail utile.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "voltampere",
+  "related": [
+    "facteur-de-puissance",
+    "puissance-apparente",
+    "puissance-electrique",
+    "puissance-souscrite",
+    "transformateur"
+  ]
+}

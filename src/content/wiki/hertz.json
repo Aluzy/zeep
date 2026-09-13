@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "Hz",
+    "gigahertz",
+    "hertz",
+    "kilohertz",
+    "megahertz"
+  ],
+  "term": "Hertz",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de mesure de la fréquence, de symbole Hz. Un hertz correspond à un cycle par seconde. Le réseau électrique français fonctionne à cinquante hertz, tandis qu'un microprocesseur travaille à plusieurs milliards de hertz.",
+  "versionSimple": "Le hertz compte combien de fois quelque chose se répète en une seconde. Le courant de la maison change de sens cinquante fois par seconde : on dit cinquante hertz.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "hertz",
+  "related": [
+    "courant-alternatif",
+    "frequence-electrique",
+    "periode",
+    "signal-analogique"
+  ]
+}

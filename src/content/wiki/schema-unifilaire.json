@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "schema unifilaire",
+    "unifilaire"
+  ],
+  "term": "Schéma unifilaire",
+  "domains": [
+    "E",
+    "F"
+  ],
+  "definition": "Représentation simplifiée d'une installation où un trait unique symbolise l'ensemble des conducteurs d'un circuit. Il donne une vue d'ensemble du tableau et des départs sans détailler chaque fil.",
+  "versionSimple": "C'est un plan simplifié de l'installation : un seul trait remplace tous les fils d'un même circuit, pour y voir plus clair.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "schema-unifilaire",
+  "related": [
+    "disjoncteur",
+    "installation-electrique",
+    "schema-electrique",
+    "tableau-electrique"
+  ]
+}

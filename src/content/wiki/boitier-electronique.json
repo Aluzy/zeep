@@ -11,7 +11,10 @@
   "definition": "Enveloppe qui protège une carte électronique et ses composants électroniques des chocs, de la poussière et de l'humidité.",
   "related": [
     "carte-electronique",
-    "electronique"
+    "electronique",
+    "indice-de-protection-ip",
+    "montage-en-surface",
+    "wafer"
   ],
   "pillar": false,
   "illustration": null

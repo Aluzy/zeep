@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "MLI",
+    "PWM",
+    "modulation de largeur d'impulsion",
+    "pulse width modulation"
+  ],
+  "term": "Modulation de largeur d'impulsion (PWM)",
+  "domains": [
+    "M",
+    "O"
+  ],
+  "definition": "Technique de commande qui fait varier la durée des impulsions d'un signal tout-ou-rien pour régler la puissance moyenne transmise. Elle pilote la vitesse des moteurs et la luminosité des LED sans dissiper de chaleur.",
+  "versionSimple": "Au lieu de baisser la tension, on allume et on éteint très vite. En changeant la durée des allumages, on règle la puissance.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "modulation-de-largeur-d-impulsion-pwm",
+  "related": [
+    "ampoule-led",
+    "electronique-de-puissance",
+    "hacheur",
+    "microcontroleur",
+    "moteur-a-courant-continu",
+    "moteur-electrique",
+    "rapport-cyclique"
+  ]
+}

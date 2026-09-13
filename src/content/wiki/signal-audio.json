@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "audiofrequence",
+    "bande audio",
+    "signal audio"
+  ],
+  "term": "Signal audio",
+  "domains": [
+    "T"
+  ],
+  "definition": "Signal électrique représentant un son, dont les composantes utiles s'étendent d'une vingtaine de hertz à vingt kilohertz. Il se manipule en niveau ligne, en niveau micro ou en niveau puissance.",
+  "versionSimple": "C'est le signal électrique qui transporte la musique, depuis le micro jusqu'au haut-parleur.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "signal-audio",
+  "related": [
+    "amplificateur-audio",
+    "bande-passante",
+    "distorsion",
+    "haut-parleur",
+    "microphone",
+    "signal-analogique"
+  ]
+}

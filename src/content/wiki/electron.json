@@ -10,9 +10,16 @@
   "merged": false,
   "definition": "Particule élémentaire chargée négativement dont le déplacement dans un conducteur électrique constitue le courant électrique.",
   "related": [
+    "atome",
     "charge-electrique",
     "conducteur-electrique",
-    "courant-electrique"
+    "coulomb",
+    "courant-electrique",
+    "dopage",
+    "effet-photoelectrique",
+    "ion",
+    "loi-de-coulomb",
+    "trou-electronique"
   ],
   "pillar": false,
   "illustration": null

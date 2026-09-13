@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "anion",
+    "cation",
+    "ion",
+    "ions"
+  ],
+  "term": "Ion",
+  "domains": [
+    "A"
+  ],
+  "definition": "Atome ou molécule ayant perdu ou gagné un ou plusieurs électrons, et portant donc une charge électrique globale. Les ions assurent le transport du courant dans les liquides, notamment dans les batteries.",
+  "versionSimple": "Un ion est un atome qui a gagné ou perdu des électrons. Dans une batterie, ce sont ces ions qui se déplacent au lieu des électrons seuls.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "ion",
+  "related": [
+    "atome",
+    "batterie-lithium-ion",
+    "charge-electrique",
+    "electrolyse",
+    "electron"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "B1V",
+    "BR",
+    "BS",
+    "habilitation electrique",
+    "titre d'habilitation"
+  ],
+  "term": "Habilitation électrique",
+  "domains": [
+    "E",
+    "X"
+  ],
+  "definition": "Reconnaissance par l'employeur de la capacité d'une personne à effectuer en sécurité des travaux d'ordre électrique. Elle repose sur une formation, un avis médical et un symbole précisant les opérations autorisées.",
+  "versionSimple": "Pour travailler sur des installations électriques, il faut avoir été formé et reconnu capable de le faire sans danger.",
+  "sources": [
+    {
+      "titre": "INRS — prévention des risques électriques",
+      "url": "https://www.inrs.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "Légifrance — code du travail, risque électrique",
+      "url": "https://www.legifrance.gouv.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "habilitation-electrique",
+  "related": [
+    "arc-electrique",
+    "consignation-electrique",
+    "electricien",
+    "electrisation",
+    "electrocution",
+    "installation-electrique",
+    "norme-electrique-nf-c-15-100",
+    "sectionneur",
+    "technicien-de-maintenance"
+  ]
+}

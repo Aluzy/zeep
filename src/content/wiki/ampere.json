@@ -11,8 +11,16 @@
   "definition": "Unité de mesure de l'intensité électrique dans le Système international, symbole A.",
   "related": [
     "amperage",
+    "ampere-heure",
+    "coulomb",
     "intensite-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "A",
+    "ampere",
+    "mA",
+    "milliampere"
+  ]
 }

@@ -12,7 +12,9 @@
   "related": [
     "capteur",
     "capteur-optique",
-    "diode"
+    "diode",
+    "effet-photoelectrique",
+    "photoresistance"
   ],
   "pillar": false,
   "illustration": null

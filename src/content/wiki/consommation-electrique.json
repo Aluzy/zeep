@@ -12,8 +12,12 @@
   "related": [
     "ampoule-led",
     "compteur-electrique",
+    "compteur-linky",
+    "delestage",
     "economie-d-energie",
+    "energie-electrique",
     "facture-d-electricite",
+    "heures-creuses",
     "reseau-intelligent-smart-grid"
   ],
   "pillar": false,

@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "STEP",
+    "pompage turbinage",
+    "station de transfert d'energie par pompage"
+  ],
+  "term": "Station de transfert d'énergie par pompage",
+  "domains": [
+    "D",
+    "B"
+  ],
+  "definition": "Installation qui remonte de l'eau dans un bassin supérieur quand l'électricité est abondante, puis la turbine quand la demande augmente. C'est le principal moyen de stockage à grande échelle.",
+  "versionSimple": "On utilise l'électricité en trop pour remonter de l'eau dans un lac. Quand il en faut, on la laisse redescendre dans une turbine.",
+  "sources": [
+    {
+      "titre": "RTE — le réseau de transport d'électricité",
+      "url": "https://www.rte-france.com/",
+      "type": "officiel"
+    },
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "station-de-transfert-d-energie-par-pompage",
+  "related": [
+    "barrage-hydroelectrique",
+    "centrale-hydraulique",
+    "reseau-electrique",
+    "stockage-d-energie",
+    "turbine"
+  ]
+}

@@ -10,9 +10,12 @@
   "merged": false,
   "definition": "Filtre électronique qui laisse passer les basses fréquences d'un signal et atténue les fréquences supérieures à un seuil donné.",
   "related": [
+    "circuit-rc",
     "electronique",
     "filtre-electronique",
-    "filtre-passe-bande"
+    "filtre-passe-bande",
+    "frequence-de-coupure",
+    "theoreme-de-shannon"
   ],
   "pillar": false,
   "illustration": null,

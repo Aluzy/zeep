@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "VAT",
+    "consignation",
+    "consignation electrique",
+    "verification d'absence de tension"
+  ],
+  "term": "Consignation électrique",
+  "domains": [
+    "E",
+    "F"
+  ],
+  "definition": "Procédure en quatre temps — séparer, condamner, vérifier l'absence de tension, mettre à la terre — qui garantit qu'une installation ne peut être remise sous tension pendant une intervention.",
+  "versionSimple": "Avant de travailler, on coupe le courant, on empêche qu'il soit rallumé par erreur, et on vérifie qu'il n'y en a vraiment plus.",
+  "sources": [
+    {
+      "titre": "INRS — prévention des risques électriques",
+      "url": "https://www.inrs.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "consignation-electrique",
+  "related": [
+    "electricien",
+    "habilitation-electrique",
+    "mise-a-la-terre",
+    "sectionneur",
+    "tableau-electrique",
+    "technicien-de-maintenance"
+  ]
+}

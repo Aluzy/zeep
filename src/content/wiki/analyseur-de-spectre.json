@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "analyseur de spectre",
+    "spectre"
+  ],
+  "term": "Analyseur de spectre",
+  "domains": [
+    "S",
+    "R"
+  ],
+  "definition": "Instrument qui décompose un signal en ses différentes fréquences et affiche leur amplitude. Il sert à détecter des perturbations, à régler un émetteur ou à vérifier la conformité électromagnétique.",
+  "versionSimple": "Au lieu de montrer un signal dans le temps, cet appareil montre de quelles fréquences il est fait.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "analyseur-de-spectre",
+  "related": [
+    "bande-passante",
+    "compatibilite-electromagnetique-cem",
+    "emetteur-radiofrequence",
+    "harmoniques",
+    "oscilloscope"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "SSR",
+    "relais statique",
+    "solid state relay"
+  ],
+  "term": "Relais statique",
+  "domains": [
+    "F",
+    "M"
+  ],
+  "definition": "Relais sans pièce mobile qui commute une charge au moyen d'un triac ou d'un transistor, commandé par un optocoupleur. Silencieux et endurant, il convient aux cycles de commutation très fréquents.",
+  "versionSimple": "Ce relais n'a aucune pièce qui bouge : il commute grâce à des composants électroniques, sans bruit et sans usure.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "relais-statique",
+  "related": [
+    "electronique-de-puissance",
+    "optocoupleur",
+    "relais-electronique",
+    "triac"
+  ]
+}

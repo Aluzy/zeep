@@ -12,8 +12,14 @@
   "related": [
     "convertisseur-de-frequence",
     "courant-alternatif",
+    "delestage",
+    "generateur-de-fonctions",
+    "hertz",
     "oscilloscope",
+    "periode",
+    "reactance",
     "reseau-electrique",
+    "resonance",
     "transformateur"
   ],
   "pillar": false,
@@ -29,5 +35,10 @@
     "matriceIds": [
       "M072"
     ]
-  }
+  },
+  "synonymes": [
+    "50 Hz",
+    "f",
+    "frequence"
+  ]
 }

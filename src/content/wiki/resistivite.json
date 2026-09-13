@@ -11,7 +11,8 @@
   "definition": "Grandeur physique caractérisant la capacité d'un matériau à s'opposer au passage du courant électrique, inverse de la conductivité électrique.",
   "related": [
     "conductivite-electrique",
-    "courant-electrique"
+    "courant-electrique",
+    "supraconductivite"
   ],
   "pillar": false,
   "illustration": null

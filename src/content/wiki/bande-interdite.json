@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "band gap",
+    "bande interdite",
+    "energie de gap",
+    "gap"
+  ],
+  "term": "Bande interdite",
+  "domains": [
+    "N"
+  ],
+  "definition": "Écart d'énergie que doit franchir un électron pour devenir libre dans un matériau. Très grand dans un isolant, nul dans un métal, il est modéré dans un semi-conducteur, ce qui rend celui-ci commandable.",
+  "versionSimple": "C'est la marche que doit franchir un électron pour se libérer. Trop haute, le matériau isole ; trop basse, il conduit toujours.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "bande-interdite",
+  "related": [
+    "conducteur-electrique",
+    "effet-photoelectrique",
+    "isolant-electrique",
+    "semi-conducteur",
+    "silicium"
+  ]
+}

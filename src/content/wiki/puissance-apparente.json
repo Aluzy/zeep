@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "S",
+    "puissance apparente"
+  ],
+  "term": "Puissance apparente",
+  "domains": [
+    "A",
+    "C"
+  ],
+  "definition": "Produit de la tension efficace par l'intensité efficace, exprimé en voltampères. Elle représente la charge totale imposée à la source, somme géométrique des puissances active et réactive.",
+  "versionSimple": "La puissance apparente est tout ce que l'installation demande au réseau, y compris la partie qui ne sert à rien.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "puissance-apparente",
+  "related": [
+    "facteur-de-puissance",
+    "puissance-active",
+    "puissance-reactive",
+    "transformateur",
+    "voltampere"
+  ]
+}

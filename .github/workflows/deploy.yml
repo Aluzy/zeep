@@ -33,6 +33,13 @@ jobs:
       - name: Valider le contenu (schéma, slugs, liens)
         run: python3 scripts/validate_content.py --stats
 
+      # Le validateur ci-dessus contrôle ce qui EXISTE. Celui-ci contrôle ce qui
+      # MANQUE : domaine sous son plancher de couverture, ou terme employé dans
+      # une définition sans avoir sa propre fiche. C'est ce garde-fou qui
+      # manquait quand le glossaire a passé deux cents fiches sans farad.
+      - name: Auditer la couverture (domaines, lexique, orphelins)
+        run: python3 scripts/audit_couverture.py --ci
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:

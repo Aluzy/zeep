@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "loi de faraday",
+    "loi de l'induction",
+    "loi de lenz faraday"
+  ],
+  "term": "Loi de Faraday",
+  "domains": [
+    "A"
+  ],
+  "definition": "Loi qui énonce qu'une variation du flux magnétique à travers un circuit y fait apparaître une tension induite. Elle fonde le fonctionnement des alternateurs, des dynamos et des transformateurs.",
+  "versionSimple": "Quand un aimant bouge près d'une bobine de fil, une tension apparaît dans le fil. C'est ce principe qui permet de produire l'électricité des centrales.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "loi-de-faraday",
+  "related": [
+    "alternateur",
+    "dynamo",
+    "induction-electromagnetique",
+    "loi-de-lenz",
+    "transformateur",
+    "weber"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "P",
+    "puissance active",
+    "watts actifs"
+  ],
+  "term": "Puissance active",
+  "domains": [
+    "A",
+    "C"
+  ],
+  "definition": "Part de la puissance électrique effectivement convertie en travail, en chaleur ou en lumière. Elle s'exprime en watts et correspond à ce que mesure un compteur d'énergie.",
+  "versionSimple": "La puissance active est la partie de l'électricité qui sert vraiment à quelque chose : faire tourner, chauffer ou éclairer.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "puissance-active",
+  "related": [
+    "compteur-electrique",
+    "facteur-de-puissance",
+    "puissance-apparente",
+    "puissance-electrique",
+    "puissance-reactive",
+    "watt"
+  ]
+}

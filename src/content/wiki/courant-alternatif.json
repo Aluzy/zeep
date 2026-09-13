@@ -11,14 +11,22 @@
   "definition": "Courant électrique dont le sens et l'intensité varient périodiquement, caractérisé par sa fréquence électrique, utilisé sur le réseau électrique.",
   "related": [
     "alternateur",
+    "borne-de-recharge",
     "convertisseur-de-frequence",
     "courant-electrique",
+    "dephasage",
     "frequence-electrique",
+    "harmoniques",
+    "hertz",
     "onduleur",
+    "periode",
+    "pont-de-diodes",
     "redresseur",
     "reseau-electrique",
     "transformateur",
-    "triac"
+    "triac",
+    "valeur-crete",
+    "valeur-efficace"
   ],
   "pillar": false,
   "illustration": null,
@@ -37,5 +45,10 @@
       "M045",
       "M053"
     ]
-  }
+  },
+  "synonymes": [
+    "AC",
+    "alternatif",
+    "courant alternatif"
+  ]
 }

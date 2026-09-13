@@ -10,8 +10,10 @@
   "merged": false,
   "definition": "Réseau électrique moderne intégrant des technologies numériques pour optimiser la production d'électricité, la distribution et la consommation électrique en temps réel.",
   "related": [
+    "compteur-linky",
     "consommation-electrique",
     "electricite",
+    "modbus",
     "production-d-electricite",
     "reseau-electrique"
   ],
@@ -28,5 +30,9 @@
     "matriceIds": [
       "M064"
     ]
-  }
+  },
+  "synonymes": [
+    "reseau intelligent",
+    "smart grid"
+  ]
 }

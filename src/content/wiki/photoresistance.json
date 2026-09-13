@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "LDR",
+    "cellule photoresistante",
+    "photoresistance"
+  ],
+  "term": "Photorésistance",
+  "domains": [
+    "S"
+  ],
+  "definition": "Composant dont la résistance diminue lorsque l'éclairement augmente. Simple et peu coûteuse, elle sert à détecter le jour et la nuit dans les éclairages automatiques et les jouets électroniques.",
+  "versionSimple": "Cette petite pièce laisse mieux passer le courant quand il y a de la lumière. Elle permet d'allumer une lampe toute seule à la tombée du jour.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "photoresistance",
+  "related": [
+    "capteur-optique",
+    "detecteur",
+    "eclairage",
+    "photodiode",
+    "resistance"
+  ]
+}

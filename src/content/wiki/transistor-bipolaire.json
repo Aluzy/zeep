@@ -10,7 +10,8 @@
   "merged": false,
   "definition": "Type de transistor commandé par un courant appliqué sur sa base, utilisé pour l'amplification ou la commutation dans les circuits analogiques.",
   "related": [
-    "transistor"
+    "transistor",
+    "transistor-igbt"
   ],
   "pillar": false,
   "illustration": null

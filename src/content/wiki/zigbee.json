@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "reseau maille domotique",
+    "thread",
+    "zigbee"
+  ],
+  "term": "Zigbee",
+  "domains": [
+    "Q",
+    "H"
+  ],
+  "definition": "Protocole radio basse consommation en réseau maillé, où chaque appareil alimenté relaie les messages des autres. Il équipe de nombreux capteurs et interrupteurs domotiques.",
+  "versionSimple": "Les appareils de la maison se passent les messages les uns aux autres, ce qui agrandit la portée du réseau.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "zigbee",
+  "related": [
+    "bluetooth",
+    "capteur",
+    "domotique",
+    "lora",
+    "objet-connecte-iot",
+    "reseau-maille",
+    "wi-fi"
+  ]
+}

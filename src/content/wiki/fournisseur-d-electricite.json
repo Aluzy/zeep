@@ -12,6 +12,7 @@
   "related": [
     "electricite",
     "facture-d-electricite",
+    "puissance-souscrite",
     "reseau-electrique"
   ],
   "pillar": false,

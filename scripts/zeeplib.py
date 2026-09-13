@@ -11,6 +11,9 @@ WIKI_DIR = ROOT / "src" / "content" / "wiki"
 BLOG_DIR = ROOT / "src" / "content" / "blog"
 DIY_DIR = ROOT / "src" / "content" / "diy"
 TAXONOMY_FILE = ROOT / "src" / "data" / "taxonomy.json"
+COUVERTURE_FILE = ROOT / "src" / "data" / "couverture.json"
+LEXIQUE_FILE = ROOT / "src" / "data" / "lexique-attendu.json"
+MATRICE_FILE = ROOT / "agents" / "donnees" / "matrice-electricite-electronique-v2.csv"
 
 LIGATURES = {"œ": "oe", "æ": "ae", "ﬁ": "fi"}  # non décomposées par NFKD
 
@@ -31,6 +34,26 @@ def slugify(term: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 
+def normaliser(texte: str) -> str:
+    """Forme comparable d'un terme : minuscules, sans accents, ponctuation et
+    espaces réduits à une espace simple. « Loi d'Ohm », « loi d ohm » et
+    « LOI D’OHM » donnent la même forme. Sert au rapprochement avec la matrice
+    curriculaire, au lexique attendu et au contrôle d'ambiguïté des synonymes."""
+    s = texte.lower()
+    for lig, rempl in LIGATURES.items():
+        s = s.replace(lig, rempl)
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", s).split())
+
+
+def formes_d_une_fiche(fiche: dict) -> set[str]:
+    """Toutes les façons de nommer une fiche : son terme et ses synonymes."""
+    formes = {normaliser(fiche.get("term", ""))}
+    formes.update(normaliser(x) for x in fiche.get("synonymes") or [])
+    return {f for f in formes if f}
+
+
 def load_json(path: Path):
     with path.open(encoding="utf-8") as f:
         return json.load(f)
@@ -46,6 +69,16 @@ def load_wiki() -> dict[str, dict]:
 
 def load_taxonomy() -> dict[str, str]:
     return load_json(TAXONOMY_FILE)
+
+
+def load_couverture() -> dict:
+    """Objectifs de couverture (planchers par domaine). Absent = aucun objectif."""
+    return load_json(COUVERTURE_FILE) if COUVERTURE_FILE.exists() else {}
+
+
+def load_lexique() -> dict:
+    """Lexique de référence attendu : ce que le glossaire DEVRAIT contenir."""
+    return load_json(LEXIQUE_FILE) if LEXIQUE_FILE.exists() else {}
 
 
 def read_frontmatter(path: Path) -> tuple[dict, str]:

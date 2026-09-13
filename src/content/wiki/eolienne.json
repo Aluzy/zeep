@@ -11,7 +11,9 @@
   "definition": "Machine équipée de pales qui transforme l'énergie du vent en électricité grâce à un générateur électrique.",
   "related": [
     "electricite",
-    "generateur-electrique"
+    "facteur-de-charge",
+    "generateur-electrique",
+    "terres-rares"
   ],
   "pillar": true,
   "illustration": null

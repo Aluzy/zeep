@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "Wb",
+    "weber"
+  ],
+  "term": "Weber",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de mesure du flux magnétique, de symbole Wb. Elle quantifie la quantité totale de champ magnétique traversant une surface. Sa variation dans le temps est à l'origine de la tension induite dans une bobine.",
+  "versionSimple": "Le weber mesure la quantité d'aimantation qui traverse une surface. Quand cette quantité change, une tension apparaît dans les fils tout autour.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "weber",
+  "related": [
+    "bobine-inductance",
+    "champ-magnetique",
+    "induction-electromagnetique",
+    "loi-de-faraday",
+    "tesla"
+  ]
+}

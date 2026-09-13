@@ -14,15 +14,23 @@
     "circuit-electrique",
     "courant-electrique",
     "dipole",
+    "farad",
+    "henry",
     "induction-electromagnetique",
     "loi-d-ohm",
     "loi-des-mailles",
+    "monophase",
     "mosfet",
     "multimetre",
     "oscilloscope",
+    "pont-diviseur-de-tension",
     "poste-de-transformation",
+    "potentiometre",
     "puissance-electrique",
+    "theoreme-de-millman",
     "transformateur",
+    "tres-basse-tension-de-securite",
+    "valeur-efficace",
     "volt",
     "voltage",
     "voltmetre"
@@ -46,5 +54,11 @@
       "M034",
       "M072"
     ]
-  }
+  },
+  "synonymes": [
+    "U",
+    "ddp",
+    "difference de potentiel",
+    "tension"
+  ]
 }

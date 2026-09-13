@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "base 16",
+    "hex",
+    "hexadecimal",
+    "systeme hexadecimal"
+  ],
+  "term": "Système hexadécimal",
+  "domains": [
+    "L"
+  ],
+  "definition": "Numération en base seize utilisant les chiffres de zéro à neuf puis les lettres A à F. Elle abrège l'écriture binaire, chaque chiffre hexadécimal représentant exactement quatre bits.",
+  "versionSimple": "C'est une façon plus courte d'écrire les nombres binaires, en utilisant aussi des lettres de A à F.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "systeme-hexadecimal",
+  "related": [
+    "bit",
+    "microcontroleur",
+    "octet",
+    "systeme-binaire"
+  ]
+}

@@ -10,10 +10,15 @@
   "merged": false,
   "definition": "Carte électronique à base de microcontrôleur, pensée pour le prototypage électronique et facile à programmer, largement utilisée en robotique et en électronique embarquée.",
   "related": [
+    "bouton-poussoir",
     "carte-electronique",
     "electronique",
     "electronique-embarquee",
+    "esp32",
+    "firmware",
+    "gpio",
     "microcontroleur",
+    "potentiometre",
     "prototypage-electronique",
     "robotique"
   ],

@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "gaine thermo",
+    "gaine thermoretractable",
+    "thermoretractable"
+  ],
+  "term": "Gaine thermorétractable",
+  "domains": [
+    "V",
+    "E"
+  ],
+  "definition": "Manchon isolant qui se resserre sous l'effet de la chaleur pour protéger une épissure ou une soudure. Elle rétablit l'isolation et la tenue mécanique d'une liaison.",
+  "versionSimple": "On glisse ce petit tube sur un fil réparé, puis on le chauffe : il se resserre et protège la soudure.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "gaine-thermoretractable",
+  "related": [
+    "cablage-electrique",
+    "connecteur-electrique",
+    "fil-electrique",
+    "isolant-electrique",
+    "soudure-electronique"
+  ]
+}

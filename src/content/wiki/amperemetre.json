@@ -14,7 +14,8 @@
     "conducteur-electrique",
     "intensite-electrique",
     "loi-des-noeuds",
-    "multimetre"
+    "multimetre",
+    "pince-amperemetrique"
   ],
   "pillar": false,
   "illustration": null

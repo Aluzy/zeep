@@ -10,9 +10,12 @@
   "merged": false,
   "definition": "Appareil qui mesure la consommation électrique d'un logement ou d'un bâtiment, exprimée en kilowattheures, servant de base à la facture d'électricité.",
   "related": [
+    "compteur-linky",
     "consommation-electrique",
     "electricite",
-    "facture-d-electricite"
+    "facture-d-electricite",
+    "puissance-active",
+    "puissance-souscrite"
   ],
   "pillar": false,
   "illustration": null

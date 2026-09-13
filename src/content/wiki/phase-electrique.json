@@ -12,7 +12,9 @@
   "related": [
     "circuit-electrique",
     "courant-electrique",
-    "neutre"
+    "monophase",
+    "neutre",
+    "triphase"
   ],
   "pillar": false,
   "illustration": null

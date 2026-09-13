@@ -10,8 +10,17 @@
   "merged": false,
   "definition": "Unité de mesure de la puissance électrique, correspondant à un joule d'énergie transféré par seconde.",
   "related": [
-    "puissance-electrique"
+    "joule",
+    "puissance-active",
+    "puissance-electrique",
+    "watt-crete"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "W",
+    "megawatt",
+    "milliwatt",
+    "watt"
+  ]
 }

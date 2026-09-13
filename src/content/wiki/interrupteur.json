@@ -10,7 +10,9 @@
   "merged": false,
   "definition": "Dispositif permettant d'ouvrir ou de fermer manuellement un circuit électrique pour couper ou rétablir le courant électrique.",
   "related": [
+    "bouton-poussoir",
     "circuit-electrique",
+    "contacteur",
     "courant-electrique",
     "detecteur"
   ],

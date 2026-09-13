@@ -26,5 +26,10 @@
     "matriceIds": [
       "M044"
     ]
-  }
+  },
+  "synonymes": [
+    "I2C",
+    "TWI",
+    "bus I2C"
+  ]
 }

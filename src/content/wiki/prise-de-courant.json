@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Dispositif fixe raccordé à l'installation électrique permettant de brancher une fiche électrique pour alimenter un appareil.",
   "related": [
+    "classe-d-isolation",
     "fiche-electrique",
     "installation-electrique"
   ],

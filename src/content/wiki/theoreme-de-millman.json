@@ -1,0 +1,37 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "theoreme de millman"
+  ],
+  "term": "Théorème de Millman",
+  "domains": [
+    "A",
+    "K"
+  ],
+  "definition": "Relation qui donne directement la tension d'un nœud de circuit à partir des sources et des conductances qui y aboutissent. Elle évite d'écrire tout le système d'équations des mailles et des nœuds.",
+  "versionSimple": "Cette méthode donne d'un coup la tension en un point où plusieurs branches se rejoignent, sans avoir à résoudre un long calcul.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "theoreme-de-millman",
+  "related": [
+    "circuit-electrique",
+    "conductivite-electrique",
+    "loi-des-noeuds",
+    "tension-electrique"
+  ]
+}

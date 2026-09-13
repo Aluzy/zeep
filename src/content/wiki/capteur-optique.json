@@ -11,7 +11,10 @@
   "definition": "Capteur qui détecte la lumière et la convertit en signal électrique, dont la photodiode et le phototransistor sont des exemples courants.",
   "related": [
     "capteur",
+    "effet-photoelectrique",
+    "lux",
     "photodiode",
+    "photoresistance",
     "phototransistor"
   ],
   "pillar": false,

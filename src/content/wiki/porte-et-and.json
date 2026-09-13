@@ -11,7 +11,9 @@
   "definition": "Porte logique dont la sortie est active seulement lorsque toutes ses entrées sont actives.",
   "related": [
     "circuit-logique",
-    "porte-logique"
+    "porte-logique",
+    "porte-non-et",
+    "table-de-verite"
   ],
   "pillar": false,
   "illustration": null

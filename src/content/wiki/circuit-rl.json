@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "RL",
+    "circuit RL"
+  ],
+  "term": "Circuit RL",
+  "domains": [
+    "K"
+  ],
+  "definition": "Association d'une résistance et d'une bobine. Le courant y croît progressivement à la mise sous tension, ce qui protège les montages contre les variations brutales et sert au filtrage des alimentations.",
+  "versionSimple": "Une résistance associée à une bobine empêche le courant de monter d'un coup : il s'installe petit à petit.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "circuit-rl",
+  "related": [
+    "bobine-inductance",
+    "circuit-rlc",
+    "constante-de-temps",
+    "regime-transitoire",
+    "resistance"
+  ]
+}

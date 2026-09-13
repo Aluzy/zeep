@@ -1,0 +1,37 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "constante de temps",
+    "tau"
+  ],
+  "term": "Constante de temps",
+  "domains": [
+    "K"
+  ],
+  "definition": "Durée caractéristique de la charge ou de la décharge d'un circuit contenant un condensateur ou une bobine. Au bout de cinq constantes de temps, le régime est considéré comme établi.",
+  "versionSimple": "C'est le temps que met un condensateur à se remplir ou à se vider en grande partie. Il dépend des composants choisis.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "constante-de-temps",
+  "related": [
+    "circuit-rc",
+    "circuit-rl",
+    "condensateur",
+    "regime-transitoire"
+  ]
+}

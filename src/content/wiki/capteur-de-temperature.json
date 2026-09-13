@@ -11,8 +11,11 @@
   "definition": "Capteur qui convertit la température ambiante en signal électrique exploitable par un circuit électronique ou un microcontrôleur.",
   "related": [
     "capteur",
+    "effet-peltier",
     "electronique",
-    "microcontroleur"
+    "microcontroleur",
+    "thermistance",
+    "thermostat-connecte"
   ],
   "pillar": true,
   "illustration": null

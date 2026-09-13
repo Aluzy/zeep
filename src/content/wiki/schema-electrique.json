@@ -11,7 +11,9 @@
   "definition": "Représentation graphique d'un circuit électrique montrant les liaisons entre les différents composants d'une installation électrique.",
   "related": [
     "circuit-electrique",
-    "installation-electrique"
+    "conception-assistee-par-ordinateur-electronique",
+    "installation-electrique",
+    "schema-unifilaire"
   ],
   "pillar": false,
   "illustration": null,

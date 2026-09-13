@@ -10,7 +10,11 @@
   "merged": false,
   "definition": "Composant électronique, aussi appelé résistor et modélisé par un conducteur ohmique, qui s'oppose au passage du courant et convertit en chaleur l'énergie électrique qu'il reçoit (effet Joule). Il se caractérise par sa valeur en ohms, sa tolérance (écart admis avec cette valeur, en %) et la puissance maximale qu'il peut dissiper sans se détériorer.",
   "related": [
+    "bouton-poussoir",
     "caracteristique-tension-courant",
+    "circuit-rc",
+    "circuit-rl",
+    "code-couleur-des-resistances",
     "composant-electronique",
     "dipole",
     "effet-joule",
@@ -18,8 +22,14 @@
     "impedance",
     "loi-d-ohm",
     "ohm",
+    "photoresistance",
+    "pont-diviseur-de-courant",
+    "pont-diviseur-de-tension",
+    "potentiometre",
     "puissance-electrique",
-    "resistance-electrique"
+    "resistance-electrique",
+    "rheostat",
+    "thermistance"
   ],
   "pillar": true,
   "illustration": null,

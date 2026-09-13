@@ -11,8 +11,15 @@
   "definition": "Branche de l'électronique qui conçoit des circuits, comme les redresseurs et les alimentations à découpage, pour convertir et contrôler l'énergie électrique.",
   "related": [
     "electronique",
+    "gradateur",
+    "hacheur",
+    "modulation-de-largeur-d-impulsion-pwm",
     "mosfet",
-    "thyristor"
+    "moteur-brushless",
+    "optocoupleur",
+    "relais-statique",
+    "thyristor",
+    "transistor-igbt"
   ],
   "pillar": false,
   "illustration": null,

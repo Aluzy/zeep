@@ -1,0 +1,37 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "diode zener",
+    "zener"
+  ],
+  "term": "Diode Zener",
+  "domains": [
+    "K"
+  ],
+  "definition": "Diode conçue pour conduire en sens inverse à partir d'une tension précise et stable. Elle sert de référence de tension et protège les entrées sensibles contre les surtensions.",
+  "versionSimple": "Cette diode laisse passer le courant à l'envers dès qu'une tension précise est atteinte. Elle sert ainsi de repère fixe ou de protection.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "diode-zener",
+  "related": [
+    "diode",
+    "regulateur-de-tension",
+    "semi-conducteur",
+    "tension-de-seuil"
+  ]
+}

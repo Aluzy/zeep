@@ -11,7 +11,10 @@
   "definition": "Rapport entre l'amplitude d'un signal en sortie et en entrée d'un circuit, notamment d'un amplificateur opérationnel ou d'un amplificateur audio.",
   "related": [
     "amplificateur-audio",
-    "amplificateur-operationnel"
+    "amplificateur-operationnel",
+    "decibel",
+    "diagramme-de-bode",
+    "distorsion"
   ],
   "pillar": false,
   "illustration": null

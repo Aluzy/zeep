@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "Wc",
+    "Wp",
+    "kWc",
+    "watt crete"
+  ],
+  "term": "Watt-crête",
+  "domains": [
+    "B"
+  ],
+  "definition": "Unité de puissance nominale d'un module photovoltaïque, de symbole Wc. Elle correspond à la puissance délivrée dans des conditions d'essai normalisées d'ensoleillement et de température, et sert à comparer les panneaux entre eux.",
+  "versionSimple": "Le watt-crête indique ce qu'un panneau solaire produit dans les meilleures conditions d'essai. En vrai, la production est souvent plus faible selon la météo.",
+  "sources": [
+    {
+      "titre": "ADEME — production et usages de l'électricité",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "watt-crete",
+  "related": [
+    "centrale-solaire",
+    "facteur-de-charge",
+    "panneau-photovoltaique",
+    "puissance-electrique",
+    "watt"
+  ]
+}

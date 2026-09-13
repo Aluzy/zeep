@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "SELV",
+    "TBTS",
+    "tres basse tension",
+    "tres basse tension de securite"
+  ],
+  "term": "Très basse tension de sécurité",
+  "domains": [
+    "E"
+  ],
+  "definition": "Domaine de tension suffisamment faible pour qu'un contact direct reste sans danger, obtenu par un transformateur de sécurité. Il s'impose dans les volumes les plus exposés des salles de bains.",
+  "versionSimple": "En dessous d'une certaine tension, toucher un fil n'est plus dangereux. C'est pourquoi certains éclairages fonctionnent en très basse tension.",
+  "sources": [
+    {
+      "titre": "AFNOR — normes de l'installation électrique",
+      "url": "https://www.afnor.org/",
+      "type": "norme"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "tres-basse-tension-de-securite",
+  "related": [
+    "eclairage",
+    "electrisation",
+    "installation-electrique",
+    "tension-electrique",
+    "transformateur"
+  ]
+}

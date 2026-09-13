@@ -11,10 +11,15 @@
   "definition": "Circuit électronique, composé de résistances, de condensateurs ou de bobines, qui sélectionne certaines fréquences d'un signal analogique et en atténue d'autres.",
   "related": [
     "bruit-electronique",
+    "decibel",
+    "diagramme-de-bode",
     "electronique",
     "filtre-passe-bande",
     "filtre-passe-bas",
     "filtre-passe-haut",
+    "frequence-de-coupure",
+    "generateur-de-fonctions",
+    "harmoniques",
     "signal-analogique"
   ],
   "pillar": false,

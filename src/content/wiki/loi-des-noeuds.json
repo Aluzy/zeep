@@ -53,6 +53,9 @@
     "courant-electrique",
     "dipole",
     "intensite-electrique",
-    "loi-des-mailles"
+    "loi-des-mailles",
+    "pont-diviseur-de-courant",
+    "theoreme-de-millman",
+    "theoreme-de-superposition"
   ]
 }

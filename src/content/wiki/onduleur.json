@@ -14,7 +14,8 @@
     "batterie",
     "courant-alternatif",
     "courant-continu",
-    "panneau-photovoltaique"
+    "panneau-photovoltaique",
+    "transistor-igbt"
   ],
   "pillar": false,
   "illustration": null,

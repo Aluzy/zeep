@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "porteur de charge positif",
+    "trou",
+    "trou electronique"
+  ],
+  "term": "Trou électronique",
+  "domains": [
+    "N"
+  ],
+  "definition": "Place laissée vacante par un électron dans un cristal semi-conducteur. Elle se déplace comme une charge positive et participe à la conduction au même titre que les électrons libres.",
+  "versionSimple": "Quand un électron part, il laisse un vide. Ce vide se déplace lui aussi, comme s'il était une charge positive.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "trou-electronique",
+  "related": [
+    "charge-electrique",
+    "dopage",
+    "electron",
+    "jonction-pn",
+    "semi-conducteur"
+  ]
+}

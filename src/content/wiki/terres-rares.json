@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "metaux critiques",
+    "metaux strategiques",
+    "terres rares"
+  ],
+  "term": "Terres rares",
+  "domains": [
+    "W",
+    "N"
+  ],
+  "definition": "Groupe de métaux entrant dans les aimants permanents des moteurs et des éoliennes, ainsi que dans de nombreux composants. Leur extraction est polluante et leur approvisionnement géographiquement concentré.",
+  "versionSimple": "Certains métaux rares sont indispensables aux aimants et aux composants. Les extraire pollue, et peu de pays en produisent.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "terres-rares",
+  "related": [
+    "composant-electronique",
+    "eco-conception",
+    "eolienne",
+    "moteur-electrique",
+    "moteur-synchrone",
+    "recyclage-des-dechets-electroniques-deee"
+  ]
+}

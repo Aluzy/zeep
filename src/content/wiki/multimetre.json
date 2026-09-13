@@ -13,11 +13,16 @@
   "related": [
     "amperemetre",
     "caracteristique-tension-courant",
+    "code-couleur-des-resistances",
     "intensite-electrique",
     "ohmmetre",
     "oscilloscope",
+    "pince-amperemetrique",
+    "pont-de-wheatstone",
     "resistance-electrique",
+    "technicien-de-maintenance",
     "tension-electrique",
+    "valeur-efficace",
     "voltmetre"
   ],
   "pillar": false,
@@ -36,5 +41,10 @@
       "M021",
       "M031"
     ]
-  }
+  },
+  "synonymes": [
+    "controleur universel",
+    "multimetre",
+    "testeur"
+  ]
 }

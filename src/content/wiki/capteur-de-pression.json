@@ -12,7 +12,8 @@
   "related": [
     "capteur",
     "electronique",
-    "electronique-embarquee"
+    "electronique-embarquee",
+    "piezoelectricite"
   ],
   "pillar": false,
   "illustration": null

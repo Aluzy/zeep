@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "Vpp",
+    "amplitude",
+    "valeur crete",
+    "valeur crete a crete"
+  ],
+  "term": "Valeur crête",
+  "domains": [
+    "A"
+  ],
+  "definition": "Valeur maximale atteinte par un signal alternatif au cours d'une période. Pour une sinusoïde, elle vaut environ une fois et demie la valeur efficace : les 230 volts du réseau culminent à plus de 320 volts.",
+  "versionSimple": "La valeur crête est le point le plus haut atteint par le signal. Elle est plus grande que la valeur qu'affiche un appareil de mesure.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "valeur-crete",
+  "related": [
+    "courant-alternatif",
+    "oscilloscope",
+    "signal-analogique",
+    "valeur-efficace"
+  ]
+}

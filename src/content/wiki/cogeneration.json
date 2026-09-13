@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "cogeneration",
+    "production combinee"
+  ],
+  "term": "Cogénération",
+  "domains": [
+    "B",
+    "J"
+  ],
+  "definition": "Production simultanée d'électricité et de chaleur utile à partir d'un même combustible. En valorisant la chaleur habituellement perdue, elle élève nettement le rendement global de l'installation.",
+  "versionSimple": "Au lieu de jeter la chaleur produite en fabriquant de l'électricité, on s'en sert pour chauffer des bâtiments.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "cogeneration",
+  "related": [
+    "biomasse",
+    "centrale-thermique",
+    "efficacite-energetique",
+    "rendement-energetique"
+  ]
+}

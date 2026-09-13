@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "effet photoelectrique",
+    "photoelectrique"
+  ],
+  "term": "Effet photoélectrique",
+  "domains": [
+    "A",
+    "N"
+  ],
+  "definition": "Phénomène par lequel la lumière reçue par un matériau libère des porteurs de charge et crée un courant. Il est à l'origine du fonctionnement des cellules photovoltaïques et des capteurs optiques.",
+  "versionSimple": "Quand la lumière frappe certains matériaux, elle met des électrons en mouvement. C'est ce qui permet à un panneau solaire de fabriquer du courant.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "effet-photoelectrique",
+  "related": [
+    "bande-interdite",
+    "capteur-optique",
+    "electron",
+    "panneau-photovoltaique",
+    "photodiode",
+    "semi-conducteur"
+  ]
+}

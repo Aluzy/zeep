@@ -1,0 +1,47 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "batterie de traction",
+    "pack batterie",
+    "pack de traction"
+  ],
+  "term": "Batterie de traction",
+  "domains": [
+    "G",
+    "D"
+  ],
+  "definition": "Assemblage de nombreuses cellules lithium-ion, de leur système de refroidissement et de leur électronique de surveillance, qui alimente un véhicule électrique. Sa capacité fixe l'autonomie disponible.",
+  "versionSimple": "C'est la grosse batterie d'une voiture électrique, faite de centaines de petites cellules surveillées en permanence.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "batterie-de-traction",
+  "related": [
+    "accumulateur",
+    "ampere-heure",
+    "batterie-lithium-ion",
+    "borne-de-recharge",
+    "freinage-regeneratif",
+    "stockage-d-energie",
+    "vehicule-electrique"
+  ]
+}

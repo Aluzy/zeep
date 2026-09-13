@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "controleur d'isolement",
+    "megohmmetre",
+    "mesure d'isolement"
+  ],
+  "term": "Contrôleur d'isolement",
+  "domains": [
+    "S",
+    "E"
+  ],
+  "definition": "Appareil qui applique une tension continue élevée entre conducteurs et terre pour mesurer la résistance d'isolement. Un résultat trop faible signale un câble ou une machine à remplacer.",
+  "versionSimple": "Cet appareil vérifie que les gaines des fils isolent encore correctement, avant qu'un défaut ne devienne dangereux.",
+  "sources": [
+    {
+      "titre": "INRS — prévention des risques électriques",
+      "url": "https://www.inrs.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "controleur-d-isolement",
+  "related": [
+    "defaut-d-isolement",
+    "electricien",
+    "installation-electrique",
+    "isolant-electrique",
+    "resistance-electrique"
+  ]
+}

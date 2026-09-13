@@ -10,7 +10,9 @@
   "merged": false,
   "definition": "Ensemble des câbles électriques et fils électriques posés dans un bâtiment pour relier le tableau électrique aux différents points d'utilisation.",
   "related": [
+    "connecteur-electrique",
     "fil-electrique",
+    "gaine-thermoretractable",
     "installation-electrique",
     "tableau-electrique"
   ],

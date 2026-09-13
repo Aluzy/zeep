@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "amorcage d'arc",
+    "arc",
+    "arc electrique"
+  ],
+  "term": "Arc électrique",
+  "domains": [
+    "E",
+    "F"
+  ],
+  "definition": "Décharge lumineuse et très chaude entre deux conducteurs séparés par un isolant devenu conducteur. Il provoque brûlures et incendies, et impose des équipements de protection lors des manœuvres sous charge.",
+  "versionSimple": "Quand le courant saute d'un fil à l'autre, il crée un éclair très chaud capable de brûler gravement et de déclencher un incendie.",
+  "sources": [
+    {
+      "titre": "INRS — prévention des risques électriques",
+      "url": "https://www.inrs.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "arc-electrique",
+  "related": [
+    "court-circuit",
+    "disjoncteur",
+    "fusible",
+    "habilitation-electrique",
+    "sectionneur"
+  ]
+}

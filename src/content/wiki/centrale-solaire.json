@@ -11,7 +11,8 @@
   "definition": "Centrale électrique qui produit de l'électricité à partir du rayonnement du soleil, notamment grâce à des panneaux photovoltaïques.",
   "related": [
     "centrale-electrique",
-    "electricite"
+    "electricite",
+    "watt-crete"
   ],
   "pillar": false,
   "illustration": null

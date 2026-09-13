@@ -11,8 +11,18 @@
   "definition": "Machine qui convertit l'énergie électrique en énergie mécanique, fonctionnant à l'inverse d'un générateur électrique.",
   "related": [
     "chaine-d-energie",
+    "contacteur",
     "convertisseur-de-frequence",
-    "generateur-electrique"
+    "freinage-regeneratif",
+    "generateur-electrique",
+    "modulation-de-largeur-d-impulsion-pwm",
+    "moteur-a-courant-continu",
+    "moteur-asynchrone",
+    "moteur-synchrone",
+    "rheostat",
+    "terres-rares",
+    "vehicule-electrique",
+    "volet-roulant-motorise"
   ],
   "pillar": false,
   "illustration": null,

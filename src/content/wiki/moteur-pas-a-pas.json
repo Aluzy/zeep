@@ -11,8 +11,14 @@
   "definition": "Actionneur qui tourne par petits incréments précis en réponse à une séquence d'impulsions numériques, piloté par un microcontrôleur.",
   "related": [
     "actionneur",
+    "bras-robotise",
+    "codeur-rotatif",
     "microcontroleur"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "moteur pas a pas",
+    "stepper"
+  ]
 }

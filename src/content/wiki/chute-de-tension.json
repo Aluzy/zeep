@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "chute de tension"
+  ],
+  "term": "Chute de tension",
+  "domains": [
+    "C",
+    "E"
+  ],
+  "definition": "Perte de tension le long d'un conducteur due à sa résistance et au courant qui le traverse. Les normes d'installation limitent cette chute, ce qui impose d'augmenter la section des câbles sur les grandes longueurs.",
+  "versionSimple": "Plus un fil est long et fin, plus la tension diminue en le parcourant. Les appareils au bout de la ligne reçoivent alors moins d'électricité.",
+  "sources": [
+    {
+      "titre": "AFNOR — normes de l'installation électrique",
+      "url": "https://www.afnor.org/",
+      "type": "norme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "chute-de-tension",
+  "related": [
+    "cable-electrique",
+    "installation-electrique",
+    "norme-electrique-nf-c-15-100",
+    "resistance-electrique",
+    "section-de-cable"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "decalage de phase",
+    "dephasage",
+    "phi"
+  ],
+  "term": "Déphasage",
+  "domains": [
+    "A"
+  ],
+  "definition": "Décalage temporel entre deux signaux alternatifs de même fréquence, exprimé en degrés ou en radians. Une bobine retarde le courant sur la tension, un condensateur l'avance : ce décalage conditionne la puissance réellement utile.",
+  "versionSimple": "Deux signaux peuvent avoir le même rythme sans démarrer en même temps. Ce décalage entre eux s'appelle le déphasage.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    },
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "dephasage",
+  "related": [
+    "bobine-inductance",
+    "condensateur",
+    "courant-alternatif",
+    "diagramme-de-bode",
+    "facteur-de-puissance",
+    "impedance"
+  ]
+}

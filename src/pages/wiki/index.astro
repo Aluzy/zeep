@@ -34,7 +34,7 @@ const domainesUtilises = Object.entries(TAXONOMY).filter(([code]) => (countByDom
     {wiki.map((t) => {
       const def = t.data.definition.replace(/<[^>]+>/g, "").slice(0, 130);
       return (
-        <a class="term-tile" href={`${BASE}wiki/${t.data.slug}/`} data-term={t.data.term} data-domains={t.data.domains.join(",")}>
+        <a class="term-tile" href={`${BASE}wiki/${t.data.slug}/`} data-term={t.data.term} data-synonymes={(t.data.synonymes || []).join("|")} data-domains={t.data.domains.join(",")}>
           <div class="tname">{t.data.term}</div>
           <div class="tdef">{def}{def.length >= 130 ? "…" : ""}</div>
           <div class="tmeta chip-row">

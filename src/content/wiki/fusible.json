@@ -10,10 +10,12 @@
   "merged": false,
   "definition": "Composant de sécurité qui fond et interrompt le circuit électrique lorsque l'intensité électrique dépasse une valeur donnée.",
   "related": [
+    "arc-electrique",
     "circuit-electrique",
     "court-circuit",
     "court-jus",
-    "intensite-electrique"
+    "intensite-electrique",
+    "varistance"
   ],
   "pillar": true,
   "illustration": null

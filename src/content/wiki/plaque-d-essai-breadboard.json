@@ -10,9 +10,15 @@
   "merged": false,
   "definition": "Support réutilisable sans soudure permettant d'assembler rapidement un circuit électronique pour le prototypage électronique.",
   "related": [
+    "alimentation-de-laboratoire",
     "electronique",
     "prototypage-electronique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "breadboard",
+    "plaque d'essai",
+    "platine d'essai"
+  ]
 }

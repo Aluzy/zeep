@@ -10,9 +10,19 @@
   "merged": false,
   "definition": "Composant électronique constitué d'un enroulement de fil qui s'oppose aux variations du courant, utilisé dans les filtres électroniques et les alimentations à découpage.",
   "related": [
+    "circuit-rl",
     "composant-electronique",
+    "dephasage",
     "electronique",
-    "impedance"
+    "hacheur",
+    "haut-parleur",
+    "henry",
+    "impedance",
+    "loi-de-lenz",
+    "puissance-reactive",
+    "reactance",
+    "regime-transitoire",
+    "weber"
   ],
   "pillar": false,
   "illustration": null,
@@ -27,5 +37,11 @@
     "matriceIds": [
       "M033"
     ]
-  }
+  },
+  "synonymes": [
+    "L",
+    "bobine",
+    "inductance",
+    "self"
+  ]
 }

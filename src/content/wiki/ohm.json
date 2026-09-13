@@ -10,10 +10,19 @@
   "merged": false,
   "definition": "Unité de mesure de la résistance électrique dans le Système international, symbole Ω.",
   "related": [
+    "code-couleur-des-resistances",
     "loi-d-ohm",
+    "reactance",
     "resistance",
-    "resistance-electrique"
+    "resistance-electrique",
+    "siemens"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "kilohm",
+    "megohm",
+    "ohm",
+    "Ω"
+  ]
 }

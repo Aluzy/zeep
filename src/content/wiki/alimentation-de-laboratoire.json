@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "alimentation de laboratoire",
+    "alimentation reglable",
+    "alimentation stabilisee"
+  ],
+  "term": "Alimentation de laboratoire",
+  "domains": [
+    "S",
+    "V"
+  ],
+  "definition": "Source continue à tension et à limitation de courant réglables, utilisée pour mettre au point un montage. La limitation de courant évite de détruire un prototype en cas d'erreur de câblage.",
+  "versionSimple": "C'est une alimentation dont on règle la tension, et qui peut brider le courant pour ne pas griller le montage si on se trompe.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "alimentation-de-laboratoire",
+  "related": [
+    "alimentation-electronique",
+    "plaque-d-essai-breadboard",
+    "prototypage-electronique",
+    "regulateur-de-tension"
+  ]
+}

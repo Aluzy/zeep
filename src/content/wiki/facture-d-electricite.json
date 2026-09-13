@@ -10,11 +10,16 @@
   "merged": false,
   "definition": "Document émis par le fournisseur d'électricité indiquant le montant à payer en fonction de la consommation électrique relevée par le compteur électrique.",
   "related": [
+    "autoconsommation",
     "compteur-electrique",
+    "compteur-linky",
     "consommation-electrique",
     "electricite",
+    "energie-electrique",
     "fournisseur-d-electricite",
-    "kilowattheure"
+    "heures-creuses",
+    "kilowattheure",
+    "puissance-souscrite"
   ],
   "pillar": false,
   "illustration": null

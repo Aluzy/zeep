@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "pont de wheatstone"
+  ],
+  "term": "Pont de Wheatstone",
+  "domains": [
+    "A",
+    "S"
+  ],
+  "definition": "Montage en losange de quatre résistances utilisé pour mesurer avec précision une résistance inconnue ou la faible variation d'un capteur. On l'équilibre jusqu'à annuler la tension mesurée entre ses deux branches.",
+  "versionSimple": "Ce montage compare quatre résistances entre elles. Il permet de repérer une toute petite variation qu'un appareil simple ne verrait pas.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "pont-de-wheatstone",
+  "related": [
+    "capteur",
+    "multimetre",
+    "pont-diviseur-de-tension",
+    "resistance-electrique",
+    "thermistance"
+  ]
+}

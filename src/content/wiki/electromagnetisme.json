@@ -12,7 +12,8 @@
   "related": [
     "champ-electrique",
     "champ-magnetique",
-    "courant-electrique"
+    "courant-electrique",
+    "tesla"
   ],
   "pillar": false,
   "illustration": null

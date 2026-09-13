@@ -12,7 +12,8 @@
   "related": [
     "capteur",
     "microcontroleur",
-    "protocole-de-communication"
+    "protocole-de-communication",
+    "registre-a-decalage"
   ],
   "pillar": false,
   "illustration": null,
@@ -27,5 +28,9 @@
     "matriceIds": [
       "M044"
     ]
-  }
+  },
+  "synonymes": [
+    "SPI",
+    "bus SPI"
+  ]
 }
