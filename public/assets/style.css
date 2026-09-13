@@ -227,6 +227,20 @@ footer.site-footer{
   border-left:2px solid var(--border-strong);padding-left:20px;
 }
 .definition strong{color:var(--accent);}
+/* Mots de la définition qui renvoient à un article de blog : discrets au repos
+   (pointillé sous le mot), surlignés au survol et au focus clavier. */
+.def-lien{
+  color:inherit;text-decoration:underline;text-decoration-style:dotted;
+  text-decoration-color:var(--border-strong);text-underline-offset:3px;
+  border-radius:3px;padding:0 2px;margin:0 -2px;
+  transition:background-color .15s ease,color .15s ease;
+}
+.def-lien:hover,.def-lien:focus-visible{
+  background:var(--accent-dim);color:var(--accent);
+  text-decoration-color:var(--accent);
+}
+.def-lien:focus-visible{outline:2px solid var(--accent);outline-offset:1px;}
+@media (prefers-reduced-motion:reduce){.def-lien{transition:none;}}
 .illustration-slot{
   margin-top:28px;max-width:660px;border:1px dashed var(--border-strong);border-radius:8px;
   padding:26px;color:var(--text-faint);font-size:12.5px;font-family:var(--font-mono);text-align:center;
