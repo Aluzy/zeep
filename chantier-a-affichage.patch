@@ -1,0 +1,147 @@
+diff --git a/public/assets/site.js b/public/assets/site.js
+index e0f1d18..bd99b88 100644
+--- a/public/assets/site.js
++++ b/public/assets/site.js
+@@ -1,6 +1,44 @@
+-// Comportements client : recherche/filtre wiki.
++// Comportements client : recherche/filtre wiki, scroll-to-top.
+ // Aucune dépendance externe (contrainte de l'environnement de build actuel).
+ 
++function initScrollToTop() {
++  const btn = document.querySelector("#scroll-to-top");
++  if (!btn) return;
++
++  function updateVisibility() {
++    if (window.scrollY > 300) {
++      btn.classList.add("visible");
++    } else {
++      btn.classList.remove("visible");
++    }
++  }
++
++  btn.addEventListener("click", () => {
++    window.scrollTo({ top: 0, behavior: "smooth" });
++  });
++
++  window.addEventListener("scroll", updateVisibility, { passive: true });
++  updateVisibility(); // Vérifier l'état initial
++}
++
++function initDomainFilterTooltips() {
++  const filterBtns = document.querySelectorAll(".domain-filters .domain-filter-btn");
++  filterBtns.forEach((btn) => {
++    btn.addEventListener("mouseover", () => {
++      btn.classList.add("show-tooltip");
++    });
++    btn.addEventListener("mouseout", () => {
++      btn.classList.remove("show-tooltip");
++    });
++    btn.addEventListener("focus", () => {
++      btn.classList.add("show-tooltip");
++    });
++    btn.addEventListener("blur", () => {
++      btn.classList.remove("show-tooltip");
++    });
++  });
++}
++
+ function initWikiSearch() {
+   const searchEl = document.querySelector("#wiki-search");
+   const grid = document.querySelector("#term-grid");
+@@ -9,6 +47,8 @@ function initWikiSearch() {
+   const filterBtns = document.querySelectorAll(".domain-filters button");
+   let activeDomain = "all";
+ 
++  initDomainFilterTooltips();
++
+   function apply() {
+     const q = searchEl.value.trim().toLowerCase();
+     tiles.forEach((t) => {
+@@ -39,5 +79,6 @@ function initWikiSearch() {
+ }
+ 
+ document.addEventListener("DOMContentLoaded", () => {
++  initScrollToTop();
+   initWikiSearch();
+ });
+diff --git a/public/assets/style.css b/public/assets/style.css
+index 537199b..2fb24a0 100644
+--- a/public/assets/style.css
++++ b/public/assets/style.css
+@@ -167,8 +167,25 @@ footer.site-footer{
+ .domain-filters button{
+   font-family:var(--font-mono);font-size:11px;color:var(--text-dim);
+   background:var(--panel);border:1px solid var(--border);padding:5px 10px;border-radius:99px;cursor:pointer;
++  position:relative;
+ }
+ .domain-filters button.active{color:var(--bg);background:var(--accent);border-color:var(--accent);}
++/* Tooltip personnalisée pour les boutons de domaine */
++.domain-filters .domain-filter-btn:is(:hover,:focus){outline:none;}
++.domain-filters .domain-filter-btn.show-tooltip::after{
++  content:attr(data-tooltip);position:absolute;bottom:calc(100%+8px);left:50%;transform:translateX(-50%);
++  background:var(--panel-alt);border:1px solid var(--border-strong);color:var(--text);
++  font-family:var(--font-mono);font-size:11px;padding:6px 10px;border-radius:var(--radius);
++  white-space:nowrap;z-index:100;
++  animation:tooltipFadeIn .15s ease;pointer-events:none;
++}
++.domain-filters .domain-filter-btn.show-tooltip::before{
++  content:'';position:absolute;bottom:calc(100%+2px);left:50%;transform:translateX(-50%);
++  width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;
++  border-top:4px solid var(--border-strong);z-index:101;pointer-events:none;
++}
++@keyframes tooltipFadeIn{from{opacity:0;transform:translateX(-50%) translateY(4px);}to{opacity:1;transform:translateX(-50%) translateY(0);}}
++@media (prefers-reduced-motion:reduce){.domain-filters .domain-filter-btn.show-tooltip::after{animation:none;}}
+ 
+ .term-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;}
+ .term-tile{
+@@ -288,6 +305,19 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
+ }
+ .components-table .no-link{color:var(--text-faint);font-size:12.5px;font-style:italic;}
+ 
++/* ---------- Scroll-to-top button ---------- */
++.scroll-to-top{
++  position:fixed;bottom:30px;right:30px;width:44px;height:44px;
++  background:var(--panel);border:1px solid var(--border-strong);color:var(--accent);
++  border-radius:var(--radius);cursor:pointer;font-size:20px;font-weight:600;
++  display:flex;align-items:center;justify-content:center;z-index:40;
++  opacity:0;pointer-events:none;transition:opacity .2s ease,background-color .12s ease;
++}
++.scroll-to-top.visible{opacity:1;pointer-events:auto;}
++.scroll-to-top:hover{background:var(--accent-dim);}
++.scroll-to-top:focus{outline:2px solid var(--accent);outline-offset:2px;}
++@media (prefers-reduced-motion:reduce){.scroll-to-top{transition:none;}}
++
+ @media (max-width:760px){
+   nav.main-nav{display:none;}
+   .hero h1{font-size:26px;}
+@@ -301,4 +331,5 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
+   /* Les titres de source sont longs : on évite tout débordement horizontal. */
+   .source-item{font-size:13px;padding-left:10px;overflow-wrap:anywhere;}
+   .source-type{margin-left:0;display:block;margin-top:4px;white-space:normal;}
++  .scroll-to-top{bottom:20px;right:20px;width:40px;height:40px;font-size:18px;}
+ }
+diff --git a/src/layouts/Base.astro b/src/layouts/Base.astro
+index 703012b..1df7c1d 100644
+--- a/src/layouts/Base.astro
++++ b/src/layouts/Base.astro
+@@ -47,6 +47,7 @@ const pageTitle = fullTitle ?? `${title} — Zeep`;
+   <footer class="site-footer"><div class="shell">
+     Zeep — wiki collaboratif électricité &amp; électronique.
+   </div></footer>
++  <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour en haut de page" title="Retour en haut">↑</button>
+   <script define:vars={{ BASE }}>
+     window.__BASE__ = BASE;
+   </script>
+diff --git a/src/pages/wiki/index.astro b/src/pages/wiki/index.astro
+index 2997b1e..9e3b53a 100644
+--- a/src/pages/wiki/index.astro
++++ b/src/pages/wiki/index.astro
+@@ -27,7 +27,7 @@ const domainesUtilises = Object.entries(TAXONOMY).filter(([code]) => (countByDom
+   <div class="domain-filters">
+     <button type="button" data-domain="all" class="active">Tous</button>
+     {domainesUtilises.map(([code, name]) => (
+-      <button type="button" data-domain={code} title={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`}>{code}</button>
++      <button type="button" data-domain={code} class="domain-filter-btn" title={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`} data-tooltip={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`}>{code}</button>
+     ))}
+   </div>
+   <div class="term-grid" id="term-grid">

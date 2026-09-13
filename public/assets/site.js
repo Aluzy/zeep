@@ -1,5 +1,43 @@
-// Comportements client : recherche/filtre wiki.
+// Comportements client : recherche/filtre wiki, scroll-to-top.
 // Aucune dépendance externe (contrainte de l'environnement de build actuel).
+
+function initScrollToTop() {
+  const btn = document.querySelector("#scroll-to-top");
+  if (!btn) return;
+
+  function updateVisibility() {
+    if (window.scrollY > 300) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  }
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", updateVisibility, { passive: true });
+  updateVisibility(); // Vérifier l'état initial
+}
+
+function initDomainFilterTooltips() {
+  const filterBtns = document.querySelectorAll(".domain-filters .domain-filter-btn");
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("mouseover", () => {
+      btn.classList.add("show-tooltip");
+    });
+    btn.addEventListener("mouseout", () => {
+      btn.classList.remove("show-tooltip");
+    });
+    btn.addEventListener("focus", () => {
+      btn.classList.add("show-tooltip");
+    });
+    btn.addEventListener("blur", () => {
+      btn.classList.remove("show-tooltip");
+    });
+  });
+}
 
 function initWikiSearch() {
   const searchEl = document.querySelector("#wiki-search");
@@ -8,6 +46,8 @@ function initWikiSearch() {
   const tiles = Array.from(grid.querySelectorAll(".term-tile"));
   const filterBtns = document.querySelectorAll(".domain-filters button");
   let activeDomain = "all";
+
+  initDomainFilterTooltips();
 
   function apply() {
     const q = searchEl.value.trim().toLowerCase();
@@ -39,5 +79,6 @@ function initWikiSearch() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initScrollToTop();
   initWikiSearch();
 });

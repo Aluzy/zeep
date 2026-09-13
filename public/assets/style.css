@@ -167,8 +167,25 @@ footer.site-footer{
 .domain-filters button{
   font-family:var(--font-mono);font-size:11px;color:var(--text-dim);
   background:var(--panel);border:1px solid var(--border);padding:5px 10px;border-radius:99px;cursor:pointer;
+  position:relative;
 }
 .domain-filters button.active{color:var(--bg);background:var(--accent);border-color:var(--accent);}
+/* Tooltip personnalisée pour les boutons de domaine */
+.domain-filters .domain-filter-btn:is(:hover,:focus){outline:none;}
+.domain-filters .domain-filter-btn.show-tooltip::after{
+  content:attr(data-tooltip);position:absolute;bottom:calc(100%+8px);left:50%;transform:translateX(-50%);
+  background:var(--panel-alt);border:1px solid var(--border-strong);color:var(--text);
+  font-family:var(--font-mono);font-size:11px;padding:6px 10px;border-radius:var(--radius);
+  white-space:nowrap;z-index:100;
+  animation:tooltipFadeIn .15s ease;pointer-events:none;
+}
+.domain-filters .domain-filter-btn.show-tooltip::before{
+  content:'';position:absolute;bottom:calc(100%+2px);left:50%;transform:translateX(-50%);
+  width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:4px solid var(--border-strong);z-index:101;pointer-events:none;
+}
+@keyframes tooltipFadeIn{from{opacity:0;transform:translateX(-50%) translateY(4px);}to{opacity:1;transform:translateX(-50%) translateY(0);}}
+@media (prefers-reduced-motion:reduce){.domain-filters .domain-filter-btn.show-tooltip::after{animation:none;}}
 
 .term-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;}
 .term-tile{
@@ -288,6 +305,19 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
 }
 .components-table .no-link{color:var(--text-faint);font-size:12.5px;font-style:italic;}
 
+/* ---------- Scroll-to-top button ---------- */
+.scroll-to-top{
+  position:fixed;bottom:30px;right:30px;width:44px;height:44px;
+  background:var(--panel);border:1px solid var(--border-strong);color:var(--accent);
+  border-radius:var(--radius);cursor:pointer;font-size:20px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;z-index:40;
+  opacity:0;pointer-events:none;transition:opacity .2s ease,background-color .12s ease;
+}
+.scroll-to-top.visible{opacity:1;pointer-events:auto;}
+.scroll-to-top:hover{background:var(--accent-dim);}
+.scroll-to-top:focus{outline:2px solid var(--accent);outline-offset:2px;}
+@media (prefers-reduced-motion:reduce){.scroll-to-top{transition:none;}}
+
 @media (max-width:760px){
   nav.main-nav{display:none;}
   .hero h1{font-size:26px;}
@@ -301,4 +331,5 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
   /* Les titres de source sont longs : on évite tout débordement horizontal. */
   .source-item{font-size:13px;padding-left:10px;overflow-wrap:anywhere;}
   .source-type{margin-left:0;display:block;margin-top:4px;white-space:normal;}
+  .scroll-to-top{bottom:20px;right:20px;width:40px;height:40px;font-size:18px;}
 }
