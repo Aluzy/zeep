@@ -44,8 +44,13 @@ const pageTitle = fullTitle ?? `${title} — Zeep`;
   <main><div class="shell">
     <slot />
   </div></main>
-  <footer class="site-footer"><div class="shell">
-    Zeep — wiki collaboratif électricité &amp; électronique.
+  <footer class="site-footer"><div class="shell footer-inner">
+    <span>Zeep — wiki collaboratif électricité &amp; électronique.</span>
+    <nav class="footer-nav">
+      <a href={`${BASE}plan-du-site/`}>Plan du site</a>
+      <a href={`${BASE}mentions-legales/`}>Mentions légales</a>
+      <a href={`${BASE}politique-de-confidentialite/`}>Politique de confidentialité</a>
+    </nav>
   </div></footer>
   <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour en haut de page" title="Retour en haut">↑</button>
   <script define:vars={{ BASE }}>

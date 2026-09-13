@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+
+const BASE = import.meta.env.BASE_URL;
+---
+<Base title="Mentions légales" description="Mentions légales du site Zeep" group="neutre" active="">
+  <div class="breadcrumb"><a href={BASE}>Accueil</a> / Mentions légales</div>
+  <h1 style="margin:0 0 6px;font-size:26px;">Mentions légales</h1>
+
+  <p class="legal-note">
+    Gabarit en attente des informations réelles (voir demande à Alexandre). Le contenu ci-dessous
+    est une structure à compléter, pas une information vérifiée.
+  </p>
+
+  <section class="page-section">
+    <h2>Éditeur du site</h2>
+    <p>[À compléter : nom ou raison sociale de l'éditeur, statut (particulier / association / société), adresse, contact.]</p>
+  </section>
+
+  <section class="page-section">
+    <h2>Directeur de la publication</h2>
+    <p>[À compléter.]</p>
+  </section>
+
+  <section class="page-section">
+    <h2>Hébergement</h2>
+    <p>[À compléter : nom de l'hébergeur, adresse.]</p>
+  </section>
+
+  <section class="page-section">
+    <h2>Contact</h2>
+    <p>[À compléter : adresse e-mail ou formulaire de contact.]</p>
+  </section>
+
+  <section class="page-section">
+    <h2>Propriété intellectuelle</h2>
+    <p>[À compléter si nécessaire : conditions de réutilisation du contenu.]</p>
+  </section>
+</Base>
