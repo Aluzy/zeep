@@ -1,0 +1,61 @@
+From e30daa2c9827cb2087f03cbccd6eef5be83074f8 Mon Sep 17 00:00:00 2001
+From: "Claude (agents Zeep)" <noreply@anthropic.com>
+Date: Sat, 12 Sep 2026 13:24:32 +0000
+Subject: [PATCH 14/15] =?UTF-8?q?J2-INT:=20g=C3=A8re=20les=20ligatures=20d?=
+ =?UTF-8?q?ans=20slugify=20et=20r=C3=A9tablit=20=C2=AB=20Loi=20des=20n?=
+ =?UTF-8?q?=C5=93uds=20=C2=BB?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+slugify ne décomposait pas œ (NFKD ne le fait pas) : le terme avait dû être
+écrit « noeuds ». La ligature est désormais traduite en « oe » avant le calcul,
+donc « Loi des nœuds » donne le même slug loi-des-noeuds.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ scripts/zeeplib.py                   | 7 ++++++-
+ src/content/wiki/loi-des-noeuds.json | 2 +-
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+
+diff --git a/scripts/zeeplib.py b/scripts/zeeplib.py
+index 6789279..fa25857 100644
+--- a/scripts/zeeplib.py
++++ b/scripts/zeeplib.py
+@@ -12,6 +12,8 @@ BLOG_DIR = ROOT / "src" / "content" / "blog"
+ DIY_DIR = ROOT / "src" / "content" / "diy"
+ TAXONOMY_FILE = ROOT / "src" / "data" / "taxonomy.json"
+ 
++LIGATURES = {"œ": "oe", "æ": "ae", "ﬁ": "fi"}  # non décomposées par NFKD
++
+ SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+ 
+ 
+@@ -21,7 +23,10 @@ def slugify(term: str) -> str:
+     "Facture d'électricité" -> "facture-d-electricite" ; "Loi d'Ohm" -> "loi-d-ohm".
+     (L'ancienne convention supprimait l'apostrophe sans la remplacer par un tiret ;
+     les fiches concernées ont été renommées avec scripts/rename_slug.py.)"""
+-    s = unicodedata.normalize("NFKD", term.lower())
++    s = term.lower()
++    for lig, rempl in LIGATURES.items():
++        s = s.replace(lig, rempl)
++    s = unicodedata.normalize("NFKD", s)
+     s = "".join(c for c in s if not unicodedata.combining(c))
+     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+ 
+diff --git a/src/content/wiki/loi-des-noeuds.json b/src/content/wiki/loi-des-noeuds.json
+index a41ca35..94f2213 100644
+--- a/src/content/wiki/loi-des-noeuds.json
++++ b/src/content/wiki/loi-des-noeuds.json
+@@ -3,7 +3,7 @@
+   "merged": false,
+   "pillar": false,
+   "illustration": null,
+-  "term": "Loi des noeuds",
++  "term": "Loi des nœuds",
+   "domains": [
+     "A"
+   ],
+-- 
+2.43.0
+

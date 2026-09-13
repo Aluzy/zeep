@@ -51,6 +51,16 @@ const blog = defineCollection({
     domain: z.string(),
     excerpt: z.string(),
     related: z.array(z.string()).default([]),
+    // Sources externes vérifiées lors de la rédaction (même structure que le wiki).
+    sources: z
+      .array(
+        z.object({
+          titre: z.string(),
+          url: z.string().optional(),
+          type: z.string().optional(),
+        })
+      )
+      .default([]),
   }),
 });
 

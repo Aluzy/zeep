@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
-import { TAXONOMY, domainGroup } from "../../lib/helpers";
+import { TAXONOMY, domainGroup, SOURCE_TYPE_LABEL } from "../../lib/helpers";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -20,6 +20,7 @@ const related = (post.data.related || []).map((s: string) => {
   if (!r) throw new Error(`Fiche wiki introuvable « ${s} » référencée par l'article de blog ${post.slug}`);
   return r;
 });
+const sources = (post.data.sources || []).filter((s) => s && s.titre && s.titre.trim());
 ---
 <Base title={post.data.title} description={post.data.excerpt} group={group} active="blog">
   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}blog/`}>Blog</a> / {post.data.title}</div>
@@ -38,6 +39,23 @@ const related = (post.data.related || []).map((s: string) => {
           <a class="pin" href={`${BASE}wiki/${r.slug}/`}><span class="dot"></span>{r.term}</a>
         ))}
       </div>
+    </div>
+  )}
+  {sources.length > 0 && (
+    <div class="sources-block">
+      <h2 class="section-label">Sources ({sources.length})</h2>
+      <ol class="source-list">
+        {sources.map((s) => (
+          <li class="source-item">
+            {s.url ? (
+              <a class="source-title" href={s.url} target="_blank" rel="noopener noreferrer">{s.titre}</a>
+            ) : (
+              <span class="source-title">{s.titre}</span>
+            )}
+            {s.type && <span class="source-type">{SOURCE_TYPE_LABEL[s.type] || s.type}</span>}
+          </li>
+        ))}
+      </ol>
     </div>
   )}
 </Base>

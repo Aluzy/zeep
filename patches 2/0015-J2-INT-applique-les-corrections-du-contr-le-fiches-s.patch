@@ -1,0 +1,369 @@
+From a18d2945ffb7b89c95fb8dc0da5701e249d724a0 Mon Sep 17 00:00:00 2001
+From: "Claude (agents Zeep)" <noreply@anthropic.com>
+Date: Sat, 12 Sep 2026 13:43:01 +0000
+Subject: [PATCH 15/15] =?UTF-8?q?J2-INT:=20applique=20les=20corrections=20?=
+ =?UTF-8?q?du=20contr=C3=B4le=20(fiches,=20sources,=20libell=C3=A9=20du=20?=
+ =?UTF-8?q?badge)?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- effet Joule : conversion totale dans un conducteur ohmique, pas partielle
+- dipôle : actif/passif distingué par la caractéristique, non par le sens du transfert
+- sources : les titres ne portent plus de citation (recopiée hors sujet sur 6 fiches)
+- version simple de la loi d'Ohm : piles précisées en série
+- liens vers « conducteur électrique » depuis loi d'Ohm et caractéristique
+- badge de niveau : « Première apparition », la notion pouvant être vue plus tôt
+  dans une autre voie (6 fiches datées par la voie générale)
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ agents/changesets/J2-INT.jsonl                    | 15 +++++++++++++++
+ .../wiki/caracteristique-tension-courant.json     |  5 +++--
+ src/content/wiki/chaine-d-energie.json            |  4 ++--
+ src/content/wiki/chaine-d-information.json        |  4 ++--
+ src/content/wiki/conducteur-electrique.json       |  2 ++
+ src/content/wiki/detecteur.json                   |  2 +-
+ src/content/wiki/dipole.json                      |  8 ++++----
+ src/content/wiki/effet-joule.json                 |  6 +++---
+ src/content/wiki/loi-d-ohm.json                   |  9 +++++----
+ src/content/wiki/loi-des-mailles.json             |  4 ++--
+ src/content/wiki/loi-des-noeuds.json              |  4 ++--
+ src/content/wiki/oscilloscope.json                |  4 ++--
+ src/lib/backlinks.ts                              |  4 ++--
+ src/pages/wiki/[slug].astro                       |  7 +++----
+ 14 files changed, 48 insertions(+), 30 deletions(-)
+ create mode 100644 agents/changesets/J2-INT.jsonl
+
+diff --git a/agents/changesets/J2-INT.jsonl b/agents/changesets/J2-INT.jsonl
+new file mode 100644
+index 0000000..3ffe532
+--- /dev/null
++++ b/agents/changesets/J2-INT.jsonl
+@@ -0,0 +1,15 @@
++{"op": "set", "lot": "J2-INT", "slug": "effet-joule", "field": "definition", "old": "Échauffement d'un conducteur parcouru par un courant électrique : une partie de l'énergie électrique reçue y est convertie en énergie thermique. La puissance dissipée vaut R × I², où R est la résistance du conducteur et I l'intensité du courant ; c'est le principe du radiateur électrique et la cause des pertes en ligne.", "new": "Échauffement d'un conducteur parcouru par un courant électrique : l'énergie électrique reçue par un conducteur ohmique y est entièrement convertie en énergie thermique. La puissance dissipée vaut R × I², où R est la résistance du conducteur et I l'intensité du courant ; c'est le principe du radiateur électrique et la cause des pertes en ligne.", "why": "Contrôle J2-C, correction 1 : dans un conducteur ohmique la conversion est totale, pas partielle."}
++{"op": "set", "lot": "J2-INT", "slug": "dipole", "field": "definition", "old": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il fournit de l'énergie au circuit, comme une pile, et passif quand il la reçoit, comme une résistance ou une lampe.", "new": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il peut fournir de l'énergie au circuit, comme une pile — sa caractéristique ne passe pas par l'origine —, et passif dans le cas contraire, comme une résistance ou une lampe.", "why": "Contrôle J2-C, correction 2 : le sens du transfert distingue générateur et récepteur, pas actif et passif (une batterie en charge reste un dipôle actif)."}
++{"op": "set", "lot": "J2-INT", "slug": "loi-d-ohm", "field": "sources", "old": [{"titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »", "url": "https://eduscol.education.fr/document/17731/download", "type": "programme"}, {"titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf", "type": "programme"}, {"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}], "new": [{"titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »", "url": "https://eduscol.education.fr/document/17731/download", "type": "programme"}, {"titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf", "type": "programme"}, {"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "dipole", "field": "sources", "old": [{"titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »", "url": "https://eduscol.education.fr/document/17731/download", "type": "programme"}, {"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf", "type": "programme"}], "new": [{"titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »", "url": "https://eduscol.education.fr/document/17731/download", "type": "programme"}, {"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf", "type": "programme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "loi-des-noeuds", "field": "sources", "old": [{"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »", "url": "https://eduscol.education.fr/document/17731/download", "type": "programme"}], "new": [{"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »", "url": "https://eduscol.education.fr/document/17731/download", "type": "programme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "loi-des-mailles", "field": "sources", "old": [{"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »", "url": "https://eduscol.education.fr/document/17731/download", "type": "programme"}], "new": [{"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »", "url": "https://eduscol.education.fr/document/17731/download", "type": "programme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "chaine-d-energie", "field": "sources", "old": [{"titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024) : « identifier des constituants de la chaîne d'énergie d'un objet », « identifier des constituants de la chaîne d'information d'un OST »", "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf", "type": "programme"}, {"titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI : « définir tout ou partie des fonctions assurées par une chaîne d'énergie et le système de gestion », « l'acquisition, le traitement, le transport, la gestion et la restitution de l'information »", "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/textes/formations-bac-technologique-bac-technologique-sti2d-sti2d-specialite-architecture-et-construction/6170-referentiel-sti2d.pdf", "type": "programme"}], "new": [{"titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024)", "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf", "type": "programme"}, {"titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI", "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/textes/formations-bac-technologique-bac-technologique-sti2d-sti2d-specialite-architecture-et-construction/6170-referentiel-sti2d.pdf", "type": "programme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "chaine-d-information", "field": "sources", "old": [{"titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024) : « identifier des constituants de la chaîne d'énergie d'un objet », « identifier des constituants de la chaîne d'information d'un OST »", "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf", "type": "programme"}, {"titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI : « définir tout ou partie des fonctions assurées par une chaîne d'énergie et le système de gestion », « l'acquisition, le traitement, le transport, la gestion et la restitution de l'information »", "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/textes/formations-bac-technologique-bac-technologique-sti2d-sti2d-specialite-architecture-et-construction/6170-referentiel-sti2d.pdf", "type": "programme"}], "new": [{"titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024)", "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf", "type": "programme"}, {"titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI", "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/textes/formations-bac-technologique-bac-technologique-sti2d-sti2d-specialite-architecture-et-construction/6170-referentiel-sti2d.pdf", "type": "programme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "effet-joule", "field": "sources", "old": [{"titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf", "type": "programme"}, {"titre": "Éduscol, « Les mathématiques et le transport d'électricité » (ressource d'accompagnement de l'enseignement scientifique, janvier 2020) : « L'utilisation de lignes à haute tension est une réponse pour réduire les pertes d'énergie par effet Joule lors du transport »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/ra20lyceegtessous-theme-2-3-transport-electricite1241826pdf-85059.pdf", "type": "programme"}], "new": [{"titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf", "type": "programme"}, {"titre": "Éduscol, « Les mathématiques et le transport d'électricité » (ressource d'accompagnement de l'enseignement scientifique, janvier 2020)", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/ra20lyceegtessous-theme-2-3-transport-electricite1241826pdf-85059.pdf", "type": "programme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "oscilloscope", "field": "sources", "old": [{"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Dictionnaire de français Larousse, article « oscilloscope » : « Appareil permettant de visualiser les variations d'une grandeur variable dans le temps »", "url": "https://www.larousse.fr/dictionnaires/francais/oscilloscope/56710", "type": "reference"}], "new": [{"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Dictionnaire de français Larousse, article « oscilloscope »", "url": "https://www.larousse.fr/dictionnaires/francais/oscilloscope/56710", "type": "reference"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "detecteur", "field": "sources", "old": [{"titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024) : « identifier des constituants de la chaîne d'énergie d'un objet », « identifier des constituants de la chaîne d'information d'un OST »", "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf", "type": "programme"}, {"titre": "Norme IEC 60947-5-2, « Low-voltage switchgear and controlgear — Part 5-2: Control circuit devices and switching elements — Proximity switches » (détecteurs de proximité inductifs, capacitifs, ultrasonores et photoélectriques), notice de la boutique AFNOR ; édition 2007 remplacée par l'édition 2019", "url": "https://www.boutique.afnor.org/en-gb/standard/iec-60947522007/lowvoltage-switchgear-and-controlgear-part-52-control-circuit-devices-and-s/xs115642/243937", "type": "norme"}], "new": [{"titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024)", "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf", "type": "programme"}, {"titre": "Norme IEC 60947-5-2, « Low-voltage switchgear and controlgear — Part 5-2: Control circuit devices and switching elements — Proximity switches » (détecteurs de proximité inductifs, capacitifs, ultrasonores et photoélectriques), notice de la boutique AFNOR ; édition 2007 remplacée par l'édition 2019", "url": "https://www.boutique.afnor.org/en-gb/standard/iec-60947522007/lowvoltage-switchgear-and-controlgear-part-52-control-circuit-devices-and-s/xs115642/243937", "type": "norme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "caracteristique-tension-courant", "field": "sources", "old": [{"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf", "type": "programme"}], "new": [{"titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale", "url": "https://eduscol.education.fr/document/22873/download", "type": "programme"}, {"titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »", "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf", "type": "programme"}], "why": "Contrôle J2-C, corrections 3 à 5 : les citations logées dans les titres de sources étaient recopiées hors sujet ou inexactes ; le titre ne garde que l'identité du document."}
++{"op": "set", "lot": "J2-INT", "slug": "loi-d-ohm", "field": "versionSimple", "old": "Une résistance freine toujours le courant de la même façon : avec deux piles au lieu d'une, la tension double et le courant qui la traverse double aussi.", "new": "Une résistance freine toujours le courant de la même façon : avec deux piles branchées l'une après l'autre, la tension double et le courant qui la traverse double aussi.", "why": "Contrôle J2-C, correction 11 : le doublement de tension suppose des piles en série."}
++{"op": "link", "lot": "J2-INT", "a": "loi-d-ohm", "b": "conducteur-electrique", "why": "Contrôle J2-C, correction 10 : « conducteur ohmique » employé dans la définition sans lien vers une fiche qui l'éclaire."}
++{"op": "link", "lot": "J2-INT", "a": "caracteristique-tension-courant", "b": "conducteur-electrique", "why": "Contrôle J2-C, correction 10 : « conducteur ohmique » employé dans la définition sans lien vers une fiche qui l'éclaire."}
+diff --git a/src/content/wiki/caracteristique-tension-courant.json b/src/content/wiki/caracteristique-tension-courant.json
+index 1b18ab4..926101c 100644
+--- a/src/content/wiki/caracteristique-tension-courant.json
++++ b/src/content/wiki/caracteristique-tension-courant.json
+@@ -26,12 +26,12 @@
+   },
+   "sources": [
+     {
+-      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
++      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
+       "url": "https://eduscol.education.fr/document/22873/download",
+       "type": "programme"
+     },
+     {
+-      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
++      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »",
+       "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+       "type": "programme"
+     }
+@@ -43,6 +43,7 @@
+   },
+   "slug": "caracteristique-tension-courant",
+   "related": [
++    "conducteur-electrique",
+     "diode",
+     "dipole",
+     "intensite-electrique",
+diff --git a/src/content/wiki/chaine-d-energie.json b/src/content/wiki/chaine-d-energie.json
+index 82a3b35..d9b3ce7 100644
+--- a/src/content/wiki/chaine-d-energie.json
++++ b/src/content/wiki/chaine-d-energie.json
+@@ -33,12 +33,12 @@
+   },
+   "sources": [
+     {
+-      "titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024) : « identifier des constituants de la chaîne d'énergie d'un objet », « identifier des constituants de la chaîne d'information d'un OST »",
++      "titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024)",
+       "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf",
+       "type": "programme"
+     },
+     {
+-      "titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI : « définir tout ou partie des fonctions assurées par une chaîne d'énergie et le système de gestion », « l'acquisition, le traitement, le transport, la gestion et la restitution de l'information »",
++      "titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI",
+       "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/textes/formations-bac-technologique-bac-technologique-sti2d-sti2d-specialite-architecture-et-construction/6170-referentiel-sti2d.pdf",
+       "type": "programme"
+     }
+diff --git a/src/content/wiki/chaine-d-information.json b/src/content/wiki/chaine-d-information.json
+index 9a8923a..da9f4d7 100644
+--- a/src/content/wiki/chaine-d-information.json
++++ b/src/content/wiki/chaine-d-information.json
+@@ -32,12 +32,12 @@
+   },
+   "sources": [
+     {
+-      "titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024) : « identifier des constituants de la chaîne d'énergie d'un objet », « identifier des constituants de la chaîne d'information d'un OST »",
++      "titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024)",
+       "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf",
+       "type": "programme"
+     },
+     {
+-      "titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI : « définir tout ou partie des fonctions assurées par une chaîne d'énergie et le système de gestion », « l'acquisition, le traitement, le transport, la gestion et la restitution de l'information »",
++      "titre": "Arrêté du 8 février 2011 fixant le programme pour le cycle terminal de la série STI2D (JO du 25 février 2011), publié par Éduscol STI",
+       "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/textes/formations-bac-technologique-bac-technologique-sti2d-sti2d-specialite-architecture-et-construction/6170-referentiel-sti2d.pdf",
+       "type": "programme"
+     }
+diff --git a/src/content/wiki/conducteur-electrique.json b/src/content/wiki/conducteur-electrique.json
+index fef46d5..c0e6efc 100644
+--- a/src/content/wiki/conducteur-electrique.json
++++ b/src/content/wiki/conducteur-electrique.json
+@@ -11,11 +11,13 @@
+   "definition": "Matériau, souvent métallique, qui laisse circuler facilement le courant électrique, utilisé notamment dans les câbles électriques.",
+   "related": [
+     "amperemetre",
++    "caracteristique-tension-courant",
+     "courant-electrique",
+     "electron",
+     "fil-electrique",
+     "induction-electromagnetique",
+     "intensite-electrique",
++    "loi-d-ohm",
+     "ohmmetre",
+     "resistance-electrique"
+   ],
+diff --git a/src/content/wiki/detecteur.json b/src/content/wiki/detecteur.json
+index 5c3960a..1bd3982 100644
+--- a/src/content/wiki/detecteur.json
++++ b/src/content/wiki/detecteur.json
+@@ -26,7 +26,7 @@
+   },
+   "sources": [
+     {
+-      "titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024) : « identifier des constituants de la chaîne d'énergie d'un objet », « identifier des constituants de la chaîne d'information d'un OST »",
++      "titre": "Programme de technologie du cycle 4, Bulletin officiel n° 9 du 29 février 2024 (arrêté du 9-2-2024, JO du 28-2-2024)",
+       "url": "https://www.education.gouv.fr/sites/default/files/Bulletin_officiel_MENJS_2024_02_29_BO9-1709224967.pdf",
+       "type": "programme"
+     },
+diff --git a/src/content/wiki/dipole.json b/src/content/wiki/dipole.json
+index 952385a..de6658a 100644
+--- a/src/content/wiki/dipole.json
++++ b/src/content/wiki/dipole.json
+@@ -7,7 +7,7 @@
+   "domains": [
+     "A"
+   ],
+-  "definition": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il fournit de l'énergie au circuit, comme une pile, et passif quand il la reçoit, comme une résistance ou une lampe.",
++  "definition": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il peut fournir de l'énergie au circuit, comme une pile — sa caractéristique ne passe pas par l'origine —, et passif dans le cas contraire, comme une résistance ou une lampe.",
+   "versionSimple": "Un dipôle est un élément de circuit qui se branche par deux bornes. Dans une lampe de poche, la pile, l'ampoule et l'interrupteur sont des dipôles.",
+   "niveau": {
+     "premiereApparition": "C4",
+@@ -30,17 +30,17 @@
+   },
+   "sources": [
+     {
+-      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »",
++      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »",
+       "url": "https://eduscol.education.fr/document/17731/download",
+       "type": "programme"
+     },
+     {
+-      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
++      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
+       "url": "https://eduscol.education.fr/document/22873/download",
+       "type": "programme"
+     },
+     {
+-      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
++      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »",
+       "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+       "type": "programme"
+     }
+diff --git a/src/content/wiki/effet-joule.json b/src/content/wiki/effet-joule.json
+index 85a2f09..2b81824 100644
+--- a/src/content/wiki/effet-joule.json
++++ b/src/content/wiki/effet-joule.json
+@@ -7,7 +7,7 @@
+   "domains": [
+     "A"
+   ],
+-  "definition": "Échauffement d'un conducteur parcouru par un courant électrique : une partie de l'énergie électrique reçue y est convertie en énergie thermique. La puissance dissipée vaut R × I², où R est la résistance du conducteur et I l'intensité du courant ; c'est le principe du radiateur électrique et la cause des pertes en ligne.",
++  "definition": "Échauffement d'un conducteur parcouru par un courant électrique : l'énergie électrique reçue par un conducteur ohmique y est entièrement convertie en énergie thermique. La puissance dissipée vaut R × I², où R est la résistance du conducteur et I l'intensité du courant ; c'est le principe du radiateur électrique et la cause des pertes en ligne.",
+   "versionSimple": null,
+   "niveau": {
+     "premiereApparition": "1G",
+@@ -25,12 +25,12 @@
+   },
+   "sources": [
+     {
+-      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
++      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »",
+       "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+       "type": "programme"
+     },
+     {
+-      "titre": "Éduscol, « Les mathématiques et le transport d'électricité » (ressource d'accompagnement de l'enseignement scientifique, janvier 2020) : « L'utilisation de lignes à haute tension est une réponse pour réduire les pertes d'énergie par effet Joule lors du transport »",
++      "titre": "Éduscol, « Les mathématiques et le transport d'électricité » (ressource d'accompagnement de l'enseignement scientifique, janvier 2020)",
+       "url": "https://eduscol.education.gouv.fr/sites/default/files/document/ra20lyceegtessous-theme-2-3-transport-electricite1241826pdf-85059.pdf",
+       "type": "programme"
+     }
+diff --git a/src/content/wiki/loi-d-ohm.json b/src/content/wiki/loi-d-ohm.json
+index 2e4b8e2..0b83d7c 100644
+--- a/src/content/wiki/loi-d-ohm.json
++++ b/src/content/wiki/loi-d-ohm.json
+@@ -8,7 +8,7 @@
+     "A"
+   ],
+   "definition": "Relation de proportionnalité entre la tension aux bornes d'un conducteur ohmique et l'intensité du courant qui le traverse : U = R × I, où R est la résistance du conducteur, exprimée en ohms. Elle ne s'applique qu'aux conducteurs ohmiques, dont la caractéristique tension-courant est une droite passant par l'origine.",
+-  "versionSimple": "Une résistance freine toujours le courant de la même façon : avec deux piles au lieu d'une, la tension double et le courant qui la traverse double aussi.",
++  "versionSimple": "Une résistance freine toujours le courant de la même façon : avec deux piles branchées l'une après l'autre, la tension double et le courant qui la traverse double aussi.",
+   "niveau": {
+     "premiereApparition": "C4",
+     "cycles": [
+@@ -23,17 +23,17 @@
+   },
+   "sources": [
+     {
+-      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »",
++      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »",
+       "url": "https://eduscol.education.fr/document/17731/download",
+       "type": "programme"
+     },
+     {
+-      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques » : « Effet Joule. Cas des dipôles ohmiques »",
++      "titre": "Programme de physique-chimie de première générale (BO spécial n° 1 du 22 janvier 2019), partie « Aspects énergétiques des phénomènes électriques »",
+       "url": "https://eduscol.education.gouv.fr/sites/default/files/document/spe635annexe1063432pdf-82266.pdf",
+       "type": "programme"
+     },
+     {
+-      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
++      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
+       "url": "https://eduscol.education.fr/document/22873/download",
+       "type": "programme"
+     }
+@@ -46,6 +46,7 @@
+   "slug": "loi-d-ohm",
+   "related": [
+     "caracteristique-tension-courant",
++    "conducteur-electrique",
+     "dipole",
+     "effet-joule",
+     "intensite-electrique",
+diff --git a/src/content/wiki/loi-des-mailles.json b/src/content/wiki/loi-des-mailles.json
+index bcf9f1a..60ae39c 100644
+--- a/src/content/wiki/loi-des-mailles.json
++++ b/src/content/wiki/loi-des-mailles.json
+@@ -30,12 +30,12 @@
+   },
+   "sources": [
+     {
+-      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
++      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
+       "url": "https://eduscol.education.fr/document/22873/download",
+       "type": "programme"
+     },
+     {
+-      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »",
++      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »",
+       "url": "https://eduscol.education.fr/document/17731/download",
+       "type": "programme"
+     }
+diff --git a/src/content/wiki/loi-des-noeuds.json b/src/content/wiki/loi-des-noeuds.json
+index 94f2213..a5194e0 100644
+--- a/src/content/wiki/loi-des-noeuds.json
++++ b/src/content/wiki/loi-des-noeuds.json
+@@ -30,12 +30,12 @@
+   },
+   "sources": [
+     {
+-      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
++      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
+       "url": "https://eduscol.education.fr/document/22873/download",
+       "type": "programme"
+     },
+     {
+-      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 » : « Relation tension-courant : loi d'Ohm », « Dipôles en série, dipôles en dérivation », « Loi d'additivité des tensions (circuit à une seule maille) »",
++      "titre": "Éduscol, « Aide à la construction d'une progression en physique-chimie au cycle 4 »",
+       "url": "https://eduscol.education.fr/document/17731/download",
+       "type": "programme"
+     }
+diff --git a/src/content/wiki/oscilloscope.json b/src/content/wiki/oscilloscope.json
+index c4589fb..216e3c6 100644
+--- a/src/content/wiki/oscilloscope.json
++++ b/src/content/wiki/oscilloscope.json
+@@ -24,12 +24,12 @@
+   },
+   "sources": [
+     {
+-      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale : « les élèves exploitent notamment la loi des mailles et des nœuds dans un circuit électrique comportant, au plus, deux mailles »",
++      "titre": "Éduscol, « L'électricité dans les programmes » (juillet 2019), physique-chimie de seconde générale et technologique et de première générale",
+       "url": "https://eduscol.education.fr/document/22873/download",
+       "type": "programme"
+     },
+     {
+-      "titre": "Dictionnaire de français Larousse, article « oscilloscope » : « Appareil permettant de visualiser les variations d'une grandeur variable dans le temps »",
++      "titre": "Dictionnaire de français Larousse, article « oscilloscope »",
+       "url": "https://www.larousse.fr/dictionnaires/francais/oscilloscope/56710",
+       "type": "reference"
+     }
+diff --git a/src/lib/backlinks.ts b/src/lib/backlinks.ts
+index bce79df..ec555fe 100644
+--- a/src/lib/backlinks.ts
++++ b/src/lib/backlinks.ts
+@@ -7,7 +7,7 @@
+  * du plan de contenu (blocs « Articles de blog liés » et « Projets DIY liés »).
+  *
+  * Usage : **une seule construction par page au plus**. Sur `wiki/[slug].astro`,
+- * l'index est bâti dans `getStaticPaths()` (donc une fois pour les 197 fiches) et
++ * l'index est bâti dans `getStaticPaths()` (donc une fois pour toutes les fiches) et
+  * chaque page ne reçoit en props que ses propres liens retour.
+  *
+  * Aucune dépendance : les types d'entrée sont décrits de façon structurelle pour ne pas
+@@ -126,7 +126,7 @@ export function buildBacklinkIndex(
+ 
+ /**
+  * Liens retour d'une fiche. Renvoie toujours un objet : une fiche que personne ne
+- * cite (la majorité des 197) reçoit deux listes vides, et les blocs restent masqués.
++ * cite (la majorité d’entre elles) reçoit deux listes vides, et les blocs restent masqués.
+  */
+ export function liensRetourDe(index: IndexLiensRetour, slug: string): LiensRetour {
+   return index.get(slug) || { articles: [], projets: [] };
+diff --git a/src/pages/wiki/[slug].astro b/src/pages/wiki/[slug].astro
+index c5e213d..a3120a2 100644
+--- a/src/pages/wiki/[slug].astro
++++ b/src/pages/wiki/[slug].astro
+@@ -9,7 +9,7 @@ export async function getStaticPaths() {
+   const blog = await getCollection("blog");
+   const diy = await getCollection("diy");
+   // Index inverse (articles et projets qui citent une fiche) : construit une seule
+-  // fois ici pour les 197 pages ; chaque page ne reçoit que ses propres liens retour.
++  // fois ici pour toutes les pages ; chaque page ne reçoit que ses propres liens retour.
+   const backlinks = buildBacklinkIndex(blog, diy, wiki.map((t) => t.data.slug));
+   return wiki.map((t) => ({
+     params: { slug: t.data.slug },
+@@ -59,13 +59,12 @@ const projetsLies = liens.projets;
+         {niveau && (
+           <span
+             class="chip niveau-badge"
+-            title={`Cette notion apparaît dans les programmes scolaires à ce niveau : ${niveauTexte}.`}
++            title={`Première apparition repérée dans les programmes scolaires : ${niveauTexte}. La notion peut être rencontrée plus tôt dans une autre voie.`}
+           >
+-            <span class="k">Niveau</span>{niveauTexte}
++            <span class="k">Première apparition</span>{niveauTexte}
+           </span>
+         )}
+       </div>
+-      {niveau && <p class="niveau-note">Apparaît dans les programmes à ce niveau.</p>}
+     </div>
+     <div class="definition" set:html={t.definition} />
+     {versionSimple && (
+-- 
+2.43.0
+

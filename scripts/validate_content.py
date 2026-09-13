@@ -137,9 +137,14 @@ def main() -> int:
         for r in fm.get("related", []) or []:
             if r not in wiki:
                 errors.append(f"{where} : lien vers une fiche inexistante « {r} »")
+        for s in fm.get("sources", []) or []:
+            if not isinstance(s, dict) or not str(s.get("titre") or "").strip():
+                errors.append(f"{where} : source invalide (objet avec au moins « titre » non vide attendu)")
         words = len(body.split())
         if words < 600:
             warnings.append(f"{where} : article court ({words} mots, cible ≥ 800)")
+        if not fm.get("sources"):
+            warnings.append(f"{where} : aucune source déclarée")
 
     for path in sorted(DIY_DIR.glob("*.json")):
         d = load_json(path)

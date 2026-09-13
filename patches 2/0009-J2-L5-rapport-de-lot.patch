@@ -1,0 +1,289 @@
+From db03bce9dd596f45db74a9ef9d6fc89ca4b4126a Mon Sep 17 00:00:00 2001
+From: Agent J2-L5 <noreply@anthropic.com>
+Date: Sat, 12 Sep 2026 13:13:40 +0000
+Subject: [PATCH 09/15] J2-L5: rapport de lot
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Tableau avant/après des trois fichiers de gabarit et de style, HTML produit sur
+wiki/carte-arduino/, résultat du test d'index inverse et liste des 23 fiches qui
+reçoivent des liens retour aujourd'hui (sur 197).
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ agents/rapports/J2-L5.md | 262 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 262 insertions(+)
+ create mode 100644 agents/rapports/J2-L5.md
+
+diff --git a/agents/rapports/J2-L5.md b/agents/rapports/J2-L5.md
+new file mode 100644
+index 0000000..ae8ff5a
+--- /dev/null
++++ b/agents/rapports/J2-L5.md
+@@ -0,0 +1,262 @@
++# Rapport de lot J2-L5 — Liens retour : articles et projets qui citent une fiche
++
++- **Agent** : développeur Astro
++- **Date** : 2026-09-12
++- **Statut** : terminé
++
++> Le maillage n'allait que dans un sens : un article de blog et une fiche projet listent les
++> fiches wiki qu'ils citent (champ `related`), mais **aucune fiche ne disait qui parle d'elle**.
++> Les deux blocs étaient prévus au §3 du plan de contenu (« Articles de blog liés » et
++> « Projets DIY liés ») et relevés par l'audit du 11/09 (action 5.4). Ce lot les pose.
++> Aucune donnée n'a été ajoutée : les liens retour se déduisent des `related` existants,
++> donc **23 fiches sur 197** en reçoivent aujourd'hui, et 174 rendent exactement la page d'avant.
++
++## Ce qui a été fait
++
++1. **Index inverse** (`src/lib/backlinks.ts`, nouveau fichier) : `buildBacklinkIndex()` construit
++   la table slug de fiche → `{ articles, projets }` depuis les collections `blog` et `diy` ;
++   `liensRetourDe()` en extrait les liens d'une fiche (deux listes vides si personne ne la cite).
++2. **Fiche wiki** (`src/pages/wiki/[slug].astro`) : deux blocs conditionnels après les termes liés,
++   « Articles qui en parlent » et « Projets qui l'utilisent ». L'index est construit **une seule
++   fois**, dans `getStaticPaths()`, et chaque page ne reçoit en props que ses propres liens.
++3. **Styles** (`public/assets/style.css`) : variante `.pin-wide` de la puce existante (titre long,
++   ligne de méta facultative), plus son passage en pleine largeur sous 760 px.
++4. **Outil de contrôle** (`agents/outils/verifie_liens_retour.py` + `liens_retour_node.mjs`) :
++   vérifie la logique d'index inverse **sans build Astro**, et compare le résultat du vrai
++   `backlinks.ts` à une reconstruction Python indépendante (§3).
++
++Aucun fichier de `src/content/**` n'a été touché.
++
++## Fichiers produits
++
++Commits (branche `J2-L5`, partie de `J2-L1`, rien n'est poussé) :
++
++| Commit | Objet |
++|---|---|
++| `82b9df6` | `src/lib/backlinks.ts` — index inverse, types, garde-fou |
++| `76dcf4e` | `src/pages/wiki/[slug].astro` + `public/assets/style.css` — les deux blocs |
++| `a9b1843` | `agents/outils/verifie_liens_retour.py`, `agents/outils/liens_retour_node.mjs` |
++| (ce commit) | `agents/rapports/J2-L5.md` |
++
++---
++
++## 1. Avant / après, gabarit par gabarit
++
++### 1.1 `src/pages/wiki/[slug].astro` — `getStaticPaths()` et props
++
++| Avant | Après |
++|---|---|
++| `const wiki = await getCollection("wiki");` puis `wiki.map((t) => ({ params, props: { entry: t, all: wiki } }))` | + `getCollection("blog")` et `getCollection("diy")`, + `const backlinks = buildBacklinkIndex(blog, diy, wiki.map((t) => t.data.slug));`, et `props: { entry, all, liens: liensRetourDe(backlinks, t.data.slug) }` |
++
++L'index est bâti **une fois pour les 197 pages** (`getStaticPaths` n'est évalué qu'une fois) ;
++chaque page ne transporte que ses propres liens retour, pas la table entière. L'interface `Props`
++gagne un champ `liens: LiensRetour`.
++
++### 1.2 `src/pages/wiki/[slug].astro` — les deux blocs
++
++| Avant | Après |
++|---|---|
++| après `<div class="related-block">` (termes liés), la fiche passait directement aux sources | + `{articlesLies.length > 0 && (<div class="related-block">…)}` puis `{projetsLies.length > 0 && (<div class="related-block">…)}`, avant le bloc des sources |
++
++Structure d'une puce d'article : `<a class="pin pin-wide">` › `<span class="dot">` +
++`<span class="pin-body"><span class="pin-title">` (titre de l'article).
++Structure d'une puce de projet : la même, plus `<span class="pin-meta">` contenant le badge de
++niveau (`level-badge level-<niveau>`, libellé par `LEVEL_LABEL`) et, si le champ est renseigné,
++`<span class="pin-duree">` (durée). Les titres comptent les éléments, comme « Termes liés (N) ».
++
++**HTML produit** sur `wiki/carte-arduino/` (la fiche la mieux reliée : un article et un projet) :
++
++```html
++<div class="related-block">
++  <h2>Articles qui en parlent (1)</h2>
++  <div class="pins">
++    <a class="pin pin-wide" href="/zeep/blog/arduino-vs-raspberry-vs-esp32/">
++      <span class="dot"></span>
++      <span class="pin-body"><span class="pin-title">Arduino vs Raspberry Pi vs ESP32 : lequel choisir pour son projet</span></span>
++    </a>
++  </div>
++</div>
++<div class="related-block">
++  <h2>Projets qui l'utilisent (1)</h2>
++  <div class="pins">
++    <a class="pin pin-wide" href="/zeep/projets-diy/clignotant-led-arduino/">
++      <span class="dot"></span>
++      <span class="pin-body">
++        <span class="pin-title">Clignotant LED avec Arduino</span>
++        <span class="pin-meta">
++          <span class="level-badge level-debutant">Débutant</span>
++          <span class="pin-duree">30 minutes</span>
++        </span>
++      </span>
++    </a>
++  </div>
++</div>
++```
++
++### 1.3 `public/assets/style.css`
++
++| Avant | Après |
++|---|---|
++| `.pin` : `inline-flex`, `align-items:center`, une seule ligne de texte | + `.pin-wide` (variante, pas un remplacement) : `align-items:flex-start`, `max-width:100%`, rembourrage un peu plus haut, `.pin-body` en colonne (`min-width:0`), `.pin-title` en `overflow-wrap:anywhere`, `.pin-meta` en ligne qui se replie, `.pin-duree` en mono discrète |
++| `@media (max-width:760px)` : rien sur les puces | + `.pin-wide{width:100%;}` — un lien retour par ligne |
++
++`.pin` et `.pins` ne sont **pas modifiées** : les puces de termes liés du wiki, du blog et des
++projets sont inchangées. `.level-badge` et ses trois variantes de couleur sont réutilisées telles
++quelles ; elles portent leur propre `color`, donc le survol de la puce (`.pin:hover{color:…}`) ne
++les décolore pas.
++
++### 1.4 `src/lib/helpers.ts`
++
++Aucune modification : `LEVEL_LABEL` existait déjà et est simplement importé par le gabarit.
++
++## 2. Critères d'acceptation
++
++| Critère | Résultat |
++|---|---|
++| `python3 scripts/validate_content.py` = 0 erreur | ✅ 0 erreur, 3 avertissements (les 3 articles de blog courts, préexistants et inchangés) |
++| Aucune dépendance ajoutée | ✅ `package.json` non touché ; `backlinks.ts` n'importe rien (pas même `astro:content`), le gabarit n'importe que `../../lib/backlinks` |
++| Aucun bloc vide sur une fiche sans article ni projet | ✅ deux gardes `…length > 0` ; l'outil vérifie en plus qu'aucune entrée d'index n'est vide, et que `ohm`, `volt`, `fusible` n'ont pas d'entrée du tout (174 fiches sur 197) |
++| Rien ne dépend d'un slug absent, erreur explicite au build conservée | ✅ `buildBacklinkIndex` lève le **même message** que les gabarits blog/DIY (`Fiche wiki introuvable « … » référencée par …`), et il se déclenche désormais plus tôt, à la génération des pages wiki ; le filet est renforcé, pas affaibli |
++| Test d'index inverse hors dépôt | ✅ `agents/outils/verifie_liens_retour.py` : 0 erreur (§3) |
++| Rapport selon `TEMPLATE.md` avec tableau avant/après, résultat du test et liste des fiches | ✅ §1, §3, §4 |
++| Contenu non modifié | ✅ `git status --short src/content` vide |
++
++## 3. Vérifications effectuées
++
++- `python3 scripts/validate_content.py --stats` : **0 erreur**, 3 avertissements — identiques à
++  avant le lot (aucun contenu touché, aucune règle ajoutée).
++- `python3 agents/outils/verifie_liens_retour.py` : **0 erreur**, sortie
++  « 23 fiche(s) sur 197 reçoivent des liens retour ». Ce que l'outil prouve :
++  1. **le vrai code du site donne le bon résultat** : `src/lib/backlinks.ts` est exécuté tel quel
++     par Node 22 (`--experimental-strip-types`, aucune compilation, aucune dépendance) sur les
++     entrées de collection reconstituées depuis `src/content/`, et son index est **identique**
++     à celui d'une reconstruction Python écrite indépendamment (comparaison structurelle complète,
++     slugs, titres, niveaux, durées et ordre de tri compris) ;
++  2. **les attendus nommés dans la mission passent** : `carte-arduino` est bien citée par l'article
++     `arduino-vs-raspberry-vs-esp32` **et** par le projet `clignotant-led-arduino` ; de même
++     `objet-connecte-iot` (article Arduino + station météo), `facture-d-electricite` (article seul)
++     et `soudure-electronique` (projet seul) ;
++  3. **aucune entrée vide** dans l'index, et les trois fiches témoins `ohm`, `volt`, `fusible`
++     n'y figurent pas du tout ;
++  4. **le garde-fou se déclenche** : un article d'essai citant `fiche-qui-nexiste-pas` fait bien
++     lever `Fiche wiki introuvable « fiche-qui-nexiste-pas » référencée par l'article de blog essai`
++     au lieu de perdre le lien ;
++  5. **niveau et durée exploitables** : les 3 projets ont un `level` connu et une `duration`
++     non vide, donc les deux méta s'affichent.
++  Le décompte attendu (23) est une constante en tête de l'outil : elle devra être mise à jour
++  quand un article ou un projet sera ajouté — l'outil le dit explicitement en cas d'écart.
++- **Rendu téléphone** : les trois `.related-block` partagent `max-width:660px`. Sous 760 px chaque
++  `.pin-wide` prend `width:100%` (avec `box-sizing:border-box` global), donc une puce par ligne ;
++  le titre se replie (`overflow-wrap:anywhere` — le plus long fait 74 caractères, « Comment
++  fonctionne un panneau photovoltaïque, du photon au courant continu ») et la méta se replie aussi
++  (`flex-wrap`). Aucun débordement horizontal possible : rien n'a de largeur fixe.
++- **Build Astro non vérifiable ici** (`npm install` impossible, registre bloqué). Code relu deux
++  fois ; voir les points de vigilance ci-dessous.
++- `scripts/smoke_dist.py` reste vert par construction : les seuls liens ajoutés sont internes et
++  pointent vers `blog/<slug>/` et `projets-diy/<slug>/`, deux pages générées par des gabarits
++  existants à partir des **mêmes** collections — un lien retour ne peut pas viser une page absente.
++
++## 4. Fiches qui reçoivent effectivement des liens retour aujourd'hui
++
++23 fiches sur 197 (soit 25 liens : 12 déclarés par les 3 articles, 13 par les 3 projets ;
++2 fiches — `carte-arduino` et `objet-connecte-iot` — sont citées des deux côtés).
++Les 174 autres n'affichent aucun des deux blocs.
++
++| Slug de la fiche | Terme | Article(s) qui en parlent | Projet(s) qui l'utilisent |
++|---|---|---|---|
++| `bus-i2c` | Bus I2C | — | station-meteo-connectee |
++| `capteur-de-pression` | Capteur de pression | — | station-meteo-connectee |
++| `capteur-de-temperature` | Capteur de température | — | station-meteo-connectee |
++| `carte-arduino` | Carte Arduino | arduino-vs-raspberry-vs-esp32 | clignotant-led-arduino |
++| `carte-raspberry-pi` | Carte Raspberry Pi | arduino-vs-raspberry-vs-esp32 | — |
++| `circuit-electrique` | Circuit électrique | — | clignotant-led-arduino |
++| `circuit-imprime-pcb` | Circuit imprimé (PCB) | — | pcb-personnalise-kicad |
++| `compteur-electrique` | Compteur électrique | comprendre-facture-electricite | — |
++| `courant-continu` | Courant continu | panneau-photovoltaique | — |
++| `datasheet-fiche-technique` | Datasheet (fiche technique) | — | pcb-personnalise-kicad |
++| `diode-electroluminescente-led` | Diode électroluminescente (LED) | — | clignotant-led-arduino |
++| `energie-renouvelable` | Énergie renouvelable | panneau-photovoltaique | — |
++| `facture-d-electricite` | Facture d'électricité | comprendre-facture-electricite | — |
++| `fournisseur-d-electricite` | Fournisseur d'électricité | comprendre-facture-electricite | — |
++| `kilowattheure` | Kilowattheure | comprendre-facture-electricite | — |
++| `microcontroleur` | Microcontrôleur | arduino-vs-raspberry-vs-esp32 | — |
++| `objet-connecte-iot` | Objet connecté (IoT) | arduino-vs-raspberry-vs-esp32 | station-meteo-connectee |
++| `onduleur` | Onduleur | panneau-photovoltaique | — |
++| `panneau-photovoltaique` | Panneau photovoltaïque | panneau-photovoltaique | — |
++| `prototypage-electronique` | Prototypage électronique | — | pcb-personnalise-kicad |
++| `resistance` | Résistance | — | clignotant-led-arduino |
++| `soudure-electronique` | Soudure électronique | — | pcb-personnalise-kicad |
++| `wi-fi` | Wi-Fi | — | station-meteo-connectee |
++
++Deux remarques de contenu, hors périmètre de ce lot :
++
++- la fiche `panneau-photovoltaique` et l'article `panneau-photovoltaique` portent le même slug
++  (deux collections distinctes, donc deux URLs distinctes : `/wiki/…` et `/blog/…`) ; la fiche
++  affichera « Articles qui en parlent (1) » pointant vers l'article homonyme. C'est correct, mais
++  le titre de l'article (« Comment fonctionne un panneau photovoltaïque, du photon au courant
++  continu ») est ce qui distinguera les deux pour le lecteur ;
++- les fiches les plus structurantes du wiki (tension, intensité, loi d'Ohm…) ne reçoivent **aucun**
++  lien retour, faute d'article qui les cite. C'est un constat de couverture éditoriale, pas un bug.
++
++## 5. Points d'attention pour la relecture humaine
++
++**Risques de build (à confirmer en CI)**
++
++- **`src/lib/backlinks.ts` n'importe rien.** Les types d'entrée sont décrits de façon structurelle
++  (`EntreeArticle`, `EntreeProjet`) au lieu d'importer `CollectionEntry` d'`astro:content` :
++  le module reste exécutable hors d'Astro (c'est ce qui rend le test du §3 possible) et ne dépend
++  pas du module virtuel. Les entrées Astro s'y conforment — propriétés en plus admises, `level`
++  (union de trois littéraux) assignable à `string`, `related: string[]` assignable à
++  `related?: string[]`. À noter : `astro build` ne fait pas de contrôle de types (pas d'`astro check`
++  dans la CI), donc ce point ne peut pas casser le build, seulement l'éditeur.
++- **Deux `getCollection` de plus dans `getStaticPaths`** (`blog`, `diy`). C'est exactement ce que
++  font déjà `blog/[slug].astro` et `projets-diy/[slug].astro` en sens inverse ; aucun risque de
++  cycle (ce sont des lectures de collection, pas des imports croisés de gabarits).
++- **Gardes non numériques** : `articlesLies.length > 0` et `projetsLies.length > 0` sont des
++  booléens explicites, et `{p.duree && …}` porte sur une chaîne (jamais sur un nombre, donc pas
++  de `0` résiduel affiché). Même forme que les blocs de J2-L1.
++- **`liensRetourDe` renvoie un objet neuf** quand la fiche n'est citée par personne : aucune
++  entrée n'est créée dans l'index pour les 174 fiches non citées, et rien n'est partagé par
++  référence entre pages autrement que la liste (non mutée) d'une fiche citée.
++- **`localeCompare(…, "fr")`** est le seul appel dépendant de l'ICU de Node. Il ne sert qu'à
++  ordonner 1 à 2 éléments par bloc aujourd'hui ; même sur un Node sans ICU complet, il renvoie
++  un ordre valide (jamais d'exception). La reconstruction Python du test trie sur `casefold()` :
++  les deux ordres coïncident sur le contenu actuel (aucun titre ne commence par une lettre
++  accentuée) — c'est noté en commentaire dans l'outil pour éviter un faux échec plus tard.
++- Aucune directive `client:`, aucun script, aucune police, aucune image ajoutés.
++
++**Décisions prises seul**
++
++- **Titres des blocs** : « Articles qui en parlent » et « Projets qui l'utilisent » (formulation de
++  la mission) plutôt que « Articles de blog liés » / « Projets DIY liés » (formulation du plan de
++  contenu). Plus explicites sur le sens du lien ; à renommer en un mot si Alexandre préfère.
++- **Variante `.pin-wide` plutôt qu'un nouveau composant** : un titre d'article de 60 caractères ne
++  tient pas dans une puce faite pour un terme de deux mots. `.pin`, `.pins` et `.related-block`
++  restent intactes, la variante n'ajoute que ce qui manquait.
++- **Compteur dans le titre du bloc** (« Articles qui en parlent (1) »), par cohérence avec
++  « Termes liés (N) » de la même page.
++- **Ordre des blocs** : termes liés, puis articles, puis projets, puis sources. Le maillage interne
++  au wiki reste en premier ; les sorties vers le blog et les projets viennent ensuite.
++- **Le garde-fou lève une erreur à la construction de l'index**, donc pour *toutes* les fiches, même
++  si le `related` fautif est celui d'un article. Le message reprend mot pour mot celui des gabarits
++  existants ; en pratique `validate_content.py` attrape déjà le cas en CI avant le build.
++- **`agents/outils/` est un nouveau dossier.** La mission l'autorisait ; l'outil est conservé parce
++  qu'il restera utile à chaque ajout d'article ou de projet. Il peut être ajouté à la CI
++  (une ligne après `validate_content.py`) si l'on veut l'automatiser — non fait, hors périmètre.
++
++## 6. Hors périmètre repéré (à planifier)
++
++- **La CI n'exécute pas `verifie_liens_retour.py`.** Une ligne dans le workflow suffirait ; à
++  décider avec la constante `NB_FICHES_AVEC_LIENS`, qu'il faudrait alors soit retirer, soit tenir
++  à jour à chaque nouvel article.
++- **L'index inverse pourrait servir ailleurs** : compter les fiches « orphelines » (jamais citées)
++  dans `validate_content.py --stats` donnerait une mesure de couverture éditoriale directement
++  exploitable pour ordonner la rédaction du blog (axe 1 de l'audit).
++- **Liens retour entre articles et projets** (un article qui cite un projet, et réciproquement) :
++  aucun champ ne les porte aujourd'hui, ce serait un ajout de schéma.
++- **`reference("wiki")` d'Astro** (action 5.1 de l'audit) reste la solution de fond : elle
++  remplacerait les trois `throw` des gabarits et celui de `backlinks.ts` par une validation de
++  schéma. Non fait ici : ce lot ne devait pas toucher aux collections.
++- **Le blog et les projets ne comptent que 3 entrées chacun.** Tant que c'est le cas, les deux
++  nouveaux blocs restent invisibles sur 88 % des fiches ; leur intérêt croîtra avec la rédaction
++  (action 5.6 de l'audit).
+-- 
+2.43.0
+

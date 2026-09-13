@@ -1,0 +1,68 @@
+From 5c730158a32f3edefab05713fadfc4dca5f31c49 Mon Sep 17 00:00:00 2001
+From: Agent J2-L1 <noreply@anthropic.com>
+Date: Sat, 12 Sep 2026 08:43:33 +0000
+Subject: [PATCH 01/15] =?UTF-8?q?J2-L1:=20ajoute=20les=20libell=C3=A9s=20d?=
+ =?UTF-8?q?e=20niveau=20scolaire=20aux=20helpers?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Table NIVEAU_LABEL (codes Cycle_scolaire_normalise de la matrice v2),
+helper niveauLabel(), libellés des types de source et formatDateFr().
+Exportés pour que les autres pages les réutilisent.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ src/lib/helpers.ts | 39 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 39 insertions(+)
+
+diff --git a/src/lib/helpers.ts b/src/lib/helpers.ts
+index 2b54074..fcd9230 100644
+--- a/src/lib/helpers.ts
++++ b/src/lib/helpers.ts
+@@ -20,3 +20,42 @@ export const LEVEL_LABEL: Record<string, string> = {
+   intermediaire: "Intermédiaire",
+   avance: "Avancé",
+ };
++
++/**
++ * Niveaux scolaires : codes de la colonne `Cycle_scolaire_normalise` de la matrice
++ * curriculaire (champ `niveau.premiereApparition` d'une fiche) -> libellé lisible.
++ * Même liste que `NIVEAUX` dans `scripts/validate_content.py` : garder les deux
++ * synchronisées (cf. AGENTS.md §4).
++ */
++export const NIVEAU_LABEL: Record<string, string> = {
++  C1: "Maternelle",
++  C2: "CP-CE2",
++  C3: "CM1-6e",
++  C4: "Collège (5e-3e)",
++  "2GT": "Seconde",
++  "1G": "Première",
++  TG: "Terminale",
++  "1-TG": "Première et terminale",
++  STI2D: "STI2D",
++  CAP: "CAP",
++  BACPRO: "Bac pro",
++};
++
++/** Libellé d'un code de niveau ; renvoie le code tel quel s'il est inconnu. */
++export function niveauLabel(code: string): string {
++  return NIVEAU_LABEL[code] || code;
++}
++
++/** Types de source admis dans `sources[].type` -> libellé affiché. */
++export const SOURCE_TYPE_LABEL: Record<string, string> = {
++  programme: "Programme officiel",
++  reference: "Référence",
++  norme: "Norme",
++  manuel: "Manuel",
++};
++
++/** "2026-09-11" -> "11/09/2026". Purement textuel : pas de fuseau horaire en jeu. */
++export function formatDateFr(iso: string): string {
++  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
++  return m ? `${m[3]}/${m[2]}/${m[1]}` : iso;
++}
+-- 
+2.43.0
+

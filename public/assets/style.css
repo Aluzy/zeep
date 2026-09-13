@@ -152,6 +152,9 @@ footer.site-footer{
 .stat{font-family:var(--font-mono);}
 .stat .num{font-size:24px;color:var(--accent);font-weight:600;}
 .stat .lbl{font-size:11px;color:var(--text-faint);text-transform:uppercase;letter-spacing:.05em;}
+.stat-link{text-decoration:none;cursor:pointer;}
+.stat-link:hover .num{color:var(--text);}
+.stat-link:hover .lbl{color:var(--accent);}
 
 /* ---------- Wiki index ---------- */
 .wiki-toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:22px;}
