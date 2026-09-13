@@ -3,6 +3,7 @@ title: "Comment un onduleur convertit le continu en alternatif ?"
 domain: "M"
 excerpt: "Batterie ou panneau solaire produisent un courant continu que les appareils du secteur ne peuvent pas utiliser directement : l'onduleur le transforme en courant alternatif compatible avec le réseau."
 related: ["onduleur", "courant-continu", "courant-alternatif", "redresseur", "electronique-de-puissance", "mosfet", "frequence-electrique", "batterie"]
+sources: [{"titre": "HESPUL / photovoltaique.info — Synthèse technique sur les onduleurs photovoltaïques", "url": "https://www.photovoltaique.info/media/filer_public/4f/57/4f57a7bc-1808-4fbd-8e7c-adee8a487795/070801_synthese_onduleur_version_lite_hespul.pdf", "type": "reference"}, {"titre": "energieplus-lesite.be (Bruxelles Environnement) — Rendement d'un onduleur", "url": "https://energieplus-lesite.be/theories/photovoltaique6/rendement-d-un-onduleur/", "type": "reference"}]
 ---
 
 Une installation solaire sur le toit, une batterie de secours dans le garage, ou encore une batterie de véhicule qu'on voudrait utiliser pour alimenter un appareil de la maison : dans ces trois cas, la source d'énergie électrique ne peut pas être branchée directement sur une prise. Il manque un boîtier intermédiaire, l'onduleur, sans lequel rien ne fonctionne. Comprendre ce qu'il fait, et comment il le fait, permet de mieux lire une notice d'installation solaire ou de choisir un onduleur de secours adapté.

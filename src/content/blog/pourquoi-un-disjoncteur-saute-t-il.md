@@ -3,6 +3,7 @@ title: "Pourquoi un disjoncteur saute-t-il ?"
 domain: "E"
 excerpt: "Surcharge, court-circuit ou fuite à la terre : un disjoncteur qui saute ne signale pas toujours le même problème. Voici comment distinguer ces cas au tableau électrique, sans jamais forcer un appareil qui re-saute."
 related: ["disjoncteur", "fusible", "court-circuit", "tableau-electrique", "installation-electrique", "mise-a-la-terre"]
+sources: [{"titre": "Promotelec — Disjoncteur, différentiel, interrupteur différentiel : quelles différences ?", "url": "https://www.promotelec.com/professionnels/fiche/disjoncteur-differentiel-interrupteur-differentiel-quelles-differences/", "type": "reference"}, {"titre": "Hager — La norme NF C 15-100 et le disjoncteur", "url": "https://hager.com/fr/normes/nfc-15-100/disjoncteur", "type": "norme"}]
 ---
 
 Le grille-pain, le radiateur et le sèche-cheveux tournent en même temps, et soudain tout s'éteint : la lumière, la box, le réfrigérateur. Ce moment est familier à presque tout le monde, et le premier réflexe est souvent de se diriger, dans le noir, vers le tableau électrique pour chercher le petit interrupteur qui a basculé. Mais un disjoncteur qui saute ne raconte pas toujours la même histoire. Comprendre ce qui s'est passé permet de savoir si l'incident est anodin ou s'il mérite d'appeler un professionnel.
