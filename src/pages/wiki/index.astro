@@ -27,7 +27,7 @@ const domainesUtilises = Object.entries(TAXONOMY).filter(([code]) => (countByDom
   <div class="domain-filters">
     <button type="button" data-domain="all" class="active">Tous</button>
     {domainesUtilises.map(([code, name]) => (
-      <button type="button" data-domain={code} title={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`}>{code}</button>
+      <button type="button" data-domain={code} class="domain-filter-btn" title={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`} data-tooltip={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`}>{code}</button>
     ))}
   </div>
   <div class="term-grid" id="term-grid">
