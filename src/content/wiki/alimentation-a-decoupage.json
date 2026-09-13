@@ -11,12 +11,20 @@
   "definition": "Alimentation électronique qui régule la tension en commutant rapidement un transistor, comme un MOSFET, offrant un meilleur rendement qu'un régulateur de tension linéaire.",
   "related": [
     "alimentation-electronique",
+    "diode-schottky",
     "electronique",
     "frequence-de-commutation",
+    "hacheur",
+    "harmoniques",
     "mosfet",
     "regulateur-de-tension",
     "transistor"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "SMPS",
+    "alimentation a decoupage",
+    "decoupage"
+  ]
 }

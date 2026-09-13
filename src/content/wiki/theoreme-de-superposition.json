@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "superposition",
+    "theoreme de superposition"
+  ],
+  "term": "Théorème de superposition",
+  "domains": [
+    "A",
+    "K"
+  ],
+  "definition": "Méthode d'analyse d'un circuit linéaire comportant plusieurs sources : on calcule l'effet de chaque source prise seule, les autres étant neutralisées, puis on additionne les résultats obtenus.",
+  "versionSimple": "Quand plusieurs piles alimentent un même circuit, on peut étudier leur effet une par une, puis additionner. Le résultat est le même que si tout fonctionnait ensemble.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "theoreme-de-superposition",
+  "related": [
+    "circuit-electrique",
+    "generateur-electrique",
+    "loi-des-mailles",
+    "loi-des-noeuds"
+  ]
+}

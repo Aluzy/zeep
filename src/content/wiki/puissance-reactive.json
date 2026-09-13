@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "Q",
+    "VAR",
+    "puissance reactive",
+    "volt ampere reactif"
+  ],
+  "term": "Puissance réactive",
+  "domains": [
+    "A",
+    "C"
+  ],
+  "definition": "Part de la puissance qui fait des allers-retours entre la source et les bobines ou condensateurs de l'installation, sans produire de travail. Elle s'exprime en vars et charge inutilement le réseau.",
+  "versionSimple": "Une partie de l'électricité fait juste des allers-retours sans rien produire. Elle encombre quand même les fils et le réseau.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "puissance-reactive",
+  "related": [
+    "bobine-inductance",
+    "condensateur",
+    "facteur-de-puissance",
+    "puissance-active",
+    "puissance-apparente"
+  ]
+}

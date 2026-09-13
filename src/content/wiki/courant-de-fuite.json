@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "courant de fuite",
+    "fuite de courant"
+  ],
+  "term": "Courant de fuite",
+  "domains": [
+    "E",
+    "U"
+  ],
+  "definition": "Courant qui quitte le circuit prévu pour rejoindre la terre à travers un défaut d'isolement ou les filtres d'un appareil. Au-delà d'un seuil, il déclenche le dispositif différentiel.",
+  "versionSimple": "Une petite partie du courant peut s'échapper par un fil abîmé. Un appareil de protection le repère et coupe tout.",
+  "sources": [
+    {
+      "titre": "INRS — prévention des risques électriques",
+      "url": "https://www.inrs.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "courant-de-fuite",
+  "related": [
+    "defaut-d-isolement",
+    "disjoncteur-differentiel",
+    "isolant-electrique",
+    "mise-a-la-terre"
+  ]
+}

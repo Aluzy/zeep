@@ -1,0 +1,44 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "C",
+    "coulomb"
+  ],
+  "term": "Coulomb",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de mesure de la charge électrique, de symbole C. Un coulomb correspond à la charge transportée par un courant de un ampère pendant une seconde. Il sert à quantifier ce qui circule dans un conducteur ou s'accumule dans un condensateur.",
+  "versionSimple": "Le coulomb compte la quantité d'électricité qui passe dans un fil. Plus le courant est fort et plus il dure longtemps, plus il y a de coulombs.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "coulomb",
+  "related": [
+    "ampere",
+    "charge-electrique",
+    "courant-electrique",
+    "electron",
+    "farad",
+    "loi-de-coulomb"
+  ]
+}

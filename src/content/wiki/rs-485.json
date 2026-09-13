@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "RS-232",
+    "RS-485",
+    "RS232",
+    "RS485",
+    "liaison serie differentielle"
+  ],
+  "term": "RS-485",
+  "domains": [
+    "F"
+  ],
+  "definition": "Norme de liaison série différentielle permettant de communiquer sur plusieurs centaines de mètres malgré les perturbations. Elle sert de support physique à de nombreux réseaux industriels.",
+  "versionSimple": "Cette liaison permet à des appareils éloignés de se parler par un simple câble, même dans un endroit bruyant électriquement.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "rs-485",
+  "related": [
+    "automate-programmable",
+    "interface-serie-uart",
+    "interference-electromagnetique",
+    "modbus",
+    "protocole-de-communication"
+  ]
+}

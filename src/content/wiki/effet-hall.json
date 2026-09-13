@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "capteur a effet hall",
+    "effet hall"
+  ],
+  "term": "Effet Hall",
+  "domains": [
+    "N",
+    "S"
+  ],
+  "definition": "Apparition d'une tension transversale dans un conducteur parcouru par un courant et placé dans un champ magnétique. Le phénomène sert à mesurer sans contact un courant, une position ou une vitesse de rotation.",
+  "versionSimple": "Un aimant approché d'une plaque parcourue par du courant y fait naître une petite tension. On s'en sert pour détecter sans toucher.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "effet-hall",
+  "related": [
+    "capteur",
+    "champ-magnetique",
+    "detecteur",
+    "pince-amperemetrique",
+    "semi-conducteur",
+    "tesla"
+  ]
+}

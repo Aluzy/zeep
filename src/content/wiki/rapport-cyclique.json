@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "duty cycle",
+    "rapport cyclique"
+  ],
+  "term": "Rapport cyclique",
+  "domains": [
+    "M",
+    "O"
+  ],
+  "definition": "Proportion du temps pendant laquelle un signal rectangulaire reste à l'état haut sur une période complète. Il règle la puissance moyenne envoyée à une charge dans une commande par modulation de largeur d'impulsion.",
+  "versionSimple": "C'est la part du temps où le signal est allumé plutôt qu'éteint. En la changeant, on règle la vitesse d'un moteur ou la lumière d'une LED.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "rapport-cyclique",
+  "related": [
+    "frequence-de-commutation",
+    "hacheur",
+    "modulation-de-largeur-d-impulsion-pwm",
+    "signal-numerique"
+  ]
+}

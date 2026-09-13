@@ -10,7 +10,9 @@
   "merged": false,
   "definition": "Branche de la physique qui étudie les charges électriques au repos et le champ électrique qu'elles produisent.",
   "related": [
-    "champ-electrique"
+    "champ-electrique",
+    "decharge-electrostatique",
+    "loi-de-coulomb"
   ],
   "pillar": false,
   "illustration": null,

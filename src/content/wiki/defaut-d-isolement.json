@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "defaut d'isolement",
+    "perte d'isolement"
+  ],
+  "term": "Défaut d'isolement",
+  "domains": [
+    "E",
+    "U"
+  ],
+  "definition": "Dégradation de l'isolant séparant un conducteur actif des masses métalliques ou de la terre. Il met les carcasses sous tension et constitue la première cause d'électrisation dans les installations vieillissantes.",
+  "versionSimple": "Quand la gaine d'un fil est abîmée, l'électricité peut atteindre la carcasse d'un appareil et devenir dangereuse au toucher.",
+  "sources": [
+    {
+      "titre": "INRS — prévention des risques électriques",
+      "url": "https://www.inrs.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "defaut-d-isolement",
+  "related": [
+    "controleur-d-isolement",
+    "courant-de-fuite",
+    "disjoncteur-differentiel",
+    "isolant-electrique",
+    "mise-a-la-terre"
+  ]
+}

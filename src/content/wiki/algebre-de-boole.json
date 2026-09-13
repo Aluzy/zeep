@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "algebre de boole",
+    "booleen",
+    "logique booleenne"
+  ],
+  "term": "Algèbre de Boole",
+  "domains": [
+    "L"
+  ],
+  "definition": "Système de calcul sur des variables ne prenant que deux valeurs, vrai ou faux. Il fournit les règles qui permettent de simplifier un circuit logique avant de le réaliser avec des portes.",
+  "versionSimple": "C'est une façon de calculer avec seulement deux réponses possibles : oui ou non. Les ordinateurs raisonnent uniquement comme cela.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "algebre-de-boole",
+  "related": [
+    "bit",
+    "circuit-logique",
+    "porte-logique",
+    "porte-ou-exclusif",
+    "signal-numerique",
+    "table-de-verite"
+  ]
+}

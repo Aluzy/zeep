@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "bouton poussoir",
+    "poussoir",
+    "push button"
+  ],
+  "term": "Bouton poussoir",
+  "domains": [
+    "K",
+    "E"
+  ],
+  "definition": "Organe de commande qui n'établit le contact que pendant l'appui. Associé à une résistance de rappel, il constitue l'entrée logique la plus simple d'un montage à microcontrôleur.",
+  "versionSimple": "Le contact se fait seulement tant qu'on appuie. Dès qu'on lâche, le circuit se rouvre tout seul.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "bouton-poussoir",
+  "related": [
+    "carte-arduino",
+    "circuit-logique",
+    "gpio",
+    "interrupteur",
+    "resistance"
+  ]
+}

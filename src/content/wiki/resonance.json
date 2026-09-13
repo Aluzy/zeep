@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "frequence de resonance",
+    "resonance"
+  ],
+  "term": "Résonance",
+  "domains": [
+    "A",
+    "K"
+  ],
+  "definition": "Comportement d'un circuit qui répond avec une amplitude maximale à une fréquence particulière. Exploitée dans les filtres et les antennes, elle peut aussi provoquer des surtensions destructrices si elle est subie.",
+  "versionSimple": "À une certaine fréquence, un circuit réagit beaucoup plus fort qu'aux autres. On s'en sert pour choisir une station de radio.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "resonance",
+  "related": [
+    "antenne",
+    "circuit-rlc",
+    "filtre-passe-bande",
+    "frequence-electrique",
+    "quartz-resonateur"
+  ]
+}

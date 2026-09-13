@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "bode",
+    "diagramme de bode"
+  ],
+  "term": "Diagramme de Bode",
+  "domains": [
+    "K"
+  ],
+  "definition": "Représentation graphique du comportement d'un filtre ou d'un amplificateur en fonction de la fréquence, avec le gain en décibels et le déphasage. Il permet de lire d'un coup d'œil la fréquence de coupure.",
+  "versionSimple": "C'est un graphique qui montre comment un montage réagit aux fréquences, des plus basses aux plus hautes.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "diagramme-de-bode",
+  "related": [
+    "decibel",
+    "dephasage",
+    "filtre-electronique",
+    "frequence-de-coupure",
+    "gain-electronique",
+    "simulation-spice"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "H2",
+    "hydrogene",
+    "hydrogene vert"
+  ],
+  "term": "Hydrogène",
+  "domains": [
+    "D",
+    "B"
+  ],
+  "definition": "Gaz produit par électrolyse de l'eau à partir d'électricité, stockable puis reconverti en courant dans une pile à combustible. Il offre un stockage de longue durée, au prix d'un rendement global modeste.",
+  "versionSimple": "Avec de l'électricité, on peut fabriquer un gaz qui se stocke longtemps et qui redonnera de l'électricité plus tard.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "hydrogene",
+  "related": [
+    "electrolyse",
+    "energie-renouvelable",
+    "pile-a-combustible",
+    "stockage-d-energie"
+  ]
+}

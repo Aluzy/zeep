@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "BLDC",
+    "moteur brushless",
+    "moteur sans balais"
+  ],
+  "term": "Moteur brushless",
+  "domains": [
+    "P",
+    "G"
+  ],
+  "definition": "Moteur à aimants permanents dont la commutation est assurée électroniquement plutôt que par des balais. Silencieux et endurant, il équipe drones, ventilateurs et outillage portatif.",
+  "versionSimple": "Ce moteur n'a pas de pièces frottantes : c'est l'électronique qui commande. Il dure plus longtemps et fait moins de bruit.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "moteur-brushless",
+  "related": [
+    "drone",
+    "electronique-de-puissance",
+    "moteur-a-courant-continu",
+    "moteur-synchrone",
+    "robotique",
+    "ventilateur-de-refroidissement"
+  ]
+}

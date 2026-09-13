@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "VE",
+    "vehicule electrique",
+    "voiture electrique"
+  ],
+  "term": "Véhicule électrique",
+  "domains": [
+    "G"
+  ],
+  "definition": "Véhicule propulsé par un moteur électrique alimenté par une batterie de traction rechargeable. Il n'émet aucun polluant à l'usage et récupère une partie de l'énergie lors des freinages.",
+  "versionSimple": "Cette voiture avance grâce à un moteur électrique et à une grosse batterie que l'on recharge sur une borne.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "vehicule-electrique",
+  "related": [
+    "batterie-de-traction",
+    "batterie-lithium-ion",
+    "borne-de-recharge",
+    "bus-can",
+    "freinage-regeneratif",
+    "moteur-electrique",
+    "moteur-synchrone",
+    "pile-a-combustible"
+  ]
+}

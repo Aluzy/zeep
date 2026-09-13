@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "IK",
+    "IP",
+    "IP44",
+    "indice de protection"
+  ],
+  "term": "Indice de protection IP",
+  "domains": [
+    "E",
+    "U"
+  ],
+  "definition": "Code normalisé à deux chiffres indiquant la résistance d'un matériel à la pénétration des corps solides et de l'eau. Il conditionne le choix des équipements en salle de bains et en extérieur.",
+  "versionSimple": "Ce code sur un appareil dit s'il craint la poussière et l'eau. Il faut le vérifier avant d'installer quelque chose dehors.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    },
+    {
+      "titre": "AFNOR — normes de l'installation électrique",
+      "url": "https://www.afnor.org/",
+      "type": "norme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "indice-de-protection-ip",
+  "related": [
+    "boitier-electronique",
+    "installation-electrique",
+    "luminaire",
+    "norme-electrique-nf-c-15-100"
+  ]
+}

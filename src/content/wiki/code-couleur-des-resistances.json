@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "anneaux de couleur",
+    "code couleur des resistances",
+    "code des couleurs"
+  ],
+  "term": "Code couleur des résistances",
+  "domains": [
+    "V",
+    "K"
+  ],
+  "definition": "Système d'anneaux colorés imprimés sur une résistance qui code sa valeur et sa tolérance. Quatre ou cinq anneaux suffisent à lire la valeur sans appareil de mesure.",
+  "versionSimple": "Les anneaux de couleur sur une résistance donnent sa valeur. Il suffit d'apprendre à les lire dans le bon sens.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "code-couleur-des-resistances",
+  "related": [
+    "composant-electronique",
+    "multimetre",
+    "ohm",
+    "prototypage-electronique",
+    "resistance"
+  ]
+}

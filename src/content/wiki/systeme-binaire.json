@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "base 2",
+    "binaire",
+    "systeme binaire"
+  ],
+  "term": "Système binaire",
+  "domains": [
+    "L"
+  ],
+  "definition": "Numération en base deux n'utilisant que les chiffres zéro et un. C'est la seule représentation directement manipulable par les circuits logiques, dont les composants n'ont que deux états stables.",
+  "versionSimple": "Au lieu de compter avec dix chiffres, les machines comptent avec deux seulement : zéro et un.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "systeme-binaire",
+  "related": [
+    "bit",
+    "circuit-numerique",
+    "compteur-numerique",
+    "octet",
+    "porte-ou-exclusif",
+    "signal-numerique",
+    "systeme-hexadecimal"
+  ]
+}

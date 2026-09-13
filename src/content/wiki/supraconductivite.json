@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "supraconducteur",
+    "supraconductivite"
+  ],
+  "term": "Supraconductivité",
+  "domains": [
+    "N",
+    "A"
+  ],
+  "definition": "État de certains matériaux refroidis sous une température critique, dans lequel la résistance électrique disparaît totalement. Il permet des électroaimants très puissants, au prix d'une réfrigération coûteuse.",
+  "versionSimple": "Refroidis très fort, certains matériaux laissent passer le courant sans aucune perte. On s'en sert pour faire des aimants très puissants.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "supraconductivite",
+  "related": [
+    "champ-magnetique",
+    "conducteur-electrique",
+    "resistance-electrique",
+    "resistivite"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "moteur a aimants permanents",
+    "moteur synchrone"
+  ],
+  "term": "Moteur synchrone",
+  "domains": [
+    "F",
+    "G"
+  ],
+  "definition": "Moteur dont le rotor tourne exactement à la vitesse du champ magnétique du stator. Ses versions à aimants permanents offrent un rendement élevé et équipent les véhicules électriques.",
+  "versionSimple": "Ce moteur tourne exactement au rythme du courant qui l'alimente. Il est très efficace, notamment dans les voitures électriques.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "moteur-synchrone",
+  "related": [
+    "convertisseur-de-frequence",
+    "moteur-asynchrone",
+    "moteur-brushless",
+    "moteur-electrique",
+    "terres-rares",
+    "vehicule-electrique"
+  ]
+}

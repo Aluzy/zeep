@@ -11,8 +11,13 @@
   "definition": "Circuit intégré reprogrammable dont la logique interne, faite de portes logiques, peut être reconfigurée pour réaliser différents circuits numériques.",
   "related": [
     "asic",
-    "circuit-integre"
+    "circuit-integre",
+    "machine-a-etats"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "FPGA",
+    "circuit logique programmable"
+  ]
 }

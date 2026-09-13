@@ -13,8 +13,12 @@
     "caracteristique-tension-courant",
     "composant-electronique",
     "diode-electroluminescente-led",
+    "diode-schottky",
+    "diode-zener",
     "electronique",
+    "jonction-pn",
     "photodiode",
+    "pont-de-diodes",
     "redresseur",
     "semi-conducteur",
     "tension-de-seuil"

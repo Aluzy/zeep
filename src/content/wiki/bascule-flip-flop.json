@@ -11,8 +11,11 @@
   "definition": "Circuit logique élémentaire capable de mémoriser un bit d'information, utilisé pour construire la mémoire vive et les compteurs numériques.",
   "related": [
     "circuit-logique",
+    "compteur-numerique",
     "frequence-de-commutation",
-    "memoire-vive-ram"
+    "memoire-vive-ram",
+    "registre-a-decalage",
+    "signal-d-horloge"
   ],
   "pillar": false,
   "illustration": null

@@ -11,10 +11,13 @@
   "definition": "Circuit qui transforme un signal analogique en signal numérique exploitable par un processeur ou un microcontrôleur.",
   "related": [
     "convertisseur-numerique-analogique-cna",
+    "echantillonnage",
     "microcontroleur",
     "processeur-cpu",
+    "quantification",
     "signal-analogique",
-    "signal-numerique"
+    "signal-numerique",
+    "theoreme-de-shannon"
   ],
   "pillar": false,
   "illustration": null,
@@ -31,5 +34,10 @@
       "M042",
       "M058"
     ]
-  }
+  },
+  "synonymes": [
+    "ADC",
+    "CAN",
+    "convertisseur analogique numerique"
+  ]
 }

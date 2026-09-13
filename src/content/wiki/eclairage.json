@@ -10,9 +10,16 @@
   "merged": false,
   "definition": "Ensemble des dispositifs, comme les luminaires et les ampoules LED, qui utilisent l'électricité pour produire de la lumière.",
   "related": [
+    "detecteur-de-presence",
     "domotique",
     "electricite",
-    "luminaire"
+    "gradateur",
+    "histoire-de-l-electricite",
+    "lumen",
+    "luminaire",
+    "lux",
+    "photoresistance",
+    "tres-basse-tension-de-securite"
   ],
   "pillar": true,
   "illustration": null

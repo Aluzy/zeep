@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "CAN",
+    "bus CAN",
+    "controller area network"
+  ],
+  "term": "Bus CAN",
+  "domains": [
+    "F",
+    "G"
+  ],
+  "definition": "Bus de communication série robuste conçu pour l'automobile, où plusieurs calculateurs échangent des messages prioritaires sur une paire de fils. Il est aussi utilisé dans les machines industrielles.",
+  "versionSimple": "Dans une voiture, tous les calculateurs se parlent sur les deux mêmes fils grâce à ce système de messages.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "bus-can",
+  "related": [
+    "automate-programmable",
+    "bus-de-donnees",
+    "protocole-de-communication",
+    "vehicule-electrique"
+  ]
+}

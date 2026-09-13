@@ -10,15 +10,22 @@
   "merged": false,
   "definition": "Signal électrique codé sous forme d'états discrets, généralement binaires, traité par un circuit numérique ou un microcontrôleur.",
   "related": [
+    "algebre-de-boole",
+    "bit",
     "chaine-d-information",
     "circuit-numerique",
     "convertisseur-analogique-numerique-can",
     "convertisseur-numerique-analogique-cna",
     "detecteur",
+    "echantillonnage",
+    "gpio",
     "microcontroleur",
     "porte-logique",
+    "quantification",
+    "rapport-cyclique",
     "servomoteur",
-    "signal-analogique"
+    "signal-analogique",
+    "systeme-binaire"
   ],
   "pillar": false,
   "illustration": null,

@@ -1,0 +1,44 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "H",
+    "henry",
+    "microhenry",
+    "millihenry"
+  ],
+  "term": "Henry",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de mesure de l'inductance, de symbole H. Une bobine de un henry produit une tension de un volt à ses bornes quand le courant qui la traverse varie de un ampère par seconde. Les bobines courantes se mesurent en millihenrys.",
+  "versionSimple": "Le henry sert à mesurer la force avec laquelle une bobine s'oppose aux changements du courant. Plus la valeur est grande, plus la bobine freine ces changements.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "henry",
+  "related": [
+    "bobine-inductance",
+    "impedance",
+    "induction-electromagnetique",
+    "tension-electrique"
+  ]
+}

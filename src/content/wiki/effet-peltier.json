@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "effet peltier",
+    "effet seebeck",
+    "module peltier",
+    "thermoelectricite"
+  ],
+  "term": "Effet Peltier",
+  "domains": [
+    "N"
+  ],
+  "definition": "Phénomène par lequel le passage d'un courant à travers la jonction de deux matériaux déplace de la chaleur d'une face vers l'autre. Il permet de refroidir électriquement de petits volumes.",
+  "versionSimple": "En faisant passer du courant dans un module spécial, une face devient froide et l'autre chaude. Cela sert à refroidir sans ventilateur.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "effet-peltier",
+  "related": [
+    "capteur-de-temperature",
+    "dissipateur-thermique",
+    "semi-conducteur",
+    "ventilateur-de-refroidissement"
+  ]
+}

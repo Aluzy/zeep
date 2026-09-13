@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "energie electrique"
+  ],
+  "term": "Énergie électrique",
+  "domains": [
+    "A"
+  ],
+  "definition": "Grandeur qui mesure le travail fourni par un système électrique pendant une durée donnée. Elle est le produit de la puissance par le temps, se compte en joules ou en kilowattheures, et constitue ce qui est facturé au consommateur.",
+  "versionSimple": "L'énergie électrique, c'est la puissance d'un appareil multipliée par le temps où il fonctionne. C'est elle qu'on paie sur la facture d'électricité.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "energie-electrique",
+  "related": [
+    "consommation-electrique",
+    "facture-d-electricite",
+    "joule",
+    "kilowattheure",
+    "puissance-electrique"
+  ]
+}

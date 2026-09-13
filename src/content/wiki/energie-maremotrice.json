@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "energie des mers",
+    "energie maremotrice",
+    "houlomotrice",
+    "hydrolienne"
+  ],
+  "term": "Énergie marémotrice",
+  "domains": [
+    "B"
+  ],
+  "definition": "Production d'électricité à partir du mouvement des marées ou des courants marins, au moyen d'un barrage d'estuaire ou d'hydroliennes immergées. Elle a l'avantage d'être parfaitement prévisible.",
+  "versionSimple": "La mer monte et descend tous les jours. On peut utiliser ce mouvement très régulier pour faire tourner des turbines.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "energie-maremotrice",
+  "related": [
+    "centrale-hydraulique",
+    "energie-renouvelable",
+    "production-d-electricite",
+    "turbine"
+  ]
+}

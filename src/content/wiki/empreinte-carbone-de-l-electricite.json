@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "contenu carbone",
+    "empreinte carbone de l'electricite",
+    "gCO2 par kWh"
+  ],
+  "term": "Empreinte carbone de l'électricité",
+  "domains": [
+    "W",
+    "J"
+  ],
+  "definition": "Quantité de gaz à effet de serre émise pour produire un kilowattheure, exprimée en grammes de dioxyde de carbone équivalent. Elle varie fortement selon le mix et l'heure de la journée.",
+  "versionSimple": "Produire de l'électricité rejette plus ou moins de gaz selon la source utilisée. On mesure cela pour chaque kilowattheure.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "RTE — le réseau de transport d'électricité",
+      "url": "https://www.rte-france.com/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "empreinte-carbone-de-l-electricite",
+  "related": [
+    "eco-conception",
+    "energie-fossile",
+    "energie-renouvelable",
+    "kilowattheure",
+    "mix-energetique"
+  ]
+}

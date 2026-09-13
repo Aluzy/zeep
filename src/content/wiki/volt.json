@@ -14,5 +14,11 @@
     "voltage"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "V",
+    "kilovolt",
+    "millivolt",
+    "volt"
+  ]
 }

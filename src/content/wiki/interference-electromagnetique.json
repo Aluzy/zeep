@@ -12,7 +12,8 @@
   "related": [
     "bruit-electronique",
     "compatibilite-electromagnetique-cem",
-    "electronique"
+    "electronique",
+    "rs-485"
   ],
   "pillar": false,
   "illustration": null

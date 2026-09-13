@@ -10,10 +10,13 @@
   "merged": false,
   "definition": "Filtre électronique qui ne laisse passer qu'une plage de fréquences comprise entre un filtre passe-bas et un filtre passe-haut.",
   "related": [
+    "bande-passante",
+    "circuit-rlc",
     "electronique",
     "filtre-electronique",
     "filtre-passe-bas",
-    "filtre-passe-haut"
+    "filtre-passe-haut",
+    "resonance"
   ],
   "pillar": false,
   "illustration": null

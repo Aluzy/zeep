@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "reactance",
+    "reactance capacitive",
+    "reactance inductive"
+  ],
+  "term": "Réactance",
+  "domains": [
+    "A",
+    "K"
+  ],
+  "definition": "Opposition au passage du courant alternatif due à une bobine ou à un condensateur, exprimée en ohms. Contrairement à la résistance, elle dépend de la fréquence et ne dissipe pas d'énergie.",
+  "versionSimple": "Les bobines et les condensateurs freinent le courant alternatif sans le transformer en chaleur. Ce freinage dépend de la vitesse du signal.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "reactance",
+  "related": [
+    "bobine-inductance",
+    "condensateur",
+    "frequence-electrique",
+    "impedance",
+    "ohm"
+  ]
+}

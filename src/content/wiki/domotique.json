@@ -12,10 +12,17 @@
   "definition": "<strong>Vu côté électricité :</strong> Ensemble des technologies qui automatisent et pilotent à distance les équipements électriques d'un logement, comme l'éclairage.<br><br><strong>Vu côté électronique :</strong> Ensemble des technologies d'électronique embarquée qui automatisent et pilotent à distance les équipements d'un logement, souvent via un objet connecté.",
   "related": [
     "detecteur",
+    "detecteur-de-presence",
     "eclairage",
     "electronique",
     "electronique-embarquee",
-    "objet-connecte-iot"
+    "mqtt",
+    "objet-connecte-iot",
+    "reseau-maille",
+    "scenario-domotique",
+    "thermostat-connecte",
+    "volet-roulant-motorise",
+    "zigbee"
   ],
   "pillar": true,
   "illustration": null

@@ -12,8 +12,17 @@
   "related": [
     "bluetooth",
     "domotique",
+    "esp32",
+    "ethernet",
+    "lora",
     "microcontroleur",
-    "wi-fi"
+    "mqtt",
+    "reseau-maille",
+    "rfid",
+    "scenario-domotique",
+    "thermostat-connecte",
+    "wi-fi",
+    "zigbee"
   ],
   "pillar": true,
   "illustration": null,
@@ -31,5 +40,10 @@
       "M035",
       "M043"
     ]
-  }
+  },
+  "synonymes": [
+    "IoT",
+    "internet des objets",
+    "objet connecte"
+  ]
 }

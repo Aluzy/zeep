@@ -11,9 +11,17 @@
   "definition": "Mémoire électronique non volatile qui conserve durablement des données ou un programme, même hors tension, à la différence de la mémoire vive.",
   "related": [
     "electronique",
+    "firmware",
     "memoire-vive-ram",
-    "microcontroleur"
+    "microcontroleur",
+    "octet"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "EEPROM",
+    "ROM",
+    "flash",
+    "memoire morte"
+  ]
 }

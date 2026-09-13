@@ -11,6 +11,9 @@
   "definition": "Actionneur qui positionne précisément un axe selon un signal numérique de commande, très utilisé en robotique.",
   "related": [
     "actionneur",
+    "asservissement",
+    "bras-robotise",
+    "codeur-rotatif",
     "robotique",
     "signal-numerique"
   ],
@@ -27,5 +30,9 @@
     "matriceIds": [
       "M016"
     ]
-  }
+  },
+  "synonymes": [
+    "servo",
+    "servomoteur"
+  ]
 }

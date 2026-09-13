@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "coupure organisee",
+    "delestage",
+    "effacement"
+  ],
+  "term": "Délestage",
+  "domains": [
+    "C",
+    "J"
+  ],
+  "definition": "Coupure volontaire et temporaire de consommateurs pour rétablir l'équilibre entre production et consommation. Il évite l'effondrement général du réseau lorsque la demande dépasse les capacités disponibles.",
+  "versionSimple": "Quand il n'y a pas assez d'électricité pour tout le monde, on coupe volontairement certains secteurs peu de temps.",
+  "sources": [
+    {
+      "titre": "RTE — le réseau de transport d'électricité",
+      "url": "https://www.rte-france.com/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "delestage",
+  "related": [
+    "consommation-electrique",
+    "frequence-electrique",
+    "heures-creuses",
+    "reseau-de-transport",
+    "reseau-electrique"
+  ]
+}

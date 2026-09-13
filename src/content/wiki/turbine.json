@@ -12,10 +12,14 @@
   "related": [
     "alternateur",
     "barrage-hydroelectrique",
+    "biomasse",
     "centrale-hydraulique",
     "centrale-nucleaire",
     "centrale-thermique",
-    "electricite"
+    "electricite",
+    "energie-maremotrice",
+    "geothermie",
+    "station-de-transfert-d-energie-par-pompage"
   ],
   "pillar": true,
   "illustration": null

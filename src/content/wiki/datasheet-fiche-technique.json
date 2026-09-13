@@ -11,8 +11,14 @@
   "definition": "Document fourni par le fabricant d'un composant électronique décrivant ses caractéristiques électriques, son brochage et ses conditions d'utilisation.",
   "related": [
     "composant-electronique",
-    "electronique"
+    "electronique",
+    "simulation-spice"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "datasheet",
+    "fiche technique",
+    "notice technique"
+  ]
 }

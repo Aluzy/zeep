@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "equivalent norton",
+    "generateur de norton",
+    "theoreme de norton"
+  ],
+  "term": "Théorème de Norton",
+  "domains": [
+    "A",
+    "K"
+  ],
+  "definition": "Équivalent du théorème de Thévenin exprimé en source de courant : tout réseau linéaire vu de deux bornes se ramène à une source de courant en parallèle avec une résistance. Les deux modèles sont interchangeables.",
+  "versionSimple": "Comme pour Thévenin, un circuit compliqué se remplace par un modèle très simple, mais décrit cette fois avec un courant plutôt qu'avec une tension.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "theoreme-de-norton",
+  "related": [
+    "circuit-electrique",
+    "courant-electrique",
+    "resistance-electrique",
+    "theoreme-de-thevenin"
+  ]
+}

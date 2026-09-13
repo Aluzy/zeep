@@ -15,5 +15,9 @@
     "microcontroleur"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "ASIC",
+    "circuit integre specifique"
+  ]
 }

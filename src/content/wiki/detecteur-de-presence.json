@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "PIR",
+    "detecteur de mouvement",
+    "detecteur de presence",
+    "infrarouge passif"
+  ],
+  "term": "Détecteur de présence",
+  "domains": [
+    "H",
+    "S"
+  ],
+  "definition": "Capteur qui repère le rayonnement infrarouge d'un corps en mouvement pour commander un éclairage ou une alarme. Sa temporisation et sa sensibilité se règlent selon le local surveillé.",
+  "versionSimple": "Ce capteur remarque quand quelqu'un bouge dans la pièce et allume la lumière automatiquement.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "detecteur-de-presence",
+  "related": [
+    "capteur",
+    "detecteur",
+    "domotique",
+    "eclairage",
+    "economie-d-energie",
+    "scenario-domotique"
+  ]
+}

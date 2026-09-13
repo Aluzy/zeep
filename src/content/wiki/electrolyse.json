@@ -1,0 +1,37 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "electrolyse",
+    "electrolyseur"
+  ],
+  "term": "Électrolyse",
+  "domains": [
+    "A"
+  ],
+  "definition": "Transformation chimique provoquée par le passage d'un courant continu dans une solution conductrice. Elle sert à produire de l'hydrogène, à raffiner des métaux et à déposer des revêtements sur des pièces.",
+  "versionSimple": "En faisant passer du courant dans de l'eau salée, on provoque une réaction chimique. C'est ainsi qu'on fabrique certains gaz ou qu'on recouvre un objet de métal.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "electrolyse",
+  "related": [
+    "conducteur-electrique",
+    "courant-continu",
+    "hydrogene",
+    "ion"
+  ]
+}

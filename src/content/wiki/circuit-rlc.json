@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "RLC",
+    "circuit RLC"
+  ],
+  "term": "Circuit RLC",
+  "domains": [
+    "K"
+  ],
+  "definition": "Association d'une résistance, d'une bobine et d'un condensateur. Elle présente une fréquence de résonance à laquelle la réponse devient maximale, principe utilisé dans les filtres sélectifs et les récepteurs radio.",
+  "versionSimple": "Ce montage réagit très fort à une fréquence précise et ignore les autres. C'est ainsi qu'une radio choisit une station.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "circuit-rlc",
+  "related": [
+    "circuit-rc",
+    "circuit-rl",
+    "filtre-passe-bande",
+    "recepteur-radiofrequence",
+    "resonance"
+  ]
+}

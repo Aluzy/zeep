@@ -12,11 +12,13 @@
   "related": [
     "amplificateur-operationnel",
     "asic",
+    "decharge-electrostatique",
     "electronique",
     "fpga",
     "microcontroleur",
     "microprocesseur",
-    "silicium"
+    "silicium",
+    "wafer"
   ],
   "pillar": false,
   "illustration": null

@@ -10,11 +10,21 @@
   "merged": false,
   "definition": "Matériau, comme le silicium, dont la conductivité électrique intermédiaire permet de fabriquer des diodes, des transistors et des circuits intégrés.",
   "related": [
+    "bande-interdite",
     "diode",
+    "diode-schottky",
+    "diode-zener",
+    "dopage",
+    "effet-hall",
+    "effet-peltier",
+    "effet-photoelectrique",
+    "jonction-pn",
     "silicium",
     "thyristor",
     "transistor",
-    "triac"
+    "triac",
+    "trou-electronique",
+    "wafer"
   ],
   "pillar": false,
   "illustration": null

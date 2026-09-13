@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "moteur CC",
+    "moteur DC",
+    "moteur a courant continu"
+  ],
+  "term": "Moteur à courant continu",
+  "domains": [
+    "F",
+    "P"
+  ],
+  "definition": "Moteur alimenté en continu dont la vitesse se règle simplement en agissant sur la tension. Son collecteur à balais s'use, ce qui limite sa durée de vie mais en fait un moteur très facile à piloter.",
+  "versionSimple": "C'est le moteur des jouets et des petits robots : il tourne plus ou moins vite selon la tension qu'on lui donne.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "moteur-a-courant-continu",
+  "related": [
+    "hacheur",
+    "modulation-de-largeur-d-impulsion-pwm",
+    "moteur-brushless",
+    "moteur-electrique",
+    "robotique"
+  ]
+}

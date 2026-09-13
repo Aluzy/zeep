@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "diode schottky",
+    "schottky"
+  ],
+  "term": "Diode Schottky",
+  "domains": [
+    "K",
+    "M"
+  ],
+  "definition": "Diode à faible tension de seuil et à commutation très rapide, construite sur une jonction métal–semi-conducteur. Elle réduit les pertes dans les alimentations à découpage et les redresseurs basse tension.",
+  "versionSimple": "C'est une diode qui réagit très vite et gaspille peu d'énergie. On la trouve dans les chargeurs et les alimentations modernes.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "diode-schottky",
+  "related": [
+    "alimentation-a-decoupage",
+    "diode",
+    "redresseur",
+    "semi-conducteur",
+    "tension-de-seuil"
+  ]
+}

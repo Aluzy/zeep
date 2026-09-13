@@ -1,0 +1,44 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "pont de diodes",
+    "pont de graetz",
+    "pont redresseur"
+  ],
+  "term": "Pont de diodes",
+  "domains": [
+    "M"
+  ],
+  "definition": "Assemblage de quatre diodes qui redresse les deux alternances d'une tension alternative. Associé à un condensateur de filtrage, il constitue l'étage d'entrée de nombreuses alimentations.",
+  "versionSimple": "Ce montage transforme un courant qui change de sens en un courant qui va toujours dans le même sens.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "pont-de-diodes",
+  "related": [
+    "alimentation-electronique",
+    "courant-alternatif",
+    "courant-continu",
+    "diode",
+    "redresseur"
+  ]
+}

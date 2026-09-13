@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "CTN",
+    "CTP",
+    "NTC",
+    "PTC",
+    "thermistance"
+  ],
+  "term": "Thermistance",
+  "domains": [
+    "S"
+  ],
+  "definition": "Résistance dont la valeur varie fortement avec la température. Les modèles à coefficient négatif servent de capteurs bon marché, les modèles à coefficient positif limitent les courants d'appel.",
+  "versionSimple": "C'est une résistance qui change de valeur quand il fait plus chaud ou plus froid. On s'en sert pour mesurer la température.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "thermistance",
+  "related": [
+    "capteur",
+    "capteur-de-temperature",
+    "pont-de-wheatstone",
+    "resistance"
+  ]
+}

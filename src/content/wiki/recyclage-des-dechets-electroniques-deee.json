@@ -12,8 +12,18 @@
   "related": [
     "carte-electronique",
     "composant-electronique",
-    "electronique"
+    "eco-conception",
+    "electronique",
+    "indice-de-reparabilite",
+    "obsolescence-programmee",
+    "terres-rares"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "D3E",
+    "DEEE",
+    "WEEE",
+    "dechets electroniques"
+  ]
 }

@@ -43,11 +43,13 @@
   "slug": "effet-joule",
   "related": [
     "dissipateur-thermique",
+    "joule",
     "ligne-haute-tension",
     "loi-d-ohm",
     "puissance-electrique",
     "reseau-de-transport",
     "resistance",
-    "resistance-electrique"
+    "resistance-electrique",
+    "valeur-efficace"
   ]
 }

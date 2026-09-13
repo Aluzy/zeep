@@ -6,7 +6,11 @@
 
 Vérifie : schéma des fiches wiki, slug = nom de fichier = slugify(term),
 références (related, blog, DIY) existantes, réciprocité des liens wiki,
-domaines connus, définitions non vides, doublons de termes, URLs vides.
+domaines connus, définitions non vides, doublons de termes, URLs vides,
+synonymes non ambigus, et effectif plancher de chaque domaine.
+
+Ce script contrôle la CONFORMITÉ de ce qui existe. Il ne dit pas ce qui manque :
+c'est le rôle de scripts/audit_couverture.py, à lancer dans la foulée.
 """
 from __future__ import annotations
 
@@ -15,8 +19,9 @@ import re
 import sys
 from collections import Counter
 
-from zeeplib import (BLOG_DIR, DIY_DIR, SLUG_RE, load_json, load_taxonomy,
-                     load_wiki, read_frontmatter, slugify)
+from zeeplib import (BLOG_DIR, DIY_DIR, SLUG_RE, load_couverture, load_json,
+                     load_taxonomy, load_wiki, normaliser, read_frontmatter,
+                     slugify)
 
 # Champs de fiche wiki : nom -> (types acceptés, obligatoire)
 WIKI_FIELDS = {
@@ -29,6 +34,7 @@ WIKI_FIELDS = {
     "illustration": ((str, type(None)), False),
     "definition": ((str,), True),
     "related": ((list,), True),
+    "synonymes": ((list,), False),
     # Champs ajoutés au Jour 2 (optionnels tant que la migration n'est pas finie)
     "niveau": ((dict, type(None)), False),
     "versionSimple": ((str, type(None)), False),
@@ -59,6 +65,8 @@ def main() -> int:
     for t, n in terms.items():
         if n > 1:
             errors.append(f"terme en double ({n}×) : {t}")
+
+    autres_termes = {normaliser(d.get("term", "")): stem for stem, d in wiki.items()}
 
     for stem, d in wiki.items():
         where = f"wiki/{stem}.json"
@@ -97,6 +105,21 @@ def main() -> int:
                 errors.append(f"{where} : lien non réciproque avec « {r} »")
         if not rel:
             warnings.append(f"{where} : aucune fiche liée")
+        syns = d.get("synonymes") or []
+        formes_vues: set[str] = set()
+        for syn in syns:
+            if not isinstance(syn, str) or not syn.strip():
+                errors.append(f"{where} : synonyme vide")
+                continue
+            forme = normaliser(syn)
+            if forme in formes_vues:
+                errors.append(f"{where} : synonyme en double « {syn} »")
+            formes_vues.add(forme)
+            if forme in autres_termes and autres_termes[forme] != stem:
+                errors.append(
+                    f"{where} : le synonyme « {syn} » est déjà le terme de la fiche "
+                    f"« {autres_termes[forme]} » (ambiguïté de recherche)"
+                )
         niveau = d.get("niveau")
         if isinstance(niveau, dict):
             if not set(niveau) <= NIVEAU_KEYS:
@@ -129,6 +152,17 @@ def main() -> int:
         for s in d.get("sources", []):
             if not isinstance(s, dict) or not str(s.get("titre") or "").strip():
                 errors.append(f"{where} : source invalide (objet avec au moins « titre » non vide attendu)")
+
+    # Couverture par domaine : la taxonomie est une cible, pas une étiquette.
+    couverture = load_couverture()
+    effectifs = Counter(x for d in wiki.values() for x in d.get("domains", []))
+    for code in sorted(taxonomy):
+        seuil = int(couverture.get("plancherParDomaine", {}).get(code, 0))
+        if effectifs.get(code, 0) < seuil:
+            warnings.append(
+                f"domaine {code} ({taxonomy[code]}) : {effectifs.get(code, 0)} fiche(s) "
+                f"pour un plancher de {seuil} — voir scripts/audit_couverture.py"
+            )
 
     for path in sorted(BLOG_DIR.glob("*.md")):
         fm, body = read_frontmatter(path)
@@ -192,6 +226,8 @@ def main() -> int:
         detail = ", ".join(f"{k}={niv.get(k, 0)}" for k in NIVEAUX + autres)
         print(f"Fiches par niveau    : {detail}")
         print(f"Avec version simple  : {sum(1 for d in wiki.values() if d.get('versionSimple'))}")
+        print(f"Avec synonymes       : {sum(1 for d in wiki.values() if d.get('synonymes'))} "
+              f"({sum(len(d.get('synonymes') or []) for d in wiki.values())} formes déclarées)")
         statuts = Counter((d.get("relecture") or {}).get("statut") for d in wiki.values())
         print(f"Relues               : {statuts.get('relu-ia', 0)} relu-ia, {statuts.get('valide', 0)} validées par Alexandre")
 

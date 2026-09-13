@@ -11,8 +11,14 @@
   "definition": "Ensemble centralisant les disjoncteurs et fusibles d'une installation électrique, permettant de répartir et protéger les circuits électriques.",
   "related": [
     "cablage-electrique",
+    "consignation-electrique",
+    "contacteur",
     "disjoncteur",
-    "installation-electrique"
+    "disjoncteur-differentiel",
+    "installation-electrique",
+    "parafoudre",
+    "schema-unifilaire",
+    "sectionneur"
   ],
   "pillar": false,
   "illustration": null

@@ -20,13 +20,20 @@
     "circuit-integre",
     "convertisseur-analogique-numerique-can",
     "electronique-embarquee",
+    "esp32",
+    "firmware",
+    "gpio",
+    "interruption",
+    "machine-a-etats",
     "memoire-morte-rom",
     "memoire-vive-ram",
+    "modulation-de-largeur-d-impulsion-pwm",
     "moteur-pas-a-pas",
     "objet-connecte-iot",
     "oscillateur",
     "processeur-cpu",
-    "signal-numerique"
+    "signal-numerique",
+    "systeme-hexadecimal"
   ],
   "pillar": true,
   "illustration": null,
@@ -53,5 +60,10 @@
       "M043",
       "M058"
     ]
-  }
+  },
+  "synonymes": [
+    "MCU",
+    "microcontroleur",
+    "uC"
+  ]
 }

@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "maintenance",
+    "technicien de maintenance",
+    "technicien de maintenance industrielle"
+  ],
+  "term": "Technicien de maintenance",
+  "domains": [
+    "X",
+    "F"
+  ],
+  "definition": "Professionnel chargé de prévenir et de réparer les pannes des équipements électriques et automatisés. Il diagnostique à l'aide d'appareils de mesure et intervient dans le cadre d'une habilitation électrique.",
+  "versionSimple": "Ce métier consiste à entretenir les machines et à trouver l'origine des pannes pour les réparer.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "technicien-de-maintenance",
+  "related": [
+    "automate-programmable",
+    "consignation-electrique",
+    "electricien",
+    "habilitation-electrique",
+    "multimetre"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "isolation galvanique",
+    "optocoupleur",
+    "photocoupleur"
+  ],
+  "term": "Optocoupleur",
+  "domains": [
+    "K",
+    "U"
+  ],
+  "definition": "Composant qui transmet un signal par la lumière entre deux circuits sans liaison électrique. Il assure l'isolation galvanique entre une partie commande basse tension et une partie puissance.",
+  "versionSimple": "À l'intérieur, une petite LED éclaire un capteur. Le signal passe par la lumière, ce qui sépare complètement les deux côtés du circuit.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "optocoupleur",
+  "related": [
+    "diode-electroluminescente-led",
+    "electronique-de-puissance",
+    "phototransistor",
+    "relais-electronique",
+    "relais-statique"
+  ]
+}

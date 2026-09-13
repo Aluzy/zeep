@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "force de coulomb",
+    "loi de coulomb"
+  ],
+  "term": "Loi de Coulomb",
+  "domains": [
+    "A"
+  ],
+  "definition": "Loi qui décrit la force exercée entre deux charges électriques immobiles. Cette force est attractive entre charges de signes opposés, répulsive entre charges de même signe, et diminue très vite lorsque la distance augmente.",
+  "versionSimple": "Deux objets chargés se repoussent s'ils portent la même charge, et s'attirent sinon. Plus ils sont loin l'un de l'autre, plus cet effet devient faible.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "loi-de-coulomb",
+  "related": [
+    "champ-electrique",
+    "charge-electrique",
+    "coulomb",
+    "electron",
+    "electrostatique"
+  ]
+}

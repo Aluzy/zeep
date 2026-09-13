@@ -11,12 +11,17 @@
   "definition": "Quantité d'énergie électrique consommée ou produite par unité de temps, exprimée en watts, égale au produit de la tension électrique par l'intensité électrique.",
   "related": [
     "effet-joule",
+    "energie-electrique",
     "intensite-electrique",
+    "joule",
     "kilowatt",
+    "puissance-active",
     "resistance",
     "tension-electrique",
     "triac",
+    "voltampere",
     "watt",
+    "watt-crete",
     "wattmetre"
   ],
   "pillar": true,
@@ -37,5 +42,9 @@
       "M030",
       "M072"
     ]
-  }
+  },
+  "synonymes": [
+    "P",
+    "puissance"
+  ]
 }

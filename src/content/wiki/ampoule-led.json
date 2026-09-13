@@ -10,7 +10,9 @@
   "merged": false,
   "definition": "Source lumineuse utilisant des diodes électroluminescentes, réputée pour sa faible consommation électrique et sa longue durée de vie.",
   "related": [
-    "consommation-electrique"
+    "consommation-electrique",
+    "lumen",
+    "modulation-de-largeur-d-impulsion-pwm"
   ],
   "pillar": true,
   "illustration": null

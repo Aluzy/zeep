@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "motorisation de volet",
+    "store motorise",
+    "volet roulant motorise"
+  ],
+  "term": "Volet roulant motorisé",
+  "domains": [
+    "H",
+    "E"
+  ],
+  "definition": "Volet équipé d'un moteur tubulaire commandé localement ou à distance. Intégré à un scénario domotique, il contribue au confort thermique en limitant les apports solaires en été.",
+  "versionSimple": "Le volet monte et descend tout seul grâce à un petit moteur, sur commande ou à une heure choisie.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "volet-roulant-motorise",
+  "related": [
+    "actionneur",
+    "domotique",
+    "installation-electrique",
+    "moteur-electrique",
+    "scenario-domotique"
+  ]
+}

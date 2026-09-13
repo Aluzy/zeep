@@ -1,0 +1,42 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "cos phi",
+    "cos φ",
+    "cosinus phi",
+    "facteur de puissance"
+  ],
+  "term": "Facteur de puissance",
+  "domains": [
+    "A",
+    "F"
+  ],
+  "definition": "Rapport entre la puissance active et la puissance apparente d'une installation. Proche de un, il indique une consommation efficace ; plus faible, il signale des courants inutiles que l'industriel doit compenser.",
+  "versionSimple": "Ce nombre dit quelle part de l'électricité demandée sert réellement. Plus il est proche de un, mieux l'installation est réglée.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "facteur-de-puissance",
+  "related": [
+    "condensateur",
+    "dephasage",
+    "puissance-active",
+    "puissance-apparente",
+    "puissance-reactive",
+    "voltampere"
+  ]
+}

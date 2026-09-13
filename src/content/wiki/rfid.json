@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "NFC",
+    "RFID",
+    "badge sans contact",
+    "identification radiofrequence"
+  ],
+  "term": "RFID",
+  "domains": [
+    "Q",
+    "R"
+  ],
+  "definition": "Technique d'identification par radiofréquence où un lecteur alimente et interroge à distance une étiquette sans pile. Le NFC en est la déclinaison à très courte portée utilisée pour le paiement.",
+  "versionSimple": "Un badge sans pile est réveillé par le lecteur quand on l'approche, et lui renvoie son numéro.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "rfid",
+  "related": [
+    "antenne",
+    "detecteur",
+    "emetteur-radiofrequence",
+    "objet-connecte-iot"
+  ]
+}

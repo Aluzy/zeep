@@ -16,8 +16,13 @@
     "electronique",
     "memoire-morte-rom",
     "microcontroleur",
+    "octet",
     "processeur-cpu"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "RAM",
+    "memoire vive"
+  ]
 }

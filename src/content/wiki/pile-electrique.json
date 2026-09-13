@@ -11,8 +11,11 @@
   "definition": "Générateur électrique non rechargeable qui transforme l'énergie chimique en énergie électrique, à la différence d'un accumulateur, et souvent associée à d'autres pour former une batterie.",
   "related": [
     "accumulateur",
+    "ampere-heure",
     "batterie",
-    "generateur-electrique"
+    "generateur-electrique",
+    "histoire-de-l-electricite",
+    "pile-a-combustible"
   ],
   "pillar": true,
   "illustration": null,

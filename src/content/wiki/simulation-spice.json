@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "LTspice",
+    "SPICE",
+    "simulation SPICE",
+    "simulation de circuit"
+  ],
+  "term": "Simulation SPICE",
+  "domains": [
+    "V",
+    "K"
+  ],
+  "definition": "Méthode de simulation numérique du comportement d'un circuit analogique avant sa réalisation. Elle prédit tensions, courants et réponse en fréquence à partir des modèles des composants.",
+  "versionSimple": "Avant de souder quoi que ce soit, un logiciel calcule comment le montage se comportera vraiment.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "simulation-spice",
+  "related": [
+    "circuit-analogique",
+    "conception-assistee-par-ordinateur-electronique",
+    "datasheet-fiche-technique",
+    "diagramme-de-bode",
+    "prototypage-electronique"
+  ]
+}

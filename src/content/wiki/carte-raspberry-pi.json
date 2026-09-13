@@ -13,6 +13,7 @@
     "carte-electronique",
     "electronique",
     "electronique-embarquee",
+    "gpio",
     "microprocesseur"
   ],
   "pillar": true,

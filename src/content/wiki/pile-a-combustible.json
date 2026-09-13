@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "fuel cell",
+    "pile a combustible"
+  ],
+  "term": "Pile à combustible",
+  "domains": [
+    "D",
+    "G"
+  ],
+  "definition": "Générateur qui produit de l'électricité par réaction entre l'hydrogène et l'oxygène, en ne rejetant que de l'eau. Elle alimente certains véhicules lourds et des installations de secours.",
+  "versionSimple": "Cette pile fabrique de l'électricité à partir d'hydrogène et d'air, et ne rejette que de l'eau.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "pile-a-combustible",
+  "related": [
+    "hydrogene",
+    "pile-electrique",
+    "stockage-d-energie",
+    "vehicule-electrique"
+  ]
+}

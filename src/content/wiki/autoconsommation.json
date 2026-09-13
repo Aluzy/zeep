@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "autoconsommation",
+    "autoproduction",
+    "surplus"
+  ],
+  "term": "Autoconsommation",
+  "domains": [
+    "J",
+    "B"
+  ],
+  "definition": "Consommation sur place de l'électricité produite par sa propre installation, généralement photovoltaïque. Le surplus non consommé est stocké, partagé ou injecté sur le réseau de distribution.",
+  "versionSimple": "On utilise directement chez soi l'électricité produite par ses panneaux solaires, au lieu de tout revendre.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "Service-public.fr — énergie et logement",
+      "url": "https://www.service-public.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "autoconsommation",
+  "related": [
+    "compteur-linky",
+    "facture-d-electricite",
+    "panneau-photovoltaique",
+    "reseau-de-distribution",
+    "stockage-d-energie"
+  ]
+}

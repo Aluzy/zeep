@@ -1,0 +1,37 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "firmware",
+    "micrologiciel"
+  ],
+  "term": "Firmware",
+  "domains": [
+    "O"
+  ],
+  "definition": "Programme enregistré dans la mémoire d'un appareil et exécuté par son microcontrôleur au démarrage. Il pilote directement le matériel et se met à jour indépendamment de l'application.",
+  "versionSimple": "C'est le programme rangé à l'intérieur d'un appareil, qui le fait fonctionner dès qu'on l'allume.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "firmware",
+  "related": [
+    "carte-arduino",
+    "electronique-embarquee",
+    "memoire-morte-rom",
+    "microcontroleur"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "dielectrique",
+    "materiau dielectrique",
+    "permittivite"
+  ],
+  "term": "Diélectrique",
+  "domains": [
+    "N",
+    "K"
+  ],
+  "definition": "Matériau isolant qui se polarise sous l'effet d'un champ électrique. Placé entre les armatures d'un condensateur, il en augmente la capacité tout en empêchant le courant de passer.",
+  "versionSimple": "C'est la matière isolante glissée entre les deux plaques d'un condensateur. Elle l'empêche de se court-circuiter et augmente ce qu'il peut stocker.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "dielectrique",
+  "related": [
+    "champ-electrique",
+    "condensateur",
+    "farad",
+    "isolant-electrique"
+  ]
+}

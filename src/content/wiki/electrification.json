@@ -11,6 +11,7 @@
   "definition": "Action de doter une zone, un bâtiment ou un équipement d'une alimentation électrique et d'un accès au réseau électrique.",
   "related": [
     "alimentation-electrique",
+    "histoire-de-l-electricite",
     "reseau-electrique"
   ],
   "pillar": false,

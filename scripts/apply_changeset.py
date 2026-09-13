@@ -14,7 +14,8 @@ Une opération par ligne (objet JSON). Champs communs : "op", "lot", "why".
   {"op":"set","slug":"voltage","field":"definition","old":"<valeur actuelle>","new":"...","why":"...","sources":[...]}
       Remplace un champ. "old" doit être identique à la valeur actuelle
       (protection contre les modifications concurrentes). Champs autorisés :
-      definition, versionSimple, domains, pillar, niveau, sources, relecture.
+      definition, versionSimple, domains, pillar, niveau, sources, relecture,
+      synonymes. Pour un champ encore absent de la fiche, "old" vaut null.
 
   {"op":"create","data":{"term":"Loi d'Ohm","domains":["A"],"definition":"...","related":["tension-electrique"], ...},"why":"..."}
       Crée une fiche. slug calculé depuis term ; les liens sont rendus réciproques.
@@ -33,8 +34,9 @@ from pathlib import Path
 
 from zeeplib import WIKI_DIR, dump_json, load_wiki, slugify
 
-SETTABLE = {"definition", "versionSimple", "domains", "pillar", "niveau", "sources", "relecture"}
-CREATE_DEFAULTS = {"sourceDomain": [], "merged": False, "pillar": False, "illustration": None, "related": []}
+SETTABLE = {"definition", "versionSimple", "domains", "pillar", "niveau", "sources", "relecture", "synonymes"}
+CREATE_DEFAULTS = {"sourceDomain": [], "merged": False, "pillar": False, "illustration": None,
+                   "related": [], "synonymes": []}
 
 
 class ChangesetError(Exception):

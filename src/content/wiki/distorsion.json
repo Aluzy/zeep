@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "clipping",
+    "distorsion",
+    "distorsion harmonique",
+    "ecretage"
+  ],
+  "term": "Distorsion",
+  "domains": [
+    "T",
+    "K"
+  ],
+  "definition": "Déformation d'un signal par rapport à sa forme d'origine, souvent due à la saturation d'un amplificateur. Mesurée en pourcentage, elle dégrade la fidélité de restitution.",
+  "versionSimple": "Quand on pousse trop le volume, le son se déforme et devient désagréable : c'est la distorsion.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "distorsion",
+  "related": [
+    "amplificateur-audio",
+    "amplificateur-operationnel",
+    "gain-electronique",
+    "harmoniques",
+    "signal-audio"
+  ]
+}

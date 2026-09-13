@@ -1,0 +1,37 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "rheostat"
+  ],
+  "term": "Rhéostat",
+  "domains": [
+    "K",
+    "F"
+  ],
+  "definition": "Résistance variable utilisée en série pour limiter le courant d'un circuit, à la différence du potentiomètre monté en diviseur de tension. On la rencontre dans les montages de travaux pratiques et les anciennes commandes de moteurs.",
+  "versionSimple": "C'est une résistance réglable placée sur le chemin du courant pour le freiner plus ou moins.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "rheostat",
+  "related": [
+    "courant-electrique",
+    "moteur-electrique",
+    "potentiometre",
+    "resistance"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "bouquet energetique",
+    "mix electrique",
+    "mix energetique"
+  ],
+  "term": "Mix énergétique",
+  "domains": [
+    "J",
+    "B"
+  ],
+  "definition": "Répartition des différentes sources utilisées pour produire l'électricité d'un territoire. Il détermine le coût, la disponibilité et le contenu carbone de chaque kilowattheure consommé.",
+  "versionSimple": "C'est la part de chaque source — nucléaire, éolien, solaire, gaz — dans l'électricité d'un pays.",
+  "sources": [
+    {
+      "titre": "RTE — le réseau de transport d'électricité",
+      "url": "https://www.rte-france.com/",
+      "type": "officiel"
+    },
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "mix-energetique",
+  "related": [
+    "centrale-nucleaire",
+    "empreinte-carbone-de-l-electricite",
+    "energie-fossile",
+    "energie-renouvelable",
+    "production-d-electricite"
+  ]
+}

@@ -10,9 +10,17 @@
   "merged": false,
   "definition": "Discipline qui combine électronique embarquée, capteurs et actionneurs, comme le servomoteur, pour concevoir des machines capables d'agir de façon autonome.",
   "related": [
+    "asservissement",
+    "automate-programmable",
+    "bras-robotise",
     "carte-arduino",
+    "codeur-rotatif",
+    "drone",
     "electronique",
     "electronique-embarquee",
+    "machine-a-etats",
+    "moteur-a-courant-continu",
+    "moteur-brushless",
     "servomoteur"
   ],
   "pillar": true,

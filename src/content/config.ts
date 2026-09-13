@@ -12,6 +12,10 @@ const wiki = defineCollection({
     illustration: z.string().nullable().default(null),
     definition: z.string(),
     related: z.array(z.string()),
+    // Formes équivalentes du terme (abréviations, symboles, variantes).
+    // Servent à la recherche du wiki et à l'audit de couverture
+    // (scripts/audit_couverture.py) : un mot déclaré ici n'est plus « orphelin ».
+    synonymes: z.array(z.string()).default([]),
     // Champs pédagogiques et de traçabilité (affichage : lot J2-L1).
     // Déclarés dès maintenant pour qu'Astro ne les supprime pas des données.
     niveau: z

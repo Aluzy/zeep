@@ -10,9 +10,20 @@
   "merged": false,
   "definition": "Composant électronique qui stocke une charge électrique entre deux armatures, utilisé notamment dans les filtres électroniques et les alimentations électroniques.",
   "related": [
+    "circuit-rc",
     "composant-electronique",
+    "constante-de-temps",
+    "dephasage",
+    "dielectrique",
     "electronique",
-    "impedance"
+    "facteur-de-puissance",
+    "farad",
+    "impedance",
+    "microphone",
+    "puissance-reactive",
+    "reactance",
+    "regime-transitoire",
+    "supercondensateur"
   ],
   "pillar": true,
   "illustration": null,
@@ -33,5 +44,11 @@
       "M046",
       "M052"
     ]
-  }
+  },
+  "synonymes": [
+    "C",
+    "capa",
+    "capacite",
+    "condensateur"
+  ]
 }

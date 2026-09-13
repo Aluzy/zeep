@@ -15,5 +15,9 @@
     "puissance-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "kW",
+    "kilowatt"
+  ]
 }

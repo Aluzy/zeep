@@ -10,9 +10,16 @@
   "merged": false,
   "definition": "Source d'énergie, comme le soleil, le vent ou l'eau, considérée comme inépuisable à l'échelle humaine et utilisée pour la production d'électricité.",
   "related": [
+    "biomasse",
     "electricite",
+    "empreinte-carbone-de-l-electricite",
+    "energie-maremotrice",
+    "geothermie",
+    "hydrogene",
+    "mix-energetique",
     "panneau-photovoltaique",
-    "production-d-electricite"
+    "production-d-electricite",
+    "stockage-d-energie"
   ],
   "pillar": true,
   "illustration": null

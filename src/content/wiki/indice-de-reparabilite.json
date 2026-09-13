@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "indice de durabilite",
+    "indice de reparabilite",
+    "reparabilite"
+  ],
+  "term": "Indice de réparabilité",
+  "domains": [
+    "W"
+  ],
+  "definition": "Note affichée sur certains équipements électriques indiquant la facilité à les réparer : documentation, démontabilité, disponibilité et prix des pièces détachées. Elle vise à allonger la durée de vie des appareils.",
+  "versionSimple": "Cette note dit si un appareil sera facile à réparer. Plus elle est haute, plus l'objet durera longtemps.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "Service-public.fr — énergie et logement",
+      "url": "https://www.service-public.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "indice-de-reparabilite",
+  "related": [
+    "composant-electronique",
+    "eco-conception",
+    "obsolescence-programmee",
+    "recyclage-des-dechets-electroniques-deee"
+  ]
+}

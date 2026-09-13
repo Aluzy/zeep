@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "GPIO",
+    "broche d'entree sortie",
+    "entree sortie universelle"
+  ],
+  "term": "GPIO",
+  "domains": [
+    "O"
+  ],
+  "definition": "Broche d'un microcontrôleur configurable en entrée ou en sortie numérique par le programme. Elle constitue le point de raccordement des boutons, des LED et des capteurs d'un montage.",
+  "versionSimple": "Ce sont les petites pattes d'une carte électronique que le programme peut lire ou allumer, selon ce qu'on y branche.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "gpio",
+  "related": [
+    "bouton-poussoir",
+    "carte-arduino",
+    "carte-raspberry-pi",
+    "interruption",
+    "microcontroleur",
+    "signal-numerique"
+  ]
+}

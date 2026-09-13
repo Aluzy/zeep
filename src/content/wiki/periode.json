@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "periode",
+    "periode d'un signal"
+  ],
+  "term": "Période",
+  "domains": [
+    "A"
+  ],
+  "definition": "Durée au bout de laquelle un signal périodique se répète à l'identique. Elle s'exprime en secondes et correspond à l'inverse de la fréquence : un signal de cinquante hertz a une période de vingt millisecondes.",
+  "versionSimple": "La période est le temps que met un signal à recommencer pareil. Plus ce temps est court, plus le signal se répète souvent.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "periode",
+  "related": [
+    "courant-alternatif",
+    "frequence-electrique",
+    "hertz",
+    "oscilloscope",
+    "signal-analogique"
+  ]
+}

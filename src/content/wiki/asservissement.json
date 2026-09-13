@@ -1,0 +1,50 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "asservissement",
+    "boucle fermee",
+    "regulation",
+    "servo"
+  ],
+  "term": "Asservissement",
+  "domains": [
+    "P",
+    "F"
+  ],
+  "definition": "Commande en boucle fermée où le système compare en permanence la grandeur mesurée à la consigne et corrige l'écart. C'est le principe du régulateur de vitesse comme du bras robotisé.",
+  "versionSimple": "Le système vérifie sans arrêt s'il fait bien ce qu'on lui a demandé, et se corrige tout seul quand il s'écarte.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "asservissement",
+  "related": [
+    "actionneur",
+    "automate-programmable",
+    "bras-robotise",
+    "capteur",
+    "codeur-rotatif",
+    "drone",
+    "machine-a-etats",
+    "robotique",
+    "servomoteur"
+  ]
+}

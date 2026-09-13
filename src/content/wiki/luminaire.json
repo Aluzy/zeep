@@ -11,7 +11,11 @@
   "definition": "Appareil d'éclairage qui reçoit, supporte et protège une ou plusieurs ampoules raccordées à l'installation électrique.",
   "related": [
     "eclairage",
-    "installation-electrique"
+    "gradateur",
+    "indice-de-protection-ip",
+    "installation-electrique",
+    "lumen",
+    "lux"
   ],
   "pillar": false,
   "illustration": null

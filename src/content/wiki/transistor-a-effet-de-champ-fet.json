@@ -14,5 +14,10 @@
     "transistor"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "FET",
+    "JFET",
+    "transistor a effet de champ"
+  ]
 }

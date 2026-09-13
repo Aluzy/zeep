@@ -26,5 +26,10 @@
     "matriceIds": [
       "M035"
     ]
-  }
+  },
+  "synonymes": [
+    "AM",
+    "FM",
+    "modulation"
+  ]
 }

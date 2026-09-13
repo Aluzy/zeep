@@ -11,8 +11,16 @@
   "definition": "Composant qui vibre à une fréquence précise sous l'effet d'une tension, utilisé pour stabiliser un oscillateur dans un circuit numérique.",
   "related": [
     "circuit-numerique",
-    "oscillateur"
+    "oscillateur",
+    "piezoelectricite",
+    "resonance",
+    "signal-d-horloge"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "cristal",
+    "quartz",
+    "resonateur"
+  ]
 }

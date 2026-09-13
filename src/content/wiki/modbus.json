@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "modbus",
+    "modbus RTU",
+    "modbus TCP"
+  ],
+  "term": "Modbus",
+  "domains": [
+    "F"
+  ],
+  "definition": "Protocole industriel simple et ouvert où un maître interroge des esclaves pour lire ou écrire des registres. Sa longévité en fait un langage commun entre automates et équipements de marques différentes.",
+  "versionSimple": "C'est une façon très répandue pour qu'un automate pose des questions aux machines et reçoive leurs réponses.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "modbus",
+  "related": [
+    "automate-programmable",
+    "protocole-de-communication",
+    "reseau-intelligent-smart-grid",
+    "rs-485"
+  ]
+}

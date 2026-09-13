@@ -16,7 +16,9 @@
     "courant-alternatif",
     "courant-continu",
     "diode",
+    "diode-schottky",
     "electronique",
+    "pont-de-diodes",
     "signal-analogique"
   ],
   "pillar": false,

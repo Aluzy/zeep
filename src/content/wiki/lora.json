@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "LoRa",
+    "LoRaWAN",
+    "reseau longue portee"
+  ],
+  "term": "LoRa",
+  "domains": [
+    "Q",
+    "R"
+  ],
+  "definition": "Technologie radio à très longue portée et à faible débit, conçue pour des capteurs alimentés par pile pendant plusieurs années. Elle relève compteurs et capteurs répartis sur un territoire.",
+  "versionSimple": "Cette radio envoie très peu d'informations, mais très loin et en consommant presque rien. Idéale pour des capteurs isolés.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "lora",
+  "related": [
+    "antenne",
+    "capteur",
+    "emetteur-radiofrequence",
+    "objet-connecte-iot",
+    "zigbee"
+  ]
+}

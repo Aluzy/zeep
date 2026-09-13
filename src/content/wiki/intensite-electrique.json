@@ -23,6 +23,7 @@
     "loi-d-ohm",
     "loi-des-noeuds",
     "multimetre",
+    "pince-amperemetrique",
     "puissance-electrique"
   ],
   "pillar": false,
@@ -43,5 +44,9 @@
       "M014",
       "M029"
     ]
-  }
+  },
+  "synonymes": [
+    "I",
+    "intensite"
+  ]
 }

@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "pince amperemetrique",
+    "pince de courant"
+  ],
+  "term": "Pince ampèremétrique",
+  "domains": [
+    "S"
+  ],
+  "definition": "Appareil qui mesure l'intensité circulant dans un conducteur en l'entourant, sans ouvrir le circuit. Elle exploite le champ magnétique créé par le courant et permet des mesures sous tension en sécurité.",
+  "versionSimple": "Cette pince mesure le courant d'un fil simplement en l'entourant, sans avoir besoin de couper quoi que ce soit.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "pince-amperemetrique",
+  "related": [
+    "amperemetre",
+    "champ-magnetique",
+    "effet-hall",
+    "intensite-electrique",
+    "multimetre"
+  ]
+}

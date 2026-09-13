@@ -12,12 +12,16 @@
   "related": [
     "courant-alternatif",
     "court-jus",
+    "delestage",
     "electrification",
     "fournisseur-d-electricite",
     "frequence-electrique",
     "reseau-de-distribution",
     "reseau-de-transport",
-    "reseau-intelligent-smart-grid"
+    "reseau-intelligent-smart-grid",
+    "reseau-maille",
+    "station-de-transfert-d-energie-par-pompage",
+    "stockage-d-energie"
   ],
   "pillar": true,
   "illustration": null

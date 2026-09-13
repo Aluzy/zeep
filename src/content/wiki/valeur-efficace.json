@@ -1,0 +1,46 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "RMS",
+    "courant efficace",
+    "tension efficace",
+    "valeur efficace",
+    "valeur rms"
+  ],
+  "term": "Valeur efficace",
+  "domains": [
+    "A"
+  ],
+  "definition": "Valeur d'un signal alternatif qui produirait le même échauffement qu'un courant continu de même valeur. C'est elle qu'affichent les multimètres et qui est désignée par les 230 volts du réseau domestique.",
+  "versionSimple": "Le courant de la maison change tout le temps de valeur. La valeur efficace est le nombre qui résume son effet réel, comme s'il était constant.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "valeur-efficace",
+  "related": [
+    "courant-alternatif",
+    "effet-joule",
+    "multimetre",
+    "tension-electrique",
+    "valeur-crete"
+  ]
+}

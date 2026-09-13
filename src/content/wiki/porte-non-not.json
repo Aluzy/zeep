@@ -11,7 +11,9 @@
   "definition": "Porte logique qui inverse l'état de son unique entrée.",
   "related": [
     "circuit-logique",
-    "porte-logique"
+    "porte-logique",
+    "porte-non-et",
+    "porte-non-ou"
   ],
   "pillar": false,
   "illustration": null

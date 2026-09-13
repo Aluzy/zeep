@@ -10,9 +10,17 @@
   "merged": false,
   "definition": "Norme française qui définit les règles de conception et de réalisation d'une installation électrique basse tension dans les bâtiments, que tout électricien doit respecter.",
   "related": [
+    "chute-de-tension",
     "electricien",
-    "installation-electrique"
+    "habilitation-electrique",
+    "indice-de-protection-ip",
+    "installation-electrique",
+    "section-de-cable"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "NF C 15-100",
+    "norme NF C 15-100"
+  ]
 }

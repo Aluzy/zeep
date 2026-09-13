@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "reseau maille",
+    "mesh",
+    "topologie maillee"
+  ],
+  "term": "Réseau maillé",
+  "domains": [
+    "Q",
+    "R"
+  ],
+  "definition": "Topologie dans laquelle chaque nœud relaie les messages de ses voisins au lieu de dépendre d'un point central unique. Elle étend la portée et survit à la panne d'un appareil.",
+  "versionSimple": "Chaque appareil fait passer les messages des autres. Si l'un tombe en panne, les messages trouvent un autre chemin.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "reseau-maille",
+  "related": [
+    "domotique",
+    "objet-connecte-iot",
+    "protocole-de-communication",
+    "reseau-electrique",
+    "zigbee"
+  ]
+}

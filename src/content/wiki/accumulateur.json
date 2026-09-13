@@ -10,8 +10,12 @@
   "merged": false,
   "definition": "Élément rechargeable capable de stocker de l'énergie électrique par voie chimique et de la restituer sous forme de courant électrique.",
   "related": [
+    "ampere-heure",
+    "batterie-de-traction",
     "courant-electrique",
-    "pile-electrique"
+    "pile-electrique",
+    "stockage-d-energie",
+    "supercondensateur"
   ],
   "pillar": true,
   "illustration": null

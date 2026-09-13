@@ -11,7 +11,9 @@
   "definition": "Composant semi-conducteur équivalent à deux thyristors montés tête-bêche : après une impulsion sur sa gâchette (électrode de commande), il peut conduire le courant dans les deux sens. Il règle la puissance fournie à un appareil en courant alternatif, comme une lampe sur variateur. Ces montages étant souvent reliés au secteur 230 V, on n'y intervient pas soi-même.",
   "related": [
     "courant-alternatif",
+    "gradateur",
     "puissance-electrique",
+    "relais-statique",
     "semi-conducteur",
     "thyristor"
   ],

@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "dopage",
+    "dopage N",
+    "dopage P",
+    "dopant"
+  ],
+  "term": "Dopage",
+  "domains": [
+    "N"
+  ],
+  "definition": "Introduction contrôlée d'impuretés dans un cristal semi-conducteur afin d'y ajouter des électrons libres ou des trous. C'est le dopage qui rend le silicium exploitable en électronique.",
+  "versionSimple": "On ajoute volontairement quelques atomes différents dans le silicium pour qu'il conduise mieux le courant.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "dopage",
+  "related": [
+    "electron",
+    "jonction-pn",
+    "semi-conducteur",
+    "silicium",
+    "trou-electronique"
+  ]
+}

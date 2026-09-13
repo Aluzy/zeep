@@ -10,8 +10,14 @@
   "merged": false,
   "definition": "Protocole de communication qui transmet des données bit par bit de façon séquentielle entre deux composants électroniques.",
   "related": [
-    "protocole-de-communication"
+    "protocole-de-communication",
+    "rs-485"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "UART",
+    "liaison serie",
+    "serie asynchrone"
+  ]
 }

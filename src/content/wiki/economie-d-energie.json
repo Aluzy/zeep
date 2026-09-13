@@ -11,7 +11,9 @@
   "definition": "Ensemble des pratiques visant à réduire la consommation électrique et à améliorer l'efficacité énergétique d'une installation.",
   "related": [
     "consommation-electrique",
-    "efficacite-energetique"
+    "detecteur-de-presence",
+    "efficacite-energetique",
+    "thermostat-connecte"
   ],
   "pillar": false,
   "illustration": null

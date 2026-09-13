@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "SPD",
+    "parafoudre",
+    "protection contre la foudre"
+  ],
+  "term": "Parafoudre",
+  "domains": [
+    "E",
+    "U"
+  ],
+  "definition": "Dispositif installé dans un tableau électrique qui écoule vers la terre les surtensions dues à la foudre ou aux manœuvres du réseau. Il protège les équipements électroniques sensibles.",
+  "versionSimple": "Quand la foudre provoque une surtension, le parafoudre l'envoie dans la terre pour éviter de griller les appareils de la maison.",
+  "sources": [
+    {
+      "titre": "AFNOR — normes de l'installation électrique",
+      "url": "https://www.afnor.org/",
+      "type": "norme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "parafoudre",
+  "related": [
+    "installation-electrique",
+    "mise-a-la-terre",
+    "prise-de-terre",
+    "tableau-electrique",
+    "varistance"
+  ]
+}

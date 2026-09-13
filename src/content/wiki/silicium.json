@@ -10,9 +10,13 @@
   "merged": false,
   "definition": "Matériau semi-conducteur le plus utilisé en électronique, servant de base à la fabrication des circuits intégrés et des transistors.",
   "related": [
+    "bande-interdite",
     "circuit-integre",
+    "dopage",
     "electronique",
-    "semi-conducteur"
+    "jonction-pn",
+    "semi-conducteur",
+    "wafer"
   ],
   "pillar": false,
   "illustration": null

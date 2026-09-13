@@ -13,7 +13,9 @@
     "carte-mere",
     "carte-raspberry-pi",
     "circuit-integre",
-    "processeur-cpu"
+    "octet",
+    "processeur-cpu",
+    "signal-d-horloge"
   ],
   "pillar": false,
   "illustration": null,
@@ -28,5 +30,9 @@
     "matriceIds": [
       "M015"
     ]
-  }
+  },
+  "synonymes": [
+    "MPU",
+    "microprocesseur"
+  ]
 }

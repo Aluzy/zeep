@@ -13,7 +13,9 @@
     "actionneur",
     "carte-electronique",
     "dissipateur-thermique",
-    "electronique"
+    "effet-peltier",
+    "electronique",
+    "moteur-brushless"
   ],
   "pillar": false,
   "illustration": null

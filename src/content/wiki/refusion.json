@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "refusion",
+    "reflow",
+    "four a refusion",
+    "pate a braser"
+  ],
+  "term": "Refusion",
+  "domains": [
+    "V",
+    "N"
+  ],
+  "definition": "Procédé de soudure collective où la carte, garnie de pâte à braser et de composants, traverse un four dont le profil de température fait fondre l'alliage. C'est la méthode d'assemblage industrielle des cartes modernes.",
+  "versionSimple": "On dépose une pâte spéciale, on pose les composants, puis on chauffe toute la carte d'un coup dans un four : la soudure se fait seule.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "refusion",
+  "related": [
+    "carte-electronique",
+    "circuit-imprime-pcb",
+    "composant-electronique",
+    "montage-en-surface",
+    "soudure-electronique"
+  ]
+}

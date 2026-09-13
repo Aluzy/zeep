@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "echantillonnage",
+    "frequence d'echantillonnage",
+    "sampling"
+  ],
+  "term": "Échantillonnage",
+  "domains": [
+    "L",
+    "S"
+  ],
+  "definition": "Opération qui relève la valeur d'un signal analogique à intervalles réguliers pour le convertir en nombres. Sa fréquence détermine la fidélité de la numérisation.",
+  "versionSimple": "Pour enregistrer un son, on mesure sa valeur des milliers de fois par seconde. Chaque mesure est un échantillon.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "echantillonnage",
+  "related": [
+    "convertisseur-analogique-numerique-can",
+    "quantification",
+    "signal-analogique",
+    "signal-numerique",
+    "theoreme-de-shannon"
+  ]
+}

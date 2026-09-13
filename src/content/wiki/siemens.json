@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "S",
+    "mho",
+    "siemens"
+  ],
+  "term": "Siemens",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de mesure de la conductance, de symbole S. Elle est l'inverse de l'ohm : un conducteur de un siemens laisse passer un ampère sous un volt. On l'utilise surtout pour décrire des matériaux et des solutions conductrices.",
+  "versionSimple": "Le siemens dit avec quelle facilité le courant passe, alors que l'ohm dit avec quelle difficulté. Les deux décrivent la même chose, dans l'autre sens.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "siemens",
+  "related": [
+    "conducteur-electrique",
+    "conductivite-electrique",
+    "ohm",
+    "resistance-electrique"
+  ]
+}

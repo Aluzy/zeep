@@ -10,8 +10,12 @@
   "merged": false,
   "definition": "Professionnel qualifié qui conçoit, installe, entretient ou répare une installation électrique.",
   "related": [
+    "consignation-electrique",
+    "controleur-d-isolement",
+    "habilitation-electrique",
     "installation-electrique",
-    "norme-electrique-nf-c-15-100"
+    "norme-electrique-nf-c-15-100",
+    "technicien-de-maintenance"
   ],
   "pillar": false,
   "illustration": null

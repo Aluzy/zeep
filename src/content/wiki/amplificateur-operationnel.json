@@ -12,6 +12,7 @@
   "related": [
     "amplificateur-audio",
     "circuit-integre",
+    "distorsion",
     "gain-electronique",
     "signal-analogique"
   ],
@@ -28,5 +29,10 @@
     "matriceIds": [
       "M043"
     ]
-  }
+  },
+  "synonymes": [
+    "AOP",
+    "ampli op",
+    "amplificateur operationnel"
+  ]
 }

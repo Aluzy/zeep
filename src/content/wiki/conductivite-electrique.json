@@ -11,7 +11,9 @@
   "definition": "Aptitude d'un matériau à laisser circuler le courant électrique, inverse de la résistivité.",
   "related": [
     "courant-electrique",
-    "resistivite"
+    "resistivite",
+    "siemens",
+    "theoreme-de-millman"
   ],
   "pillar": false,
   "illustration": null

@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "NOR",
+    "porte NON-OU",
+    "porte nor"
+  ],
+  "term": "Porte NON-OU",
+  "domains": [
+    "L"
+  ],
+  "definition": "Porte logique dont la sortie n'est vraie que si toutes ses entrées sont fausses. Comme la porte NON-ET, elle suffit à elle seule à réaliser n'importe quelle fonction logique.",
+  "versionSimple": "Cette porte répond oui seulement quand aucune entrée ne dit oui.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "porte-non-ou",
+  "related": [
+    "circuit-logique",
+    "porte-logique",
+    "porte-non-not",
+    "porte-ou-or",
+    "table-de-verite"
+  ]
+}

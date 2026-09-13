@@ -1,0 +1,37 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "compteur logique",
+    "compteur numerique"
+  ],
+  "term": "Compteur numérique",
+  "domains": [
+    "L"
+  ],
+  "definition": "Circuit séquentiel qui incrémente une valeur binaire à chaque impulsion reçue. Il sert à mesurer des durées, à diviser une fréquence ou à dénombrer des événements.",
+  "versionSimple": "Ce circuit ajoute un à chaque impulsion qu'il reçoit. Il permet de compter des objets ou de mesurer un temps.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "compteur-numerique",
+  "related": [
+    "bascule-flip-flop",
+    "circuit-logique",
+    "signal-d-horloge",
+    "systeme-binaire"
+  ]
+}

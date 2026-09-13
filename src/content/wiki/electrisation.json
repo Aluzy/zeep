@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "electrisation"
+  ],
+  "term": "Électrisation",
+  "domains": [
+    "E"
+  ],
+  "definition": "Passage d'un courant électrique à travers le corps humain, provoquant brûlures, contractions musculaires ou troubles cardiaques. Sa gravité dépend de l'intensité, du trajet et de la durée du contact.",
+  "versionSimple": "C'est ce qui arrive quand le courant traverse le corps. Même une faible quantité peut faire très mal et devenir dangereuse.",
+  "sources": [
+    {
+      "titre": "INRS — prévention des risques électriques",
+      "url": "https://www.inrs.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "electrisation",
+  "related": [
+    "courant-electrique",
+    "disjoncteur-differentiel",
+    "electrocution",
+    "habilitation-electrique",
+    "mise-a-la-terre",
+    "tres-basse-tension-de-securite"
+  ]
+}

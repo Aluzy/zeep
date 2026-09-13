@@ -1,0 +1,121 @@
+{
+  "_lisezMoi": "Lexique de référence : ce que le glossaire DEVRAIT contenir, domaine par domaine. C'est le seul fichier du dépôt qui décrit le contenu absent — tout le reste ne décrit que le contenu présent, ce qui est précisément ce qui avait laissé passer les unités SI (farad, coulomb, henry, hertz, joule) pendant deux cents fiches. scripts/audit_couverture.py compare cette liste aux fiches et à leurs synonymes, et signale les entrées sans fiche. Un terme volontairement écarté se déplace dans « horsPerimetre » avec sa raison : il ne doit pas simplement disparaître de la liste.",
+  "attendu": {
+    "A": [
+      "Farad", "Coulomb", "Henry", "Hertz", "Joule", "Ohm", "Siemens", "Tesla", "Weber",
+      "Décibel", "Voltampère", "Énergie électrique", "Période", "Valeur efficace", "Valeur crête",
+      "Déphasage", "Puissance active", "Puissance réactive", "Puissance apparente",
+      "Facteur de puissance", "Réactance", "Admittance", "Régime transitoire", "Résonance",
+      "Loi de Coulomb", "Loi de Faraday", "Loi de Lenz", "Théorème de Thévenin",
+      "Théorème de Norton", "Théorème de superposition", "Théorème de Millman",
+      "Pont diviseur de tension", "Pont diviseur de courant", "Pont de Wheatstone",
+      "Équations de Maxwell", "Loi de Biot-Savart", "Diagramme de Fresnel",
+      "Atome", "Ion", "Électrolyse", "Effet photoélectrique", "Effet de peau", "Ohm-mètre"
+    ],
+    "B": [
+      "Géothermie", "Biomasse", "Énergie marémotrice", "Cogénération", "Watt-crête",
+      "Facteur de charge", "Hydrogène"
+    ],
+    "C": [
+      "Monophasé", "Triphasé", "Chute de tension", "Délestage", "Harmoniques",
+      "Interconnexion européenne", "Courbe de charge", "Compteur Linky"
+    ],
+    "D": [
+      "Stockage d'énergie", "Ampère-heure", "Supercondensateur", "Pile à combustible",
+      "Station de transfert d'énergie par pompage", "Batterie de traction"
+    ],
+    "E": [
+      "Électrisation", "Électrocution", "Habilitation électrique", "Consignation électrique",
+      "Disjoncteur différentiel", "Courant de fuite", "Défaut d'isolement", "Régime de neutre",
+      "Indice de protection IP", "Classe d'isolation", "Très basse tension de sécurité",
+      "Arc électrique", "Section de câble", "Schéma unifilaire", "Parafoudre",
+      "Sélectivité", "Norme IEC 60364", "Marquage CE"
+    ],
+    "F": [
+      "Automate programmable", "Contacteur", "Sectionneur", "Relais statique", "Modbus",
+      "RS-485", "Bus CAN", "Moteur asynchrone", "Moteur synchrone", "Moteur à courant continu",
+      "SCADA", "Technicien de maintenance"
+    ],
+    "G": [
+      "Véhicule électrique", "Batterie de traction", "Borne de recharge", "Freinage régénératif",
+      "Charge bidirectionnelle", "Chargeur sans fil"
+    ],
+    "H": [
+      "Thermostat connecté", "Détecteur de présence", "Scénario domotique",
+      "Volet roulant motorisé", "Zigbee", "Protocole KNX", "Assistant vocal"
+    ],
+    "I": ["Lumen", "Lux", "Candela", "Gradateur", "Température de couleur"],
+    "J": [
+      "Puissance souscrite", "Heures creuses", "Autoconsommation", "Mix énergétique",
+      "Empreinte carbone de l'électricité", "Obsolescence programmée"
+    ],
+    "K": [
+      "Potentiomètre", "Rhéostat", "Diode Zener", "Diode Schottky", "Optocoupleur",
+      "Circuit RC", "Circuit RL", "Circuit RLC", "Constante de temps", "Fréquence de coupure",
+      "Bande passante", "Diagramme de Bode", "Distorsion", "Bouton poussoir",
+      "Montage Darlington", "Ferrite", "Code couleur des résistances"
+    ],
+    "L": [
+      "Algèbre de Boole", "Table de vérité", "Porte NON-ET", "Porte NON-OU", "Porte OU exclusif",
+      "Bit", "Octet", "Système binaire", "Système hexadécimal", "Signal d'horloge",
+      "Registre à décalage", "Compteur numérique", "Machine à états", "Échantillonnage",
+      "Théorème de Shannon", "Quantification", "Code Gray", "VHDL", "Verilog"
+    ],
+    "M": [
+      "Transistor IGBT", "Hacheur", "Pont de diodes", "Gradateur", "Rapport cyclique",
+      "Modulation de largeur d'impulsion (PWM)", "Relais statique"
+    ],
+    "N": [
+      "Jonction PN", "Dopage", "Trou électronique", "Bande interdite", "Effet Hall",
+      "Effet Peltier", "Piézoélectricité", "Supraconductivité", "Diélectrique", "Wafer",
+      "Germanium", "Nitrure de gallium", "Montage en surface", "Terres rares"
+    ],
+    "O": [
+      "GPIO", "Firmware", "Interruption", "ESP32", "STM32", "Bootloader", "Watchdog",
+      "Signal d'horloge", "Machine à états"
+    ],
+    "P": [
+      "Moteur brushless", "Codeur rotatif", "Asservissement", "Bras robotisé", "Drone",
+      "Odométrie"
+    ],
+    "Q": [
+      "LoRa", "Zigbee", "MQTT", "RFID", "Ethernet", "ESP32", "Passerelle IoT",
+      "Réseau maillé"
+    ],
+    "R": [
+      "Ethernet", "LoRa", "RFID", "Bande passante", "Analyseur de spectre",
+      "Théorème de Shannon", "Propagation radio", "Gain d'antenne"
+    ],
+    "S": [
+      "Thermistance", "Photorésistance", "Pince ampèremétrique", "Générateur de fonctions",
+      "Alimentation de laboratoire", "Contrôleur d'isolement", "Analyseur de spectre",
+      "Pont de Wheatstone", "Codeur rotatif", "Microphone", "Étalonnage",
+      "Testeur de continuité", "Effet Hall", "Détecteur de présence"
+    ],
+    "T": ["Haut-parleur", "Microphone", "Signal audio", "Distorsion", "Égaliseur", "Casque audio"],
+    "U": [
+      "Décharge électrostatique", "Varistance", "Harmoniques", "Indice de protection IP",
+      "Courant de fuite", "Défaut d'isolement", "Blindage", "Optocoupleur"
+    ],
+    "V": [
+      "Montage en surface", "Conception assistée par ordinateur électronique", "Simulation SPICE",
+      "Code couleur des résistances", "Gaine thermorétractable", "Connecteur électrique",
+      "Générateur de fonctions", "Alimentation de laboratoire", "Refusion", "Boîtier BGA",
+      "Impression 3D", "Série E12"
+    ],
+    "W": [
+      "Éco-conception", "Indice de réparabilité", "Obsolescence programmée", "Terres rares",
+      "Empreinte carbone de l'électricité", "Analyse du cycle de vie", "Réemploi"
+    ],
+    "X": [
+      "Histoire de l'électricité", "Technicien de maintenance", "Habilitation électrique",
+      "Alessandro Volta", "André-Marie Ampère", "Michael Faraday", "Nikola Tesla",
+      "Thomas Edison"
+    ]
+  },
+  "horsPerimetre": {
+    "_lisezMoi": "Termes examinés puis écartés. Les garder ici évite qu'ils soient « redécouverts » à chaque audit.",
+    "Mécanique quantique du solide": "Hors public CE1–terminale : la bande interdite suffit à ce niveau.",
+    "Calcul symbolique des impédances complexes": "Outil mathématique, pas une notion du glossaire ; traité dans la fiche Impédance."
+  }
+}

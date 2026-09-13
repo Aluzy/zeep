@@ -12,6 +12,7 @@
   "related": [
     "capteur",
     "capteur-optique",
+    "optocoupleur",
     "transistor"
   ],
   "pillar": false,

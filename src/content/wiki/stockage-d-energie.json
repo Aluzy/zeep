@@ -1,0 +1,48 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "stockage d'energie",
+    "stockage electrique"
+  ],
+  "term": "Stockage d'énergie",
+  "domains": [
+    "D"
+  ],
+  "definition": "Ensemble des techniques permettant de conserver de l'énergie électrique pour la restituer plus tard. Batteries, stations de pompage et hydrogène compensent le décalage entre production renouvelable et consommation.",
+  "versionSimple": "L'électricité se garde mal. On la transforme donc en autre chose, comme de l'eau montée dans un lac, pour la réutiliser plus tard.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "RTE — le réseau de transport d'électricité",
+      "url": "https://www.rte-france.com/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "stockage-d-energie",
+  "related": [
+    "accumulateur",
+    "autoconsommation",
+    "batterie",
+    "batterie-de-traction",
+    "energie-renouvelable",
+    "hydrogene",
+    "pile-a-combustible",
+    "reseau-electrique",
+    "station-de-transfert-d-energie-par-pompage",
+    "supercondensateur"
+  ]
+}

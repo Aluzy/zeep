@@ -52,6 +52,10 @@ const niveau = t.niveau;
 const niveauTexte = niveau ? niveauLabel(niveau.premiereApparition) : "";
 const versionSimple = (t.versionSimple || "").trim();
 const sources = (t.sources || []).filter((s) => s && s.titre && s.titre.trim());
+// Formes équivalentes : on n'affiche pas celles qui répètent le terme lui-même.
+const normaliser = (x: string) =>
+  x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+const synonymes = (t.synonymes || []).filter((x) => x && normaliser(x) !== normaliser(t.term));
 const relecture = t.relecture;
 
 // Liens retour : deux blocs masqués tant que personne ne cite la fiche.
@@ -78,6 +82,9 @@ const projetsLies = liens.projets;
         )}
       </div>
     </div>
+    {synonymes.length > 0 && (
+      <p class="synonymes"><span class="k">Aussi appelé</span> {synonymes.join(" · ")}</p>
+    )}
     <div class="definition" set:html={definitionHtml} />
     {versionSimple && (
       <aside class="simple-box">

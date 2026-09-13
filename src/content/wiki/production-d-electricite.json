@@ -11,9 +11,14 @@
   "definition": "Ensemble des activités consistant à générer du courant électrique dans une centrale électrique, à partir d'une source d'énergie renouvelable ou fossile.",
   "related": [
     "alternateur",
+    "biomasse",
     "centrale-electrique",
     "courant-electrique",
+    "energie-maremotrice",
     "energie-renouvelable",
+    "facteur-de-charge",
+    "geothermie",
+    "mix-energetique",
     "reseau-intelligent-smart-grid"
   ],
   "pillar": false,

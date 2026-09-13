@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "critere de nyquist",
+    "shannon nyquist",
+    "theoreme de shannon"
+  ],
+  "term": "Théorème de Shannon",
+  "domains": [
+    "L",
+    "R"
+  ],
+  "definition": "Règle selon laquelle un signal ne peut être reconstruit fidèlement que si la fréquence d'échantillonnage dépasse le double de sa fréquence maximale. En dessous, apparaissent des repliements irréversibles.",
+  "versionSimple": "Pour bien enregistrer un son, il faut le mesurer au moins deux fois plus vite que sa note la plus aiguë.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "theoreme-de-shannon",
+  "related": [
+    "bande-passante",
+    "convertisseur-analogique-numerique-can",
+    "echantillonnage",
+    "filtre-passe-bas"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "sectionneur",
+    "sectionneur porte fusible"
+  ],
+  "term": "Sectionneur",
+  "domains": [
+    "F",
+    "E"
+  ],
+  "definition": "Appareil dont la fonction est d'isoler visiblement une partie d'installation pour permettre une intervention en sécurité. Il se manœuvre hors charge et complète, sans les remplacer, les organes de coupure.",
+  "versionSimple": "Le sectionneur sert à couper vraiment l'électricité avant de travailler sur une installation, pour qu'il n'y ait plus aucun risque.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "sectionneur",
+  "related": [
+    "arc-electrique",
+    "consignation-electrique",
+    "disjoncteur",
+    "habilitation-electrique",
+    "tableau-electrique"
+  ]
+}

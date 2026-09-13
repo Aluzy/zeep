@@ -10,13 +10,22 @@
   "merged": false,
   "definition": "Circuit numérique construit à partir de portes logiques, comme la porte ET, la porte OU ou la porte NON, qui traite des signaux binaires.",
   "related": [
+    "algebre-de-boole",
     "bascule-flip-flop",
+    "bouton-poussoir",
     "circuit-numerique",
+    "compteur-numerique",
     "demultiplexeur",
+    "machine-a-etats",
     "multiplexeur",
     "porte-et-and",
+    "porte-non-et",
     "porte-non-not",
-    "porte-ou-or"
+    "porte-non-ou",
+    "porte-ou-exclusif",
+    "porte-ou-or",
+    "registre-a-decalage",
+    "table-de-verite"
   ],
   "pillar": false,
   "illustration": null

@@ -1,0 +1,41 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "enceinte",
+    "haut parleur",
+    "hp"
+  ],
+  "term": "Haut-parleur",
+  "domains": [
+    "T"
+  ],
+  "definition": "Transducteur qui convertit un signal électrique en onde sonore, généralement par le déplacement d'une bobine mobile placée dans un champ magnétique. Son impédance conditionne le choix de l'amplificateur.",
+  "versionSimple": "Le haut-parleur transforme l'électricité en son en faisant vibrer très vite une membrane.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "haut-parleur",
+  "related": [
+    "amplificateur-audio",
+    "bobine-inductance",
+    "champ-magnetique",
+    "impedance",
+    "microphone",
+    "piezoelectricite",
+    "signal-audio"
+  ]
+}

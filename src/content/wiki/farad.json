@@ -1,0 +1,47 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "F",
+    "farad",
+    "microfarad",
+    "nanofarad",
+    "picofarad"
+  ],
+  "term": "Farad",
+  "domains": [
+    "A"
+  ],
+  "definition": "Unité de mesure de la capacité électrique, de symbole F. Un condensateur de un farad accumule une charge de un coulomb lorsqu'on applique un volt entre ses deux armatures. Les valeurs courantes se comptent en microfarads ou en picofarads.",
+  "versionSimple": "Le farad sert à dire combien un condensateur peut stocker d'électricité. Comme un farad est énorme, on écrit presque toujours des valeurs beaucoup plus petites sur les composants.",
+  "sources": [
+    {
+      "titre": "BIPM — Le Système international d'unités",
+      "url": "https://www.bipm.org/fr/",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "farad",
+  "related": [
+    "charge-electrique",
+    "condensateur",
+    "coulomb",
+    "dielectrique",
+    "supercondensateur",
+    "tension-electrique"
+  ]
+}

@@ -16,9 +16,12 @@
     "dynamo",
     "electricite",
     "eolienne",
+    "freinage-regeneratif",
     "loi-des-mailles",
     "moteur-electrique",
-    "pile-electrique"
+    "pile-electrique",
+    "theoreme-de-superposition",
+    "theoreme-de-thevenin"
   ],
   "pillar": false,
   "illustration": null,

@@ -1,0 +1,48 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "THD",
+    "distorsion harmonique",
+    "harmonique",
+    "harmoniques"
+  ],
+  "term": "Harmoniques",
+  "domains": [
+    "C",
+    "U"
+  ],
+  "definition": "Composantes d'un signal dont les fréquences sont des multiples de la fréquence fondamentale. Injectées par les appareils à découpage, elles déforment la tension du réseau et échauffent les conducteurs de neutre.",
+  "versionSimple": "Certains appareils renvoient dans les fils des signaux parasites plus rapides que le courant normal. Ils abîment la qualité de l'électricité.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    },
+    {
+      "titre": "RTE — le réseau de transport d'électricité",
+      "url": "https://www.rte-france.com/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "harmoniques",
+  "related": [
+    "alimentation-a-decoupage",
+    "analyseur-de-spectre",
+    "compatibilite-electromagnetique-cem",
+    "courant-alternatif",
+    "distorsion",
+    "filtre-electronique",
+    "neutre"
+  ]
+}

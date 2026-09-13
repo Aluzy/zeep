@@ -10,7 +10,9 @@
   "merged": false,
   "definition": "Source d'énergie issue de matières organiques fossilisées, comme le charbon, le pétrole ou le gaz, utilisée notamment dans les centrales thermiques.",
   "related": [
-    "centrale-thermique"
+    "centrale-thermique",
+    "empreinte-carbone-de-l-electricite",
+    "mix-energetique"
   ],
   "pillar": false,
   "illustration": null

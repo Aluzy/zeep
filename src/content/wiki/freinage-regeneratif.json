@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "frein moteur electrique",
+    "freinage regeneratif",
+    "recuperation d'energie au freinage"
+  ],
+  "term": "Freinage régénératif",
+  "domains": [
+    "G",
+    "M"
+  ],
+  "definition": "Technique qui fait fonctionner le moteur de traction en génératrice lors du ralentissement, renvoyant de l'énergie vers la batterie. Elle augmente l'autonomie et réduit l'usure des freins mécaniques.",
+  "versionSimple": "Quand la voiture ralentit, son moteur devient une génératrice et recharge un peu la batterie au lieu de tout perdre.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "freinage-regeneratif",
+  "related": [
+    "batterie-de-traction",
+    "generateur-electrique",
+    "moteur-electrique",
+    "supercondensateur",
+    "vehicule-electrique"
+  ]
+}

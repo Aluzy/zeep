@@ -10,12 +10,15 @@
   "merged": false,
   "definition": "Circuit électronique qui traite des signaux numériques codés en états discrets, par opposition au circuit analogique.",
   "related": [
+    "bit",
     "circuit-analogique",
     "circuit-logique",
     "electronique",
     "frequence-de-commutation",
     "quartz-resonateur",
-    "signal-numerique"
+    "signal-d-horloge",
+    "signal-numerique",
+    "systeme-binaire"
   ],
   "pillar": false,
   "illustration": null

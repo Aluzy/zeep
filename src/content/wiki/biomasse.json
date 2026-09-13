@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "biogaz",
+    "biomasse",
+    "bois energie",
+    "methanisation"
+  ],
+  "term": "Biomasse",
+  "domains": [
+    "B"
+  ],
+  "definition": "Production d'énergie à partir de matières organiques — bois, déchets agricoles, biogaz — brûlées ou méthanisées. Elle est pilotable et considérée comme renouvelable si la ressource est replantée.",
+  "versionSimple": "On produit de l'électricité en brûlant du bois ou des déchets agricoles, ou en récupérant le gaz qu'ils dégagent.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "biomasse",
+  "related": [
+    "centrale-thermique",
+    "cogeneration",
+    "energie-renouvelable",
+    "production-d-electricite",
+    "turbine"
+  ]
+}

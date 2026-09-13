@@ -10,6 +10,8 @@
   "merged": false,
   "definition": "Rapport entre l'énergie utile obtenue et l'énergie électrique consommée, un indicateur clé du rendement énergétique d'un appareil ou d'un bâtiment.",
   "related": [
+    "cogeneration",
+    "eco-conception",
     "economie-d-energie",
     "rendement-energetique"
   ],

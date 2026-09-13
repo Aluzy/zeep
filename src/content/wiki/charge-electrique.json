@@ -10,12 +10,19 @@
   "merged": false,
   "definition": "Propriété fondamentale de la matière, portée notamment par l'électron, qui est à l'origine des phénomènes électriques comme le courant électrique et le champ électrique.",
   "related": [
+    "atome",
     "champ-electrique",
+    "coulomb",
     "courant-electrique",
+    "decharge-electrostatique",
     "electricite",
     "electron",
+    "farad",
     "intensite-electrique",
-    "loi-des-noeuds"
+    "ion",
+    "loi-de-coulomb",
+    "loi-des-noeuds",
+    "trou-electronique"
   ],
   "pillar": false,
   "illustration": null,

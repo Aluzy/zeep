@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "heures creuses",
+    "heures pleines",
+    "option tarifaire"
+  ],
+  "term": "Heures creuses",
+  "domains": [
+    "J"
+  ],
+  "definition": "Plages horaires durant lesquelles le kilowattheure est facturé moins cher, afin de déplacer la consommation hors des pointes. Elles commandent classiquement le chauffe-eau par un contacteur.",
+  "versionSimple": "À certaines heures, l'électricité coûte moins cher. On en profite pour faire chauffer l'eau ou lancer le lave-linge.",
+  "sources": [
+    {
+      "titre": "Service-public.fr — énergie et logement",
+      "url": "https://www.service-public.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "heures-creuses",
+  "related": [
+    "consommation-electrique",
+    "contacteur",
+    "delestage",
+    "facture-d-electricite",
+    "kilowattheure"
+  ]
+}

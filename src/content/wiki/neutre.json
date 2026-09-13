@@ -12,7 +12,11 @@
   "related": [
     "circuit-electrique",
     "courant-electrique",
-    "phase-electrique"
+    "harmoniques",
+    "monophase",
+    "phase-electrique",
+    "regime-de-neutre",
+    "triphase"
   ],
   "pillar": false,
   "illustration": null

@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "XOR",
+    "ou exclusif",
+    "porte OU exclusif",
+    "porte xor"
+  ],
+  "term": "Porte OU exclusif",
+  "domains": [
+    "L"
+  ],
+  "definition": "Porte logique dont la sortie est vraie lorsque ses deux entrées diffèrent. Elle réalise l'addition binaire sans retenue et sert au calcul des codes de contrôle d'erreur.",
+  "versionSimple": "Cette porte dit oui quand ses deux entrées ne sont pas d'accord entre elles.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "porte-ou-exclusif",
+  "related": [
+    "algebre-de-boole",
+    "circuit-logique",
+    "porte-logique",
+    "systeme-binaire",
+    "table-de-verite"
+  ]
+}

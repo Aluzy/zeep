@@ -1,0 +1,39 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "conception ecologique",
+    "eco conception"
+  ],
+  "term": "Éco-conception",
+  "domains": [
+    "W"
+  ],
+  "definition": "Démarche qui intègre dès la conception d'un produit la réduction de ses impacts sur tout son cycle de vie : matières, fabrication, consommation, réparabilité et fin de vie.",
+  "versionSimple": "On réfléchit dès le début à fabriquer un objet qui abîme moins la planète, et qui se répare facilement.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "eco-conception",
+  "related": [
+    "efficacite-energetique",
+    "empreinte-carbone-de-l-electricite",
+    "indice-de-reparabilite",
+    "obsolescence-programmee",
+    "recyclage-des-dechets-electroniques-deee",
+    "terres-rares"
+  ]
+}

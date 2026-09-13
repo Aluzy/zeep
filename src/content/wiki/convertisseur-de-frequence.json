@@ -12,7 +12,10 @@
   "related": [
     "courant-alternatif",
     "frequence-electrique",
-    "moteur-electrique"
+    "moteur-asynchrone",
+    "moteur-electrique",
+    "moteur-synchrone",
+    "transistor-igbt"
   ],
   "pillar": false,
   "illustration": null,

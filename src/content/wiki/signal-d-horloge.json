@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "CLK",
+    "clock",
+    "horloge",
+    "signal d'horloge"
+  ],
+  "term": "Signal d'horloge",
+  "domains": [
+    "L",
+    "O"
+  ],
+  "definition": "Signal rectangulaire périodique qui cadence les changements d'état d'un circuit séquentiel. Sa fréquence détermine le rythme de travail d'un microprocesseur ou d'un bus de communication.",
+  "versionSimple": "C'est le battement régulier qui donne le tempo à tout le circuit, comme un métronome pour une machine.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "signal-d-horloge",
+  "related": [
+    "bascule-flip-flop",
+    "circuit-numerique",
+    "compteur-numerique",
+    "microprocesseur",
+    "oscillateur",
+    "quartz-resonateur",
+    "registre-a-decalage"
+  ]
+}

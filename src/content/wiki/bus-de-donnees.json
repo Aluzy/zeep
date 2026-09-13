@@ -10,6 +10,8 @@
   "merged": false,
   "definition": "Ensemble de conducteurs qui transportent des signaux numériques entre plusieurs composants électroniques, comme un processeur et une mémoire vive.",
   "related": [
+    "bus-can",
+    "ethernet",
     "memoire-vive-ram",
     "processeur-cpu",
     "protocole-de-communication"

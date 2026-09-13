@@ -1,0 +1,46 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "compteur communicant",
+    "compteur linky",
+    "linky"
+  ],
+  "term": "Compteur Linky",
+  "domains": [
+    "J",
+    "C"
+  ],
+  "definition": "Compteur électrique communicant déployé en France, qui relève la consommation à distance et transmet les données par courants porteurs. Il permet le suivi fin des usages et le pilotage du réseau.",
+  "versionSimple": "Ce compteur envoie tout seul la consommation au gestionnaire du réseau, sans qu'on vienne la relever à la maison.",
+  "sources": [
+    {
+      "titre": "Enedis — raccordement, comptage et distribution",
+      "url": "https://www.enedis.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "Service-public.fr — énergie et logement",
+      "url": "https://www.service-public.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "compteur-linky",
+  "related": [
+    "autoconsommation",
+    "compteur-electrique",
+    "consommation-electrique",
+    "facture-d-electricite",
+    "reseau-de-distribution",
+    "reseau-intelligent-smart-grid"
+  ]
+}

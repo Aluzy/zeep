@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "borne de recharge",
+    "point de charge",
+    "recharge rapide",
+    "wallbox"
+  ],
+  "term": "Borne de recharge",
+  "domains": [
+    "G"
+  ],
+  "definition": "Équipement qui délivre l'énergie à un véhicule électrique en dialoguant avec lui pour ajuster le courant. La recharge lente se fait en alternatif, la recharge rapide directement en courant continu.",
+  "versionSimple": "C'est l'appareil sur lequel on branche une voiture électrique. Certaines bornes rechargent lentement, d'autres très vite.",
+  "sources": [
+    {
+      "titre": "ADEME — énergie, climat et économie circulaire",
+      "url": "https://www.ademe.fr/",
+      "type": "officiel"
+    },
+    {
+      "titre": "Service-public.fr — énergie et logement",
+      "url": "https://www.service-public.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "borne-de-recharge",
+  "related": [
+    "batterie-de-traction",
+    "courant-alternatif",
+    "courant-continu",
+    "installation-electrique",
+    "vehicule-electrique"
+  ]
+}

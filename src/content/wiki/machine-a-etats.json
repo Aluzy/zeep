@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "FSM",
+    "automate a etats finis",
+    "grafcet",
+    "machine a etats"
+  ],
+  "term": "Machine à états",
+  "domains": [
+    "L",
+    "O"
+  ],
+  "definition": "Modèle de comportement dans lequel un système passe d'un état à un autre selon les événements reçus. Il structure la programmation des automatismes et la conception des circuits séquentiels.",
+  "versionSimple": "On décrit une machine par les situations où elle peut se trouver et par ce qui la fait passer de l'une à l'autre.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "machine-a-etats",
+  "related": [
+    "asservissement",
+    "automate-programmable",
+    "circuit-logique",
+    "fpga",
+    "microcontroleur",
+    "robotique",
+    "scenario-domotique"
+  ]
+}

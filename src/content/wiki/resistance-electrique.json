@@ -10,14 +10,21 @@
   "merged": false,
   "definition": "Opposition qu'un conducteur électrique oppose au passage du courant électrique, exprimée en ohms et mesurée avec un ohmmètre.",
   "related": [
+    "chute-de-tension",
     "conducteur-electrique",
+    "controleur-d-isolement",
     "courant-electrique",
     "effet-joule",
     "loi-d-ohm",
     "multimetre",
     "ohm",
     "ohmmetre",
-    "resistance"
+    "pont-de-wheatstone",
+    "resistance",
+    "siemens",
+    "supraconductivite",
+    "theoreme-de-norton",
+    "theoreme-de-thevenin"
   ],
   "pillar": false,
   "illustration": null,
@@ -32,5 +39,9 @@
     "matriceIds": [
       "M009"
     ]
-  }
+  },
+  "synonymes": [
+    "R",
+    "resistance electrique"
+  ]
 }

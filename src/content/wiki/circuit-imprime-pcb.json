@@ -12,11 +12,19 @@
   "related": [
     "carte-electronique",
     "composant-electronique",
+    "conception-assistee-par-ordinateur-electronique",
     "electronique",
     "fer-a-souder",
+    "montage-en-surface",
     "prototypage-electronique",
+    "refusion",
     "soudure-electronique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "PCB",
+    "carte imprimee",
+    "circuit imprime"
+  ]
 }

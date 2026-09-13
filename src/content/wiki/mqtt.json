@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "MQTT",
+    "broker",
+    "publication abonnement"
+  ],
+  "term": "MQTT",
+  "domains": [
+    "Q"
+  ],
+  "definition": "Protocole léger d'échange de messages où les objets publient leurs mesures vers un serveur relais et s'abonnent à celles qui les intéressent. Il économise la bande passante et l'énergie.",
+  "versionSimple": "Chaque objet envoie ses mesures à un point central, et ceux que cela intéresse viennent s'y abonner.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "mqtt",
+  "related": [
+    "domotique",
+    "esp32",
+    "objet-connecte-iot",
+    "protocole-de-communication"
+  ]
+}

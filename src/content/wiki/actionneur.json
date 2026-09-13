@@ -10,15 +10,20 @@
   "merged": false,
   "definition": "Composant électronique ou électromécanique, comme un servomoteur ou un relais électronique, qui convertit un signal de commande en action physique.",
   "related": [
+    "asservissement",
+    "automate-programmable",
+    "bras-robotise",
     "chaine-d-energie",
     "chaine-d-information",
+    "codeur-rotatif",
     "composant-electronique",
     "detecteur",
     "electronique",
     "moteur-pas-a-pas",
     "relais-electronique",
     "servomoteur",
-    "ventilateur-de-refroidissement"
+    "ventilateur-de-refroidissement",
+    "volet-roulant-motorise"
   ],
   "pillar": true,
   "illustration": null,

@@ -11,7 +11,8 @@
   "definition": "Circuit électronique qui traite des signaux analogiques dont l'amplitude varie de façon continue, par opposition au circuit numérique.",
   "related": [
     "circuit-numerique",
-    "electronique"
+    "electronique",
+    "simulation-spice"
   ],
   "pillar": false,
   "illustration": null

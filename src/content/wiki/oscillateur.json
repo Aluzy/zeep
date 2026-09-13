@@ -13,7 +13,9 @@
     "electronique",
     "frequence-de-commutation",
     "microcontroleur",
-    "quartz-resonateur"
+    "piezoelectricite",
+    "quartz-resonateur",
+    "signal-d-horloge"
   ],
   "pillar": false,
   "illustration": null

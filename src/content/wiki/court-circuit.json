@@ -12,6 +12,7 @@
   "merged": true,
   "definition": "<strong>Vu côté électricité :</strong> Contact accidentel entre deux conducteurs électriques de potentiels différents, provoquant une intensité électrique excessive pouvant déclencher un disjoncteur ou un fusible.<br><br><strong>Vu côté électronique :</strong> Contact accidentel entre deux points d'un circuit électronique de potentiels différents, provoquant un courant excessif pouvant endommager les composants électroniques.",
   "related": [
+    "arc-electrique",
     "court-jus",
     "disjoncteur",
     "electronique",

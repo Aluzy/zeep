@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "RC",
+    "circuit RC"
+  ],
+  "term": "Circuit RC",
+  "domains": [
+    "K"
+  ],
+  "definition": "Association d'une résistance et d'un condensateur. Selon le montage, elle retarde un signal, lisse une tension ou forme un filtre passe-bas ou passe-haut de premier ordre.",
+  "versionSimple": "Une résistance et un condensateur mis ensemble font un montage très courant qui ralentit ou lisse un signal électrique.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "circuit-rc",
+  "related": [
+    "circuit-rlc",
+    "condensateur",
+    "constante-de-temps",
+    "filtre-passe-bas",
+    "filtre-passe-haut",
+    "regime-transitoire",
+    "resistance"
+  ]
+}

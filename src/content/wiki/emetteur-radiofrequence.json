@@ -10,10 +10,14 @@
   "merged": false,
   "definition": "Circuit électronique qui transforme un signal en onde radiofréquence transmise par une antenne, utilisé notamment dans le Bluetooth et le Wi-Fi.",
   "related": [
+    "analyseur-de-spectre",
     "antenne",
     "bluetooth",
+    "drone",
     "electronique",
+    "lora",
     "modulation",
+    "rfid",
     "wi-fi"
   ],
   "pillar": false,

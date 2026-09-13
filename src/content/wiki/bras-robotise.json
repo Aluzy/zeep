@@ -1,0 +1,43 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "bras robotise",
+    "bras manipulateur",
+    "robot industriel",
+    "axe articule"
+  ],
+  "term": "Bras robotisé",
+  "domains": [
+    "P",
+    "F"
+  ],
+  "definition": "Ensemble de segments articulés mus par des moteurs asservis, capable de positionner un outil dans l'espace. Chaque axe possède son codeur, et le calculateur coordonne leurs mouvements.",
+  "versionSimple": "C'est un bras mécanique commandé par des moteurs. Chaque articulation sait où elle se trouve, ce qui permet des gestes précis.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "bras-robotise",
+  "related": [
+    "actionneur",
+    "asservissement",
+    "automate-programmable",
+    "codeur-rotatif",
+    "moteur-pas-a-pas",
+    "robotique",
+    "servomoteur"
+  ]
+}

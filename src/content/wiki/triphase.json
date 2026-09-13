@@ -1,0 +1,45 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": true,
+  "illustration": null,
+  "synonymes": [
+    "tri",
+    "triphase",
+    "trois phases"
+  ],
+  "term": "Triphasé",
+  "domains": [
+    "C",
+    "F"
+  ],
+  "definition": "Distribution électrique composée de trois phases décalées d'un tiers de période, avec ou sans neutre. Elle permet de transporter plus de puissance avec moins de cuivre et fait tourner directement les moteurs asynchrones.",
+  "versionSimple": "Au lieu d'un seul fil de phase, on en utilise trois qui se relaient. Cela permet d'alimenter des machines beaucoup plus puissantes.",
+  "sources": [
+    {
+      "titre": "RTE — le réseau de transport d'électricité",
+      "url": "https://www.rte-france.com/",
+      "type": "officiel"
+    },
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "triphase",
+  "related": [
+    "monophase",
+    "moteur-asynchrone",
+    "neutre",
+    "phase-electrique",
+    "reseau-de-distribution"
+  ]
+}

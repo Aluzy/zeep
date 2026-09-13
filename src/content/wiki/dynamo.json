@@ -11,7 +11,8 @@
   "definition": "Générateur électrique produisant un courant continu à partir d'une rotation mécanique.",
   "related": [
     "courant-continu",
-    "generateur-electrique"
+    "generateur-electrique",
+    "loi-de-faraday"
   ],
   "pillar": false,
   "illustration": null,

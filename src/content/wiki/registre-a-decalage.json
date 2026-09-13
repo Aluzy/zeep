@@ -1,0 +1,38 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "registre a decalage",
+    "shift register"
+  ],
+  "term": "Registre à décalage",
+  "domains": [
+    "L"
+  ],
+  "definition": "Chaîne de bascules qui décale les bits d'une position à chaque coup d'horloge. Il convertit une information série en parallèle et permet de piloter de nombreuses sorties avec peu de broches.",
+  "versionSimple": "Ce circuit fait avancer les informations d'un cran à chaque battement d'horloge, comme une file qui se décale.",
+  "sources": [
+    {
+      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
+      "url": "https://www.electropedia.org/",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "registre-a-decalage",
+  "related": [
+    "bascule-flip-flop",
+    "bit",
+    "bus-spi",
+    "circuit-logique",
+    "signal-d-horloge"
+  ]
+}

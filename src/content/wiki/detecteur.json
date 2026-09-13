@@ -46,8 +46,12 @@
     "actionneur",
     "capteur",
     "chaine-d-information",
+    "detecteur-de-presence",
     "domotique",
+    "effet-hall",
     "interrupteur",
+    "photoresistance",
+    "rfid",
     "signal-numerique"
   ]
 }

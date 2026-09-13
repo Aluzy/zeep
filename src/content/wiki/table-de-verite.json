@@ -1,0 +1,40 @@
+{
+  "sourceDomain": [
+    "lot-J3-couverture"
+  ],
+  "merged": false,
+  "pillar": false,
+  "illustration": null,
+  "synonymes": [
+    "table de verite"
+  ],
+  "term": "Table de vérité",
+  "domains": [
+    "L"
+  ],
+  "definition": "Tableau qui énumère toutes les combinaisons possibles des entrées d'un circuit logique et la sortie correspondante. Elle décrit complètement le comportement d'une fonction sans supposer sa réalisation.",
+  "versionSimple": "C'est une liste de tous les cas possibles et de la réponse du circuit pour chacun d'eux.",
+  "sources": [
+    {
+      "titre": "Éduscol — ressources d'accompagnement des programmes",
+      "url": "https://eduscol.education.fr/",
+      "type": "officiel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-13",
+    "par": "agent-contenu",
+    "statut": "relu-ia"
+  },
+  "slug": "table-de-verite",
+  "related": [
+    "algebre-de-boole",
+    "circuit-logique",
+    "porte-et-and",
+    "porte-logique",
+    "porte-non-et",
+    "porte-non-ou",
+    "porte-ou-exclusif",
+    "porte-ou-or"
+  ]
+}
