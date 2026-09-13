@@ -1,0 +1,100 @@
+From ca054b7bcfab127610e2fb0104b19ffd4fe4e194 Mon Sep 17 00:00:00 2001
+From: Agent J2-L1 <noreply@anthropic.com>
+Date: Sat, 12 Sep 2026 08:43:33 +0000
+Subject: [PATCH 04/15] J2-L1: valide les champs niveau, versionSimple, sources
+ et relecture
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Contrôle niveau.premiereApparition contre la liste des 11 codes, la
+longueur de versionSimple (8 à 60 mots), le titre non vide de chaque
+source et le statut de relecture (relu-ia | valide). --stats affiche
+le nombre de fiches par niveau.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ scripts/validate_content.py | 51 ++++++++++++++++++++++++++++++++-----
+ 1 file changed, 45 insertions(+), 6 deletions(-)
+
+diff --git a/scripts/validate_content.py b/scripts/validate_content.py
+index c2a0416..b66ac5c 100644
+--- a/scripts/validate_content.py
++++ b/scripts/validate_content.py
+@@ -35,6 +35,14 @@ WIKI_FIELDS = {
+ }
+ NIVEAU_KEYS = {"premiereApparition", "cycles", "familles", "matriceIds"}
+ RELECTURE_KEYS = {"date", "par", "statut"}
++# Codes de la colonne « Cycle_scolaire_normalise » de la matrice curriculaire.
++# Même liste que NIVEAU_LABEL dans src/lib/helpers.ts : garder les deux synchronisées.
++NIVEAUX = ["C1", "C2", "C3", "C4", "2GT", "1G", "TG", "1-TG", "STI2D", "CAP", "BACPRO"]
++RELECTURE_STATUTS = ("relu-ia", "valide")
++# Version simple : 1 à 2 phrases pour un élève de 8-11 ans (AGENTS.md §3).
++# La borne haute reste large pour ne pas bloquer une reformulation en cours de lot.
++VERSION_SIMPLE_MIN_MOTS = 8
++VERSION_SIMPLE_MAX_MOTS = 60
+ 
+ 
+ def main() -> int:
+@@ -86,14 +94,37 @@ def main() -> int:
+         if not rel:
+             warnings.append(f"{where} : aucune fiche liée")
+         niveau = d.get("niveau")
+-        if isinstance(niveau, dict) and not set(niveau) <= NIVEAU_KEYS:
+-            errors.append(f"{where} : clés inconnues dans niveau {set(niveau) - NIVEAU_KEYS}")
++        if isinstance(niveau, dict):
++            if not set(niveau) <= NIVEAU_KEYS:
++                errors.append(f"{where} : clés inconnues dans niveau {set(niveau) - NIVEAU_KEYS}")
++            premiere = niveau.get("premiereApparition")
++            if premiere is None:
++                errors.append(f"{where} : niveau sans « premiereApparition »")
++            elif premiere not in NIVEAUX:
++                errors.append(
++                    f"{where} : niveau « {premiere} » inconnu (attendus : {', '.join(NIVEAUX)})"
++                )
++        version_simple = d.get("versionSimple")
++        if isinstance(version_simple, str):
++            mots = len(version_simple.split())
++            if not VERSION_SIMPLE_MIN_MOTS <= mots <= VERSION_SIMPLE_MAX_MOTS:
++                errors.append(
++                    f"{where} : version simple de {mots} mot(s) "
++                    f"(attendu : {VERSION_SIMPLE_MIN_MOTS} à {VERSION_SIMPLE_MAX_MOTS} ; "
++                    "mettre null s'il n'y en a pas)"
++                )
+         relec = d.get("relecture")
+-        if isinstance(relec, dict) and not set(relec) <= RELECTURE_KEYS:
+-            errors.append(f"{where} : clés inconnues dans relecture {set(relec) - RELECTURE_KEYS}")
++        if isinstance(relec, dict):
++            if not set(relec) <= RELECTURE_KEYS:
++                errors.append(f"{where} : clés inconnues dans relecture {set(relec) - RELECTURE_KEYS}")
++            if relec.get("statut") not in RELECTURE_STATUTS:
++                errors.append(
++                    f"{where} : statut de relecture « {relec.get('statut')} » invalide "
++                    f"(attendus : {', '.join(RELECTURE_STATUTS)})"
++                )
+         for s in d.get("sources", []):
+-            if not isinstance(s, dict) or not s.get("titre"):
+-                errors.append(f"{where} : source invalide (objet avec au moins « titre » attendu)")
++            if not isinstance(s, dict) or not str(s.get("titre") or "").strip():
++                errors.append(f"{where} : source invalide (objet avec au moins « titre » non vide attendu)")
+ 
+     for path in sorted(BLOG_DIR.glob("*.md")):
+         fm, body = read_frontmatter(path)
+@@ -134,6 +165,14 @@ def main() -> int:
+         print(f"Liens wiki  : {sum(len(d.get('related', [])) for d in wiki.values())}")
+         print("Fiches par domaine : " + ", ".join(f"{k}={dom.get(k, 0)}" for k in taxonomy))
+         print(f"Avec niveau scolaire : {sum(1 for d in wiki.values() if d.get('niveau'))}")
++        niv = Counter(
++            (d.get("niveau") or {}).get("premiereApparition")
++            for d in wiki.values()
++            if isinstance(d.get("niveau"), dict)
++        )
++        autres = sorted(str(k) for k in niv if k is not None and k not in NIVEAUX)
++        detail = ", ".join(f"{k}={niv.get(k, 0)}" for k in NIVEAUX + autres)
++        print(f"Fiches par niveau    : {detail}")
+         print(f"Avec version simple  : {sum(1 for d in wiki.values() if d.get('versionSimple'))}")
+         statuts = Counter((d.get("relecture") or {}).get("statut") for d in wiki.values())
+         print(f"Relues               : {statuts.get('relu-ia', 0)} relu-ia, {statuts.get('valide', 0)} validées par Alexandre")
+-- 
+2.43.0
+

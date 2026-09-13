@@ -1,0 +1,143 @@
+From bb5c58b7c4c380ed3163240bf59ef606e43e6eee Mon Sep 17 00:00:00 2001
+From: Agent J2-L5 <noreply@anthropic.com>
+Date: Sat, 12 Sep 2026 13:11:16 +0000
+Subject: [PATCH 07/15] J2-L5: affiche sur la fiche les articles et projets qui
+ la citent
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Deux blocs conditionnels après les termes liés : « Articles qui en parlent » et
+« Projets qui l'utilisent ». Chacun disparaît quand la liste est vide — soit
+174 fiches sur 197 aujourd'hui, qui rendent exactement la page d'avant.
+
+Le titre est cliquable ; un projet affiche en plus son niveau (LEVEL_LABEL) et
+sa durée quand elle est renseignée. Le balisage réutilise `.related-block`,
+`.pins` et `.pin`, avec une variante `.pin-wide` pour les titres longs
+(pleine largeur sous 760 px).
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ public/assets/style.css     | 12 +++++++++
+ src/pages/wiki/[slug].astro | 52 ++++++++++++++++++++++++++++++++++---
+ 2 files changed, 61 insertions(+), 3 deletions(-)
+
+diff --git a/public/assets/style.css b/public/assets/style.css
+index 30a7ef9..d84482e 100644
+--- a/public/assets/style.css
++++ b/public/assets/style.css
+@@ -199,6 +199,15 @@ footer.site-footer{
+ }
+ .pins{display:flex;flex-wrap:wrap;gap:10px;}
+ 
++/* Liens retour de la fiche (« Articles qui en parlent », « Projets qui l'utilisent ») :
++   variante de .pin pour un titre long, avec une ligne de méta facultative. */
++.pin-wide{align-items:flex-start;max-width:100%;padding:10px 14px 10px 12px;}
++.pin-wide .dot{margin-top:6px;}
++.pin-wide .pin-body{display:flex;flex-direction:column;gap:6px;min-width:0;}
++.pin-wide .pin-title{line-height:1.45;overflow-wrap:anywhere;}
++.pin-wide .pin-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
++.pin-wide .pin-duree{font-family:var(--font-mono);font-size:10.5px;color:var(--text-faint);}
++
+ /* ---------- Fiche : niveau scolaire, version simple, sources, relecture ----------
+    Tous ces blocs sont conditionnels : une fiche sans niveau, sans version simple
+    et sans source rend exactement la page d'avant. */
+@@ -283,6 +292,9 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
+   .components-table{font-size:13px;}
+   .simple-box{padding:12px 14px;}
+   .simple-box .simple-text{font-size:14.5px;}
++  /* Un lien retour prend toute la largeur : deux titres d'article côte à côte
++     seraient illisibles sous 760 px. */
++  .pin-wide{width:100%;}
+   /* Les titres de source sont longs : on évite tout débordement horizontal. */
+   .source-item{font-size:13px;padding-left:10px;overflow-wrap:anywhere;}
+   .source-type{margin-left:0;display:block;margin-top:4px;white-space:normal;}
+diff --git a/src/pages/wiki/[slug].astro b/src/pages/wiki/[slug].astro
+index b04c7a9..c5e213d 100644
+--- a/src/pages/wiki/[slug].astro
++++ b/src/pages/wiki/[slug].astro
+@@ -1,18 +1,28 @@
+ ---
+ import Base from "../../layouts/Base.astro";
+ import { getCollection, type CollectionEntry } from "astro:content";
+-import { TAXONOMY, domainGroup, niveauLabel, SOURCE_TYPE_LABEL, formatDateFr } from "../../lib/helpers";
++import { TAXONOMY, domainGroup, niveauLabel, LEVEL_LABEL, SOURCE_TYPE_LABEL, formatDateFr } from "../../lib/helpers";
++import { buildBacklinkIndex, liensRetourDe, type LiensRetour } from "../../lib/backlinks";
+ 
+ export async function getStaticPaths() {
+   const wiki = await getCollection("wiki");
+-  return wiki.map((t) => ({ params: { slug: t.data.slug }, props: { entry: t, all: wiki } }));
++  const blog = await getCollection("blog");
++  const diy = await getCollection("diy");
++  // Index inverse (articles et projets qui citent une fiche) : construit une seule
++  // fois ici pour les 197 pages ; chaque page ne reçoit que ses propres liens retour.
++  const backlinks = buildBacklinkIndex(blog, diy, wiki.map((t) => t.data.slug));
++  return wiki.map((t) => ({
++    params: { slug: t.data.slug },
++    props: { entry: t, all: wiki, liens: liensRetourDe(backlinks, t.data.slug) },
++  }));
+ }
+ 
+ interface Props {
+   entry: CollectionEntry<"wiki">;
+   all: CollectionEntry<"wiki">[];
++  liens: LiensRetour;
+ }
+-const { entry, all } = Astro.props as Props;
++const { entry, all, liens } = Astro.props as Props;
+ const t = entry.data;
+ const BASE = import.meta.env.BASE_URL;
+ const group = domainGroup(t.domains);
+@@ -31,6 +41,10 @@ const niveauTexte = niveau ? niveauLabel(niveau.premiereApparition) : "";
+ const versionSimple = (t.versionSimple || "").trim();
+ const sources = (t.sources || []).filter((s) => s && s.titre && s.titre.trim());
+ const relecture = t.relecture;
++
++// Liens retour : deux blocs masqués tant que personne ne cite la fiche.
++const articlesLies = liens.articles;
++const projetsLies = liens.projets;
+ ---
+ <Base title={t.term} description={t.definition.replace(/<[^>]+>/g, "").slice(0, 160)} group={group} active="wiki">
+   <div class="breadcrumb"><a href={BASE}>Accueil</a> / <a href={`${BASE}wiki/`}>Wiki</a> / {t.term}</div>
+@@ -73,6 +87,38 @@ const relecture = t.relecture;
+         )) : <span style="color:var(--text-faint);font-size:13px;">Aucun terme relié pour l'instant.</span>}
+       </div>
+     </div>
++    {articlesLies.length > 0 && (
++      <div class="related-block">
++        <h2>Articles qui en parlent ({articlesLies.length})</h2>
++        <div class="pins">
++          {articlesLies.map((a) => (
++            <a class="pin pin-wide" href={`${BASE}blog/${a.slug}/`}>
++              <span class="dot"></span>
++              <span class="pin-body"><span class="pin-title">{a.titre}</span></span>
++            </a>
++          ))}
++        </div>
++      </div>
++    )}
++    {projetsLies.length > 0 && (
++      <div class="related-block">
++        <h2>Projets qui l'utilisent ({projetsLies.length})</h2>
++        <div class="pins">
++          {projetsLies.map((p) => (
++            <a class="pin pin-wide" href={`${BASE}projets-diy/${p.slug}/`}>
++              <span class="dot"></span>
++              <span class="pin-body">
++                <span class="pin-title">{p.titre}</span>
++                <span class="pin-meta">
++                  <span class={`level-badge level-${p.niveau}`}>{LEVEL_LABEL[p.niveau] || p.niveau}</span>
++                  {p.duree && <span class="pin-duree">{p.duree}</span>}
++                </span>
++              </span>
++            </a>
++          ))}
++        </div>
++      </div>
++    )}
+     {sources.length > 0 && (
+       <div class="sources-block">
+         <h2 class="section-label">Sources ({sources.length})</h2>
+-- 
+2.43.0
+

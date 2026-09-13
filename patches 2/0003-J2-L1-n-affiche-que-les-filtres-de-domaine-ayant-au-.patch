@@ -1,0 +1,53 @@
+From 42ab48b5d6fdf8de9f80dcaeb148f26127201c9e Mon Sep 17 00:00:00 2001
+From: Agent J2-L1 <noreply@anthropic.com>
+Date: Sat, 12 Sep 2026 08:43:33 +0000
+Subject: [PATCH 03/15] J2-L1: n'affiche que les filtres de domaine ayant au
+ moins une fiche
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Le domaine G (mobilité électrique) n'a aucune fiche : son bouton menait à
+une grille vide. Le décompte sert aussi d'info-bulle. data-domain reste
+inchangé, la recherche et ?domain=X de site.js ne sont pas touchés.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ src/pages/wiki/index.astro | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+
+diff --git a/src/pages/wiki/index.astro b/src/pages/wiki/index.astro
+index 40fc96d..2997b1e 100644
+--- a/src/pages/wiki/index.astro
++++ b/src/pages/wiki/index.astro
+@@ -6,6 +6,16 @@ import { TAXONOMY } from "../../lib/helpers";
+ const BASE = import.meta.env.BASE_URL;
+ const wikiRaw = await getCollection("wiki");
+ const wiki = [...wikiRaw].sort((a, b) => a.data.term.localeCompare(b.data.term, "fr"));
++
++// Nombre de fiches par domaine : on n'affiche un filtre que pour les domaines
++// réellement peuplés (sinon le bouton mène à une grille vide — cas du domaine G).
++const countByDomain: Record<string, number> = {};
++for (const t of wiki) {
++  for (const d of t.data.domains) {
++    countByDomain[d] = (countByDomain[d] || 0) + 1;
++  }
++}
++const domainesUtilises = Object.entries(TAXONOMY).filter(([code]) => (countByDomain[code] || 0) > 0);
+ ---
+ <Base title="Wiki" description="Glossaire interconnecté d'électricité et d'électronique" group="neutre" active="wiki">
+   <div class="breadcrumb"><a href={BASE}>Accueil</a> / Wiki</div>
+@@ -16,8 +26,8 @@ const wiki = [...wikiRaw].sort((a, b) => a.data.term.localeCompare(b.data.term,
+   </div>
+   <div class="domain-filters">
+     <button type="button" data-domain="all" class="active">Tous</button>
+-    {Object.entries(TAXONOMY).map(([code, name]) => (
+-      <button type="button" data-domain={code} title={name}>{code}</button>
++    {domainesUtilises.map(([code, name]) => (
++      <button type="button" data-domain={code} title={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`}>{code}</button>
+     ))}
+   </div>
+   <div class="term-grid" id="term-grid">
+-- 
+2.43.0
+

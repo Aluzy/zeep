@@ -21,7 +21,9 @@ const coveredDomains = Object.keys(TAXONOMY).filter((code) => usedDomains.has(co
     </div>
     <div class="stat-row">
       <div class="stat"><div class="num">{wiki.length}</div><div class="lbl">Termes du wiki</div></div>
-      <div class="stat"><div class="num">{coveredDomains}</div><div class="lbl">Domaines couverts</div></div>
+      <a class="stat stat-link" href={`${BASE}wiki/`} title="Voir le détail des domaines dans le wiki">
+        <div class="num">{coveredDomains}</div><div class="lbl">Domaines couverts →</div>
+      </a>
       <div class="stat"><div class="num">{diy.length}</div><div class="lbl">Projets DIY</div></div>
       <div class="stat"><div class="num">{blog.length}</div><div class="lbl">Articles de blog</div></div>
     </div>
