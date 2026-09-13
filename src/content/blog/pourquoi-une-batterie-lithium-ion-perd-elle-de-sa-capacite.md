@@ -3,6 +3,7 @@ title: "Pourquoi une batterie lithium-ion perd-elle de sa capacité ?"
 domain: "D"
 excerpt: "Un téléphone ou une voiture électrique tient de moins en moins la charge au fil des années. Voici pourquoi une batterie lithium-ion vieillit, et ce qui accélère ou ralentit ce phénomène."
 related: ["batterie-lithium-ion", "accumulateur", "batterie", "pile-electrique"]
+sources: [{"titre": "CEA — Vieillissement des batteries Li-ion étudié grâce à la chimie sous rayonnements ionisants", "url": "https://www.cea.fr/presse/Pages/actualites-communiques/sciences-de-la-matiere/vieillissement-des-batteries-li-ion-etudie-grace-a-la-chimie-sous-rayonnements-ionisants.aspx", "type": "reference"}, {"titre": "Battery University — BU-808: How to Prolong Lithium-based Batteries", "url": "https://www.batteryuniversity.com/article/bu-808-how-to-prolong-lithium-based-batteries/", "type": "reference"}]
 ---
 
 Un téléphone acheté il y a trois ans qui ne tient plus la journée, une voiture électrique dont l'autonomie affichée diminue d'une année sur l'autre : ce constat revient pour presque tous les appareils équipés d'une batterie lithium-ion. Ce n'est ni un défaut isolé ni un hasard, mais un phénomène attendu et déjà pris en compte par les fabricants : la capacité d'une telle batterie diminue progressivement avec le temps et l'usage.
