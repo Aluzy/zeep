@@ -1,0 +1,42 @@
+---
+title: "Mesurer sans se tromper : multimètre, oscilloscope, pince"
+date: "2026-09-14"
+domain: "S"
+excerpt: "Un multimètre, un oscilloscope et une pince ampèremétrique ne répondent pas à la même question. Voici comment choisir le bon instrument, éviter les erreurs de mesure les plus fréquentes, et pourquoi mesurer sous tension secteur ne s'improvise pas."
+related: ["multimetre", "oscilloscope", "pince-amperemetrique", "ohmmetre", "generateur-de-fonctions", "valeur-efficace", "tension-electrique", "intensite-electrique", "resistance-electrique", "impedance"]
+sources: [{"titre": "INRS — Prévention du risque électrique", "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html", "type": "reference"}, {"titre": "INRS — Habilitation électrique", "url": "https://www.inrs.fr/risques/electriques/habilitation-electrique.html", "type": "reference"}]
+---
+
+Une LED qui ne s'allume pas, un moteur qui tourne trop lentement, une pile qui semble morte : dans tous ces cas, la première question à se poser n'est pas « qu'est-ce qui ne va pas ? » mais « qu'est-ce que je dois mesurer pour le savoir ? ». Un multimètre, un oscilloscope et une pince ampèremétrique existent tous les trois pour mesurer des grandeurs électriques, mais aucun ne répond à la même question, et se tromper d'instrument mène souvent à une conclusion fausse plutôt qu'à une absence de résultat.
+
+## Trois instruments, trois questions différentes
+
+Le multimètre est l'instrument de mesure polyvalent le plus répandu : il combine dans un seul boîtier les fonctions de voltmètre, d'ampèremètre et d'ohmmètre, et permet donc de mesurer la tension électrique, l'intensité électrique et la résistance électrique d'un circuit. Sa qualité principale est de donner une valeur unique et stable dans le temps : il répond bien à la question « combien vaut cette grandeur, en ce moment ». C'est l'outil du premier diagnostic : une pile est-elle chargée, un fusible est-il coupé, un fil est-il rompu.
+
+L'oscilloscope répond à une question différente : non pas « combien », mais « comment cette valeur évolue-t-elle dans le temps ». C'est un instrument qui affiche sur un écran la courbe d'une tension en fonction du temps, à partir du signal appliqué à son entrée, ce qui permet de lire l'amplitude, la période et la forme d'un signal variable — une information qu'un multimètre, qui ne renvoie qu'un chiffre, ne peut tout simplement pas donner. Un multimètre peut confirmer qu'un signal d'horloge oscille bien autour d'une tension moyenne cohérente ; seul un oscilloscope montre si ce signal a la forme attendue, s'il est déformé, ou s'il contient un parasite bref invisible sur une simple lecture chiffrée.
+
+La pince ampèremétrique, enfin, répond à une contrainte pratique plus qu'à une question de nature différente : elle mesure l'intensité qui circule dans un conducteur en l'entourant, sans avoir besoin d'ouvrir le circuit pour y insérer l'appareil en série, comme l'exige un ampèremètre classique. Elle exploite le champ magnétique créé par le courant qui circule dans le fil. Cette particularité la rend précieuse pour mesurer un courant déjà en place, dans une installation qu'on ne veut ou ne peut pas interrompre.
+
+## L'erreur la plus fréquente : mal régler l'appareil pour la grandeur mesurée
+
+La panne la plus banale n'est pas un défaut de l'instrument, mais un mauvais réglage. Un multimètre réglé sur la fonction ampèremètre, puis branché en parallèle aux bornes d'un composant comme s'il s'agissait d'un voltmètre, présente une résistance interne très faible : le résultat est, dans le meilleur des cas, une mesure incohérente, et dans le pire, un court-circuit qui peut endommager le circuit testé ou le fusible interne du multimètre. À l'inverse, un ampèremètre correctement utilisé se branche toujours en série, c'est-à-dire inséré directement dans le trajet du courant, jamais en dérivation.
+
+Une deuxième confusion fréquente touche la valeur affichée en courant alternatif. Ce qu'affiche un multimètre en mode tension alternative n'est pas la valeur maximale atteinte par le signal, mais sa valeur efficace : la valeur d'un signal alternatif qui produirait le même échauffement qu'un courant continu de même valeur. C'est cette valeur efficace, et non une valeur instantanée, qui est désignée par les 230 volts du réseau domestique. Un oscilloscope, lui, montre directement la courbe complète du signal et permet de voir que la tension instantanée dépasse en réalité largement cette valeur efficace au sommet de chaque alternance — deux appareils, deux lectures différentes de la même réalité électrique, ni l'une ni l'autre n'étant fausse.
+
+## Reconstituer un signal plutôt que le subir
+
+Toutes les mesures ne se font pas sur un montage déjà en fonctionnement. Pour caractériser un circuit — savoir comment un filtre réagit selon la fréquence du signal qu'on lui envoie, ou vérifier qu'un amplificateur ne déforme pas un signal — il faut d'abord pouvoir fournir un signal connu et réglable. C'est le rôle du générateur de fonctions, un appareil de laboratoire qui produit des signaux de forme, de fréquence et d'amplitude réglables. Associé à un oscilloscope qui observe la réponse du circuit à ce signal connu, il permet de caractériser précisément un filtre ou un amplificateur, plutôt que de se contenter de constater qu'un montage « marche » ou « ne marche pas ».
+
+## L'ohmmètre : une mesure qui exige un circuit hors tension
+
+L'ohmmètre, généralement intégré au multimètre, mesure la résistance électrique d'un composant ou d'un conducteur. Cette mesure a une particularité qui distingue les erreurs qu'elle provoque de celles des autres fonctions : elle ne peut être réalisée que sur un composant isolé, hors tension et le plus souvent débranché du reste du circuit. L'appareil envoie lui-même un faible courant à travers le composant pour en déduire la résistance ; si le circuit reste alimenté ou connecté à d'autres composants pendant la mesure, la valeur affichée mélange la résistance recherchée avec celle des éléments environnants, et le résultat n'a alors plus de sens. Une mesure de résistance sur un circuit encore sous tension peut aussi endommager l'appareil de mesure lui-même.
+
+## Mesurer sous tension secteur : une opération réservée à un professionnel
+
+Une part importante des erreurs de mesure décrites plus haut concerne des montages électroniques basse tension, où une manipulation malheureuse endommage au pire un composant ou un appareil de mesure. La situation change radicalement dès qu'il s'agit de mesurer une grandeur sur une installation raccordée au réseau électrique domestique, sous une tension de 230 volts : le risque n'est alors plus seulement matériel, il est corporel.
+
+L'Institut national de recherche et de sécurité rappelle que les interventions sur ou à proximité d'installations électriques sous tension doivent être confiées à un personnel formé et disposant de l'équipement de protection approprié, et que les travaux sous tension ne sont envisagés que lorsque la mise hors tension du circuit, appelée consignation, n'est pas possible. Cette exigence passe par l'habilitation électrique, définie comme la reconnaissance, par l'employeur, de la capacité d'une personne à accomplir en sécurité les tâches électriques qui lui sont confiées, à l'issue d'une formation théorique et pratique. Mesurer une tension au tableau électrique du logement, vérifier un courant sur une prise ou diagnostiquer un défaut sur le câblage d'une installation domestique ne sont donc pas des opérations à réaliser soi-même : elles relèvent d'un professionnel qualifié, seul en mesure d'évaluer correctement le risque avant d'intervenir.
+
+## Choisir l'instrument avant de chercher la panne
+
+Face à un montage qui ne fonctionne pas, la tentation est de brancher le premier instrument disponible et d'espérer une réponse. Mieux vaut partir de la question posée : une valeur unique à un instant donné appelle un multimètre ; une forme de signal qui évolue dans le temps appelle un oscilloscope ; un courant à mesurer sans interrompre le circuit appelle une pince ampèremétrique ; une réponse en fréquence à caractériser appelle la combinaison d'un générateur de fonctions et d'un oscilloscope. Choisir le bon instrument avant de mesurer évite la plupart des erreurs d'interprétation, et rappelle qu'un chiffre affiché sur un écran n'a de sens que si l'on sait exactement ce qu'il mesure et comment il a été obtenu.
