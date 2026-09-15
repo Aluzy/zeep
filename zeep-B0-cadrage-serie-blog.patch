@@ -1,0 +1,367 @@
+From 67d6e2c87e4a93be6504cb933d0e996adea1a3a3 Mon Sep 17 00:00:00 2001
+From: Claude Opus 5 <noreply@anthropic.com>
+Date: Sun, 13 Sep 2026 19:56:05 +0000
+Subject: [PATCH] B0: cadrage de la serie blog B1-B10 (10 lots de 4 articles)
+
+Fiche de mission commune aux agents redacteurs : contrat de sortie d'un
+article, procedure de lot, criteres d'acceptation, 40 sujets repartis sur
+les 24 domaines, prompt d'amorcage.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01D5veyxUbZCTS8BfJp98Y9Z
+---
+ agents/rapports/SERIE-BLOG-B1-B10.md | 342 +++++++++++++++++++++++++++
+ 1 file changed, 342 insertions(+)
+ create mode 100644 agents/rapports/SERIE-BLOG-B1-B10.md
+
+diff --git a/agents/rapports/SERIE-BLOG-B1-B10.md b/agents/rapports/SERIE-BLOG-B1-B10.md
+new file mode 100644
+index 0000000..ea14506
+--- /dev/null
++++ b/agents/rapports/SERIE-BLOG-B1-B10.md
+@@ -0,0 +1,342 @@
++# Série blog B1–B10 — cadrage de 10 lots de 4 articles
++
++- **Destinataires** : agents rédacteurs Sonnet, un agent par lot
++- **Volume** : 10 lots × 4 articles = **40 articles**, dont 3 réécritures d'articles existants trop courts
++- **Date de cadrage** : 2026-09-13
++- **Statut du dépôt au moment du cadrage** : 387 fiches wiki, 7 articles de blog, 3 projets DIY
++
++Ce document est la fiche de mission commune. Chaque agent en reçoit une copie et **la section de son seul lot**.
++Il ne remplace pas `AGENTS.md`, qui reste la règle ; il précise ce qui est propre aux lots de blog.
++
++---
++
++## 1. Pourquoi cette série
++
++Le glossaire vient de passer de 207 à 387 fiches (lot J3). Le blog, lui, compte 7 articles et n'a **aucun article
++dans 17 des 24 domaines** de la taxonomie. Ce déséquilibre a trois conséquences concrètes :
++
++1. **Le maillage contextuel est à l'arrêt.** `src/lib/definition-links.ts` ne rend cliquable, dans les définitions
++   du wiki, que les notions dont un article parle. Aujourd'hui **33 fiches sur 387** sont citées par un article :
++   plus de 90 % du glossaire ne reçoit aucun lien entrant depuis le blog.
++2. **Trois articles sont sous le seuil** et traînent des avertissements depuis le lot J1 :
++   `arduino-vs-raspberry-vs-esp32` (176 mots), `comprendre-facture-electricite` (142 mots),
++   `panneau-photovoltaique` (213 mots) — tous trois sans aucune source déclarée.
++3. **Le wiki définit, le blog explique.** Une fiche fait 25 à 60 mots : elle ne peut pas répondre à « pourquoi »
++   ni à « comment choisir ». C'est le rôle du blog, et c'est ce qui manque au public scolaire visé.
++
++La série vise donc, en 40 articles, à couvrir **les 24 domaines** et à faire passer le nombre de fiches citées
++par au moins un article de 33 à environ 250.
++
++---
++
++## 2. Ce qu'est un lot, et ce qu'il n'est pas
++
++| | |
++|---|---|
++| **Un lot** | 4 articles d'un même champ thématique, rédigés par un seul agent, sur une seule branche, avec un seul rapport |
++| **Nature du lot** | Lot « site » au sens d'`AGENTS.md` §2.2 : **édition directe** des fichiers `src/content/blog/*.md`, **pas de changeset** |
++| **Ce qu'un lot ne fait jamais** | Modifier une fiche wiki (`src/content/wiki/*.json`), un gabarit Astro, un script, une donnée de `src/data/` |
++| **Ce qu'un lot peut produire en plus** | Un changeset `agents/changesets/B<n>-wiki.jsonl` **non appliqué**, si une notion indispensable manque au wiki |
++
++Le point le plus souvent raté : **le lien blog → wiki est à sens unique.** Un article déclare les fiches qu'il cite
++dans son `related` ; l'index inverse est construit au build par `src/lib/backlinks.ts`. Un agent qui « ajoute le
++backlink » dans le JSON de la fiche sort de son périmètre et casse la réciprocité du wiki.
++
++---
++
++## 3. Contrat de sortie d'un article
++
++### 3.1 Frontmatter — gabarit exact
++
++```markdown
++---
++title: "Pourquoi un disjoncteur saute-t-il ?"
++date: "2026-09-20"
++domain: "E"
++excerpt: "Surcharge, court-circuit ou fuite à la terre : un disjoncteur qui saute ne signale pas toujours le même problème. Voici comment distinguer ces cas au tableau électrique."
++related: ["disjoncteur", "fusible", "court-circuit", "tableau-electrique", "installation-electrique", "mise-a-la-terre"]
++sources: [{"titre": "Titre exact de la page consultée", "url": "https://…", "type": "reference"}, {"titre": "…", "url": "https://…", "type": "norme"}]
++---
++```
++
++Contraintes vérifiées par `scripts/validate_content.py` :
++
++- `title`, `date`, `domain`, `excerpt` : obligatoires, non vides.
++- `date` : **chaîne** au format `AAAA-MM-JJ`. Le frontmatter est relu ligne à ligne en JSON par `zeeplib.py` :
++  une date sans guillemets ou un YAML multiligne le cassent.
++- `domain` : **un seul** code de `src/data/taxonomy.json` (A→X). C'est le domaine dominant, pas la liste des sujets abordés.
++- `related` : slugs de fiches wiki **existantes**. Un slug introuvable fait échouer le build, pas seulement le validateur.
++- `sources` : liste d'objets `{"titre", "url", "type"}`, `type` ∈ `programme | reference | norme | manuel | officiel`.
++
++### 3.2 L'ordre de `related` a un effet, ce n'est pas une liste décorative
++
++`definition-links.ts` désigne comme « article principal » d'une notion **celui qui la cite le plus tôt dans son
++`related`** (rang 0 = sujet de l'article). Conséquence :
++
++- en **première position**, la fiche dont l'article est réellement le développement — c'est vers cet article que
++  pointera le mot dans les définitions du wiki ;
++- ensuite, les notions traitées en profondeur ;
++- en fin de liste, les notions seulement mentionnées.
++
++Viser **6 à 12 fiches** par article. Moins de 6 : l'article ne travaille pas assez le maillage. Plus de 12 :
++l'article survole probablement.
++
++### 3.3 Corps de l'article
++
++- **800 à 1 300 mots.** Le validateur avertit sous 600 ; la cible du dépôt est 800. Un lot avec un article à
++  750 mots est refusé.
++- **Structure** : une accroche concrète sans titre (3 à 6 lignes), puis 4 à 6 sections en `##`, éventuellement
++  des `###`. Le sommaire de la page est construit à partir des titres de niveau 2 et 3 — un article sans `##`
++  n'a pas de sommaire.
++- **Une question, une réponse.** Le titre pose une question ou promet un choix ; l'article y répond vraiment,
++  dans les deux premières sections. Pas d'introduction qui annonce ce qui va être annoncé.
++- **Ancrage quotidien** : chaque article part d'une situation vécue (le disjoncteur qui saute, la facture,
++  le chargeur qui chauffe) avant d'introduire le vocabulaire.
++- **Vocabulaire officiel** : « tension » et non « voltage », « intensité » et non « ampérage ». Les usages
++  courants sont mentionnés comme tels, une fois.
++- **Sécurité** : tout article touchant au 230 V rappelle explicitement qu'on n'intervient pas soi-même sur une
++  installation sous tension. Ce n'est pas une formule de politesse : c'est une règle d'`AGENTS.md` §3.
++- **Pas de formule mathématique** dans le corps. Une relation s'énonce en toutes lettres (« la puissance est le
++  produit de la tension par l'intensité »).
++- **Pas de liste à puces en guise de rédaction.** Une liste par article au maximum, quand elle sert vraiment
++  (une comparaison, une procédure d'observation).
++- **Aucun lien Markdown vers le wiki dans le corps.** Les liens sont produits au rendu à partir de `related`.
++
++### 3.4 Sources
++
++- **Au moins deux sources par article**, pointant vers la **page précise** consultée, pas vers la racine du site.
++- Priorité : textes officiels (Éduscol, Légifrance, BO), organismes de référence (INRS, RTE, Enedis, ADEME, CRE,
++  BIPM, IEC), fabricants et syndicats professionnels pour la pratique (Promotelec, Hager, Schneider), puis ouvrages.
++- **Jamais Wikipédia comme source unique.**
++- **Toute URL est ouverte et lue avant d'être citée.** Une URL plausible mais non vérifiée est une faute de lot,
++  pas une approximation. En cas de doute, citer la source sans `url` plutôt qu'une adresse inventée.
++- Reformuler systématiquement ; au plus une citation courte (moins de 15 mots) entre guillemets par source.
++
++### 3.5 Nom de fichier
++
++`src/content/blog/<slug>.md`, le slug étant celui réservé dans la table du lot (section 6). Il devient l'URL
++de l'article : **il ne change plus une fois publié**. Pas d'accent, pas de majuscule, mots séparés par des tirets.
++
++---
++
++## 4. Procédure d'un lot
++
++```bash
++# 1. Partir de main à jour
++git checkout main && git pull
++git checkout -b blog/B3-reseau            # adapter le numéro et le nom du lot
++
++# 2. Lire, dans cet ordre, avant d'écrire une ligne
++#    - AGENTS.md (règles §2 et §3)
++#    - le présent document, section de son lot
++#    - src/data/taxonomy.json (le domaine du lot)
++#    - les fiches wiki citées : src/content/wiki/<slug>.json
++#    - un article de référence déjà validé, comme modèle de ton et de structure :
++cat src/content/blog/pourquoi-un-disjoncteur-saute-t-il.md
++
++# 3. Vérifier que chaque slug de `related` existe AVANT de rédiger
++ls src/content/wiki/ | sed 's/\.json$//' | grep -x -e disjoncteur -e fusible
++
++# 4. Rédiger les 4 articles, un fichier par article
++
++# 5. Contrôler — doit afficher 0 erreur, et aucun avertissement sur les fichiers du lot
++python3 scripts/validate_content.py --stats
++
++# 6. Contrôler la couverture — doit sortir en 0
++python3 scripts/audit_couverture.py --ci
++
++# 7. Rapport de lot, selon agents/rapports/TEMPLATE.md
++#    -> agents/rapports/B3.md
++
++# 8. Commits séparés, préfixés par le lot, en français
++git add src/content/blog/pourquoi-tres-haute-tension.md
++git commit -m "B3: article sur le transport en très haute tension"
++# … un commit par article, puis un dernier pour le rapport
++git push -u origin blog/B3-reseau
++```
++
++`npm install` est **indisponible** dans l'environnement des agents (registre bloqué, `AGENTS.md` §2.4) : le build
++Astro est vérifié par la CI sur la branche. Aucun lot de blog ne doit modifier de code Astro, ce qui rend ce
++risque nul s'il est respecté.
++
++---
++
++## 5. Critères d'acceptation d'un lot
++
++| Critère | Contrôle |
++|---|---|
++| 4 articles livrés, aux slugs réservés | `ls src/content/blog/` |
++| Chacun ≥ 800 mots | `python3 scripts/validate_content.py` — aucun avertissement « article court » sur le lot |
++| Chacun ≥ 2 sources, URL vérifiées | relecture du rapport de lot, qui liste les sources consultées |
++| `related` : 6 à 12 slugs existants, le sujet en premier | build CI + relecture |
++| Validation du contenu | `validate_content.py` : **0 erreur** |
++| Audit de couverture | `audit_couverture.py --ci` : **code 0** |
++| Aucune fiche wiki modifiée | `git diff --stat main -- src/content/wiki/` doit être vide |
++| Aucun code, gabarit ou script modifié | `git diff --stat main -- src/ scripts/ public/` limité à `src/content/blog/` |
++| Rapport de lot présent | `agents/rapports/B<n>.md` |
++
++**Points de refus fréquents**, à vérifier avant de rendre : une URL de source non ouverte ; un `related` vide ou
++rempli de slugs approximatifs ; un article de 700 mots ; une fiche wiki touchée « pour ajouter le lien retour » ;
++une date sans guillemets ; deux articles du lot qui racontent la même chose sous deux titres.
++
++---
++
++## 6. Les dix lots
++
++Notation de chaque ligne : **titre de travail** (l'agent peut l'affiner, pas changer le sujet) · `slug réservé` ·
++domaine · angle imposé · fiches à mettre en tête de `related`.
++
++Les fiches citées ci-dessous existent toutes dans le dépôt. L'agent en ajoute d'autres, à lui de les vérifier.
++
++### B1 — Les grandeurs de base · domaines A, X
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **Tension, intensité, résistance : trois grandeurs qu'on confond tout le temps** · `tension-intensite-resistance` | A | Partir de l'erreur de langage courante (« ça consomme du voltage »). Une analogie filée, assumée comme analogie et dont on dit les limites. | `tension-electrique`, `intensite-electrique`, `resistance-electrique`, `loi-d-ohm` |
++| 2 | **Pourquoi le courant du réseau change-t-il de sens 50 fois par seconde ?** · `pourquoi-le-courant-alternatif` | A | Le choix historique alternatif/continu, et ce qu'il permet : le transformateur. | `courant-alternatif`, `frequence-electrique`, `hertz`, `transformateur`, `courant-continu` |
++| 3 | **Que mesure vraiment un multimètre quand il affiche 230 V ?** · `ce-que-mesure-un-multimetre` | A | La valeur efficace, et pourquoi la crête monte à plus de 320 V. Rappel de sécurité obligatoire. | `valeur-efficace`, `valeur-crete`, `multimetre`, `tension-electrique`, `effet-joule` |
++| 4 | **Volt, ampère, watt, ohm : d'où viennent les unités de l'électricité** · `d-ou-viennent-les-unites-electriques` | X | Les savants derrière les unités, et ce que chaque unité mesure exactement. Aucune biographie romancée : ce qui est attesté. | `volt`, `ampere`, `watt`, `ohm`, `coulomb`, `farad`, `joule`, `histoire-de-l-electricite` |
++
++### B2 — Sécurité et installation domestique · domaine E
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **Différentiel 30 mA : ce qui protège les personnes, et ce qui protège les fils** · `differentiel-30-ma` | E | Deux fonctions de sécurité distinctes, systématiquement confondues. Article le plus sensible de la série. | `disjoncteur-differentiel`, `disjoncteur`, `courant-de-fuite`, `electrisation`, `fusible` |
++| 2 | **Pourquoi la terre est-elle indispensable dans un logement ?** · `a-quoi-sert-la-mise-a-la-terre` | E | Le trajet du courant de défaut, et ce qui se passe sans terre. | `mise-a-la-terre`, `prise-de-terre`, `defaut-d-isolement`, `regime-de-neutre`, `classe-d-isolation` |
++| 3 | **Lire son tableau électrique sans rien toucher** · `lire-son-tableau-electrique` | E | Observation seule : identifier les organes, comprendre l'organisation des départs. Répéter qu'on n'ouvre rien. | `tableau-electrique`, `disjoncteur`, `disjoncteur-differentiel`, `parafoudre`, `norme-electrique-nf-c-15-100` |
++| 4 | **Section de câble et chute de tension : pourquoi un fil trop fin est dangereux** · `section-de-cable-et-chute-de-tension` | E | Le lien entre longueur, section, échauffement et calibre de protection. | `section-de-cable`, `chute-de-tension`, `cable-electrique`, `effet-joule`, `disjoncteur` |
++
++### B3 — Le réseau : transport et distribution · domaine C
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **Pourquoi transporte-t-on l'électricité en très haute tension ?** · `pourquoi-tres-haute-tension` | C | Les pertes par effet Joule, et le rôle du transformateur aux deux bouts. | `ligne-haute-tension`, `effet-joule`, `transformateur`, `reseau-de-transport`, `poste-de-transformation` |
++| 2 | **Monophasé, triphasé : quelle différence chez soi et à l'usine ?** · `monophase-triphase` | C | Ce que le triphasé apporte, et pourquoi un logement n'en a en général pas besoin. | `triphase`, `monophase`, `phase-electrique`, `neutre`, `moteur-asynchrone` |
++| 3 | **Les 50 hertz du réseau : l'équilibre le plus surveillé de France** · `les-50-hertz-du-reseau` | C | Fréquence = équilibre production/consommation en temps réel ; le délestage comme dernier recours. Source RTE indispensable. | `frequence-electrique`, `hertz`, `reseau-electrique`, `delestage`, `reseau-de-transport` |
++| 4 | **Du poste source à la prise : le chemin de l'électricité** · `du-poste-source-a-la-prise` | C | Le trajet complet, niveau de tension par niveau de tension. | `reseau-de-distribution`, `poste-de-transformation`, `ligne-moyenne-tension`, `ligne-basse-tension`, `prise-de-courant` |
++
++### B4 — Produire, stocker, facturer · domaines B, D, J
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **Le mix électrique français, expliqué simplement** · `le-mix-electrique-francais` | B | Ce que chaque source apporte, et pourquoi on ne peut pas n'en garder qu'une. Chiffres datés et sourcés RTE. | `mix-energetique`, `centrale-nucleaire`, `energie-renouvelable`, `facteur-de-charge`, `production-d-electricite` |
++| 2 | **Pourquoi stocke-t-on de l'électricité dans des lacs ?** · `stocker-l-electricite-dans-des-lacs` | D | La STEP comme réponse au fait que l'électricité ne se garde pas. Comparer au stockage chimique. | `station-de-transfert-d-energie-par-pompage`, `stockage-d-energie`, `centrale-hydraulique`, `barrage-hydroelectrique`, `turbine` |
++| 3 | **Comment fonctionne un panneau photovoltaïque** · `panneau-photovoltaique` | B | **Réécriture** de l'article existant (213 mots, sans source). Reprendre le sujet du photon au courant continu, ajouter le watt-crête et l'onduleur. | `panneau-photovoltaique`, `effet-photoelectrique`, `jonction-pn`, `watt-crete`, `onduleur`, `autoconsommation` |
++| 4 | **Comprendre sa facture d'électricité ligne par ligne** · `comprendre-facture-electricite` | J | **Réécriture** de l'article existant (142 mots, sans source). Abonnement, puissance souscrite, kWh, taxes, heures creuses. Sources officielles obligatoires. | `facture-d-electricite`, `puissance-souscrite`, `kilowattheure`, `heures-creuses`, `compteur-linky`, `fournisseur-d-electricite` |
++
++### B5 — Électronique analogique · domaines K, T
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **Le pont diviseur de tension, le montage le plus utile du débutant** · `le-pont-diviseur-de-tension` | K | Un montage, trois usages réels (adapter un signal, lire un capteur, régler un volume). | `pont-diviseur-de-tension`, `resistance`, `potentiometre`, `tension-electrique`, `loi-d-ohm` |
++| 2 | **Pourquoi un condensateur ne se remplit pas instantanément** · `pourquoi-un-condensateur-met-du-temps` | K | Constante de temps et régime transitoire, à partir d'une LED qui s'éteint en fondu. | `constante-de-temps`, `circuit-rc`, `condensateur`, `regime-transitoire`, `farad` |
++| 3 | **Du micro au haut-parleur : où le son se filtre et où il se déforme** · `du-micro-au-haut-parleur` | T | Le trajet du signal audio, le rôle des filtres, et pourquoi le son sature quand on pousse. | `signal-audio`, `microphone`, `haut-parleur`, `amplificateur-audio`, `distorsion`, `filtre-passe-bas`, `bande-passante` |
++| 4 | **Zener, Schottky, LED : trois façons d'utiliser une diode** · `trois-facons-d-utiliser-une-diode` | K | Un même principe physique, trois exploitations. | `diode`, `diode-zener`, `diode-schottky`, `diode-electroluminescente-led`, `jonction-pn`, `tension-de-seuil` |
++
++### B6 — Du silicium au calcul · domaines N, L
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **Du sable à la puce : comment naît un circuit intégré** · `du-sable-a-la-puce` | N | La chaîne de fabrication, et pourquoi si peu d'usines dans le monde. | `silicium`, `wafer`, `circuit-integre`, `semi-conducteur`, `dopage`, `montage-en-surface` |
++| 2 | **La jonction PN, le passage à sens unique qui a tout changé** · `la-jonction-pn` | N | Le mécanisme derrière la diode, le transistor et la cellule solaire. Sans équation. | `jonction-pn`, `dopage`, `trou-electronique`, `diode`, `transistor`, `semi-conducteur` |
++| 3 | **De l'interrupteur à la porte logique : comment une machine calcule** · `de-l-interrupteur-a-la-porte-logique` | L | Construire un raisonnement à partir de deux états. Aboutir à la table de vérité. | `porte-logique`, `algebre-de-boole`, `table-de-verite`, `porte-et-and`, `porte-ou-or`, `circuit-logique` |
++| 4 | **Bit, octet, binaire : compter avec deux chiffres seulement** · `bit-octet-binaire` | L | Pourquoi les machines comptent en base deux, et ce que pèse vraiment un fichier. | `bit`, `octet`, `systeme-binaire`, `systeme-hexadecimal`, `memoire-vive-ram`, `signal-numerique` |
++
++### B7 — Usages du quotidien : route, maison, lumière · domaines G, H, I
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **Recharger une voiture électrique : ce qui se passe entre la borne et la batterie** · `recharger-une-voiture-electrique` | G | Alternatif ou continu, puissance, dialogue borne/véhicule. Pourquoi la charge ralentit en fin de recharge. | `borne-de-recharge`, `vehicule-electrique`, `batterie-de-traction`, `courant-continu`, `batterie-lithium-ion` |
++| 2 | **Freinage régénératif : récupérer l'énergie d'un ralentissement** · `le-freinage-regeneratif` | G | Le moteur devenu génératrice ; ce que cela change pour l'autonomie et les plaquettes. | `freinage-regeneratif`, `moteur-electrique`, `generateur-electrique`, `batterie-de-traction`, `supercondensateur` |
++| 3 | **Watts ou lumens : bien choisir une ampoule LED** · `watts-ou-lumens` | I | Le watt mesure la consommation, pas la lumière. Lumens, lux, et ce que valent les équivalences affichées. | `lumen`, `lux`, `ampoule-led`, `eclairage`, `luminaire`, `efficacite-energetique` |
++| 4 | **Domotique : ce qu'on gagne vraiment à automatiser un logement** · `ce-qu-on-gagne-avec-la-domotique` | H | Honnête sur les gains réels et sur les limites (dépendance au cloud, obsolescence). | `domotique`, `thermostat-connecte`, `scenario-domotique`, `detecteur-de-presence`, `zigbee`, `economie-d-energie` |
++
++### B8 — Puissance, moteurs, automatismes · domaines M, F, P
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **PWM : régler une puissance en allumant et en éteignant très vite** · `regler-une-puissance-avec-le-pwm` | M | Pourquoi découper plutôt que freiner : le rendement. Exemples LED et moteur. | `modulation-de-largeur-d-impulsion-pwm`, `rapport-cyclique`, `hacheur`, `mosfet`, `moteur-a-courant-continu` |
++| 2 | **Continu, asynchrone, brushless : comment choisir un moteur** · `comment-choisir-un-moteur-electrique` | F | Un tableau de choix assumé, avec les critères réels (couple, entretien, pilotage, coût). | `moteur-a-courant-continu`, `moteur-asynchrone`, `moteur-brushless`, `moteur-synchrone`, `moteur-pas-a-pas`, `servomoteur` |
++| 3 | **Ce que fait un variateur de fréquence dans une usine** · `le-variateur-de-frequence` | F | Faire varier la vitesse d'un moteur asynchrone sans le brutaliser. | `convertisseur-de-frequence`, `moteur-asynchrone`, `transistor-igbt`, `electronique-de-puissance`, `triphase` |
++| 4 | **Asservissement : la boucle qui se corrige toute seule** · `l-asservissement-explique` | P | Consigne, mesure, écart, correction. Du régulateur de vitesse au bras robotisé. | `asservissement`, `codeur-rotatif`, `servomoteur`, `capteur`, `actionneur`, `robotique`, `bras-robotise` |
++
++### B9 — Embarqué, objets connectés et radio · domaines O, Q, R
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **Arduino, Raspberry Pi, ESP32 : lequel choisir pour son projet** · `arduino-vs-raspberry-vs-esp32` | O | **Réécriture** de l'article existant (176 mots, sans source). Critères de choix réels : consommation, connectivité, système d'exploitation, temps réel. | `carte-arduino`, `carte-raspberry-pi`, `esp32`, `microcontroleur`, `microprocesseur`, `electronique-embarquee` |
++| 2 | **I2C, SPI, UART : trois façons de faire parler deux puces** · `i2c-spi-uart` | O | Ce qui distingue les trois (nombre de fils, débit, nombre d'appareils), et quand chacun s'impose. | `bus-i2c`, `bus-spi`, `interface-serie-uart`, `bus-de-donnees`, `protocole-de-communication`, `signal-d-horloge` |
++| 3 | **LoRa, Zigbee, Wi-Fi : choisir une radio pour un capteur** · `choisir-une-radio-pour-un-capteur` | Q | Le triangle portée / débit / consommation. Un capteur sur pile pendant cinq ans n'est pas en Wi-Fi. | `lora`, `zigbee`, `wi-fi`, `objet-connecte-iot`, `reseau-maille`, `antenne`, `bluetooth` |
++| 4 | **Ce qu'un microcontrôleur fait pendant qu'il ne fait rien** · `ce-que-fait-un-microcontroleur-au-repos` | O | Boucle principale, interruptions, veille : pourquoi une bonne conception passe son temps à dormir. | `microcontroleur`, `interruption`, `gpio`, `firmware`, `signal-d-horloge`, `esp32` |
++
++### B10 — Atelier : fabriquer, mesurer, faire durer · domaines V, S, U, W
++
++| # | Titre de travail / slug | Dom. | Angle imposé | Fiches en tête de `related` |
++|---|---|---|---|---|
++| 1 | **De la breadboard au circuit imprimé : les étapes d'un prototype** · `de-la-breadboard-au-circuit-imprime` | V | Le parcours complet d'un montage, avec ce qu'on perd et gagne à chaque étape. | `plaque-d-essai-breadboard`, `prototypage-electronique`, `circuit-imprime-pcb`, `conception-assistee-par-ordinateur-electronique`, `simulation-spice`, `soudure-electronique` |
++| 2 | **Mesurer sans se tromper : multimètre, oscilloscope, pince** · `mesurer-sans-se-tromper` | S | Quel instrument pour quelle question, et les erreurs de mesure classiques. Sécurité en mesure sous tension. | `multimetre`, `oscilloscope`, `pince-amperemetrique`, `ohmmetre`, `generateur-de-fonctions`, `valeur-efficace` |
++| 3 | **Pourquoi un montage marche sur la table et plus dans son boîtier** · `pourquoi-un-montage-ne-marche-plus-dans-son-boitier` | U | Masses, longueurs de fils, parasites, décharges électrostatiques. L'article le plus utile aux amateurs. | `compatibilite-electromagnetique-cem`, `interference-electromagnetique`, `decharge-electrostatique`, `bruit-electronique`, `boitier-electronique`, `mise-a-la-terre` |
++| 4 | **Pourquoi l'électronique dure moins longtemps qu'avant** · `pourquoi-l-electronique-dure-moins-longtemps` | W | Article d'opinion documentée : distinguer usure réelle, choix de conception et obsolescence. Sourcer chaque affirmation. | `obsolescence-programmee`, `indice-de-reparabilite`, `eco-conception`, `recyclage-des-dechets-electroniques-deee`, `terres-rares`, `batterie-lithium-ion` |
++
++---
++
++## 7. Ordonnancement et parallélisation
++
++Les dix lots ne partagent **aucun fichier** : chacun crée quatre `.md` aux slugs réservés et un rapport à son nom.
++Ils sont donc parallélisables sans conflit Git, sur dix branches `blog/B<n>-<nom>`.
++
++Deux réserves :
++
++1. **Ordre de fusion.** Fusionner les lots au fil de l'eau, un par un, après relecture. La CI construit le site à
++   chaque branche : une fusion groupée de dix branches masque l'origine d'une régression.
++2. **Les trois réécritures** (B4 #3, B4 #4, B9 #1) modifient des fichiers existants. Si un autre travail touche
++   ces articles en parallèle, les traiter en premier.
++
++Ordre recommandé si les lots sont lancés en séquence, du plus structurant au plus spécialisé :
++**B1 → B2 → B4 → B3 → B5 → B6 → B9 → B8 → B7 → B10**. B1 et B2 fixent le ton et la façon de traiter la sécurité ;
++les relire attentivement avant de lancer les suivants.
++
++---
++
++## 8. Prompt d'amorçage d'un agent
++
++À copier tel quel, en remplaçant le numéro de lot et en joignant la section correspondante de ce document.
++
++> Tu es agent rédacteur sur le dépôt Zeep (wiki francophone d'électricité et d'électronique, public CE1–terminale).
++>
++> **Mission : lot B<n>, quatre articles de blog.** La fiche de mission complète est
++> `agents/rapports/SERIE-BLOG-B1-B10.md` ; ta section est « B<n> ». `AGENTS.md` reste la règle : lis-le d'abord.
++>
++> Contraintes non négociables :
++> - Tu modifies **uniquement** `src/content/blog/<slug>.md` (4 fichiers) et tu écris `agents/rapports/B<n>.md`.
++>   Tu ne touches à aucune fiche wiki, aucun script, aucun gabarit, aucune donnée de `src/data/`.
++> - Chaque article : 800 à 1 300 mots, frontmatter complet, 6 à 12 slugs wiki existants dans `related`
++>   (le sujet de l'article en première position), au moins 2 sources dont tu as **ouvert et lu** la page.
++> - Tu n'inventes jamais une URL. Si tu ne peux pas vérifier une source, tu la cites sans `url` et tu le signales
++>   dans ton rapport.
++> - Tu n'écris rien dont tu ne sois sûr. Un doute se signale dans le rapport, il ne se comble pas par une
++>   approximation. Tout article touchant au 230 V rappelle qu'on n'intervient pas soi-même.
++>
++> Avant de rendre, ces deux commandes doivent passer :
++> ```
++> python3 scripts/validate_content.py --stats   # 0 erreur, aucun avertissement sur tes 4 fichiers
++> python3 scripts/audit_couverture.py --ci      # code de sortie 0
++> ```
++>
++> Ton rapport suit `agents/rapports/TEMPLATE.md` et liste, article par article : le nombre de mots, les sources
++> consultées avec leur URL, les fiches citées, et les notions que tu aurais voulu citer mais qui n'ont pas encore
++> de fiche wiki.
++
++---
++
++## 9. Ce que la série ne couvre pas
++
++- **Les notions manquantes repérées en écrivant.** Un agent qui bute sur une notion absente du wiki ne la crée pas :
++  il l'inscrit dans son rapport, et le cas échéant dans un changeset `agents/changesets/B<n>-wiki.jsonl` **non
++  appliqué**, laissé à l'intégrateur. C'est la matière du lot wiki suivant.
++- **Les illustrations.** Aucun article de la série n'en porte : le champ n'existe pas côté blog et le sujet est
++  ouvert depuis le README.
++- **Les projets DIY.** Trois seulement à ce jour, alors que plusieurs articles (B5, B9, B10) appelleraient
++  naturellement un projet associé. À planifier comme série distincte.
++- **Le rattachement aux programmes.** Les articles n'ont pas de champ `niveau`. Si l'on veut à terme filtrer le
++  blog par cycle scolaire, c'est une évolution du schéma, donc un lot « site », pas un lot de rédaction.
+-- 
+2.43.0
+
