@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Ensemble des équipements, comme le tableau électrique, le câblage électrique et les prises de courant, permettant de distribuer l'électricité dans un bâtiment.",
+  "definition": "Ensemble des matériels électriques d'un bâtiment qui distribuent l'énergie depuis le point de livraison jusqu'aux appareils : tableau électrique, protections, câblage, prises de courant et points d'éclairage. Elle doit respecter la norme NF C 15-100 ; toute intervention s'y fait hors tension et relève d'un électricien.",
   "related": [
     "alimentation-electrique",
     "borne-de-recharge",
@@ -23,6 +23,7 @@
     "luminaire",
     "mise-a-la-terre",
     "monophase",
+    "neutre",
     "norme-electrique-nf-c-15-100",
     "parafoudre",
     "prise-de-courant",
@@ -48,5 +49,27 @@
     "matriceIds": [
       "M060"
     ]
+  },
+  "sources": [
+    {
+      "titre": "INRS, dossier Risques électriques, « Prévention du risque électrique » (surintensités, mise à la terre des masses, NF C 15-100)",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, brochure ED 6344 « Électricité : 10 règles élémentaires de sécurité » (2019), p. 6 : « Ne pas bricoler » : l'électricien est un professionnel qualifié ; fiche cassée à faire remplacer",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6344.pdf#page=6",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « installation »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/installation/43409",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
   }
 }

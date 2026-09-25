@@ -33,12 +33,15 @@
   },
   "slug": "energie-electrique",
   "related": [
+    "alimentation-electrique",
     "cable-electrique",
+    "compteur-electrique",
     "consommation-electrique",
     "facture-d-electricite",
     "generateur-electrique",
     "joule",
     "kilowattheure",
+    "panneau-photovoltaique",
     "puissance-electrique"
   ]
 }

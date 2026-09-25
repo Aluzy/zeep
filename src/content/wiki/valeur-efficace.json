@@ -16,30 +16,27 @@
   "domains": [
     "A"
   ],
-  "definition": "Valeur d'un signal alternatif qui produirait le même échauffement qu'un courant continu de même valeur. C'est elle qu'affichent les multimètres et qui est désignée par les 230 volts du réseau domestique.",
+  "definition": "Valeur de la tension ou du courant continu qui produirait, dans une même résistance et pendant la même durée, le même échauffement que la tension ou le courant alternatif considéré. C'est elle qu'affichent les multimètres et que désignent les 230 volts du réseau domestique, une tension dangereuse à laquelle on ne touche jamais.",
   "versionSimple": "Le courant de la maison change tout le temps de valeur. La valeur efficace est le nombre qui résume son effet réel, comme s'il était constant.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
-    },
-    {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 42 : tensions nominales en monophasé 230 V et en triphasé 230/400 V, exprimées en valeurs efficaces",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=42",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
     "statut": "relu-ia"
   },
   "slug": "valeur-efficace",
   "related": [
     "courant-alternatif",
+    "courant-continu",
     "effet-joule",
     "multimetre",
+    "resistance-electrique",
     "tension-electrique",
     "valeur-crete"
   ]

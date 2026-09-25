@@ -15,31 +15,36 @@
     "C",
     "F"
   ],
-  "definition": "Distribution électrique composée de trois phases décalées d'un tiers de période, avec ou sans neutre. Elle permet de transporter plus de puissance avec moins de cuivre et fait tourner directement les moteurs asynchrones.",
+  "definition": "Système de distribution en courant alternatif à trois phases dont les tensions sont décalées d'un tiers de période, avec ou sans neutre : en France, 230 V entre une phase et le neutre et 400 V entre deux phases. Il alimente notamment les moteurs de forte puissance ; toute intervention relève d'un électricien.",
   "versionSimple": "Au lieu d'un seul fil de phase, on en utilise trois qui se relaient. Cela permet d'alimenter des machines beaucoup plus puissantes.",
   "sources": [
     {
-      "titre": "RTE — le réseau de transport d'électricité",
-      "url": "https://www.rte-france.com/",
-      "type": "officiel"
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 42 : tensions nominales en monophasé 230 V et en triphasé 230/400 V, exprimées en valeurs efficaces",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=42",
+      "type": "reference"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "INRS, dossier Risques électriques, « Principes généraux sur l'électricité » (tensions 230 V et 400/230 V, moteur triphasé)",
+      "url": "https://www.inrs.fr/risques/electriques/principes-generaux-electricite.html",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
     "statut": "relu-ia"
   },
   "slug": "triphase",
   "related": [
+    "courant-alternatif",
+    "electricien",
     "monophase",
     "moteur-asynchrone",
     "neutre",
+    "periode",
     "phase-electrique",
-    "reseau-de-distribution"
+    "puissance-electrique",
+    "reseau-de-distribution",
+    "tension-electrique"
   ]
 }

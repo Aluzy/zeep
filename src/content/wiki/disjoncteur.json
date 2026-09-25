@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Dispositif de protection d'un circuit électrique qui coupe automatiquement le courant électrique en cas de court-circuit ou de surcharge, installé dans le tableau électrique.",
+  "definition": "Appareil de protection qui ouvre automatiquement un circuit électrique lorsque l'intensité dépasse une valeur fixée pendant un temps donné, en cas de surcharge ou de court-circuit ; on le réarme ensuite à la main. Placé dans le tableau électrique, il protège les câbles contre l'échauffement. S'il se déclenche souvent, il faut faire appel à un électricien.",
   "related": [
     "arc-electrique",
     "circuit-electrique",
@@ -16,6 +16,8 @@
     "court-circuit",
     "court-jus",
     "disjoncteur-differentiel",
+    "electricien",
+    "intensite-electrique",
     "puissance-souscrite",
     "schema-unifilaire",
     "section-de-cable",
@@ -23,5 +25,22 @@
     "tableau-electrique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "INRS, dossier Risques électriques, « Prévention du risque électrique » (surintensités, mise à la terre des masses, NF C 15-100)",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « disjoncteur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/disjoncteur/25911",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
+  }
 }

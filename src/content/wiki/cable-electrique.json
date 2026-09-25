@@ -10,11 +10,14 @@
   "merged": false,
   "definition": "Ensemble d'un ou de plusieurs conducteurs métalliques, chacun entouré de sa propre enveloppe isolante, le tout protégé par une gaine extérieure contre les chocs et les contacts. Selon son usage, il achemine l'énergie électrique jusqu'aux appareils ou transporte des signaux, par exemple entre deux équipements informatiques.",
   "related": [
+    "cablage-electrique",
     "chute-de-tension",
     "conducteur-electrique",
     "connecteur-electrique",
     "courant-electrique",
+    "court-circuit",
     "energie-electrique",
+    "fiche-electrique",
     "fil-electrique",
     "isolant-electrique",
     "section-de-cable"

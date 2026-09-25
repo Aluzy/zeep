@@ -12,26 +12,43 @@
   "domains": [
     "E"
   ],
-  "definition": "Électrisation entraînant la mort de la personne. Le risque devient majeur dès quelques dizaines de milliampères traversant la cage thoracique, bien en deçà du courant d'un appareil ménager.",
-  "versionSimple": "C'est une électrisation qui tue. Il faut beaucoup moins d'électricité qu'on ne l'imagine pour que cela arrive.",
+  "definition": "Électrisation qui entraîne la mort de la personne traversée par le courant électrique. Un courant alternatif de quelques dizaines de milliampères passant par le cœur pendant une seconde peut suffire, bien moins que celui d'un appareil ménager : toute tension supérieure à 50 V est potentiellement mortelle.",
+  "versionSimple": "L'électrocution, c'est quand le courant traverse le corps et tue. Un courant plus faible que celui d'une petite lampe suffit : on ne touche jamais une prise ni un fil abîmé.",
   "sources": [
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
+      "titre": "INRS, dossier Risques électriques, « Accidents d'origine électrique » (électrisation, électrocution, effets du courant)",
+      "url": "https://www.inrs.fr/risques/electriques/accidents-origine-electrique.html",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, brochure ED 6344 « Électricité : 10 règles élémentaires de sécurité » (2019), p. 4 : 230 V aux prises des particuliers, tensions au-delà de 50 V potentiellement mortelles",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6344.pdf#page=4",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « électrocution »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/%C3%A9lectrocution_n_f_/28237",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, dossier Risques électriques, « Principes généraux sur l'électricité » (courant de 65 mA dans une lampe de 15 W sous 230 V)",
+      "url": "https://www.inrs.fr/risques/electriques/principes-generaux-electricite.html",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
     "statut": "relu-ia"
   },
   "slug": "electrocution",
   "related": [
+    "courant-alternatif",
     "courant-electrique",
     "disjoncteur-differentiel",
     "electrisation",
     "habilitation-electrique",
-    "mise-a-la-terre"
+    "mise-a-la-terre",
+    "tension-electrique"
   ]
 }

@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Unité de mesure de la puissance électrique, correspondant à un joule d'énergie transféré par seconde.",
   "related": [
+    "consommation-electrique",
     "joule",
     "puissance-active",
     "puissance-electrique",
