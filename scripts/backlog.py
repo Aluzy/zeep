@@ -26,8 +26,8 @@ from pathlib import Path
 
 import dette
 from audit_couverture import couvert, index_des_formes
-from zeeplib import (AGENTS_DIR, MISSIONS_DIR, RAPPORTS_DIR, load_lexique, lire_entete,
-                     normaliser, slugify)
+from zeeplib import (AGENTS_DIR, CHANGESETS_DIR, MISSIONS_DIR, RAPPORTS_DIR, contient_a_remplir,
+                     lire_changeset, lire_entete, load_lexique, load_wiki, normaliser, slugify)
 
 SIGNALEMENTS_FILE = AGENTS_DIR / "donnees" / "signalements.json"
 MAPPING_NIVEAU = AGENTS_DIR / "outils" / "mapping_niveau.py"
@@ -73,17 +73,38 @@ def signalement_ouvert(sig: dict, fiche: dict | None) -> bool:
     return not (independante and str(relec.get("date", "")) >= sig.get("date", ""))
 
 
-def lots_en_cours() -> dict[str, str]:
-    """Élément (slug ou terme) -> lot, pour les missions de rédaction sans rapport."""
+def changeset_applique(chemin: Path, wiki: dict) -> bool:
+    """Vrai si chaque « set » du changeset a déjà sa valeur « new » et chaque « create » existe."""
+    if not chemin.exists():
+        return False
+    ops = lire_changeset(chemin)
+    if any(contient_a_remplir(o) for o in ops):
+        return False
+    sets = [o for o in ops if o.get("op") == "set"]
+    creations = [slugify((o.get("data") or {}).get("term", "")) for o in ops if o.get("op") == "create"]
+    if not sets and not creations:
+        return False
+    return all(o.get("slug") in wiki and wiki[o["slug"]].get(o.get("field")) == o.get("new") for o in sets) \
+        and all(c in wiki for c in creations)
+
+
+def lots_en_cours(wiki: dict | None = None) -> dict[str, str]:
+    """Élément (slug ou terme) -> lot, pour les missions de rédaction pas encore intégrées :
+    sans rapport, ou dont le changeset n'est pas encore appliqué au wiki (lot rédigé,
+    en contrôle ou en attente d'intégration)."""
     pris: dict[str, str] = {}
     if not MISSIONS_DIR.exists():
         return pris
+    wiki = load_wiki() if wiki is None else wiki
     for chemin in sorted(MISSIONS_DIR.glob("*.md")):
         entete = lire_entete(chemin) or {}
         lot = entete.get("lot")
         if entete.get("role") != "redaction" or not lot:
             continue
-        if (RAPPORTS_DIR / f"{lot}.md").exists():
+        termine = (RAPPORTS_DIR / f"{lot}.md").exists()
+        if termine and entete.get("file") != "niveaux":
+            termine = changeset_applique(CHANGESETS_DIR / f"{lot}.jsonl", wiki)
+        if termine:
             continue
         for cle in entete.get("elements") or []:
             pris.setdefault(cle, lot)
@@ -165,7 +186,7 @@ def construire(wiki: dict, exclure_en_cours: bool = True) -> dict[str, list[dict
         })
 
     if exclure_en_cours:
-        pris = lots_en_cours()
+        pris = lots_en_cours(wiki)
         for nom in files:
             files[nom] = [x for x in files[nom] if x["cle"] not in pris]
     return files
