@@ -7,10 +7,10 @@
 {"op": "set", "lot": "J4-L2", "slug": "luminaire", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
 {"op": "set", "lot": "J4-L2", "slug": "mise-a-la-terre", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
 {"op": "set", "lot": "J4-L2", "slug": "monophase", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
-{"op": "set", "lot": "J4-L2", "slug": "consommation-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L2", "slug": "court-circuit", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L2", "slug": "electrocution", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L2", "slug": "fiche-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L2", "slug": "harmoniques", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L2", "slug": "impedance", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L2", "slug": "modulation", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L2", "slug": "consommation-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L2", "slug": "court-circuit", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L2", "slug": "electrocution", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L2", "slug": "fiche-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L2", "slug": "harmoniques", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L2", "slug": "impedance", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L2", "slug": "modulation", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L2", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
