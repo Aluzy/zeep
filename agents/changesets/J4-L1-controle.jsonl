@@ -1,21 +1,16 @@
-{"op": "set", "lot": "J4-L1", "slug": "actionneur", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "cable-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "capteur", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "circuit-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "circuit-ferme", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "circuit-ouvert", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "conducteur-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "electronique-embarquee", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "generateur-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "intensite-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "interrupteur", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "isolant-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "microcontroleur", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "pile-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "processeur-cpu", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "protocole-de-communication", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "puissance-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "resistance-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "signal-analogique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "signal-numerique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
-{"op": "set", "lot": "J4-L1", "slug": "tension-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ferme", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ouvert", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "conducteur-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "electronique-embarquee", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "intensite-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "interrupteur", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "isolant-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "microcontroleur", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "pile-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "processeur-cpu", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "puissance-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "resistance-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "signal-analogique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "signal-numerique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
+{"op": "set", "lot": "J4-L1", "slug": "tension-electrique", "field": "relecture", "old": null, "new": {"date": "2026-09-25", "par": "agent-controleur-J4-L1", "statut": "relu-ia"}, "why": "Relue selon la grille (12 critères)."}
