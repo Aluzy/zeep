@@ -23,16 +23,20 @@ Une opération par ligne (objet JSON). Champs communs : "op", "lot", "why".
   {"op":"link","a":"loi-dohm","b":"resistance-electrique","why":"..."}
   {"op":"unlink","a":"...","b":"...","why":"..."}
 
+Un brouillon produit par scripts/prochain_lot.py contient la valeur "__A_REMPLIR__" :
+il est refusé tant qu'une seule de ces valeurs subsiste (rien n'est écrit).
+
 Renommer ou supprimer une fiche n'est pas autorisé par changeset (casse les URLs) :
 à signaler dans le rapport de lot pour décision humaine.
 """
 from __future__ import annotations
 
+import copy
 import json
 import sys
 from pathlib import Path
 
-from zeeplib import WIKI_DIR, dump_json, load_wiki, slugify
+from zeeplib import A_REMPLIR, WIKI_DIR, contient_a_remplir, dump_json, load_wiki, slugify
 
 SETTABLE = {"definition", "versionSimple", "domains", "pillar", "niveau", "sources", "relecture", "synonymes"}
 CREATE_DEFAULTS = {"sourceDomain": [], "merged": False, "pillar": False, "illustration": None,
@@ -62,6 +66,8 @@ def apply(ops: list[dict], wiki: dict) -> tuple[set[str], list[str]]:
     log: list[str] = []
     for i, op in enumerate(ops, 1):
         kind = op.get("op")
+        if contient_a_remplir(op):
+            raise ChangesetError(f"ligne {i} : brouillon non rempli (valeur « {A_REMPLIR} » présente)")
         if not op.get("why"):
             raise ChangesetError(f"ligne {i} : justification « why » manquante")
         if kind == "set":
@@ -112,6 +118,29 @@ def apply(ops: list[dict], wiki: dict) -> tuple[set[str], list[str]]:
         else:
             raise ChangesetError(f"ligne {i} : opération inconnue « {kind} »")
     return touched, log
+
+
+def avant_apres(ops: list[dict], wiki: dict) -> tuple[dict, dict, bool]:
+    """(corpus avant, corpus après, déjà appliqué ?) pour un changeset, sans rien écrire.
+
+    Si le changeset n'est pas encore appliqué, il l'est sur une copie. S'il l'est déjà
+    (chaque « set » a sa valeur « new », chaque « create » existe), l'état « avant » est
+    reconstruit à partir des valeurs « old »."""
+    sets = [o for o in ops if o.get("op") == "set"]
+    creates = [slugify(o.get("data", {}).get("term", "")) for o in ops if o.get("op") == "create"]
+    deja = bool(sets or creates) and all(
+        o.get("slug") in wiki and wiki[o["slug"]].get(o.get("field")) == o.get("new") for o in sets
+    ) and all(c in wiki for c in creates)
+    if deja:
+        avant = copy.deepcopy(wiki)
+        for o in reversed(sets):
+            avant[o["slug"]][o["field"]] = o.get("old")
+        for c in creates:
+            avant.pop(c, None)
+        return avant, wiki, True
+    apres = copy.deepcopy(wiki)
+    apply(ops, apres)
+    return wiki, apres, False
 
 
 def main() -> int:

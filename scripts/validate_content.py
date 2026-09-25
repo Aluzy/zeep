@@ -152,6 +152,10 @@ def main() -> int:
                     f"{where} : statut de relecture « {relec.get('statut')} » invalide "
                     f"(attendus : {', '.join(RELECTURE_STATUTS)})"
                 )
+            # AGENTS.md §3 : seul Alexandre pose « valide » (scripts/valider.py).
+            if relec.get("statut") == "valide" and relec.get("par") != "Alexandre":
+                errors.append(f"{where} : statut « valide » posé par « {relec.get('par')} » "
+                              "(réservé à Alexandre, voir scripts/valider.py)")
         for s in d.get("sources", []):
             if not isinstance(s, dict) or not str(s.get("titre") or "").strip():
                 errors.append(f"{where} : source invalide (objet avec au moins « titre » non vide attendu)")
