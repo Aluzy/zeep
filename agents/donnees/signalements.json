@@ -1,0 +1,29 @@
+{
+  "_lisezMoi": "Fiches signalées comme douteuses par un rapport de lot (erreur de fond qu'aucun script ne sait détecter). scripts/prochain_lot.py les place dans la file « securite » (gravité haute) ou « reecriture » (gravité moyenne). Une fiche sort de la file d'elle-même dès qu'elle est relue par un contrôleur indépendant (relecture.par contient « controleur ») à une date postérieure ou égale au signalement, ou validée par Alexandre. Un contrôleur qui refuse une fiche l'ajoute ici avec sa raison.",
+  "signalements": [
+    {"slug": "impedance", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°1", "motif": "Confond grandeurs et composants ; l'impédance combine résistance et réactances et s'oppose au courant alternatif, pas à un « signal analogique »."},
+    {"slug": "modulation", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°2", "motif": "Une modulation porte sur une porteuse, pas sur une « fréquence de commutation »."},
+    {"slug": "oscillateur", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°3", "motif": "Un microcontrôleur est cadencé par une fréquence d'horloge, pas une « fréquence de commutation »."},
+    {"slug": "panneau-photovoltaique", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°4", "motif": "« courant continu, une forme d'énergie renouvelable » : le courant continu n'est pas une forme d'énergie."},
+    {"slug": "neutre", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°5", "motif": "Vision « aller-retour » fausse en alternatif ; aucun avertissement alors qu'un neutre peut être sous tension."},
+    {"slug": "rendement-energetique", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°6", "motif": "Réduit l'énergie utile à de l'énergie électrique : faux pour un moteur (mécanique) ou une lampe (lumineuse)."},
+    {"slug": "watt", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°7", "motif": "« Unité de puissance électrique » : le watt est l'unité de puissance quelle que soit la forme d'énergie."},
+    {"slug": "kilowatt", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°7", "motif": "Idem watt : puissance, pas seulement puissance électrique."},
+    {"slug": "alternateur", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°8", "motif": "« convertit l'énergie mécanique en courant alternatif » : confusion énergie / courant."},
+    {"slug": "alimentation-electrique", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°9", "motif": "« Fourniture de courant électrique » : c'est de l'énergie qui est fournie ; définition trop maigre pour une fiche pilier."},
+    {"slug": "production-d-electricite", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°10", "motif": "« générer du courant électrique » : une centrale convertit une énergie primaire en énergie électrique."},
+    {"slug": "accumulateur", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°11", "motif": "« restituer sous forme de courant électrique » : confusion énergie / courant."},
+    {"slug": "efficacite-energetique", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°12", "motif": "Confond efficacité énergétique (notion large, réglementaire) et rendement ; doublon avec rendement-energetique (décision humaine en attente)."},
+    {"slug": "conductivite-electrique", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°13", "motif": "Circularité mutuelle avec resistivite : aucune des deux fiches n'explique la notion."},
+    {"slug": "resistivite", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°13", "motif": "Circularité mutuelle avec conductivite-electrique."},
+    {"slug": "frequence-de-commutation", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°14", "motif": "Une fréquence est un nombre de commutations par seconde (en hertz), pas une « vitesse »."},
+    {"slug": "fournisseur-d-electricite", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°16", "motif": "Se lit comme « achetée aux consommateurs » ; ne distingue pas fournisseur et gestionnaire de réseau."},
+    {"slug": "tension-electrique", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°17", "motif": "« met en mouvement le courant » : la tension met en mouvement les charges ; le courant est ce mouvement."},
+    {"slug": "amperemetre", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°18", "motif": "« intensité circulant » : une intensité ne circule pas ; le branchement en série n'est pas dit."},
+    {"slug": "phase-electrique", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°19", "motif": "Fiche liée au secteur 230 V sans rappel de sécurité ; 13 mots."},
+    {"slug": "prise-de-courant", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°19", "motif": "Fiche liée au secteur 230 V sans rappel de sécurité."},
+    {"slug": "tableau-electrique", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°19", "motif": "Fiche liée au secteur 230 V sans rappel de sécurité."},
+    {"slug": "cablage-electrique", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°19", "motif": "Fiche liée au secteur 230 V sans rappel de sécurité."},
+    {"slug": "bascule-flip-flop", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°20", "motif": "« construire la mémoire vive » : vrai pour la SRAM seulement, pas pour la DRAM."}
+  ]
+}
