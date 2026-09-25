@@ -29,7 +29,8 @@
     "exemptees": {
       "joule": "« domestique » désigne un ordre de grandeur de consommation, pas une intervention",
       "kilowatt": "cite la puissance d'une installation comme exemple d'unité",
-      "regime-transitoire": "« phase » au sens d'étape d'un régime, pas de conducteur"
+      "regime-transitoire": "« phase » au sens d'étape d'un régime, pas de conducteur",
+      "modulation": "« phase » au sens de la phase d'une onde porteuse, pas du conducteur de phase"
     }
   },
   "base": {
