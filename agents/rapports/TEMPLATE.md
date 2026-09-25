@@ -1,16 +1,18 @@
 ---
-# En-tête lu par les outils (synthèse, backlog) : garder les clés, remplir les valeurs.
+# En-tête lu par les outils (scripts/etat_projet.py, scripts/prochain_lot.py) : garder les clés,
+# remplir les valeurs. Une valeur par ligne ; listes et objets en JSON (clés entre guillemets),
+# le dépôt n'ayant pas de lecteur YAML. Un commentaire « # … » en fin de ligne est ignoré.
 lot: <LOT>
-titre: <titre court>
+titre: "<titre court>"
 date: AAAA-MM-JJ
 statut: termine            # termine | partiel | bloque
 redacteur: agent-<LOT>
 controleur: agent-controleur-<LOT>   # autre agent, qui n'a pas vu la rédaction ; « aucun » pour un lot « site »
-changesets: [agents/changesets/<LOT>.jsonl]
-fiches_creees: []          # slugs
+changesets: ["agents/changesets/<LOT>.jsonl", "agents/changesets/<LOT>-controle.jsonl"]
+fiches_creees: []          # slugs, ex. ["farad", "coulomb"]
 fiches_modifiees: []       # slugs
-lacunes: []                # notions rencontrées sans fiche : [{terme: "…", domaine: "A", vu_dans: "slug ou article"}]
-decisions_humaines: []     # questions à trancher par Alexandre (une phrase chacune)
+lacunes: []                # notions sans fiche : [{"terme": "…", "domaine": "A", "vu_dans": "slug ou article"}]
+decisions_humaines: []     # questions à trancher par Alexandre, une phrase chacune : ["…", "…"]
 ---
 
 # Rapport de lot <LOT> — <titre>
