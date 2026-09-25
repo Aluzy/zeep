@@ -43,7 +43,7 @@ npm run build     # génère dist/
 ## Intégration continue
 
 Sur **toutes les branches** et pull requests, GitHub Actions valide le contenu
-(`scripts/validate_content.py`), construit le site puis lance le test de fumée
+(`scripts/validate_content.py`, dont le cliquet de dette éditoriale), audite la couverture, construit le site puis lance le test de fumée
 (`scripts/smoke_dist.py`). La mise en ligne sur GitHub Pages n'a lieu que
 depuis `main`, si tout est vert.
 
@@ -62,6 +62,8 @@ Scripts utiles (à lancer depuis la racine du dépôt) :
 
 ```bash
 python3 scripts/validate_content.py [--stats]                         # garde-fou du contenu : doit afficher 0 erreur
+python3 scripts/dette.py [--detail REGLE | --indicateurs | --abaisser]    # dette éditoriale (cliquet, voir AGENTS.md §3 ter)
+python3 agents/outils/mapping_niveau.py --verifier                     # table des niveaux scolaires (--lot <LOT> : changeset)
 python3 scripts/apply_changeset.py agents/changesets/<LOT>.jsonl --dry-run   # vérifie puis applique un changeset
 python3 scripts/rename_slug.py <ancien-slug> [--term "Nouveau terme"] --dry-run  # renomme une fiche et ses références
 python3 scripts/smoke_dist.py --base /zeep                            # test de fumée du site construit (après npm run build)

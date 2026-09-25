@@ -23,10 +23,14 @@ Le plan d'ensemble et les fiches de mission vivent dans le projet claude.ai
    `python3 scripts/validate_content.py` doit afficher **0 erreur** une fois le changeset appliqué sur une copie de travail,
    et `python3 scripts/audit_couverture.py --ci` doit sortir en **0**. Les deux tournent en CI : le premier dit si ce qui est
    écrit est correct, le second si quelque chose manque. Un corpus à moitié rempli passe le premier sans broncher.
+   `validate_content.py` applique aussi le **cliquet de dette** (§3 ter) : une fiche qui enfreint une règle éditoriale
+   sans figurer dans `src/data/dette.json` est une erreur.
 4. **Pas de `npm install` possible dans l'environnement des agents** (registre bloqué) : le build Astro est vérifié par la CI
    GitHub. Écrire du code Astro/TypeScript prudent, sans nouvelle dépendance, et le relire deux fois.
 5. **Ne jamais renommer ni supprimer une fiche** sans que la mission le demande explicitement (casse les URLs).
-6. **Un rapport par lot** : `agents/rapports/<LOT>.md` selon `agents/rapports/TEMPLATE.md`.
+6. **Un rapport par lot** : `agents/rapports/<LOT>.md` selon `agents/rapports/TEMPLATE.md`, en-tête compris
+   (il est lu par les outils). Les rapports ne se suppriment pas : c'est la mémoire du projet
+   (sources ouvertes, lacunes repérées, décisions prises seul).
 7. **Commits** : petits, en français, préfixés par le lot : `J1-L2: corrige les slugs du blog`.
 
 ## 3. Règles éditoriales (lots de contenu)
@@ -41,11 +45,17 @@ Le plan d'ensemble et les fiches de mission vivent dans le projet claude.ai
   un exemple du quotidien, aucune formule. Toujours exacte : simplifier n'autorise pas l'erreur.
 - **Sécurité** : toute fiche touchant au secteur 230 V rappelle qu'on n'y manipule pas soi-même.
 - **Sources** : chaque fiche créée ou réécrite porte au moins une source dans `sources`
-  (`{"titre": "...", "url": "...", "type": "programme|reference|norme|manuel"}`). Priorité : textes officiels (BO, Éduscol,
+  (`{"titre": "...", "url": "...", "type": "programme|reference|norme|manuel"}` — aucun autre type).
+  L'URL mène **au document précis** qui appuie la définition, jamais à la page d'accueil d'un site
+  (pour Electropedia : l'entrée de la norme IEC 60050, avec son numéro IEV). Priorité : textes officiels (BO, Éduscol,
   Légifrance), organismes de référence (INRS, RTE, Enedis, CRE), puis ouvrages. Jamais Wikipédia comme source unique.
 - **Droit d'auteur** : reformuler ; au plus une citation courte (< 15 mots) entre guillemets par source.
-- **Relecture** : une fiche relue par un agent contrôleur reçoit `"relecture": {"date": "AAAA-MM-JJ", "par": "agent-controleur", "statut": "relu-ia"}`.
-  Seul Alexandre peut poser `"statut": "valide"`.
+- **Relecture** : une fiche relue par un agent contrôleur reçoit
+  `"relecture": {"date": "AAAA-MM-JJ", "par": "agent-controleur-<LOT>", "statut": "relu-ia"}`.
+  Le contrôleur est un **autre agent** que le rédacteur, qui n'a pas vu la rédaction ; un rédacteur ne pose jamais
+  `relu-ia` sur ses propres fiches. Seul Alexandre peut poser `"statut": "valide"`.
+- **Bornes de la version simple** : 12 à 35 mots est la règle (contrôlée par le cliquet de dette) ;
+  `validate_content.py` bloque en plus, sans exception, tout ce qui sort de 8 à 60 mots.
 
 ## 3 bis. Règles de couverture (ce qui manque)
 
@@ -69,6 +79,24 @@ exactement la même lacune ailleurs.
    curriculaire sans fiche. Ce constat n'est pas un rapport à archiver : il alimente le lot suivant
    (`--backlog <LOT>` écrit le squelette de changeset correspondant).
 
+## 3 ter. Cliquet de dette éditoriale
+
+Le 25/09/2026, `validate_content.py` affichait « 0 erreur » alors que 183 définitions sortaient de 25-60 mots,
+que 180 fiches citaient une page d'accueil comme source et que les 197 fiches « relu-ia » l'avaient été par
+leur propre rédacteur. Les règles existaient, mais aucun script ne les vérifiait.
+
+1. `scripts/dette.py` vérifie les règles du §3 : longueur de la définition, HTML, version simple manquante
+   (notions vues avant le lycée) ou hors bornes, rappel de sécurité sur les fiches liées au secteur,
+   sources (URL présente, précise, type autorisé), relecture indépendante.
+2. `src/data/dette.json` liste, règle par règle, les fiches **déjà** en défaut : elles sont tolérées.
+   Toute autre fiche en défaut fait échouer la CI. **On ne crée plus de dette.**
+3. Un lot qui corrige des fiches lance `python3 scripts/dette.py --abaisser` : la liste ne fait que raccourcir.
+   Ajouter une fiche à la main dans la liste revient à accepter une dette : décision humaine uniquement.
+4. `python3 scripts/dette.py --indicateurs` donne les indicateurs avant / après à coller dans le rapport de lot.
+   L'indicateur prioritaire est la version simple des notions vues avant le lycée (public prioritaire).
+5. La détection « secteur » repose sur des mots-clés (`securite230V` dans `dette.json`). Un faux positif
+   s'exempte dans `exemptees`, **avec sa raison**.
+
 ## 4. Conventions techniques
 
 - Slugs : `scripts/zeeplib.py::slugify` (apostrophes et espaces -> tirets : `loi-d-ohm`).
@@ -86,3 +114,7 @@ exactement la même lacune ailleurs.
   aucun n'est dupliqué dans le code.
 - Deux scripts, deux questions : `validate_content.py` — « ce qui est écrit est-il correct ? » ;
   `audit_couverture.py` — « que manque-t-il ? ». Ne jamais fusionner les deux : c'est le second qui a manqué jusqu'ici.
+- Niveaux scolaires : `agents/outils/mapping_niveau.py` est incrémental. `--verifier` (en CI) contrôle la TABLE de
+  correspondance ; sans option, il régénère `agents/rapports/J2-L2-correspondances.csv` et signale les écarts et les
+  entrées de TABLE **périmées** (terme rejeté alors qu'une fiche le couvre désormais) ; `--lot <LOT>` écrit le
+  changeset des niveaux manquants. Il ne réécrit jamais `J2-L2.jsonl` et n'écrase jamais un niveau existant.

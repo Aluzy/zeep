@@ -1,0 +1,87 @@
+name: Contrôle, construction et déploiement
+
+# - Sur toute branche et toute pull request : validation du contenu,
+#   construction du site et test de fumée (rien n'est mis en ligne).
+# - Sur main uniquement : mise en ligne sur GitHub Pages si tout est vert.
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Valider le contenu (schéma, slugs, liens)
+        run: python3 scripts/validate_content.py --stats
+
+      # Le validateur ci-dessus contrôle ce qui EXISTE. Celui-ci contrôle ce qui
+      # MANQUE : domaine sous son plancher de couverture, ou terme employé dans
+      # une définition sans avoir sa propre fiche. C'est ce garde-fou qui
+      # manquait quand le glossaire a passé deux cents fiches sans farad.
+      - name: Auditer la couverture (domaines, lexique, orphelins)
+        run: python3 scripts/audit_couverture.py --ci
+
+      # Cohérence de la table matrice curriculaire -> fiches (niveaux scolaires).
+      # Bloque seulement si la TABLE est incohérente ; les entrées périmées sont
+      # affichées dans le journal comme travail à planifier.
+      - name: Vérifier la table des niveaux scolaires
+        run: python3 agents/outils/mapping_niveau.py --verifier
+
+      # Tableau de la dette éditoriale dans le journal (le blocage, lui, est fait
+      # par validate_content.py ci-dessus).
+      - name: Afficher la dette éditoriale
+        run: python3 scripts/dette.py --indicateurs
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        run: npm run build
+
+      - name: Test de fumée (définitions visibles, liens internes)
+        run: python3 scripts/smoke_dist.py --base /zeep
+
+      - name: Upload build artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

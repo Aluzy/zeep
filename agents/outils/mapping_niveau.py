@@ -1,8 +1,20 @@
 #!/usr/bin/env python3
 """J2-L2 — rattache les fiches du wiki aux niveaux scolaires de la matrice v2.
 
-    python3 agents/outils/mapping_niveau.py            # écrit changeset + rapport CSV
-    python3 agents/outils/mapping_niveau.py --verifier  # contrôles seuls, rien n'est écrit
+    python3 agents/outils/mapping_niveau.py --verifier      # contrôles seuls, rien n'est écrit (CI)
+    python3 agents/outils/mapping_niveau.py                 # régénère le rapport CSV seul
+    python3 agents/outils/mapping_niveau.py --lot J4-L1     # + changeset des niveaux manquants
+
+Depuis le 25/09/2026 le script est INCRÉMENTAL : il a d'abord servi une seule fois (lot J2-L2,
+197 fiches), puis s'arrêtait dès qu'une fiche avait déjà un niveau. Il peut maintenant être
+relancé à chaque lot :
+  - une fiche qui a déjà le niveau calculé est ignorée ;
+  - une fiche qui a un niveau DIFFÉRENT est signalée (« écart »), jamais écrasée ;
+  - une fiche rattachable sans niveau reçoit une opération dans agents/changesets/<LOT>.jsonl ;
+  - un terme rejeté faute de fiche (« rejet ») alors qu'une fiche porte désormais ce terme ou
+    ce synonyme est signalé comme TABLE PÉRIMÉE : c'est l'entrée du lot de mise à jour des
+    niveaux (compléter la TABLE, puis relancer avec --lot).
+Le changeset historique agents/changesets/J2-L2.jsonl n'est jamais réécrit.
 
 Principe
 --------
@@ -14,7 +26,8 @@ Principe
    fiches du wiki, soit vers un rejet explicite (aucune fiche ne correspond).
 3. Pour chaque fiche rattachée, le script agrège les lignes de matrice qui la
    justifient et en déduit `niveau` : premiereApparition, cycles, familles, matriceIds.
-4. Sorties : agents/changesets/J2-L2.jsonl et agents/rapports/J2-L2-correspondances.csv.
+4. Sorties : agents/rapports/J2-L2-correspondances.csv (toujours) et, avec --lot,
+   agents/changesets/<LOT>.jsonl (seulement les niveaux manquants).
 
 Garde-fous (le script s'arrête en erreur) :
   - un terme présent dans la matrice et absent de la TABLE  -> couverture incomplète ;
@@ -31,15 +44,18 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import sys
 import unicodedata
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(RACINE / "scripts"))
+from zeeplib import formes_d_une_fiche, normaliser  # noqa: E402
 MATRICE = RACINE / "agents" / "donnees" / "matrice-electricite-electronique-v2.csv"
 WIKI = RACINE / "src" / "content" / "wiki"
-CHANGESET = RACINE / "agents" / "changesets" / "J2-L2.jsonl"
+CHANGESETS = RACINE / "agents" / "changesets"
 RAPPORT_CSV = RACINE / "agents" / "rapports" / "J2-L2-correspondances.csv"
-LOT = "J2-L2"
+LOT_HISTORIQUE = "J2-L2"  # changeset d'origine : jamais réécrit
 
 # Précocité des niveaux. C1 < C2 < C3 < C4 < 2GT < 1G < 1-TG < TG, puis les voies.
 # 1-TG (première + terminale spé SI) commence en première : il se place juste
@@ -556,10 +572,13 @@ def niveau(f: dict) -> dict:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__)
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--matrice", type=Path, default=MATRICE)
     ap.add_argument("--verifier", action="store_true", help="contrôles seuls, aucune écriture")
+    ap.add_argument("--lot", help="écrit agents/changesets/<LOT>.jsonl avec les niveaux manquants")
     args = ap.parse_args()
+    if args.lot == LOT_HISTORIQUE:
+        raise SystemExit(f"{LOT_HISTORIQUE}.jsonl est le changeset historique : choisir un autre nom de lot.")
 
     lignes = lire_matrice(args.matrice)
     fiches_wiki = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(WIKI.glob("*.json"))}
@@ -567,19 +586,36 @@ def main() -> int:
     verifier(occ, set(fiches_wiki))
     fiches = construire(occ, lignes)
 
-    # --- changeset -------------------------------------------------------------------
-    ops = []
+    # --- niveaux : à poser, déjà posés, en écart -------------------------------------
+    ops, deja, ecarts = [], [], []
     for slug in sorted(fiches):
+        n = niveau(fiches[slug])
         actuel = fiches_wiki[slug].get("niveau")
+        if actuel == n:
+            deja.append(slug)
+            continue
         if actuel is not None:
-            raise SystemExit(f"{slug} : le champ niveau est déjà renseigné ; changeset à revoir.")
+            ecarts.append((slug, actuel.get("premiereApparition"), n["premiereApparition"]))
+            continue
         termes = fiches[slug]["termes"]
         detail = " ; ".join(f"« {t} » ({', '.join(ids)})" for t, _typ, ids in sorted(termes))
-        n = niveau(fiches[slug])
         ops.append({
-            "op": "set", "lot": LOT, "slug": slug, "field": "niveau", "old": None, "new": n,
+            "op": "set", "lot": args.lot or "?", "slug": slug, "field": "niveau", "old": None, "new": n,
             "why": f"Matrice curriculaire v2 : {detail}. Première apparition : {n['premiereApparition']}.",
         })
+
+    # --- table périmée : un rejet que le corpus couvre désormais ----------------------
+    formes = {}
+    for slug, fiche in fiches_wiki.items():
+        for forme in formes_d_une_fiche(fiche):
+            formes.setdefault(forme, slug)
+    perimees = []
+    for cle, info in occ.items():
+        slugs, type_corr, _c, _b, _n = TABLE[cle]
+        if type_corr == "rejet":
+            slug = formes.get(normaliser(info["label"]))
+            if slug:
+                perimees.append((info["label"], ", ".join(info["ids"]), slug))
 
     # --- rapport CSV -----------------------------------------------------------------
     rows = []
@@ -594,32 +630,42 @@ def main() -> int:
                          "backlog" if backlog else "hors périmètre", note])
     rows.sort(key=lambda r: (r[2], cle_normalisee(r[0]), r[3]))
 
+    print(f"Termes de programme : {len(occ)} — fiches rattachées : {len(fiches)} / {len(fiches_wiki)}")
+    print(f"Niveau déjà à jour : {len(deja)} — à poser : {len(ops)} — en écart : {len(ecarts)}")
+    for slug, a, b in ecarts:
+        print(f"  ÉCART        {slug} : niveau actuel {a}, la TABLE donne {b} (non modifié)")
+    if perimees:
+        print(f"TABLE périmée : {len(perimees)} terme(s) rejeté(s) alors qu'une fiche les couvre désormais")
+        for label, ids, slug in sorted(perimees):
+            print(f"  PÉRIMÉ       « {label} » ({ids}) -> fiche existante « {slug} »")
+    couverts = {label for label, _ids, _slug in perimees}
+    backlog = [occ[k]["label"] for k in occ
+               if not TABLE[k][0] and TABLE[k][3] and occ[k]["label"] not in couverts]
+    print(f"Termes de programme encore sans fiche (backlog) : {len(backlog)}")
+
     if args.verifier:
-        print(f"OK : {len(occ)} termes de programme, {len(fiches)} fiche(s) rattachée(s), "
-              f"{len(ops)} opération(s).")
+        # Bloquant en CI : seulement la cohérence de la TABLE (contrôlée plus haut).
+        # Écarts et table périmée sont du travail à planifier, pas des erreurs.
+        print("OK : TABLE cohérente avec la matrice et le wiki.")
         return 0
 
-    CHANGESET.parent.mkdir(parents=True, exist_ok=True)
-    CHANGESET.write_text("".join(json.dumps(o, ensure_ascii=False) + "\n" for o in ops), encoding="utf-8")
     RAPPORT_CSV.parent.mkdir(parents=True, exist_ok=True)
     with RAPPORT_CSV.open("w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, quoting=csv.QUOTE_ALL)
         w.writerow(["Terme de programme", "Origine", "Lignes de matrice", "Slug retenu",
                     "Type de correspondance", "Confiance", "Commentaire"])
         w.writerows(rows)
-
-    par_niveau: dict[str, int] = {}
-    for slug in fiches:
-        par_niveau[niveau(fiches[slug])["premiereApparition"]] = \
-            par_niveau.get(niveau(fiches[slug])["premiereApparition"], 0) + 1
-    print(f"{CHANGESET.relative_to(RACINE)} : {len(ops)} opération(s)")
     print(f"{RAPPORT_CSV.relative_to(RACINE)} : {len(rows)} ligne(s)")
-    print(f"Termes de programme analysés : {len(occ)}")
-    print(f"Fiches rattachées : {len(fiches)} / {len(fiches_wiki)}")
-    print("Par première apparition : " + ", ".join(
-        f"{k}={par_niveau[k]}" for k in sorted(par_niveau, key=lambda c: RANG[c])))
-    backlog = [occ[k]["label"] for k in occ if not TABLE[k][0] and TABLE[k][3]]
-    print(f"Termes de programme sans fiche (backlog) : {len(backlog)}")
+
+    if args.lot:
+        if not ops:
+            print("Aucun niveau à poser : pas de changeset écrit.")
+            return 0
+        chemin = CHANGESETS / f"{args.lot}.jsonl"
+        if chemin.exists():
+            raise SystemExit(f"{chemin.relative_to(RACINE)} existe déjà : choisir un autre nom de lot.")
+        chemin.write_text("".join(json.dumps(o, ensure_ascii=False) + "\n" for o in ops), encoding="utf-8")
+        print(f"{chemin.relative_to(RACINE)} : {len(ops)} opération(s)")
     return 0
 
 
