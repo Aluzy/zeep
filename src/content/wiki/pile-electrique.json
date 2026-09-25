@@ -32,5 +32,31 @@
       "M002",
       "M005"
     ]
+  },
+  "versionSimple": "Une pile fournit l'énergie qui fait marcher une télécommande ou une lampe de poche. À l'intérieur, des produits chimiques réagissent ; quand ils sont épuisés, la pile est vide.",
+  "sources": [
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 4 : « L'électricité » (circuit à une boucle, circuit ouvert ou fermé, matériaux conducteurs et isolants)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=4",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 11 : objets techniques (pile électrique, câbles, interrupteur, ampoule)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=11",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « pile »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/pile/60903",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "pile"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

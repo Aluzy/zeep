@@ -8,8 +8,9 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Quantité d'énergie électrique consommée ou produite par unité de temps, exprimée en watts, égale au produit de la tension électrique par l'intensité électrique.",
+  "definition": "Grandeur qui indique la quantité d'énergie électrique qu'un appareil convertit chaque seconde. Elle s'exprime en watts (symbole W). En courant continu, elle est égale au produit de la tension par l'intensité, P = U × I ; l'énergie consommée est la puissance multipliée par la durée de fonctionnement.",
   "related": [
+    "courant-continu",
     "effet-joule",
     "energie-electrique",
     "intensite-electrique",
@@ -46,5 +47,23 @@
   "synonymes": [
     "P",
     "puissance"
-  ]
+  ],
+  "versionSimple": "La puissance dit combien d'énergie un appareil utilise à chaque seconde. Un radiateur électrique a une grande puissance, une petite lampe à LED en a une toute petite.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 103 : « Réaliser des circuits électriques simples et exploiter les lois de l'électricité »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=103",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « puissance »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/puissance/65022",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
+  }
 }

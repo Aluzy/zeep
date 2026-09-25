@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant électronique ou électromécanique, comme un servomoteur ou un relais électronique, qui convertit un signal de commande en action physique.",
+  "definition": "Constituant de la chaîne d'énergie d'un objet ou d'une machine qui convertit l'énergie qu'il reçoit, le plus souvent électrique, en action physique : mouvement, chaleur, lumière ou son. Il agit sur ordre de la chaîne d'information. Un moteur électrique ou un servomoteur sont des actionneurs.",
   "related": [
     "asservissement",
     "automate-programmable",
@@ -19,6 +19,9 @@
     "composant-electronique",
     "detecteur",
     "electronique",
+    "electronique-embarquee",
+    "microcontroleur",
+    "moteur-electrique",
     "moteur-pas-a-pas",
     "relais-electronique",
     "servomoteur",
@@ -43,5 +46,26 @@
       "M015",
       "M017"
     ]
+  },
+  "versionSimple": "Un actionneur est la pièce qui agit quand une machine reçoit un ordre : par exemple le petit moteur qui fait tourner les roues d'une voiture télécommandée.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 124 : technologie, « Écrire, mettre au point et exécuter un programme » (systèmes embarqués ; capteur, actionneur, interface)",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=124",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « actionneur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/actionneur/934",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "actuateur"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

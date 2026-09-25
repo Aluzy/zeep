@@ -8,13 +8,15 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Différence de potentiel électrique entre deux points d'un circuit électrique, exprimée en volts, qui met en mouvement le courant électrique.",
+  "definition": "Grandeur électrique qui existe entre deux points d'un circuit et qui provoque le déplacement des charges électriques lorsque ces points sont reliés par un chemin conducteur. Elle s'exprime en volts (symbole V) et se mesure avec un voltmètre branché en dérivation entre ces deux points.",
   "related": [
     "caracteristique-tension-courant",
+    "charge-electrique",
     "circuit-electrique",
     "courant-electrique",
     "dipole",
     "farad",
+    "generateur-electrique",
     "henry",
     "induction-electromagnetique",
     "loi-d-ohm",
@@ -27,6 +29,7 @@
     "poste-de-transformation",
     "potentiometre",
     "puissance-electrique",
+    "resistance-electrique",
     "theoreme-de-millman",
     "transformateur",
     "tres-basse-tension-de-securite",
@@ -60,5 +63,23 @@
     "ddp",
     "difference de potentiel",
     "tension"
-  ]
+  ],
+  "versionSimple": "La tension fait circuler le courant dans un circuit fermé, un peu comme une pente fait couler l'eau. Elle se mesure en volts : une pile de lampe de poche donne 1,5 volt.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 103 : « Réaliser des circuits électriques simples et exploiter les lois de l'électricité »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=103",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « tension »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/tension/77330",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
+  }
 }

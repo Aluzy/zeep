@@ -8,13 +8,15 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Opposition qu'un conducteur électrique oppose au passage du courant électrique, exprimée en ohms et mesurée avec un ohmmètre.",
+  "definition": "Grandeur qui caractérise la difficulté plus ou moins grande qu'a le courant électrique à traverser un dipôle. Elle s'exprime en ohms (symbole Ω) et se mesure avec un ohmmètre. Pour un conducteur ohmique, elle relie la tension et l'intensité par la loi d'Ohm : U = R × I.",
   "related": [
     "chute-de-tension",
     "conducteur-electrique",
     "controleur-d-isolement",
     "courant-electrique",
+    "dipole",
     "effet-joule",
+    "intensite-electrique",
     "loi-d-ohm",
     "multimetre",
     "ohm",
@@ -23,6 +25,7 @@
     "resistance",
     "siemens",
     "supraconductivite",
+    "tension-electrique",
     "theoreme-de-norton",
     "theoreme-de-thevenin"
   ],
@@ -43,5 +46,23 @@
   "synonymes": [
     "R",
     "resistance electrique"
-  ]
+  ],
+  "versionSimple": "La résistance dit si le courant a du mal ou non à traverser un objet. Avec la même pile, plus la résistance est grande, moins il passe de courant.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 103 : « Réaliser des circuits électriques simples et exploiter les lois de l'électricité »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=103",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « résistance »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/r%C3%A9sistance/68632",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
+  }
 }

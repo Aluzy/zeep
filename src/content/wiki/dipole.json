@@ -60,6 +60,7 @@
     "loi-des-mailles",
     "loi-des-noeuds",
     "resistance",
+    "resistance-electrique",
     "tension-electrique",
     "theoreme-de-thevenin"
   ]

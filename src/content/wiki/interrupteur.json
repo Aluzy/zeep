@@ -8,10 +8,12 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Dispositif permettant d'ouvrir ou de fermer manuellement un circuit électrique pour couper ou rétablir le courant électrique.",
+  "definition": "Dispositif qui permet d'ouvrir ou de fermer un circuit électrique à la demande : en position fermée, il laisse circuler le courant ; en position ouverte, il interrompt la boucle et le courant s'arrête. On le manœuvre à la main, comme le bouton d'une lampe de poche.",
   "related": [
     "bouton-poussoir",
     "circuit-electrique",
+    "circuit-ferme",
+    "circuit-ouvert",
     "contacteur",
     "courant-electrique",
     "detecteur"
@@ -33,5 +35,28 @@
       "M005",
       "M007"
     ]
+  },
+  "versionSimple": "Un interrupteur sert à couper ou à laisser passer le courant. Quand tu appuies sur le bouton d'une lampe de poche, tu fermes le circuit et la lampe s'allume.",
+  "sources": [
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 4 : « L'électricité » (circuit à une boucle, circuit ouvert ou fermé, matériaux conducteurs et isolants)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=4",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de sciences et technologie du cycle 3 (annexe 2 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 7 : « Électricité » (circuit électrique à une boucle, matériaux conducteurs et isolants)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-2-programme-de-sciences-et-technologie-du-cycle-3-519023.pdf#page=7",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « interrupteur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/interrupteur/43842",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }
