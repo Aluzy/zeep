@@ -8,22 +8,41 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Grandeur qui caractérise l'opposition d'un circuit électronique au passage d'un signal analogique, combinant résistance, condensateur et bobine.",
+  "definition": "Grandeur qui caractérise l'opposition d'un dipôle au passage d'un courant alternatif : en régime sinusoïdal, c'est le rapport de l'amplitude de la tension à ses bornes à celle du courant qui le traverse. Exprimée en ohms, elle combine la résistance et la réactance, qui dépend de la fréquence.",
   "related": [
     "bobine-inductance",
     "condensateur",
+    "courant-alternatif",
     "dephasage",
+    "dipole",
     "electronique",
+    "frequence-electrique",
     "haut-parleur",
     "henry",
+    "ohm",
     "reactance",
     "resistance",
-    "signal-analogique"
+    "resistance-electrique",
+    "signal-analogique",
+    "tension-electrique",
+    "valeur-crete"
   ],
   "pillar": false,
   "illustration": null,
   "synonymes": [
     "Z",
     "impedance"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « impédance »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/imp%C3%A9dance/41833",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
+  }
 }

@@ -8,17 +8,20 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Connexion électrique reliant les masses métalliques d'une installation électrique au sol via une prise de terre, afin d'assurer la sécurité des personnes.",
+  "definition": "Liaison qui relie les parties métalliques accessibles d'une installation et des appareils, appelées masses, à la terre par un conducteur de protection et une prise de terre. En cas de défaut d'isolement, le courant de fuite s'écoule par la terre et le dispositif différentiel coupe l'alimentation ; sa réalisation relève d'un électricien.",
   "related": [
     "classe-d-isolation",
     "consignation-electrique",
     "courant-de-fuite",
     "defaut-d-isolement",
     "disjoncteur-differentiel",
+    "electricien",
     "electrisation",
     "electrocution",
     "installation-electrique",
+    "neutre",
     "parafoudre",
+    "prise-de-courant",
     "prise-de-terre",
     "regime-de-neutre"
   ],
@@ -41,5 +44,27 @@
     "conducteur de protection",
     "mise a la terre",
     "terre"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "INRS, dossier Risques électriques, « Prévention du risque électrique » (surintensités, mise à la terre des masses, NF C 15-100)",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, dossier Risques électriques, glossaire (masse, terre, contact indirect)",
+      "url": "https://www.inrs.fr/risques/electriques/glossaire.html",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « terre »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/terre/77443",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
+  }
 }

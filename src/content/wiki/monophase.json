@@ -14,22 +14,34 @@
     "C",
     "E"
   ],
-  "definition": "Distribution électrique alimentée par une seule phase et un neutre, avec une tension de 230 volts en France. C'est le raccordement habituel des logements et des petits appareils.",
+  "definition": "Mode de distribution en courant alternatif qui utilise une seule phase et le neutre, entre lesquels la tension vaut 230 V en France. C'est le raccordement habituel des logements ; ces conducteurs sont dangereux, et toute intervention sur eux relève d'un électricien.",
   "versionSimple": "Chez la plupart des gens, l'électricité arrive par un seul fil de phase et un fil de neutre. On appelle cela du monophasé.",
   "sources": [
     {
-      "titre": "Enedis — raccordement et distribution",
-      "url": "https://www.enedis.fr/",
-      "type": "officiel"
+      "titre": "Dictionnaire de français Larousse, article « monophasé »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/monophas%C3%A9/52374",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, dossier Risques électriques, « Principes généraux sur l'électricité » (tensions 230 V et 400/230 V)",
+      "url": "https://www.inrs.fr/risques/electriques/principes-generaux-electricite.html",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, brochure ED 6344 « Électricité : 10 règles élémentaires de sécurité » (2019), p. 4 : 230 V aux prises des particuliers, tensions au-delà de 50 V potentiellement mortelles",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6344.pdf#page=4",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
     "statut": "relu-ia"
   },
   "slug": "monophase",
   "related": [
+    "courant-alternatif",
+    "electricien",
     "installation-electrique",
     "neutre",
     "phase-electrique",

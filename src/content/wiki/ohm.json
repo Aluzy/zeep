@@ -11,6 +11,7 @@
   "definition": "Unité de mesure de la résistance électrique dans le Système international, symbole Ω.",
   "related": [
     "code-couleur-des-resistances",
+    "impedance",
     "loi-d-ohm",
     "reactance",
     "resistance",

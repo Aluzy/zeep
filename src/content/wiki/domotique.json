@@ -9,11 +9,14 @@
     "electronique"
   ],
   "merged": true,
-  "definition": "<strong>Vu côté électricité :</strong> Ensemble des technologies qui automatisent et pilotent à distance les équipements électriques d'un logement, comme l'éclairage.<br><br><strong>Vu côté électronique :</strong> Ensemble des technologies d'électronique embarquée qui automatisent et pilotent à distance les équipements d'un logement, souvent via un objet connecté.",
+  "definition": "Ensemble des techniques qui automatisent et commandent à distance les équipements d'un bâtiment, comme l'éclairage, le chauffage, les volets ou l'alarme, grâce à des capteurs, des actionneurs et des objets connectés reliés par un réseau. Son installation sur les circuits en 230 V est confiée à un électricien.",
   "related": [
+    "actionneur",
+    "capteur",
     "detecteur",
     "detecteur-de-presence",
     "eclairage",
+    "electricien",
     "electronique",
     "electronique-embarquee",
     "mqtt",
@@ -25,5 +28,20 @@
     "zigbee"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « domotique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/domotique/26402",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "maison connectée"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
+  }
 }

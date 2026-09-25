@@ -6,40 +6,39 @@
   "pillar": false,
   "illustration": null,
   "synonymes": [
-    "IT",
-    "TN",
-    "TT",
-    "regime de neutre",
-    "schema des liaisons a la terre"
+    "schéma de liaison à la terre",
+    "régime du neutre"
   ],
   "term": "Régime de neutre",
   "domains": [
     "E",
     "F"
   ],
-  "definition": "Manière dont le neutre de l'alimentation et les masses de l'installation sont reliés à la terre. Les régimes TT, TN et IT déterminent le comportement en cas de défaut et les protections à installer.",
-  "versionSimple": "Selon la façon dont l'installation est reliée à la terre, un défaut ne réagit pas pareil. Chaque cas a ses protections.",
+  "definition": "Manière dont le neutre de l'alimentation et les masses de l'installation, c'est-à-dire les parties métalliques accessibles des appareils, sont reliés ou non à la terre ; on le désigne par deux lettres : TT, TN ou IT. Il fixe ce qui se passe lors d'un défaut d'isolement et les protections à prévoir ; sa mise en œuvre relève d'un électricien.",
+  "versionSimple": "Il existe plusieurs façons de relier une installation électrique à la terre. Chacune décide de ce qui se passe quand un appareil a un défaut, et des protections à prévoir.",
   "sources": [
     {
-      "titre": "AFNOR — normes de l'installation électrique",
-      "url": "https://www.afnor.org/",
-      "type": "norme"
+      "titre": "INRS, dossier Risques électriques, « Prévention du risque électrique » (surintensités, schémas de liaison à la terre, NF C 15-100)",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+      "type": "reference"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 18 : le courant de défaut dépend du schéma des liaisons à la terre (TT, TN, IT) ; renvoi à la NF C 15-100",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=18",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
     "statut": "relu-ia"
   },
   "slug": "regime-de-neutre",
   "related": [
     "classe-d-isolation",
+    "defaut-d-isolement",
     "disjoncteur-differentiel",
+    "electricien",
     "installation-electrique",
     "mise-a-la-terre",
     "neutre",

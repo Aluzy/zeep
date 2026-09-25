@@ -16,23 +16,18 @@
     "C",
     "U"
   ],
-  "definition": "Composantes d'un signal dont les fréquences sont des multiples de la fréquence fondamentale. Injectées par les appareils à découpage, elles déforment la tension du réseau et échauffent les conducteurs de neutre.",
-  "versionSimple": "Certains appareils renvoient dans les fils des signaux parasites plus rapides que le courant normal. Ils abîment la qualité de l'électricité.",
+  "definition": "Composantes d'une tension ou d'un courant périodique dont les fréquences sont des multiples entiers de la fréquence fondamentale, celle du réseau électrique. Leur présence déforme la courbe sinusoïdale de la tension ; leur mesure sur une installation sous tension est réservée à un professionnel qualifié.",
+  "versionSimple": "Sur le réseau, la tension devrait suivre une courbe bien régulière. Certains appareils la déforment en y ajoutant de petites ondes plus serrées, appelées harmoniques.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Dictionnaire de français Larousse, article « harmonique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/harmonique/39116",
       "type": "reference"
-    },
-    {
-      "titre": "RTE — le réseau de transport d'électricité",
-      "url": "https://www.rte-france.com/",
-      "type": "officiel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
     "statut": "relu-ia"
   },
   "slug": "harmoniques",
@@ -43,6 +38,8 @@
     "courant-alternatif",
     "distorsion",
     "filtre-electronique",
-    "neutre"
+    "frequence-electrique",
+    "neutre",
+    "tension-electrique"
   ]
 }

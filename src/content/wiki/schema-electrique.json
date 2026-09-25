@@ -8,10 +8,11 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Représentation graphique d'un circuit électrique montrant les liaisons entre les différents composants d'une installation électrique.",
+  "definition": "Représentation d'un circuit électrique à l'aide de symboles normalisés reliés par des traits qui figurent les conducteurs. Il permet de comprendre le fonctionnement du circuit, de le réaliser ou de le dépanner ; dès l'école élémentaire, les élèves passent d'un montage réel à son schéma normalisé, et inversement.",
   "related": [
     "circuit-electrique",
     "conception-assistee-par-ordinateur-electronique",
+    "conducteur-electrique",
     "installation-electrique",
     "schema-unifilaire"
   ],
@@ -28,5 +29,26 @@
     "matriceIds": [
       "M031"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Programme de sciences et technologie du cycle 3 (annexe 2 de l'arrêté du 5 juin 2026), p. 7 : l'élève compare son schéma de circuit à un schéma normalisé",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-2-programme-de-sciences-et-technologie-du-cycle-3-519023.pdf#page=7",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de sciences et technologie du cycle 3 (annexe 2 de l'arrêté du 5 juin 2026), p. 9 : représentation schématique normalisée du circuit réalisé",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-2-programme-de-sciences-et-technologie-du-cycle-3-519023.pdf#page=9",
+      "type": "programme"
+    }
+  ],
+  "synonymes": [
+    "schéma normalisé"
+  ],
+  "versionSimple": "Un schéma électrique est un dessin qui représente un circuit avec des symboles simples : un rond marqué d'une croix pour la lampe, des traits pour les fils. Il aide à construire le circuit.",
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
   }
 }

@@ -8,13 +8,33 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Dispositif enfoui dans le sol assurant la mise à la terre d'une installation électrique.",
+  "definition": "Ensemble de conducteurs enterrés qui assure le contact électrique entre une installation et le sol, afin d'écouler vers la terre les courants dus à un défaut d'isolement. Pour une maison, sa résistance ne doit pas dépasser 100 Ω ; sa réalisation et sa vérification relèvent d'un électricien.",
   "related": [
+    "defaut-d-isolement",
+    "electricien",
     "installation-electrique",
     "mise-a-la-terre",
     "parafoudre",
-    "regime-de-neutre"
+    "regime-de-neutre",
+    "resistance-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 27 : valeur de la prise de terre d'une maison (100 Ω au plus) et conducteur de protection",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=27",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « terre »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/terre/77443",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
+  }
 }
