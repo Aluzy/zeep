@@ -12,6 +12,7 @@
   "related": [
     "atome",
     "champ-electrique",
+    "conducteur-electrique",
     "coulomb",
     "courant-electrique",
     "decharge-electrostatique",
@@ -20,8 +21,10 @@
     "farad",
     "intensite-electrique",
     "ion",
+    "isolant-electrique",
     "loi-de-coulomb",
     "loi-des-noeuds",
+    "tension-electrique",
     "trou-electronique"
   ],
   "pillar": false,

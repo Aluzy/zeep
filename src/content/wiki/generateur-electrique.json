@@ -8,18 +8,24 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Dispositif qui produit de l'électricité à partir d'une autre forme d'énergie, comme un alternateur ou une dynamo.",
+  "definition": "Appareil qui fournit de l'énergie électrique à un circuit en la convertissant à partir d'une autre forme d'énergie : chimique dans une pile, mécanique dans un alternateur ou une dynamo, lumineuse dans un panneau photovoltaïque. Il crée entre ses bornes une tension qui fait circuler le courant lorsque le circuit est fermé.",
   "related": [
     "alternateur",
     "chaine-d-energie",
+    "circuit-electrique",
+    "circuit-ferme",
+    "courant-electrique",
     "dipole",
     "dynamo",
     "electricite",
+    "energie-electrique",
     "eolienne",
     "freinage-regeneratif",
     "loi-des-mailles",
     "moteur-electrique",
+    "panneau-photovoltaique",
     "pile-electrique",
+    "tension-electrique",
     "theoreme-de-superposition",
     "theoreme-de-thevenin"
   ],
@@ -41,5 +47,26 @@
       "M007",
       "M029"
     ]
+  },
+  "versionSimple": "Un générateur donne au circuit l'énergie qui fait fonctionner les appareils. La pile d'une lampe de poche en est un : sans elle, la lampe ne peut pas s'allumer.",
+  "sources": [
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 4 : « L'électricité » (circuit à une boucle, circuit ouvert ou fermé, matériaux conducteurs et isolants)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=4",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « générateur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/g%C3%A9n%C3%A9rateur/36533",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "générateur"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

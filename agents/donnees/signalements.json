@@ -24,6 +24,7 @@
     {"slug": "prise-de-courant", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°19", "motif": "Fiche liée au secteur 230 V sans rappel de sécurité."},
     {"slug": "tableau-electrique", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°19", "motif": "Fiche liée au secteur 230 V sans rappel de sécurité."},
     {"slug": "cablage-electrique", "date": "2026-09-12", "gravite": "haute", "rapport": "J1-L3 §2 n°19", "motif": "Fiche liée au secteur 230 V sans rappel de sécurité."},
-    {"slug": "bascule-flip-flop", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°20", "motif": "« construire la mémoire vive » : vrai pour la SRAM seulement, pas pour la DRAM."}
+    {"slug": "bascule-flip-flop", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°20", "motif": "« construire la mémoire vive » : vrai pour la SRAM seulement, pas pour la DRAM."},
+    {"slug": "energie-electrique", "date": "2026-09-25", "gravite": "moyenne", "rapport": "J4-L1 contrôle", "motif": "« mesure le travail fourni par un système électrique » : l'énergie électrique est l'énergie transférée par le courant, pas un « travail » ; « produit de la puissance par le temps » n'est vrai qu'à puissance constante. Fiche liée depuis puissance-electrique et cable-electrique (J4-L1)."}
   ]
 }

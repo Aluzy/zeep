@@ -8,9 +8,11 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Ensemble des systèmes électroniques, souvent construits autour d'un microcontrôleur, intégrés dans un objet pour en assurer le fonctionnement autonome.",
+  "definition": "Ensemble des circuits électroniques intégrés à un objet ou à un véhicule pour le faire fonctionner de façon autonome, sans ordinateur extérieur. Construite en général autour d'un microcontrôleur, elle lit des capteurs, exécute un programme enregistré et commande des actionneurs.",
   "related": [
+    "actionneur",
     "batterie-lithium-ion",
+    "capteur",
     "capteur-de-pression",
     "carte-arduino",
     "carte-raspberry-pi",
@@ -37,5 +39,26 @@
       "M013",
       "M015"
     ]
+  },
+  "versionSimple": "L'électronique embarquée est un petit cerveau électronique caché dans un objet. Dans une machine à laver, elle suit le programme choisi pour chauffer l'eau et faire tourner le tambour.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 124 : technologie, « Écrire, mettre au point et exécuter un programme » (systèmes embarqués ; capteur, actionneur, interface)",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=124",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de technologie du cycle 4 (annexe, BO n° 9 du 29 février 2024), p. 9 : « Fonctions, solutions, constituants de la chaîne d'information » (capteurs, microcontrôleur)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/Annexe%20%E2%80%94%20Programme%20de%20technologie%20du%20cycle%204-368016.pdf#page=9",
+      "type": "programme"
+    }
+  ],
+  "synonymes": [
+    "système embarqué"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

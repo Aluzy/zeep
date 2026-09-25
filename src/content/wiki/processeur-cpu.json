@@ -8,10 +8,11 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant qui exécute les calculs et les instructions d'un programme informatique, présent sous forme de microprocesseur sur la carte mère.",
+  "definition": "Composant électronique qui interprète et exécute les instructions d'un programme informatique, en effectuant des calculs et des opérations logiques sur des données. Cœur de tout ordinateur, il est aujourd'hui réalisé sous la forme d'un microprocesseur, un circuit intégré placé sur la carte mère.",
   "related": [
     "bus-de-donnees",
     "carte-mere",
+    "circuit-integre",
     "convertisseur-analogique-numerique-can",
     "dissipateur-thermique",
     "memoire-vive-ram",
@@ -35,5 +36,23 @@
   "synonymes": [
     "CPU",
     "processeur"
-  ]
+  ],
+  "versionSimple": "Le processeur est la partie d'un ordinateur ou d'une tablette qui fait les calculs. Il suit les instructions des programmes, par exemple pour afficher un jeu à l'écran.",
+  "sources": [
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 11 : dispositifs numériques (clavier, processeur, écran)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=11",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « processeur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/processeur/64060",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
+  }
 }

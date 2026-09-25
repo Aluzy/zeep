@@ -43,5 +43,23 @@
     "matriceIds": [
       "M012"
     ]
+  },
+  "versionSimple": "Un signal analogique varie en douceur, sans faire de sauts, comme la température qui monte peu à peu le matin. Le son capté par un micro donne un signal de ce type.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 123 : technologie, « Mesurer des grandeurs » (capteur, nature du signal analogique ou numérique)",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=123",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « analogique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/analogique/3223",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

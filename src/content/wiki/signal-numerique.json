@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Signal électrique codé sous forme d'états discrets, généralement binaires, traité par un circuit numérique ou un microcontrôleur.",
+  "definition": "Signal qui ne peut prendre qu'un nombre limité de valeurs bien distinctes, le plus souvent deux états notés 0 et 1, et qui représente des informations sous forme de nombres. Produit et traité par des circuits numériques comme un microcontrôleur, il résiste mieux aux perturbations qu'un signal analogique.",
   "related": [
     "algebre-de-boole",
     "bit",
@@ -43,5 +43,26 @@
       "M012",
       "M035"
     ]
+  },
+  "versionSimple": "Un signal numérique ne prend que quelques valeurs bien séparées, souvent deux : allumé ou éteint, 1 ou 0. C'est ainsi que les ordinateurs et les téléphones échangent des informations.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 123 : technologie, « Mesurer des grandeurs » (capteur, nature du signal analogique ou numérique)",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=123",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « numérique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/num%C3%A9rique/55253",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "signal digital"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

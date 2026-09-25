@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Ensemble de règles définissant l'échange de données sur un bus de données ou une interface série, comme le bus I2C, le bus SPI ou l'USB.",
+  "definition": "Ensemble de règles communes qui fixent comment des appareils échangent des données : format des messages, ordre des échanges, détection des erreurs. Il en existe pour les liaisons entre composants, comme le bus I2C, ou entre appareils, comme l'USB, et pour les réseaux, comme Internet, le Wi-Fi ou le Bluetooth.",
   "related": [
     "bluetooth",
     "bus-can",
@@ -37,5 +37,26 @@
     "matriceIds": [
       "M013"
     ]
+  },
+  "versionSimple": "Un protocole, ce sont les règles que deux appareils suivent pour se comprendre, comme une langue commune. Grâce à lui, une manette sans fil peut parler à une console de jeu.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 124 : technologie, « Comprendre le fonctionnement d'un réseau informatique » (notion de protocole, routage, Internet)",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=124",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « protocole »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/protocole/64577",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "protocole"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

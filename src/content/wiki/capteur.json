@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant électronique qui transforme une grandeur physique, comme la température ou la pression, en signal analogique ou numérique exploitable par un microcontrôleur.",
+  "definition": "Dispositif qui prélève une grandeur physique, comme une température, une lumière ou une distance, et la traduit en une autre grandeur, le plus souvent électrique, exploitable pour mesurer ou commander. Dans la chaîne d'information d'un objet, il fournit ses données au microcontrôleur.",
   "related": [
     "asservissement",
     "automate-programmable",
@@ -24,6 +24,7 @@
     "drone",
     "effet-hall",
     "electronique",
+    "electronique-embarquee",
     "interruption",
     "lora",
     "microcontroleur",
@@ -63,5 +64,28 @@
       "M058",
       "M071"
     ]
+  },
+  "versionSimple": "Un capteur est comme un organe des sens pour une machine : il mesure quelque chose, par exemple la lumière. Quand la nuit tombe, il fait allumer tout seuls les phares d'une voiture.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 123 : technologie, « Mesurer des grandeurs » (capteur, nature du signal analogique ou numérique)",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=123",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de technologie du cycle 4 (annexe, BO n° 9 du 29 février 2024), p. 9 : « Fonctions, solutions, constituants de la chaîne d'information » (capteurs, microcontrôleur)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/Annexe%20%E2%80%94%20Programme%20de%20technologie%20du%20cycle%204-368016.pdf#page=9",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « capteur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/capteur/13016",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

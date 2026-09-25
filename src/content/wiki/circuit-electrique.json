@@ -8,14 +8,16 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Ensemble de composants reliés par des conducteurs électriques formant un chemin fermé permettant la circulation du courant électrique.",
+  "definition": "Ensemble de dipôles, comme un générateur, un interrupteur et une lampe, reliés entre eux par des fils conducteurs. Lorsqu'il forme une boucle complète entre les deux bornes du générateur, un courant électrique y circule et fait fonctionner les appareils branchés.",
   "related": [
     "circuit-ferme",
     "circuit-ouvert",
     "courant-electrique",
     "dipole",
     "disjoncteur",
+    "fil-electrique",
     "fusible",
+    "generateur-electrique",
     "interrupteur",
     "loi-des-mailles",
     "loi-des-noeuds",
@@ -56,5 +58,31 @@
       "M034",
       "M061"
     ]
+  },
+  "versionSimple": "Un circuit électrique est un chemin de fils qui part de la pile et y revient en passant par une lampe : si le chemin est complet, la lampe s'allume.",
+  "sources": [
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 4 : « L'électricité » (circuit à une boucle, circuit ouvert ou fermé, matériaux conducteurs et isolants)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=4",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de sciences et technologie du cycle 3 (annexe 2 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 7 : « Électricité » (circuit électrique à une boucle, matériaux conducteurs et isolants)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-2-programme-de-sciences-et-technologie-du-cycle-3-519023.pdf#page=7",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « circuit »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/circuit/16145",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "circuit"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

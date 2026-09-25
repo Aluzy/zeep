@@ -8,18 +8,21 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Matériau, souvent métallique, qui laisse circuler facilement le courant électrique, utilisé notamment dans les câbles électriques.",
+  "definition": "Matériau qui laisse facilement passer le courant électrique, parce qu'il contient des charges électriques libres de se déplacer, comme les électrons des métaux. Le cuivre et l'aluminium, utilisés dans les fils et les câbles électriques, ainsi que le graphite, sont de bons conducteurs.",
   "related": [
     "amperemetre",
     "atome",
     "bande-interdite",
+    "cable-electrique",
     "caracteristique-tension-courant",
+    "charge-electrique",
     "courant-electrique",
     "electrolyse",
     "electron",
     "fil-electrique",
     "induction-electromagnetique",
     "intensite-electrique",
+    "isolant-electrique",
     "loi-d-ohm",
     "ohmmetre",
     "resistance-electrique",
@@ -41,5 +44,31 @@
       "M002",
       "M007"
     ]
+  },
+  "versionSimple": "Un conducteur est une matière qui laisse passer le courant, comme le métal. Si on place une cuillère en métal dans le circuit d'une pile et d'une lampe, la lampe s'allume.",
+  "sources": [
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 4 : « L'électricité » (circuit à une boucle, circuit ouvert ou fermé, matériaux conducteurs et isolants)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=4",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme de sciences et technologie du cycle 3 (annexe 2 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 7 : « Électricité » (circuit électrique à une boucle, matériaux conducteurs et isolants)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-2-programme-de-sciences-et-technologie-du-cycle-3-519023.pdf#page=7",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « conducteur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/conducteur/18033",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "matériau conducteur"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

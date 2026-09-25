@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Quantité de charge électrique traversant un conducteur électrique par unité de temps, mesurée en ampères à l'aide d'un ampèremètre.",
+  "definition": "Grandeur qui mesure le débit du courant électrique, c'est-à-dire la quantité de charge électrique qui traverse une section d'un conducteur par seconde. Elle s'exprime en ampères (symbole A) et se mesure avec un ampèremètre branché en série. Dans un circuit à une seule boucle, elle est la même en tout point.",
   "related": [
     "amperage",
     "ampere",
@@ -24,7 +24,8 @@
     "loi-des-noeuds",
     "multimetre",
     "pince-amperemetrique",
-    "puissance-electrique"
+    "puissance-electrique",
+    "resistance-electrique"
   ],
   "pillar": false,
   "illustration": null,
@@ -48,5 +49,23 @@
   "synonymes": [
     "I",
     "intensite"
-  ]
+  ],
+  "versionSimple": "L'intensité dit combien de courant passe dans un fil, un peu comme le débit de l'eau dans un tuyau. On la mesure en ampères avec un appareil appelé ampèremètre.",
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 103 : « Réaliser des circuits électriques simples et exploiter les lois de l'électricité »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=103",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « intensité »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/intensit%C3%A9/43584",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
+  }
 }

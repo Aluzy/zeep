@@ -8,11 +8,15 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Ensemble de fils électriques regroupés et protégés par une gaine isolante, servant au transport du courant électrique.",
+  "definition": "Ensemble d'un ou de plusieurs conducteurs métalliques, chacun entouré de sa propre enveloppe isolante, le tout protégé par une gaine extérieure contre les chocs et les contacts. Selon son usage, il achemine l'énergie électrique jusqu'aux appareils ou transporte des signaux, par exemple entre deux équipements informatiques.",
   "related": [
     "chute-de-tension",
+    "conducteur-electrique",
     "connecteur-electrique",
     "courant-electrique",
+    "energie-electrique",
+    "fil-electrique",
+    "isolant-electrique",
     "section-de-cable"
   ],
   "pillar": false,
@@ -31,5 +35,26 @@
       "M005",
       "M007"
     ]
+  },
+  "versionSimple": "Un câble électrique regroupe plusieurs fils de métal, chacun entouré de plastique, dans une même gaine. Le cordon d'un chargeur de téléphone est un câble.",
+  "sources": [
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), p. 11 : objets techniques (pile électrique, câbles, interrupteur, ampoule)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=11",
+      "type": "programme"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « câble »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/c%C3%A2ble/11884",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "câble"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
   }
 }

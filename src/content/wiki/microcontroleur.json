@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Circuit intégré combinant un processeur, une mémoire vive, une mémoire morte et des entrées-sorties, utilisé pour piloter un objet connecté ou un système embarqué comme une carte Arduino.",
   "related": [
+    "actionneur",
     "asic",
     "bus-i2c",
     "bus-spi",
@@ -65,5 +66,23 @@
     "MCU",
     "microcontroleur",
     "uC"
-  ]
+  ],
+  "versionSimple": "Un microcontrôleur est une petite puce qui fonctionne comme un ordinateur très simple. On le programme pour commander un objet, par exemple un robot qui avance quand on appuie sur un bouton.",
+  "sources": [
+    {
+      "titre": "FranceTerme (Commission d'enrichissement de la langue française), fiche « microcontrôleur »",
+      "url": "https://www.culture.fr/franceterme/terme/INFO680",
+      "type": "reference"
+    },
+    {
+      "titre": "Programme de technologie du cycle 4 (annexe, BO n° 9 du 29 février 2024), p. 9 : « Fonctions, solutions, constituants de la chaîne d'information » (capteurs, microcontrôleur)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/Annexe%20%E2%80%94%20Programme%20de%20technologie%20du%20cycle%204-368016.pdf#page=9",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L1",
+    "statut": "relu-ia"
+  }
 }

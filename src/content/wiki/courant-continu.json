@@ -18,6 +18,7 @@
     "onduleur",
     "panneau-photovoltaique",
     "pont-de-diodes",
+    "puissance-electrique",
     "redresseur"
   ],
   "pillar": false,
