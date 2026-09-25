@@ -7,7 +7,9 @@
 Vérifie : schéma des fiches wiki, slug = nom de fichier = slugify(term),
 références (related, blog, DIY) existantes, réciprocité des liens wiki,
 domaines connus, définitions non vides, doublons de termes, URLs vides,
-synonymes non ambigus, et effectif plancher de chaque domaine.
+synonymes non ambigus, effectif plancher de chaque domaine, et CLIQUET de dette
+éditoriale (scripts/dette.py) : une fiche qui enfreint une règle d'AGENTS.md sans figurer
+dans src/data/dette.json est une erreur.
 
 Ce script contrôle la CONFORMITÉ de ce qui existe. Il ne dit pas ce qui manque :
 c'est le rôle de scripts/audit_couverture.py, à lancer dans la foulée.
@@ -19,6 +21,7 @@ import re
 import sys
 from collections import Counter
 
+import dette
 from zeeplib import (BLOG_DIR, DIY_DIR, SLUG_RE, load_couverture, load_json,
                      load_taxonomy, load_wiki, normaliser, read_frontmatter,
                      slugify)
@@ -152,6 +155,13 @@ def main() -> int:
         for s in d.get("sources", []):
             if not isinstance(s, dict) or not str(s.get("titre") or "").strip():
                 errors.append(f"{where} : source invalide (objet avec au moins « titre » non vide attendu)")
+
+    # Cliquet de dette éditoriale : règles d'AGENTS.md §3 (longueurs, HTML, sources,
+    # sécurité 230 V, relecture indépendante). La dette existante est tolérée,
+    # toute nouvelle dette est bloquante. Détail : python3 scripts/dette.py
+    dette_erreurs, dette_notes = dette.verifier(wiki)
+    errors.extend(dette_erreurs)
+    warnings.extend(dette_notes)
 
     # Couverture par domaine : la taxonomie est une cible, pas une étiquette.
     couverture = load_couverture()

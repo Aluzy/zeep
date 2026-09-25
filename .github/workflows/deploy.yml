@@ -40,6 +40,17 @@ jobs:
       - name: Auditer la couverture (domaines, lexique, orphelins)
         run: python3 scripts/audit_couverture.py --ci
 
+      # Cohérence de la table matrice curriculaire -> fiches (niveaux scolaires).
+      # Bloque seulement si la TABLE est incohérente ; les entrées périmées sont
+      # affichées dans le journal comme travail à planifier.
+      - name: Vérifier la table des niveaux scolaires
+        run: python3 agents/outils/mapping_niveau.py --verifier
+
+      # Tableau de la dette éditoriale dans le journal (le blocage, lui, est fait
+      # par validate_content.py ci-dessus).
+      - name: Afficher la dette éditoriale
+        run: python3 scripts/dette.py --indicateurs
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
