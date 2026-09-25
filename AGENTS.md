@@ -1,8 +1,9 @@
 # AGENTS.md — règles pour les agents IA qui travaillent sur Zeep
 
 Ce fichier s'impose à tout agent (humain ou IA) qui modifie ce dépôt.
-Le plan d'ensemble et les fiches de mission vivent dans le projet claude.ai
-« Base de connaissance – wiki élec », dossier `workflow-agents/`.
+Les fiches de mission vivent dans `agents/missions/` (générées par `scripts/prochain_lot.py` pour
+les lots de contenu) ; l'état du projet est dans `docs/ETAT.md` (généré par `scripts/etat_projet.py`).
+Le plan d'ensemble d'origine reste dans le projet claude.ai « Base de connaissance – wiki élec ».
 
 ## 1. Le projet en 5 lignes
 
@@ -32,6 +33,22 @@ Le plan d'ensemble et les fiches de mission vivent dans le projet claude.ai
    (il est lu par les outils). Les rapports ne se suppriment pas : c'est la mémoire du projet
    (sources ouvertes, lacunes repérées, décisions prises seul).
 7. **Commits** : petits, en français, préfixés par le lot : `J1-L2: corrige les slugs du blog`.
+
+## 2 bis. Chaîne de production (lots de contenu)
+
+Détail et commandes : `agents/missions/README.md`.
+
+1. **Une fiche = une seule passe complète** : définition, version simple, sources, synonymes et liens dans le même lot.
+   Lots de 15 à 25 fiches, pris dans le backlog unifié (`scripts/backlog.py`, par ordre de priorité).
+2. **Mission et brouillon générés** : `python3 scripts/prochain_lot.py --lot <LOT>` écrit la mission et un changeset dont
+   les `old` sont déjà recopiés ; le rédacteur remplace chaque `"__A_REMPLIR__"` (refusé par `apply_changeset.py`).
+3. **Contrôle par un autre agent** : `python3 scripts/prochain_lot.py --controle <LOT>` écrit la mission du contrôleur
+   (sans les justifications du rédacteur) et le brouillon `<LOT>-controle.jsonl`. Une fiche refusée est corrigée ou
+   retirée du lot, jamais appliquée en l'état.
+4. **Validation humaine par lot** : `python3 scripts/valider.py <LOT> --apercu`, puis `valider.py <LOT>` — lancé par
+   Alexandre ou à sa demande explicite uniquement.
+5. Chaque lot de contenu se termine par `python3 scripts/dette.py --abaisser` et `python3 scripts/etat_projet.py`.
+6. Une fiche douteuse repérée hors de son lot s'inscrit dans `agents/donnees/signalements.json` avec sa raison.
 
 ## 3. Règles éditoriales (lots de contenu)
 
@@ -112,6 +129,8 @@ leur propre rédacteur. Les règles existaient, mais aucun script ne les vérifi
 - Données de pilotage du contenu : `src/data/taxonomy.json` (les domaines), `src/data/couverture.json` (les planchers et
   les cibles de qualité), `src/data/lexique-attendu.json` (le vocabulaire attendu). Les trois sont lus par les scripts,
   aucun n'est dupliqué dans le code.
+- En-têtes des rapports et des missions : `clé: valeur`, listes et objets en JSON (stdlib seule, pas de YAML) ;
+  lus par `zeeplib.lire_entete` et contrôlés en CI par `etat_projet.py --verifier`.
 - Deux scripts, deux questions : `validate_content.py` — « ce qui est écrit est-il correct ? » ;
   `audit_couverture.py` — « que manque-t-il ? ». Ne jamais fusionner les deux : c'est le second qui a manqué jusqu'ici.
 - Niveaux scolaires : `agents/outils/mapping_niveau.py` est incrémental. `--verifier` (en CI) contrôle la TABLE de

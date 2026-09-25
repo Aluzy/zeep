@@ -43,7 +43,9 @@ npm run build     # génère dist/
 ## Intégration continue
 
 Sur **toutes les branches** et pull requests, GitHub Actions valide le contenu
-(`scripts/validate_content.py`, dont le cliquet de dette éditoriale), audite la couverture, construit le site puis lance le test de fumée
+(`scripts/validate_content.py`, dont le cliquet de dette éditoriale), audite la couverture,
+vérifie la table des niveaux, l'en-tête des rapports de lot et les liens retour, publie le tableau de bord
+dans le résumé de l'exécution, construit le site puis lance le test de fumée
 (`scripts/smoke_dist.py`). La mise en ligne sur GitHub Pages n'a lieu que
 depuis `main`, si tout est vert.
 
@@ -65,12 +67,21 @@ python3 scripts/validate_content.py [--stats]                         # garde-fo
 python3 scripts/dette.py [--detail REGLE | --indicateurs | --abaisser]    # dette éditoriale (cliquet, voir AGENTS.md §3 ter)
 python3 agents/outils/mapping_niveau.py --verifier                     # table des niveaux scolaires (--lot <LOT> : changeset)
 python3 scripts/apply_changeset.py agents/changesets/<LOT>.jsonl --dry-run   # vérifie puis applique un changeset
+python3 scripts/prochain_lot.py [--lot <LOT> [--file F] [--taille N] | --controle <LOT>]   # backlog, missions, contrôle
+python3 scripts/valider.py <LOT> [--apercu | --sauf slug1,slug2]      # validation humaine d'un lot (Alexandre)
+python3 scripts/etat_projet.py                                        # régénère le tableau de bord docs/ETAT.md
 python3 scripts/rename_slug.py <ancien-slug> [--term "Nouveau terme"] --dry-run  # renomme une fiche et ses références
 python3 scripts/smoke_dist.py --base /zeep                            # test de fumée du site construit (après npm run build)
 python3 scripts/export_glossaire.py glossaire.csv                     # export tableur du glossaire
 ```
 
 (Retirer `--dry-run` pour appliquer réellement un changeset ou un renommage.)
+
+## Production du contenu
+
+La chaîne rédacteur → contrôleur → validation humaine est décrite dans
+[`agents/missions/README.md`](agents/missions/README.md) ; l'état courant (indicateurs, backlog,
+lots, décisions ouvertes) est dans [`docs/ETAT.md`](docs/ETAT.md).
 
 ## Chantiers ouverts
 
