@@ -7,12 +7,12 @@
 | Indicateur | Valeur |
 |---|---|
 | Fiches | 387 |
-| Définitions de 25 à 60 mots | 204/387 (53 %) |
-| Version simple, notions vues avant le lycée | 7/28 (25 %) |
-| Version simple, toutes fiches | 187/387 (48 %) |
+| Définitions de 25 à 60 mots | 221/387 (57 %) |
+| Version simple, notions vues avant le lycée | 28/28 (100 %) |
+| Version simple, toutes fiches | 208/387 (54 %) |
 | Avec niveau scolaire | 79/387 (20 %) |
-| Avec au moins une source précise (URL non racine) | 27/387 (7 %) |
-| Relues par un contrôleur indépendant | 0/387 (0 %) |
+| Avec au moins une source précise (URL non racine) | 48/387 (12 %) |
+| Relues par un contrôleur indépendant | 21/387 (5 %) |
 | Validées par Alexandre | 0/387 (0 %) |
 | Fiches secteur sans rappel de sécurité | 24 |
 
@@ -20,9 +20,9 @@
 
 | Règle | Fiches en défaut | Base tolérée |
 |---|---:|---:|
-| Définition hors 25-60 mots (`definition_longueur`) | 183 | 183 |
+| Définition hors 25-60 mots (`definition_longueur`) | 166 | 166 |
 | Balise HTML dans la définition (`definition_html`) | 3 | 3 |
-| Notion vue avant le lycée (C1-C4) sans version simple (`version_simple_manquante_avant_lycee`) | 21 | 21 |
+| Notion vue avant le lycée (C1-C4) sans version simple (`version_simple_manquante_avant_lycee`) | 0 | 0 |
 | Version simple hors 12-35 mots (`version_simple_longueur`) | 1 | 1 |
 | Fiche liée au secteur sans rappel de sécurité (`securite_230v_absente`) | 24 | 24 |
 | Source sans URL (`source_sans_url`) | 0 | 0 |
@@ -62,16 +62,17 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | J3-L1 | Couverture du glossaire : outillage + 180 fiches | 2026-09-13 | termine | aucun | 0 / 0 |
 | J4-CHAINE | Chaîne de production du contenu : backlog, missions, contrôle, validation, tableau de bord | 2026-09-25 | termine | aucun | 0 / 0 |
 | J4-L0 | Cliquet de dette éditoriale, mapping des niveaux incrémental, modèle de rapport structuré | 2026-09-25 | termine | aucun | 0 / 0 |
+| J4-L1 | Versions simples des notions des cycles 2 à 4 (21 fiches) | 2026-09-25 | termine | agent-controleur-J4-L1 | 0 / 21 |
 | chantier-A-4-5 | Date, temps de lecture et sommaire de blog | 2026-09-13 | termine | aucun | 0 / 0 |
 | chantier-A-6 | Liens contextuels dans les définitions du wiki | 2026-09-13 | termine | aucun | 0 / 0 |
 
 ## En cours
 
 Missions sans rapport :
-- `J4-L1.md` — redaction, 21 élément(s), file « vs-avant-lycee »
+- aucune
 
 Brouillons de changeset :
-- `J4-L1.jsonl` — 74 opération(s) sur 74 à remplir
+- aucun
 
 ## Lacunes remontées par les rapports
 
@@ -79,7 +80,8 @@ Notions sans fiche, absentes de `src/data/lexique-attendu.json`. Décision édit
 
 | Terme | Domaine | Vu dans |
 |---|---|---|
-| Récepteur électrique | A | J2-L4 (J2-L2 backlog) |
+| Potentiel électrique | A | J4-L1 (tension-electrique (notion retirée de la définition faute de fiche)) |
+| Récepteur électrique | A | J2-L4 (J2-L2 backlog); J4-L1 (circuit-electrique (mot du programme de cycle 2 évité faute de fiche)) |
 | Résistance interne | A | J2-L4 (J2-L2 backlog) |
 | Courbe de charge d'une batterie | D | B7 (recharger-une-voiture-electrique) |
 | Diagnostic électrique obligatoire | E | B2 (B2) |
@@ -89,7 +91,7 @@ Notions sans fiche, absentes de `src/data/lexique-attendu.json`. Décision édit
 | Schéma TT | E | B2 (B2) |
 | Chaîne de puissance | F | J2-L4 (J2-L2 backlog) |
 | KNX | H | B7 (B7) |
-| Lampe | I | J2-L4 (J2-L2 backlog) |
+| Lampe | I | J2-L4 (J2-L2 backlog); J4-L1 (circuit-electrique, circuit-ferme, interrupteur) |
 | Signal électrique | K | J2-L4 (J2-L2 backlog) |
 | Fonderie de semi-conducteurs | N | B6 (B6 article 1) |
 | Porteur de charge majoritaire | N | B6 (B6 article 2) |
@@ -115,7 +117,8 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J4-L0** — Type de source « officiel » (86 fiches) : l'accepter (l'ajouter à TYPES_SOURCE dans scripts/dette.py et à AGENTS.md) ou le convertir en « reference » / « programme » ?
 - **J4-L0** — Relecture jugée indépendante quand « par » contient « controleur » : convention à confirmer.
 - **J4-L0** — Détection « secteur 230 V » par mots-clés (src/data/dette.json) : trier les 24 fiches signalées, exempter les faux positifs avec leur raison.
+- **J4-L1** — Le mot « relais » a été retiré de la définition d'actionneur : le programme de technologie de 2024 range le relais dans la chaîne d'énergie (distribuer), pas parmi les actionneurs. La fiche relais-electronique le présente encore comme un actionneur : à trancher.
 
 ## Signalements de fiches douteuses
 
-24 ouvert(s) sur 24 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.
+24 ouvert(s) sur 25 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.
