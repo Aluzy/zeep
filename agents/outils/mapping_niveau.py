@@ -571,6 +571,45 @@ def niveau(f: dict) -> dict:
     }
 
 
+def table_perimee(occ: dict[str, dict], fiches_wiki: dict[str, dict]) -> list[tuple[str, str, str]]:
+    """Rejets de la TABLE que le corpus couvre désormais : (terme, lignes, slug).
+
+    Un terme rejeté faute de fiche alors qu'une fiche porte maintenant ce terme ou ce
+    synonyme : la TABLE est à compléter (entrée du lot de mise à jour des niveaux)."""
+    formes = {}
+    for slug, fiche in fiches_wiki.items():
+        for forme in formes_d_une_fiche(fiche):
+            formes.setdefault(forme, slug)
+    perimees = []
+    for cle, info in occ.items():
+        _slugs, type_corr, _c, _b, _n = TABLE[cle]
+        if type_corr == "rejet":
+            slug = formes.get(normaliser(info["label"]))
+            if slug:
+                perimees.append((info["label"], ", ".join(info["ids"]), slug))
+    return sorted(perimees)
+
+
+def backlog_programme(occ: dict[str, dict], perimees: list[tuple[str, str, str]]) -> list[dict]:
+    """Termes de programme qui méritent une fiche et n'en ont toujours pas :
+    [{"terme", "lignes", "note"}] (les rejets marqués backlog=True, hors table périmée)."""
+    couverts = {label for label, _ids, _slug in perimees}
+    return [{"terme": occ[k]["label"], "lignes": list(occ[k]["ids"]), "note": TABLE[k][4]}
+            for k in occ
+            if not TABLE[k][0] and TABLE[k][3] and occ[k]["label"] not in couverts]
+
+
+def analyser(matrice: Path = MATRICE) -> dict:
+    """État de la correspondance, pour les autres outils (prochain_lot.py, etat_projet.py)."""
+    lignes = lire_matrice(matrice)
+    fiches_wiki = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(WIKI.glob("*.json"))}
+    occ = occurrences(lignes)
+    verifier(occ, set(fiches_wiki))
+    perimees = table_perimee(occ, fiches_wiki)
+    return {"lignes": lignes, "occ": occ, "perimees": perimees,
+            "backlog": backlog_programme(occ, perimees)}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--matrice", type=Path, default=MATRICE)
@@ -604,18 +643,7 @@ def main() -> int:
             "why": f"Matrice curriculaire v2 : {detail}. Première apparition : {n['premiereApparition']}.",
         })
 
-    # --- table périmée : un rejet que le corpus couvre désormais ----------------------
-    formes = {}
-    for slug, fiche in fiches_wiki.items():
-        for forme in formes_d_une_fiche(fiche):
-            formes.setdefault(forme, slug)
-    perimees = []
-    for cle, info in occ.items():
-        slugs, type_corr, _c, _b, _n = TABLE[cle]
-        if type_corr == "rejet":
-            slug = formes.get(normaliser(info["label"]))
-            if slug:
-                perimees.append((info["label"], ", ".join(info["ids"]), slug))
+    perimees = table_perimee(occ, fiches_wiki)
 
     # --- rapport CSV -----------------------------------------------------------------
     rows = []
@@ -638,9 +666,7 @@ def main() -> int:
         print(f"TABLE périmée : {len(perimees)} terme(s) rejeté(s) alors qu'une fiche les couvre désormais")
         for label, ids, slug in sorted(perimees):
             print(f"  PÉRIMÉ       « {label} » ({ids}) -> fiche existante « {slug} »")
-    couverts = {label for label, _ids, _slug in perimees}
-    backlog = [occ[k]["label"] for k in occ
-               if not TABLE[k][0] and TABLE[k][3] and occ[k]["label"] not in couverts]
+    backlog = backlog_programme(occ, perimees)
     print(f"Termes de programme encore sans fiche (backlog) : {len(backlog)}")
 
     if args.verifier:

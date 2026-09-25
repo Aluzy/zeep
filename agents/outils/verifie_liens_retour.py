@@ -23,6 +23,7 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -32,7 +33,11 @@ from zeeplib import BLOG_DIR, DIY_DIR, load_json, load_wiki, read_frontmatter  #
 
 NODE_WRAPPER = Path(__file__).resolve().parent / "liens_retour_node.mjs"
 
-# Attendus écrits à la main depuis src/content/ (3 articles, 3 projets au 12/09).
+# Témoins écrits à la main depuis src/content/ (3 articles, 3 projets au 12/09).
+# Le contenu grandit à chaque lot de blog : un témoin exige que ces liens retour
+# SOIENT présents (inclusion), il ne fige pas la liste complète. Les décomptes
+# globaux et la liste des fiches « sans lien » figés au 12/09 ont été retirés le
+# 25/09/2026 : ils cassaient dès le premier article publié.
 ATTENDUS = {
     "carte-arduino": {
         "articles": ["arduino-vs-raspberry-vs-esp32"],
@@ -51,9 +56,6 @@ ATTENDUS = {
         "projets": ["pcb-personnalise-kicad"],
     },
 }
-# Fiches qui ne doivent recevoir aucun lien retour (donc aucun bloc affiché).
-SANS_LIEN = ["ohm", "volt", "fusible"]
-NB_FICHES_AVEC_LIENS = 23
 
 
 def lire_articles() -> list[dict]:
@@ -106,8 +108,11 @@ def index_python(articles: list[dict], projets: list[dict], slugs_wiki: set[str]
                 )
             if cible in vus:
                 continue
+            # rang = position de la fiche parmi les cibles distinctes de l'article
+            entree(cible)["articles"].append(
+                {"slug": a["slug"], "titre": a["data"]["title"], "rang": len(vus)}
+            )
             vus.add(cible)
-            entree(cible)["articles"].append({"slug": a["slug"], "titre": a["data"]["title"]})
 
     for p in projets:
         vus = set()
@@ -129,11 +134,17 @@ def index_python(articles: list[dict], projets: list[dict], slugs_wiki: set[str]
             )
 
     for liens in index.values():
-        # Tri par titre ; sur ce contenu, l'ordre ASCII et l'ordre français coïncident
-        # (aucun titre ne commence par une lettre accentuée), donc pas de locale ici.
-        liens["articles"].sort(key=lambda x: x["titre"].casefold())
-        liens["projets"].sort(key=lambda x: x["titre"].casefold())
+        # Approximation de localeCompare(…, "fr") : accents et casse ignorés,
+        # puis la forme exacte pour départager.
+        liens["articles"].sort(key=cle_titre)
+        liens["projets"].sort(key=cle_titre)
     return index
+
+
+def cle_titre(x: dict) -> tuple[str, str]:
+    t = x["titre"]
+    sans = "".join(c for c in unicodedata.normalize("NFKD", t) if not unicodedata.combining(c))
+    return ("".join(c for c in sans.casefold() if c.isalnum() or c.isspace()), t)
 
 
 def index_node(articles: list[dict], projets: list[dict], slugs_wiki: list[str]) -> dict | None:
@@ -173,28 +184,14 @@ def main() -> int:
             erreurs.append(f"fiche attendue absente du wiki : {slug}")
             continue
         liens = attendu.get(slug, {"articles": [], "projets": []})
-        obtenu_a = sorted(x["slug"] for x in liens["articles"])
-        obtenu_p = sorted(x["slug"] for x in liens["projets"])
-        if obtenu_a != sorted(att["articles"]):
-            erreurs.append(f"{slug} : articles {obtenu_a} au lieu de {sorted(att['articles'])}")
-        if obtenu_p != sorted(att["projets"]):
-            erreurs.append(f"{slug} : projets {obtenu_p} au lieu de {sorted(att['projets'])}")
+        obtenu_a = {x["slug"] for x in liens["articles"]}
+        obtenu_p = {x["slug"] for x in liens["projets"]}
+        for manque in sorted(set(att["articles"]) - obtenu_a):
+            erreurs.append(f"{slug} : l'article {manque} devrait apparaître en lien retour")
+        for manque in sorted(set(att["projets"]) - obtenu_p):
+            erreurs.append(f"{slug} : le projet {manque} devrait apparaître en lien retour")
 
-    # 3. Fiches sans aucun lien retour.
-    for slug in SANS_LIEN:
-        if slug not in slugs:
-            erreurs.append(f"fiche témoin absente du wiki : {slug}")
-        elif slug in attendu:
-            erreurs.append(f"{slug} devait n'avoir aucun lien retour")
-
-    # 4. Décompte global.
-    if len(attendu) != NB_FICHES_AVEC_LIENS:
-        erreurs.append(
-            f"{len(attendu)} fiches avec liens retour, {NB_FICHES_AVEC_LIENS} attendues "
-            "(mettre à jour NB_FICHES_AVEC_LIENS si du contenu a été ajouté)"
-        )
-
-    # 5. Niveau et durée des projets renseignés (affichés sur la fiche).
+    # 3. Niveau et durée des projets renseignés (affichés sur la fiche).
     for slug, liens in attendu.items():
         for p in liens["projets"]:
             if p["niveau"] not in ("debutant", "intermediaire", "avance"):
@@ -202,7 +199,7 @@ def main() -> int:
             if not p["duree"]:
                 print(f"NOTE  {p['slug']} n'a pas de durée : la puce affichera le titre seul.")
 
-    # 6. Le vrai code du site doit donner exactement le même index.
+    # 4. Le vrai code du site doit donner exactement le même index.
     res = index_node(articles, projets, sorted(slugs))
     if res is not None:
         if not res.get("ok"):
@@ -218,7 +215,7 @@ def main() -> int:
         else:
             print("OK    src/lib/backlinks.ts donne le même index que la reconstruction Python.")
 
-        # 7. Garde-fou : un slug inexistant doit faire échouer le build.
+        # 5. Garde-fou : un slug inexistant doit faire échouer le build.
         faux = [{"slug": "essai", "data": {"title": "Essai", "related": ["fiche-qui-nexiste-pas"]}}]
         res2 = index_node(faux, [], sorted(slugs))
         if res2 is None or res2.get("ok") or "fiche-qui-nexiste-pas" not in str(res2.get("erreur", "")):

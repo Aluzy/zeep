@@ -98,3 +98,92 @@ def read_frontmatter(path: Path) -> tuple[dict, str]:
         except json.JSONDecodeError:
             data[key.strip()] = raw.strip('"')
     return data, body
+
+
+# --- Chaîne de production (lots, missions, rapports) ---------------------------------
+AGENTS_DIR = ROOT / "agents"
+CHANGESETS_DIR = AGENTS_DIR / "changesets"
+MISSIONS_DIR = AGENTS_DIR / "missions"
+RAPPORTS_DIR = AGENTS_DIR / "rapports"
+
+# Valeur à remplacer dans un brouillon de changeset (refusée par apply_changeset.py).
+A_REMPLIR = "__A_REMPLIR__"
+
+
+def contient_a_remplir(valeur) -> bool:
+    """Vrai si la valeur (ou l'un de ses éléments, à toute profondeur) vaut A_REMPLIR."""
+    if isinstance(valeur, str):
+        return A_REMPLIR in valeur
+    if isinstance(valeur, dict):
+        return any(contient_a_remplir(v) for v in valeur.values())
+    if isinstance(valeur, list):
+        return any(contient_a_remplir(v) for v in valeur)
+    return False
+
+
+def _valeur_entete(brut: str):
+    """Valeur d'une ligne d'en-tête : JSON si possible (listes, objets, nombres),
+    sinon chaîne. Un commentaire « # … » en fin de ligne est ignoré."""
+    brut = brut.strip()
+    try:
+        return json.loads(brut)
+    except json.JSONDecodeError:
+        pass
+    # Commentaire final : on essaie chaque « # » précédé d'une espace, de la droite vers la gauche.
+    positions = [m.start() for m in re.finditer(r"\s#", brut)]
+    for pos in positions:
+        avant = brut[:pos].strip()
+        try:
+            return json.loads(avant)
+        except json.JSONDecodeError:
+            continue
+    if positions:
+        brut = brut[:positions[0]].strip()
+    return brut.strip('"')
+
+
+def lire_entete(path: Path) -> dict | None:
+    """En-tête « --- clé: valeur --- » d'un rapport ou d'une mission (stdlib seule, pas de YAML).
+
+    Les valeurs complexes s'écrivent en JSON (clés entre guillemets) :
+        lacunes: [{"terme": "Farad", "domaine": "A", "vu_dans": "condensateur"}]
+    Renvoie None si le fichier n'a pas d'en-tête (anciens rapports)."""
+    texte = path.read_text(encoding="utf-8")
+    if not texte.startswith("---"):
+        return None
+    fin = texte.find("\n---", 3)
+    if fin < 0:
+        return None
+    entete = {}
+    for ligne in texte[3:fin].splitlines():
+        if not ligne.strip() or ligne.lstrip().startswith("#") or ":" not in ligne:
+            continue
+        cle, brut = ligne.split(":", 1)
+        entete[cle.strip()] = _valeur_entete(brut)
+    return entete
+
+
+def lire_changeset(path: Path) -> list[dict]:
+    """Opérations d'un changeset JSONL (lignes vides ignorées)."""
+    return [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+
+def ecrire_changeset(path: Path, ops: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("".join(json.dumps(o, ensure_ascii=False) + "\n" for o in ops), encoding="utf-8")
+
+
+def slugs_du_changeset(ops: list[dict]) -> list[str]:
+    """Fiches traitées par un changeset (« set » et « create »), dans l'ordre, sans les
+    fiches seulement touchées par un lien."""
+    slugs: list[str] = []
+    for o in ops:
+        if o.get("op") == "set":
+            s = o.get("slug")
+        elif o.get("op") == "create":
+            s = slugify((o.get("data") or {}).get("term", ""))
+        else:
+            continue
+        if s and s not in slugs:
+            slugs.append(s)
+    return slugs

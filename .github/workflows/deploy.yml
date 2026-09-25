@@ -40,6 +40,38 @@ jobs:
       - name: Auditer la couverture (domaines, lexique, orphelins)
         run: python3 scripts/audit_couverture.py --ci
 
+      # Cohérence de la table matrice curriculaire -> fiches (niveaux scolaires).
+      # Bloque seulement si la TABLE est incohérente ; les entrées périmées sont
+      # affichées dans le journal comme travail à planifier.
+      - name: Vérifier la table des niveaux scolaires
+        run: python3 agents/outils/mapping_niveau.py --verifier
+
+      # Tableau de la dette éditoriale dans le journal (le blocage, lui, est fait
+      # par validate_content.py ci-dessus).
+      - name: Afficher la dette éditoriale
+        run: python3 scripts/dette.py --indicateurs
+
+      # En-têtes des rapports de lot : lus par etat_projet.py et prochain_lot.py
+      # (lots terminés, lacunes, décisions). Un en-tête illisible ferait
+      # disparaître un lot du tableau de bord sans bruit.
+      - name: Vérifier l'en-tête des rapports de lot
+        run: python3 scripts/etat_projet.py --verifier
+
+      # Tableau de bord recalculé, affiché dans le résumé de l'exécution.
+      - name: Tableau de bord (résumé de l'exécution)
+        run: python3 scripts/etat_projet.py --stdout >> "$GITHUB_STEP_SUMMARY"
+
+      # Liens retour des fiches (articles et projets qui les citent) : compare
+      # src/lib/backlinks.ts à une reconstruction Python indépendante. Node 22
+      # sait exécuter le .ts sans dépendance ; le build ci-dessous reste en Node 20.
+      - name: Setup Node 22 (liens retour)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Vérifier les liens retour
+        run: python3 agents/outils/verifie_liens_retour.py
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:

@@ -1,0 +1,74 @@
+{"op": "set", "lot": "J4-L1", "slug": "actionneur", "field": "definition", "old": "Composant électronique ou électromécanique, comme un servomoteur ou un relais électronique, qui convertit un signal de commande en action physique.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "actionneur", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "actionneur", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "actionneur", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "cable-electrique", "field": "definition", "old": "Ensemble de fils électriques regroupés et protégés par une gaine isolante, servant au transport du courant électrique.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "cable-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "cable-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "cable-electrique", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "capteur", "field": "definition", "old": "Composant électronique qui transforme une grandeur physique, comme la température ou la pression, en signal analogique ou numérique exploitable par un microcontrôleur.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "capteur", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "capteur", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "capteur", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-electrique", "field": "definition", "old": "Ensemble de composants reliés par des conducteurs électriques formant un chemin fermé permettant la circulation du courant électrique.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-electrique", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ferme", "field": "definition", "old": "État d'un circuit électrique dont le trajet est complet, permettant au courant électrique de circuler normalement.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ferme", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ferme", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ferme", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ouvert", "field": "definition", "old": "État d'un circuit électrique dans lequel la continuité est interrompue, empêchant le courant électrique de circuler.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ouvert", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ouvert", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "circuit-ouvert", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "conducteur-electrique", "field": "definition", "old": "Matériau, souvent métallique, qui laisse circuler facilement le courant électrique, utilisé notamment dans les câbles électriques.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "conducteur-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "conducteur-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "conducteur-electrique", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "electronique-embarquee", "field": "definition", "old": "Ensemble des systèmes électroniques, souvent construits autour d'un microcontrôleur, intégrés dans un objet pour en assurer le fonctionnement autonome.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "electronique-embarquee", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "electronique-embarquee", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "electronique-embarquee", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "generateur-electrique", "field": "definition", "old": "Dispositif qui produit de l'électricité à partir d'une autre forme d'énergie, comme un alternateur ou une dynamo.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "generateur-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "generateur-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "generateur-electrique", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "intensite-electrique", "field": "definition", "old": "Quantité de charge électrique traversant un conducteur électrique par unité de temps, mesurée en ampères à l'aide d'un ampèremètre.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "intensite-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "intensite-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "interrupteur", "field": "definition", "old": "Dispositif permettant d'ouvrir ou de fermer manuellement un circuit électrique pour couper ou rétablir le courant électrique.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "interrupteur", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "interrupteur", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "interrupteur", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "isolant-electrique", "field": "definition", "old": "Matériau qui empêche ou limite fortement le passage du courant électrique, utilisé pour protéger les conducteurs électriques.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "isolant-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "isolant-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "isolant-electrique", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "microcontroleur", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "microcontroleur", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "pile-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "pile-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "pile-electrique", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "processeur-cpu", "field": "definition", "old": "Composant qui exécute les calculs et les instructions d'un programme informatique, présent sous forme de microprocesseur sur la carte mère.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "processeur-cpu", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "processeur-cpu", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "protocole-de-communication", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "protocole-de-communication", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "protocole-de-communication", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "puissance-electrique", "field": "definition", "old": "Quantité d'énergie électrique consommée ou produite par unité de temps, exprimée en watts, égale au produit de la tension électrique par l'intensité électrique.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "puissance-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "puissance-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "resistance-electrique", "field": "definition", "old": "Opposition qu'un conducteur électrique oppose au passage du courant électrique, exprimée en ohms et mesurée avec un ohmmètre.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "resistance-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "resistance-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "signal-analogique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "signal-analogique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "signal-analogique", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "signal-numerique", "field": "definition", "old": "Signal électrique codé sous forme d'états discrets, généralement binaires, traité par un circuit numérique ou un microcontrôleur.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "signal-numerique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "signal-numerique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "signal-numerique", "field": "synonymes", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "tension-electrique", "field": "definition", "old": "Différence de potentiel électrique entre deux points d'un circuit électrique, exprimée en volts, qui met en mouvement le courant électrique.", "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "tension-electrique", "field": "versionSimple", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L1", "slug": "tension-electrique", "field": "sources", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}

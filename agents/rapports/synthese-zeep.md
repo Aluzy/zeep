@@ -1,3 +1,5 @@
+> **Figée au 25/09/2026.** L'état courant du projet est généré dans [`docs/ETAT.md`](../../docs/ETAT.md) par `scripts/etat_projet.py` ; cette synthèse écrite à la main n'est plus tenue à jour.
+
 # Synthèse des rapports — projet Zeep
 
 Sep 25, 2026 · @Alexandre
