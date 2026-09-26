@@ -44,5 +44,17 @@
     "reseau-electrique",
     "station-de-transfert-d-energie-par-pompage",
     "supercondensateur"
-  ]
+  ],
+  "niveau": {
+    "premiereApparition": "1-TG",
+    "cycles": [
+      "1-TG"
+    ],
+    "familles": [
+      "FAM04"
+    ],
+    "matriceIds": [
+      "M036"
+    ]
+  }
 }

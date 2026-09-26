@@ -33,5 +33,17 @@
     "circuit-rl",
     "condensateur",
     "regime-transitoire"
-  ]
+  ],
+  "niveau": {
+    "premiereApparition": "TG",
+    "cycles": [
+      "TG"
+    ],
+    "familles": [
+      "FAM09"
+    ],
+    "matriceIds": [
+      "M032"
+    ]
+  }
 }

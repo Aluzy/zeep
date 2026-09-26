@@ -46,5 +46,19 @@
     "machine-a-etats",
     "robotique",
     "servomoteur"
-  ]
+  ],
+  "niveau": {
+    "premiereApparition": "BACPRO",
+    "cycles": [
+      "BACPRO",
+      "STI2D"
+    ],
+    "familles": [
+      "FAM12"
+    ],
+    "matriceIds": [
+      "M047",
+      "M070"
+    ]
+  }
 }

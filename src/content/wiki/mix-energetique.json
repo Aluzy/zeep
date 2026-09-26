@@ -41,5 +41,17 @@
     "energie-fossile",
     "energie-renouvelable",
     "production-d-electricite"
-  ]
+  ],
+  "niveau": {
+    "premiereApparition": "STI2D",
+    "cycles": [
+      "STI2D"
+    ],
+    "familles": [
+      "FAM13"
+    ],
+    "matriceIds": [
+      "M053"
+    ]
+  }
 }
