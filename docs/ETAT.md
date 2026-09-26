@@ -12,8 +12,8 @@
 | Version simple, toutes fiches | 211/387 (55 %) |
 | Avec niveau scolaire | 79/387 (20 %) |
 | Avec au moins une source précise (URL non racine) | 79/387 (20 %) |
-| Relues par un contrôleur indépendant | 52/387 (13 %) |
-| Validées par Alexandre | 0/387 (0 %) |
+| Relues par un contrôleur indépendant | 21/387 (5 %) |
+| Validées par Alexandre | 31/387 (8 %) |
 | Fiches secteur sans rappel de sécurité | 0 |
 
 ## Dette éditoriale (cliquet)

@@ -50,8 +50,8 @@
   ],
   "versionSimple": "Un panneau photovoltaïque transforme la lumière du Soleil en électricité. Sur un toit ou sur une calculatrice, il fonctionne dès qu'il est éclairé, et produit plus quand la lumière est forte.",
   "relecture": {
-    "date": "2026-09-25",
-    "par": "agent-controleur-J4-L3",
-    "statut": "relu-ia"
+    "date": "2026-09-26",
+    "par": "Alexandre",
+    "statut": "valide"
   }
 }

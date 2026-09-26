@@ -47,8 +47,8 @@
   ],
   "versionSimple": "Un schéma électrique est un dessin qui représente un circuit avec des symboles simples : un rond marqué d'une croix pour la lampe, des traits pour les fils. Il aide à construire le circuit.",
   "relecture": {
-    "date": "2026-09-25",
-    "par": "agent-controleur-J4-L3",
-    "statut": "relu-ia"
+    "date": "2026-09-26",
+    "par": "Alexandre",
+    "statut": "valide"
   }
 }
