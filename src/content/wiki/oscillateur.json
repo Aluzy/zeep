@@ -8,15 +8,27 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Circuit électronique qui génère un signal périodique, souvent stabilisé par un quartz, utilisé comme référence de fréquence de commutation dans un microcontrôleur.",
+  "definition": "Circuit électronique qui produit de lui-même un signal périodique, sinusoïdal ou carré, à une fréquence déterminée. Stabilisé par un quartz, il fournit par exemple le signal d'horloge qui cadence un microcontrôleur ; on en trouve aussi dans les émetteurs et les récepteurs de radio.",
   "related": [
     "electronique",
-    "frequence-de-commutation",
+    "frequence-electrique",
     "microcontroleur",
     "piezoelectricite",
     "quartz-resonateur",
     "signal-d-horloge"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « oscillateur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/oscillateur/56661",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
+  }
 }

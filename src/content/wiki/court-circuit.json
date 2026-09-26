@@ -10,15 +10,38 @@
     "electronique"
   ],
   "merged": true,
-  "definition": "<strong>Vu côté électricité :</strong> Contact accidentel entre deux conducteurs électriques de potentiels différents, provoquant une intensité électrique excessive pouvant déclencher un disjoncteur ou un fusible.<br><br><strong>Vu côté électronique :</strong> Contact accidentel entre deux points d'un circuit électronique de potentiels différents, provoquant un courant excessif pouvant endommager les composants électroniques.",
+  "definition": "Liaison accidentelle, de résistance presque nulle, entre deux points d'un circuit entre lesquels existe normalement une tension, par exemple les deux bornes d'une pile ou deux conducteurs d'un câble abîmé. L'intensité devient très grande et peut provoquer échauffement ou incendie ; fusibles et disjoncteurs coupent alors le circuit. Un câble abîmé se fait remplacer par un électricien.",
   "related": [
     "arc-electrique",
+    "cable-electrique",
+    "circuit-electrique",
     "court-jus",
     "disjoncteur",
+    "electricien",
     "electronique",
     "fusible",
-    "intensite-electrique"
+    "intensite-electrique",
+    "pile-electrique",
+    "resistance-electrique",
+    "tension-electrique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "INRS, dossier Risques électriques, « Prévention du risque électrique » (surintensités, mise à la terre des masses, NF C 15-100)",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « court-circuit »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/court-circuit/19961",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
+  }
 }

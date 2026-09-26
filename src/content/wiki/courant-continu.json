@@ -19,7 +19,8 @@
     "panneau-photovoltaique",
     "pont-de-diodes",
     "puissance-electrique",
-    "redresseur"
+    "redresseur",
+    "valeur-efficace"
   ],
   "pillar": false,
   "illustration": null,

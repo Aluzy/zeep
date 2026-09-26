@@ -8,11 +8,13 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Rapport entre l'énergie électrique utile produite ou restituée par un appareil et l'énergie électrique consommée, exprimé en pourcentage.",
+  "definition": "Rapport entre l'énergie utile fournie par un convertisseur et l'énergie qu'il reçoit, ou entre les puissances correspondantes ; sans unité, il est inférieur à 1 et s'exprime souvent en pourcentage. L'énergie utile peut être mécanique pour un moteur ou lumineuse pour une lampe : le reste est surtout perdu sous forme de chaleur.",
   "related": [
     "cogeneration",
     "efficacite-energetique",
-    "facteur-de-charge"
+    "facteur-de-charge",
+    "moteur-electrique",
+    "puissance-electrique"
   ],
   "pillar": false,
   "illustration": null,
@@ -33,5 +35,20 @@
       "M036",
       "M065"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « rendement »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/rendement/68142",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "rendement"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
   }
 }

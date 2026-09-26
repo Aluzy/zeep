@@ -34,6 +34,8 @@
     "courant-de-fuite",
     "disjoncteur-differentiel",
     "isolant-electrique",
-    "mise-a-la-terre"
+    "mise-a-la-terre",
+    "prise-de-terre",
+    "regime-de-neutre"
   ]
 }

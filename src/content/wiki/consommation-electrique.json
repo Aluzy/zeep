@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Quantité d'énergie électrique utilisée par un appareil, un logement ou une entreprise, mesurée par le compteur électrique en kilowattheures.",
+  "definition": "Quantité d'énergie électrique utilisée par un appareil, un foyer ou une entreprise pendant une durée donnée, exprimée en kilowattheures. Pour une habitation, elle se lit sur le compteur électrique : la différence entre deux index relevés donne l'énergie consommée entre ces deux dates. Elle ne se confond pas avec la puissance, exprimée en watts.",
   "related": [
     "ampoule-led",
     "compteur-electrique",
@@ -18,7 +18,10 @@
     "energie-electrique",
     "facture-d-electricite",
     "heures-creuses",
-    "reseau-intelligent-smart-grid"
+    "kilowattheure",
+    "puissance-electrique",
+    "reseau-intelligent-smart-grid",
+    "watt"
   ],
   "pillar": false,
   "illustration": null,
@@ -35,5 +38,31 @@
       "M016",
       "M019"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Programme du cycle 4 en vigueur à la rentrée 2020 (d'après le BOEN n° 31 du 30 juillet 2020), p. 103 : « Conduire un calcul de consommation d'énergie électrique relatif à une situation de la vie courante »",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=103",
+      "type": "programme"
+    },
+    {
+      "titre": "Enedis, FAQ « Comment lire l'index du compteur électrique ? »",
+      "url": "https://www.enedis.fr/faq/compteur-electrique/comment-lire-lindex-du-compteur-electrique",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « consommation »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/consommation/18427",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "consommation d'électricité"
+  ],
+  "versionSimple": "La consommation électrique, c'est la quantité d'énergie électrique utilisée. Plus un appareil fonctionne longtemps, plus il consomme : un radiateur allumé toute la nuit consomme beaucoup.",
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
   }
 }

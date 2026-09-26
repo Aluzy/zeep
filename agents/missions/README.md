@@ -42,8 +42,8 @@ sort de sa file d'elle-même) :
 4. `reecriture` — définitions hors 25-60 mots, sources imprécises, signalements (par domaine : `--domaine A`) ;
 5. `creation` — lexique attendu sans fiche, puis termes de programme sans fiche.
 
-Une fiche citée dans une mission de rédaction sans rapport est « en cours » et n'est pas
-reproposée. Les fiches douteuses qu'aucun script ne sait détecter sont signalées dans
+Une fiche citée dans une mission de rédaction pas encore intégrée (sans rapport, ou changeset pas encore
+appliqué au wiki) est « en cours » et n'est pas reproposée. Les fiches douteuses qu'aucun script ne sait détecter sont signalées dans
 `agents/donnees/signalements.json`.
 
 ## Rôles et agents

@@ -8,10 +8,13 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Technique consistant à faire varier une caractéristique d'un signal, souvent porté par une fréquence de commutation, pour y transmettre une information, utilisée notamment par un émetteur radiofréquence.",
+  "definition": "Technique de transmission qui consiste à modifier l'amplitude, la fréquence ou la phase d'une onde porteuse, un signal sinusoïdal de fréquence élevée, en fonction du message à envoyer, comme la voix ou des données. Chaque émetteur peut ainsi utiliser sa propre gamme de fréquences, à la manière des stations de radio AM ou FM.",
   "related": [
+    "dephasage",
     "emetteur-radiofrequence",
-    "frequence-de-commutation"
+    "frequence-electrique",
+    "signal-analogique",
+    "valeur-crete"
   ],
   "pillar": false,
   "illustration": null,
@@ -31,5 +34,17 @@
     "AM",
     "FM",
     "modulation"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « modulation »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/modulation/51977",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
+  }
 }

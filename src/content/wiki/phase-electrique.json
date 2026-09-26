@@ -8,14 +8,44 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Conducteur actif d'un circuit électrique transportant le courant électrique, par opposition au neutre.",
+  "definition": "Conducteur d'une installation en courant alternatif qui porte la tension par rapport au neutre et à la terre : 230 V entre une phase et le neutre en monophasé, 400 V entre deux phases en triphasé. Toucher une phase suffit à être électrisé ; toute intervention se fait hors tension, par un électricien.",
   "related": [
     "circuit-electrique",
+    "courant-alternatif",
     "courant-electrique",
+    "electricien",
+    "electrisation",
     "monophase",
     "neutre",
+    "prise-de-courant",
+    "tension-electrique",
     "triphase"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 12 : conducteurs repérés par couleurs, non interchangeables ; installations domestiques en 230 V",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=12",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 42 : tensions nominales en monophasé 230 V et en triphasé 230/400 V, exprimées en valeurs efficaces",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=42",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, dossier Risques électriques, « Accidents d'origine électrique » (contact avec une pièce sous tension et la terre)",
+      "url": "https://www.inrs.fr/risques/electriques/accidents-origine-electrique.html",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "conducteur de phase"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
+  }
 }

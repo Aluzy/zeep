@@ -10,16 +10,18 @@
     "electronique"
   ],
   "merged": true,
-  "definition": "<strong>Vu côté électricité :</strong> Dispositif électronique qui convertit un courant alternatif en courant continu.<br><br><strong>Vu côté électronique :</strong> Circuit électronique, souvent construit à partir de diodes, qui convertit un signal analogique alternatif en signal continu au sein d'une alimentation électronique.",
+  "definition": "Montage qui convertit un courant alternatif, dont le sens s'inverse sans cesse, en un courant qui circule toujours dans le même sens, grâce à des composants comme les diodes, souvent montées en pont. On le trouve dans les chargeurs et les alimentations électroniques, où un condensateur lisse ensuite la tension obtenue.",
   "related": [
     "alimentation-electronique",
+    "condensateur",
     "courant-alternatif",
     "courant-continu",
     "diode",
     "diode-schottky",
     "electronique",
     "pont-de-diodes",
-    "signal-analogique"
+    "signal-analogique",
+    "tension-electrique"
   ],
   "pillar": false,
   "illustration": null,
@@ -34,5 +36,21 @@
     "matriceIds": [
       "M040"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « redresseur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/redresseur/67354",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "convertisseur alternatif-continu",
+    "AC/DC"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
   }
 }

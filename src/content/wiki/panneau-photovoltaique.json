@@ -8,15 +8,18 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Dispositif composé de cellules qui convertit directement la lumière du soleil en courant continu, une forme d'énergie renouvelable.",
+  "definition": "Assemblage de cellules photovoltaïques qui convertit directement une partie de l'énergie lumineuse reçue du Soleil en énergie électrique, fournie sous forme de courant continu. Ce courant varie avec l'éclairement et la température ; un onduleur le transforme en courant alternatif pour l'utiliser dans un bâtiment ou l'injecter sur le réseau.",
   "related": [
     "autoconsommation",
+    "courant-alternatif",
     "courant-continu",
     "effet-photoelectrique",
+    "energie-electrique",
     "energie-renouvelable",
     "facteur-de-charge",
     "generateur-electrique",
     "onduleur",
+    "reseau-electrique",
     "watt-crete"
   ],
   "pillar": true,
@@ -37,5 +40,18 @@
     "PV",
     "module photovoltaique",
     "panneau solaire"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 11 : « Générateurs photovoltaïques » (cellules assemblées en panneaux, courant continu variant avec l'éclairement et la température)",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=11",
+      "type": "reference"
+    }
+  ],
+  "versionSimple": "Un panneau photovoltaïque transforme la lumière du Soleil en électricité. Sur un toit ou sur une calculatrice, il fonctionne dès qu'il est éclairé, et produit plus quand la lumière est forte.",
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
+  }
 }

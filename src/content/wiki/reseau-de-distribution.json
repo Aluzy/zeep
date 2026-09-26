@@ -10,7 +10,9 @@
   "merged": false,
   "definition": "Partie du réseau électrique qui achemine l'électricité depuis les postes de transformation jusqu'aux consommateurs finaux, en moyenne et basse tension.",
   "related": [
+    "alimentation-electrique",
     "autoconsommation",
+    "compteur-electrique",
     "compteur-linky",
     "electricite",
     "ligne-basse-tension",

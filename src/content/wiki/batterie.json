@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Dispositif regroupant plusieurs piles électriques ou accumulateurs, capable de stocker et de restituer de l'énergie électrique sous forme de courant continu.",
   "related": [
+    "alimentation-electrique",
     "ampere-heure",
     "chaine-d-energie",
     "courant-continu",

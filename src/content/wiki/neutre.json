@@ -8,16 +8,47 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Conducteur d'un circuit électrique qui ramène le courant électrique vers la source, complétant le circuit avec la phase électrique.",
+  "definition": "Conducteur qui, avec la ou les phases, alimente les appareils en courant alternatif : en monophasé, les 230 V s'établissent entre la phase et le neutre. Selon le schéma de liaison à la terre, il est relié ou non à la terre ; il peut être sous tension en cas de défaut : toute intervention relève d'un électricien.",
   "related": [
     "circuit-electrique",
+    "courant-alternatif",
     "courant-electrique",
+    "electricien",
     "harmoniques",
+    "installation-electrique",
+    "mise-a-la-terre",
     "monophase",
     "phase-electrique",
+    "prise-de-courant",
     "regime-de-neutre",
+    "tension-electrique",
     "triphase"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 12 : conducteurs repérés par couleurs, non interchangeables ; installations domestiques en 230 V",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=12",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 31 : cas où le neutre n'est pas relié directement à la terre",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=31",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, dossier Risques électriques, « Prévention du risque électrique » (surintensités, schémas de liaison à la terre, NF C 15-100)",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "conducteur de neutre"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
+  }
 }

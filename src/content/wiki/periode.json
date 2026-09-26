@@ -38,6 +38,8 @@
     "frequence-electrique",
     "hertz",
     "oscilloscope",
-    "signal-analogique"
+    "signal-analogique",
+    "triphase",
+    "valeur-crete"
   ]
 }

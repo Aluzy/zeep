@@ -6,33 +6,38 @@
   "pillar": false,
   "illustration": null,
   "synonymes": [
-    "SPD",
-    "parafoudre",
-    "protection contre la foudre"
+    "SPD"
   ],
   "term": "Parafoudre",
   "domains": [
     "E",
     "U"
   ],
-  "definition": "Dispositif installé dans un tableau électrique qui écoule vers la terre les surtensions dues à la foudre ou aux manœuvres du réseau. Il protège les équipements électroniques sensibles.",
+  "definition": "Dispositif qui protège une installation et les appareils qui y sont branchés contre les surtensions dues à la foudre ou à d'autres surtensions dangereuses, en les dérivant vers la terre. Placé dans le tableau électrique, il est obligatoire dans certains cas fixés par la norme NF C 15-100 ; sa pose relève d'un électricien.",
   "versionSimple": "Quand la foudre provoque une surtension, le parafoudre l'envoie dans la terre pour éviter de griller les appareils de la maison.",
   "sources": [
     {
-      "titre": "AFNOR — normes de l'installation électrique",
-      "url": "https://www.afnor.org/",
-      "type": "norme"
+      "titre": "Dictionnaire de français Larousse, article « parafoudre »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/parafoudre/57893",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, brochure ED 6345 « L'électricité », p. 31 : « Parafoudres » : conditions de mise en œuvre selon la NF C 15-100",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6345.pdf#page=31",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
     "statut": "relu-ia"
   },
   "slug": "parafoudre",
   "related": [
+    "electricien",
     "installation-electrique",
     "mise-a-la-terre",
+    "norme-electrique-nf-c-15-100",
     "prise-de-terre",
     "tableau-electrique",
     "varistance"

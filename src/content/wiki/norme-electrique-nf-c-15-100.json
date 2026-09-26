@@ -15,6 +15,7 @@
     "habilitation-electrique",
     "indice-de-protection-ip",
     "installation-electrique",
+    "parafoudre",
     "section-de-cable"
   ],
   "pillar": false,

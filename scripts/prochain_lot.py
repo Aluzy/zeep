@@ -27,8 +27,8 @@ Contrôle (--controle) : le changeset du rédacteur doit être rempli. Écrit
 Le contrôleur est un autre agent que le rédacteur, lancé sans le contexte de la rédaction :
 sa mission ne contient pas les justifications (« why ») du rédacteur, il vérifie lui-même.
 
-Une fiche d'une mission de rédaction sans rapport (agents/rapports/<LOT>.md) est considérée
-« en cours » : elle n'est pas reproposée à un autre lot.
+Une fiche d'une mission de rédaction pas encore intégrée (sans rapport, ou changeset pas encore
+appliqué au wiki) est considérée « en cours » : elle n'est pas reproposée à un autre lot.
 """
 from __future__ import annotations
 
@@ -456,7 +456,7 @@ def afficher_files(wiki: dict) -> int:
         print(f"{nom:16} {len(items):>8}  {backlog.FILES[nom]}")
     if pris:
         lots = sorted(set(pris.values()))
-        print(f"\nEn cours (missions sans rapport) : {len(pris)} élément(s) dans {', '.join(lots)}")
+        print(f"\nEn cours (lots non intégrés au wiki) : {len(pris)} élément(s) dans {', '.join(lots)}")
     return 0
 
 

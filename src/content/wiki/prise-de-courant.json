@@ -8,12 +8,38 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Dispositif fixe raccordé à l'installation électrique permettant de brancher une fiche électrique pour alimenter un appareil.",
+  "definition": "Dispositif fixe, relié à l'installation électrique, dans lequel on branche la fiche d'un appareil pour l'alimenter ; ses alvéoles sont reliées à la phase et au neutre, et sa broche de terre au conducteur de protection. Elle délivre 230 V : on n'y introduit jamais d'objet ni de fil, et son remplacement relève d'un électricien.",
   "related": [
+    "cablage-electrique",
     "classe-d-isolation",
+    "electricien",
     "fiche-electrique",
-    "installation-electrique"
+    "installation-electrique",
+    "mise-a-la-terre",
+    "neutre",
+    "phase-electrique"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "INRS, brochure ED 6344 « Électricité : 10 règles élémentaires de sécurité » (2019), p. 4 : 230 V aux prises des particuliers, tensions au-delà de 50 V potentiellement mortelles",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6344.pdf#page=4",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, brochure ED 6344 « Électricité : 10 règles élémentaires de sécurité » (2019), p. 6 : « Ne pas bricoler » : l'électricien est un professionnel qualifié ; ne pas introduire de fils dans une prise",
+      "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6344.pdf#page=6",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "prise électrique",
+    "prise murale"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L3",
+    "statut": "relu-ia"
+  }
 }

@@ -8,15 +8,43 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Appareil qui mesure la consommation électrique d'un logement ou d'un bâtiment, exprimée en kilowattheures, servant de base à la facture d'électricité.",
+  "definition": "Appareil qui mesure l'énergie électrique consommée par un logement ou un bâtiment, en kilowattheures. La différence entre deux relevés de son index donne la consommation qui sert à établir la facture d'électricité. Il est installé et géré par le gestionnaire du réseau de distribution : on n'y intervient pas soi-même.",
   "related": [
     "compteur-linky",
     "consommation-electrique",
     "electricite",
+    "energie-electrique",
     "facture-d-electricite",
+    "kilowattheure",
     "puissance-active",
-    "puissance-souscrite"
+    "puissance-souscrite",
+    "reseau-de-distribution"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Enedis, FAQ « Comment lire l'index du compteur électrique ? »",
+      "url": "https://www.enedis.fr/faq/compteur-electrique/comment-lire-lindex-du-compteur-electrique",
+      "type": "reference"
+    },
+    {
+      "titre": "Enedis, FAQ « Comment brancher un compteur électrique monophasé ? »",
+      "url": "https://www.enedis.fr/faq/compteur-electrique/comment-brancher-un-compteur-electrique-monophase",
+      "type": "reference"
+    },
+    {
+      "titre": "Dictionnaire de français Larousse, article « compteur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/compteur/17821",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "compteur d'électricité"
+  ],
+  "relecture": {
+    "date": "2026-09-25",
+    "par": "agent-controleur-J4-L2",
+    "statut": "relu-ia"
+  }
 }

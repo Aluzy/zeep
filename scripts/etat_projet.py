@@ -115,9 +115,10 @@ def generer(wiki: dict) -> str:
     lignes.append("")
 
     en_cours = []
+    lots_ouverts = set(backlog.lots_en_cours(wiki).values())
     for chemin in sorted(MISSIONS_DIR.glob("*.md")) if MISSIONS_DIR.exists() else []:
         e = lire_entete(chemin) or {}
-        if e.get("role") in ("redaction", "controle") and not (RAPPORTS_DIR / f"{e.get('lot')}.md").exists():
+        if e.get("role") in ("redaction", "controle") and e.get("lot") in lots_ouverts:
             en_cours.append(f"- `{chemin.name}` — {e.get('role')}, {len(e.get('elements') or [])} élément(s)"
                             + (f", file « {e['file']} »" if e.get("file") else ""))
     brouillons = []
@@ -126,7 +127,7 @@ def generer(wiki: dict) -> str:
         reste = sum(1 for o in ops if contient_a_remplir(o))
         if reste:
             brouillons.append(f"- `{chemin.name}` — {reste} opération(s) sur {len(ops)} à remplir")
-    lignes += ["## En cours", "", "Missions sans rapport :", *(en_cours or ["- aucune"]), "",
+    lignes += ["## En cours", "", "Missions des lots non intégrés au wiki :", *(en_cours or ["- aucune"]), "",
                "Brouillons de changeset :", *(brouillons or ["- aucun"]), ""]
 
     # --- lacunes remontées --------------------------------------------------------------
