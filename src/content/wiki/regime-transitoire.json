@@ -36,5 +36,17 @@
     "circuit-rl",
     "condensateur",
     "constante-de-temps"
-  ]
+  ],
+  "niveau": {
+    "premiereApparition": "TG",
+    "cycles": [
+      "TG"
+    ],
+    "familles": [
+      "FAM09"
+    ],
+    "matriceIds": [
+      "M032"
+    ]
+  }
 }
