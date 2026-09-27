@@ -9,6 +9,44 @@ interface Props {
 const { title, description = "", group = "neutre", active = "", fullTitle } = Astro.props;
 const BASE = import.meta.env.BASE_URL; // se termine toujours par "/"
 const pageTitle = fullTitle ?? `${title} — Zeep`;
+
+// Nav desktop (lot SITE-L1) : liens simples pour cette V1, voir le rapport de
+// lot pour la décision sur les menus déroulants et sur "J'enseigne".
+const navItems = [
+  { key: "wiki", label: "J’apprends", href: `${BASE}wiki/` },
+  { key: "diy", label: "Je construis", href: `${BASE}projets-diy/` },
+  { key: "enseigne", label: "J’enseigne", href: `${BASE}wiki/` },
+  { key: "blog", label: "Ressources", href: `${BASE}blog/` },
+];
+
+// Nav mobile basse (fixe) : 4 entrées qui correspondent à la structure réelle
+// du site (pas de compte utilisateur ni de "mes projets" personnels sur Zeep).
+const bottomNav = [
+  {
+    key: "home",
+    label: "Accueil",
+    href: BASE,
+    icon: `<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>`,
+  },
+  {
+    key: "wiki",
+    label: "Wiki",
+    href: `${BASE}wiki/`,
+    icon: `<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>`,
+  },
+  {
+    key: "blog",
+    label: "Blog",
+    href: `${BASE}blog/`,
+    icon: `<path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/>`,
+  },
+  {
+    key: "diy",
+    label: "Projets DIY",
+    href: `${BASE}projets-diy/`,
+    icon: `<path d="M14.7 6.3a4 4 0 0 1-5.6 5.6L4 17l3 3 5.1-5.1a4 4 0 0 1 5.6-5.6L21 6l-3-3-3.3 3.3z"/>`,
+  },
+];
 ---
 <!DOCTYPE html>
 <html lang="fr">
@@ -23,35 +61,48 @@ const pageTitle = fullTitle ?? `${title} — Zeep`;
   <link rel="apple-touch-icon" href={`${BASE}assets/apple-touch-icon.png`} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href={`${BASE}assets/style.css`} />
 </head>
 <body data-group={group}>
   <header class="site-header">
     <div class="shell bar">
       <a class="brand" href={BASE}>
-        <img src={`${BASE}assets/logo-bolt.png`} alt="" class="brand-mark" height="34" />
-        <span class="brand-word">Zeep</span>
+        <img src={`${BASE}assets/logo-zeep.png`} alt="Zeep" class="brand-mark" height="34" />
       </a>
-      <nav class="main-nav">
-        <a href={BASE} class={active === "home" ? "active" : ""}>Accueil</a>
-        <a href={`${BASE}wiki/`} class={active === "wiki" ? "active" : ""}>Wiki</a>
-        <a href={`${BASE}blog/`} class={active === "blog" ? "active" : ""}>Blog</a>
-        <a href={`${BASE}projets-diy/`} class={active === "diy" ? "active" : ""}>Projets DIY</a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        {navItems.map((item) => (
+          <a href={item.href} class={active === item.key ? "active" : ""}>{item.label}</a>
+        ))}
       </nav>
+      <div class="header-actions">
+        <form class="header-search" action={`${BASE}wiki/`} method="get" role="search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7A8299" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" name="q" placeholder="Rechercher une notion, un projet…" aria-label="Rechercher une notion, un projet" />
+        </form>
+        <a class="btn header-cta" href={`${BASE}wiki/`}>Explorer le wiki</a>
+        <a class="icon-btn" href={`${BASE}wiki/`} aria-label="Rechercher">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </a>
+      </div>
     </div>
   </header>
   <main><div class="shell">
     <slot />
   </div></main>
   <footer class="site-footer"><div class="shell footer-inner">
-    <span>Zeep — wiki collaboratif électricité &amp; électronique.</span>
+    <span>Zeep — wiki, blog et projets DIY sur l’électricité et l’électronique.</span>
     <nav class="footer-nav">
       <a href={`${BASE}plan-du-site/`}>Plan du site</a>
       <a href={`${BASE}mentions-legales/`}>Mentions légales</a>
       <a href={`${BASE}politique-de-confidentialite/`}>Politique de confidentialité</a>
     </nav>
   </div></footer>
+  <nav class="mobile-bottom-nav" aria-label="Navigation">
+    {bottomNav.map((item) => (
+      <a href={item.href} class={active === item.key ? "active" : ""} set:html={`<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${item.icon}</svg><span>${item.label}</span>`}></a>
+    ))}
+  </nav>
   <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour en haut de page" title="Retour en haut">↑</button>
   <script define:vars={{ BASE }}>
     window.__BASE__ = BASE;

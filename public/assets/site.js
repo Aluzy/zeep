@@ -84,6 +84,14 @@ function initWikiSearch() {
     const match = Array.from(filterBtns).find((b) => b.dataset.domain === fromUrl);
     if (match) match.click();
   }
+
+  // Pré-remplissage depuis la barre de recherche du header (?q=...), envoyée
+  // en GET vers /wiki/ depuis n'importe quelle page.
+  const q = params.get("q");
+  if (q) {
+    searchEl.value = q;
+    apply();
+  }
 }
 
 function initPostToc() {
