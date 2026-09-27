@@ -19,19 +19,14 @@
   "versionSimple": "Le henry sert à mesurer la force avec laquelle une bobine s'oppose aux changements du courant. Plus la valeur est grande, plus la bobine freine ces changements.",
   "sources": [
     {
-      "titre": "BIPM — Le Système international d'unités",
-      "url": "https://www.bipm.org/fr/",
-      "type": "reference"
-    },
-    {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — henry",
+      "url": "https://www.larousse.fr/dictionnaires/francais/henry/39575",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
     "statut": "relu-ia"
   },
   "slug": "henry",

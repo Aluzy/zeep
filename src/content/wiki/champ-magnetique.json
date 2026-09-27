@@ -8,8 +8,9 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Région de l'espace dans laquelle un aimant ou un courant électrique exerce une force sur d'autres aimants ou charges en mouvement.",
+  "definition": "Région de l'espace où un aimant ou un courant électrique exerce une force sur d'autres aimants, sur des charges électriques en mouvement ou sur d'autres courants électriques. Il se représente par un vecteur en tout point de l'espace.",
   "related": [
+    "charge-electrique",
     "courant-electrique",
     "effet-hall",
     "electromagnetisme",
@@ -23,5 +24,17 @@
     "weber"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse, « champ magnétique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/champ/14557#152187",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
+  }
 }

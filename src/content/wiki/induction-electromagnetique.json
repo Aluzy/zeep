@@ -8,10 +8,11 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Phénomène par lequel un champ magnétique variable produit une tension électrique dans un conducteur électrique, principe utilisé par l'alternateur et le transformateur.",
+  "definition": "Phénomène par lequel la variation du flux magnétique traversant un circuit électrique y fait apparaître une tension induite, décrite par la loi de Faraday ; le sens du courant qui en résulte obéit à la loi de Lenz. Il fonde le fonctionnement de l'alternateur et du transformateur.",
   "related": [
     "alternateur",
     "champ-magnetique",
+    "circuit-electrique",
     "conducteur-electrique",
     "henry",
     "histoire-de-l-electricite",
@@ -23,5 +24,17 @@
     "weber"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse — Encyclopédie, induction électromagnétique",
+      "url": "https://www.larousse.fr/encyclopedie/divers/induction_%C3%A9lectromagn%C3%A9tique/61023",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
+    "statut": "relu-ia"
+  }
 }

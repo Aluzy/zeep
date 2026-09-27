@@ -22,11 +22,16 @@
       "titre": "IEC Electropedia — vocabulaire électrotechnique international",
       "url": "https://www.electropedia.org/",
       "type": "reference"
+    },
+    {
+      "titre": "Programme STI2D, enseignement technologique transversal (arrêté du 17 janvier 2019, modifié le 19 juillet 2019), « Stockage électrostatique », p. 44",
+      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf#page=44",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L5",
     "statut": "relu-ia"
   },
   "slug": "supercondensateur",

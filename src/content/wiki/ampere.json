@@ -8,11 +8,13 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Unité de mesure de l'intensité électrique dans le Système international, symbole A.",
+  "definition": "Unité de mesure de l'intensité électrique dans le Système international, de symbole A. Un courant électrique d'un ampère transporte, en une seconde, une charge électrique d'un coulomb ; c'est l'une des sept unités de base du Système international.",
   "related": [
     "amperage",
     "ampere-heure",
+    "charge-electrique",
     "coulomb",
+    "courant-electrique",
     "intensite-electrique"
   ],
   "pillar": false,
@@ -22,5 +24,17 @@
     "ampere",
     "mA",
     "milliampere"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse, « ampère »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/amp%C3%A8re/3038",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
+  }
 }

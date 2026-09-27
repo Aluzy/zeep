@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Région de l'espace dans laquelle une charge électrique subit une force, créée par la présence d'autres charges électriques.",
+  "definition": "Région de l'espace où une charge électrique immobile ou en mouvement subit une force électrique, engendrée par la présence d'autres charges électriques. Il se représente par un vecteur en tout point, dont l'intensité se mesure en volts par mètre.",
   "related": [
     "charge-electrique",
     "dielectrique",
@@ -29,5 +29,22 @@
     "matriceIds": [
       "M028"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Programme de physique-chimie de première générale, enseignement de spécialité (BO spécial n° 1 du 22 janvier 2019), partie « Mouvement et interactions », p. 499 (force et champ électrostatiques)",
+      "url": "https://www.pedagogie.ac-aix-marseille.fr/upload/docs/application/pdf/2019-01/bo_n1_22_janvier_2019.pdf#page=499",
+      "type": "programme"
+    },
+    {
+      "titre": "Larousse, « champ électrique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/champ/14557#152185",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
   }
 }

@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Ensemble de dipôles, comme un générateur, un interrupteur et une lampe, reliés entre eux par des fils conducteurs. Lorsqu'il forme une boucle complète entre les deux bornes du générateur, un courant électrique y circule et fait fonctionner les appareils branchés.",
   "related": [
+    "amperemetre",
     "circuit-ferme",
     "circuit-ouvert",
     "courant-electrique",
@@ -19,6 +20,7 @@
     "fil-electrique",
     "fusible",
     "generateur-electrique",
+    "induction-electromagnetique",
     "interrupteur",
     "loi-des-mailles",
     "loi-des-noeuds",

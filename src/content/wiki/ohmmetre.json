@@ -8,12 +8,27 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Instrument de mesure de la résistance électrique d'un composant ou d'un conducteur électrique, exprimée en ohms.",
+  "definition": "Instrument de mesure de la résistance électrique d'un composant ou d'un conducteur, exprimée en ohms. Il applique une tension connue au composant, hors tension et déconnecté du circuit, et calcule sa résistance à partir du courant mesuré.",
   "related": [
     "conducteur-electrique",
     "multimetre",
     "resistance-electrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "synonymes": [
+    "ohm-mètre"
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — ohmmètre",
+      "url": "https://www.larousse.fr/dictionnaires/francais/ohmm%C3%A8tre/55781",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
+    "statut": "relu-ia"
+  }
 }

@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Nombre de cycles par seconde d'un courant alternatif, exprimé en hertz, généralement 50 Hz sur le réseau électrique français.",
+  "definition": "Grandeur qui indique le nombre de fois par seconde qu'un courant alternatif ou une tension alternative reprend la même valeur, exprimée en hertz. Sur le réseau électrique français, elle vaut cinquante hertz ; un convertisseur de fréquence peut la régler pour piloter la vitesse d'un moteur.",
   "related": [
     "convertisseur-de-frequence",
     "courant-alternatif",
@@ -44,5 +44,17 @@
     "50 Hz",
     "f",
     "frequence"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — fréquence (sens 4, Physique)",
+      "url": "https://www.larousse.fr/dictionnaires/francais/fr%C3%A9quence/35185",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
+    "statut": "relu-ia"
+  }
 }

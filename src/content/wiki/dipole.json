@@ -7,7 +7,7 @@
   "domains": [
     "A"
   ],
-  "definition": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il peut fournir de l'énergie au circuit, comme une pile — sa caractéristique ne passe pas par l'origine —, et passif dans le cas contraire, comme une résistance ou une lampe.",
+  "definition": "Composant ou portion de circuit relié au reste du montage par deux bornes, caractérisé par la tension entre ces bornes et l'intensité du courant qui le traverse. Il est dit actif quand il peut fournir de l'énergie au circuit, comme une pile, et passif dans le cas contraire, comme une résistance ou une lampe.",
   "versionSimple": "Un dipôle est un élément de circuit qui se branche par deux bornes. Dans une lampe de poche, la pile, l'ampoule et l'interrupteur sont des dipôles.",
   "niveau": {
     "premiereApparition": "C4",
@@ -46,8 +46,8 @@
     }
   ],
   "relecture": {
-    "date": "2026-09-12",
-    "par": "agent-J2-L4",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
     "statut": "relu-ia"
   },
   "slug": "dipole",

@@ -17,14 +17,14 @@
   "versionSimple": "Ce montage compare quatre résistances entre elles. Il permet de repérer une toute petite variation qu'un appareil simple ne verrait pas.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — pont (sens 4, Électricité)",
+      "url": "https://www.larousse.fr/dictionnaires/francais/pont/62556",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
     "statut": "relu-ia"
   },
   "slug": "pont-de-wheatstone",

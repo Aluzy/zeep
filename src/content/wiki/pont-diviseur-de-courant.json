@@ -18,14 +18,14 @@
   "versionSimple": "Quand un courant arrive devant deux chemins, il se partage entre eux. Le chemin le plus facile emporte la plus grosse part.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IUT en ligne — Bases de l'électricité, chap. 1 : lois générales de l'électricité en régime continu (M. Piou)",
+      "url": "https://public.iutenligne.net/electronique/piou_fruitet_fortun/baselecpro/acquisition/pdf/DL-001051-04-01.01.00.pdf#page=17",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
     "statut": "relu-ia"
   },
   "slug": "pont-diviseur-de-courant",

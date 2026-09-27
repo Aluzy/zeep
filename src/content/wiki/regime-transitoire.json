@@ -22,11 +22,16 @@
       "titre": "Éduscol — ressources d'accompagnement des programmes",
       "url": "https://eduscol.education.fr/",
       "type": "officiel"
+    },
+    {
+      "titre": "Programme de physique-chimie de terminale générale, enseignement de spécialité (BO spécial n° 8 du 25 juillet 2019), « Modèle du circuit RC série […] temps caractéristique », p. 20",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/Programme%20de%20physique-chimie%20de%20terminale%20g%C3%A9n%C3%A9rale-253485.pdf#page=20",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L5",
     "statut": "relu-ia"
   },
   "slug": "regime-transitoire",

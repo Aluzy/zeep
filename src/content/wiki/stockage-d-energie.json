@@ -25,11 +25,16 @@
       "titre": "RTE — le réseau de transport d'électricité",
       "url": "https://www.rte-france.com/",
       "type": "officiel"
+    },
+    {
+      "titre": "Programme de sciences de l'ingénieur, cycle terminal, enseignement de spécialité (arrêté du 17 janvier 2019, applicable 2019 en 1ère et 2020 en terminale), « Stockage de l'énergie », p. 10",
+      "url": "https://www.snes.edu/wp-content/uploads/cycle_terminal_sciences_ingenieur_specialite_voie_generale_1023828.pdf#page=10",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L5",
     "statut": "relu-ia"
   },
   "slug": "stockage-d-energie",

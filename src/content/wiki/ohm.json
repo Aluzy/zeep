@@ -8,9 +8,10 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Unité de mesure de la résistance électrique dans le Système international, symbole Ω.",
+  "definition": "Unité de mesure de la résistance électrique dans le Système international, de symbole Ω. Un conducteur électrique a une résistance de un ohm si une tension de un volt entre ses deux bornes y produit un courant de un ampère.",
   "related": [
     "code-couleur-des-resistances",
+    "conducteur-electrique",
     "impedance",
     "loi-d-ohm",
     "reactance",
@@ -25,5 +26,17 @@
     "megohm",
     "ohm",
     "Ω"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — ohm",
+      "url": "https://www.larousse.fr/dictionnaires/francais/ohm/55778",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
+    "statut": "relu-ia"
+  }
 }

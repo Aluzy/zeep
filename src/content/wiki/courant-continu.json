@@ -8,10 +8,11 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Courant électrique circulant toujours dans le même sens, produit notamment par une batterie ou un panneau photovoltaïque.",
+  "definition": "Courant électrique dont l'intensité garde toujours le même sens, produit notamment par une batterie, un panneau photovoltaïque ou une dynamo, à la différence du courant alternatif utilisé sur le réseau électrique.",
   "related": [
     "batterie",
     "borne-de-recharge",
+    "courant-alternatif",
     "courant-electrique",
     "dynamo",
     "electrolyse",
@@ -20,6 +21,7 @@
     "pont-de-diodes",
     "puissance-electrique",
     "redresseur",
+    "reseau-electrique",
     "valeur-efficace"
   ],
   "pillar": false,
@@ -44,5 +46,17 @@
     "DC",
     "continu",
     "courant continu"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse, « continu »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/continu/18615",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
+  }
 }

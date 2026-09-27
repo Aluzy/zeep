@@ -18,14 +18,14 @@
   "versionSimple": "Le décibel compare deux valeurs plutôt que d'en mesurer une seule. Il permet d'écrire avec de petits nombres des différences énormes, comme entre un murmure et un avion.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse, « décibel »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/d%C3%A9cibel/22175",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
     "statut": "relu-ia"
   },
   "slug": "decibel",

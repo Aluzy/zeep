@@ -27,11 +27,16 @@
       "titre": "ADEME — énergie, climat et économie circulaire",
       "url": "https://www.ademe.fr/",
       "type": "officiel"
+    },
+    {
+      "titre": "Programme STI2D, enseignement technologique transversal (arrêté du 17 janvier 2019, modifié le 19 juillet 2019), « mix énergétique », p. 39",
+      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf#page=39",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L5",
     "statut": "relu-ia"
   },
   "slug": "mix-energetique",

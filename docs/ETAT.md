@@ -7,12 +7,12 @@
 | Indicateur | Valeur |
 |---|---|
 | Fiches | 387 |
-| Définitions de 25 à 60 mots | 240/387 (62 %) |
+| Définitions de 25 à 60 mots | 259/387 (67 %) |
 | Version simple, notions vues avant le lycée | 29/29 (100 %) |
 | Version simple, toutes fiches | 211/387 (55 %) |
 | Avec niveau scolaire | 89/387 (23 %) |
-| Avec au moins une source précise (URL non racine) | 79/387 (20 %) |
-| Relues par un contrôleur indépendant | 21/387 (5 %) |
+| Avec au moins une source précise (URL non racine) | 122/387 (32 %) |
+| Relues par un contrôleur indépendant | 70/387 (18 %) |
 | Validées par Alexandre | 31/387 (8 %) |
 | Fiches secteur sans rappel de sécurité | 0 |
 
@@ -20,15 +20,15 @@
 
 | Règle | Fiches en défaut | Base tolérée |
 |---|---:|---:|
-| Définition hors 25-60 mots (`definition_longueur`) | 147 | 147 |
+| Définition hors 25-60 mots (`definition_longueur`) | 128 | 128 |
 | Balise HTML dans la définition (`definition_html`) | 0 | 0 |
 | Notion vue avant le lycée (C1-C4) sans version simple (`version_simple_manquante_avant_lycee`) | 0 | 0 |
 | Version simple hors 12-35 mots (`version_simple_longueur`) | 1 | 1 |
 | Fiche liée au secteur sans rappel de sécurité (`securite_230v_absente`) | 0 | 0 |
 | Source sans URL (`source_sans_url`) | 0 | 0 |
-| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 172 | 172 |
-| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 81 | 81 |
-| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 189 | 189 |
+| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 151 | 151 |
+| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 70 | 70 |
+| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 158 | 158 |
 
 ## Backlog (ordre de priorité)
 
@@ -39,8 +39,8 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | `vs-avant-lycee` — Version simple manquante (notions vues avant le lycée) | 0 | — |
 | `securite` — Sécurité 230 V, HTML, signalements graves | 0 | — |
 | `niveaux` — TABLE des niveaux périmée (mapping_niveau.py) | 0 | — |
-| `reecriture` — Réécriture : définition, sources, version simple | 315 | `ampere`, `amperemetre`, `atome`, `champ-electrique`, `champ-magnetique`, `charge-electrique`, `conductivite-electrique`, `coulomb` … |
-| `creation` — Création : lexique attendu, puis termes de programme | 96 | `Admittance`, `Équations de Maxwell`, `Loi de Biot-Savart`, `Diagramme de Fresnel`, `Effet de peau`, `Ohm-mètre`, `Interconnexion européenne`, `Courbe de charge` … |
+| `reecriture` — Réécriture : définition, sources, version simple | 266 | `puissance-reactive`, `reactance`, `resistivite`, `resonance`, `siemens`, `tesla`, `theoreme-de-millman`, `theoreme-de-norton` … |
+| `creation` — Création : lexique attendu, puis termes de programme | 95 | `Admittance`, `Équations de Maxwell`, `Loi de Biot-Savart`, `Diagramme de Fresnel`, `Effet de peau`, `Interconnexion européenne`, `Courbe de charge`, `Sélectivité` … |
 
 ## Lots
 
@@ -66,13 +66,17 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | J4-L2 | Sécurité 230 V, définitions en HTML et signalements graves (16 fiches, partie 1 de la file « securite ») | 2026-09-25 | termine | agent-controleur-J4-L2 | 0 / 16 |
 | J4-L3 | Sécurité 230 V et signalements graves (15 fiches, partie 2 de la file « securite ») | 2026-09-25 | termine | agent-controleur-J4-L3 | 0 / 15 |
 | J4-L4 | TABLE des niveaux périmée : 22 entrées corrigées (mapping_niveau.py) | 2026-09-26 | termine | agent-controleur-J4-L4 | 0 / 10 |
+| J4-L5 | Source « programme » pour les 10 fiches qui ont reçu un niveau en J4-L4 | 2026-09-27 | termine | agent-controleur-J4-L5 | 0 / 10 |
+| J4-L6 | Réécriture, domaine A (électricité — fondamentaux et physique), 20 fiches | 2026-09-27 | termine | agent-controleur-J4-L6 | 0 / 24 |
+| J4-L7 | Réécriture, domaine A (électricité — fondamentaux et physique), 20 fiches | 2026-09-27 | termine | agent-controleur-J4-L7 | 0 / 21 |
 | chantier-A-4-5 | Date, temps de lecture et sommaire de blog | 2026-09-13 | termine | aucun | 0 / 0 |
 | chantier-A-6 | Liens contextuels dans les définitions du wiki | 2026-09-13 | termine | aucun | 0 / 0 |
 
 ## En cours
 
 Missions des lots non intégrés au wiki :
-- aucune
+- `J4-L5-controle.md` — controle, 10 élément(s)
+- `J4-L5.md` — redaction, 10 élément(s), file « aucune (complément ponctuel demandé par Alexandre, hors backlog automatisé) »
 
 Brouillons de changeset :
 - aucun
@@ -83,6 +87,7 @@ Notions sans fiche, absentes de `src/data/lexique-attendu.json`. Décision édit
 
 | Terme | Domaine | Vu dans |
 |---|---|---|
+| flux magnétique | A | J4-L7 (induction-electromagnetique, weber) |
 | Potentiel électrique | A | J4-L1 (tension-electrique (notion retirée de la définition faute de fiche)) |
 | Récepteur électrique | A | J2-L4 (J2-L2 backlog); J4-L1 (circuit-electrique (mot du programme de cycle 2 évité faute de fiche)) |
 | Résistance interne | A | J2-L4 (J2-L2 backlog) |
@@ -131,7 +136,13 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J4-L3** — valeur-efficace : aucune source de référence ouverte ne donne la définition par l'échauffement équivalent (la ressource Éduscol trouvée l'assimile à tort à la valeur moyenne) ; la phrase existante, exacte, est conservée et seule la partie « 230 V = valeur efficace » est sourcée (INRS ED 6345). Une source de référence (manuel, norme) reste à ajouter.
 - **J4-L4** — Écart loi-des-mailles / loi-des-noeuds : niveau actuel C4 (matriceIds M009, M014, M033, M034, posé par J2-L2), la TABLE recalculée à partir de la seule ligne M014 (« Loi des mailles et des nœuds ») donne 2GT. Rejoint l'issue « Définition de première apparition » (Lois de Kirchhoff C4 ou 2GT ?, Aluzy/zeep#27) : la ligne M009 ne cite les lois qu'au travers du terme combiné « loi des nœuds/mailles », resté rejeté (aucune fiche « lois de Kirchhoff »), donc non compté par le calcul actuel. Trancher revient à décider si on relie ce terme combiné aux deux fiches (auquel cas C4 est confirmé) ou si on laisse la TABLE recalculée l'emporter (2GT).
 - **J4-L4** — Écarts caracteristique-tension-courant, chaine-d-energie, chaine-d-information, dipole : même niveau (premiereApparition inchangé) mais matriceIds enrichis par ce lot (le calcul relie maintenant plus de lignes de la matrice au même terme). Aucune contradiction : à absorber en relançant mapping_niveau.py sans --lot pour information, aucune décision requise.
+- **J4-L5** — arrete_sti2d_ensemble.pdf et le programme SI utilisés dans ce lot sont hébergés sur snes.edu (miroir syndical), les pages education.gouv.fr/bo/19/SpecialN correspondantes étant bloquées (403) depuis cet environnement. Contenu vérifié conforme, mais à remplacer par une source officielle directe si l'accès s'améliore.
+- **J4-L5** — loi-de-coulomb cite un miroir académique (ac-aix-marseille.fr) pour le même motif (BO spécial n°1 du 22 janvier 2019 inaccessible en direct).
+- **J4-L6** — conductivite-electrique : aucune entrée de dictionnaire ou de programme ne définit spécifiquement la « conductivité électrique » (Larousse ne définit que la « conductibilité », notion générale chaleur/électricité) ; la source retenue est donc générale, à améliorer si une source plus précise (norme, manuel de physique) est trouvée.
+- **J4-L6** — resistivite (hors lot) : le signalement J1-L3 §2 n°13 portait sur une circularité mutuelle entre conductivite-electrique et resistivite ; seule la première est corrigée dans ce lot (resistivite n'est pas dans les 20 éléments) — à traiter par un prochain lot de la file « reecriture ».
+- **J4-L7** — pont-diviseur-de-courant et pont-diviseur-de-tension : aucun document officiel (programme, norme) définissant précisément ces deux montages n'a été trouvé accessible ; la source retenue est un cours d'électricité de l'IUT en ligne (plateforme nationale du réseau des IUT, type « manuel »), qui donne les formules mais pas une définition rédigée du montage lui-même — à améliorer si une source de programme plus précise est trouvée.
+- **J4-L7** — conductivite-electrique/resistivite (hors lot, rappel J4-L6) : signalement J1-L3 §2 n°13 encore ouvert, aucune des deux fiches n'est dans ce lot.
 
 ## Signalements de fiches douteuses
 
-14 ouvert(s) sur 27 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.
+10 ouvert(s) sur 27 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.

@@ -17,19 +17,14 @@
   "versionSimple": "La période est le temps que met un signal à recommencer pareil. Plus ce temps est court, plus le signal se répète souvent.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
-    },
-    {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — période (sens 12, Physique)",
+      "url": "https://www.larousse.fr/dictionnaires/francais/p%C3%A9riode/59576",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
     "statut": "relu-ia"
   },
   "slug": "periode",

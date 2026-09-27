@@ -18,19 +18,14 @@
   "versionSimple": "Le joule mesure l'énergie, c'est-à-dire le travail qu'un appareil peut fournir. Un appareil d'un watt allumé une seconde consomme un joule d'énergie.",
   "sources": [
     {
-      "titre": "BIPM — Le Système international d'unités",
-      "url": "https://www.bipm.org/fr/",
-      "type": "reference"
-    },
-    {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — joule",
+      "url": "https://www.larousse.fr/dictionnaires/francais/joule/45028",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
     "statut": "relu-ia"
   },
   "slug": "joule",

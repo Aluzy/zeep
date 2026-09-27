@@ -19,14 +19,14 @@
   "versionSimple": "La puissance active est la partie de l'électricité qui sert vraiment à quelque chose : faire tourner, chauffer ou éclairer.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — puissance active",
+      "url": "https://www.larousse.fr/dictionnaires/francais/puissance/65022#165623",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
     "statut": "relu-ia"
   },
   "slug": "puissance-active",
