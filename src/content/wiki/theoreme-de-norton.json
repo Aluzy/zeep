@@ -19,14 +19,14 @@
   "versionSimple": "Comme pour Thévenin, un circuit compliqué se remplace par un modèle très simple, mais décrit cette fois avec un courant plutôt qu'avec une tension.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IUT en ligne, « Analyse des signaux et des circuits électriques », chapitre 7 (M. Piou), §2.4 « Théorème de Norton », p. 4",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electronique/piou_fruitet_fortun/baselecpro/acquisition/pdf/DL-001051-04-07.01.00.pdf#page=6",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
     "statut": "relu-ia"
   },
   "slug": "theoreme-de-norton",

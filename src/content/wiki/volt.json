@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Unité de mesure de la tension électrique dans le Système international, symbole V.",
+  "definition": "Unité de mesure de la tension électrique dans le Système international, de symbole V. Un volt correspond à la tension aux bornes d'un conducteur parcouru par un courant d'un ampère, quand la puissance dissipée y est de un watt.",
   "related": [
     "tension-electrique",
     "voltage"
@@ -20,5 +20,22 @@
     "kilovolt",
     "millivolt",
     "volt"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "BIPM, « Le Système international d'unités » (9e édition, version française, 2019), tableau 4, p. 24",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-FR.pdf#page=24",
+      "type": "norme"
+    },
+    {
+      "titre": "Larousse — volt",
+      "url": "https://www.larousse.fr/dictionnaires/francais/volt/82478",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
+    "statut": "relu-ia"
+  }
 }
