@@ -8,13 +8,29 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Machine équipée de pales qui transforme l'énergie du vent en électricité grâce à un générateur électrique.",
+  "definition": "Dispositif équipé de pales qui convertit l'énergie cinétique du vent en énergie mécanique, transformée le plus souvent en électricité grâce à un générateur électrique ; plusieurs éoliennes regroupées forment un parc éolien, aussi appelé centrale éolienne.",
   "related": [
+    "centrale-eolienne",
     "electricite",
     "facteur-de-charge",
     "generateur-electrique",
     "terres-rares"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Ministère de la Transition écologique, « Éolien terrestre »",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/eolien-terrestre",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "aerogenerateur"
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
+    "statut": "relu-ia"
+  }
 }

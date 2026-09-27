@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Ensemble des activités consistant à générer du courant électrique dans une centrale électrique, à partir d'une source d'énergie renouvelable ou fossile.",
+  "definition": "Ensemble des activités qui convertissent une énergie primaire — renouvelable, fossile ou nucléaire — en énergie électrique dans une centrale électrique, le plus souvent au moyen d'une turbine et d'un alternateur, avant son acheminement par le réseau électrique.",
   "related": [
     "alternateur",
     "biomasse",
@@ -19,7 +19,8 @@
     "facteur-de-charge",
     "geothermie",
     "mix-energetique",
-    "reseau-intelligent-smart-grid"
+    "reseau-intelligent-smart-grid",
+    "turbine"
   ],
   "pillar": false,
   "illustration": null,
@@ -42,5 +43,17 @@
       "M064",
       "M066"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Connaissance des Énergies, fiche pédagogique « Électricité »",
+      "url": "https://www.connaissancedesenergies.org/fiche-pedagogique/electricite",
+      "type": "manuel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
+    "statut": "relu-ia"
   }
 }

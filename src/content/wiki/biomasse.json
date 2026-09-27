@@ -19,14 +19,14 @@
   "versionSimple": "On produit de l'électricité en brûlant du bois ou des déchets agricoles, ou en récupérant le gaz qu'ils dégagent.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "Ministère de la Transition écologique, « Biomasse énergie »",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/biomasse-energie",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
     "statut": "relu-ia"
   },
   "slug": "biomasse",

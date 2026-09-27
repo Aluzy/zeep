@@ -7,12 +7,12 @@
 | Indicateur | Valeur |
 |---|---|
 | Fiches | 387 |
-| Définitions de 25 à 60 mots | 264/387 (68 %) |
+| Définitions de 25 à 60 mots | 278/387 (72 %) |
 | Version simple, notions vues avant le lycée | 29/29 (100 %) |
 | Version simple, toutes fiches | 211/387 (55 %) |
 | Avec niveau scolaire | 89/387 (23 %) |
-| Avec au moins une source précise (URL non racine) | 135/387 (35 %) |
-| Relues par un contrôleur indépendant | 86/387 (22 %) |
+| Avec au moins une source précise (URL non racine) | 155/387 (40 %) |
+| Relues par un contrôleur indépendant | 106/387 (27 %) |
 | Validées par Alexandre | 31/387 (8 %) |
 | Fiches secteur sans rappel de sécurité | 0 |
 
@@ -20,15 +20,15 @@
 
 | Règle | Fiches en défaut | Base tolérée |
 |---|---:|---:|
-| Définition hors 25-60 mots (`definition_longueur`) | 123 | 123 |
+| Définition hors 25-60 mots (`definition_longueur`) | 109 | 109 |
 | Balise HTML dans la définition (`definition_html`) | 0 | 0 |
 | Notion vue avant le lycée (C1-C4) sans version simple (`version_simple_manquante_avant_lycee`) | 0 | 0 |
 | Version simple hors 12-35 mots (`version_simple_longueur`) | 1 | 1 |
 | Fiche liée au secteur sans rappel de sécurité (`securite_230v_absente`) | 0 | 0 |
 | Source sans URL (`source_sans_url`) | 0 | 0 |
-| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 140 | 140 |
-| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 66 | 66 |
-| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 147 | 147 |
+| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 134 | 134 |
+| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 60 | 60 |
+| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 141 | 141 |
 
 ## Backlog (ordre de priorité)
 
@@ -39,7 +39,7 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | `vs-avant-lycee` — Version simple manquante (notions vues avant le lycée) | 0 | — |
 | `securite` — Sécurité 230 V, HTML, signalements graves | 0 | — |
 | `niveaux` — TABLE des niveaux périmée (mapping_niveau.py) | 0 | — |
-| `reecriture` — Réécriture : définition, sources, version simple | 250 | `alternateur`, `barrage-hydroelectrique`, `biomasse`, `centrale-electrique`, `centrale-eolienne`, `centrale-hydraulique`, `centrale-nucleaire`, `centrale-solaire` … |
+| `reecriture` — Réécriture : définition, sources, version simple | 230 | `chute-de-tension`, `delestage`, `electrification`, `ligne-basse-tension`, `ligne-haute-tension`, `ligne-moyenne-tension`, `poste-de-transformation`, `reseau-de-distribution` … |
 | `creation` — Création : lexique attendu, puis termes de programme | 95 | `Admittance`, `Équations de Maxwell`, `Loi de Biot-Savart`, `Diagramme de Fresnel`, `Effet de peau`, `Interconnexion européenne`, `Courbe de charge`, `Sélectivité` … |
 
 ## Lots
@@ -70,6 +70,7 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | J4-L6 | Réécriture, domaine A (électricité — fondamentaux et physique), 20 fiches | 2026-09-27 | termine | agent-controleur-J4-L6 | 0 / 24 |
 | J4-L7 | Réécriture, domaine A (électricité — fondamentaux et physique), 20 fiches | 2026-09-27 | termine | agent-controleur-J4-L7 | 0 / 21 |
 | J4-L8 | Réécriture, domaine A (électricité — fondamentaux et physique), 16 fiches — fin du domaine A | 2026-09-27 | termine | agent-controleur-J4-L8 | 0 / 16 |
+| J4-L9 | Réécriture, domaine B (production d'électricité) — 20 fiches, domaine B complet | 2026-09-27 | termine | agent-controleur-J4-L9 | 0 / 20 |
 | chantier-A-4-5 | Date, temps de lecture et sommaire de blog | 2026-09-13 | termine | aucun | 0 / 0 |
 | chantier-A-6 | Liens contextuels dans les définitions du wiki | 2026-09-13 | termine | aucun | 0 / 0 |
 
@@ -145,7 +146,9 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J4-L7** — conductivite-electrique/resistivite (hors lot, rappel J4-L6) : signalement J1-L3 §2 n°13 encore ouvert, aucune des deux fiches n'est dans ce lot.
 - **J4-L8** — theoreme-de-millman/norton/superposition/thevenin : comme pour pont-diviseur-de-tension/courant en J4-L7, aucun document de programme officiel précis n'a été trouvé pour ces quatre théorèmes ; source retenue : le chapitre 7 du même cours de l'IUT en ligne (M. Piou), qui les énonce formellement (type « manuel »).
 - **J4-L8** — resistivite/conductivite-electrique : signalement J1-L3 §2 n°13 refermé par ce lot (retiré de agents/donnees/signalements.json) — voir détail ci-dessous, décision prise seul, à confirmer par relecture indépendante ou Alexandre.
+- **J4-L9** — alternateur/production-d-electricite : signalements J1-L3 §2 n°8 et n°10 retirés de agents/donnees/signalements.json par ce lot (motif exact — confusion énergie/courant — complètement levé par la nouvelle définition) ; retrait confirmé par le contrôleur indépendant agent-controleur-J4-L9.
+- **J4-L9** — Type « manuel » pour connaissancedesenergies.org (11 sources) : le contrôleur note que le site est édité par Selectra SAS (entreprise commerciale de comparaison de fournisseurs d'énergie, comité scientifique depuis fin 2024), pas un organisme de référence institutionnel au sens strict d'AGENTS.md §3. Contenu cité vérifié factuel et conforme par le contrôleur, mais décision humaine à prendre sur son usage récurrent comme source de type « manuel ».
 
 ## Signalements de fiches douteuses
 
-8 ouvert(s) sur 25 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.
+6 ouvert(s) sur 23 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.

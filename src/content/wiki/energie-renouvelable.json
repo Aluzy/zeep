@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Source d'énergie, comme le soleil, le vent ou l'eau, considérée comme inépuisable à l'échelle humaine et utilisée pour la production d'électricité.",
+  "definition": "Énergie produite à partir d'une source considérée comme inépuisable à l'échelle humaine — le rayonnement solaire, le vent, l'eau, la chaleur du sous-sol ou la biomasse — et qui n'engendre pas ou peu d'émissions polluantes, à la différence des énergies fossiles.",
   "related": [
     "biomasse",
     "electricite",
@@ -22,5 +22,20 @@
     "stockage-d-energie"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Ministère de la Transition écologique, « Les énergies renouvelables »",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/energies-renouvelables",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "EnR"
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
+    "statut": "relu-ia"
+  }
 }
