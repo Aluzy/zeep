@@ -1,0 +1,20 @@
+{"op": "set", "lot": "J4-L7", "slug": "facteur-de-puissance", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "farad", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "frequence-electrique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "henry", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "hertz", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "induction-electromagnetique", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "ion", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "joule", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "kilowatt", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "loi-de-faraday", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "loi-de-lenz", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "multimetre", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "ohm", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "ohmmetre", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "periode", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "pont-de-wheatstone", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "pont-diviseur-de-courant", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "pont-diviseur-de-tension", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "puissance-active", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L7", "slug": "puissance-apparente", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
