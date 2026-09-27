@@ -1,0 +1,16 @@
+{"op": "set", "lot": "J4-L8", "slug": "puissance-reactive", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "reactance", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "resistivite", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "resonance", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "siemens", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "tesla", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "theoreme-de-millman", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "theoreme-de-norton", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "theoreme-de-superposition", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "theoreme-de-thevenin", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "volt", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "voltampere", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "voltmetre", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "watt", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "wattmetre", "field": "relecture", "old": null, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}
+{"op": "set", "lot": "J4-L8", "slug": "weber", "field": "relecture", "old": {"date": "2026-09-13", "par": "agent-contenu", "statut": "relu-ia"}, "new": "__A_REMPLIR__", "why": "__A_REMPLIR__"}

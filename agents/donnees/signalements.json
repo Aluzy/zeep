@@ -14,8 +14,6 @@
     {"slug": "production-d-electricite", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°10", "motif": "« générer du courant électrique » : une centrale convertit une énergie primaire en énergie électrique."},
     {"slug": "accumulateur", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°11", "motif": "« restituer sous forme de courant électrique » : confusion énergie / courant."},
     {"slug": "efficacite-energetique", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°12", "motif": "Confond efficacité énergétique (notion large, réglementaire) et rendement ; doublon avec rendement-energetique (décision humaine en attente)."},
-    {"slug": "conductivite-electrique", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°13", "motif": "Circularité mutuelle avec resistivite : aucune des deux fiches n'explique la notion."},
-    {"slug": "resistivite", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°13", "motif": "Circularité mutuelle avec conductivite-electrique."},
     {"slug": "frequence-de-commutation", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°14", "motif": "Une fréquence est un nombre de commutations par seconde (en hertz), pas une « vitesse »."},
     {"slug": "fournisseur-d-electricite", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°16", "motif": "Se lit comme « achetée aux consommateurs » ; ne distingue pas fournisseur et gestionnaire de réseau."},
     {"slug": "tension-electrique", "date": "2026-09-12", "gravite": "moyenne", "rapport": "J1-L3 §2 n°17", "motif": "« met en mouvement le courant » : la tension met en mouvement les charges ; le courant est ce mouvement."},
