@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Unité de puissance électrique équivalente à 1000 watts, utilisée pour exprimer la puissance des appareils ou d'une installation électrique.",
+  "definition": "Unité de mesure de la puissance, de symbole kW, équivalant à mille watts. Elle exprime aussi bien la puissance électrique d'un appareil ou d'une installation que celle d'un moteur thermique ou d'une chaudière.",
   "related": [
     "installation-electrique",
     "kilowattheure",
@@ -19,5 +19,17 @@
   "synonymes": [
     "kW",
     "kilowatt"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — kilowatt",
+      "url": "https://www.larousse.fr/dictionnaires/francais/kilowatt/45540",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
+    "statut": "relu-ia"
+  }
 }

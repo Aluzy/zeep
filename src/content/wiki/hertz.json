@@ -20,19 +20,14 @@
   "versionSimple": "Le hertz compte combien de fois quelque chose se répète en une seconde. Le courant de la maison change de sens cinquante fois par seconde : on dit cinquante hertz.",
   "sources": [
     {
-      "titre": "BIPM — Le Système international d'unités",
-      "url": "https://www.bipm.org/fr/",
-      "type": "reference"
-    },
-    {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — hertz",
+      "url": "https://www.larousse.fr/dictionnaires/francais/hertz/39733",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
     "statut": "relu-ia"
   },
   "slug": "hertz",

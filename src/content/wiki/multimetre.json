@@ -9,7 +9,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Instrument de mesure polyvalent permettant de mesurer la tension électrique, l'intensité électrique et la résistance électrique, combinant les fonctions de voltmètre, ampèremètre et ohmmètre.",
+  "definition": "Instrument de mesure polyvalent qui combine les fonctions du voltmètre, de l'ampèremètre et de l'ohmmètre : selon le réglage choisi, il mesure la tension électrique, l'intensité électrique ou la résistance électrique d'un circuit ou d'un composant.",
   "related": [
     "amperemetre",
     "caracteristique-tension-courant",
@@ -46,5 +46,17 @@
     "controleur universel",
     "multimetre",
     "testeur"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — multimètre",
+      "url": "https://www.larousse.fr/dictionnaires/francais/multim%C3%A8tre/53191",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
+    "statut": "relu-ia"
+  }
 }

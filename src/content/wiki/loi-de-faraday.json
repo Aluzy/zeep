@@ -18,19 +18,14 @@
   "versionSimple": "Quand un aimant bouge près d'une bobine de fil, une tension apparaît dans le fil. C'est ce principe qui permet de produire l'électricité des centrales.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
-    },
-    {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — Encyclopédie, induction électromagnétique",
+      "url": "https://www.larousse.fr/encyclopedie/divers/induction_%C3%A9lectromagn%C3%A9tique/61023",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L7",
     "statut": "relu-ia"
   },
   "slug": "loi-de-faraday",
