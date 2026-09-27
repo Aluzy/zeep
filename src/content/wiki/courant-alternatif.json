@@ -8,11 +8,12 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Courant électrique dont le sens et l'intensité varient périodiquement, caractérisé par sa fréquence électrique, utilisé sur le réseau électrique.",
+  "definition": "Courant électrique dont l'intensité varie périodiquement dans le temps et change de sens, à la différence du courant continu. Sur le réseau électrique français, il varie de façon sinusoïdale à la fréquence de 50 hertz.",
   "related": [
     "alternateur",
     "borne-de-recharge",
     "convertisseur-de-frequence",
+    "courant-continu",
     "courant-electrique",
     "dephasage",
     "electrocution",
@@ -57,5 +58,17 @@
     "AC",
     "alternatif",
     "courant alternatif"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse, « alternatif »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/alternatif/2566",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
+  }
 }

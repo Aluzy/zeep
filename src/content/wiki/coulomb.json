@@ -17,19 +17,19 @@
   "versionSimple": "Le coulomb compte la quantité d'électricité qui passe dans un fil. Plus le courant est fort et plus il dure longtemps, plus il y a de coulombs.",
   "sources": [
     {
-      "titre": "BIPM — Le Système international d'unités",
-      "url": "https://www.bipm.org/fr/",
-      "type": "reference"
+      "titre": "BIPM, « Le Système international d'unités » (9e édition, version française, 2019), p. 14 (relation C = A·s)",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-FR.pdf#page=14",
+      "type": "norme"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse, « coulomb »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/coulomb/19779",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
     "statut": "relu-ia"
   },
   "slug": "coulomb",

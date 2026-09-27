@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Branche de la physique qui étudie les charges électriques au repos et le champ électrique qu'elles produisent.",
+  "definition": "Branche de la physique qui étudie les charges électriques immobiles, la force électrostatique qu'elles exercent les unes sur les autres et le champ électrique qu'elles produisent autour d'elles, décrit par la loi de Coulomb.",
   "related": [
     "champ-electrique",
     "decharge-electrostatique",
@@ -27,5 +27,22 @@
     "matriceIds": [
       "M028"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Programme de physique-chimie de première générale, enseignement de spécialité (BO spécial n° 1 du 22 janvier 2019), partie « Mouvement et interactions », p. 499 (force et champ électrostatiques)",
+      "url": "https://www.pedagogie.ac-aix-marseille.fr/upload/docs/application/pdf/2019-01/bo_n1_22_janvier_2019.pdf#page=499",
+      "type": "programme"
+    },
+    {
+      "titre": "Larousse, « électrostatique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/%C3%A9lectrostatique/28341",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
   }
 }

@@ -18,14 +18,14 @@
   "versionSimple": "Quand la lumière frappe certains matériaux, elle met des électrons en mouvement. C'est ce qui permet à un panneau solaire de fabriquer du courant.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Larousse, « effet photoélectrique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/photo%C3%A9lectrique/60435#174496",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
     "statut": "relu-ia"
   },
   "slug": "effet-photoelectrique",

@@ -8,13 +8,26 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Branche de la physique qui étudie les relations entre le champ électrique, le champ magnétique et le courant électrique.",
+  "definition": "Branche de la physique qui étudie les relations entre l'électricité et le magnétisme, en particulier la façon dont un courant électrique produit un champ magnétique et dont un champ magnétique variable produit à son tour un courant électrique.",
   "related": [
     "champ-electrique",
     "champ-magnetique",
     "courant-electrique",
+    "electricite",
     "tesla"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse, « électromagnétisme »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/%C3%A9lectromagn%C3%A9tisme/28277",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
+  }
 }

@@ -8,10 +8,12 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Déplacement ordonné de charges électriques dans un conducteur électrique, mesuré en ampères et caractérisé par son intensité électrique.",
+  "definition": "Déplacement d'ensemble de charges électriques, notamment des électrons, dans un conducteur électrique. Son intensité, exprimée en ampères, mesure le débit de charge qui traverse une section du conducteur chaque seconde ; il peut être continu ou alternatif selon que ce déplacement garde ou non toujours le même sens.",
   "related": [
     "accumulateur",
     "alimentation-electrique",
+    "ampere",
+    "amperemetre",
     "cable-electrique",
     "champ-magnetique",
     "charge-electrique",
@@ -61,5 +63,17 @@
       "M062",
       "M072"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Larousse, « courant (électrique) »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/courant/19881#154173",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
   }
 }

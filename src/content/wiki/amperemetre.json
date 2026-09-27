@@ -8,15 +8,29 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Instrument de mesure de l'intensité électrique circulant dans un conducteur électrique, exprimée en ampères.",
+  "definition": "Instrument de mesure de l'intensité du courant électrique dans un circuit, exprimée en ampères. Il se branche en série dans le circuit, de façon à être traversé par le même courant que le composant étudié.",
   "related": [
     "amperage",
+    "circuit-electrique",
     "conducteur-electrique",
+    "courant-electrique",
     "intensite-electrique",
     "loi-des-noeuds",
     "multimetre",
     "pince-amperemetrique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse, « ampèremètre »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/amp%C3%A8rem%C3%A8tre/3040",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
+  }
 }

@@ -8,10 +8,12 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Propriété fondamentale de la matière, portée notamment par l'électron, qui est à l'origine des phénomènes électriques comme le courant électrique et le champ électrique.",
+  "definition": "Propriété fondamentale de la matière, portée notamment par l'électron, qui est à l'origine du courant électrique et du champ électrique. Elle s'exprime en coulombs et peut être positive ou négative selon le signe des charges qui la portent.",
   "related": [
+    "ampere",
     "atome",
     "champ-electrique",
+    "champ-magnetique",
     "conducteur-electrique",
     "coulomb",
     "courant-electrique",
@@ -40,5 +42,17 @@
     "matriceIds": [
       "M028"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Larousse, « charge électrique »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/charge/14743#152373",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
   }
 }

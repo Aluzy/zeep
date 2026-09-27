@@ -7,12 +7,12 @@
 | Indicateur | Valeur |
 |---|---|
 | Fiches | 387 |
-| Définitions de 25 à 60 mots | 240/387 (62 %) |
+| Définitions de 25 à 60 mots | 253/387 (65 %) |
 | Version simple, notions vues avant le lycée | 29/29 (100 %) |
 | Version simple, toutes fiches | 211/387 (55 %) |
 | Avec niveau scolaire | 89/387 (23 %) |
-| Avec au moins une source précise (URL non racine) | 89/387 (23 %) |
-| Relues par un contrôleur indépendant | 31/387 (8 %) |
+| Avec au moins une source précise (URL non racine) | 106/387 (27 %) |
+| Relues par un contrôleur indépendant | 50/387 (13 %) |
 | Validées par Alexandre | 31/387 (8 %) |
 | Fiches secteur sans rappel de sécurité | 0 |
 
@@ -20,15 +20,15 @@
 
 | Règle | Fiches en défaut | Base tolérée |
 |---|---:|---:|
-| Définition hors 25-60 mots (`definition_longueur`) | 147 | 147 |
+| Définition hors 25-60 mots (`definition_longueur`) | 134 | 134 |
 | Balise HTML dans la définition (`definition_html`) | 0 | 0 |
 | Notion vue avant le lycée (C1-C4) sans version simple (`version_simple_manquante_avant_lycee`) | 0 | 0 |
 | Version simple hors 12-35 mots (`version_simple_longueur`) | 1 | 1 |
 | Fiche liée au secteur sans rappel de sécurité (`securite_230v_absente`) | 0 | 0 |
 | Source sans URL (`source_sans_url`) | 0 | 0 |
-| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 172 | 172 |
-| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 81 | 81 |
-| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 179 | 189 |
+| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 165 | 165 |
+| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 76 | 76 |
+| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 172 | 172 |
 
 ## Backlog (ordre de priorité)
 
@@ -39,7 +39,7 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | `vs-avant-lycee` — Version simple manquante (notions vues avant le lycée) | 0 | — |
 | `securite` — Sécurité 230 V, HTML, signalements graves | 0 | — |
 | `niveaux` — TABLE des niveaux périmée (mapping_niveau.py) | 0 | — |
-| `reecriture` — Réécriture : définition, sources, version simple | 295 | `energie-electrique`, `farad`, `frequence-electrique`, `henry`, `hertz`, `induction-electromagnetique`, `ion`, `joule` … |
+| `reecriture` — Réécriture : définition, sources, version simple | 286 | `facteur-de-puissance`, `farad`, `frequence-electrique`, `henry`, `hertz`, `induction-electromagnetique`, `ion`, `joule` … |
 | `creation` — Création : lexique attendu, puis termes de programme | 96 | `Admittance`, `Équations de Maxwell`, `Loi de Biot-Savart`, `Diagramme de Fresnel`, `Effet de peau`, `Ohm-mètre`, `Interconnexion européenne`, `Courbe de charge` … |
 
 ## Lots
@@ -67,16 +67,18 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | J4-L3 | Sécurité 230 V et signalements graves (15 fiches, partie 2 de la file « securite ») | 2026-09-25 | termine | agent-controleur-J4-L3 | 0 / 15 |
 | J4-L4 | TABLE des niveaux périmée : 22 entrées corrigées (mapping_niveau.py) | 2026-09-26 | termine | agent-controleur-J4-L4 | 0 / 10 |
 | J4-L5 | Source « programme » pour les 10 fiches qui ont reçu un niveau en J4-L4 | 2026-09-27 | termine | agent-controleur-J4-L5 | 0 / 10 |
+| J4-L6 | Réécriture, domaine A (électricité — fondamentaux et physique), 20 fiches | 2026-09-27 | termine | agent-controleur-J4-L6 | 0 / 24 |
 | chantier-A-4-5 | Date, temps de lecture et sommaire de blog | 2026-09-13 | termine | aucun | 0 / 0 |
 | chantier-A-6 | Liens contextuels dans les définitions du wiki | 2026-09-13 | termine | aucun | 0 / 0 |
 
 ## En cours
 
 Missions des lots non intégrés au wiki :
-- `J4-L6.md` — redaction, 20 élément(s), file « reecriture »
+- `J4-L5-controle.md` — controle, 10 élément(s)
+- `J4-L5.md` — redaction, 10 élément(s), file « aucune (complément ponctuel demandé par Alexandre, hors backlog automatisé) »
 
 Brouillons de changeset :
-- `J4-L6.jsonl` — 42 opération(s) sur 42 à remplir
+- aucun
 
 ## Lacunes remontées par les rapports
 
@@ -134,7 +136,9 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J4-L4** — Écarts caracteristique-tension-courant, chaine-d-energie, chaine-d-information, dipole : même niveau (premiereApparition inchangé) mais matriceIds enrichis par ce lot (le calcul relie maintenant plus de lignes de la matrice au même terme). Aucune contradiction : à absorber en relançant mapping_niveau.py sans --lot pour information, aucune décision requise.
 - **J4-L5** — arrete_sti2d_ensemble.pdf et le programme SI utilisés dans ce lot sont hébergés sur snes.edu (miroir syndical), les pages education.gouv.fr/bo/19/SpecialN correspondantes étant bloquées (403) depuis cet environnement. Contenu vérifié conforme, mais à remplacer par une source officielle directe si l'accès s'améliore.
 - **J4-L5** — loi-de-coulomb cite un miroir académique (ac-aix-marseille.fr) pour le même motif (BO spécial n°1 du 22 janvier 2019 inaccessible en direct).
+- **J4-L6** — conductivite-electrique : aucune entrée de dictionnaire ou de programme ne définit spécifiquement la « conductivité électrique » (Larousse ne définit que la « conductibilité », notion générale chaleur/électricité) ; la source retenue est donc générale, à améliorer si une source plus précise (norme, manuel de physique) est trouvée.
+- **J4-L6** — resistivite (hors lot) : le signalement J1-L3 §2 n°13 portait sur une circularité mutuelle entre conductivite-electrique et resistivite ; seule la première est corrigée dans ce lot (resistivite n'est pas dans les 20 éléments) — à traiter par un prochain lot de la file « reecriture ».
 
 ## Signalements de fiches douteuses
 
-13 ouvert(s) sur 27 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.
+12 ouvert(s) sur 28 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.

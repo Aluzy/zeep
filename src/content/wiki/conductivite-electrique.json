@@ -8,13 +8,26 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Aptitude d'un matériau à laisser circuler le courant électrique, inverse de la résistivité.",
+  "definition": "Grandeur physique qui caractérise l'aptitude d'un matériau à laisser passer le courant électrique sous l'effet d'une tension : plus elle est élevée, plus le matériau conduit facilement le courant. Elle s'exprime en siemens par mètre et vaut l'inverse de la résistivité.",
   "related": [
     "courant-electrique",
     "resistivite",
     "siemens",
+    "tension-electrique",
     "theoreme-de-millman"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse, « conductibilité »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/conductibilit%C3%A9/18036",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
+    "statut": "relu-ia"
+  }
 }

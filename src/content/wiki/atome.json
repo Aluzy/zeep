@@ -17,14 +17,14 @@
   "versionSimple": "Tout ce qui nous entoure est fait d'atomes. Autour de leur centre tournent des électrons, et ce sont eux qui peuvent former un courant électrique.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme du cycle 4 (BOEN n° 31 du 30 juillet 2020), thème « Organisation et transformations de la matière », p. 100 (constituants de l'atome, structure interne du noyau, électrons)",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf#page=100",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L6",
     "statut": "relu-ia"
   },
   "slug": "atome",
