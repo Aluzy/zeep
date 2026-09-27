@@ -17,14 +17,14 @@
   "versionSimple": "Une résistance et un condensateur mis ensemble font un montage très courant qui ralentit ou lisse un signal électrique.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme de physique-chimie de terminale générale (BO spécial n°1 du 22/01/2019)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/Programme%20de%20physique-chimie%20de%20terminale%20g%C3%A9n%C3%A9rale-253485.pdf",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
     "statut": "relu-ia"
   },
   "slug": "circuit-rc",

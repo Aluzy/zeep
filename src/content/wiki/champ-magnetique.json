@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Région de l'espace où un aimant ou un courant électrique exerce une force sur d'autres aimants, sur des charges électriques en mouvement ou sur d'autres courants électriques. Il se représente par un vecteur en tout point de l'espace.",
   "related": [
+    "bobine-inductance",
     "charge-electrique",
     "courant-electrique",
     "effet-hall",

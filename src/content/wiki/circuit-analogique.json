@@ -8,12 +8,25 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Circuit électronique qui traite des signaux analogiques dont l'amplitude varie de façon continue, par opposition au circuit numérique.",
+  "definition": "Circuit électronique qui traite des signaux analogiques, dont l'amplitude varie de façon continue dans le temps, par opposition au circuit numérique qui ne connaît que des états binaires. Un amplificateur ou un filtre électronique en sont des exemples courants.",
   "related": [
     "circuit-numerique",
     "electronique",
+    "filtre-electronique",
     "simulation-spice"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "IUT en Ligne — Signal analogique, signal numérique",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/telecommunications/berthet/module-signaux-systeme/AnalogiqueNumerique/index.html",
+      "type": "manuel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
+  }
 }

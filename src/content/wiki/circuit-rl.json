@@ -17,14 +17,14 @@
   "versionSimple": "Une résistance associée à une bobine empêche le courant de monter d'un coup : il s'installe petit à petit.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IUT en Ligne — Hugues Ott, Résonance d'intensité (circuit RLC série)",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electricite/ott/bases_de_l_electronique_analogique/4/rlc_serie.pdf",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
     "statut": "relu-ia"
   },
   "slug": "circuit-rl",

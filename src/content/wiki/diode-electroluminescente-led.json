@@ -9,10 +9,11 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Diode qui émet de la lumière lorsqu'elle est traversée par un courant électrique, largement utilisée en éclairage et sur les cartes électroniques comme voyant.",
+  "definition": "Diode qui émet de la lumière, dont la couleur dépend du semi-conducteur utilisé, lorsqu'un courant la traverse dans le sens passant. Elle consomme peu d'énergie et sert de voyant sur les cartes électroniques, ou pour l'éclairage.",
   "related": [
     "diode",
-    "optocoupleur"
+    "optocoupleur",
+    "semi-conducteur"
   ],
   "pillar": true,
   "illustration": null,
@@ -20,5 +21,17 @@
     "DEL",
     "LED",
     "diode electroluminescente"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — diode électroluminescente (DEL)",
+      "url": "https://www.larousse.fr/dictionnaires/francais/diode/25662#752629",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
+  }
 }

@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Filtre électronique qui laisse passer les basses fréquences d'un signal et atténue les fréquences supérieures à un seuil donné.",
+  "definition": "Filtre électronique qui laisse passer les basses fréquences d'un signal et atténue celles supérieures à sa fréquence de coupure. Le circuit RC est l'exemple le plus simple de filtre passe-bas du premier ordre.",
   "related": [
     "circuit-rc",
     "electronique",
@@ -30,5 +30,17 @@
     "matriceIds": [
       "M041"
     ]
+  },
+  "sources": [
+    {
+      "titre": "IUT en Ligne — Pierre Le Bars, Filtres actifs",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electronique/le-bars/analog/filtres.pdf",
+      "type": "manuel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
   }
 }

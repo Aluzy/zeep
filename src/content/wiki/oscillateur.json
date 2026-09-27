@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Circuit électronique qui produit de lui-même un signal périodique, sinusoïdal ou carré, à une fréquence déterminée. Stabilisé par un quartz, il fournit par exemple le signal d'horloge qui cadence un microcontrôleur ; on en trouve aussi dans les émetteurs et les récepteurs de radio.",
   "related": [
+    "amplificateur-operationnel",
     "electronique",
     "frequence-electrique",
     "microcontroleur",
