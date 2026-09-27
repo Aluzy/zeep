@@ -17,7 +17,8 @@
     "dissipateur-thermique",
     "memoire-vive-ram",
     "microcontroleur",
-    "microprocesseur"
+    "microprocesseur",
+    "transistor"
   ],
   "pillar": false,
   "illustration": null,

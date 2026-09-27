@@ -16,7 +16,8 @@
     "circuit-ouvert",
     "contacteur",
     "courant-electrique",
-    "detecteur"
+    "detecteur",
+    "tension-de-seuil"
   ],
   "pillar": true,
   "illustration": null,

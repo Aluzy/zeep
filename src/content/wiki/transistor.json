@@ -8,10 +8,11 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant électronique semi-conducteur à trois électrodes qui amplifie ou commute un signal électrique, brique de base des circuits intégrés.",
+  "definition": "Composant électronique semi-conducteur à trois électrodes qui amplifie ou commute un signal électrique à partir d'un courant ou d'une tension de commande. Bipolaire ou à effet de champ, il est la brique de base des circuits intégrés, des amplificateurs aux processeurs.",
   "related": [
     "alimentation-a-decoupage",
     "amplificateur-audio",
+    "circuit-integre",
     "composant-electronique",
     "dissipateur-thermique",
     "electronique",
@@ -19,6 +20,7 @@
     "jonction-pn",
     "mosfet",
     "phototransistor",
+    "processeur-cpu",
     "semi-conducteur",
     "tension-de-seuil",
     "transistor-a-effet-de-champ-fet",
@@ -37,5 +39,22 @@
     "matriceIds": [
       "M033"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Larousse — transistor",
+      "url": "https://www.larousse.fr/dictionnaires/francais/transistor/79147",
+      "type": "reference"
+    },
+    {
+      "titre": "Programme de sciences de l'ingénieur, cycle terminal, voie générale (BO spécial n°1 du 22/01/2019)",
+      "url": "https://www.pedagogie.ac-aix-marseille.fr/upload/docs/application/pdf/2019-01/bo_n1_22_janvier_2019.pdf#page=516",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L11",
+    "statut": "relu-ia"
   }
 }
