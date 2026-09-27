@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Élément de base, comme une résistance, un condensateur ou un transistor, assemblé sur un circuit imprimé pour constituer un circuit électronique.",
+  "definition": "Élément de base d'un circuit électronique, comme une résistance, un condensateur, une diode ou un transistor, assemblé sur un circuit imprimé. On distingue les composants passifs, qui ne font que consommer ou stocker de l'énergie, des composants actifs comme les transistors.",
   "related": [
     "actionneur",
     "bobine-inductance",
@@ -30,5 +30,17 @@
     "transistor"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse — composant",
+      "url": "https://www.larousse.fr/dictionnaires/francais/composant/17735",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
+  }
 }

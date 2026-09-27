@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Instrument de mesure de la tension électrique entre deux points d'un circuit électrique, exprimée en volts.",
+  "definition": "Instrument qui mesure la tension électrique, exprimée en volts, entre deux points d'un circuit électrique ; il se branche en dérivation, aux bornes du dipôle dont on veut connaître la tension.",
   "related": [
     "circuit-electrique",
     "loi-des-mailles",
@@ -18,5 +18,17 @@
     "voltage"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse — voltmètre",
+      "url": "https://www.larousse.fr/dictionnaires/francais/voltmètre/82496",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
+    "statut": "relu-ia"
+  }
 }

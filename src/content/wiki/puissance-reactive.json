@@ -20,14 +20,14 @@
   "versionSimple": "Une partie de l'électricité fait juste des allers-retours sans rien produire. Elle encombre quand même les fils et le réseau.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — puissance réactive",
+      "url": "https://www.larousse.fr/dictionnaires/francais/puissance/65022#165626",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
     "statut": "relu-ia"
   },
   "slug": "puissance-reactive",

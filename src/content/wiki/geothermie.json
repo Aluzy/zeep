@@ -17,14 +17,14 @@
   "versionSimple": "On utilise la chaleur qui se trouve sous nos pieds pour chauffer des maisons ou faire tourner une turbine.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "Ministère de la Transition écologique, « Géothermie »",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/geothermie",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
     "statut": "relu-ia"
   },
   "slug": "geothermie",

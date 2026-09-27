@@ -19,14 +19,14 @@
   "versionSimple": "À l'intérieur, une petite LED éclaire un capteur. Le signal passe par la lumière, ce qui sépare complètement les deux côtés du circuit.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — photocoupleur",
+      "url": "https://www.larousse.fr/dictionnaires/francais/photocoupleur/60427",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L11",
     "statut": "relu-ia"
   },
   "slug": "optocoupleur",

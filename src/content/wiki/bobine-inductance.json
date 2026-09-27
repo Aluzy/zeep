@@ -8,8 +8,9 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant électronique constitué d'un enroulement de fil qui s'oppose aux variations du courant, utilisé dans les filtres électroniques et les alimentations à découpage.",
+  "definition": "Composant électronique constitué d'un enroulement de fil conducteur qui s'oppose aux variations du courant en emmagasinant de l'énergie dans un champ magnétique. Elle intervient dans les filtres électroniques, les alimentations à découpage et les circuits RL.",
   "related": [
+    "champ-magnetique",
     "circuit-rl",
     "composant-electronique",
     "dephasage",
@@ -43,5 +44,17 @@
     "bobine",
     "inductance",
     "self"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — bobine d'inductance",
+      "url": "https://www.larousse.fr/dictionnaires/francais/bobine/9955#168854",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
+  }
 }

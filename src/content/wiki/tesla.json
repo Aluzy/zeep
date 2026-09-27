@@ -18,19 +18,19 @@
   "versionSimple": "Le tesla mesure la force d'un aimant ou d'un champ magnétique. Un aimant de frigo est très faible à côté des aimants utilisés dans les hôpitaux.",
   "sources": [
     {
-      "titre": "BIPM — Le Système international d'unités",
-      "url": "https://www.bipm.org/fr/",
-      "type": "reference"
+      "titre": "BIPM, « Le Système international d'unités » (9e édition, version française, 2019), tableau 4, p. 24",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-FR.pdf#page=24",
+      "type": "norme"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — tesla",
+      "url": "https://www.larousse.fr/dictionnaires/francais/tesla/77490",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
     "statut": "relu-ia"
   },
   "slug": "tesla",

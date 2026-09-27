@@ -17,14 +17,14 @@
   "versionSimple": "C'est un graphique qui montre comment un montage réagit aux fréquences, des plus basses aux plus hautes.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IUT en Ligne — Pierre Le Bars, Filtres actifs",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electronique/le-bars/analog/filtres.pdf",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
     "statut": "relu-ia"
   },
   "slug": "diagramme-de-bode",

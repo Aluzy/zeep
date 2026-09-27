@@ -17,14 +17,14 @@
   "versionSimple": "Ce montage réagit très fort à une fréquence précise et ignore les autres. C'est ainsi qu'une radio choisit une station.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IUT en Ligne — Hugues Ott, Résonance d'intensité (circuit RLC série)",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electricite/ott/bases_de_l_electronique_analogique/4/rlc_serie.pdf",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
     "statut": "relu-ia"
   },
   "slug": "circuit-rlc",

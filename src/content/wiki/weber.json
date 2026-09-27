@@ -17,19 +17,19 @@
   "versionSimple": "Le weber mesure la quantité d'aimantation qui traverse une surface. Quand cette quantité change, une tension apparaît dans les fils tout autour.",
   "sources": [
     {
-      "titre": "BIPM — Le Système international d'unités",
-      "url": "https://www.bipm.org/fr/",
-      "type": "reference"
+      "titre": "BIPM, « Le Système international d'unités » (9e édition, version française, 2019), tableau 4, p. 24",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-FR.pdf#page=24",
+      "type": "norme"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — weber",
+      "url": "https://www.larousse.fr/dictionnaires/francais/weber/82750",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
     "statut": "relu-ia"
   },
   "slug": "weber",

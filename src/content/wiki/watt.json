@@ -8,7 +8,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Unité de mesure de la puissance électrique, correspondant à un joule d'énergie transféré par seconde.",
+  "definition": "Unité de mesure de la puissance, quelle que soit sa forme (électrique, mécanique, thermique...), dans le Système international, de symbole W. Un watt correspond à un transfert d'énergie d'un joule chaque seconde.",
   "related": [
     "consommation-electrique",
     "joule",
@@ -23,5 +23,22 @@
     "megawatt",
     "milliwatt",
     "watt"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "BIPM, « Le Système international d'unités » (9e édition, version française, 2019), tableau 4, p. 24",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-FR.pdf#page=24",
+      "type": "norme"
+    },
+    {
+      "titre": "Larousse — watt",
+      "url": "https://www.larousse.fr/dictionnaires/francais/watt/82733",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
+    "statut": "relu-ia"
+  }
 }

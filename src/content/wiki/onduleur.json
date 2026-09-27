@@ -9,7 +9,7 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Appareil qui convertit un courant continu, par exemple issu d'un panneau photovoltaïque ou d'une batterie, en courant alternatif.",
+  "definition": "Convertisseur statique d'énergie électrique qui transforme un courant continu, par exemple issu d'un panneau photovoltaïque ou d'une batterie, en courant alternatif utilisable dans un bâtiment ou injectable sur le réseau électrique.",
   "related": [
     "batterie",
     "courant-alternatif",
@@ -30,5 +30,17 @@
     "matriceIds": [
       "M040"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « onduleur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/onduleur/56030",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
+    "statut": "relu-ia"
   }
 }

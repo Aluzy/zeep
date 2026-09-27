@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Filtre électronique qui laisse passer les hautes fréquences d'un signal et atténue les fréquences inférieures à un seuil donné.",
+  "definition": "Filtre électronique qui laisse passer les hautes fréquences d'un signal et atténue celles inférieures à sa fréquence de coupure, utilisé par exemple pour éliminer une composante continue parasite.",
   "related": [
     "circuit-rc",
     "electronique",
@@ -17,5 +17,17 @@
     "frequence-de-coupure"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "IUT en Ligne — Pierre Le Bars, Filtres actifs",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electronique/le-bars/analog/filtres.pdf",
+      "type": "manuel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
+  }
 }

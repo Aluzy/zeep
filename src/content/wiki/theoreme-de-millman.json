@@ -17,14 +17,14 @@
   "versionSimple": "Cette méthode donne d'un coup la tension en un point où plusieurs branches se rejoignent, sans avoir à résoudre un long calcul.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IUT en ligne, « Analyse des signaux et des circuits électriques », chapitre 7 (M. Piou), exercice 6 « Théorème de Millman », p. 7",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electronique/piou_fruitet_fortun/baselecpro/acquisition/pdf/DL-001051-04-07.01.00.pdf#page=9",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
     "statut": "relu-ia"
   },
   "slug": "theoreme-de-millman",

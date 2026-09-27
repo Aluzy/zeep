@@ -8,11 +8,15 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Machine électrique qui convertit l'énergie mécanique en courant alternatif, utilisée dans les centrales électriques pour la production d'électricité.",
+  "definition": "Générateur électrique qui convertit l'énergie mécanique d'un arbre entraîné en rotation, par exemple par une turbine, en énergie électrique fournie sous forme de courant alternatif, grâce au phénomène d'induction électromagnétique. Il équipe la plupart des centrales électriques.",
   "related": [
     "barrage-hydroelectrique",
+    "centrale-electrique",
+    "centrale-hydraulique",
     "centrale-nucleaire",
+    "centrale-thermique",
     "courant-alternatif",
+    "dynamo",
     "electricite",
     "generateur-electrique",
     "induction-electromagnetique",
@@ -21,5 +25,17 @@
     "turbine"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « alternateur »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/alternateur/2565",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
+    "statut": "relu-ia"
+  }
 }

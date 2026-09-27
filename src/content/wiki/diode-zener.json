@@ -17,14 +17,14 @@
   "versionSimple": "Cette diode laisse passer le courant à l'envers dès qu'une tension précise est atteinte. Elle sert ainsi de repère fixe ou de protection.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — Zener (diode de)",
+      "url": "https://www.larousse.fr/dictionnaires/francais/diode_de_Zener/83085",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
     "statut": "relu-ia"
   },
   "slug": "diode-zener",

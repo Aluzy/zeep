@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant qui vibre à une fréquence précise sous l'effet d'une tension, utilisé pour stabiliser un oscillateur dans un circuit numérique.",
+  "definition": "Composant qui vibre à une fréquence précise et stable sous l'effet d'une tension, grâce à la piézoélectricité du cristal de quartz qui le compose. Il stabilise la fréquence d'un oscillateur, par exemple pour cadencer un circuit numérique.",
   "related": [
     "circuit-numerique",
     "oscillateur",
@@ -22,5 +22,17 @@
     "cristal",
     "quartz",
     "resonateur"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — quartz",
+      "url": "https://www.larousse.fr/dictionnaires/francais/quartz/65542",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L11",
+    "statut": "relu-ia"
+  }
 }

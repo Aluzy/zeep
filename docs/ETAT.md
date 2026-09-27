@@ -7,12 +7,12 @@
 | Indicateur | Valeur |
 |---|---|
 | Fiches | 387 |
-| Définitions de 25 à 60 mots | 259/387 (67 %) |
+| Définitions de 25 à 60 mots | 296/387 (76 %) |
 | Version simple, notions vues avant le lycée | 29/29 (100 %) |
 | Version simple, toutes fiches | 211/387 (55 %) |
 | Avec niveau scolaire | 89/387 (23 %) |
-| Avec au moins une source précise (URL non racine) | 122/387 (32 %) |
-| Relues par un contrôleur indépendant | 70/387 (18 %) |
+| Avec au moins une source précise (URL non racine) | 185/387 (48 %) |
+| Relues par un contrôleur indépendant | 136/387 (35 %) |
 | Validées par Alexandre | 31/387 (8 %) |
 | Fiches secteur sans rappel de sécurité | 0 |
 
@@ -20,15 +20,15 @@
 
 | Règle | Fiches en défaut | Base tolérée |
 |---|---:|---:|
-| Définition hors 25-60 mots (`definition_longueur`) | 128 | 128 |
+| Définition hors 25-60 mots (`definition_longueur`) | 91 | 91 |
 | Balise HTML dans la définition (`definition_html`) | 0 | 0 |
 | Notion vue avant le lycée (C1-C4) sans version simple (`version_simple_manquante_avant_lycee`) | 0 | 0 |
 | Version simple hors 12-35 mots (`version_simple_longueur`) | 1 | 1 |
 | Fiche liée au secteur sans rappel de sécurité (`securite_230v_absente`) | 0 | 0 |
 | Source sans URL (`source_sans_url`) | 0 | 0 |
-| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 151 | 151 |
-| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 70 | 70 |
-| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 158 | 158 |
+| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 122 | 122 |
+| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 56 | 56 |
+| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 129 | 129 |
 
 ## Backlog (ordre de priorité)
 
@@ -39,7 +39,7 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | `vs-avant-lycee` — Version simple manquante (notions vues avant le lycée) | 0 | — |
 | `securite` — Sécurité 230 V, HTML, signalements graves | 0 | — |
 | `niveaux` — TABLE des niveaux périmée (mapping_niveau.py) | 0 | — |
-| `reecriture` — Réécriture : définition, sources, version simple | 266 | `puissance-reactive`, `reactance`, `resistivite`, `resonance`, `siemens`, `tesla`, `theoreme-de-millman`, `theoreme-de-norton` … |
+| `reecriture` — Réécriture : définition, sources, version simple | 200 | `chute-de-tension`, `delestage`, `electrification`, `ligne-basse-tension`, `ligne-haute-tension`, `ligne-moyenne-tension`, `poste-de-transformation`, `reseau-de-distribution` … |
 | `creation` — Création : lexique attendu, puis termes de programme | 95 | `Admittance`, `Équations de Maxwell`, `Loi de Biot-Savart`, `Diagramme de Fresnel`, `Effet de peau`, `Interconnexion européenne`, `Courbe de charge`, `Sélectivité` … |
 
 ## Lots
@@ -63,12 +63,16 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | J4-CHAINE | Chaîne de production du contenu : backlog, missions, contrôle, validation, tableau de bord | 2026-09-25 | termine | aucun | 0 / 0 |
 | J4-L0 | Cliquet de dette éditoriale, mapping des niveaux incrémental, modèle de rapport structuré | 2026-09-25 | termine | aucun | 0 / 0 |
 | J4-L1 | Versions simples des notions des cycles 2 à 4 (21 fiches) | 2026-09-25 | termine | agent-controleur-J4-L1 | 0 / 21 |
+| J4-L10 | Réécriture, domaine K (électronique analogique) — 20 des 30 fiches, partie 1/2 | 2026-09-27 | termine | agent-controleur-J4-L10 | 0 / 20 |
+| J4-L11 | Réécriture, domaine K (électronique analogique) — 10 dernières fiches, partie 2/2 (fin du domaine K) | 2026-09-27 | termine | agent-controleur-J4-L11 | 0 / 11 |
 | J4-L2 | Sécurité 230 V, définitions en HTML et signalements graves (16 fiches, partie 1 de la file « securite ») | 2026-09-25 | termine | agent-controleur-J4-L2 | 0 / 16 |
 | J4-L3 | Sécurité 230 V et signalements graves (15 fiches, partie 2 de la file « securite ») | 2026-09-25 | termine | agent-controleur-J4-L3 | 0 / 15 |
 | J4-L4 | TABLE des niveaux périmée : 22 entrées corrigées (mapping_niveau.py) | 2026-09-26 | termine | agent-controleur-J4-L4 | 0 / 10 |
 | J4-L5 | Source « programme » pour les 10 fiches qui ont reçu un niveau en J4-L4 | 2026-09-27 | termine | agent-controleur-J4-L5 | 0 / 10 |
 | J4-L6 | Réécriture, domaine A (électricité — fondamentaux et physique), 20 fiches | 2026-09-27 | termine | agent-controleur-J4-L6 | 0 / 24 |
 | J4-L7 | Réécriture, domaine A (électricité — fondamentaux et physique), 20 fiches | 2026-09-27 | termine | agent-controleur-J4-L7 | 0 / 21 |
+| J4-L8 | Réécriture, domaine A (électricité — fondamentaux et physique), 16 fiches — fin du domaine A | 2026-09-27 | termine | agent-controleur-J4-L8 | 0 / 16 |
+| J4-L9 | Réécriture, domaine B (production d'électricité) — 20 fiches, domaine B complet | 2026-09-27 | termine | agent-controleur-J4-L9 | 0 / 20 |
 | chantier-A-4-5 | Date, temps de lecture et sommaire de blog | 2026-09-13 | termine | aucun | 0 / 0 |
 | chantier-A-6 | Liens contextuels dans les définitions du wiki | 2026-09-13 | termine | aucun | 0 / 0 |
 
@@ -130,6 +134,10 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J4-L0** — Relecture jugée indépendante quand « par » contient « controleur » : convention à confirmer.
 - **J4-L0** — Détection « secteur 230 V » par mots-clés (src/data/dette.json) : trier les 24 fiches signalées, exempter les faux positifs avec leur raison.
 - **J4-L1** — Le mot « relais » a été retiré de la définition d'actionneur : le programme de technologie de 2024 range le relais dans la chaîne d'énergie (distribuer), pas parmi les actionneurs. La fiche relais-electronique le présente encore comme un actionneur : à trancher.
+- **J4-L10** — 8 opérations « synonymes » du brouillon (circuit-analogique, composant-electronique, diode, electronique, filtre-electronique, filtre-passe-bande, filtre-passe-bas, filtre-passe-haut) retirées du changeset : aucune forme équivalente réelle trouvée pour ces termes, décision seul de ne rien fabriquer (AGENTS.md §3 point 8).
+- **J4-L10** — public.iutenligne.net et www.iutenligne.net (sous-domaines du même site) répondent de façon intermittente depuis cet environnement (« Connection reset by peer » sur certaines requêtes, 200 à la requête suivante) — 6 sources du lot en dépendent ; contenu vérifié à chaque fois qu'une réponse est obtenue, mais l'accès n'est pas garanti à 100 %, contrairement à Larousse et education.gouv.fr qui ont répondu de façon stable.
+- **J4-L11** — 3 opérations « synonymes » du brouillon retirées (gain-electronique, relais-electronique, transistor) : aucune forme équivalente réelle trouvée (« gain » et « relais » seuls sont trop ambigus dans le dictionnaire pour servir de synonymes sans introduire de fausses correspondances ; « transistor » n'a pas d'abréviation d'usage) — décision seule de ne rien fabriquer (AGENTS.md §3 point 8).
+- **J4-L11** — potentiometre, relais-electronique et « relais » (Larousse) n'offrent pas d'ancre par sens (contrairement à diode/Zener/Schottky/DEL en J4-L10, qui avaient des « Locutions » ancrées) : la page cite plusieurs sens sans identifiant séparé pour chacun. URL de la page + numéro de sens précisé dans « Sources réellement ouvertes » ci-dessous, comme pour la fiche `diode` en J4-L10 (sens 2, sans ancre).
 - **J4-L2** — consommation-electrique : le programme de cycle 4 (p. 103) demande un calcul de consommation d'énergie électrique, mais la matrice ne cite la notion qu'au lycée (M016, M019) : niveau 2GT à revoir avec la décision sur la « première apparition » (issue « Définition de première apparition »).
 - **J4-L2** — Format « Vu côté électricité / Vu côté électronique » (court-circuit, domotique) : remplacé par une définition unique ; à confirmer (redresseur, traité en J4-L3, suivra la même règle).
 - **J4-L3** — Niveaux en retard sur les programmes : panneau-photovoltaique (éléments photovoltaïques en 6e, programme de cycle 3 de 2026) et schema-electrique (schéma normalisé dès le cycle 3) sont au niveau lycée faute de ligne dans la matrice ; triphase n'a pas de niveau car l'entrée « monophasé/triphasé » de la TABLE de mapping_niveau.py est rejetée alors que les fiches existent. À traiter avec le lot « niveaux » et la décision sur la « première apparition ».
@@ -142,7 +150,11 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J4-L6** — resistivite (hors lot) : le signalement J1-L3 §2 n°13 portait sur une circularité mutuelle entre conductivite-electrique et resistivite ; seule la première est corrigée dans ce lot (resistivite n'est pas dans les 20 éléments) — à traiter par un prochain lot de la file « reecriture ».
 - **J4-L7** — pont-diviseur-de-courant et pont-diviseur-de-tension : aucun document officiel (programme, norme) définissant précisément ces deux montages n'a été trouvé accessible ; la source retenue est un cours d'électricité de l'IUT en ligne (plateforme nationale du réseau des IUT, type « manuel »), qui donne les formules mais pas une définition rédigée du montage lui-même — à améliorer si une source de programme plus précise est trouvée.
 - **J4-L7** — conductivite-electrique/resistivite (hors lot, rappel J4-L6) : signalement J1-L3 §2 n°13 encore ouvert, aucune des deux fiches n'est dans ce lot.
+- **J4-L8** — theoreme-de-millman/norton/superposition/thevenin : comme pour pont-diviseur-de-tension/courant en J4-L7, aucun document de programme officiel précis n'a été trouvé pour ces quatre théorèmes ; source retenue : le chapitre 7 du même cours de l'IUT en ligne (M. Piou), qui les énonce formellement (type « manuel »).
+- **J4-L8** — resistivite/conductivite-electrique : signalement J1-L3 §2 n°13 refermé par ce lot (retiré de agents/donnees/signalements.json) — voir détail ci-dessous, décision prise seul, à confirmer par relecture indépendante ou Alexandre.
+- **J4-L9** — alternateur/production-d-electricite : signalements J1-L3 §2 n°8 et n°10 retirés de agents/donnees/signalements.json par ce lot (motif exact — confusion énergie/courant — complètement levé par la nouvelle définition) ; retrait confirmé par le contrôleur indépendant agent-controleur-J4-L9.
+- **J4-L9** — Type « manuel » pour connaissancedesenergies.org (11 sources) : le contrôleur note que le site est édité par Selectra SAS (entreprise commerciale de comparaison de fournisseurs d'énergie, comité scientifique depuis fin 2024), pas un organisme de référence institutionnel au sens strict d'AGENTS.md §3. Contenu cité vérifié factuel et conforme par le contrôleur, mais décision humaine à prendre sur son usage récurrent comme source de type « manuel ».
 
 ## Signalements de fiches douteuses
 
-10 ouvert(s) sur 27 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.
+6 ouvert(s) sur 23 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.

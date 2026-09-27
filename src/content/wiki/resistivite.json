@@ -8,12 +8,28 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Grandeur physique caractérisant la capacité d'un matériau à s'opposer au passage du courant électrique, inverse de la conductivité électrique.",
+  "definition": "Grandeur physique qui caractérise l'aptitude d'un matériau à s'opposer au passage du courant électrique : plus elle est élevée, plus ce matériau conduit difficilement le courant. Elle s'exprime en ohms-mètres et vaut l'inverse de la conductivité électrique.",
   "related": [
     "conductivite-electrique",
     "courant-electrique",
     "supraconductivite"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse — résistivité",
+      "url": "https://www.larousse.fr/dictionnaires/francais/résistivité/68639",
+      "type": "reference"
+    }
+  ],
+  "synonymes": [
+    "rho",
+    "ρ"
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
+    "statut": "relu-ia"
+  }
 }

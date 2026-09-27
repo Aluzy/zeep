@@ -8,9 +8,10 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Circuit électronique, composé de résistances, de condensateurs ou de bobines, qui sélectionne certaines fréquences d'un signal analogique et en atténue d'autres.",
+  "definition": "Circuit électronique, composé de résistances, de condensateurs ou de bobines, qui laisse passer certaines fréquences d'un signal et atténue les autres. On distingue notamment les filtres passe-bas, passe-haut et passe-bande selon la plage de fréquences conservée.",
   "related": [
     "bruit-electronique",
+    "circuit-analogique",
     "decibel",
     "diagramme-de-bode",
     "electronique",
@@ -23,5 +24,22 @@
     "signal-analogique"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse — filtre électrique",
+      "url": "https://www.larousse.fr/dictionnaires/francais/filtre/33777#10954736",
+      "type": "reference"
+    },
+    {
+      "titre": "IUT en Ligne — Pierre Le Bars, Filtres actifs",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electronique/le-bars/analog/filtres.pdf",
+      "type": "manuel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
+  }
 }

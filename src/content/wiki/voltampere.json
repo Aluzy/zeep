@@ -19,14 +19,14 @@
   "versionSimple": "Le voltampère sert à dire ce qu'un appareil demande vraiment au réseau, même quand une partie de cette demande ne produit aucun travail utile.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — voltampère",
+      "url": "https://www.larousse.fr/dictionnaires/francais/voltampère/82486",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
     "statut": "relu-ia"
   },
   "slug": "voltampere",

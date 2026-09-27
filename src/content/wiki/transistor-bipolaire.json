@@ -8,11 +8,26 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Type de transistor commandé par un courant appliqué sur sa base, utilisé pour l'amplification ou la commutation dans les circuits analogiques.",
+  "definition": "Type de transistor à trois électrodes (base, émetteur, collecteur) commandé par un faible courant appliqué sur sa base, qui contrôle un courant plus important entre émetteur et collecteur. Il existe en deux polarités, NPN et PNP, utilisées pour l'amplification ou la commutation dans les circuits analogiques.",
   "related": [
     "transistor",
     "transistor-igbt"
   ],
   "pillar": false,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Le transistor bipolaire — P. Masson, École Polytechnique Universitaire de Nice Sophia-Antipolis (Polytech, Université Côte d'Azur)",
+      "url": "https://users.polytech.unice.fr/~pmasson/Enseignement/Bipolaire%20Cours%20-%20Projection%20-%20MASSON.pdf",
+      "type": "manuel"
+    }
+  ],
+  "synonymes": [
+    "BJT"
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L11",
+    "statut": "relu-ia"
+  }
 }

@@ -18,14 +18,14 @@
   "versionSimple": "C'est une diode qui réagit très vite et gaspille peu d'énergie. On la trouve dans les chargeurs et les alimentations modernes.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — Schottky (diode)",
+      "url": "https://www.larousse.fr/dictionnaires/francais/diode_Schottky/71441",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
     "statut": "relu-ia"
   },
   "slug": "diode-schottky",

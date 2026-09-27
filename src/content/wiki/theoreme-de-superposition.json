@@ -18,14 +18,14 @@
   "versionSimple": "Quand plusieurs piles alimentent un même circuit, on peut étudier leur effet une par une, puis additionner. Le résultat est le même que si tout fonctionnait ensemble.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IUT en ligne, « Analyse des signaux et des circuits électriques », chapitre 7 (M. Piou), §2.2 « Théorème de superposition », p. 3",
+      "url": "https://www.iutenligne.net/rsc/rsc-public/electronique/piou_fruitet_fortun/baselecpro/acquisition/pdf/DL-001051-04-07.01.00.pdf#page=5",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L8",
     "statut": "relu-ia"
   },
   "slug": "theoreme-de-superposition",

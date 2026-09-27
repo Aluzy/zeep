@@ -8,14 +8,16 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Installation industrielle qui assure la production d'électricité à partir d'une source d'énergie, comme le nucléaire, le thermique, l'hydraulique, le solaire ou l'éolien.",
+  "definition": "Installation industrielle qui convertit une énergie primaire — nucléaire, chimique dans un combustible fossile ou la biomasse, mécanique dans l'eau ou le vent, ou solaire — en énergie électrique, le plus souvent au moyen d'une turbine et d'un alternateur.",
   "related": [
+    "alternateur",
     "centrale-hydraulique",
     "centrale-nucleaire",
     "centrale-solaire",
     "centrale-thermique",
     "electricite",
-    "production-d-electricite"
+    "production-d-electricite",
+    "turbine"
   ],
   "pillar": true,
   "illustration": null,
@@ -30,5 +32,17 @@
     "matriceIds": [
       "M066"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Connaissance des Énergies, fiche pédagogique « Électricité »",
+      "url": "https://www.connaissancedesenergies.org/fiche-pedagogique/electricite",
+      "type": "manuel"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
+    "statut": "relu-ia"
   }
 }

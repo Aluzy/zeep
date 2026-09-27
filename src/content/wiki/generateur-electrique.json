@@ -11,6 +11,7 @@
   "definition": "Appareil qui fournit de l'énergie électrique à un circuit en la convertissant à partir d'une autre forme d'énergie : chimique dans une pile, mécanique dans un alternateur ou une dynamo, lumineuse dans un panneau photovoltaïque. Il crée entre ses bornes une tension qui fait circuler le courant lorsque le circuit est fermé.",
   "related": [
     "alternateur",
+    "centrale-eolienne",
     "chaine-d-energie",
     "circuit-electrique",
     "circuit-ferme",

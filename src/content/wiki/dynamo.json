@@ -8,10 +8,12 @@
     "electricite"
   ],
   "merged": false,
-  "definition": "Générateur électrique produisant un courant continu à partir d'une rotation mécanique.",
+  "definition": "Générateur électrique qui convertit l'énergie mécanique d'une rotation en énergie électrique fournie sous forme de courant continu, par un principe d'induction électromagnétique proche de celui de l'alternateur ; elle équipait les vélos et les véhicules automobiles.",
   "related": [
+    "alternateur",
     "courant-continu",
     "generateur-electrique",
+    "induction-electromagnetique",
     "loi-de-faraday"
   ],
   "pillar": false,
@@ -27,5 +29,17 @@
     "matriceIds": [
       "M025"
     ]
+  },
+  "sources": [
+    {
+      "titre": "Dictionnaire de français Larousse, article « dynamo »",
+      "url": "https://www.larousse.fr/dictionnaires/francais/dynamo/27092",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
+    "statut": "relu-ia"
   }
 }

@@ -19,14 +19,14 @@
   "versionSimple": "La mer monte et descend tous les jours. On peut utiliser ce mouvement très régulier pour faire tourner des turbines.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "Ministère de la Transition écologique, « Énergies marines renouvelables (hors éolien en mer) »",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/energies-marines-renouvelables-hors-eolien-mer",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L9",
     "statut": "relu-ia"
   },
   "slug": "energie-maremotrice",

@@ -8,8 +8,9 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Composant électronique qui stocke une charge électrique entre deux armatures, utilisé notamment dans les filtres électroniques et les alimentations électroniques.",
+  "definition": "Composant électronique formé de deux conducteurs, appelés armatures, séparés par un isolant ; il stocke une charge électrique proportionnelle à la tension appliquée entre ses bornes. Il équipe notamment les filtres électroniques et les alimentations électroniques.",
   "related": [
+    "amplificateur-operationnel",
     "circuit-rc",
     "composant-electronique",
     "constante-de-temps",
@@ -51,5 +52,22 @@
     "capa",
     "capacite",
     "condensateur"
-  ]
+  ],
+  "sources": [
+    {
+      "titre": "Larousse — condensateur",
+      "url": "https://www.larousse.fr/dictionnaires/francais/condensateur/18000",
+      "type": "reference"
+    },
+    {
+      "titre": "Programme de physique-chimie de terminale générale (BO spécial n°1 du 22/01/2019)",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/Programme%20de%20physique-chimie%20de%20terminale%20g%C3%A9n%C3%A9rale-253485.pdf",
+      "type": "programme"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
+  }
 }

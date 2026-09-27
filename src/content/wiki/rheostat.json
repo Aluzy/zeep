@@ -17,14 +17,14 @@
   "versionSimple": "C'est une résistance réglable placée sur le chemin du courant pour le freiner plus ou moins.",
   "sources": [
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Larousse — rhéostat",
+      "url": "https://www.larousse.fr/dictionnaires/francais/rh%C3%A9ostat/69233",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L11",
     "statut": "relu-ia"
   },
   "slug": "rheostat",

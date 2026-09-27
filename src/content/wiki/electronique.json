@@ -8,7 +8,7 @@
     "electronique"
   ],
   "merged": false,
-  "definition": "Discipline scientifique et technique qui étudie et exploite les composants électroniques pour traiter, amplifier ou transformer des signaux analogiques et numériques.",
+  "definition": "Discipline scientifique et technique qui étudie et exploite les variations de grandeurs électriques, comme les courants et les tensions, pour capter, transmettre et exploiter de l'information. Elle regroupe les composants électroniques, les circuits analogiques et les circuits numériques.",
   "related": [
     "actionneur",
     "alimentation-a-decoupage",
@@ -65,5 +65,17 @@
     "ventilateur-de-refroidissement"
   ],
   "pillar": true,
-  "illustration": null
+  "illustration": null,
+  "sources": [
+    {
+      "titre": "Larousse — électronique",
+      "url": "https://www.larousse.fr/dictionnaires/francais/%C3%A9lectronique/28301#28164",
+      "type": "reference"
+    }
+  ],
+  "relecture": {
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L10",
+    "statut": "relu-ia"
+  }
 }
