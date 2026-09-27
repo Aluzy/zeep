@@ -24,11 +24,16 @@
       "titre": "IEC Electropedia — vocabulaire électrotechnique international",
       "url": "https://www.electropedia.org/",
       "type": "reference"
+    },
+    {
+      "titre": "Programme de sciences et technologie du cycle 2 (annexe 1 de l'arrêté du 5 juin 2026, BO n° 24 du 11 juin 2026), « source d'énergie électrique », p. 11",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-519020.pdf#page=11",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L5",
     "statut": "relu-ia"
   },
   "slug": "energie-electrique",

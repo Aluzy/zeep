@@ -25,11 +25,16 @@
       "titre": "IEC Electropedia — vocabulaire électrotechnique international",
       "url": "https://www.electropedia.org/",
       "type": "reference"
+    },
+    {
+      "titre": "Programme d'enseignement de spécialité de physique-chimie de première (BO spécial n° 1 du 22 janvier 2019), « Charge électrique, interaction électrostatique […] Loi de Coulomb », p. 498",
+      "url": "https://www.pedagogie.ac-aix-marseille.fr/upload/docs/application/pdf/2019-01/bo_n1_22_janvier_2019.pdf#page=498",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-09-27",
+    "par": "agent-controleur-J4-L5",
     "statut": "relu-ia"
   },
   "slug": "loi-de-coulomb",

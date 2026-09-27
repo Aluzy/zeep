@@ -11,8 +11,8 @@
 | Version simple, notions vues avant le lycée | 29/29 (100 %) |
 | Version simple, toutes fiches | 211/387 (55 %) |
 | Avec niveau scolaire | 89/387 (23 %) |
-| Avec au moins une source précise (URL non racine) | 79/387 (20 %) |
-| Relues par un contrôleur indépendant | 21/387 (5 %) |
+| Avec au moins une source précise (URL non racine) | 89/387 (23 %) |
+| Relues par un contrôleur indépendant | 31/387 (8 %) |
 | Validées par Alexandre | 31/387 (8 %) |
 | Fiches secteur sans rappel de sécurité | 0 |
 
@@ -28,7 +28,7 @@
 | Source sans URL (`source_sans_url`) | 0 | 0 |
 | Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 172 | 172 |
 | Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 81 | 81 |
-| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 189 | 189 |
+| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 179 | 189 |
 
 ## Backlog (ordre de priorité)
 
@@ -39,7 +39,7 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | `vs-avant-lycee` — Version simple manquante (notions vues avant le lycée) | 0 | — |
 | `securite` — Sécurité 230 V, HTML, signalements graves | 0 | — |
 | `niveaux` — TABLE des niveaux périmée (mapping_niveau.py) | 0 | — |
-| `reecriture` — Réécriture : définition, sources, version simple | 315 | `ampere`, `amperemetre`, `atome`, `champ-electrique`, `champ-magnetique`, `charge-electrique`, `conductivite-electrique`, `coulomb` … |
+| `reecriture` — Réécriture : définition, sources, version simple | 295 | `energie-electrique`, `farad`, `frequence-electrique`, `henry`, `hertz`, `induction-electromagnetique`, `ion`, `joule` … |
 | `creation` — Création : lexique attendu, puis termes de programme | 96 | `Admittance`, `Équations de Maxwell`, `Loi de Biot-Savart`, `Diagramme de Fresnel`, `Effet de peau`, `Ohm-mètre`, `Interconnexion européenne`, `Courbe de charge` … |
 
 ## Lots
@@ -66,16 +66,17 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | J4-L2 | Sécurité 230 V, définitions en HTML et signalements graves (16 fiches, partie 1 de la file « securite ») | 2026-09-25 | termine | agent-controleur-J4-L2 | 0 / 16 |
 | J4-L3 | Sécurité 230 V et signalements graves (15 fiches, partie 2 de la file « securite ») | 2026-09-25 | termine | agent-controleur-J4-L3 | 0 / 15 |
 | J4-L4 | TABLE des niveaux périmée : 22 entrées corrigées (mapping_niveau.py) | 2026-09-26 | termine | agent-controleur-J4-L4 | 0 / 10 |
+| J4-L5 | Source « programme » pour les 10 fiches qui ont reçu un niveau en J4-L4 | 2026-09-27 | termine | agent-controleur-J4-L5 | 0 / 10 |
 | chantier-A-4-5 | Date, temps de lecture et sommaire de blog | 2026-09-13 | termine | aucun | 0 / 0 |
 | chantier-A-6 | Liens contextuels dans les définitions du wiki | 2026-09-13 | termine | aucun | 0 / 0 |
 
 ## En cours
 
 Missions des lots non intégrés au wiki :
-- aucune
+- `J4-L6.md` — redaction, 20 élément(s), file « reecriture »
 
 Brouillons de changeset :
-- aucun
+- `J4-L6.jsonl` — 42 opération(s) sur 42 à remplir
 
 ## Lacunes remontées par les rapports
 
@@ -131,7 +132,9 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J4-L3** — valeur-efficace : aucune source de référence ouverte ne donne la définition par l'échauffement équivalent (la ressource Éduscol trouvée l'assimile à tort à la valeur moyenne) ; la phrase existante, exacte, est conservée et seule la partie « 230 V = valeur efficace » est sourcée (INRS ED 6345). Une source de référence (manuel, norme) reste à ajouter.
 - **J4-L4** — Écart loi-des-mailles / loi-des-noeuds : niveau actuel C4 (matriceIds M009, M014, M033, M034, posé par J2-L2), la TABLE recalculée à partir de la seule ligne M014 (« Loi des mailles et des nœuds ») donne 2GT. Rejoint l'issue « Définition de première apparition » (Lois de Kirchhoff C4 ou 2GT ?, Aluzy/zeep#27) : la ligne M009 ne cite les lois qu'au travers du terme combiné « loi des nœuds/mailles », resté rejeté (aucune fiche « lois de Kirchhoff »), donc non compté par le calcul actuel. Trancher revient à décider si on relie ce terme combiné aux deux fiches (auquel cas C4 est confirmé) ou si on laisse la TABLE recalculée l'emporter (2GT).
 - **J4-L4** — Écarts caracteristique-tension-courant, chaine-d-energie, chaine-d-information, dipole : même niveau (premiereApparition inchangé) mais matriceIds enrichis par ce lot (le calcul relie maintenant plus de lignes de la matrice au même terme). Aucune contradiction : à absorber en relançant mapping_niveau.py sans --lot pour information, aucune décision requise.
+- **J4-L5** — arrete_sti2d_ensemble.pdf et le programme SI utilisés dans ce lot sont hébergés sur snes.edu (miroir syndical), les pages education.gouv.fr/bo/19/SpecialN correspondantes étant bloquées (403) depuis cet environnement. Contenu vérifié conforme, mais à remplacer par une source officielle directe si l'accès s'améliore.
+- **J4-L5** — loi-de-coulomb cite un miroir académique (ac-aix-marseille.fr) pour le même motif (BO spécial n°1 du 22 janvier 2019 inaccessible en direct).
 
 ## Signalements de fiches douteuses
 
-14 ouvert(s) sur 27 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.
+13 ouvert(s) sur 27 (`agents/donnees/signalements.json`) ; ils sont intégrés aux files `securite` et `reecriture`.
