@@ -44,13 +44,35 @@ function sansAccents(texte) {
   return (texte || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
+// Libellés des codes de niveau, pour le bandeau de filtre (?niveau=...) : copie de
+// NIVEAU_LABEL (src/lib/helpers.ts), car ce script est du JS statique servi tel quel
+// et ne passe pas par le build Astro/TypeScript. Garder les deux synchronisées.
+const NIVEAU_LABEL = {
+  C1: "Maternelle",
+  C2: "CP-CE2",
+  C3: "CM1-6e",
+  C4: "Collège (5e-3e)",
+  "2GT": "Seconde",
+  "1G": "Première",
+  TG: "Terminale",
+  "1-TG": "Première et terminale",
+  STI2D: "STI2D",
+  CAP: "CAP",
+  BACPRO: "Bac pro",
+};
+
 function initWikiSearch() {
   const searchEl = document.querySelector("#wiki-search");
   const grid = document.querySelector("#term-grid");
   if (!searchEl || !grid) return;
   const tiles = Array.from(grid.querySelectorAll(".term-tile"));
   const filterBtns = document.querySelectorAll(".domain-filters button");
+  const banner = document.querySelector("#niveau-filter-banner");
+  const bannerLabel = document.querySelector("#niveau-filter-label");
   let activeDomain = "all";
+  // Codes de niveau demandés via ?niveau=C1,C2 (depuis /apprends/ ou un lien direct).
+  // Tableau vide = pas de filtre.
+  let activeNiveaux = [];
 
   initDomainFilterTooltips();
 
@@ -64,7 +86,8 @@ function initWikiSearch() {
       const domains = (t.dataset.domains || "").split(",");
       const matchesText = !q || name.includes(q) || synonymes.includes(q);
       const matchesDomain = activeDomain === "all" || domains.includes(activeDomain);
-      t.style.display = matchesText && matchesDomain ? "" : "none";
+      const matchesNiveau = activeNiveaux.length === 0 || activeNiveaux.includes(t.dataset.niveau || "");
+      t.style.display = matchesText && matchesDomain && matchesNiveau ? "" : "none";
     });
   }
 
@@ -83,6 +106,19 @@ function initWikiSearch() {
   if (fromUrl) {
     const match = Array.from(filterBtns).find((b) => b.dataset.domain === fromUrl);
     if (match) match.click();
+  }
+
+  // Filtre par niveau depuis ?niveau=C1,C2 (liens de la page /apprends/ ou partagés) :
+  // un ou plusieurs codes séparés par des virgules.
+  const niveauParam = params.get("niveau");
+  if (niveauParam) {
+    activeNiveaux = niveauParam.split(",").map((c) => c.trim()).filter(Boolean);
+    if (activeNiveaux.length && banner && bannerLabel) {
+      const labels = activeNiveaux.map((c) => NIVEAU_LABEL[c] || c);
+      bannerLabel.textContent = `Niveau : ${labels.join(", ")}`;
+      banner.hidden = false;
+    }
+    apply();
   }
 
   // Pré-remplissage depuis la barre de recherche du header (?q=...), envoyée

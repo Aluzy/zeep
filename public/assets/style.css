@@ -407,6 +407,16 @@ footer.site-footer{
 @keyframes tooltipFadeIn{from{opacity:0;transform:translateX(-50%) translateY(4px);}to{opacity:1;transform:translateX(-50%) translateY(0);}}
 @media (prefers-reduced-motion:reduce){.domain-filters .domain-filter-btn.show-tooltip::after{animation:none;}}
 
+/* Bandeau affiché quand la page wiki est ouverte avec ?niveau=... (depuis /apprends/). */
+.niveau-filter-banner{
+  display:flex;align-items:center;gap:10px;margin:-14px 0 22px;padding:10px 14px;
+  background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:var(--radius-sm);
+  font-size:13px;color:var(--text);
+}
+.niveau-filter-banner[hidden]{display:none;}
+.niveau-filter-banner #niveau-filter-label{font-weight:700;}
+.niveau-filter-banner a{margin-left:auto;font-weight:700;color:var(--accent);white-space:nowrap;}
+
 .term-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;}
 .term-tile{
   border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;background:var(--panel);
@@ -627,4 +637,30 @@ article.post-body p{font-size:16px;line-height:1.85;color:var(--text);margin:0 0
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-size: 11px;
+}
+
+/* ============================================================
+   Page « Choisis ton niveau » (/apprends/)
+   ============================================================ */
+.niveau-groups{display:flex;flex-direction:column;gap:22px;margin-bottom:8px;}
+.niveau-group{
+  background:var(--panel);border:1px solid var(--border-strong);border-radius:var(--radius-lg);
+  padding:20px 22px;scroll-margin-top:90px;
+}
+.niveau-group-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.niveau-group-icon{
+  width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.niveau-group-head h2{margin:0;font-size:16px;font-weight:800;color:var(--text);}
+.niveau-group-sub{margin:2px 0 0;font-size:12px;color:var(--text-faint);}
+.niveau-pills{display:flex;flex-wrap:wrap;gap:10px;}
+.niveau-pin{border-color:var(--border);}
+.niveau-pin .dot{background:var(--pin-color,var(--accent));}
+.niveau-pin:hover{border-color:var(--pin-color,var(--accent));color:var(--pin-color,var(--accent));}
+.niveau-pin-count{
+  display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;
+  margin-left:2px;border-radius:99px;background:var(--bg);color:var(--text-faint);font-size:11px;font-weight:800;
+}
+@media (max-width:760px){
+  .niveau-group{padding:16px 16px;}
 }
