@@ -48,15 +48,21 @@ export function niveauLabel(code: string): string {
 
 /**
  * Regroupement des codes de niveau en 4 paliers pédagogiques (page d'accueil,
- * page « Choisis ton niveau »). C3 (« CM1-6e ») est rattaché à Primaire par
- * simplification — voir le rapport de lot pour cette hypothèse.
+ * page « Choisis ton niveau »). Périmètre voulu : Primaire = CP·CE1·CE2·CM1·CM2,
+ * Collège = 6e·5e·4e·3e. C3 (« CM1-6e ») est le code officiel du cycle 3, qui
+ * chevauche cette frontière (CM1-CM2 relèvent du primaire, 6e du collège) ; comme
+ * une fiche n'est pas subdivisée plus finement que son code de cycle, C3 est
+ * rattaché à Collège pour que le 6e n'apparaisse plus sous Primaire — quitte à
+ * ce qu'une future fiche de cycle 3 vraiment CM1/CM2 s'affiche elle aussi côté
+ * Collège. Aucune fiche n'utilise C3 à ce jour (voir audit), donc ce choix n'a
+ * aucun effet visible sur le contenu existant.
  */
 export type NiveauBucket = "primaire" | "college" | "lycee" | "approfondissement";
 
 export const NIVEAU_BUCKET: Record<string, NiveauBucket> = {
   C1: "primaire",
   C2: "primaire",
-  C3: "primaire",
+  C3: "college",
   C4: "college",
   "2GT": "lycee",
   "1G": "lycee",
