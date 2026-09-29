@@ -46,6 +46,63 @@ export function niveauLabel(code: string): string {
   return NIVEAU_LABEL[code] || code;
 }
 
+/**
+ * Regroupement des codes de niveau en 4 paliers pédagogiques (page d'accueil,
+ * page « Choisis ton niveau »). C3 (« CM1-6e ») est rattaché à Primaire par
+ * simplification — voir le rapport de lot pour cette hypothèse.
+ */
+export type NiveauBucket = "primaire" | "college" | "lycee" | "approfondissement";
+
+export const NIVEAU_BUCKET: Record<string, NiveauBucket> = {
+  C1: "primaire",
+  C2: "primaire",
+  C3: "primaire",
+  C4: "college",
+  "2GT": "lycee",
+  "1G": "lycee",
+  TG: "lycee",
+  "1-TG": "lycee",
+  STI2D: "approfondissement",
+  CAP: "approfondissement",
+  BACPRO: "approfondissement",
+};
+
+/** Métadonnées d'affichage par palier (nom, sous-titre, couleurs), partagées entre
+ * la page d'accueil (« Explorer par niveau ») et la page « Choisis ton niveau ». */
+export const BUCKET_INFO: Record<
+  NiveauBucket,
+  { name: string; sub: string; color: string; bg: string; icon: string }
+> = {
+  primaire: {
+    name: "Primaire",
+    sub: "CP · CE1 · CE2 · CM1 · CM2",
+    color: "var(--green)",
+    bg: "var(--green-dim)",
+    icon: `<path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><rect x="4" y="8" width="16" height="12" rx="2"/><line x1="4" y1="13" x2="20" y2="13"/>`,
+  },
+  college: {
+    name: "Collège",
+    sub: "6e · 5e · 4e · 3e",
+    color: "#2456E8",
+    bg: "var(--accent-dim)",
+    icon: `<path d="M12 3L2 8l10 5 10-5-10-5z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/>`,
+  },
+  lycee: {
+    name: "Lycée",
+    sub: "2nde · 1ère · Terminale",
+    color: "#8B5CF6",
+    bg: "#EDE7FC",
+    icon: `<path d="M4 4l8 8 8-8"/><path d="M4 20l8-8 8 8"/>`,
+  },
+  approfondissement: {
+    name: "Approfondissement",
+    sub: "STI2D · CAP · Bac pro",
+    color: "#E2672A",
+    bg: "#FBE7DC",
+    icon: `<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/>`,
+  },
+};
+
 /** Types de source admis dans `sources[].type` -> libellé affiché. */
 export const SOURCE_TYPE_LABEL: Record<string, string> = {
   programme: "Programme officiel",

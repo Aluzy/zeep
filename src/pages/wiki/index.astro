@@ -30,11 +30,15 @@ const domainesUtilises = Object.entries(TAXONOMY).filter(([code]) => (countByDom
       <button type="button" data-domain={code} class="domain-filter-btn" title={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`} data-tooltip={`${name} — ${countByDomain[code]} fiche${countByDomain[code] > 1 ? "s" : ""}`}>{code}</button>
     ))}
   </div>
+  <div id="niveau-filter-banner" class="niveau-filter-banner" hidden>
+    <span id="niveau-filter-label"></span>
+    <a href={`${BASE}wiki/`} id="niveau-filter-reset">Réinitialiser ✕</a>
+  </div>
   <div class="term-grid" id="term-grid">
     {wiki.map((t) => {
       const def = t.data.definition.replace(/<[^>]+>/g, "").slice(0, 130);
       return (
-        <a class="term-tile" href={`${BASE}wiki/${t.data.slug}/`} data-term={t.data.term} data-synonymes={(t.data.synonymes || []).join("|")} data-domains={t.data.domains.join(",")}>
+        <a class="term-tile" href={`${BASE}wiki/${t.data.slug}/`} data-term={t.data.term} data-synonymes={(t.data.synonymes || []).join("|")} data-domains={t.data.domains.join(",")} data-niveau={t.data.niveau?.premiereApparition || ""}>
           <div class="tname">{t.data.term}</div>
           <div class="tdef">{def}{def.length >= 130 ? "…" : ""}</div>
           <div class="tmeta chip-row">

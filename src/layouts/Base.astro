@@ -3,7 +3,7 @@ interface Props {
   title: string;
   description?: string;
   group?: "electricite" | "electronique" | "neutre";
-  active?: "home" | "wiki" | "blog" | "diy" | "";
+  active?: "home" | "apprends" | "wiki" | "blog" | "diy" | "";
   fullTitle?: string;
 }
 const { title, description = "", group = "neutre", active = "", fullTitle } = Astro.props;
@@ -13,7 +13,7 @@ const pageTitle = fullTitle ?? `${title} — Zeep`;
 // Nav desktop (lot SITE-L1) : liens simples pour cette V1, voir le rapport de
 // lot pour la décision sur les menus déroulants et sur "J'enseigne".
 const navItems = [
-  { key: "wiki", label: "J’apprends", href: `${BASE}wiki/` },
+  { key: "apprends", label: "J’apprends", href: `${BASE}apprends/` },
   { key: "diy", label: "Je construis", href: `${BASE}projets-diy/` },
   { key: "enseigne", label: "J’enseigne", href: `${BASE}wiki/` },
   { key: "blog", label: "Ressources", href: `${BASE}blog/` },

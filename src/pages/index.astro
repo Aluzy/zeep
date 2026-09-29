@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
-import { TAXONOMY } from "../lib/helpers";
+import { TAXONOMY, NIVEAU_BUCKET, BUCKET_INFO } from "../lib/helpers";
 
 const BASE = import.meta.env.BASE_URL;
 const wiki = await getCollection("wiki");
@@ -19,23 +19,9 @@ const sourcedCount = wiki.filter((t) => (t.data.sources || []).length > 0).lengt
 const reviewedCount = wiki.filter((t) => !!t.data.relecture).length;
 
 // « Explorer par niveau » : regroupement des codes de cycle (niveau.premiereApparition,
-// cf. src/lib/helpers.ts::NIVEAU_LABEL) en 4 paliers pédagogiques, pour coller à la
-// maquette (Primaire / Collège / Lycée / Approfondissement). C3 (« CM1-6e ») est
-// rattaché ici à Primaire par simplification : la matrice curriculaire ne distingue pas
-// plus finement à ce stade — voir le rapport de lot pour cette hypothèse.
-const NIVEAU_BUCKET: Record<string, "primaire" | "college" | "lycee" | "approfondissement"> = {
-  C1: "primaire",
-  C2: "primaire",
-  C3: "primaire",
-  C4: "college",
-  "2GT": "lycee",
-  "1G": "lycee",
-  TG: "lycee",
-  "1-TG": "lycee",
-  STI2D: "approfondissement",
-  CAP: "approfondissement",
-  BACPRO: "approfondissement",
-};
+// cf. src/lib/helpers.ts::NIVEAU_LABEL) en 4 paliers pédagogiques (Primaire / Collège /
+// Lycée / Approfondissement), défini dans src/lib/helpers.ts::NIVEAU_BUCKET pour rester
+// partagé avec la page dédiée « Choisis ton niveau » (src/pages/apprends/index.astro).
 const bucketCounts = { primaire: 0, college: 0, lycee: 0, approfondissement: 0 };
 for (const t of wiki) {
   const code = t.data.niveau?.premiereApparition;
@@ -43,40 +29,10 @@ for (const t of wiki) {
 }
 const niveauxTotal = Object.values(bucketCounts).reduce((a, b) => a + b, 0);
 
-const LEVELS = [
-  {
-    key: "primaire",
-    name: "Primaire",
-    sub: "CP · CE1 · CE2 · CM1 · CM2",
-    color: "var(--green)",
-    bg: "var(--green-dim)",
-    icon: `<path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><rect x="4" y="8" width="16" height="12" rx="2"/><line x1="4" y1="13" x2="20" y2="13"/>`,
-  },
-  {
-    key: "college",
-    name: "Collège",
-    sub: "6e · 5e · 4e · 3e",
-    color: "#2456E8",
-    bg: "var(--accent-dim)",
-    icon: `<path d="M12 3L2 8l10 5 10-5-10-5z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/>`,
-  },
-  {
-    key: "lycee",
-    name: "Lycée",
-    sub: "2nde · 1ère · Terminale",
-    color: "#8B5CF6",
-    bg: "#EDE7FC",
-    icon: `<path d="M4 4l8 8 8-8"/><path d="M4 20l8-8 8 8"/>`,
-  },
-  {
-    key: "approfondissement",
-    name: "Approfondissement",
-    sub: "Adulte · Passionné · Professionnel",
-    color: "#E2672A",
-    bg: "#FBE7DC",
-    icon: `<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/>`,
-  },
-] as const;
+const LEVELS = (Object.keys(BUCKET_INFO) as (keyof typeof BUCKET_INFO)[]).map((key) => ({
+  key,
+  ...BUCKET_INFO[key],
+}));
 
 // « En ce moment sur Zeep » : trois éléments réels du dépôt (pas les libellés
 // de la maquette), un par type de contenu. Choisis pour leur proximité avec les
@@ -91,8 +47,7 @@ function niveauSummary(t: (typeof wiki)[number] | undefined): string {
     (t.data.niveau.cycles || []).map((c) => NIVEAU_BUCKET[c]).filter(Boolean)
   );
   const order = ["primaire", "college", "lycee", "approfondissement"] as const;
-  const labels: Record<string, string> = { primaire: "Primaire", college: "Collège", lycee: "Lycée", approfondissement: "Approfondissement" };
-  return order.filter((b) => buckets.has(b)).map((b) => labels[b]).join(" · ");
+  return order.filter((b) => buckets.has(b)).map((b) => BUCKET_INFO[b].name).join(" · ");
 }
 ---
 <Base title="Accueil" description="Wiki, blog et projets DIY sur l'électricité et l'électronique, classés par niveau scolaire." group="neutre" active="home">
@@ -110,7 +65,7 @@ function niveauSummary(t: (typeof wiki)[number] | undefined): string {
         classés par niveau scolaire du CP à la terminale, pour apprendre à son rythme.
       </p>
       <div class="home-hero-cta">
-        <a class="btn" href={`${BASE}wiki/`}>
+        <a class="btn" href={`${BASE}apprends/`}>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M13 2L4 14H11L10 22L20 9H13L13 2Z"/></svg>
           J’apprends →
         </a>
@@ -163,7 +118,7 @@ function niveauSummary(t: (typeof wiki)[number] | undefined): string {
 
   <section class="home-section home-pillars-section">
     <div class="home-pillars">
-      <a class="home-pillar-card c-blue" href={`${BASE}wiki/`}>
+      <a class="home-pillar-card c-blue" href={`${BASE}apprends/`}>
         <div class="home-pillar-deco" style="top:8px;right:8px;background:#2456E8;"></div>
         <img src={`${BASE}assets/icon-japprends.png`} alt="" />
         <div>
@@ -202,7 +157,7 @@ function niveauSummary(t: (typeof wiki)[number] | undefined): string {
     </div>
     <div class="home-levels">
       {LEVELS.map((lvl) => (
-        <a class="home-level-card" href={`${BASE}wiki/`} title={`${bucketCounts[lvl.key]} fiche${bucketCounts[lvl.key] > 1 ? "s" : ""} du wiki à ce niveau`}>
+        <a class="home-level-card" href={`${BASE}apprends/#${lvl.key}`} title={`${bucketCounts[lvl.key]} fiche${bucketCounts[lvl.key] > 1 ? "s" : ""} du wiki à ce niveau`}>
           <div class="home-level-icon" style={`background:${lvl.bg}`} set:html={`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="${lvl.color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${lvl.icon}</svg>`}></div>
           <div class="home-level-body">
             <div class="name">{lvl.name}</div>
