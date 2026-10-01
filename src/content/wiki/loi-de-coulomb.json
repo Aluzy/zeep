@@ -14,27 +14,27 @@
     "A"
   ],
   "definition": "Loi qui décrit la force exercée entre deux charges électriques immobiles. Cette force est attractive entre charges de signes opposés, répulsive entre charges de même signe, et diminue très vite lorsque la distance augmente.",
-  "versionSimple": "Deux objets chargés se repoussent s'ils portent la même charge, et s'attirent sinon. Plus ils sont loin l'un de l'autre, plus cet effet devient faible.",
+  "versionSimple": "Deux objets chargés d'électricité se repoussent si leurs charges sont de même signe et s'attirent sinon : deux ballons frottés de la même façon s'écartent l'un de l'autre. L'effet faiblit avec la distance.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme d'enseignement de spécialité de physique-chimie de première générale, « Interactions fondamentales et introduction à la notion de champ » (loi de Coulomb)",
+      "url": "https://www.snes.edu/IMG/pdf/physique_spe_annexe_1eg_bo.pdf",
+      "type": "programme"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "IEC 60050 (Electropedia), IEV 121-11-02 « Coulomb law »",
+      "url": "https://electropedia.org/iev/iev.nsf/IEVref_xref/en:121-11-02",
       "type": "reference"
     },
     {
-      "titre": "Programme d'enseignement de spécialité de physique-chimie de première (BO spécial n° 1 du 22 janvier 2019), « Charge électrique, interaction électrostatique […] Loi de Coulomb », p. 498",
-      "url": "https://www.pedagogie.ac-aix-marseille.fr/upload/docs/application/pdf/2019-01/bo_n1_22_janvier_2019.pdf#page=498",
-      "type": "programme"
+      "titre": "Royal Institution, activité « Static magic »",
+      "url": "https://www.rigb.org/learning/activities-and-resources/static-magic",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-27",
-    "par": "agent-controleur-J4-L5",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "loi-de-coulomb",

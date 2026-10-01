@@ -14,22 +14,33 @@
   "domains": [
     "N"
   ],
-  "definition": "Place laissée vacante par un électron dans un cristal semi-conducteur. Elle se déplace comme une charge positive et participe à la conduction au même titre que les électrons libres.",
-  "versionSimple": "Quand un électron part, il laisse un vide. Ce vide se déplace lui aussi, comme s'il était une charge positive.",
+  "definition": "Absence d'un électron à une place qu'il occuperait normalement dans un cristal semi-conducteur. Ce manque se comporte comme une particule de charge positive : sous l'effet d'un champ électrique, il se déplace et participe, avec les électrons libres, à la conduction du courant.",
+  "versionSimple": "Quand un électron quitte sa place, il laisse un vide qui se déplace comme une charge positive, comme une place libre qui recule dans une file quand chacun avance.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Office québécois de la langue française, Grand dictionnaire terminologique, fiche « trou »",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8876557/trou",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC 60050 (Electropedia), IEV 521-02-18 « hole conduction »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/9bc89e2a00a16302c125727c0031203d",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC 60050 (Electropedia), IEV 521-02-23 « valence band »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/89d8a20d854a02d1c125727c00312072",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "trou-electronique",
   "related": [
+    "champ-electrique",
     "charge-electrique",
     "dopage",
     "electron",

@@ -15,17 +15,17 @@
     "L"
   ],
   "definition": "Porte logique dont la sortie est fausse uniquement lorsque toutes ses entrées sont vraies. Elle est dite universelle car toute fonction logique peut être construite à partir d'elle seule.",
-  "versionSimple": "Cette porte répond non seulement quand toutes ses entrées disent oui. Avec elle seule, on peut fabriquer toutes les autres.",
+  "versionSimple": "Cette porte répond « non » seulement quand toutes ses entrées disent « oui », comme une lampe qui reste allumée sauf si l'on appuie sur deux boutons à la fois.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Eric Cariou (Université de Pau et des Pays de l'Adour), cours d'architecture des ordinateurs, « Circuits logiques »",
+      "url": "https://lab-sticc.univ-brest.fr/~ecariou/cours/archi/cours-3-circuits-logiques.pdf",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6-2",
     "statut": "relu-ia"
   },
   "slug": "porte-non-et",

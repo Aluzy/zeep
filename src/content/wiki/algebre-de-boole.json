@@ -14,18 +14,18 @@
   "domains": [
     "L"
   ],
-  "definition": "Système de calcul sur des variables ne prenant que deux valeurs, vrai ou faux. Il fournit les règles qui permettent de simplifier un circuit logique avant de le réaliser avec des portes.",
-  "versionSimple": "C'est une façon de calculer avec seulement deux réponses possibles : oui ou non. Les ordinateurs raisonnent uniquement comme cela.",
+  "definition": "Système de calcul sur des variables ne prenant que deux valeurs, vrai ou faux, notées 1 et 0, avec des opérateurs comme ET, OU et NON. Les circuits logiques réalisent ces calculs à l'aide de portes.",
+  "versionSimple": "C'est une façon de calculer avec seulement deux réponses : oui ou non. Par exemple, on sort jouer s'il fait beau ET si les devoirs sont finis.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme de numérique et sciences informatiques de première générale, « Représentation des données : types et valeurs de base » (valeurs et opérateurs booléens)",
+      "url": "https://eduscol.education.fr/document/30007/download",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "algebre-de-boole",

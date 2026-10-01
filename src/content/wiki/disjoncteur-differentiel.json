@@ -8,41 +8,45 @@
   "synonymes": [
     "DDR",
     "differentiel 30 mA",
-    "disjoncteur differentiel",
-    "interrupteur differentiel"
+    "disjoncteur differentiel"
   ],
   "term": "Disjoncteur différentiel",
   "domains": [
     "E"
   ],
-  "definition": "Appareil qui compare le courant entrant et le courant sortant d'un circuit et coupe dès qu'un écart apparaît. Un modèle 30 milliampères protège les personnes contre les contacts directs et indirects.",
-  "versionSimple": "Cet appareil surveille si un peu d'électricité s'échappe du circuit, par exemple à travers une personne, et coupe aussitôt.",
+  "definition": "Appareil qui compare les courants de la phase et du neutre et coupe dès que leur écart atteint sa sensibilité, par exemple 30 mA. Il protège contre surcharges et courts-circuits, et contre le contact avec une carcasse mise sous tension par un défaut ; contre un fil sous tension, le 30 mA n'est qu'un complément. Pose par un électricien.",
+  "versionSimple": "Dans le tableau électrique de la maison, cet appareil coupe le courant quand un peu de courant s'échappe, par exemple par un fil abîmé. Seul un électricien l'installe ou le change.",
   "sources": [
     {
-      "titre": "AFNOR — normes de l'installation électrique",
-      "url": "https://www.afnor.org/",
-      "type": "norme"
+      "titre": "La protection différentielle dans les installations électriques BT, Schneider Electric, revue Intersections (juin 2001), hébergé par Éduscol STI",
+      "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/techniques/680/680-gt-differentiel.pdf",
+      "type": "reference"
     },
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
+      "titre": "INRS — Risques électriques : glossaire (contact direct, contact indirect)",
+      "url": "https://www.inrs.fr/risques/electriques/glossaire.html",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S4-3",
     "statut": "relu-ia"
   },
   "slug": "disjoncteur-differentiel",
   "related": [
     "courant-de-fuite",
+    "court-circuit",
     "defaut-d-isolement",
     "disjoncteur",
+    "electricien",
     "electrisation",
     "electrocution",
     "mise-a-la-terre",
+    "neutre",
+    "phase-electrique",
     "regime-de-neutre",
-    "tableau-electrique"
+    "tableau-electrique",
+    "tension-electrique"
   ]
 }

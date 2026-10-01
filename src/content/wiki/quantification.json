@@ -6,33 +6,31 @@
   "pillar": false,
   "illustration": null,
   "synonymes": [
-    "bits de resolution",
-    "pas de quantification",
     "quantification",
-    "resolution"
+    "quantization"
   ],
   "term": "Quantification",
   "domains": [
     "L",
     "S"
   ],
-  "definition": "Attribution d'une valeur numérique parmi un nombre fini de niveaux à chaque échantillon mesuré. Le nombre de bits du convertisseur fixe la finesse obtenue et le bruit de quantification résiduel.",
-  "versionSimple": "Chaque mesure doit être arrondie à une valeur disponible. Plus il y a de valeurs possibles, plus la copie est fidèle.",
+  "definition": "Opération qui découpe l'étendue des valeurs possibles d'un signal en intervalles et remplace chaque valeur mesurée par une valeur unique choisie dans son intervalle. Dans un convertisseur analogique-numérique, elle est notamment caractérisée par le nombre de bits utilisés pour coder chaque valeur.",
+  "versionSimple": "Comme un thermomètre qui n'affiche que des degrés entiers, un appareil numérique arrondit chaque mesure à l'une des valeurs qu'il sait écrire.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 702-04-07 « quantization »",
+      "url": "https://electropedia.org/iev/iev.nsf/IEVref_xref/en:702-04-07",
+      "type": "reference"
     },
     {
-      "titre": "Programme STI2D, enseignement technologique transversal (arrêté du 17 janvier 2019, modifié le 19 juillet 2019), « Conversion Analogique/Numérique (CAN) », p. 26",
-      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf#page=26",
+      "titre": "Programme d'innovation technologique et d'ingénierie et développement durable de première et d'ingénierie, innovation et développement durable de terminale STI2D (Éduscol), § 2.4.2 « Conversion Analogique/Numérique (CAN) »",
+      "url": "https://eduscol.education.fr/document/24916/download",
       "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-27",
-    "par": "agent-controleur-J4-L5",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "quantification",

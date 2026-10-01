@@ -15,18 +15,28 @@
     "X",
     "F"
   ],
-  "definition": "Professionnel chargé de prévenir et de réparer les pannes des équipements électriques et automatisés. Il diagnostique à l'aide d'appareils de mesure et intervient dans le cadre d'une habilitation électrique.",
-  "versionSimple": "Ce métier consiste à entretenir les machines et à trouver l'origine des pannes pour les réparer.",
+  "definition": "Professionnel qui contrôle, surveille et entretient des équipements industriels, notamment électriques et automatisés, pour prévenir les pannes, et qui organise leur réparation quand elles surviennent. Il établit un diagnostic à l'aide de tests et de mesures et doit être habilité pour intervenir sur ou près d'une installation électrique.",
+  "versionSimple": "Ce métier consiste à entretenir les machines, par exemple dans une usine ou un centre de tri des déchets, et à trouver l'origine des pannes pour les réparer.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Onisep, fiche métier « Technicien / Technicienne de maintenance industrielle », version PDF complète",
+      "url": "https://www.onisep.fr/ressources/univers-metier/metiers/technicien-technicienne-de-maintenance-industrielle/pdf",
+      "type": "reference"
+    },
+    {
+      "titre": "Onisep, fiche métier « Technicien / Technicienne de maintenance industrielle »",
+      "url": "https://www.onisep.fr/ressources/univers-metier/metiers/technicien-technicienne-de-maintenance-industrielle",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS, Risques électriques — Réglementation et prévention du risque électrique (habilitation)",
+      "url": "https://www.inrs.fr/risques/electriques/reglementation-prevention-risque-electrique.html",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6-2",
     "statut": "relu-ia"
   },
   "slug": "technicien-de-maintenance",
@@ -35,6 +45,7 @@
     "consignation-electrique",
     "electricien",
     "habilitation-electrique",
+    "installation-electrique",
     "multimetre"
   ]
 }

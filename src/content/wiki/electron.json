@@ -11,6 +11,7 @@
   "definition": "Particule élémentaire portant la plus petite charge électrique négative connue, présente dans le nuage qui entoure le noyau de tout atome. Son déplacement d'ensemble dans un conducteur électrique, comme un métal, constitue le courant électrique.",
   "related": [
     "atome",
+    "bande-interdite",
     "charge-electrique",
     "conducteur-electrique",
     "coulomb",

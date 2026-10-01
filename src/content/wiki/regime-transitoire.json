@@ -6,7 +6,6 @@
   "pillar": false,
   "illustration": null,
   "synonymes": [
-    "regime permanent",
     "regime transitoire",
     "transitoire"
   ],
@@ -15,23 +14,33 @@
     "A",
     "K"
   ],
-  "definition": "Phase pendant laquelle un circuit évolue après un changement, avant d'atteindre son état stable appelé régime permanent. C'est durant cette phase qu'apparaissent les surintensités d'enclenchement.",
+  "definition": "Phase pendant laquelle un circuit passe d'un état stable à un autre après un changement, par exemple sa mise sous tension. L'état stable, dans lequel les caractéristiques du circuit restent constantes au cours du temps, est appelé régime permanent, régime établi ou régime stationnaire.",
   "versionSimple": "Juste après avoir allumé un appareil, le circuit n'est pas encore stable. Cette courte période d'adaptation est le régime transitoire.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme de physique-chimie de terminale générale, enseignement de spécialité (BO spécial n° 8 du 25 juillet 2019), « Étudier la dynamique d'un système électrique »",
+      "url": "https://cache.media.education.gouv.fr/file/SPE8_MENJ_25_7_2019/92/9/spe249_annexe_1158929.pdf",
+      "type": "programme"
     },
     {
-      "titre": "Programme de physique-chimie de terminale générale, enseignement de spécialité (BO spécial n° 8 du 25 juillet 2019), « Modèle du circuit RC série […] temps caractéristique », p. 20",
-      "url": "https://www.education.gouv.fr/sites/default/files/document/Programme%20de%20physique-chimie%20de%20terminale%20g%C3%A9n%C3%A9rale-253485.pdf#page=20",
+      "titre": "Programme d'innovation technologique et d'ingénierie et développement durable de première et d'ingénierie, innovation et développement durable de terminale STI2D (Éduscol), § 3.3 « régime établi » et « régime transitoire »",
+      "url": "https://eduscol.education.fr/document/24916/download",
       "type": "programme"
+    },
+    {
+      "titre": "IEC 60050 (Electropedia), IEV 103-05-02 « transient »",
+      "url": "https://electropedia.org/iev/iev.nsf/IEVref_xref/en:103-05-02",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC 60050 (Electropedia), IEV 103-05-01 « steady state »",
+      "url": "https://electropedia.org/iev/iev.nsf/IEVref_xref/en:103-05-01",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-27",
-    "par": "agent-controleur-J4-L5",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "regime-transitoire",

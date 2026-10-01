@@ -13,6 +13,7 @@
     "circuit-logique",
     "compteur-numerique",
     "frequence-de-commutation",
+    "machine-a-etats",
     "memoire-vive-ram",
     "registre-a-decalage",
     "signal-d-horloge"

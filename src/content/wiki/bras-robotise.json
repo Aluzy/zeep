@@ -16,18 +16,18 @@
     "P",
     "F"
   ],
-  "definition": "Ensemble de segments articulés mus par des moteurs asservis, capable de positionner un outil dans l'espace. Chaque axe possède son codeur, et le calculateur coordonne leurs mouvements.",
-  "versionSimple": "C'est un bras mécanique commandé par des moteurs. Chaque articulation sait où elle se trouve, ce qui permet des gestes précis.",
+  "definition": "Structure mécanique articulée, par exemple à six axes, capable de positionner et d'orienter avec précision un outil porté à son extrémité. Un calculateur, placé dans une armoire de commande, convertit les consignes reçues en mouvements des axes.",
+  "versionSimple": "C'est un bras mécanique qui bouge à plusieurs articulations, comme ton épaule, ton coude et ton poignet, et qu'un ordinateur commande pour placer un outil avec précision.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Éduscol STI, « Le robot industriel FANUC M20i A » (support d'étude)",
+      "url": "https://sti.eduscol.education.fr/print/8225",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "bras-robotise",

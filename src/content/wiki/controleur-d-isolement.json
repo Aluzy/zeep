@@ -15,31 +15,29 @@
     "S",
     "E"
   ],
-  "definition": "Appareil qui applique une tension continue élevée entre conducteurs et terre pour mesurer la résistance d'isolement. Un résultat trop faible signale un câble ou une machine à remplacer.",
-  "versionSimple": "Cet appareil vérifie que les gaines des fils isolent encore correctement, avant qu'un défaut ne devienne dangereux.",
+  "definition": "Appareil qui applique une tension continue connue, par exemple 500 V pour une installation en 230 V, entre deux éléments conducteurs, puis mesure le courant pour en déduire la résistance d'isolement, signe de la qualité de l'isolation. Réservé à un professionnel, le test se fait sur une installation hors tension et déconnectée.",
+  "versionSimple": "Cet appareil vérifie que les gaines des fils isolent encore bien. Un électricien s'en sert, par exemple, pour contrôler les câbles d'un vieux tableau avant qu'un défaut ne devienne dangereux.",
   "sources": [
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
-    },
-    {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Guide de la mesure d'isolement, Chauvin Arnoux (2010), hébergé par Éduscol STI",
+      "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/techniques/2537/2537-guide-de-la-mesure-disolement.pdf",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S4-3",
     "statut": "relu-ia"
   },
   "slug": "controleur-d-isolement",
   "related": [
+    "courant-continu",
+    "courant-de-fuite",
     "defaut-d-isolement",
     "electricien",
     "installation-electrique",
     "isolant-electrique",
-    "resistance-electrique"
+    "resistance-electrique",
+    "tension-electrique"
   ]
 }

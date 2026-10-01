@@ -15,18 +15,18 @@
     "L",
     "R"
   ],
-  "definition": "Règle selon laquelle un signal ne peut être reconstruit fidèlement que si la fréquence d'échantillonnage dépasse le double de sa fréquence maximale. En dessous, apparaissent des repliements irréversibles.",
-  "versionSimple": "Pour bien enregistrer un son, il faut le mesurer au moins deux fois plus vite que sa note la plus aiguë.",
+  "definition": "Résultat de théorie du signal selon lequel un signal dont les fréquences ne dépassent pas une valeur maximale peut, en théorie, être reconstitué sans distorsion à partir de ses échantillons si la fréquence d'échantillonnage vaut au moins le double de cette fréquence maximale.",
+  "versionSimple": "Pour bien enregistrer un son, il faut prendre des mesures au moins deux fois plus souvent que ne vibre le son le plus aigu qu'il contient.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 723-10-28 « Nyquist frequency »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/93f14ad8e095fed8c125727c00326887",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "theoreme-de-shannon",

@@ -15,23 +15,29 @@
   "domains": [
     "L"
   ],
-  "definition": "Porte logique dont la sortie est vraie lorsque ses deux entrées diffèrent. Elle réalise l'addition binaire sans retenue et sert au calcul des codes de contrôle d'erreur.",
-  "versionSimple": "Cette porte dit oui quand ses deux entrées ne sont pas d'accord entre elles.",
+  "definition": "Porte logique dont la sortie est vraie lorsque ses deux entrées sont différentes. Elle donne le chiffre de la somme de deux bits, sans la retenue, ce qui en fait un élément du demi-additionneur, circuit qui additionne deux nombres d'un bit.",
+  "versionSimple": "Cette porte dit « oui » quand ses deux entrées sont différentes, comme une lampe qui s'allume si l'on appuie sur un seul des deux boutons, mais pas sur les deux.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme d'enseignement de spécialité de numérique et sciences informatiques de première générale (arrêté du 17 janvier 2019, BO spécial n° 1 du 22 janvier 2019), rubrique « Représentation des données : types et valeurs de base »",
+      "url": "https://eduscol.education.fr/document/30007/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Eric Cariou (Université de Pau et des Pays de l'Adour), cours d'architecture des ordinateurs, « Circuits logiques »",
+      "url": "https://lab-sticc.univ-brest.fr/~ecariou/cours/archi/cours-3-circuits-logiques.pdf",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "porte-ou-exclusif",
   "related": [
     "algebre-de-boole",
+    "bit",
     "circuit-logique",
     "porte-logique",
     "systeme-binaire",

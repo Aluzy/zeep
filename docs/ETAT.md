@@ -7,12 +7,12 @@
 | Indicateur | Valeur |
 |---|---|
 | Fiches | 387 |
-| Définitions de 25 à 60 mots | 296/387 (76 %) |
+| Définitions de 25 à 60 mots | 298/387 (77 %) |
 | Version simple, notions vues avant le lycée | 29/29 (100 %) |
 | Version simple, toutes fiches | 211/387 (55 %) |
 | Avec niveau scolaire | 89/387 (23 %) |
-| Avec au moins une source précise (URL non racine) | 203/387 (52 %) |
-| Relues par un contrôleur indépendant | 154/387 (40 %) |
+| Avec au moins une source précise (URL non racine) | 233/387 (60 %) |
+| Relues par un contrôleur indépendant | 184/387 (48 %) |
 | Validées par Alexandre | 31/387 (8 %) |
 | Fiches secteur sans rappel de sécurité | 0 |
 
@@ -20,15 +20,15 @@
 
 | Règle | Fiches en défaut | Base tolérée |
 |---|---:|---:|
-| Définition hors 25-60 mots (`definition_longueur`) | 91 | 91 |
+| Définition hors 25-60 mots (`definition_longueur`) | 89 | 89 |
 | Balise HTML dans la définition (`definition_html`) | 0 | 0 |
 | Notion vue avant le lycée (C1-C4) sans version simple (`version_simple_manquante_avant_lycee`) | 0 | 0 |
-| Version simple hors 12-35 mots (`version_simple_longueur`) | 1 | 1 |
+| Version simple hors 12-35 mots (`version_simple_longueur`) | 0 | 0 |
 | Fiche liée au secteur sans rappel de sécurité (`securite_230v_absente`) | 0 | 0 |
 | Source sans URL (`source_sans_url`) | 0 | 0 |
-| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 104 | 104 |
-| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 38 | 38 |
-| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 111 | 111 |
+| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 66 | 66 |
+| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 0 | 0 |
+| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 81 | 81 |
 
 ## Backlog (ordre de priorité)
 
@@ -39,7 +39,7 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | `vs-avant-lycee` — Version simple manquante (notions vues avant le lycée) | 0 | — |
 | `securite` — Sécurité 230 V, HTML, signalements graves | 0 | — |
 | `niveaux` — TABLE des niveaux périmée (mapping_niveau.py) | 0 | — |
-| `reecriture` — Réécriture : définition, sources, version simple | 182 | `chute-de-tension`, `electrification`, `ligne-basse-tension`, `ligne-haute-tension`, `ligne-moyenne-tension`, `poste-de-transformation`, `reseau-de-distribution`, `reseau-de-transport` … |
+| `reecriture` — Réécriture : définition, sources, version simple | 152 | `chute-de-tension`, `electrification`, `ligne-basse-tension`, `ligne-haute-tension`, `ligne-moyenne-tension`, `poste-de-transformation`, `reseau-de-distribution`, `reseau-de-transport` … |
 | `creation` — Création : lexique attendu, puis termes de programme | 95 | `Admittance`, `Équations de Maxwell`, `Loi de Biot-Savart`, `Diagramme de Fresnel`, `Effet de peau`, `Interconnexion européenne`, `Courbe de charge`, `Sélectivité` … |
 
 ## Lots
@@ -76,6 +76,9 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | J5-S1 | Réécriture : sources précises de Batterie de traction | 2026-10-01 | termine | agent-controleur-J5-S1 | 0 / 1 |
 | J5-S2 | Réécriture : sources précises (ADEME, RTE, Enedis...) pour 13 fiches | 2026-10-01 | termine | agent-controleur-J5-S2 | 0 / 13 |
 | J5-S3 | Réécriture : sources précises (compteur Linky, délestage, heures creuses, puissance souscrite) | 2026-10-01 | termine | agent-controleur-J5-S3 | 0 / 4 |
+| J5-S4 | Réécriture : sources précises des fiches de sécurité électrique | 2026-10-01 | termine | agent-controleur-J5-S4 | 0 / 8 |
+| J5-S5 | Réécriture : sources précises à la place des pages d'accueil Éduscol | 2026-10-01 | termine | agent-controleur-J5-S5 | 0 / 14 |
+| J5-S6 | Réécriture : sources précises à la place des sources « officiel » | 2026-10-01 | termine | agent-controleur-J5-S6 | 0 / 16 |
 | chantier-A-4-5 | Date, temps de lecture et sommaire de blog | 2026-09-13 | termine | aucun | 0 / 0 |
 | chantier-A-6 | Liens contextuels dans les définitions du wiki | 2026-09-13 | termine | aucun | 0 / 0 |
 
@@ -165,6 +168,16 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J5-S3** — Accepter des sources Enedis (type reference) pour délestage, faute de page RTE précise ouverte ?
 - **J5-S3** — Compteur Linky : la mention « pilotage du réseau » n'est appuyée qu'indirectement ; la garder ou la reformuler ?
 - **J5-S3** — Puissance souscrite : « se paie par un abonnement plus élevé » n'est confirmé par aucune page ouverte ; garder ou retirer ?
+- **J5-S4** — Accepter Éduscol STI (guides de la mesure d'isolement et de la protection différentielle) comme sources de type reference, hors liste de conversion décidée.
+- **J5-S4** — Retrait du synonyme « interrupteur differentiel » de disjoncteur-differentiel : la source Éduscol distingue les deux appareils.
+- **J5-S4** — Définitions modifiées alors que la mission ne demandait que les sources : détails non confirmés retirés (voir points d'attention).
+- **J5-S5** — Accepter des miroirs snes.edu des programmes (STI2D, physique-chimie de première) comme sources « programme », faute d'URL Éduscol/BO ouverte pour ces textes.
+- **J5-S5** — Accepter des sources non institutionnelles de type reference (Futura-Sciences, Britannica, Energy Education, HPC, Royal Institution, Encyclopédie de l'énergie).
+- **J5-S5** — Définitions réécrites alors que la mission ne demandait que les sources (11 fiches) : détails non confirmés par une source ouverte retirés.
+- **J5-S5** — bit et algebre-de-boole : le programme de NSI de première (1G) les cite, mais leur niveau scolaire reste vide ; à trancher.
+- **J5-S5** — Les exemples du quotidien des versions simples (thé qui refroidit, feu tricolore, valve de vélo, jouets à piles, etc.) sont des comparaisons courantes, non sourcées une à une.
+- **J5-S6** — Le niveau scolaire reste « aucun » pour systeme-binaire, systeme-hexadecimal, table-de-verite et porte-ou-exclusif, alors que les programmes NSI de première et STI2D ouverts les citent : faut-il le renseigner dans un lot dédié (mapping_niveau) ?
+- **J5-S6** — Les synonymes « Go », « Mo » et « kilo octet » (octet), « mix electrique » (mix-energetique), « resolution » (quantification) et « regime permanent » (regime-transitoire) ont été retirés parce qu'ils ne sont pas des formes équivalentes : faut-il des fiches dédiées (mix électrique, régime permanent, kilo-octet) ?
 
 ## Signalements de fiches douteuses
 

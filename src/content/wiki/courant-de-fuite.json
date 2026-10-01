@@ -14,29 +14,32 @@
     "E",
     "U"
   ],
-  "definition": "Courant qui quitte le circuit prévu pour rejoindre la terre à travers un défaut d'isolement ou les filtres d'un appareil. Au-delà d'un seuil, il déclenche le dispositif différentiel.",
-  "versionSimple": "Une petite partie du courant peut s'échapper par un fil abîmé. Un appareil de protection le repère et coupe tout.",
+  "definition": "Courant qui traverse l'isolant d'un circuit pour rejoindre les masses métalliques ou la terre. Faible et stable avec un isolant en bon état, il augmente quand l'isolant se dégrade et devient anormal en cas de défaut d'isolement. Un courant de fuite élevé est dangereux : seul un électricien intervient sur l'installation.",
+  "versionSimple": "Même en bon état, la gaine d'un fil de lampe laisse passer un tout petit courant. Si elle s'abîme, cette fuite grandit et devient dangereuse : on n'y touche pas, on prévient un adulte.",
   "sources": [
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
+      "titre": "INRS — Accidents d'origine électrique",
+      "url": "https://www.inrs.fr/risques/electriques/accidents-origine-electrique.html",
+      "type": "reference"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Guide de la mesure d'isolement, Chauvin Arnoux (2010), hébergé par Éduscol STI",
+      "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/techniques/2537/2537-guide-de-la-mesure-disolement.pdf",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S4-3",
     "statut": "relu-ia"
   },
   "slug": "courant-de-fuite",
   "related": [
+    "circuit-electrique",
+    "controleur-d-isolement",
     "defaut-d-isolement",
     "disjoncteur-differentiel",
+    "electricien",
     "isolant-electrique",
     "mise-a-la-terre"
   ]

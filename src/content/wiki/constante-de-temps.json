@@ -13,31 +13,33 @@
   "domains": [
     "K"
   ],
-  "definition": "Durée caractéristique de la charge ou de la décharge d'un circuit contenant un condensateur ou une bobine. Au bout de cinq constantes de temps, le régime est considéré comme établi.",
-  "versionSimple": "C'est le temps que met un condensateur à se remplir ou à se vider en grande partie. Il dépend des composants choisis.",
+  "definition": "Durée caractéristique de la charge ou de la décharge d'un condensateur dans un circuit RC : au bout de cette durée, l'écart entre la tension aux bornes du condensateur et sa valeur finale a été divisé par le nombre e, environ 2,7.",
+  "versionSimple": "C'est le temps que met un condensateur à se remplir ou à se vider en grande partie, comme le temps qu'il faut à un thé chaud pour refroidir. Il dépend des composants choisis.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme de physique-chimie de terminale générale, enseignement de spécialité, « Modèle du circuit RC série »",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/Programme%20de%20physique-chimie%20de%20terminale%20g%C3%A9n%C3%A9rale-253485.pdf",
+      "type": "programme"
     },
     {
-      "titre": "Programme de physique-chimie de terminale générale, enseignement de spécialité (BO spécial n° 8 du 25 juillet 2019), « Modèle du circuit RC série », p. 20",
-      "url": "https://www.education.gouv.fr/sites/default/files/document/Programme%20de%20physique-chimie%20de%20terminale%20g%C3%A9n%C3%A9rale-253485.pdf#page=20",
-      "type": "programme"
+      "titre": "IEC 60050 (Electropedia), IEV 103-05-26 « time constant »",
+      "url": "https://www.electropedia.org/iev/iev.nsf/IEVref_xref/en:103-05-26",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-27",
-    "par": "agent-controleur-J4-L5",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5-4",
     "statut": "relu-ia"
   },
   "slug": "constante-de-temps",
   "related": [
+    "bobine-inductance",
     "circuit-rc",
     "circuit-rl",
     "condensateur",
-    "regime-transitoire"
+    "regime-transitoire",
+    "tension-electrique"
   ],
   "niveau": {
     "premiereApparition": "TG",
