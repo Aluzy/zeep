@@ -10,6 +10,7 @@
   "merged": false,
   "definition": "Unité d'énergie électrique correspondant à la consommation d'une puissance d'un kilowatt pendant une heure, utilisée pour établir la facture d'électricité.",
   "related": [
+    "batterie-de-traction",
     "compteur-electrique",
     "consommation-electrique",
     "electricite",

@@ -12,18 +12,18 @@
   "domains": [
     "X"
   ],
-  "definition": "Parcours allant des premières observations d'électricité statique aux réseaux mondiaux actuels, en passant par la pile de Volta, l'induction de Faraday et l'éclairage urbain de la fin du dix-neuvième siècle.",
-  "versionSimple": "L'électricité a d'abord été une curiosité, avant de devenir en deux siècles ce qui fait fonctionner presque tout autour de nous.",
+  "definition": "Parcours allant des premières observations d'électricité statique, comme l'ambre frotté qui attire de petits objets, aux réseaux électriques actuels, en passant par la pile de Volta, l'induction électromagnétique découverte par Faraday et la lampe à incandescence de la fin du dix-neuvième siècle.",
+  "versionSimple": "Il y a très longtemps, on a remarqué que l'ambre frotté attire de petits objets ; en deux siècles, l'électricité est devenue ce qui allume les lampes de nos maisons.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Encyclopédie de l'énergie, N. Hadjsaïd et J.-C. Sabonnadière, « Histoire de l'électricité : de Thalès à la consommation du 21e siècle » (2015)",
+      "url": "https://encyclopedie-energie.org/wp-content/uploads/2018/09/art026_Hadjsaid-Nourredine_Sabonnadiere-JeanClaude_Histoire-electricite-de-Thales-a-consommation-21e-siecle.pdf",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "histoire-de-l-electricite",
@@ -31,7 +31,9 @@
     "eclairage",
     "electricite",
     "electrification",
+    "electrostatique",
     "induction-electromagnetique",
-    "pile-electrique"
+    "pile-electrique",
+    "reseau-electrique"
   ]
 }

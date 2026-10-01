@@ -15,24 +15,30 @@
   "domains": [
     "N"
   ],
-  "definition": "Écart d'énergie que doit franchir un électron pour devenir libre dans un matériau. Très grand dans un isolant, nul dans un métal, il est modéré dans un semi-conducteur, ce qui rend celui-ci commandable.",
-  "versionSimple": "C'est la marche que doit franchir un électron pour se libérer. Trop haute, le matériau isole ; trop basse, il conduit toujours.",
+  "definition": "Écart d'énergie qu'un électron doit franchir pour devenir libre de se déplacer dans un matériau. Grand dans un isolant, négligeable ou nul dans un métal, il est intermédiaire dans un semi-conducteur.",
+  "versionSimple": "C'est comme une marche d'escalier qu'un électron doit monter pour pouvoir se déplacer : très haute dans le plastique, qui isole, et presque absente dans le cuivre des fils, qui conduit.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 113-06-16 « gap energy »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/690670e98b0338ccc1257e6e00293294",
+      "type": "reference"
+    },
+    {
+      "titre": "Futura-Sciences, définition « Gap »",
+      "url": "https://www.futura-sciences.com/sciences/definitions/physique-gap-5120/",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "bande-interdite",
   "related": [
     "conducteur-electrique",
     "effet-photoelectrique",
+    "electron",
     "isolant-electrique",
     "semi-conducteur",
     "silicium"

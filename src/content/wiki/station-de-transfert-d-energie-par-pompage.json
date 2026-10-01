@@ -15,23 +15,18 @@
     "D",
     "B"
   ],
-  "definition": "Installation qui remonte de l'eau dans un bassin supérieur quand l'électricité est abondante, puis la turbine quand la demande augmente. C'est le principal moyen de stockage à grande échelle.",
+  "definition": "Installation qui remonte de l'eau dans un bassin supérieur quand l'électricité est abondante, puis la turbine quand la demande augmente. C'est le moyen de stockage de l'électricité à grande échelle le plus mature.",
   "versionSimple": "On utilise l'électricité en trop pour remonter de l'eau dans un lac. Quand il en faut, on la laisse redescendre dans une turbine.",
   "sources": [
     {
-      "titre": "RTE — le réseau de transport d'électricité",
-      "url": "https://www.rte-france.com/",
-      "type": "officiel"
-    },
-    {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "RTE — Si on pouvait stocker l'électricité à grande échelle ?",
+      "url": "https://www.rte-france.com/bases-electricite/systeme-electrique/stocker-electricite-grande-echelle",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2",
     "statut": "relu-ia"
   },
   "slug": "station-de-transfert-d-energie-par-pompage",

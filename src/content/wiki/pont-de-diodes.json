@@ -14,23 +14,23 @@
   "domains": [
     "M"
   ],
-  "definition": "Assemblage de quatre diodes qui redresse les deux alternances d'une tension alternative. Associé à un condensateur de filtrage, il constitue l'étage d'entrée de nombreuses alimentations.",
-  "versionSimple": "Ce montage transforme un courant qui change de sens en un courant qui va toujours dans le même sens.",
+  "definition": "Montage redresseur formé de quatre diodes, aussi appelé pont de Graetz. Alimenté par une tension alternative, il fait circuler le courant dans la charge toujours dans le même sens, pendant les deux alternances, c'est-à-dire que la tension d'entrée soit positive ou négative.",
+  "versionSimple": "Ce montage de quatre diodes reçoit un courant qui change sans cesse de sens et le fait circuler toujours dans le même sens, comme une rue à sens unique.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IUT de Caen, Mesures physiques 1re année, TD d'électronique « Redressement », § 2.2 « Montage en pont (pont de Graetz) »",
+      "url": "https://langloisp.users.greyc.fr/electronique/td/redres.pdf",
+      "type": "manuel"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "IEC 60050 (Electropedia), IEV 551-15-14 « bridge connection »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/cec9dcd5367b5329c12571ef004ff66d",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "pont-de-diodes",

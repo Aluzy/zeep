@@ -17,23 +17,23 @@
     "E",
     "X"
   ],
-  "definition": "Reconnaissance par l'employeur de la capacité d'une personne à effectuer en sécurité des travaux d'ordre électrique. Elle repose sur une formation, un avis médical et un symbole précisant les opérations autorisées.",
-  "versionSimple": "Pour travailler sur des installations électriques, il faut avoir été formé et reconnu capable de le faire sans danger.",
+  "definition": "Reconnaissance par l'employeur de la capacité d'une personne à effectuer en sécurité des travaux d'ordre électrique. Elle repose sur une formation, la vérification des aptitudes, notamment médicales, et des symboles précisant les opérations autorisées.",
+  "versionSimple": "Comme un permis de conduire, l'habilitation montre qu'un salarié a été formé et que son employeur l'autorise à faire certains travaux électriques.",
   "sources": [
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
+      "titre": "INRS — Journées techniques Électricité : la démarche d'habilitation",
+      "url": "https://inrs.fr/dam/jcr:685bc917-afe0-4c3e-8c86-4bc78b334ea4/JT%20Elec%20-%2009%20Lombard%20Demarche%20habilitation.pdf",
+      "type": "reference"
     },
     {
-      "titre": "Légifrance — code du travail, risque électrique",
-      "url": "https://www.legifrance.gouv.fr/",
-      "type": "officiel"
+      "titre": "INRS — Prévention du risque électrique",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S4",
     "statut": "relu-ia"
   },
   "slug": "habilitation-electrique",

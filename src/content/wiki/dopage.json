@@ -15,22 +15,28 @@
   "domains": [
     "N"
   ],
-  "definition": "Introduction contrôlée d'impuretés dans un cristal semi-conducteur afin d'y ajouter des électrons libres ou des trous. C'est le dopage qui rend le silicium exploitable en électronique.",
-  "versionSimple": "On ajoute volontairement quelques atomes différents dans le silicium pour qu'il conduise mieux le courant.",
+  "definition": "Introduction volontaire d'impuretés dans un cristal semi-conducteur afin de modifier sa conductivité électrique, en y ajoutant des électrons libres (dopage N) ou des trous (dopage P). Associer une région P et une région N forme une jonction PN.",
+  "versionSimple": "On ajoute volontairement quelques atomes d'un autre élément dans le silicium pour changer la façon dont il conduit le courant, comme une pincée de sel change le goût d'une soupe.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Encyclopaedia Britannica, « Dopant »",
+      "url": "https://www.britannica.com/print/article/169306",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC 60050 (Electropedia), IEV 521-02-04 « impurity »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/392df7f5737c54bec125727c00311fa3",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "dopage",
   "related": [
+    "conductivite-electrique",
     "electron",
     "jonction-pn",
     "semi-conducteur",

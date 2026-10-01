@@ -11,6 +11,7 @@
   "definition": "Grandeur physique qui caractérise l'aptitude d'un matériau à laisser passer le courant électrique sous l'effet d'une tension : plus elle est élevée, plus le matériau conduit facilement le courant. Elle s'exprime en siemens par mètre et vaut l'inverse de la résistivité.",
   "related": [
     "courant-electrique",
+    "dopage",
     "resistivite",
     "siemens",
     "tension-electrique",

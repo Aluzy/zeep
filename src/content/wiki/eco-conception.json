@@ -17,14 +17,14 @@
   "versionSimple": "On réfléchit dès le début à fabriquer un objet qui abîme moins la planète, et qui se répare facilement.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "ADEME — Intégrez l'écoconception dans vos activités industrielles",
+      "url": "https://agirpourlatransition.ademe.fr/entreprises/ecoconception",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2",
     "statut": "relu-ia"
   },
   "slug": "eco-conception",

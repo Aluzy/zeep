@@ -19,19 +19,14 @@
   "versionSimple": "Produire de l'électricité rejette plus ou moins de gaz selon la source utilisée. On mesure cela pour chaque kilowattheure.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
-    },
-    {
-      "titre": "RTE — le réseau de transport d'électricité",
-      "url": "https://www.rte-france.com/",
-      "type": "officiel"
+      "titre": "RTE — Bilan électrique 2024 : émissions de gaz à effet de serre",
+      "url": "https://analysesetdonnees.rte-france.com/bilan-electrique-2024/emissions",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2",
     "statut": "relu-ia"
   },
   "slug": "empreinte-carbone-de-l-electricite",

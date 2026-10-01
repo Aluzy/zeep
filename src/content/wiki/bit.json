@@ -14,18 +14,18 @@
   "domains": [
     "L"
   ],
-  "definition": "Plus petite quantité d'information manipulée par un système numérique, qui ne peut valoir que zéro ou un. Un bit correspond physiquement à une tension basse ou haute sur une piste de circuit.",
-  "versionSimple": "Un bit est la plus petite information possible : zéro ou un. Tout ce que fait un ordinateur est fabriqué avec des bits.",
+  "definition": "Plus petite unité d'information manipulée par une machine informatique, qui ne peut valoir que 0 ou 1. Les nombres entiers ou les caractères d'un texte y sont représentés par des suites de bits.",
+  "versionSimple": "Un bit est la plus petite information possible : 0 ou 1, comme une lampe éteinte ou allumée. Les photos et la musique d'un téléphone sont enregistrées avec énormément de bits.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme de numérique et sciences informatiques de première générale, « Représentation des données : types et valeurs de base »",
+      "url": "https://eduscol.education.fr/document/30007/download",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "bit",
@@ -33,6 +33,7 @@
     "algebre-de-boole",
     "circuit-numerique",
     "octet",
+    "porte-ou-exclusif",
     "quantification",
     "registre-a-decalage",
     "signal-numerique",

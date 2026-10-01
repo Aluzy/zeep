@@ -13,6 +13,7 @@
     "amperemetre",
     "circuit-ferme",
     "circuit-ouvert",
+    "courant-de-fuite",
     "courant-electrique",
     "court-circuit",
     "dipole",

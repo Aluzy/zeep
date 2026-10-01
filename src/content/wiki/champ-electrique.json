@@ -14,7 +14,8 @@
     "dielectrique",
     "electromagnetisme",
     "electrostatique",
-    "loi-de-coulomb"
+    "loi-de-coulomb",
+    "trou-electronique"
   ],
   "pillar": false,
   "illustration": null,

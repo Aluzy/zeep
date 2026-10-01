@@ -14,18 +14,23 @@
     "E",
     "U"
   ],
-  "definition": "Dégradation de l'isolant séparant un conducteur actif des masses métalliques ou de la terre. Il met les carcasses sous tension et constitue la première cause d'électrisation dans les installations vieillissantes.",
-  "versionSimple": "Quand la gaine d'un fil est abîmée, l'électricité peut atteindre la carcasse d'un appareil et devenir dangereuse au toucher.",
+  "definition": "Dégradation de l'isolant qui sépare un conducteur actif des masses métalliques ou de la terre. Elle provoque une circulation anormale de courant vers la masse ou la terre et peut mettre une carcasse sous tension, d'où un risque d'électrisation au contact de cette pièce métallique. Seul un électricien recherche et répare ce défaut.",
+  "versionSimple": "Si le fil d'un grille-pain est abîmé, le courant peut atteindre sa carcasse métallique et devenir dangereux au toucher. On n'y touche pas et on prévient un adulte.",
   "sources": [
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
+      "titre": "INRS — Accidents d'origine électrique",
+      "url": "https://www.inrs.fr/risques/electriques/accidents-origine-electrique.html",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS — Risques liés à l'électricité",
+      "url": "https://www.inrs.fr/risques/electriques/risques-electricite.html",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S4-3",
     "statut": "relu-ia"
   },
   "slug": "defaut-d-isolement",
@@ -33,9 +38,12 @@
     "controleur-d-isolement",
     "courant-de-fuite",
     "disjoncteur-differentiel",
+    "electricien",
+    "electrisation",
     "isolant-electrique",
     "mise-a-la-terre",
     "prise-de-terre",
-    "regime-de-neutre"
+    "regime-de-neutre",
+    "tension-electrique"
   ]
 }

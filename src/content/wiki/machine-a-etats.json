@@ -8,7 +8,6 @@
   "synonymes": [
     "FSM",
     "automate a etats finis",
-    "grafcet",
     "machine a etats"
   ],
   "term": "Machine à états",
@@ -16,24 +15,35 @@
     "L",
     "O"
   ],
-  "definition": "Modèle de comportement dans lequel un système passe d'un état à un autre selon les événements reçus. Il structure la programmation des automatismes et la conception des circuits séquentiels.",
-  "versionSimple": "On décrit une machine par les situations où elle peut se trouver et par ce qui la fait passer de l'une à l'autre.",
+  "definition": "Modèle de comportement dans lequel un système passe d'un état à un autre selon les événements reçus, chaque transition étant décrite par un graphe ou une table. Il sert à décrire le fonctionnement des automatismes et des circuits logiques à mémoire.",
+  "versionSimple": "On décrit une machine par les situations où elle peut être et ce qui la fait changer, comme un feu qui passe du vert à l'orange puis au rouge.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 351-53-06 « state graph »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/f124e1bdd76bca6ac1257b6d004347c6",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC 60050 (Electropedia), IEV 351-53-02 « state transition table »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/46ab73796eb80bfdc1257b6d0043472b",
+      "type": "reference"
+    },
+    {
+      "titre": "Arrêté fixant le programme des enseignements de spécialité des classes de première et terminale conduisant au baccalauréat technologique série STI2D (texte non daté, copie snes.edu), § 3.4.2 « Description et simulation comportementale de l'information »",
+      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf",
+      "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5-3",
     "statut": "relu-ia"
   },
   "slug": "machine-a-etats",
   "related": [
     "asservissement",
     "automate-programmable",
+    "bascule-flip-flop",
     "circuit-logique",
     "fpga",
     "microcontroleur",

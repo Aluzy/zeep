@@ -13,23 +13,28 @@
   "domains": [
     "N"
   ],
-  "definition": "Zone de contact entre une région de semi-conducteur dopée positivement et une région dopée négativement. Elle ne laisse passer le courant que dans un sens et constitue le cœur de la diode et du transistor.",
-  "versionSimple": "En collant deux morceaux de silicium traités différemment, on obtient un passage à sens unique pour le courant.",
+  "definition": "Zone de transition entre une région de semi-conducteur dopée P et une région dopée N. Elle laisse passer facilement le courant dans un sens et très peu dans l'autre : c'est le principe de base de la diode.",
+  "versionSimple": "C'est la frontière entre deux parties d'un matériau préparées différemment : le courant y passe facilement dans un sens, presque pas dans l'autre, comme l'air dans la valve d'un pneu de vélo.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 521-02-72 « junction »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/977896b8fdbaa993c125727c00312274",
+      "type": "reference"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "IEC 60050 (Electropedia), IEV 521-05-03 « forward direction (of a PN junction) »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/dd9f2c6cfb7c5cccc125727c003126b4",
+      "type": "reference"
+    },
+    {
+      "titre": "Energy Education (Université de Calgary), « P-n junction »",
+      "url": "https://energyeducation.ca/encyclopedia/P-n_junction",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "jonction-pn",

@@ -13,17 +13,22 @@
     "L"
   ],
   "definition": "Tableau qui énumère toutes les combinaisons possibles des entrées d'un circuit logique et la sortie correspondante. Elle décrit complètement le comportement d'une fonction sans supposer sa réalisation.",
-  "versionSimple": "C'est une liste de tous les cas possibles et de la réponse du circuit pour chacun d'eux.",
+  "versionSimple": "C'est un tableau qui donne la réponse d'un circuit dans tous les cas possibles, par exemple si une lampe s'allume pour chaque position de deux interrupteurs.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme d'enseignement de spécialité de numérique et sciences informatiques de première générale (arrêté du 17 janvier 2019, BO spécial n° 1 du 22 janvier 2019), « Dresser la table d'une expression booléenne »",
+      "url": "https://eduscol.education.fr/document/30007/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Eric Cariou (Université de Pau et des Pays de l'Adour), cours d'architecture des ordinateurs, « Circuits logiques »",
+      "url": "https://lab-sticc.univ-brest.fr/~ecariou/cours/archi/cours-3-circuits-logiques.pdf",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "table-de-verite",

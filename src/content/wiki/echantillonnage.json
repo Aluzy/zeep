@@ -15,23 +15,23 @@
     "L",
     "S"
   ],
-  "definition": "Opération qui relève la valeur d'un signal analogique à intervalles réguliers pour le convertir en nombres. Sa fréquence détermine la fidélité de la numérisation.",
+  "definition": "Opération qui relève la valeur d'un signal analogique à intervalles de temps réguliers pour la convertir en nombres. Le nombre de relevés par seconde, appelé fréquence d'échantillonnage, détermine la fidélité de la numérisation.",
   "versionSimple": "Pour enregistrer un son, on mesure sa valeur des milliers de fois par seconde. Chaque mesure est un échantillon.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 704-23-02 « sampling (of a signal) »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/d368e0fa1011c472c1257245003c6d7e",
+      "type": "reference"
     },
     {
-      "titre": "Programme STI2D, enseignement technologique transversal (arrêté du 17 janvier 2019, modifié le 19 juillet 2019), « Conversion Analogique/Numérique (CAN) », p. 26",
-      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf#page=26",
+      "titre": "Arrêté fixant le programme des enseignements de spécialité des classes de première et terminale conduisant au baccalauréat technologique série STI2D (texte non daté, copie snes.edu), § 3.4.1 (signal « échantillonné »)",
+      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf",
       "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-27",
-    "par": "agent-controleur-J4-L5",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5-2",
     "statut": "relu-ia"
   },
   "slug": "echantillonnage",

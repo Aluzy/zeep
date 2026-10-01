@@ -18,19 +18,19 @@
   "versionSimple": "C'est le fait de fabriquer exprès un appareil qui tombera en panne trop tôt. C'est interdit en France.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "Ministère de la Transition écologique — Durée de vie des produits",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/duree-vie-produits",
+      "type": "reference"
     },
     {
-      "titre": "Service-public.fr — énergie et logement",
-      "url": "https://www.service-public.fr/",
-      "type": "officiel"
+      "titre": "Ministère de l'Économie — Tout savoir sur l'indice de réparabilité",
+      "url": "https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/tout-savoir-sur-lindice-de-reparabilite",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2",
     "statut": "relu-ia"
   },
   "slug": "obsolescence-programmee",

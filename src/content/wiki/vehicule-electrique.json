@@ -14,18 +14,23 @@
   "domains": [
     "G"
   ],
-  "definition": "Véhicule propulsé par un moteur électrique alimenté par une batterie de traction rechargeable. Il n'émet aucun polluant à l'usage et récupère une partie de l'énergie lors des freinages.",
+  "definition": "Véhicule propulsé par un moteur électrique alimenté par une batterie de traction rechargeable. Il n'émet aucun polluant atmosphérique à l'échappement et récupère une partie de l'énergie lors des freinages.",
   "versionSimple": "Cette voiture avance grâce à un moteur électrique et à une grosse batterie que l'on recharge sur une borne.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "Ministère de la Transition écologique — Vrai-Faux : voitures électriques",
+      "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/03102025%20Vrai-Faux%20v%C3%A9hicules%20%C3%A9lectriques%20Vdef_0.pdf",
+      "type": "reference"
+    },
+    {
+      "titre": "Enedis — Guide pratique pour recharger sa voiture électrique",
+      "url": "https://www.enedis.fr/sites/default/files/documents/pdf/guide-pratique-pour-recharger-sa-voiture-electrique.pdf",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2",
     "statut": "relu-ia"
   },
   "slug": "vehicule-electrique",

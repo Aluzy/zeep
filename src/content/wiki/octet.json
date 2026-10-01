@@ -6,28 +6,36 @@
   "pillar": false,
   "illustration": null,
   "synonymes": [
-    "Go",
-    "Mo",
     "byte",
-    "kilo octet",
+    "o",
     "octet"
   ],
   "term": "Octet",
   "domains": [
     "L"
   ],
-  "definition": "Groupe de huit bits, unité de base de la mémoire informatique. Un octet permet de coder 256 valeurs différentes, ce qui suffit à représenter un caractère de texte.",
-  "versionSimple": "Un octet est un paquet de huit bits. Les mémoires et les fichiers se comptent en milliers ou en millions d'octets.",
+  "definition": "Groupe de huit bits traité comme un tout par un système numérique. Il permet de coder 256 valeurs différentes et sert d'unité pour exprimer la taille des fichiers et la capacité des mémoires, avec des multiples comme le kilo-octet ou le gigaoctet.",
+  "versionSimple": "Un octet est un paquet de huit bits. La taille d'une photo ou d'un jeu sur une tablette se compte en millions ou en milliards d'octets.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 171-02-12 « byte / octet »",
+      "url": "https://electropedia.org/iev/iev.nsf/IEVref_xref/en:171-02-12",
+      "type": "reference"
+    },
+    {
+      "titre": "Office québécois de la langue française, Grand dictionnaire terminologique, fiche « octet »",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8387944/octet",
+      "type": "reference"
+    },
+    {
+      "titre": "Encyclopédie Larousse, article « octet »",
+      "url": "https://www.larousse.fr/encyclopedie/divers/octet/187782",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "octet",

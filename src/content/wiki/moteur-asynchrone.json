@@ -14,23 +14,23 @@
   "domains": [
     "F"
   ],
-  "definition": "Moteur alimenté en triphasé dont le rotor tourne légèrement moins vite que le champ magnétique tournant du stator. Robuste et sans balais, il équipe la grande majorité des machines industrielles.",
-  "versionSimple": "C'est le moteur le plus courant dans les usines. Il est solide, simple, et fonctionne avec du courant triphasé.",
+  "definition": "Moteur à courant alternatif, monophasé ou triphasé, dont la partie tournante, le rotor, tourne moins vite que le champ magnétique tournant créé par la partie fixe, le stator. Robuste et simple d'entretien, sa version triphasée à cage est la plus utilisée dans l'industrie.",
+  "versionSimple": "C'est l'un des moteurs les plus utilisés dans les usines. Solide et simple à entretenir, il fait tourner par exemple des pompes ou de grands ventilateurs.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 411-31-09 « asynchronous machine »",
+      "url": "https://electropedia.org/iev/iev.nsf/IEVref_xref/en:411-31-09",
+      "type": "reference"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "Schneider Electric, Cahier technique n° 207 « Les moteurs électriques… pour mieux les piloter et les protéger » (hébergé par Éduscol STI)",
+      "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/techniques/690/690-ct207-moteurs-elec.pdf",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5",
     "statut": "relu-ia"
   },
   "slug": "moteur-asynchrone",
@@ -38,6 +38,8 @@
     "champ-magnetique",
     "contacteur",
     "convertisseur-de-frequence",
+    "courant-alternatif",
+    "monophase",
     "moteur-electrique",
     "moteur-synchrone",
     "triphase"

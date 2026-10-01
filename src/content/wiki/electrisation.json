@@ -12,26 +12,34 @@
   "domains": [
     "E"
   ],
-  "definition": "Passage d'un courant électrique à travers le corps humain, provoquant brûlures, contractions musculaires ou troubles cardiaques. Sa gravité dépend de l'intensité, du trajet et de la durée du contact.",
-  "versionSimple": "C'est ce qui arrive quand le courant traverse le corps. Même une faible quantité peut faire très mal et devenir dangereuse.",
+  "definition": "Passage d'un courant électrique à travers le corps humain, qui provoque des blessures plus ou moins graves, notamment une tétanisation (contraction involontaire des muscles) ou une fibrillation ventriculaire, battements désordonnés du cœur pouvant conduire à son arrêt. La gravité dépend notamment de l'intensité, du trajet et de la durée du passage du courant. Seul un électricien intervient sur une installation.",
+  "versionSimple": "Si l'on touche un fil abîmé d'un appareil branché, le courant peut traverser le corps : c'est l'électrisation. C'est dangereux, alors on prévient un adulte au lieu d'y toucher.",
   "sources": [
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
+      "titre": "INRS — Accidents d'origine électrique",
+      "url": "https://www.inrs.fr/risques/electriques/accidents-origine-electrique.html",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS — Risques liés à l'électricité",
+      "url": "https://www.inrs.fr/risques/electriques/risques-electricite.html",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S4-3",
     "statut": "relu-ia"
   },
   "slug": "electrisation",
   "related": [
     "courant-electrique",
+    "defaut-d-isolement",
     "disjoncteur-differentiel",
+    "electricien",
     "electrocution",
     "habilitation-electrique",
+    "intensite-electrique",
     "mise-a-la-terre",
     "phase-electrique",
     "tres-basse-tension-de-securite"

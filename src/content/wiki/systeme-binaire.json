@@ -14,18 +14,28 @@
   "domains": [
     "L"
   ],
-  "definition": "Numération en base deux n'utilisant que les chiffres zéro et un. C'est la seule représentation directement manipulable par les circuits logiques, dont les composants n'ont que deux états stables.",
-  "versionSimple": "Au lieu de compter avec dix chiffres, les machines comptent avec deux seulement : zéro et un.",
+  "definition": "Système de numération en base deux, qui n'utilise que les chiffres zéro et un, chacun appelé bit. Les circuits numériques l'emploient parce que ces deux chiffres se représentent facilement par deux états électriques, comme l'absence ou la présence d'un courant.",
+  "versionSimple": "Au lieu de compter avec dix chiffres comme nous, un ordinateur ou un téléphone compte avec deux seulement : zéro et un.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "Programme d'enseignement de spécialité de numérique et sciences informatiques de première générale (arrêté du 17 janvier 2019, BO spécial n° 1 du 22 janvier 2019), rubrique « Représentation des données : types et valeurs de base »",
+      "url": "https://eduscol.education.fr/document/30007/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Programme d'innovation technologique et d'ingénierie et développement durable de première et d'ingénierie, innovation et développement durable de terminale STI2D (Éduscol), § 2.4.3 « Encodage de l'information : binaire, hexadécimal, ASCII »",
+      "url": "https://eduscol.education.fr/document/24916/download",
+      "type": "programme"
+    },
+    {
+      "titre": "Eric Cariou (Université de Pau et des Pays de l'Adour), cours d'architecture des ordinateurs, « Codage des nombres »",
+      "url": "https://lab-sticc.univ-brest.fr/~ecariou/cours/archi/cours-1-codage.pdf",
+      "type": "manuel"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "systeme-binaire",

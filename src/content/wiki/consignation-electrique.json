@@ -16,22 +16,23 @@
     "E",
     "F"
   ],
-  "definition": "Procédure en quatre temps — séparer, condamner, vérifier l'absence de tension, mettre à la terre — qui garantit qu'une installation ne peut être remise sous tension pendant une intervention.",
-  "versionSimple": "Avant de travailler, on coupe le courant, on empêche qu'il soit rallumé par erreur, et on vérifie qu'il n'y en a vraiment plus.",
+  "definition": "Procédure décrite par la norme NF C 18-510 qui précède un travail hors tension : séparer l'installation de toute source d'énergie électrique, condamner les organes de séparation ouverts, identifier la partie concernée, vérifier l'absence de tension, puis mettre à la terre et en court-circuit. Elle est confiée à une personne habilitée.",
+  "versionSimple": "Avant de réparer l'installation d'une maison, un électricien coupe l'alimentation, bloque l'interrupteur ouvert pour que personne ne le rallume, puis vérifie qu'il n'y a plus de tension. On ne le fait pas soi-même.",
   "sources": [
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
+      "titre": "INRS — Prévention du risque électrique",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S4",
     "statut": "relu-ia"
   },
   "slug": "consignation-electrique",
   "related": [
+    "court-circuit",
     "electricien",
     "habilitation-electrique",
     "mise-a-la-terre",

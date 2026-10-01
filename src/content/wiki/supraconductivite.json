@@ -14,24 +14,36 @@
     "N",
     "A"
   ],
-  "definition": "État de certains matériaux refroidis sous une température critique, dans lequel la résistance électrique disparaît totalement. Il permet des électroaimants très puissants, au prix d'une réfrigération coûteuse.",
-  "versionSimple": "Refroidis très fort, certains matériaux laissent passer le courant sans aucune perte. On s'en sert pour faire des aimants très puissants.",
+  "definition": "Propriété de certains matériaux qui, dans des conditions favorables, notamment sous une température dite critique, ne présentent plus aucune résistance au passage d'un courant continu et expulsent le champ magnétique. Elle sert par exemple à réaliser des bobines produisant des champs magnétiques intenses.",
+  "versionSimple": "Refroidis très fort, certains matériaux laissent passer le courant sans résistance. On s'en sert dans certains appareils d'IRM, qui font des images de l'intérieur du corps.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
+      "titre": "IEC 60050 (Electropedia), IEV 815-20-02 « superconductivity »",
+      "url": "https://electropedia.org/iev/iev.nsf/IEVref_xref/en:815-20-02",
+      "type": "reference"
+    },
+    {
+      "titre": "IEC 60050 (Electropedia), IEV 815-20-10 « critical temperature »",
+      "url": "https://electropedia.org/iev/iev.nsf/IEVref_xref/en:815-20-10",
+      "type": "reference"
+    },
+    {
+      "titre": "CEA, Clefs CEA n° 56 (hiver 2007-2008), « RMN, magnétisme et santé »",
+      "url": "https://www.cea.fr/multimedia/Documents/publications/clefs-cea/archives/fr/p029_Lethimonier.pdf",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "supraconductivite",
   "related": [
+    "bobine-inductance",
     "champ-magnetique",
     "conducteur-electrique",
+    "courant-continu",
     "resistance-electrique",
     "resistivite"
   ]

@@ -7,36 +7,36 @@
   "illustration": null,
   "synonymes": [
     "bouquet energetique",
-    "mix electrique",
-    "mix energetique"
+    "mix energetique",
+    "portefeuille energetique"
   ],
   "term": "Mix énergétique",
   "domains": [
     "J",
     "B"
   ],
-  "definition": "Répartition des différentes sources utilisées pour produire l'électricité d'un territoire. Il détermine le coût, la disponibilité et le contenu carbone de chaque kilowattheure consommé.",
-  "versionSimple": "C'est la part de chaque source — nucléaire, éolien, solaire, gaz — dans l'électricité d'un pays.",
+  "definition": "Répartition, souvent exprimée en pourcentages, des différentes sources d'énergie, comme le pétrole, le gaz, le charbon, le nucléaire ou les énergies renouvelables, consommées dans un territoire pour couvrir ses besoins. Le mix électrique, plus restreint, ne décrit que les sources utilisées pour produire l'électricité.",
+  "versionSimple": "C'est la part de chaque source d'énergie dans tout ce qu'un pays consomme : le pétrole des carburants pour les voitures, le gaz, le nucléaire, le vent ou le soleil.",
   "sources": [
     {
-      "titre": "RTE — le réseau de transport d'électricité",
-      "url": "https://www.rte-france.com/",
-      "type": "officiel"
-    },
-    {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
-    },
-    {
-      "titre": "Programme STI2D, enseignement technologique transversal (arrêté du 17 janvier 2019, modifié le 19 juillet 2019), « mix énergétique », p. 39",
-      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf#page=39",
+      "titre": "Programme d'innovation technologique et d'ingénierie et développement durable de première et d'ingénierie, innovation et développement durable de terminale STI2D (Éduscol), § 4.3.1 « mix énergétique approprié »",
+      "url": "https://eduscol.education.fr/document/24916/download",
       "type": "programme"
+    },
+    {
+      "titre": "Office québécois de la langue française, Grand dictionnaire terminologique, fiche « bouquet énergétique »",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26559068/bouquet-energetique",
+      "type": "reference"
+    },
+    {
+      "titre": "Connaissance des Énergies, fiche pédagogique « Mix énergétique de la France » (mise à jour du 18 septembre 2024)",
+      "url": "https://www.connaissancedesenergies.org/fiche-pedagogique/mix-energetique-de-la-france",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-27",
-    "par": "agent-controleur-J4-L5",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S6",
     "statut": "relu-ia"
   },
   "slug": "mix-energetique",

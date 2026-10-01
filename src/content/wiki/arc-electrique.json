@@ -15,18 +15,23 @@
     "E",
     "F"
   ],
-  "definition": "Décharge lumineuse et très chaude entre deux conducteurs séparés par un isolant devenu conducteur. Il provoque brûlures et incendies, et impose des équipements de protection lors des manœuvres sous charge.",
-  "versionSimple": "Quand le courant saute d'un fil à l'autre, il crée un éclair très chaud capable de brûler gravement et de déclencher un incendie.",
+  "definition": "Décharge électrique entre deux conducteurs, susceptible d'apparaître quand on ouvre ou ferme un circuit, ou lors d'un court-circuit. Elle peut provoquer des brûlures et déclencher un incendie. Seule une personne habilitée intervient sur une installation.",
+  "versionSimple": "Quand on débranche un appareil et qu'une étincelle apparaît, c'est un petit arc électrique. Un arc plus fort peut brûler ou provoquer un incendie : seul un électricien intervient.",
   "sources": [
     {
-      "titre": "INRS — prévention des risques électriques",
-      "url": "https://www.inrs.fr/",
-      "type": "officiel"
+      "titre": "INRS — Risques liés à l'électricité",
+      "url": "https://www.inrs.fr/risques/electriques/risques-electricite.html",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS — Accidents d'origine électrique",
+      "url": "https://www.inrs.fr/risques/electriques/accidents-origine-electrique.html",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S4",
     "statut": "relu-ia"
   },
   "slug": "arc-electrique",

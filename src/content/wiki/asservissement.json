@@ -8,7 +8,6 @@
   "synonymes": [
     "asservissement",
     "boucle fermee",
-    "regulation",
     "servo"
   ],
   "term": "Asservissement",
@@ -17,27 +16,22 @@
     "F"
   ],
   "definition": "Commande en boucle fermée où le système compare en permanence la grandeur mesurée à la consigne et corrige l'écart. C'est le principe du régulateur de vitesse comme du bras robotisé.",
-  "versionSimple": "Le système vérifie sans arrêt s'il fait bien ce qu'on lui a demandé, et se corrige tout seul quand il s'écarte.",
+  "versionSimple": "Le système vérifie sans arrêt s'il fait bien ce qu'on lui a demandé et se corrige tout seul, comme un four qui se remet à chauffer quand il refroidit.",
   "sources": [
     {
-      "titre": "Éduscol — ressources d'accompagnement des programmes",
-      "url": "https://eduscol.education.fr/",
-      "type": "officiel"
-    },
-    {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "IEC 60050 (Electropedia), IEV 351-47-01 « closed-loop control »",
+      "url": "https://electropedia.org/iev/iev.nsf/17127c61f2426ed8c1257cb5003c9bec/09c8321ab96c6d86c1257b6d004321cf",
       "type": "reference"
     },
     {
-      "titre": "Programme STI2D, enseignement technologique transversal (arrêté du 17 janvier 2019, modifié le 19 juillet 2019), « Comportement des systèmes régulés ou asservis », p. 35",
-      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf#page=35",
+      "titre": "Arrêté fixant le programme des enseignements de spécialité des classes de première et terminale conduisant au baccalauréat technologique série STI2D (texte non daté, copie snes.edu), § 3.4.4 « Comportement des systèmes régulés ou asservis »",
+      "url": "https://www.snes.edu/IMG/pdf/arrete_sti2d_ensemble.pdf",
       "type": "programme"
     }
   ],
   "relecture": {
-    "date": "2026-09-27",
-    "par": "agent-controleur-J4-L5",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S5-3",
     "statut": "relu-ia"
   },
   "slug": "asservissement",
