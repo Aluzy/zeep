@@ -15,23 +15,28 @@
     "J",
     "C"
   ],
-  "definition": "Compteur électrique communicant déployé en France, qui relève la consommation à distance et transmet les données par courants porteurs. Il permet le suivi fin des usages et le pilotage du réseau.",
+  "definition": "Compteur électrique communicant déployé en France, qui relève la consommation à distance et transmet ses données par des signaux envoyés dans les câbles du réseau électrique. Il permet un suivi précis de la consommation réelle et facilite l'intégration de nouveaux usages sur le réseau.",
   "versionSimple": "Ce compteur envoie tout seul la consommation au gestionnaire du réseau, sans qu'on vienne la relever à la maison.",
   "sources": [
     {
-      "titre": "Enedis — raccordement, comptage et distribution",
-      "url": "https://www.enedis.fr/",
-      "type": "officiel"
+      "titre": "Enedis — Qu'est-ce que le compteur Linky ?",
+      "url": "https://www.enedis.fr/faq/compteur-linky/quest-ce-que-le-compteur-linky",
+      "type": "reference"
     },
     {
-      "titre": "Service-public.fr — énergie et logement",
-      "url": "https://www.service-public.fr/",
-      "type": "officiel"
+      "titre": "Enedis — Comment communique le compteur Linky ?",
+      "url": "https://www.enedis.fr/faq/compteur-linky/comment-communique-le-compteur-linky",
+      "type": "reference"
+    },
+    {
+      "titre": "Enedis — Tout savoir sur Linky, le compteur adapté à la vie d'aujourd'hui",
+      "url": "https://www.enedis.fr/tout-savoir-sur-linky-le-compteur-adapte-la-vie-daujourdhui",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S3-2",
     "statut": "relu-ia"
   },
   "slug": "compteur-linky",

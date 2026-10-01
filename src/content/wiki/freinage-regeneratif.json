@@ -15,18 +15,23 @@
     "G",
     "M"
   ],
-  "definition": "Technique qui fait fonctionner le moteur de traction en génératrice lors du ralentissement, renvoyant de l'énergie vers la batterie. Elle augmente l'autonomie et réduit l'usure des freins mécaniques.",
+  "definition": "Technique qui fait fonctionner le moteur de traction en génératrice lors du ralentissement, renvoyant l'énergie cinétique vers la batterie sous forme électrique. Les freins mécaniques sont ainsi moins sollicités.",
   "versionSimple": "Quand la voiture ralentit, son moteur devient une génératrice et recharge un peu la batterie au lieu de tout perdre.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "Ministère de la Transition écologique — Vrai-Faux : voitures électriques",
+      "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/03102025%20Vrai-Faux%20v%C3%A9hicules%20%C3%A9lectriques%20Vdef_0.pdf",
+      "type": "reference"
+    },
+    {
+      "titre": "Enedis — Guide pratique pour recharger sa voiture électrique",
+      "url": "https://www.enedis.fr/sites/default/files/documents/pdf/guide-pratique-pour-recharger-sa-voiture-electrique.pdf",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2",
     "statut": "relu-ia"
   },
   "slug": "freinage-regeneratif",

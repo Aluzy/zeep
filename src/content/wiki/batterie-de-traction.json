@@ -15,23 +15,28 @@
     "G",
     "D"
   ],
-  "definition": "Assemblage de nombreuses cellules lithium-ion, de leur système de refroidissement et de leur électronique de surveillance, qui alimente un véhicule électrique. Sa capacité fixe l'autonomie disponible.",
+  "definition": "Batterie d'accumulateurs rechargeable qui alimente le moteur électrique d'un véhicule. Elle regroupe le plus souvent de nombreuses cellules lithium-ion associées en série et en parallèle, surveillées par un système de gestion de batterie. Sa capacité, en kilowattheures, est l'énergie stockée : avec la consommation du véhicule, elle fixe l'autonomie.",
   "versionSimple": "C'est la grosse batterie d'une voiture électrique, faite de centaines de petites cellules surveillées en permanence.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "FranceTerme (Journal officiel du 12/12/2024) — batterie de traction",
+      "url": "https://www.culture.fr/franceterme/france_terme_rtf?num=BATT5",
+      "type": "reference"
     },
     {
-      "titre": "IEC Electropedia — vocabulaire électrotechnique international",
-      "url": "https://www.electropedia.org/",
+      "titre": "ADEME — Avis sur le véhicule électrique : une batterie de taille raisonnable (12/10/2022)",
+      "url": "https://www.ademe.fr/presse/communique-national/mondial-de-lautomobile-lademe-publie-son-avis-sur-le-vehicule-electrique-une-batterie-de-taille-raisonnable-assure-une-pertinence-climatique-et-economique/",
+      "type": "reference"
+    },
+    {
+      "titre": "INRS / Carsat Hauts-de-France — Batteries au lithium : panorama des technologies et des utilisations (22/11/2022)",
+      "url": "https://www.inrs.fr/dam/inrs/PDF/Actes-et-comptes-rendus/2022-11-22-JT%20Lithium/1-Le-Minor.pdf",
       "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S1-3",
     "statut": "relu-ia"
   },
   "slug": "batterie-de-traction",
@@ -41,6 +46,8 @@
     "batterie-lithium-ion",
     "borne-de-recharge",
     "freinage-regeneratif",
+    "kilowattheure",
+    "moteur-electrique",
     "stockage-d-energie",
     "vehicule-electrique"
   ]

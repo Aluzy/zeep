@@ -15,22 +15,22 @@
     "J"
   ],
   "definition": "Puissance maximale que le contrat autorise à soutirer simultanément, exprimée en kilovoltampères. Dépassée, elle provoque le déclenchement du disjoncteur de branchement et se paie par un abonnement plus élevé.",
-  "versionSimple": "C'est la quantité d'électricité que l'on peut utiliser en même temps. Si on la dépasse, le compteur coupe tout.",
+  "versionSimple": "C'est la puissance maximale que le compteur laisse utiliser en même temps. Si on allume le four, la bouilloire et le lave-linge ensemble, on peut dépasser la limite et le compteur coupe.",
   "sources": [
     {
-      "titre": "Service-public.fr — énergie et logement",
-      "url": "https://www.service-public.fr/",
-      "type": "officiel"
+      "titre": "Enedis — Pourquoi faut-il estimer la puissance d'un compteur électrique ?",
+      "url": "https://www.enedis.fr/faq/compteur-electrique/pourquoi-faut-il-estimer-la-puissance-dun-compteur-electrique",
+      "type": "reference"
     },
     {
-      "titre": "Enedis — raccordement, comptage et distribution",
-      "url": "https://www.enedis.fr/",
-      "type": "officiel"
+      "titre": "Enedis — Compteur Linky : quelle puissance choisir ?",
+      "url": "https://www.enedis.fr/faq/compteur-linky/compteur-linky-quelle-puissance-choisir",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S3-2",
     "statut": "relu-ia"
   },
   "slug": "puissance-souscrite",

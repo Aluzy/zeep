@@ -15,18 +15,33 @@
     "D",
     "B"
   ],
-  "definition": "Gaz produit par électrolyse de l'eau à partir d'électricité, stockable puis reconverti en courant dans une pile à combustible. Il offre un stockage de longue durée, au prix d'un rendement global modeste.",
+  "definition": "Gaz très léger qui sert de vecteur d'énergie : il permet de stocker et de transporter de l'énergie. On le produit surtout à partir de gaz naturel, ou par électrolyse de l'eau avec de l'électricité ; une pile à combustible peut ensuite en tirer de l'énergie électrique, avec des pertes importantes.",
   "versionSimple": "Avec de l'électricité, on peut fabriquer un gaz qui se stocke longtemps et qui redonnera de l'électricité plus tard.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "RTE — Hydrogène vert : mythe ou réalité ?",
+      "url": "https://www.rte-france.com/bases-electricite/production-electricite/hydrogene-vert-mythe-ou-realite",
+      "type": "reference"
+    },
+    {
+      "titre": "ADEME — Favorisez les solutions hydrogène renouvelable et bas carbone",
+      "url": "https://agirpourlatransition.ademe.fr/collectivites/favorisez-solutions-hydrogene-bas-carbone-renouvelable",
+      "type": "reference"
+    },
+    {
+      "titre": "CEA — L'hydrogène (chapitre 3 : production)",
+      "url": "https://www.cea.fr/comprendre/Pages/energies/renouvelables/hydrogene.aspx?Type=Chapitre&numero=3",
+      "type": "reference"
+    },
+    {
+      "titre": "ADEME — Décarbonez avec l'hydrogène renouvelable et bas carbone",
+      "url": "https://agirpourlatransition.ademe.fr/entreprises/conseils/transport-entreposage/transport-durable/hydrogene",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2-2",
     "statut": "relu-ia"
   },
   "slug": "hydrogene",

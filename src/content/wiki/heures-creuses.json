@@ -14,18 +14,23 @@
   "domains": [
     "J"
   ],
-  "definition": "Plages horaires durant lesquelles le kilowattheure est facturé moins cher, afin de déplacer la consommation hors des pointes. Elles commandent classiquement le chauffe-eau par un contacteur.",
+  "definition": "Périodes de la journée, huit heures au total, où le kilowattheure est facturé moins cher. Elles incitent à déplacer la consommation hors des heures de pointe, quand beaucoup d'appareils fonctionnent en même temps. Selon les contrats, certaines heures creuses sont déplacées l'après-midi depuis fin 2025.",
   "versionSimple": "À certaines heures, l'électricité coûte moins cher. On en profite pour faire chauffer l'eau ou lancer le lave-linge.",
   "sources": [
     {
-      "titre": "Service-public.fr — énergie et logement",
-      "url": "https://www.service-public.fr/",
-      "type": "officiel"
+      "titre": "Enedis — Modification des heures creuses : comprendre ce qui change à partir du 1er novembre 2025",
+      "url": "https://www.enedis.fr/magazine/modification-des-heures-creuses-comprendre-ce-qui-change-partir-du-1er-novembre-2025",
+      "type": "reference"
+    },
+    {
+      "titre": "Enedis — Réforme des heures creuses pour accompagner les nouveaux usages",
+      "url": "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S3-3",
     "statut": "relu-ia"
   },
   "slug": "heures-creuses",

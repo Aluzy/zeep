@@ -15,22 +15,27 @@
     "W"
   ],
   "definition": "Note affichée sur certains équipements électriques indiquant la facilité à les réparer : documentation, démontabilité, disponibilité et prix des pièces détachées. Elle vise à allonger la durée de vie des appareils.",
-  "versionSimple": "Cette note dit si un appareil sera facile à réparer. Plus elle est haute, plus l'objet durera longtemps.",
+  "versionSimple": "Cette note sur 10 dit si un appareil, comme un téléphone ou un aspirateur, sera facile à réparer. Plus elle est haute, plus la réparation est facile.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "Ministère de l'Économie — Tout savoir sur l'indice de réparabilité",
+      "url": "https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/tout-savoir-sur-lindice-de-reparabilite",
+      "type": "reference"
     },
     {
-      "titre": "Service-public.fr — énergie et logement",
-      "url": "https://www.service-public.fr/",
-      "type": "officiel"
+      "titre": "Ministère de la Transition écologique — Durée de vie des produits",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/duree-vie-produits",
+      "type": "reference"
+    },
+    {
+      "titre": "ADEME — Acheter des appareils électriques et électroniques faits pour durer",
+      "url": "https://agirpourlatransition.ademe.fr/particuliers/mieux-consommer/electromenager/appareils-electriques-electroniques-durables",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2-3",
     "statut": "relu-ia"
   },
   "slug": "indice-de-reparabilite",

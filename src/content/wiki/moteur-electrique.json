@@ -11,6 +11,7 @@
   "definition": "Machine qui convertit l'énergie électrique en énergie mécanique, fonctionnant à l'inverse d'un générateur électrique.",
   "related": [
     "actionneur",
+    "batterie-de-traction",
     "chaine-d-energie",
     "contacteur",
     "convertisseur-de-frequence",

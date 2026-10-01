@@ -7,8 +7,7 @@
   "illustration": null,
   "synonymes": [
     "coupure organisee",
-    "delestage",
-    "effacement"
+    "delestage"
   ],
   "term": "Délestage",
   "domains": [
@@ -16,17 +15,22 @@
     "J"
   ],
   "definition": "Coupure volontaire et temporaire de consommateurs pour rétablir l'équilibre entre production et consommation. Il évite l'effondrement général du réseau lorsque la demande dépasse les capacités disponibles.",
-  "versionSimple": "Quand il n'y a pas assez d'électricité pour tout le monde, on coupe volontairement certains secteurs peu de temps.",
+  "versionSimple": "Quand tout le monde chauffe sa maison en même temps et que l'électricité produite ne suffit plus, on coupe le courant à tour de rôle dans certains quartiers.",
   "sources": [
     {
-      "titre": "RTE — le réseau de transport d'électricité",
-      "url": "https://www.rte-france.com/",
-      "type": "officiel"
+      "titre": "Enedis — Qu'est-ce que le délestage ?",
+      "url": "https://www.enedis.fr/faq/glossaire/quest-ce-que-le-delestage",
+      "type": "reference"
+    },
+    {
+      "titre": "Enedis — À quoi servent les délestages ou coupures temporaires ?",
+      "url": "https://www.enedis.fr/faq/delestage/a-quoi-servent-les-delestages",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S3-2",
     "statut": "relu-ia"
   },
   "slug": "delestage",

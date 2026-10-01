@@ -11,8 +11,8 @@
 | Version simple, notions vues avant le lycée | 29/29 (100 %) |
 | Version simple, toutes fiches | 211/387 (55 %) |
 | Avec niveau scolaire | 89/387 (23 %) |
-| Avec au moins une source précise (URL non racine) | 185/387 (48 %) |
-| Relues par un contrôleur indépendant | 136/387 (35 %) |
+| Avec au moins une source précise (URL non racine) | 203/387 (52 %) |
+| Relues par un contrôleur indépendant | 154/387 (40 %) |
 | Validées par Alexandre | 31/387 (8 %) |
 | Fiches secteur sans rappel de sécurité | 0 |
 
@@ -26,9 +26,9 @@
 | Version simple hors 12-35 mots (`version_simple_longueur`) | 1 | 1 |
 | Fiche liée au secteur sans rappel de sécurité (`securite_230v_absente`) | 0 | 0 |
 | Source sans URL (`source_sans_url`) | 0 | 0 |
-| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 122 | 122 |
-| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 56 | 56 |
-| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 129 | 129 |
+| Source pointant vers une page d'accueil (invérifiable) (`source_url_racine`) | 104 | 104 |
+| Type de source hors liste (programme|reference|norme|manuel) (`source_type_hors_liste`) | 38 | 38 |
+| « relu-ia » posé par un autre agent que le contrôleur (`relecture_non_independante`) | 111 | 111 |
 
 ## Backlog (ordre de priorité)
 
@@ -39,7 +39,7 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | `vs-avant-lycee` — Version simple manquante (notions vues avant le lycée) | 0 | — |
 | `securite` — Sécurité 230 V, HTML, signalements graves | 0 | — |
 | `niveaux` — TABLE des niveaux périmée (mapping_niveau.py) | 0 | — |
-| `reecriture` — Réécriture : définition, sources, version simple | 200 | `chute-de-tension`, `delestage`, `electrification`, `ligne-basse-tension`, `ligne-haute-tension`, `ligne-moyenne-tension`, `poste-de-transformation`, `reseau-de-distribution` … |
+| `reecriture` — Réécriture : définition, sources, version simple | 182 | `chute-de-tension`, `electrification`, `ligne-basse-tension`, `ligne-haute-tension`, `ligne-moyenne-tension`, `poste-de-transformation`, `reseau-de-distribution`, `reseau-de-transport` … |
 | `creation` — Création : lexique attendu, puis termes de programme | 95 | `Admittance`, `Équations de Maxwell`, `Loi de Biot-Savart`, `Diagramme de Fresnel`, `Effet de peau`, `Interconnexion européenne`, `Courbe de charge`, `Sélectivité` … |
 
 ## Lots
@@ -73,6 +73,9 @@ Lot suivant : `python3 scripts/prochain_lot.py --lot <LOT> [--file <file>] [--ta
 | J4-L7 | Réécriture, domaine A (électricité — fondamentaux et physique), 20 fiches | 2026-09-27 | termine | agent-controleur-J4-L7 | 0 / 21 |
 | J4-L8 | Réécriture, domaine A (électricité — fondamentaux et physique), 16 fiches — fin du domaine A | 2026-09-27 | termine | agent-controleur-J4-L8 | 0 / 16 |
 | J4-L9 | Réécriture, domaine B (production d'électricité) — 20 fiches, domaine B complet | 2026-09-27 | termine | agent-controleur-J4-L9 | 0 / 20 |
+| J5-S1 | Réécriture : sources précises de Batterie de traction | 2026-10-01 | termine | agent-controleur-J5-S1 | 0 / 1 |
+| J5-S2 | Réécriture : sources précises (ADEME, RTE, Enedis...) pour 13 fiches | 2026-10-01 | termine | agent-controleur-J5-S2 | 0 / 13 |
+| J5-S3 | Réécriture : sources précises (compteur Linky, délestage, heures creuses, puissance souscrite) | 2026-10-01 | termine | agent-controleur-J5-S3 | 0 / 4 |
 | chantier-A-4-5 | Date, temps de lecture et sommaire de blog | 2026-09-13 | termine | aucun | 0 / 0 |
 | chantier-A-6 | Liens contextuels dans les définitions du wiki | 2026-09-13 | termine | aucun | 0 / 0 |
 
@@ -96,6 +99,7 @@ Notions sans fiche, absentes de `src/data/lexique-attendu.json`. Décision édit
 | Récepteur électrique | A | J2-L4 (J2-L2 backlog); J4-L1 (circuit-electrique (mot du programme de cycle 2 évité faute de fiche)) |
 | Résistance interne | A | J2-L4 (J2-L2 backlog) |
 | Courbe de charge d'une batterie | D | B7 (recharger-une-voiture-electrique) |
+| système de gestion de batterie (BMS) | D | J5-S1 (batterie-de-traction) |
 | Diagnostic électrique obligatoire | E | B2 (B2) |
 | Disjoncteur de branchement | E | B2 (B2) |
 | Masse (électricité) | E | J4-L2 (mise-a-la-terre (expliqué dans la définition faute de fiche)) |
@@ -154,6 +158,13 @@ Suivi : issues GitHub étiquetées `decision`.
 - **J4-L8** — resistivite/conductivite-electrique : signalement J1-L3 §2 n°13 refermé par ce lot (retiré de agents/donnees/signalements.json) — voir détail ci-dessous, décision prise seul, à confirmer par relecture indépendante ou Alexandre.
 - **J4-L9** — alternateur/production-d-electricite : signalements J1-L3 §2 n°8 et n°10 retirés de agents/donnees/signalements.json par ce lot (motif exact — confusion énergie/courant — complètement levé par la nouvelle définition) ; retrait confirmé par le contrôleur indépendant agent-controleur-J4-L9.
 - **J4-L9** — Type « manuel » pour connaissancedesenergies.org (11 sources) : le contrôleur note que le site est édité par Selectra SAS (entreprise commerciale de comparaison de fournisseurs d'énergie, comité scientifique depuis fin 2024), pas un organisme de référence institutionnel au sens strict d'AGENTS.md §3. Contenu cité vérifié factuel et conforme par le contrôleur, mais décision humaine à prendre sur son usage récurrent comme source de type « manuel ».
+- **J5-S1** — Accepter FranceTerme (culture.fr, Journal officiel) comme source de type reference, hors liste de conversion décidée.
+- **J5-S1** — Définition modifiée alors que la mission ne demandait que les sources : retrait de la mention du refroidissement, faute de source ouverte.
+- **J5-S2** — Les domaines ecologie.gouv.fr, economie.gouv.fr et cea.fr ne figurent pas dans la table de conversion décidée : ils ont été typés « reference » (organismes publics) ; à confirmer.
+- **J5-S2** — Légifrance (article L441-2 du code de la consommation, obsolescence programmée) renvoie 403 à l'ouverture : aucune source de type « norme » n'a pu être citée pour cette fiche.
+- **J5-S3** — Accepter des sources Enedis (type reference) pour délestage, faute de page RTE précise ouverte ?
+- **J5-S3** — Compteur Linky : la mention « pilotage du réseau » n'est appuyée qu'indirectement ; la garder ou la reformuler ?
+- **J5-S3** — Puissance souscrite : « se paie par un abonnement plus élevé » n'est confirmé par aucune page ouverte ; garder ou retirer ?
 
 ## Signalements de fiches douteuses
 

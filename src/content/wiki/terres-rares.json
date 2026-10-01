@@ -16,17 +16,22 @@
     "N"
   ],
   "definition": "Groupe de métaux entrant dans les aimants permanents des moteurs et des éoliennes, ainsi que dans de nombreux composants. Leur extraction est polluante et leur approvisionnement géographiquement concentré.",
-  "versionSimple": "Certains métaux rares sont indispensables aux aimants et aux composants. Les extraire pollue, et peu de pays en produisent.",
+  "versionSimple": "Ces métaux servent dans les aimants des moteurs et des éoliennes. Ils ne sont pas vraiment rares, mais presque tous viennent d'un seul pays et les extraire pollue.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "ADEME — Terres rares, énergies renouvelables et stockage d'énergies",
+      "url": "https://librairie.ademe.fr/energies-renouvelables-reseaux-et-stockage/492-terres-rares-energies-renouvelables-et-stockage-d-energies.html",
+      "type": "reference"
+    },
+    {
+      "titre": "ADEME — Avis : quels leviers pour une transition énergétique robuste face à la dépendance en matériaux ?",
+      "url": "https://www.ademe.fr/presse/communique-national/avis-de-lademe-quels-leviers-pour-une-transition-energetique-robuste-face-a-la-dependance-en-materiaux/",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2-2",
     "statut": "relu-ia"
   },
   "slug": "terres-rares",

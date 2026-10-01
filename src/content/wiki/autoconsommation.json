@@ -15,23 +15,28 @@
     "J",
     "B"
   ],
-  "definition": "Consommation sur place de l'électricité produite par sa propre installation, généralement photovoltaïque. Le surplus non consommé est stocké, partagé ou injecté sur le réseau de distribution.",
+  "definition": "Consommation sur place de l'électricité produite par sa propre installation, généralement photovoltaïque. Le surplus non consommé peut être réinjecté sur le réseau public de distribution d'électricité.",
   "versionSimple": "On utilise directement chez soi l'électricité produite par ses panneaux solaires, au lieu de tout revendre.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "ADEME — Comment produire de l'électricité chez soi ?",
+      "url": "https://agirpourlatransition.ademe.fr/particuliers/amenager-maison/renover/produire-electricite-chez-soi",
+      "type": "reference"
     },
     {
-      "titre": "Service-public.fr — énergie et logement",
-      "url": "https://www.service-public.fr/",
-      "type": "officiel"
+      "titre": "Enedis (Observatoire) — Autoconsommation",
+      "url": "https://observatoire.enedis.fr/autoconsommation",
+      "type": "reference"
+    },
+    {
+      "titre": "Enedis — Comment fonctionne l'autoconsommation ?",
+      "url": "https://www.enedis.fr/faq/autoconsom-mation-produire-et-consommer-son-electricite/comment-fonctionne-lautoconsommation",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2",
     "statut": "relu-ia"
   },
   "slug": "autoconsommation",

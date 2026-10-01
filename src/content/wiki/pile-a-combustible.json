@@ -14,18 +14,28 @@
     "D",
     "G"
   ],
-  "definition": "Générateur qui produit de l'électricité par réaction entre l'hydrogène et l'oxygène, en ne rejetant que de l'eau. Elle alimente certains véhicules lourds et des installations de secours.",
-  "versionSimple": "Cette pile fabrique de l'électricité à partir d'hydrogène et d'air, et ne rejette que de l'eau.",
+  "definition": "Générateur qui produit de l'électricité par réaction entre l'hydrogène et l'oxygène, en dégageant de l'eau et de la chaleur. Elle alimente certains véhicules, notamment lourds, ainsi que des appareils portables et des bâtiments.",
+  "versionSimple": "Cette pile fabrique de l'électricité à partir d'hydrogène et d'air, et rejette seulement de l'eau et un peu de chaleur.",
   "sources": [
     {
-      "titre": "ADEME — énergie, climat et économie circulaire",
-      "url": "https://www.ademe.fr/",
-      "type": "officiel"
+      "titre": "CEA — L'hydrogène (chapitre 5 : la pile à combustible)",
+      "url": "https://www.cea.fr/comprendre/Pages/energies/renouvelables/hydrogene.aspx?Type=Chapitre&numero=5",
+      "type": "reference"
+    },
+    {
+      "titre": "ADEME — Favorisez les solutions hydrogène renouvelable et bas carbone",
+      "url": "https://agirpourlatransition.ademe.fr/collectivites/favorisez-solutions-hydrogene-bas-carbone-renouvelable",
+      "type": "reference"
+    },
+    {
+      "titre": "ADEME — Décarbonez avec l'hydrogène renouvelable et bas carbone",
+      "url": "https://agirpourlatransition.ademe.fr/entreprises/conseils/transport-entreposage/transport-durable/hydrogene",
+      "type": "reference"
     }
   ],
   "relecture": {
-    "date": "2026-09-13",
-    "par": "agent-contenu",
+    "date": "2026-10-01",
+    "par": "agent-controleur-J5-S2-2",
     "statut": "relu-ia"
   },
   "slug": "pile-a-combustible",
